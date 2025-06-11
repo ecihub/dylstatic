@@ -5031,59 +5031,7 @@ thank-you" />
     <script defer src="js/front-init-product.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const itemsPerPage = 6;
-            const items = document.querySelectorAll('.row.mar-b40 > .col-md-6');
-            const paginationLinks = document.querySelectorAll('#pagination-ebook-list .page-link');
-
-            let currentPage = 1;
-            const totalPages = Math.ceil(items.length / itemsPerPage);
-
-            function showPage(page) {
-                // Keep page within valid range
-                if (page < 1) page = 1;
-                if (page > totalPages) page = totalPages;
-
-                currentPage = page;
-                const start = (page - 1) * itemsPerPage;
-                const end = start + itemsPerPage;
-
-                items.forEach((item, index) => {
-                    item.style.display = (index >= start && index < end) ? 'block' : 'none';
-                });
-
-                // Highlight active page number
-                paginationLinks.forEach(link => {
-                    link.parentElement.classList.remove('active');
-                    const match = link.getAttribute('href').match(/#page-(\d+)/);
-                    if (match && parseInt(match[1]) === page) {
-                        link.parentElement.classList.add('active');
-                    }
-                });
-            }
-
-            paginationLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const href = this.getAttribute('href');
-
-                    if (href === '#next') {
-                        showPage(currentPage + 1);
-                    } else {
-                        const match = href.match(/#page-(\d+)/);
-                        if (match) {
-                            const page = parseInt(match[1]);
-                            showPage(page);
-                        }
-                    }
-                });
-            });
-
-            // Show the first page on load
-            showPage(1);
-        });
-    </script>
+    
 
 
 </body>
