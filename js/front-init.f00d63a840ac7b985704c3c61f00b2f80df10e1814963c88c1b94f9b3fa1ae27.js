@@ -16843,7 +16843,7 @@
         isMuted: false,
         youTubeAPISrc: "//www.youtube.com/player_api",
         isYouTubeAPICreated: false,
-        vimeoAPISrc: "//player.vimeo.com/api/player.js",
+        vimeoAPISrc: "https://player.vimeo.com/api/player.js",
         isVimeoAPICreated: false
       };
       this.settings = settings;
@@ -17739,7 +17739,7 @@
         backDelay: 1600
       });
     }
-    (0, import_jquery.default)(".js-validate").each(function() {
+    /*(0, import_jquery.default)(".js-validate").each(function() {
       import_jquery.default.HSCore.components.HSValidation.init((0, import_jquery.default)(this), {
         rules: {
           inf_field_Phone1: {
@@ -17756,7 +17756,7 @@
     (0, import_jquery.default)(".js-slick-carousel").each(function() {
       console.log("Initializing a new carousel...");
       import_jquery.default.HSCore.components.HSSlickCarousel.init((0, import_jquery.default)(this));
-    });
+    }); */
     (0, import_jquery.default)(".js-inline-video-player").each(function() {
       new HSVideoPlayer((0, import_jquery.default)(this)).init();
     });
@@ -17797,15 +17797,7 @@
         target.style.animation = target.classList.contains("is-visible") ? "slideInLeft 0.5s forwards" : "slideOutLeft 0.5s forwards";
       });
     });
-    if (!isExcludedPage()) {
-      setTimeout(() => {
-        const btn = document.getElementById("requestQuoteButton");
-        if (btn && !btn.classList.contains("clicked")) {
-          btn.classList.add("clicked");
-          btn.click();
-        }
-      }, 2e4);
-    }
+    
   });
 })();
 /*!
