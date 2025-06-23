@@ -2420,6 +2420,97 @@
     </div>
 </div>
 
+<div class="container text-center mb-4">
+          <div class="row">
+            <div class="col col-bottom-subs">
+              <p class="bottom-heading h3-browse-blog-sub">Subscribe</p>
+<p class="bot-sub">Subcribe now and receive updates whenever we <br> post something new on our blog.</p>
+<br>
+<!--<form accept-charset="UTF-8" method="POST" action="https://dyl361.activehosted.com/proc.php" class="js-validate" novalidate="novalidate">-->
+  <form id="subscribeFormbottom" class="js-validate" novalidate="novalidate">
+      
+  <input type="hidden" name="u" value="55">
+  <input type="hidden" name="f" value="55">
+  <input type="hidden" name="s">
+  <input type="hidden" name="c" value="0">
+  <input type="hidden" name="m" value="0">
+  <input type="hidden" name="act" value="sub">
+  <input type="hidden" name="v" value="2">
+  <input class="bot-fname-class form-control" type="text" name="name" id="fnamebottom" placeholder="Name" required="" data-name="fname" aria-describedby="emailHelp fname-error" aria-invalid="true">
+  <input class="bot-email-class form-control" type="text" name="email" id="emailbottom" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true">
+  <button class="bot-subscribe-class transition-3d-hover" type="button" onclick="submitFormbottom()">Subscribe</button>
+</form>
+<br><br><br>
+<p class="icon-heading h3-browse-blog-sub2"> Connect with us </p>
+<div class="social-footer-links">
+  
+  <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
+    <i class="fab fa-vimeo-square"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
+    <i class="fab fa-twitter-square"></i>
+  </a>
+  <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
+    <i class="fab fa-facebook-square"></i>
+  </a>
+  <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
+    <i class="fab fa-youtube-square"></i>
+  </a>
+</div>
+<script>
+  function validateFormbottom() {
+    var firstname = document.getElementById("fnamebottom").value;
+    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+    console.log("Validating form...");
+    if (!regex.test(firstname)) {
+      console.log("Validation failed: special characters found.");
+      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+      return false;
+    }
+    
+    console.log("Validation passed: no special characters found.");
+    return true;
+  }
+
+  function submitFormbottom() {
+    if (!validateFormbottom()) {
+      console.log("Form submission blocked due to validation failure.");
+      return; // Do not proceed if validation fails
+    }
+
+    // Gather form data
+    var formbottom = document.getElementById("subscribeFormbottom");
+    var formData = new FormData(formbottom);
+
+    // Send form data via fetch
+    fetch("https://dyl361.activehosted.com/proc.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+      return response.text();
+    })
+    .then(result => {
+      alert("Subscription successful");
+    })
+    .catch(error => {
+    console.error("Submission error:", error);
+    window.location.reload();
+});
+  }
+</script>            </div>
+          </div>
+        </div>
+
+
+
 <footer class="bg-darkBlue">
     <div class="container">
         <div class="row space-top-2 space-bottom-1 justify-content-lg-between">
