@@ -17,15 +17,12 @@
     return to;
   };
   var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-    // If the importer is in node compatibility mode or this is not an ESM
-    // file that has been converted to a CommonJS file using a Babel-
-    // compatible transform (i.e. "__esModule" has not been set), then set
-    // "default" to the CommonJS "module.exports" for node compatibility.
+   
     isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
     mod
   ));
 
-  // ns-hugo-imp:C:\Users\ADMIN\Desktop\dylstatic\dylstatic\assets\front-ui\vendor\circles\circles.js
+
   var require_circles = __commonJS({
     "ns-hugo-imp:C:\\Users\\ADMIN\\Desktop\\dylstatic\\dylstatic\\assets\\front-ui\\vendor\\circles\\circles.js"(exports, module) {
       (function(root, factory) {
@@ -402,21 +399,3 @@
     });
   });
 })();
-/*
-* HSCore
-* @version: 2.0.0 (Mon, 25 Nov 2019)
-* @requires: jQuery v3.0 or later
-* @author: HtmlStream
-* @event-namespace: .HSCore
-* @license: Htmlstream Libraries (https://htmlstream.com/licenses)
-* Copyright 2020 Htmlstream
-*/
-/*
-* Circles wrapper
-* @version: 2.0.0 (Mon, 25 Nov 2019)
-* @requires: jQuery v3.0 or later, circles v0.0.6, appear.js v1.0.3
-* @author: HtmlStream
-* @event-namespace: .HSCore.components.HSCircles
-* @license: Htmlstream Libraries (https://htmlstream.com/licenses)
-* Copyright 2020 Htmlstream
-*/
