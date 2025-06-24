@@ -3034,7 +3034,60 @@ thank-you" />
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script defer src="../js/front-init-product.js"></script>
+     <script type="text/javascript">
 
+        function loadSales() {
+
+
+            (function () {
+                var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+                se.src = 'https://storage.googleapis.com/code.snapengage.com/js/ff0197e7-537f-4369-b8bf-df730b8508ff.js';
+                var done = false;
+                se.onload = se.onreadystatechange = function () {
+                    if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+                        done = true;
+
+                        SnapEngage.startLink();
+
+                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
+                        SnapEngage.setCallback("Close", function (d) {
+                            $("#designstudio").hide();
+                        })
+
+                    }
+                };
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+            })();
+        }
+        function loadSupport() {
+
+            (function () {
+                var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+                se.src = 'https://storage.googleapis.com/code.snapengage.com/js/3f619302-33e2-4d59-97bc-5502da291f18.js';
+                var done = false;
+                se.onload = se.onreadystatechange = function () {
+                    if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+                        done = true;
+
+
+                        SnapEngage.startLink();
+
+                        $("#designstudio-iframe").contents().find("#main-desktop").css("width", '95%');
+                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
+                        SnapEngage.setCallback("Close", function (d) {
+                            $("#designstudio").hide();
+                        })
+
+                    }
+                };
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+            })();
+        }
+
+        $(".ChatUsModalLiveButtons").on("click", () => {
+            $("#chatUsModal").modal("hide");
+        });
+    </script>
 
 </body>
 
