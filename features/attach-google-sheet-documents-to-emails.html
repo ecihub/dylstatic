@@ -3946,39 +3946,94 @@ thank-you" />
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script defer src="../js/front-init-product.js"></script>
-       <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            const buttons = [
-                                { id: "trackingButton", event: "feature_attach_google_sheetdocumentstoemails", label: "Clicked Get started 1st section" }
-                            ];
-                    
-                            buttons.forEach(function(button) {
-                                const btnElement = document.getElementById(button.id);
-                                if (btnElement) {
-                                    btnElement.addEventListener("click", function () {
-                                        trackEvent(button.event, button.label);
-                                    });
-                                } else {
-                                    console.error("Button not found:", button.id);
-                                }
-                            });
-                        });
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = [
+                { id: "trackingButton", event: "feature_attach_google_sheetdocumentstoemails", label: "Clicked Get started 1st section" }
+            ];
 
-                        document.querySelectorAll(".demo-button-nav").forEach(function (button) {
-                                button.addEventListener("click", function () {
-                                    trackEvent("demo_nav_bar", "Clicked Demo Button");
-                                });
-                            });
+            buttons.forEach(function (button) {
+                const btnElement = document.getElementById(button.id);
+                if (btnElement) {
+                    btnElement.addEventListener("click", function () {
+                        trackEvent(button.event, button.label);
+                    });
+                } else {
+                    console.error("Button not found:", button.id);
+                }
+            });
+        });
 
-                            document.addEventListener("DOMContentLoaded", function () {
-                                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                                    trackEvent("request_quote", "Clicked Request Quote Button");
-                                });
-                            });
+        document.querySelectorAll(".demo-button-nav").forEach(function (button) {
+            button.addEventListener("click", function () {
+                trackEvent("demo_nav_bar", "Clicked Demo Button");
+            });
+        });
 
-                            document.addEventListener("DOMContentLoaded", function () {
-                                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                                    trackEvent("chat_now", "Clicked Chat Now Button");
-                                });
-                            });
-                    </script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("requestQuoteButton").addEventListener("click", function () {
+                trackEvent("request_quote", "Clicked Request Quote Button");
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("chatUsNowButton").addEventListener("click", function () {
+                trackEvent("chat_now", "Clicked Chat Now Button");
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        function loadSales() {
+
+
+            (function () {
+                var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+                se.src = 'https://storage.googleapis.com/code.snapengage.com/js/ff0197e7-537f-4369-b8bf-df730b8508ff.js';
+                var done = false;
+                se.onload = se.onreadystatechange = function () {
+                    if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+                        done = true;
+
+                        SnapEngage.startLink();
+
+                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
+                        SnapEngage.setCallback("Close", function (d) {
+                            $("#designstudio").hide();
+                        })
+
+                    }
+                };
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+            })();
+        }
+        function loadSupport() {
+
+            (function () {
+                var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+                se.src = 'https://storage.googleapis.com/code.snapengage.com/js/3f619302-33e2-4d59-97bc-5502da291f18.js';
+                var done = false;
+                se.onload = se.onreadystatechange = function () {
+                    if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+                        done = true;
+
+
+                        SnapEngage.startLink();
+
+                        $("#designstudio-iframe").contents().find("#main-desktop").css("width", '95%');
+                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
+                        SnapEngage.setCallback("Close", function (d) {
+                            $("#designstudio").hide();
+                        })
+
+                    }
+                };
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+            })();
+        }
+
+        $(".ChatUsModalLiveButtons").on("click", () => {
+            $("#chatUsModal").modal("hide");
+        });
+    </script>
