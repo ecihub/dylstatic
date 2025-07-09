@@ -72,6 +72,7 @@
             background-size: cover;
         }
     </style>
+    <link rel="preload" href="./industries.html" as="document">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/industries/industries/ind-hero.webp"
         as="image" type="image/webp" fetchpriority="high">
 
@@ -4404,6 +4405,13 @@ thank-you" />
     </script>
     <script src="js/jquery.validate.min.js" defer></script>
     <script src="js/front.min.js" defer></script>
+    <script>
+  window.addEventListener('load', function() {
+    var script = document.createElement('script');
+    script.src = '/js/jquery.min.js';
+    document.body.appendChild(script);
+  });
+</script>
 </body>
 
 </html>
