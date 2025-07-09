@@ -21,8 +21,13 @@
 
     <link rel="preload" href="scss/index.min.css" as="style">
     <link rel="stylesheet" href="scss/index.min.css">
-    <link rel="stylesheet" href="css/stream-styles.css">
+    <link rel="stylesheet" href="css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/stream-styles.css">
+    </noscript>
 
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
     <style>
         body {
@@ -4230,11 +4235,11 @@ thank-you" />
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Plugins (can use defer if they don’t run instantly) -->
+<script src="js/popper.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
             var scriptElement = document.createElement('script');
@@ -4302,8 +4307,8 @@ thank-you" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script defer src="js/front.min.js"></script>
-      <script defer src="js/slick.min.js"></script>
+    <script  src="js/front.min.js" defer></script>
+      <script  src="js/slick.min.js" defer></script>
     <script>
         $(window).on('load', function () {
             const $carousel = $('.js-slick-carousel');
