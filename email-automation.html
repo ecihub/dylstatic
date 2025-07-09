@@ -238,7 +238,7 @@
                                                 <div class="position-relative ">
                                                     <img class="img-fluid rounded mb-3"
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-products.webp"
-                                                        alt="DYL 2.0 Platform" width="376" height="269">
+                                                        alt="DYL 2.0 Platform" width="376" height="269" loading="lazy">
                                                 </div>
                                                 <span class="text-blue-ribbon">DYL Software 2.0</span><span
                                                     class="badge badge-success badge-pill ml-3">Coming
@@ -508,7 +508,7 @@
                                                 <div class="position-relative">
                                                     <img class="img-fluid rounded mb-3 "
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-learn.webp"
-                                                        alt="DYL 2.0 Platform" width="236" height="149">
+                                                        alt="DYL 2.0 Platform" width="236" height="149" loading="lazy">
                                                 </div>
                                                 <span class="text-blue-ribbon">DYL Software 2.0</span><span
                                                     class="badge badge-success badge-pill ml-3">Coming
@@ -3613,19 +3613,36 @@ thank-you" />
 
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ("IntersectionObserver" in window) {
+                const lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            const bg = entry.target;
+                            const bgUrl = bg.getAttribute("data-bg");
+                            if (bgUrl) {
+                                bg.style.backgroundImage = `url('${bgUrl}')`;
+                                bg.classList.remove("lazy-background");
+                                lazyBackgroundObserver.unobserve(bg);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(function (lazyBackground) {
+                    lazyBackgroundObserver.observe(lazyBackground);
+                });
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(function (bg) {
+                    const bgUrl = bg.getAttribute("data-bg");
+                    if (bgUrl) {
+                        bg.style.backgroundImage = `url('${bgUrl}')`;
+                    }
+                });
+            }
         });
     </script>
     <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
