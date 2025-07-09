@@ -18,7 +18,6 @@
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
 
-
     <link rel="preload" href="scss/index.min.css" as="style">
     <link rel="stylesheet" href="scss/index.min.css">
     <link rel="stylesheet" href="css/stream-styles.css" media="print" onload="this.media='all'">
@@ -4202,22 +4201,39 @@ thank-you" />
 
 
 
-    <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+    if ("IntersectionObserver" in window) {
+      const lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const bg = entry.target;
+            const bgUrl = bg.getAttribute("data-bg");
+            if (bgUrl) {
+              bg.style.backgroundImage = `url('${bgUrl}')`;
+              bg.classList.remove("lazy-background");
+              lazyBackgroundObserver.unobserve(bg);
+            }
+          }
         });
-    </script>
+      });
+
+      lazyBackgrounds.forEach(function (lazyBackground) {
+        lazyBackgroundObserver.observe(lazyBackground);
+      });
+    } else {
+      // Fallback for old browsers
+      lazyBackgrounds.forEach(function (bg) {
+        const bgUrl = bg.getAttribute("data-bg");
+        if (bgUrl) {
+          bg.style.backgroundImage = `url('${bgUrl}')`;
+        }
+      });
+    }
+  });
+</script>
     <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
     "offsetTop": 700,
     "position": {
@@ -4235,7 +4251,7 @@ thank-you" />
         <i class="fas fa-angle-up"></i>
     </a>
 
-      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
 <!-- Plugins (can use defer if they don’t run instantly) -->
 <script src="js/popper.min.js" defer></script>
@@ -4304,11 +4320,8 @@ thank-you" />
     </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script  src="js/front.min.js" defer></script>
-      <script  src="js/slick.min.js" defer></script>
+    
+    <script  src="js/slick.min.js" defer></script>
     <script>
         $(window).on('load', function () {
             const $carousel = $('.js-slick-carousel');
@@ -4389,7 +4402,8 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-
+    <script src="js/jquery.validate.min.js" defer></script>
+    <script src="js/front.min.js" defer></script>
 </body>
 
 </html>
