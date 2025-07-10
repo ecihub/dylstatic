@@ -5350,7 +5350,57 @@ thank-you" />
             }
         };
     </script>
+    <script>
+  // Override jQuery's visibility filter to avoid forced reflows
+  if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
+    jQuery.expr.filters.visible = function(elem) {
+      const rect = elem.getBoundingClientRect();
+      return rect.width > 0 || rect.height > 0;
+    };
+  }
 
+  // Replace layout-thrashing width check with optimized version
+  // Only run this if 'c' and 'n' are defined in your code
+  (function() {
+    if (typeof c !== 'undefined' && typeof n === 'function') {
+      const cachedWidth = c.clientWidth || c.getBoundingClientRect().width || 0;
+      a = 12 === n(cachedWidth / 3);
+    }
+  })();
+</script>
+</body>
+🔍 Make Sure:
+c is the DOM element you are targeting (you can replace it with document.querySelector(...) if needed).
+
+n is the function being used (maybe a rounding or math function).
+
+a is defined elsewhere or needs to be declared in this block.
+
+✅ Example with Explicit Variables (Optional)
+If c, a, and n are not defined globally, you can make it more self-contained:
+
+html
+Copy
+Edit
+<script>
+  if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
+    jQuery.expr.filters.visible = function(elem) {
+      const rect = elem.getBoundingClientRect();
+      return rect.width > 0 || rect.height > 0;
+    };
+  }
+
+  // Example: Custom usage
+  (function() {
+    const c = document.querySelector('#myElement'); // replace with your element
+    const n = Math.round; // replace with your logic if different
+    if (c) {
+      const cachedWidth = c.clientWidth || c.getBoundingClientRect().width || 0;
+      const a = 12 === n(cachedWidth / 3);
+      console.log('Check result:', a);
+    }
+  })();
+</script>
 
 </body>
 
