@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     </noscript>
     <link rel="preload" as="font" type="font/woff2" crossorigin
-  href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -51,7 +51,7 @@
                 url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
         }
 
-         @font-face {
+        @font-face {
             font-family: "Open Sans";
             font-weight: 600;
             font-display: swap;
@@ -59,7 +59,7 @@
                 url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
         }
 
-         @font-face {
+        @font-face {
             font-family: "Open Sans";
             font-weight: 700;
             font-display: swap;
@@ -80,6 +80,18 @@
         .img-fluid {
             max-width: 100%;
             height: auto;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            .mobile-disabled {
+                display: none;
+            }
+
+            .hero-form {
+
+                top: -50px;
+
+            }
         }
     </style>
     <link rel="preload" fetchpriority="high" as="image"
@@ -1177,7 +1189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="transform-rotate-5">
+                    <div class="transform-rotate-5 mobile-disabled">
                         <div class="d-none d-lg-flex flex-lg-wrap align-items-lg-end position-absolute top-0 left-50 transform-rotate-7"
                             style="width: 45rem;">
                             <div class="device device-horizontal-ipad mr-4 mb-4" style="width: 23rem;"
@@ -1186,8 +1198,8 @@
                                     src="https://images.dyl.com/marketing-web/images/front-ui/svg/components/ipad-horizontal.svg"
                                     alt="DYL Ipad View" width="368" height="282">
                                 <img class="device-horizontal-ipad-screen lazyload" rel="preload" as="image"
-                                    src="https://images.dyl.com/marketing-web/images/home/dyl-system.webp" loading="lazy" width="345"
-                                    height="260" alt="DYL System Overview">
+                                    src="https://images.dyl.com/marketing-web/images/home/dyl-system.webp"
+                                    loading="lazy" width="345" height="260" alt="DYL System Overview">
                             </div>
                             <div class="device device-ipad mb-4" style="width: 19rem;" data-aos="fade-up">
                                 <img class="device-ipad-frame"
@@ -1226,7 +1238,7 @@
                         </div>
                     </div>
                 </div>
-                <figure class="hero-wave">
+                <figure class="hero-wave mobile-disabled">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1348 259" role="img"
                         aria-labelledby="waveTitle">
                         <title id="waveTitle">Bottom Hero Wave</title>
@@ -2655,7 +2667,8 @@
                 </div>
 
             </div>
-            <div class="container-fluid cta-form-bot text-center pt-5 pb-5 aos-init aos-animate" data-aos="fade-up">
+            <div class="container-fluid cta-form-bot text-center pt-5 pb-5 aos-init aos-animate mobile-disabled"
+                data-aos="fade-up">
                 <div class="waves-svg">
                     <svg alt="Bottom Form" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                         preserveAspectRatio="none">
@@ -5080,12 +5093,12 @@ thank-you" />
         </div>
     </div>
 
- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
-<!-- Defer other scripts -->
-<script src="js/popper.min.js" defer></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
-   
+    <!-- Defer other scripts -->
+    <script src="js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -5218,10 +5231,10 @@ thank-you" />
 
 
     <script defer src="js/aos.js"></script>
-   
+
 
     <!--<script defer src="js/pre-loader.c0cd18f3dfa086bb0f9be2aa23cb57af541f32c1b4d5be81385c57cf754c49ca.js"></script>-->
-    <script defer src="js/front-init.f00d63a840ac7b985704c3c61f00b2f80df10e1814963c88c1b94f9b3fa1ae27.min.js" defer></script>
+    <script defer src="js/front-init.js" defer></script>
     <script defer src="js/slick.min.js"></script>
     <script>
         $(window).on('load', function () {
@@ -5310,6 +5323,32 @@ thank-you" />
                 img.setAttribute('height', '22px');
             });
         });
+    </script>
+    <script>
+        window.onload = function () {
+            if (window.innerWidth <= 768) {
+                const body = document.body;
+                body.removeAttribute("data-aos-easing");
+                body.removeAttribute("data-aos-duration");
+                body.removeAttribute("data-aos-delay");
+                header.removeAttribute("data-hs-header-options");
+                document.querySelectorAll('.aos-init').forEach(el => {
+                    el.classList.remove('aos-init');
+                });
+
+                 document.querySelectorAll('.aos-animate').forEach(el => {
+                    el.classList.remove('aos-animate');
+                });
+
+                // Remove all AOS attributes from elements
+                document.querySelectorAll('[data-aos]').forEach(el => {
+                    el.removeAttribute('data-aos');
+                });
+            } else {
+                // Only init AOS if not on mobile
+                AOS.init();
+            }
+        };
     </script>
 
 
