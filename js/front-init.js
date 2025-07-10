@@ -3843,8 +3843,7 @@
           if (!isBorderBox && computedVal >= 0) {
             delta += Math.max(0, Math.ceil(
               elem["offset" + dimension[0].toUpperCase() + dimension.slice(1)] - computedVal - delta - extra - 0.5
-              // If offsetWidth/offsetHeight is unknown, then we can't determine content-box scroll gutter
-              // Use an explicit zero to avoid NaN (gh-3964)
+            
             )) || 0;
           }
           return delta + marginDelta;
@@ -3861,10 +3860,10 @@
           // IE/Edge misreport `getComputedStyle` of table rows with width/height
           // set in CSS while `offset*` properties report correct values.
           // Interestingly, in some cases IE 9 doesn't suffer from this issue.
-          !support.reliableTrDimensions() && nodeName(elem, "tr") || // Fall back to offsetWidth/offsetHeight when value is "auto"
+          !support.reliableTrDimensions() && nodeName(elem, "tr") || 
           // This happens for inline elements with no explicit setting (gh-3571)
           val === "auto" || // Support: Android <=4.1 - 4.3 only
-          // Also use offsetWidth/offsetHeight for misreported inline dimensions (gh-3602)
+         
           !parseFloat(val) && jQuery2.css(elem, "display", false, styles) === "inline") && // Make sure the element is visible & connected
           elem.getClientRects().length) {
             isBorderBox = jQuery2.css(elem, "boxSizing", false, styles) === "border-box";
@@ -3997,11 +3996,7 @@
             get: function(elem, computed, extra) {
               if (computed) {
                 return rdisplayswap.test(jQuery2.css(elem, "display")) && // Support: Safari 8+
-                // Table columns in Safari have non-zero offsetWidth & zero
-                // getBoundingClientRect().width unless display is changed.
-                // Support: IE <=11 only
-                // Running getBoundingClientRect on a disconnected node
-                // in IE throws an error.
+               
                 (!elem.getClientRects().length || !elem.getBoundingClientRect().width) ? swap(elem, cssShow, function() {
                   return getWidthOrHeight(elem, dimension, extra);
                 }) : getWidthOrHeight(elem, dimension, extra);
