@@ -58,19 +58,24 @@
       height: auto;
     }
 
-    @media (min-width: 320px) and (max-width: 768px) {
-      h1 {
-        font-size: 2.5rem;
-      }
+      @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
 
-      .text-sky-blue {
-        color: #0269ff !important;
-      }
-    }
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+              .mobile-disabled {
+                display: none;
+            }
+        }
 
     .embed-responsive-item {
         height: 305px !important
     }
+    
 
     .ratio-16x9 {
   position: relative;
@@ -100,8 +105,10 @@
   color: white;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  padding: 0.4em 0.6em;
+  padding: 0.3em 0.6em;
   pointer-events: none;
+  width: 100px;
+  height: 100px;
 }
 
   </style>
@@ -1203,7 +1210,7 @@
                     <div class="card">
                         <div class="vimeo-facade ratio-16x9" data-video-id="301298129" role="button" tabindex="0"
                             aria-label="Play video">
-                            <img src="https://images.dyl.com/marketing-web/images/case-studies/bscott.webp" alt="Brian Scott Video" />
+                            <img src="https://images.dyl.com/marketing-web/images/case-studies/bscott.webp" class="mobile-disabled" alt="Brian Scott Video" />
                             <div class="play-button">▶</div>
                         </div>
                     </div>
