@@ -67,6 +67,43 @@
         color: #0269ff !important;
       }
     }
+
+    .embed-responsive-item {
+        height: 305px !important
+    }
+
+    .ratio-16x9 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  background: #000;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.ratio-16x9 img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ratio-16x9 .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 0.4em 0.6em;
+  pointer-events: none;
+}
+
   </style>
 </head>
 <header id="header"
@@ -1164,13 +1201,14 @@
                 </div>
                 <div class="col-lg-6 col-12 mb-4" id="brianplay">
                     <div class="card">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe title="DYL Video" class="embed-responsive-item"
-                                src="https://player.vimeo.com/video/301298129?title=0&amp;portrait=0&amp;byline=0"
-                                allowfullscreen></iframe>
+                        <div class="vimeo-facade ratio-16x9" data-video-id="301298129" role="button" tabindex="0"
+                            aria-label="Play video">
+                            <img src="https://images.dyl.com/marketing-web/images/case-studies/bscott.webp" alt="Brian Scott Video" />
+                            <div class="play-button">▶</div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <hr class="my-5">
@@ -3923,6 +3961,28 @@ jQuery.event.special.mousewheel = {
             $("#chatUsModal").modal("hide");
         });
     </script>
+    <script>
+  document.querySelectorAll('.vimeo-facade').forEach(facade => {
+    facade.addEventListener('click', () => {
+      const videoId = facade.getAttribute('data-video-id');
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://player.vimeo.com/video/${videoId}?autoplay=1&title=0&portrait=0&byline=0`;
+      iframe.allow = "autoplay; fullscreen; picture-in-picture";
+      iframe.frameBorder = "0";
+      iframe.allowFullscreen = true;
+      iframe.title = "DYL Video";
+    
+      iframe.style.top = 0;
+      iframe.style.left = 0;
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+         iframe.className = "embed-responsive-item";
+      facade.replaceWith(iframe);
+     
+    });
+  });
+</script>
+
 
 </body>
 
