@@ -17,9 +17,7 @@
         content="Watch our Farmers Webinar, The Technology of Insurance Sales With David Offutt. DYL is the best business phone service with sales automation for Farmers insurance agents.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-
-
-    <link rel="preload" href="scss/index.min.css" as="style">
+ <link rel="preload" href="scss/index.min.css" as="style">
     <link rel="stylesheet" href="scss/index.min.css">
     <link rel="stylesheet" href="css/stream-styles.css" media="print" onload="this.media='all'">
     <noscript>
@@ -27,7 +25,7 @@
     </noscript>
     <link rel="preload" as="font" type="font/woff2" crossorigin
         href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
-
+    <link rel="preconnect" href="https://images.dyl.com" crossorigin>
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -80,7 +78,13 @@
         }
 
         @media (min-width: 320px) and (max-width: 768px) {
+             h1 {
+                font-size: 2.5rem;
+            }
 
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
             #webpPlaceholder {
                 width: 345px;
                 height: 194px;
@@ -3854,10 +3858,11 @@ thank-you" />
         };
     </script>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" defer
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-  
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js" defer></script>
+    <script defer src="js/front-init-product.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"></script>
     <script>
 
         function trackEvent2(eventName, eventData) {
@@ -3958,9 +3963,7 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-     <script src="js/jquery.validate.min.js" defer></script>
-
-    <script src="js/front-init-product.js" defer></script>
+    
 
 </body>
 
