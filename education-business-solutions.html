@@ -16,7 +16,7 @@
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
 
-    <link rel="preload" href="scss/index.min.css" as="style">
+   <link rel="preload" href="scss/index.min.css" as="style">
     <link rel="stylesheet" href="scss/index.min.css">
     <link rel="stylesheet" href="css/stream-styles.css" media="print" onload="this.media='all'">
     <noscript>
@@ -24,7 +24,9 @@
     </noscript>
     <link rel="preload" as="font" type="font/woff2" crossorigin
         href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
-
+    <link rel="preconnect" href="https://images.dyl.com" crossorigin>
+   <link rel="preconnect" href="https://ajax.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -42,7 +44,8 @@
         href="https://images.dyl.com/marketing-web/images/home/hero.webp" type="image/webp">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
-
+       <link rel="preload" as="image"
+        href="https://images.dyl.com/marketing-web/images/industries/education/man-teaching.webp" fetchpriority="high">
 
     <style>
         .DYL-blue-logo-nav {
@@ -67,6 +70,10 @@
 
             .text-sky-blue {
                 color: #0269ff !important;
+            }
+
+              .mobile-disabled {
+                display: none;
             }
         }
     </style>
@@ -1141,8 +1148,7 @@
 <body>
 
 
-    <link rel="preload" as="image"
-        href="https://images.dyl.com/marketing-web/images/industries/education/man-teaching.webp" fetchpriority="high">
+ 
     <div class="subpage-highlight-section-wrapper bg-white">
         <section class="container subpage-highlight-section section u-content-space-half">
             <div class="row align-items-center p-4">
@@ -1158,7 +1164,7 @@
                 </div>
                 <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0">
                     <img src="https://images.dyl.com/marketing-web/images/industries/education/man-teaching.webp"
-                        class="img-fluid z-depth-1 py-0 center-block" width="475" height="354"
+                        class="img-fluid z-depth-1 py-0 center-block mobile-disabled" width="475" height="354"
                         alt="man teaching the woman" loading="eager">
                 </div>
             </div>
@@ -3351,8 +3357,7 @@ thank-you" />
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Plugins (can use defer if they don’t run instantly) -->
     <script src="js/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
@@ -3414,22 +3419,9 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
+   
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+  
     <script defer>
 
         jQuery.event.special.touchstart = {
