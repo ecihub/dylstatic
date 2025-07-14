@@ -17,7 +17,7 @@
         content="Watch our Farmers Webinar, The Technology of Insurance Sales With David Offutt. DYL is the best business phone service with sales automation for Farmers insurance agents.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
- <link rel="preload" href="scss/index.min.css" as="style">
+    <link rel="preload" href="scss/index.min.css" as="style">
     <link rel="stylesheet" href="scss/index.min.css">
     <link rel="stylesheet" href="css/stream-styles.css" media="print" onload="this.media='all'">
     <noscript>
@@ -78,13 +78,14 @@
         }
 
         @media (min-width: 320px) and (max-width: 768px) {
-             h1 {
+            h1 {
                 font-size: 2.5rem;
             }
 
             .text-sky-blue {
                 color: #0269ff !important;
             }
+
             #webpPlaceholder {
                 width: 345px;
                 height: 194px;
@@ -3755,7 +3756,7 @@ thank-you" />
         </div>
     </div>
 
-      <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Plugins (can use defer if they don’t run instantly) -->
     <script src="js/popper.min.js" defer></script>
@@ -3818,22 +3819,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3858,7 +3844,7 @@ thank-you" />
         };
     </script>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" defer
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" defer
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script defer src="js/front-init-product.js"></script>
@@ -3963,7 +3949,13 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-    
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
 
 </body>
 
