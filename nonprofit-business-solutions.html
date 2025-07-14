@@ -24,7 +24,7 @@
     <noscript>
         <link rel="stylesheet" href="css/stream-styles.css">
     </noscript>
-    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+     <link rel="preconnect" href="https://prism.app-us1.com" crossorigin>
     <link rel="preload" as="font" type="font/woff2" crossorigin
         href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
@@ -76,6 +76,8 @@
     </style>
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/industries/nonprofit/nonprofit-bg.webp" fetchpriority="high">
+         <link rel="preload" as="image"
+        href="https://images.dyl.com/marketing-web/images/industries/nonprofit/woman-with-coffee.webp" fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
 
@@ -1183,8 +1185,17 @@
                 </div>
                 <div
                     class="col-md-6 col-10 order-md-2 order-1 ml-md-auto mr-lg-0 mr-md-auto ml-sm-auto ml-xs-auto mr-sm-auto mr-xs-auto text-right">
-                    <img src="https://images.dyl.com/marketing-web/images/industries/nonprofit/woman-with-coffee.webp"
-                        class="img-fluid" alt="woman with coffee" width="502" height="375">
+                    <picture>
+                        <source media="(max-width: 768px)"
+                            srcset="https://images.dyl.com/marketing-web/images/industries/nonprofit/woman-with-coffee-mob.webp"
+                            type="image/webp">
+                        <source media="(min-width: 769px)"
+                            srcset="https://images.dyl.com/marketing-web/images/industries/nonprofit/woman-with-coffee.webp" type="image/webp"
+                          >
+                        <img src="https://images.dyl.com/marketing-web/images/industries/nonprofit/woman-with-coffee.webp" 
+                           alt="woman with coffee" width="502" height="375" class="img-fluid z-depth-1 py-0 center-block mobile-disabled"
+                            decoding="async">
+                    </picture>
                 </div>
             </div>
         </section>
