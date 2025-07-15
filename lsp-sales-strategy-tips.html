@@ -3899,7 +3899,7 @@ thank-you" />
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script defer src="js/front.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js" defer></script>
+    <script type="module" src="js/lite-vimeo.js" defer></script>
     <script>
 
         function trackEvent2(eventName, eventData) {
@@ -4003,6 +4003,51 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+    <script>
+    window.addEventListener('load', () => {
+if (window.innerWidth <= 767) {
+  const observer = new MutationObserver((mutations, obs) => {
+    const webp = document.querySelector('source[srcset*="mw="][type="image/webp"]');
+    const jpeg = document.querySelector('source[srcset*="mw="][type="image/jpeg"]');
+    const fallback = document.querySelector('img[src*="mw="]');
+
+    let updated = false;
+
+    if (webp) {
+      webp.srcset = webp.srcset
+        .replace(/mw=\d+/, 'mw=382')
+        .replace(/mh=\d+/, 'mh=215');
+    
+      updated = true;
+    }
+
+    if (jpeg) {
+      jpeg.srcset = jpeg.srcset
+        .replace(/mw=\d+/, 'mw=382')
+        .replace(/mh=\d+/, 'mh=215');
+    
+      updated = true;
+    }
+
+    if (fallback) {
+      fallback.src = fallback.src
+        .replace(/mw=\d+/, 'mw=382')
+        .replace(/mh=\d+/, 'mh=215');
+    
+      updated = true;
+    }
+
+    if (updated) {
+      obs.disconnect(); // Stop watching once done
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+}})
+</script>
 </body>
 
 </html>
