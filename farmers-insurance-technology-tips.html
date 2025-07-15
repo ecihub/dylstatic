@@ -99,9 +99,13 @@
             }
 
             #fallbackPlaceholder {
-                width: 345px;
-                height: 194px;
+                /*width: 345px;
+                height: 194px;*/
+                display: none !important;
             }
+
+                  lite-vimeo::part(placeholder) img {
+            display: none !important;
 
         }
     </style>
@@ -3958,7 +3962,18 @@ thank-you" />
             document.body.appendChild(script);
         });
     </script>
-
+       <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth > 600) {
+      const container = document.getElementById("davidplay");
+      const liteVimeo = document.createElement("lite-vimeo");
+      liteVimeo.setAttribute("videoid", "281538700");
+      liteVimeo.className = "embed-responsive-item";
+      liteVimeo.style = "z-index: 34; position: absolute; top: 0; left: 0;";
+      container.appendChild(liteVimeo);
+    }
+  });
+</script>
 </body>
 
 </html>
