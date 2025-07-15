@@ -5340,7 +5340,6 @@ thank-you" />
                     el.classList.remove('aos-animate');
                 });
 
-                // Remove all AOS attributes from elements
                 document.querySelectorAll('[data-aos]').forEach(el => {
                     el.removeAttribute('data-aos');
                 });
@@ -5359,8 +5358,6 @@ thank-you" />
     };
   }
 
-  // Replace layout-thrashing width check with optimized version
-  // Only run this if 'c' and 'n' are defined in your code
   (function() {
     if (typeof c !== 'undefined' && typeof n === 'function') {
       const cachedWidth = c.clientWidth || c.getBoundingClientRect().width || 0;
