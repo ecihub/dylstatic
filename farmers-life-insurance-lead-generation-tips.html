@@ -122,6 +122,10 @@
                 height: 194px;
             }
 
+              lite-vimeo::part(placeholder) img {
+            display: none !important;
+        }
+
         }
     </style>
     <link rel="preload" as="image" type="image/webp"
@@ -3973,7 +3977,18 @@ thank-you" />
             document.body.appendChild(script);
         });
     </script>
-
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth > 600) {
+      const container = document.getElementById("graysonplay");
+      const liteVimeo = document.createElement("lite-vimeo");
+      liteVimeo.setAttribute("videoid", "266358617");
+      liteVimeo.className = "embed-responsive-item";
+      liteVimeo.style = "z-index: 34; position: absolute; top: 0; left: 0;";
+      container.appendChild(liteVimeo);
+    }
+  });
+</script>
 </body>
 
 </html>
