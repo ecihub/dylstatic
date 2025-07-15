@@ -4086,6 +4086,17 @@ thank-you" />
             document.body.appendChild(script);
         });
     </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 600) {
+      const images = document.querySelectorAll("img.mobile-disabled");
+      images.forEach(img => {
+        img.setAttribute("loading", "lazy");
+      });
+    }
+  });
+</script>
+
 
 </body>
 
