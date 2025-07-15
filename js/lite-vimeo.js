@@ -1,32 +1,4 @@
-/**
- *
- * The shadowDom / Intersection Observer version of Paul's concept:
- * https://github.com/paulirish/lite-youtube-embed
- *
- * A lightweight YouTube embed. Still should feel the same to the user, just
- * MUCH faster to initialize and paint.
- *
- * Thx to these as the inspiration
- *   https://storage.googleapis.com/amp-vs-non-amp/youtube-lazy.html
- *   https://autoplay-youtube-player.glitch.me/
- *
- * Once built it, I also found these (👍👍):
- *   https://github.com/ampproject/amphtml/blob/master/extensions/amp-youtube
- *   https://github.com/Daugilas/lazyYT https://github.com/vb/lazyframe
- */
-/*
- * Vimeo example embed markup:
-<iframe src="https://player.vimeo.com/video/364402896"
-  width="640" height="360"
-  frameborder="0"
-  allow="autoplay; fullscreen" allowfullscreen>
-</iframe>
-<p><a href="https://vimeo.com/364402896">
-  Alex Russell - The Mobile Web: MIA</a> from
-    <a href="https://vimeo.com/fronteers">Fronteers</a>
-    on <a href="https://vimeo.com">Vimeo</a>.
-</p>
- */
+
 let LiteVimeoEmbed = /** @class */ (() => {
     class LiteVimeoEmbed extends HTMLElement {
         constructor() {
