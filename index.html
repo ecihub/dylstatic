@@ -38,8 +38,8 @@
     </noscript>
     <link rel="preload" as="font" type="font/woff2" crossorigin
         href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
-    <link rel="preconnect" href="https://prism.app-us1.com" crossorigin>
-     <link rel="preconnect" href="https://a.clarity.ms" crossorigin>
+
+
 
     <style>
         body {
@@ -2672,8 +2672,7 @@
                 </div>
 
             </div>
-            <div class="container-fluid cta-form-bot text-center pt-5 pb-5 aos-init aos-animate"
-                data-aos="fade-up">
+            <div class="container-fluid cta-form-bot text-center pt-5 pb-5 aos-init aos-animate" data-aos="fade-up">
                 <div class="waves-svg mobile-disabled">
                     <svg alt="Bottom Form" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                         preserveAspectRatio="none">
@@ -5162,7 +5161,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
+    <!--<script type="text/javascript" async>
         (function (c, l, a, r, i, t, y) {
             c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
             t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
@@ -5170,7 +5169,7 @@ thank-you" />
         })(window, document, "clarity", "script", "8lb3vpm72e");
     </script>
 
-   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -5235,13 +5234,13 @@ thank-you" />
     </script>
 
 
-    <script defer src="js/aos.js"></script>
+    <script src="js/aos.js" defer></script>
 
 
     <!--<script defer src="js/pre-loader.c0cd18f3dfa086bb0f9be2aa23cb57af541f32c1b4d5be81385c57cf754c49ca.js"></script>-->
-    <script defer src="js/front-init.f00d63a840ac7b985704c3c61f00b2f80df10e1814963c88c1b94f9b3fa1ae27.min.js" defer></script>
-    <script defer src="js/slick.min.js"></script>
-    <script>
+    <script src="js/front-init.f00d63a840ac7b985704c3c61f00b2f80df10e1814963c88c1b94f9b3fa1ae27.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script defer>
         $(window).on('load', function () {
             const $carousel = $('.js-slick-carousel');
 
@@ -5341,7 +5340,7 @@ thank-you" />
                     el.classList.remove('aos-init');
                 });
 
-                 document.querySelectorAll('.aos-animate').forEach(el => {
+                document.querySelectorAll('.aos-animate').forEach(el => {
                     el.classList.remove('aos-animate');
                 });
 
@@ -5355,42 +5354,29 @@ thank-you" />
         };
     </script>
     <script>
-  // Override jQuery's visibility filter to avoid forced reflows
-  if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
-    jQuery.expr.filters.visible = function(elem) {
-      const rect = elem.getBoundingClientRect();
-      return rect.width > 0 || rect.height > 0;
-    };
-  }
+        // Override jQuery's visibility filter to avoid forced reflows
+        if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
+            jQuery.expr.filters.visible = function (elem) {
+                const rect = elem.getBoundingClientRect();
+                return rect.width > 0 || rect.height > 0;
+            };
+        }
 
-  (function() {
-    if (typeof c !== 'undefined' && typeof n === 'function') {
-      const cachedWidth = c.clientWidth || c.getBoundingClientRect().width || 0;
-      a = 12 === n(cachedWidth / 3);
-    }
-  })();
-</script>
-</body>
+        (function () {
+            if (typeof c !== 'undefined' && typeof n === 'function') {
+                const cachedWidth = c.clientWidth || c.getBoundingClientRect().width || 0;
+                a = 12 === n(cachedWidth / 3);
+            }
+        })();
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = 'js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
 
-<script>
-  if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
-    jQuery.expr.filters.visible = function(elem) {
-      const rect = elem.getBoundingClientRect();
-      return rect.width > 0 || rect.height > 0;
-    };
-  }
-
-  // Example: Custom usage
-  (function() {
-    const c = document.querySelector('#myElement'); // replace with your element
-    const n = Math.round; // replace with your logic if different
-    if (c) {
-      const cachedWidth = c.clientWidth || c.getBoundingClientRect().width || 0;
-      const a = 12 === n(cachedWidth / 3);
-    
-    }
-  })();
-</script>
 
 </body>
 
