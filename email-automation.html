@@ -66,16 +66,16 @@
                 color: #0269ff !important;
             }
 
-            
-              .mobile-disabled {
+
+            .mobile-disabled {
                 display: none;
             }
         }
     </style>
     <link rel="preload" as="image" fetchpriority="high"
         href="https://images.dyl.com/marketing-web/images/features/attach-google-docs-documents-to-emails.webp">
-    <link rel="preload" fetchpriority="high" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+    <link rel="preload" fetchpriority="high" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png"
+        as="image" type="image/webp">
 
 </head>
 <header id="header"
@@ -1155,11 +1155,11 @@
                         <source media="(max-width: 768px)" srcset="">
                         <source media="(min-width: 769px)"
                             srcset="https://images.dyl.com/marketing-web/images/product/email-automation/man-thinking.webp">
-                        <img src="https://images.dyl.com/marketing-web/images/product/email-automation/man-thinking.webp" width="539"
-                            height="429" class="img-fluid z-depth-1 py-0 center-block mobile-disabled"
+                        <img src="https://images.dyl.com/marketing-web/images/product/email-automation/man-thinking.webp"
+                            width="539" height="429" class="img-fluid z-depth-1 py-0 center-block mobile-disabled"
                             alt="Automate emails to save time and increase productivity">
                     </picture>
-                
+
                 </div>
                 <div class="col-md-6 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 px-0">
                     <h1 class="feature-highlight-h2 pb-5 d3 text-sky-blue">
@@ -3640,7 +3640,7 @@ thank-you" />
         </div>
     </div>
 
-      <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <!-- Plugins (can use defer if they don’t run instantly) -->
     <script src="js/popper.min.js" defer></script>
@@ -3696,7 +3696,7 @@ thank-you" />
         <i class="fas fa-angle-up"></i>
     </a>
 
-    
+
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
             var scriptElement = document.createElement('script');
@@ -3723,7 +3723,7 @@ thank-you" />
         });
 
     </script>
-  
+
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3806,15 +3806,24 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-     <script>
+    <script>
         window.addEventListener('load', function () {
             const script = document.createElement('script');
             script.src = 'js/jquery.min.js';
             document.body.appendChild(script);
         });
     </script>
-   
-    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-disabled");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
