@@ -29,7 +29,6 @@
     <link rel="preload" as="font" type="font/woff2" crossorigin
         href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <link rel="preconnect" href="https://prism.app-us1.com" crossorigin>
-      <link rel="preconnect" href="https://dylstatic.vercel.app" crossorigin>
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -1228,7 +1227,7 @@
                                     <div
                                         class="col-md-6 col-10 order-md-2 order-1 ml-md-auto mr-lg-0 mr-md-auto ml-sm-auto ml-xs-auto mr-sm-auto mr-xs-auto text-right">
                                         <img src="https://images.dyl.com/marketing-web/images/product/email-automation/tab-1.webp"
-                                            width="444" height="406" loading="lazy" class="img-fluid"
+                                            width="444" height="406" loading="lazy" class="img-fluid mobile-disabled"
                                             alt="Team member attaching Google Docs to email">
                                     </div>
                                     <div
@@ -1246,7 +1245,7 @@
                                     <div
                                         class="col-md-6 col-10 order-md-2 order-1 ml-md-auto mr-lg-0 mr-md-auto ml-sm-auto ml-xs-auto mr-sm-auto mr-xs-auto text-right">
                                         <img src="https://images.dyl.com/marketing-web/images/product/email-automation/tab-2.webp"
-                                            loading="lazy" width="444" height="406" class="img-fluid"
+                                            loading="lazy" width="444" height="406" class="img-fluid mobile-disabled"
                                             alt="Team collaborating on email pictures sharing">
                                     </div>
                                     <div
@@ -1291,7 +1290,7 @@
                                     <div
                                         class="col-md-6 col-10 order-md-2 order-1 ml-md-auto mr-lg-0 mr-md-auto ml-sm-auto ml-xs-auto mr-sm-auto mr-xs-auto text-right">
                                         <img src="https://images.dyl.com/marketing-web/images/product/email-automation/tab-3.webp"
-                                            loading="lazy" width="444" height="406" class="img-fluid"
+                                            loading="lazy" width="444" height="406" class="img-fluid mobile-disabled"
                                             alt="Team collaboration driving success with Lead Engine strategies">
                                     </div>
                                     <div
@@ -3707,6 +3706,9 @@ thank-you" />
             headElement.appendChild(scriptElement);
         }
     </script>
+    <script src="js/jquery.validate.min.js" defer></script>
+
+    <script src="js/front.min.js" defer></script>
     <script defer>
         var popup2Quote = false;
 
@@ -3804,10 +3806,15 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+     <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = 'js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
    
-    <script src="js/jquery.validate.min.js" defer></script>
-
-    <script src="js/front.min.js" defer></script>
+    
 </body>
 
 </html>
