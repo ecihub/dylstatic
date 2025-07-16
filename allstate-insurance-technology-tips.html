@@ -19,13 +19,17 @@
         content="Watch our Allstate Webinar, Sales and Technology Round Up With Jeff Shi and Joseph Noah. DYL is the best business phone service with sales automation for Allstate insurance agents.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="scss/index.min.css" as="style">
-    <link rel="stylesheet" href="scss/index.min.css">
+     <link rel="preload" href="scss/cs.css" as="style">
+    <link rel="stylesheet" href="scss/cs.css">
+    <link rel="stylesheet" href="css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/stream-styles.css">
+    </noscript>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
-    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
-
-
-    <link rel="stylesheet" href="css/stream-styles.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://prism.app-us1.com" crossorigin>
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -3735,12 +3739,10 @@ thank-you" />
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
@@ -3841,10 +3843,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script defer src="js/front-init-product.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+      <script defer src="js/inner.js"></script>
+    <script type="module" src="js/lite-vimeo.js"></script>
   	<script>
 
 			function trackEvent2(eventName, eventData) {
@@ -3948,7 +3949,52 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.innerWidth <= 767) {
+                const observer = new MutationObserver((mutations, obs) => {
+                    const webp = document.querySelector('source[srcset*="mw="][type="image/webp"]');
+                    const jpeg = document.querySelector('source[srcset*="mw="][type="image/jpeg"]');
+                    const fallback = document.querySelector('img[src*="mw="]');
 
+                    let updated = false;
+
+                    if (webp) {
+                        webp.srcset = webp.srcset
+                            .replace(/mw=\d+/, 'mw=382')
+                            .replace(/mh=\d+/, 'mh=215');
+
+                        updated = true;
+                    }
+
+                    if (jpeg) {
+                        jpeg.srcset = jpeg.srcset
+                            .replace(/mw=\d+/, 'mw=382')
+                            .replace(/mh=\d+/, 'mh=215');
+
+                        updated = true;
+                    }
+
+                    if (fallback) {
+                        fallback.src = fallback.src
+                            .replace(/mw=\d+/, 'mw=382')
+                            .replace(/mh=\d+/, 'mh=215');
+
+                        updated = true;
+                    }
+
+                    if (updated) {
+                        obs.disconnect(); // Stop watching once done
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        })
+    </script>
 </body>
 
 </html>
