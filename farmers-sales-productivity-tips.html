@@ -3934,7 +3934,59 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+     <script>
+            window.addEventListener('load', function () {
+                const script = document.createElement('script');
+                script.src = 'js/jquery.min.js';
+                document.body.appendChild(script);
+            });
+    </script>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.innerWidth <= 767) {
+                const observer = new MutationObserver((mutations, obs) => {
+                    const webp = document.querySelector('source[srcset*="mw="][type="image/webp"]');
+                    const jpeg = document.querySelector('source[srcset*="mw="][type="image/jpeg"]');
+                    const fallback = document.querySelector('img[src*="mw="]');
 
+                    let updated = false;
+
+                    if (webp) {
+                        webp.srcset = webp.srcset
+                            .replace(/mw=\d+/, 'mw=382')
+                            .replace(/mh=\d+/, 'mh=215');
+
+                        updated = true;
+                    }
+
+                    if (jpeg) {
+                        jpeg.srcset = jpeg.srcset
+                            .replace(/mw=\d+/, 'mw=382')
+                            .replace(/mh=\d+/, 'mh=215');
+
+                        updated = true;
+                    }
+
+                    if (fallback) {
+                        fallback.src = fallback.src
+                            .replace(/mw=\d+/, 'mw=382')
+                            .replace(/mh=\d+/, 'mh=215');
+
+                        updated = true;
+                    }
+
+                    if (updated) {
+                        obs.disconnect(); // Stop watching once done
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        })
+    </script>
 </body>
 
 </html>
