@@ -67,9 +67,7 @@
                 .mobile-display-none {
                 display: none !important;
             }
-             .mobile-display-none {
-                display: none !important;
-            }
+            
         }
     </style>
 
@@ -3139,72 +3137,7 @@ thank-you" />
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
     <script defer src="../js/front.min.js"></script>
-    <script>
-
-        $(document).on('ready', function () {
-
-
-            $(".gloss-search-bar").submit(function () {
-                event.preventDefault();
-            });
-
-
-            // initialization of form validation
-            $('.js-validate').each(function () {
-
-                var validation = $.HSCore.components.HSValidation.init($(this), {
-                    rules: {
-                        inf_field_Phone1: {
-                            required: true,
-                            digits: true,
-                            rangelength: [10, 10],
-                        },
-                    }
-                });
-            });
-
-
-
-            $('#demoOne').listnav({
-                includeNums: false,
-                showCounts: false,
-                filterSelector: '.terminology-name',
-                noMatchText: '',
-                onClick: function (letter) {
-                    if (letter.toUpperCase() == 'ALL') {
-                        window.location.href = "./glossary.html";
-                    }
-                }
-            });
-
-            $('.terminology-search').keyup(function () {
-
-                let text = this.value.toLowerCase();
-
-                $("#demoOne .terminology-container").each(function (index, element) {
-
-
-                    var term_text = $(element).find('.terminology-name').text().toLowerCase();
-
-                    if (term_text.search(text) > -1) {
-                        $(element).removeClass('listNavHide');
-                        $(element).addClass('listNavShow');
-                    } else {
-                        $(element).removeClass('listNavShow');
-                        $(element).addClass('listNavHide');
-                    }
-
-                });
-
-
-            });
-
-
-
-        });
-
-
-    </script>
+   
 
       <script type="text/javascript">
 
