@@ -1158,12 +1158,12 @@
 
                         
 
-                            <a href="/glossary/?term=features" class="term-category-name transition-3d-hover">
+                            <a href="features.html" class="term-category-name transition-3d-hover">
                                 Features
                             </a>
                         
 
-                            <a href="/glossary/?term=voip" class="term-category-name transition-3d-hover">
+                            <a href="voip.html" class="term-category-name transition-3d-hover">
                                 VoIP
                             </a>
                         
@@ -1197,7 +1197,7 @@
                                 Related Reading
                             </p>
                             <p class="h6-glossary-sub">
-                                <a href="/glossary/what-is-warm-transfer" class="term-icon-text-heading">
+                                <a href="what-is-warm-transfer.html" class="term-icon-text-heading">
                                     What is Warm Transfer?
                                     <i class="fas term">
                                          
@@ -3099,22 +3099,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+ 
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3142,9 +3127,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script>
 
         $(document).on('ready', function () {
@@ -3266,7 +3251,13 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-
+       <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
 </body>
 
 </html>
