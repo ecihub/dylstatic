@@ -20,8 +20,13 @@
         sizes="16x16">
     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+ <link rel="stylesheet" href="../css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/stream-styles.css">
+    </noscript>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
+   
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -57,6 +62,9 @@
 
             .text-sky-blue {
                 color: #0269ff !important;
+            }
+                .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
@@ -1154,12 +1162,12 @@
 
 
 
-                    <a href="/glossary/?term=features" class="term-category-name transition-3d-hover">
+                    <a href="features.html" class="term-category-name transition-3d-hover">
                         Features
                     </a>
 
 
-                    <a href="/glossary/?term=voip" class="term-category-name transition-3d-hover">
+                    <a href="voip.html" class="term-category-name transition-3d-hover">
                         VoIP
                     </a>
 
@@ -1351,8 +1359,8 @@
                                     include account notifications, customer support, delivery updates, fraud alerts, or
                                     marketing content. Message frequency may vary, and standard messaging and data rates
                                     may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see
-                                    our <a href="http://dyl.com/terms-of-service">Terms and Conditions</a> and <a
-                                        href="https://dyl.com/privacy-policy">Privacy Policy</a>.
+                                    our <a href="http://dyl.com/terms-of-service" style="text-decoration: underline;font-weight: bold">Terms and Conditions</a> and <a
+                                        href="https://dyl.com/privacy-policy" style="text-decoration: underline;font-weight: bold">Privacy Policy</a>.
                                 </p>
                                 <div class="_row _checkbox-radio">
                                     <input id="field_66I opt-in to receive SMS messages." type="radio" name="field[66]"
@@ -3037,11 +3045,10 @@ thank-you" />
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -3142,10 +3149,10 @@ thank-you" />
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script>
 
         $(document).on('ready', function () {
@@ -3267,7 +3274,13 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-
+       <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
 </body>
 
 </html>
