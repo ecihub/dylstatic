@@ -11,10 +11,7 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-       
         Features | Glossary | DYL
-    
-
     </title>
     <meta name="description"
         content="Explore features defined! Our glossary simplifies business tool functionalities, helping you harness their power for success.">
@@ -22,8 +19,13 @@
         sizes="16x16">
     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="stylesheet" href="../css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/stream-styles.css">
+    </noscript>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
-    <link rel="stylesheet" href="../css/stream-styles.css">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -52,6 +54,11 @@
             height: auto;
         }
 
+         .gloss-bx-inline-block img {
+                height: auto !important;
+                width: auto !important;
+            } 
+
         @media (min-width: 320px) and (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -64,8 +71,10 @@
     </style>
 
 
-    <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
+     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
+     <link rel="preload" href="https://storage.googleapis.com/marketing-public-images/marketing-blog/glossary-hero.webp" as="image"
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -1595,8 +1604,10 @@
                                     include account notifications, customer support, delivery updates, fraud alerts, or
                                     marketing content. Message frequency may vary, and standard messaging and data rates
                                     may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see
-                                    our <a href="http://dyl.com/terms-of-service">Terms and Conditions</a> and <a
-                                        href="https://dyl.com/privacy-policy">Privacy Policy</a>.
+                                    our <a href="http://dyl.com/terms-of-service" 
+                                        style="text-decoration: underline;font-weight: bold">Terms and Conditions</a> and <a
+                                        href="https://dyl.com/privacy-policy" 
+                                        style="text-decoration: underline;font-weight: bold">Privacy Policy</a>.
                                 </p>
                                 <div class="_row _checkbox-radio">
                                     <input id="field_66I opt-in to receive SMS messages." type="radio" name="field[66]"
@@ -3556,11 +3567,10 @@ thank-you" />
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -3619,22 +3629,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+    
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3662,9 +3657,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script>
 
         $(document).on('ready', function () {
@@ -3732,7 +3727,7 @@ thank-you" />
 
     </script>
 
-      <script type="text/javascript">
+    <script type="text/javascript">
 
         function loadSales() {
 
@@ -3786,7 +3781,13 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
 </body>
 
 </html>
