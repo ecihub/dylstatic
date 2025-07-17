@@ -19,10 +19,14 @@
         content="softphone Integration lets you import your DYL customer records automatically .">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
+     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+    <link rel="stylesheet" href="../css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/stream-styles.css">
+    </noscript>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -1331,8 +1335,10 @@
                                     include account notifications, customer support, delivery updates, fraud alerts, or
                                     marketing content. Message frequency may vary, and standard messaging and data rates
                                     may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see
-                                    our <a href="http://dyl.com/terms-of-service">Terms and Conditions</a> and <a
-                                        href="https://dyl.com/privacy-policy">Privacy Policy</a>.
+                                    our <a href="http://dyl.com/terms-of-service" 
+                                        style="text-decoration: underline;font-weight: bold">Terms and Conditions</a> and <a
+                                        href="https://dyl.com/privacy-policy" 
+                                        style="text-decoration: underline;font-weight: bold">Privacy Policy</a>.
                                 </p>
                                 <div class="_row _checkbox-radio">
                                     <input id="field_66I opt-in to receive SMS messages." type="radio" name="field[66]"
