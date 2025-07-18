@@ -57,6 +57,11 @@
             height: auto;
         }
 
+         .gloss-bx-inline-block img {
+                height: auto !important;
+                width: auto !important;
+            } 
+
         @media (min-width: 320px) and (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -65,12 +70,23 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
+
+              .mobile-display-none {
+                display: none !important;
+            }
+
+             .gloss-bx-inline-block img {
+                height: auto !important;
+                width: auto !important;
+            } 
         }
     </style>
 
 
-    <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
+     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
+     <link rel="preload" href="https://storage.googleapis.com/marketing-public-images/marketing-blog/glossary-hero.webp" as="image"
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -1164,7 +1180,7 @@
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 pt-5">
                         <img src="https://storage.googleapis.com/marketing-public-images/marketing-blog/glossary-hero.webp"
-                            class="gloss-img-fluid img-fluid z-depth-1 py-0 center-block " width="438" height="412"
+                            class="gloss-img-fluid img-fluid z-depth-1 py-0 center-block mobile-display-none" width="438" height="412"
                             alt="Lead Routing">
                     </div>
                 </div>
