@@ -20,8 +20,12 @@
         sizes="16x16">
     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+  <link rel="stylesheet" href="../css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/stream-styles.css">
+    </noscript>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -58,9 +62,14 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
+
+             .mobile-display-none {
+                display: none !important;
+            }
         }
     </style>
-
+       <link rel="preload" href="https://images.dyl.com/marketing-web/images/ebooks/cold-email-templates-for-life-and-auto-insurance.webp" as="image"
+        type="image/webp" fetchpriority="high">
 
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
@@ -1170,7 +1179,7 @@
                 </div>
                 <div class="col-lg-6  order-md-2 order-1 text-right pr-md-0 pl-md-3 px-0 pt-5 local-business-tablet">
                     <img src="https://images.dyl.com/marketing-web/images/ebooks/cold-email-templates-for-life-and-auto-insurance.webp"
-                        class="img-fluid py-0 center-block ebook-himage-mobile"
+                        class="img-fluid py-0 center-block ebook-himage-mobile mobile-display-none"
                         alt="front cover cold email templates for life and auto insurance" width="900" height="500"
                         srcset="https://images.dyl.com/marketing-web/images/ebooks/cold-email-templates-for-life-and-auto-insurance.webp 900w,
                                             https://images.dyl.com/marketing-web/images/ebooks/cold-email-templates-for-life-and-auto-insurance.webp 400w,
@@ -3097,11 +3106,10 @@ thank-you" />
 </script>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -3160,22 +3168,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+  
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3202,10 +3195,10 @@ thank-you" />
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js" defer></script>
 
      <script type="text/javascript">
 
@@ -3261,6 +3254,23 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+      <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
+     <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 600) {
+      const images = document.querySelectorAll("img.mobile-disabled");
+      images.forEach(img => {
+        img.setAttribute("loading", "lazy");
+      });
+    }
+  });
+</script>
 </body>
 
 </html>

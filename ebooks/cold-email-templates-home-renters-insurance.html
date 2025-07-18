@@ -62,6 +62,10 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
+
+            .mobile-display-none {
+                display: none !important;
+            }
         }
     </style>
 
@@ -1181,7 +1185,7 @@
                     <div
                         class="col-lg-6  order-md-2 order-1 text-right pr-md-0 pl-md-3 px-0 pt-5 local-business-tablet">
                         <img src="https://images.dyl.com/marketing-web/images/ebooks/cold-outreach-templates-for-homeowner-and-renters.webp"
-                            class="img-fluid py-0 center-block ebook-himage-mobile"
+                            class="img-fluid py-0 center-block ebook-himage-mobile mobile-display-none"
                             alt="front cover cold email templates for home and renters insurance" width="900"
                             height="500"
                             srcset="https://images.dyl.com/marketing-web/images/ebooks/cold-outreach-templates-for-homeowner-and-renters.webp 900w,
@@ -3123,9 +3127,10 @@ thank-you" />
 
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -3212,9 +3217,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js" defer></script>
 
      <script type="text/javascript">
 
@@ -3270,6 +3275,24 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+
+      <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
+     <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 600) {
+      const images = document.querySelectorAll("img.mobile-disabled");
+      images.forEach(img => {
+        img.setAttribute("loading", "lazy");
+      });
+    }
+  });
+</script>
 </body>
 
 </html>
