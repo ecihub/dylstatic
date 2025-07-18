@@ -3312,7 +3312,28 @@ thank-you" />
             }
         });
     </script>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let iframeLoaded = false;
+            function loadIframe() {
+                if (iframeLoaded) return;
+                const iframe = document.querySelector('.ebook-preview');
+                iframe.src = iframe.dataset.src;
+                iframeLoaded = true;
+            }
+
+            window.addEventListener('scroll', function () {
+                const iframe = document.querySelector('.ebook-preview');
+                if (!iframe) return;
+                const rect = iframe.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 200) {  // 200px before visible
+                    loadIframe();
+                }
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>
