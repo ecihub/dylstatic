@@ -18,10 +18,16 @@
         content="Download this essential guide for expert strategies and tech insights to revolutionize insurance sales in 2025 and exceed your goals with innovative tactics.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
+   <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+    <link rel="stylesheet" href="../css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/stream-styles.css">
+    </noscript>
+    <link rel="preconnect" href="https://e.issuu.com" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
+     <link rel="preconnect" href="https://prism.app-us1.com" crossorigin>
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -50,6 +56,18 @@
             height: auto;
         }
 
+       .ebook-preview-button {
+            border: 0 !important;
+        }
+
+        .desktop-display-none {
+            display: none ;
+        }
+
+          .mobile-display-none {
+                display: block;
+            }
+
         @media (min-width: 320px) and (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -58,10 +76,31 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
+
+            .mobile-display-none {
+                display: none !important;
+            }
+
+            .ebook-preview {
+                position: relative;
+                border: none;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+             .desktop-display-none {
+            display: block !important;
+        }
         }
     </style>
 
-
+     <link rel="preload" as="image"
+        href="https://images.dyl.com/marketing-web/images/ebooks/large-front-cover-insurance-selling-tactics.webp"
+        fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
 
@@ -1248,6 +1287,20 @@
 
                     </ul>
                 </div>
+
+                 <div class="col-md-6 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0 feature-page-heading-2">
+                        <div id="issuu-container">
+                             <button onclick="loadIssuuEmbed()" class="btn btn-blue-ribbon desktop-display-none">
+                                 View Ebook Preview
+                            </button>
+                            <button onclick="loadIssuuEmbed()" class="ebook-preview-button mobile-display-none">
+                                <img class="img-fluid"
+                                    src="https://images.dyl.com/marketing-web/images/ebooks/preview/eb2.webp"
+                                    alt="small-dyl-ebook-insurance-selling-tactics-2025" loading="lazy" width="527" height="658">
+                            </button>
+                        </div>
+                    </div>
+
                 <div class="col-md-6 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0 feature-page-heading-2">
                     <div>
                         <iframe allow="clipboard-write" sandbox=" allow-top-navigation-by-user-activation 
@@ -1776,7 +1829,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
+        <script defer>
             (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
             vgo('setAccount', '799988831');
             vgo('setTrackByDefault', true);
@@ -3079,11 +3132,10 @@ thank-you" />
         });
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+     <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -3242,6 +3294,40 @@ thank-you" />
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
         });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
+     <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        function loadIssuuEmbed() {
+            document.getElementById('issuu-container').innerHTML = `
+            <iframe 
+                allow="clipboard-write" 
+                sandbox="allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                loading="lazy"
+                allowfullscreen 
+                referrerpolicy="no-referrer" 
+                class="ebook-preview"
+                width="100%" height="600"
+                src="https://e.issuu.com/embed.html?d=small-dyl-ebook-insurance-selling-tactics-2025-edi&amp;hideIssuuLogo=true&amp;pageLayout=singlePage&amp;u=dyl123"
+                title="ebook preview">
+            </iframe>
+        `;
+        }
     </script>
 </body>
 
