@@ -61,9 +61,13 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
+              .mobile-display-none {
+                display: none !important;
+            }
         }
     </style>
-
+       <link rel="preload" as="image" href="https://images.dyl.com/marketing-web/images/ebooks/front-cover-sales-ebook-sell-more-in-less-time.png"
+        fetchpriority="high">
 
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
@@ -1173,7 +1177,7 @@
                     <div
                         class="col-lg-6  order-md-2 order-1 text-right pr-md-0 pl-md-3 px-0 pt-5 local-business-tablet">
                         <img src="https://images.dyl.com/marketing-web/images/ebooks/front-cover-sales-ebook-sell-more-in-less-time.png"
-                            class="img-fluid py-0 center-block ebook-himage-mobile"
+                            class="img-fluid py-0 center-block ebook-himage-mobile mobile-display-none"
                             alt="front cover sales ebook sell more" width="900" height="500"
                             srcset="https://images.dyl.com/marketing-web/images/ebooks/front-cover-sales-ebook-sell-more-in-less-time.png 900w,
                                             https://images.dyl.com/marketing-web/images/ebooks/front-cover-sales-ebook-sell-more-in-less-time.png 400w,
@@ -3248,6 +3252,16 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
 </body>
