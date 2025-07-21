@@ -18,10 +18,16 @@
         content="Qualify and score leads effectively! Discover our ultimate guide with expert insights to boost lead conversion and sales success.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
+      <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+    <link rel="stylesheet" href="../css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/stream-styles.css">
+    </noscript>
+    <link rel="preconnect" href="https://e.issuu.com" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
+     <link rel="preconnect" href="https://prism.app-us1.com" crossorigin>
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -50,6 +56,18 @@
             height: auto;
         }
 
+        .ebook-preview-button {
+            border: 0 !important;
+        }
+
+        .desktop-display-none {
+            display: none ;
+        }
+
+          .mobile-display-none {
+                display: block;
+            }
+
         @media (min-width: 320px) and (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -58,13 +76,31 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
+
+            .mobile-display-none {
+                display: none !important;
+            }
+
+            .ebook-preview {
+                position: relative;
+                border: none;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+             .desktop-display-none {
+            display: block !important;
+        }
         }
     </style>
 
 
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
-
 
 </head>
 <header id="header"
@@ -231,7 +267,7 @@
                                                 <div class="position-relative ">
                                                     <img class="img-fluid rounded mb-3"
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-products.webp"
-                                                        alt="DYL 2.0 Platform" width="376" height="269">
+                                                        alt="DYL 2.0 Platform" width="376" height="269" lazyload="lazy">
                                                 </div>
                                                 <span class="text-blue-ribbon">DYL Software 2.0</span><span
                                                     class="badge badge-success badge-pill ml-3">Coming
@@ -502,7 +538,7 @@
                                                 <div class="position-relative">
                                                     <img class="img-fluid rounded mb-3 "
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-learn.webp"
-                                                        alt="DYL 2.0 Platform" width="236" height="149">
+                                                        alt="DYL 2.0 Platform" width="236" height="149" lazyload="lazy">
                                                 </div>
                                                 <span class="text-blue-ribbon">DYL Software 2.0</span><span
                                                     class="badge badge-success badge-pill ml-3">Coming
@@ -1174,7 +1210,7 @@
                     <div
                         class="col-lg-6  order-md-2 order-1 text-right pr-md-0 pl-md-3 px-0 pt-5 local-business-tablet">
                         <img src="https://images.dyl.com/marketing-web/images/ebooks/lead_qualification_and_scoring_ebook_image.webp"
-                            class="img-fluid py-0 center-block ebook-himage-mobile"
+                            class="img-fluid py-0 center-block ebook-himage-mobile mobile-display-none"
                             alt="lead qualification and scoring ebook" width="900" height="500" srcset="https://images.dyl.com/marketing-web/images/ebooks/lead_qualification_and_scoring_ebook_image.webp 900w,
                                              400w,
                                              600w" sizes="(max-width: 600px) 400px, (max-width: 900px) 600px, 900px">
@@ -1253,18 +1289,21 @@
 
                         </ul>
                     </div>
+
                     <div class="col-md-6 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0 feature-page-heading-2">
-                        <div>
-                            <iframe allow="clipboard-write" sandbox=" allow-top-navigation-by-user-activation 
-                                            allow-downloads 
-                                            allow-scripts 
-                                            allow-same-origin 
-                                            allow-popups  allow-popups-to-escape-sandbox" loading="lazy"
-                                allowfullscreen="" referrerpolicy="no-referrer" class="ebook-preview"
-                                src="https://e.issuu.com/embed.html?d=the_ultimate_guide_on_lead_qualification_and_scori&amp;u=dyl123"
-                                title="ebook preview"></iframe>
+                        <div id="issuu-container">
+                            <button onclick="loadIssuuEmbed()" class="btn btn-blue-ribbon desktop-display-none">
+                                View Ebook Preview
+                            </button>
+                            <button onclick="loadIssuuEmbed()" class="ebook-preview-button mobile-display-none">
+                                <img class="img-fluid"
+                                    src="https://images.dyl.com/marketing-web/images/ebooks/preview/eb14.webp"
+                                    alt="short-version-dyl-white-paper" loading="lazy" width="527" height="658">
+                            </button>
                         </div>
                     </div>
+
+                   
                 </div>
             </div>
         </section>
@@ -1783,14 +1822,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
-
+       
         <script>
 
             function setCookie(name, value, days) {
@@ -3108,11 +3140,10 @@ thank-you" />
         });
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -3171,22 +3202,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+  
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3213,10 +3229,10 @@ thank-you" />
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script type="text/javascript">
 
         function loadSales() {
@@ -3271,7 +3287,43 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
+   <script>
+    window.addEventListener('load', function () {
+        const script = document.createElement('script');
+        script.src = '../js/jquery.min.js';
+        script.defer = true;
+        document.body.appendChild(script);
+    });
+</script>
 
+    
+    <script>
+        function loadIssuuEmbed() {
+            document.getElementById('issuu-container').innerHTML = `
+            <iframe 
+                allow="clipboard-write" 
+                sandbox="allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                loading="lazy"
+                allowfullscreen 
+                referrerpolicy="no-referrer" 
+                class="ebook-preview"
+                width="100%" height="600"
+                src="https://e.issuu.com/embed.html?d=the_ultimate_guide_on_lead_qualification_and_scori&amp;u=dyl123"
+                title="ebook preview">
+            </iframe>
+        `;
+        }
+    </script>
 </body>
 
 </html>
