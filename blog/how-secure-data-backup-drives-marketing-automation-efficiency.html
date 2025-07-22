@@ -79,7 +79,7 @@
         href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
     <link rel="preload" href="https://storage.googleapis.com/marketing-public-images/marketing-blog/backup-photo.webp"
-        type="image/webp" fetchpriority="high">
+        type="image/webp" fetchpriority="high"  as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp" fetchpriority="high">
 
@@ -2155,17 +2155,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
+            
 
 
             window.onload = function () {
@@ -2831,32 +2821,15 @@ thank-you" />
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+     <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
-    <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
-        });
-    </script>
+   
 
 
-
-    <script>
+    <script defer>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
             var scriptElement = document.createElement('script');
             scriptElement.src = '/IEsupport.js';
@@ -2865,20 +2838,7 @@ thank-you" />
             headElement.appendChild(scriptElement);
         }
     </script>
-    <script>
-        var popup2Quote = false;
-
-        $(document).scroll(function () {
-            var y = $(this).scrollTop();
-            if (y > 2000 && !popup2Quote) {
-                $('#requestQuoteContent').fadeIn();
-                popup2Quote = true;
-            } else {
-
-            }
-        });
-
-    </script>
+   
 
     <script defer>
 
@@ -2909,7 +2869,7 @@ thank-you" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -2973,34 +2933,6 @@ thank-you" />
 
     </script>
 
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
-    <script>
-        window.addEventListener("load", function () {
-            const articleContent = document.querySelector("#article-contents");
-            if (articleContent) {
-                const images = articleContent.querySelectorAll("img");
-                images.forEach(img => {
-                    if (!img.hasAttribute("loading")) {
-                        img.setAttribute("loading", "lazy");
-                    }
-                });
-            }
-        });
-    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             if (window.innerWidth <= 600) {
