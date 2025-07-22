@@ -52,8 +52,19 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top:30px;
+            }
 
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -66,8 +77,8 @@
     </style>
     <link rel="preload" as="font" type="font/woff2" crossorigin
         href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
-    
-     <link rel="preload" href="https://storage.googleapis.com/marketing-public-images/marketing-blog/backup-photo.webp"
+
+    <link rel="preload" href="https://storage.googleapis.com/marketing-public-images/marketing-blog/backup-photo.webp"
         type="image/webp" fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp" fetchpriority="high">
@@ -734,8 +745,8 @@
                             <img src="https://storage.googleapis.com/marketing-public-images/marketing-blog/backup-photo.webp"
                                 srcset="https://storage.googleapis.com/marketing-public-images/marketing-blog/backup-photo.webp 500w"
                                 sizes="(max-width: 600px) 100vw, 500px" width="680" height="383"
-                                class="post-featured-img" alt="blog featured image" fetchpriority="high"
-                                loading="eager">
+                                class="post-featured-img mobile-display-none" alt="blog featured image"
+                                fetchpriority="high" loading="eager">
                         </picture>
                         <br><br>
                         <a href="/blog/category/boost-productivity">
@@ -890,10 +901,6 @@
                                 pay the ransom or suffer a total loss. With secure backups, such as with Object First’s
                                 Veeam backup appliance, you avoid paying hefty ransoms due to the ability to restore
                                 your data easily.&nbsp;&nbsp;</p>
-
-
-
-
 
 
 
@@ -1245,7 +1252,7 @@
                                 </div>
                             </div>
                         </div>
-                     
+
                         <script>
                             function validateForm() {
                                 var firstname = document.getElementById("firstname").value;
@@ -1622,7 +1629,7 @@
         </div>
     </section>
 
-   <footer class="bg-darkBlue">
+    <footer class="bg-darkBlue">
         <div class="container">
             <div class="row space-top-2 space-bottom-1 justify-content-lg-between">
                 <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
@@ -2821,8 +2828,8 @@ thank-you" />
         </div>
     </aside>
 
-    
-   
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
@@ -2846,7 +2853,7 @@ thank-you" />
             observer.observe(div);
         });
     </script>
-   
+
 
 
     <script>
@@ -2872,7 +2879,7 @@ thank-you" />
         });
 
     </script>
-  
+
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2966,33 +2973,45 @@ thank-you" />
 
     </script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-                    <script>
-                      $('.lazy').Lazy({
-                        // your configuration goes here
-                        scrollDirection: 'vertical',
-                        effect: 'fadeIn',
-                        visibleOnly: true,
-                        onError: function (element) {
-                          console.log('error loading ' + element.data('src'));
-                        }
-                      });
-                    </script>
-                   <script>
-                    window.addEventListener("load", function () {
-                      const articleContent = document.querySelector("#article-contents");
-                      if (articleContent) {
-                        const images = articleContent.querySelectorAll("img");
-                        images.forEach(img => {
-                          if (!img.hasAttribute("loading")) {
-                            img.setAttribute("loading", "lazy");
-                          }
-                        });
-                      }
-                    });
-                  </script>
-                  
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script>
+        $('.lazy').Lazy({
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            visibleOnly: true,
+            onError: function (element) {
+                console.log('error loading ' + element.data('src'));
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            const articleContent = document.querySelector("#article-contents");
+            if (articleContent) {
+                const images = articleContent.querySelectorAll("img");
+                images.forEach(img => {
+                    if (!img.hasAttribute("loading")) {
+                        img.setAttribute("loading", "lazy");
+                    }
+                });
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
+
 
 </body>
 
