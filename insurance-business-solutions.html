@@ -2404,13 +2404,7 @@ thank-you" />
         </div>
     </div>
     </div>
-    <script>
-        (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-        vgo('setAccount', '799988831');
-        vgo('setTrackByDefault', true);
-
-        vgo('process');
-    </script>
+  
 
     <script>
 
@@ -3588,7 +3582,7 @@ thank-you" />
     <!-- Plugins (can use defer if they don’t run instantly) -->
     <script src="js/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
-    <script>
+    <script defer>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
             var scriptElement = document.createElement('script');
             scriptElement.src = '/IEsupport.js';
@@ -3597,7 +3591,7 @@ thank-you" />
             headElement.appendChild(scriptElement);
         }
     </script>
-    <script>
+    <script defer>
         var popup2Quote = false;
 
         $(document).scroll(function () {
@@ -3635,10 +3629,6 @@ thank-you" />
             }
         };
     </script>
-
-
-   
-
         <script type="text/javascript">
 
         function loadSales() {
@@ -3654,7 +3644,6 @@ thank-you" />
 
                         SnapEngage.startLink();
 
-                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
                         SnapEngage.setCallback("Close", function (d) {
                             $("#designstudio").hide();
                         })
@@ -3678,7 +3667,6 @@ thank-you" />
                         SnapEngage.startLink();
 
                         $("#designstudio-iframe").contents().find("#main-desktop").css("width", '95%');
-                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
                         SnapEngage.setCallback("Close", function (d) {
                             $("#designstudio").hide();
                         })
@@ -3696,6 +3684,16 @@ thank-you" />
      <script src="js/jquery.validate.min.js" defer></script>
 
     <script src="js/front.min.js" defer></script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-disabled");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
