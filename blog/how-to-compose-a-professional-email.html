@@ -2439,9 +2439,9 @@
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -3679,21 +3679,35 @@ thank-you" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+  document.addEventListener("DOMContentLoaded", function () {
+    const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const bg = el.getAttribute('data-bg');
+            if (bg) {
+              el.style.backgroundImage = `url('${bg}')`;
+              el.classList.remove('lazy-bg'); // optional cleanup
+              observer.unobserve(el);
+            }
+          }
         });
-    </script>
+      });
+
+      lazyBackgrounds.forEach(bg => observer.observe(bg));
+    } else {
+      // Fallback for old browsers
+      lazyBackgrounds.forEach(el => {
+        const bg = el.getAttribute('data-bg');
+        if (bg) el.style.backgroundImage = `url('${bg}')`;
+      });
+    }
+  });
+</script>
+
 
 
 
