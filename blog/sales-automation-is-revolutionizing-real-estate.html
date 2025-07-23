@@ -11,14 +11,14 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-     How Sales Automation is Revolutionizing Real Estate Lead Generation | DYL
+        How Sales Automation is Revolutionizing Real Estate Lead Generation | DYL
     </title>
     <meta name="description"
         content="Discover how sales automation is transforming real estate lead generation, boosting efficiency, and helping agents close more deals with smart, automated soluti">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
 
@@ -53,8 +53,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -65,10 +98,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
-
+    <link rel="https://images.dyl.com/marketing-blog/2team-leaders-on-walk-in-business-park.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -82,12 +118,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -109,7 +145,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -120,7 +156,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -137,7 +173,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -168,7 +204,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -179,8 +215,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -196,8 +231,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -227,7 +261,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -239,7 +273,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -256,7 +290,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -276,7 +310,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -294,7 +328,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -314,7 +348,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -329,7 +363,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -358,7 +392,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -440,7 +474,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -457,7 +491,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -498,8 +532,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -515,8 +548,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -557,7 +589,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -574,7 +606,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -594,7 +626,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -612,7 +644,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -632,7 +664,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -647,7 +679,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -676,7 +708,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -700,637 +732,813 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">How Sales Automation is Revolutionizing Real Estate Lead Generation</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        March
-                          18, 2025
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 8 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">How Sales Automation is Revolutionizing Real Estate
+                                Lead Generation</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                March
+                                18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 8 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <picture>
-            
-                      <source media="(max-width: 600px)" srcset="https://images.dyl.com/marketing-blog/sales-automation-asian-man.webp">
-  
-                      <img src="https://images.dyl.com/marketing-blog/sales-automation-asian-man.webp" srcset="https://images.dyl.com/marketing-blog/sales-automation-asian-man.webp 500w" sizes="(max-width: 600px) 100vw, 500px" width="680" height="383" class="post-featured-img" alt="blog featured image" fetchpriority="high" loading="eager">
-                  </picture>
-                 
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <picture>
 
-                        <a href="/blog/category/sales-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            Sales Tips
-                          </p>
+                            <source media="(max-width: 600px)"
+                                srcset="https://images.dyl.com/marketing-blog/sales-automation-asian-man.webp">
+
+                            <img src="https://images.dyl.com/marketing-blog/sales-automation-asian-man.webp"
+                                srcset="https://images.dyl.com/marketing-blog/sales-automation-asian-man.webp 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" width="680" height="383"
+                                class="post-featured-img mobile-display-none" alt="blog featured image"
+                                fetchpriority="high" loading="eager">
+                        </picture>
+
+                        <br><br>
+
+
+                        <a href="category/sales-tips.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Sales Tips
+                            </p>
                         </a>
 
-                        
-                    
-                      
 
-                        <a href="/blog/category/sales-tools">
-                          <p class="element-category-post transition-3d-hover">
-                            Sales Tools
-                          </p>
+
+
+
+                        <a href="category/sales-tools.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Sales Tools
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 208px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Importance Of Sales Automation In Real Estate Lead Generation</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">5 Ways Sales Automation Is Revolutionizing Real Estate Lead Generation</a><ul style="display: block;"><li><a href="#heading-2-1">Sales Automation Makes Marketing Campaigns Personalized</a></li><li><a href="#heading-2-2">Sales Automation Offers Quality Customer Relationship Management (CRM)</a></li><li><a href="#heading-2-3">Sales Automation Makes Lead Generation Cost Effective</a></li><li><a href="#heading-2-4">Sales Automation Provides Optimum Lead Scoring</a></li><li><a href="#heading-2-5">Sales Automation Enhances Productivity And Efficiency Across Teams</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Final Thoughts</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 208px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Importance Of
+                                        Sales Automation In Real Estate Lead Generation</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">5 Ways Sales
+                                        Automation Is Revolutionizing Real Estate Lead Generation</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-2-1">Sales Automation Makes Marketing Campaigns
+                                                Personalized</a></li>
+                                        <li><a href="#heading-2-2">Sales Automation Offers Quality Customer Relationship
+                                                Management (CRM)</a></li>
+                                        <li><a href="#heading-2-3">Sales Automation Makes Lead Generation Cost
+                                                Effective</a></li>
+                                        <li><a href="#heading-2-4">Sales Automation Provides Optimum Lead Scoring</a>
+                                        </li>
+                                        <li><a href="#heading-2-5">Sales Automation Enhances Productivity And Efficiency
+                                                Across Teams</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Final Thoughts</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a variety of factors, including digitalization, the world of real estate lead generation has taken a sharp turn in the direction of automated solutions and away from conventional solutions like cold calling and online advertisements.</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>There is no doubt that real estate is an extremely competitive industry. Moreover, owing
+                                to a variety of factors, including digitalization, the world of real estate lead
+                                generation has taken a sharp turn in the direction of automated solutions and away from
+                                conventional solutions like cold calling and online advertisements.</p>
 
 
 
-<p>Since lead generation is an integral part of real estate, revolutionizing the process with the help of sales automation can help real estate agents and brokers not only accomplish their business goals but also navigate the potential of their business growth. In today’s blog, we’re going to explore the impact of sales automation in revolutionizing the field of real estate lead generation.</p>
+                            <p>Since lead generation is an integral part of real estate, revolutionizing the process
+                                with the help of sales automation can help real estate agents and brokers not only
+                                accomplish their business goals but also navigate the potential of their business
+                                growth. In today’s blog, we’re going to explore the impact of sales automation in
+                                revolutionizing the field of real estate lead generation.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1">Importance Of Sales Automation In Real Estate Lead Generation</h2>
+                            <h2 class="wp-block-heading" id="heading-1">Importance Of Sales Automation In Real Estate
+                                Lead Generation</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Sales automation refers to the process of streamlining tasks related to sales that are repetitive in nature, with the use of Artificial Intelligence (AI) software. When a competitive industry like real estate makes use of sales automation, whether it’s for helping customers find the right <a href="https://www.mashvisor.com/" target="_blank" rel="noreferrer noopener">investment properties</a>, providing instant communication to the potential customers, or even offering virtual and augmented reality tours of a variety of rental properties, it gives the sales teams enough time and resources to focus their energy on building long term relationships with their customers and offer them service of the highest quality.&nbsp;</p>
+                            <p>Sales automation refers to the process of streamlining tasks related to sales that are
+                                repetitive in nature, with the use of Artificial Intelligence (AI) software. When a
+                                competitive industry like real estate makes use of sales automation, whether it’s for
+                                helping customers find the right <a href="https://www.mashvisor.com/" target="_blank"
+                                    rel="noreferrer noopener">investment properties</a>, providing instant communication
+                                to the potential customers, or even offering virtual and augmented reality tours of a
+                                variety of rental properties, it gives the sales teams enough time and resources to
+                                focus their energy on building long term relationships with their customers and offer
+                                them service of the highest quality.&nbsp;</p>
 
 
 
-<p>From lead generation to contact management, and conversation analysis to data entry, the right sales automation tools can streamline the process to enhance customer experience across the board.&nbsp;</p>
+                            <p>From lead generation to contact management, and conversation analysis to data entry, the
+                                right sales automation tools can streamline the process to enhance customer experience
+                                across the board.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt="sales-automation-crm" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp"
+                                    alt="sales-automation-crm" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">5 Ways Sales Automation Is Revolutionizing Real Estate Lead Generation</h2>
+                            <h2 class="wp-block-heading" id="heading-2">5 Ways Sales Automation Is Revolutionizing Real
+                                Estate Lead Generation</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Here are five ways in which sales automation is transforming the field of real estate lead generation:</p>
+                            <p>Here are five ways in which sales automation is transforming the field of real estate
+                                lead generation:</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-1">Sales Automation Makes Marketing Campaigns Personalized</h3>
+                            <h3 class="wp-block-heading" id="heading-2-1">Sales Automation Makes Marketing Campaigns
+                                Personalized</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>While the role of sales automation in generating and qualifying leads is more prominent, sales automation tools are also widely used to create targeted marketing campaigns and strategies that resonate with real estate enthusiasts on a personal level, <a href="https://dyl.com/blog/category/customer-experience" target="_blank" rel="noreferrer noopener">enhancing customer experience</a> significantly.&nbsp;</p>
+                            <p>While the role of sales automation in generating and qualifying leads is more prominent,
+                                sales automation tools are also widely used to create targeted marketing campaigns and
+                                strategies that resonate with real estate enthusiasts on a personal level, <a
+                                    href="https://dyl.com/blog/category/customer-experience" target="_blank"
+                                    rel="noreferrer noopener">enhancing customer experience</a> significantly.&nbsp;</p>
 
 
 
-<p>For instance, the data that’s collected by sales automation tools can help marketers campaigns based on factors such as the demographics of your target market, their browsing habits, history of purchase whether it’s from your organization or a competitor, as well as their personal interests and preferences.&nbsp;</p>
+                            <p>For instance, the data that’s collected by sales automation tools can help marketers
+                                campaigns based on factors such as the demographics of your target market, their
+                                browsing habits, history of purchase whether it’s from your organization or a
+                                competitor, as well as their personal interests and preferences.&nbsp;</p>
 
 
 
-<p>Moreover, the insights offered by these automation tools can further help you use the information to draw actions that are in alignment with the goals of your marketing strategy making it easier for you to find and automate the repetitive tasks across the departments. Beyond traditional email campaigns and website optimization, social media has become an essential channel for real estate marketing, allowing agents and agencies to maintain visibility, engage with potential buyers, and build trust over time. Managing multiple platforms manually, however, can be time-consuming and inefficient. To simplify this process, many real estate professionals rely on <a href="https://vistasocial.com/" target="_blank" rel="noreferrer noopener">social media automation tools</a> to automate content scheduling, optimize engagement strategies, and analyze performance data, ultimately creating highly personalized campaigns that attract and convert leads.</p>
+                            <p>Moreover, the insights offered by these automation tools can further help you use the
+                                information to draw actions that are in alignment with the goals of your marketing
+                                strategy making it easier for you to find and automate the repetitive tasks across the
+                                departments. Beyond traditional email campaigns and website optimization, social media
+                                has become an essential channel for real estate marketing, allowing agents and agencies
+                                to maintain visibility, engage with potential buyers, and build trust over time.
+                                Managing multiple platforms manually, however, can be time-consuming and inefficient. To
+                                simplify this process, many real estate professionals rely on <a
+                                    href="https://vistasocial.com/" target="_blank" rel="noreferrer noopener">social
+                                    media automation tools</a> to automate content scheduling, optimize engagement
+                                strategies, and analyze performance data, ultimately creating highly personalized
+                                campaigns that attract and convert leads.</p>
 
 
 
-<p>By investing in automation across various touch points at different levels of the marketing and sales process, you can offer a personalized experience to your real estate leads, whether it’s creating content for email campaigns involving creative and powerful subject lines, or optimizing and personalizing your website based on how different users interact with them. This can lead to higher Click Through Rates (CTR) for your email campaigns, and an increase in conversion rates for your business.</p>
-            
-                                        
+                            <p>By investing in automation across various touch points at different levels of the
+                                marketing and sales process, you can offer a personalized experience to your real estate
+                                leads, whether it’s creating content for email campaigns involving creative and powerful
+                                subject lines, or optimizing and personalizing your website based on how different users
+                                interact with them. This can lead to higher Click Through Rates (CTR) for your email
+                                campaigns, and an increase in conversion rates for your business.</p>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/email-automation-with-sales.webp" alt="email-automation-with-sales" loading="lazy"></figure>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/email-automation-with-sales.webp"
+                                    alt="email-automation-with-sales" loading="lazy"></figure>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-2">Sales Automation Offers Quality Customer Relationship Management (CRM)</h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h3 class="wp-block-heading" id="heading-2-2">Sales Automation Offers Quality Customer
+                                Relationship Management (CRM)</h3>
 
 
 
-<p>It is quite easy to integrate your sales automation tools like those involved in gathering data insights or <a href="https://www.price2spy.com/blog/repricing-software/" target="_blank" rel="noreferrer noopener">repricing software</a> used in automating pricing optimization with your current CRM software. When you pair the right data extracted by your sales automation with your CRM systems, you can make your interactions with customers more efficient and personalized.&nbsp;</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>The most common benefit of doing this is that the information extracted from sales automation tools can show up directly in the CRM system, eroding the need for updating client information regularly. This enhances accuracy of information, helping the sales team take actionable steps in the right direction in accordance with customer data.&nbsp;</p>
+                            <p>It is quite easy to integrate your sales automation tools like those involved in
+                                gathering data insights or <a href="https://www.price2spy.com/blog/repricing-software/"
+                                    target="_blank" rel="noreferrer noopener">repricing software</a> used in automating
+                                pricing optimization with your current CRM software. When you pair the right data
+                                extracted by your sales automation with your CRM systems, you can make your interactions
+                                with customers more efficient and personalized.&nbsp;</p>
 
 
 
-<p>This can help your team and business offer a more cohesive customer experience, irrespective of who the customer is in contact with. You can achieve this goal by keeping multiple options of communication open for consistent and swift communication, following up with those interested in buying or selling properties, and ultimately offering the highest level of customer service and satisfaction at all levels.&nbsp;</p>
+                            <p>The most common benefit of doing this is that the information extracted from sales
+                                automation tools can show up directly in the CRM system, eroding the need for updating
+                                client information regularly. This enhances accuracy of information, helping the sales
+                                team take actionable steps in the right direction in accordance with customer
+                                data.&nbsp;</p>
 
 
 
-<p>Doing this can help you schedule personalized timers for sales agents who will know exactly when they have to reach out to a lead, how they have to propose the offer based on their past behavior and preferences, and even send out the right type of communication through the channel that each customer prefers the most leading to an overall higher engagement rate and helping the agents and brokers create a rapport with clients.</p>
+                            <p>This can help your team and business offer a more cohesive customer experience,
+                                irrespective of who the customer is in contact with. You can achieve this goal by
+                                keeping multiple options of communication open for consistent and swift communication,
+                                following up with those interested in buying or selling properties, and ultimately
+                                offering the highest level of customer service and satisfaction at all levels.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Doing this can help you schedule personalized timers for sales agents who will know
+                                exactly when they have to reach out to a lead, how they have to propose the offer based
+                                on their past behavior and preferences, and even send out the right type of
+                                communication through the channel that each customer prefers the most leading to an
+                                overall higher engagement rate and helping the agents and brokers create a rapport with
+                                clients.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h3 class="wp-block-heading" id="heading-2-3">Sales Automation Makes Lead Generation Cost
+                                Effective</h3>
 
-<h3 class="wp-block-heading" id="heading-2-3">Sales Automation Makes Lead Generation Cost Effective</h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Sales is a time-intensive and expensive process, especially when it comes to real estate
+                                lead generation. When you streamline the processes involved in real estate sales such as
+                                that involving lead targeting and client relationship management, the costs associated
+                                with running daily operations, so much so that companies <a
+                                    href="https://www.kixie.com/sales-blog/sales-automation-statistics-you-need-to-know-in-2025/"
+                                    target="_blank" rel="noreferrer noopener">leveraging AI for sales</a> report an
+                                increase of 10% – 20% in their ROI, according to Kixie.&nbsp;</p>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Not only does sales automation have a direct impact on reducing operational costs, but
+                                also it leads to a higher quality of leads and improved conversion rates by connecting
+                                the real estate agents with hotter leads that are more likely to convert, significantly
+                                reducing the time, efforts and resources spent on it.&nbsp;</p>
 
 
-<p>Sales is a time-intensive and expensive process, especially when it comes to real estate lead generation. When you streamline the processes involved in real estate sales such as that involving lead targeting and client relationship management, the costs associated with running daily operations, so much so that companies <a href="https://www.kixie.com/sales-blog/sales-automation-statistics-you-need-to-know-in-2025/" target="_blank" rel="noreferrer noopener">leveraging AI for sales</a> report an increase of 10% – 20% in their ROI, according to Kixie.&nbsp;</p>
 
+                            <p>Sales automation also ensures that the process of lead nurturing is proactively catered
+                                to, with precision. For example, a variety of <a
+                                    href="https://dyl.com/blog/category/sales-tools" target="_blank"
+                                    rel="noreferrer noopener">sales tools</a> can help your real estate sales team make
+                                informed decisions around the best time to approach a lead, follow up with them when
+                                they’re most responsive, personalize the way they engage with them through the
+                                communication channel that they respond to with the most enthusiasm.&nbsp;</p>
 
 
-<p>Not only does sales automation have a direct impact on reducing operational costs, but also it leads to a higher quality of leads and improved conversion rates by connecting the real estate agents with hotter leads that are more likely to convert, significantly reducing the time, efforts and resources spent on it.&nbsp;</p>
+                            <p>All of these actionable insights can help you create and stick to a strategy that’s most
+                                likely to be successful, reducing costs involved in scouring leads. It also
+                                significantly contributes to the overall success and ROI of the business, giving you an
+                                edge over your competitors.</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Sales automation also ensures that the process of lead nurturing is proactively catered to, with precision. For example, a variety of <a href="https://dyl.com/blog/category/sales-tools" target="_blank" rel="noreferrer noopener">sales tools</a> can help your real estate sales team make informed decisions around the best time to approach a lead, follow up with them when they’re most responsive, personalize the way they engage with them through the communication channel that they respond to with the most enthusiasm.&nbsp;</p>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/sales-person-using-automation-on-tablet.webp"
+                                    alt="sales-person-using-automation-on-tablet" loading="lazy"></figure>
 
-<p>All of these actionable insights can help you create and stick to a strategy that’s most likely to be successful, reducing costs involved in scouring leads. It also significantly contributes to the overall success and ROI of the business, giving you an edge over your competitors.</p>
-            
-                                        
 
-        
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h3 class="wp-block-heading" id="heading-2-4">Sales Automation Provides Optimum Lead Scoring
+                            </h3>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/sales-person-using-automation-on-tablet.webp" alt="sales-person-using-automation-on-tablet" loading="lazy"></figure>
+                            <p>Another important aspect of real estate lead generation is lead scoring, which can be
+                                significantly improved with the right use of sales automation tools. Lead scoring refers
+                                to the process of assigning a rank to the current leads in the sales pipeline based on
+                                their potential to get converted, i.e. likely to sell or buy real estate.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>When the sales process is automated, lead scoring can be done without human error,
+                                leading to higher quality leads for businesses, simpler lead segmentation, and higher
+                                conversion rates. Since AI driven lead scoring has the potential to sort through large
+                                amounts of data, it can provide detailed insights around patterns and customer behaviors
+                                that have led to conversions in the past.</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-4">Sales Automation Provides Optimum Lead Scoring</h3>
+                            <p>Real time scoring and segmentation of leads also builds a sales pipeline that prioritizes
+                                enhanced lead qualification, that can help both sales and marketing streamline their
+                                process around how they’d like to approach a lead, fine tune their <a
+                                    rel="noreferrer noopener" href="https://www.ai-bees.io/post/sales-pitch-examples"
+                                    target="_blank">sales pitch</a>, how their method of communication will be different
+                                depending on the behavior patterns of the lead and how hot or cold a lead is.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>When all the teams are aware of their role in the lead generation process, they can then
+                                offer tailor made marketing and sales techniques to customers depending on the leads
+                                that they’ve been segmented into and ultimately improve their revenue in a sustainable
+                                manner.</p>
 
 
 
-<p>Another important aspect of real estate lead generation is lead scoring, which can be significantly improved with the right use of sales automation tools. Lead scoring refers to the process of assigning a rank to the current leads in the sales pipeline based on their potential to get converted, i.e. likely to sell or buy real estate.&nbsp;</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>When the sales process is automated, lead scoring can be done without human error, leading to higher quality leads for businesses, simpler lead segmentation, and higher conversion rates. Since AI driven lead scoring has the potential to sort through large amounts of data, it can provide detailed insights around patterns and customer behaviors that have led to conversions in the past.</p>
+                            <h3 class="wp-block-heading" id="heading-2-5">Sales Automation Enhances Productivity And
+                                Efficiency Across Teams</h3>
 
 
 
-<p>Real time scoring and segmentation of leads also builds a sales pipeline that prioritizes enhanced lead qualification, that can help both sales and marketing streamline their process around how they’d like to approach a lead, fine tune their <a rel="noreferrer noopener" href="https://www.ai-bees.io/post/sales-pitch-examples" target="_blank">sales pitch</a>, how their method of communication will be different depending on the behavior patterns of the lead and how hot or cold a lead is.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>When all the teams are aware of their role in the lead generation process, they can then offer tailor made marketing and sales techniques to customers depending on the leads that they’ve been segmented into and ultimately improve their revenue in a sustainable manner.</p>
+                            <p>Sales automation also has a direct impact on productivity, efficiency and the way teams
+                                engage with potential and existing customers in the sales pipeline. Here are some common
+                                ways in which sales automation benefits the productivity, efficiency and ultimately the
+                                sustainability of real estate teams including sales, marketing, operations and more.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>First, sales automation aids in more productive and creative thinking from the sales team
+                                as it frees up their time to focus on result oriented tasks like closing a lead and
+                                offering their attention to leads with a higher potential of conversion.</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-5">Sales Automation Enhances Productivity And Efficiency Across Teams</h3>
+                            <p>Second, it improves the efficiency of teams and their ability to collaborate with each
+                                other seamlessly by enabling personalized interactions, standardizing the process of
+                                sales cycle, offering data driven insights using different reporting tools and nurturing
+                                leads flawlessly.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Last but not least, sales automation tools can dramatically improve <a
+                                    href="https://dyl.com/blog/category/workplace-efficiency.html" target="_blank"
+                                    rel="noreferrer noopener">workplace efficiency</a> and productivity by helping the
+                                sales team focus on nurturing relationships with both existing and potential customers,
+                                instead of spending time on manual tasks like data entry or cross-team collaboration for
+                                each lead.&nbsp;</p>
 
 
 
-<p>Sales automation also has a direct impact on productivity, efficiency and the way teams engage with potential and existing customers in the sales pipeline. Here are some common ways in which sales automation benefits the productivity, efficiency and ultimately the sustainability of real estate teams including sales, marketing, operations and more.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>First, sales automation aids in more productive and creative thinking from the sales team as it frees up their time to focus on result oriented tasks like closing a lead and offering their attention to leads with a higher potential of conversion.</p>
+                            <h2 class="wp-block-heading" id="heading-3">Final Thoughts</h2>
 
 
 
-<p>Second, it improves the efficiency of teams and their ability to collaborate with each other seamlessly by enabling personalized interactions, standardizing the process of sales cycle, offering data driven insights using different reporting tools and nurturing leads flawlessly.&nbsp;</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Last but not least, sales automation tools can dramatically improve <a href="https://dyl.com/blog/category/workplace-efficiency" target="_blank" rel="noreferrer noopener">workplace efficiency</a> and productivity by helping the sales team focus on nurturing relationships with both existing and potential customers, instead of spending time on manual tasks like data entry or cross-team collaboration for each lead.&nbsp;</p>
+                            <p>In conclusion, opting for automation in real estate lead generation can transform the way
+                                you handle the stresses of this competitive market. There’s no wonder that sales
+                                automation has revolutionized the real estate lead generation process by streamlining
+                                the repetitive tasks.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h2 class="wp-block-heading" id="heading-3">Final Thoughts</h2>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p>In conclusion, opting for automation in real estate lead generation can transform the way you handle the stresses of this competitive market. There’s no wonder that sales automation has revolutionized the real estate lead generation process by streamlining the repetitive tasks.&nbsp;</p>
-
-
-
-<p>But it has also made a significant impact in making marketing, customer relationships, and lead scoring and segmenting highly efficient and cost effective for sales teams across the industry. By choosing the right sales automation tools for your real estate business, you can make your sales process more effective and encourage your team to be more productive.</p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+                            <p>But it has also made a significant impact in making marketing, customer relationships,
+                                and lead scoring and segmenting highly efficient and cost effective for sales teams
+                                across the industry. By choosing the right sales automation tools for your real estate
+                                business, you can make your sales process more effective and encourage your team to be
+                                more productive.</p>
+                        </div>
+                        <br>
+                        <br>
+                         <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2024/07/65090-200.png" alt="DYL Staff" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2024/07/65090-200.png"
+                                        alt="DYL Staff" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/dylstaff">DYL Staff</a>
-                                  </p>
-                                <p class="article-author-position">DYL Staff write some of the articles you see on DYL. They represent marketing, service, sales, and more!
-                                </p>
-                              </div>
+                                        <a href="author/dylstaff.html">DYL Staff</a>
+                                    </p>
+                                    <p class="article-author-position">DYL Staff write some of the articles you see on
+                                        DYL. They represent marketing, service, sales, and more!
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">benefits-of-email-lead-generation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 7, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 6 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of Email Lead Generation For Elevating Marketing ROI</a>
-		  </p>
-	      
-Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt innovative techniques to maximize ...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their Pitch</a>
-		  </p>
-	      
-Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A good sales pitch doesn’t sound l...
-	    </div>
-	</div>
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="category/marketing-tips.html">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="benefits-of-email-lead-generation.html"
+                            aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp"
+                                alt="woman using email" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">benefits-of-email-lead-generation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 7, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 6 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="benefits-of-email-lead-generation.html"
+                                aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of
+                                Email Lead Generation For Elevating Marketing ROI</a>
+                        </p>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/improve-sales">
-	        <p class="element-post-category transition-3d-hover">
-	          Improve Sales
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          February 10, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build a High-Performance Sales Funnel Using Automation</a>
-		  </p>
-	      
-In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is great news overall. But how do you en...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/crm-roi-metrics-that-matter-most" aria-label="CRM ROI Metrics That Matter Most">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/crm-roi-illustration-corrected.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">crm-roi-metrics-that-matter-most</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          December 23, 2024 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 14 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/crm-roi-metrics-that-matter-most" aria-label="CRM ROI Metrics That Matter Most">CRM ROI Metrics That Matter Most</a>
-		  </p>
-	      
-Tracking CRM ROI metrics is essential for any business aiming to grow and thrive. These metrics reveal how effectively a company ...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/enhance-sales-with-crm-and-email-solutions" aria-label="Enhance Sales with CRM and Email Solutions">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/man-using-email-crm-software.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">enhance-sales-with-crm-and-email-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          December 23, 2024 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/enhance-sales-with-crm-and-email-solutions" aria-label="Enhance Sales with CRM and Email Solutions">Enhance Sales with CRM and Email Solutions</a>
-		  </p>
-	      
-In today’s competitive business landscape, leveraging the power of customer relationship management (CRM) and email solutions can...
-	    </div>
-	</div>
+                        Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt
+                        innovative techniques to maximize ...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="category/sales-tips.html">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="how-sales-teams-can-improve-their-pitch.html"
+                            aria-label="How Sales Teams Can Improve Their Pitch">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp"
+                                alt="sales woman" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="how-sales-teams-can-improve-their-pitch.html"
+                                aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their
+                                Pitch</a>
+                        </p>
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A
+                        good sales pitch doesn’t sound l...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="category/improve-sales.html">
+                            <p class="element-post-category transition-3d-hover">
+                                Improve Sales
+                            </p>
+                        </a>
+                        <a href="how-to-build-a-high-performance-sales-funnel-using-automation.html"
+                            aria-label="How to Build a High-Performance Sales Funnel Using Automation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp"
+                                alt="automation" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                February 10, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="how-to-build-a-high-performance-sales-funnel-using-automation.html"
+                                aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build
+                                a High-Performance Sales Funnel Using Automation</a>
+                        </p>
+
+                        In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is
+                        great news overall. But how do you en...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="category/crm-tools-and-tips.html">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="crm-roi-metrics-that-matter-most.html" aria-label="CRM ROI Metrics That Matter Most">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/crm-roi-illustration-corrected.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">crm-roi-metrics-that-matter-most</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                December 23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 14 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="crm-roi-metrics-that-matter-most.html"
+                                aria-label="CRM ROI Metrics That Matter Most">CRM ROI Metrics That Matter Most</a>
+                        </p>
+
+                        Tracking CRM ROI metrics is essential for any business aiming to grow and thrive. These metrics
+                        reveal how effectively a company ...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="category/crm-tools-and-tips.html">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="enhance-sales-with-crm-and-email-solutions.html"
+                            aria-label="Enhance Sales with CRM and Email Solutions">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/man-using-email-crm-software.webp" alt="man using crm"
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">enhance-sales-with-crm-and-email-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                December 23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="enhance-sales-with-crm-and-email-solutions.html"
+                                aria-label="Enhance Sales with CRM and Email Solutions">Enhance Sales with CRM and Email
+                                Solutions</a>
+                        </p>
+
+                        In today’s competitive business landscape, leveraging the power of customer relationship
+                        management (CRM) and email solutions can...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
-
-
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
     <section class="bottom-form">
         <div class="container text-center">
@@ -1439,14 +1647,16 @@ In today’s competitive business landscape, leveraging the power of customer re
                 <div class="col-12 col-md-6 bg-white padded-30 text-center left-pop-form">
                     <h3 class="filter-heading"> Join 8,000+<br>
                         Business Owners </h3>
-                    <p>Stay ahead with top-notch marketing, sales, and customer service insights. Sign up for our business
+                    <p>Stay ahead with top-notch marketing, sales, and customer service insights. Sign up for our
+                        business
                         grown tips now!</p>
                     <div class="text-center">
                         <div class="row">
                             <div class="col">
-    
-                                <form accept-charset="UTF-8" method="POST" action="https://dyl361.activehosted.com/proc.php"
-                                    class=" js-validate" novalidate="novalidate">
+
+                                <form accept-charset="UTF-8" method="POST"
+                                    action="https://dyl361.activehosted.com/proc.php" class=" js-validate"
+                                    novalidate="novalidate">
                                     <input type="hidden" name="u" value="55">
                                     <input type="hidden" name="f" value="55">
                                     <input type="hidden" name="s">
@@ -1460,36 +1670,42 @@ In today’s competitive business landscape, leveraging the power of customer re
                                     <input class="email-class form-control" type="text" id="email" name="email"
                                         placeholder="Email" required="" data-name="email"
                                         aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-                                    <button class="subscribe-class-pop transition-3d-hover" type="submit">Subscribe</button>
+                                    <button class="subscribe-class-pop transition-3d-hover"
+                                        type="submit">Subscribe</button>
                                 </form>
                             </div>
                         </div>
-    
+
                     </div>
                     <br>
-                    <small class=" product-page-text-color">We prioritize your privacy. DYL uses your information to reach
-                        out about our relevant content, products, and services. You can unsubscribe anytime. For details,
+                    <small class=" product-page-text-color">We prioritize your privacy. DYL uses your information to
+                        reach
+                        out about our relevant content, products, and services. You can unsubscribe anytime. For
+                        details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?</p>
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                        using
+                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                    </p>
                 </div>
                 <div class="col-12 col-md-6">
                     <div onclick="closePanel()" class="close-popup-button"><img
-                            src="https://images.dyl.com/marketing-web/images/blog/clos.png" loading="lazy" alt="close icon">
+                            src="https://images.dyl.com/marketing-web/images/blog/clos.png" loading="lazy"
+                            alt="close icon">
                     </div>
                     <img src="https://images.dyl.com/marketing-blog/pop-up-image-woman-on-phone.webp"
                         class="img-fluid pop-up-image" alt="pop up image" loading="lazy">
-    
+
                 </div>
-    
+
             </div>
         </div>
     </div>
 
 
 
-   <footer class="bg-darkBlue">
+    <footer class="bg-darkBlue">
         <div class="container">
             <div class="row space-top-2 space-bottom-1 justify-content-lg-between">
                 <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
@@ -1943,13 +2159,6 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
 
         <script>
 
@@ -2015,17 +2224,6 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
 
 
             window.onload = function () {
@@ -2688,39 +2886,49 @@ thank-you" />
         </div>
     </aside>
 
-   
-   
-   
-
-    
 
 
 
-    
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
-  
+
 
 
     <script>
@@ -2732,23 +2940,8 @@ thank-you" />
             headElement.appendChild(scriptElement);
         }
     </script>
-    
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2776,9 +2969,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -2841,21 +3034,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -2870,40 +3049,25 @@ thank-you" />
         });
     </script>
 
+
     <script>
-	var popup2Shown = false;
-
-	$(document).scroll(function () {
-		var y = $(this).scrollTop();
-		if (y > 2000 && !popup2Shown) {
-			$('#popup2').fadeIn();
-			popup2Shown = true;
-		} else {
-			// $('#popup2').fadeOut();
-		}
-	});
-
-	function closePanel() {
-		$('#popup2').fadeOut();
-	}
-
-	function togglerightPanel() {
-    var popupDivright = $('#popUprightDiv');
-    var iconright = popupDivright.find('h6 i');
-    popupDivright.toggleClass('closed');
-    if (popupDivright.hasClass('closed')) {
-        popupDivright.css('height', '50px'); // Set height explicitly when closing
-        iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-    } else {
-        popupDivright.css('height', 'auto'); // Reset height to auto when opening
-        iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
-    }
-}
-$(document).ready(function () {
-    $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
-});
-</script>
-
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 
 </body>
 

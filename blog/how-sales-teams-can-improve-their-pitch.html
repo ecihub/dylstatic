@@ -11,14 +11,14 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-     How Sales Teams Can Improve Their Pitch | DYL
+        How Sales Teams Can Improve Their Pitch | DYL
     </title>
     <meta name="description"
         content="Are your salespeople struggling to close deals? Learn these easy techniques for sales teams to improve their pitch and go from awkward to articulate.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
 
@@ -53,8 +53,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -65,10 +98,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
-
+    <link rel="https://images.dyl.com/marketing-blog/sales-woman-and-team-working-together-mini.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -82,12 +118,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -109,7 +145,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -120,7 +156,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -137,7 +173,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -168,7 +204,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -179,8 +215,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -196,8 +231,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -227,7 +261,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -239,7 +273,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -256,7 +290,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -276,7 +310,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -294,7 +328,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -314,7 +348,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -329,7 +363,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -358,7 +392,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -440,7 +474,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -457,7 +491,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -498,8 +532,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -515,8 +548,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -557,7 +589,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -574,7 +606,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -594,7 +626,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -612,7 +644,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -632,7 +664,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -647,7 +679,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -676,7 +708,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -700,777 +732,868 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">How Sales Teams Can Improve Their Pitch</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        March
-                          18, 2025
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 7 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">How Sales Teams Can Improve Their Pitch</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                March
+                                18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 7 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <picture>
-            
-                      <source media="(max-width: 600px)" srcset="https://images.dyl.com/marketing-blog/sales-woman-and-team-working-together-mini.webp">
-  
-                      <img src="https://images.dyl.com/marketing-blog/sales-woman-and-team-working-together-mini.webp" srcset="https://images.dyl.com/marketing-blog/sales-woman-and-team-working-together-mini.webp 500w" sizes="(max-width: 600px) 100vw, 500px" width="680" height="383" class="post-featured-img" alt="blog featured image" fetchpriority="high" loading="eager">
-                  </picture>
-                 
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <picture>
 
-                        <a href="/blog/category/sales-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            Sales Tips
-                          </p>
+                            <source media="(max-width: 600px)"
+                                srcset="https://images.dyl.com/marketing-blog/sales-woman-and-team-working-together-mini.webp">
+
+                            <img src="https://images.dyl.com/marketing-blog/sales-woman-and-team-working-together-mini.webp"
+                                srcset="https://images.dyl.com/marketing-blog/sales-woman-and-team-working-together-mini.webp 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" width="680" height="383"
+                                class="post-featured-img mobile-display-none" alt="blog featured image" fetchpriority="high"
+                                loading="eager">
+                        </picture>
+
+
+                        <br><br>
+
+
+
+
+
+
+
+                        <a href="category/sales-tips.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Sales Tips
+                            </p>
                         </a>
 
-                        
-                    
-                      
 
-                        <a href="/blog/category/sales-tools">
-                          <p class="element-category-post transition-3d-hover">
-                            Sales Tools
-                          </p>
+
+
+
+                        <a href="category/sales-tools.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Sales Tools
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 312px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">How to Improve the Sales Pitch</a><ul style="display: block;"><li><a href="#heading-1-1">Understand Your Audience</a></li><li><a href="#heading-1-2">Exude Positivity</a></li><li><a href="#heading-1-3">Ditch the Script, Keep the Structure</a></li><li><a href="#heading-1-4">Master the Art of Active Listening</a></li><li><a href="#heading-1-5">Speak Clearly, Confidently, and Professionally</a></li><li><a href="#heading-1-6">Make it Relatable with Stories</a></li><li><a href="#heading-1-7">Handle Objections Professionally</a></li><li><a href="#heading-1-8">Use AI Tools</a></li><li><a href="#heading-1-9">End with a Clear Call to Action</a></li><li><a href="#heading-1-10">Final Reminders</a></li><li><a href="#heading-1-11">From Good (or bad) Pitches to Great Ones</a></li></ul></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 312px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">How to Improve the
+                                        Sales Pitch</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-1-1">Understand Your Audience</a></li>
+                                        <li><a href="#heading-1-2">Exude Positivity</a></li>
+                                        <li><a href="#heading-1-3">Ditch the Script, Keep the Structure</a></li>
+                                        <li><a href="#heading-1-4">Master the Art of Active Listening</a></li>
+                                        <li><a href="#heading-1-5">Speak Clearly, Confidently, and Professionally</a>
+                                        </li>
+                                        <li><a href="#heading-1-6">Make it Relatable with Stories</a></li>
+                                        <li><a href="#heading-1-7">Handle Objections Professionally</a></li>
+                                        <li><a href="#heading-1-8">Use AI Tools</a></li>
+                                        <li><a href="#heading-1-9">End with a Clear Call to Action</a></li>
+                                        <li><a href="#heading-1-10">Final Reminders</a></li>
+                                        <li><a href="#heading-1-11">From Good (or bad) Pitches to Great Ones</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A good sales pitch doesn’t sound like a pitch at all. It sounds like a natural conversation. But getting to that level takes practice, energy, and the right approach.</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in
+                                winter? A good sales pitch doesn’t sound like a pitch at all. It sounds like a natural
+                                conversation. But getting to that level takes practice, energy, and the right approach.
+                            </p>
 
+                            <p>Many salespeople start off feeling unsure of themselves, talking too much, over
+                                explaining, or struggling to connect with potential customers. This can be off putting,
+                                resulting in a resounding “no” before they’re finished pitching their product or
+                                service.&nbsp;</p>
 
+                            <p>The good news? Anyone can learn sales skills if they put their mind to it.&nbsp;</p>
 
-<p>Many salespeople start off feeling unsure of themselves, talking too much, over explaining, or struggling to connect with potential customers. This can be off putting, resulting in a resounding “no” before they’re finished pitching their product or service.&nbsp;</p>
+                            <p>This guide will walk you through the techniques sales teams can use to improve their
+                                pitch, taking them from awkward to articulate with a little training and practice.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h2 class="wp-block-heading" id="heading-1">How to Improve the Sales Pitch</h2>
 
-<p>The good news? Anyone can learn sales skills if they put their mind to it.&nbsp;</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>This guide will walk you through the techniques sales teams can use to improve their pitch, taking them from awkward to articulate with a little training and practice.</p>
+                            <p>A sales pitch is about more than delivering the perfect speech or presentation—it’s about
+                                communication and relationships with potential customers. Interacting with people in a
+                                way that generates sales may not come naturally to everyone, but as a team leader,
+                                manager, or business owner, you can <a
+                                    href="https://dyl.com/blog/what-are-elements-of-a-sales-enablement-strategy"
+                                    target="_blank" rel="noreferrer noopener">help your team boost their sales
+                                    skills</a>.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <figure class="wp-block-image size-large"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/sales-team-agreement-illustration.webp"
+                                    alt="sales team infographic" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h3 class="wp-block-heading" id="heading-1-1">Understand Your Audience</h3>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-1">How to Improve the Sales Pitch</h2>
+                            <p>The best salespeople go beyond just memorizing product features or their pitch and take
+                                time and effort to understand the potential client. Before jumping into a pitch, <a
+                                    href="https://dyl.com/blog/how-to-build-a-client-prospect-list-to-close-more-sales"
+                                    target="_blank" rel="noreferrer noopener">research your prospect</a>. What are their
+                                biggest pain points and their daily challenges? What has worked or failed for them in
+                                the past, and what are their buying habits?</p>
 
+                            <p>When you speak directly to their needs, your pitch stops sounding like a sales script and
+                                becomes a solution. Instead of a work chore, your time with the client becomes something
+                                of value to them.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <h3 class="wp-block-heading" id="heading-1-2">Exude Positivity</h3>
 
-<p>A sales pitch is about more than delivering the perfect speech or presentation—it’s about communication and relationships with potential customers. Interacting with people in a way that generates sales may not come naturally to everyone, but as a team leader, manager, or business owner, you can <a href="https://dyl.com/blog/what-are-elements-of-a-sales-enablement-strategy" target="_blank" rel="noreferrer noopener">help your team boost their sales skills</a>.</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>The saying “You can catch more flies with honey than vinegar” is as applicable in sales
+                                as anywhere else. People with a positive, captivating, and confident demeanor are more
+                                likely to close deals than those who come across as insecure, negative, dull, or
+                                disinterested.&nbsp;</p>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/sales-team-agreement-illustration.webp" alt="sales team infographic" loading="lazy"></figure>
+                            <p>When coaching a sales team in improving their pitch, remind them of the following points:
+                            </p>
 
+                            <ul>
+                                <li><strong>Clarity</strong>: Encourage your sales team to thoroughly understand their
+                                    product or service so they can properly convey the message to the client. Clarity
+                                    also comes from speaking clearly and projecting your voice well.</li>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                                <li><strong>Build a cheat sheet</strong>: Keep a few bullet points on hand to keep your
+                                    thoughts organized.</li>
 
 
-<h3 class="wp-block-heading" id="heading-1-1">Understand Your Audience</h3>
 
+                                <li><strong>Persuasion</strong>: Being passionate about your product or service will
+                                    help convince clients that you are the solution to their problem.</li>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                                <li><strong>Confidence</strong>: Clients are more likely to buy from confident
+                                    salespeople. Preparing well beforehand will help your team feel more confident,
+                                    including doing their homework regarding their customers, current market trends, and
+                                    statistics.&nbsp;</li>
+                            </ul>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>The best salespeople go beyond just memorizing product features or their pitch and take time and effort to understand the potential client. Before jumping into a pitch, <a href="https://dyl.com/blog/how-to-build-a-client-prospect-list-to-close-more-sales" target="_blank" rel="noreferrer noopener">research your prospect</a>. What are their biggest pain points and their daily challenges? What has worked or failed for them in the past, and what are their buying habits?</p>
+                            <h3 class="wp-block-heading" id="heading-1-3">Ditch the Script, Keep the Structure</h3>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Reading from a script is a guaranteed way to sound like a robot and make a potential
+                                client yawn. Instead, build a flexible structure:</p>
 
-<p>When you speak directly to their needs, your pitch stops sounding like a sales script and becomes a solution. Instead of a work chore, your time with the client becomes something of value to them.</p>
+                            <ul>
+                                <li><strong>Opening Hook</strong>: Start with a relatable question or a quick insight.
+                                </li>
 
+                                <li><strong>Problem and Solution</strong>: Clearly explain the challenge and how your
+                                    product or service solves it.</li>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                                <li><strong>Proof</strong>: Share a quick success story or statistic.</li>
 
 
-<h3 class="wp-block-heading" id="heading-1-2">Exude Positivity</h3>
 
+                                <li><strong>Call to Action</strong>: Guide your customer to the next steps – whether
+                                    it’s a demo, a follow-up call, or a free trial.</li>
+                            </ul>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Having a framework instead of a word-for-word script makes conversations feel more
+                                natural while keeping you on track. Of course, there must be enough opportunities
+                                between the framework stages for the customer to express their pain points, opinions,
+                                and objections.</p>
 
 
-<p>The saying “You can catch more flies with honey than vinegar” is as applicable in sales as anywhere else. People with a positive, captivating, and confident demeanor are more likely to close deals than those who come across as insecure, negative, dull, or disinterested.&nbsp;</p>
-            
-                                        
 
-        
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>When coaching a sales team in improving their pitch, remind them of the following points:</p>
+                            <h3 class="wp-block-heading" id="heading-1-4">Master the Art of Active Listening</h3>
 
 
 
-<ul>
-<li><strong>Clarity</strong>: Encourage your sales team to thoroughly understand their product or service so they can properly convey the message to the client. Clarity also comes from speaking clearly and projecting your voice well.</li>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<li><strong>Build a cheat sheet</strong>: Keep a few bullet points on hand to keep your thoughts organized.</li>
+                            <p>Many salespeople talk too much. A strong pitch isn’t about dumping information – it’s
+                                about listening to your client’s needs and guiding the conversation to the desired
+                                endpoint.&nbsp;</p>
 
 
 
-<li><strong>Persuasion</strong>: Being passionate about your product or service will help convince clients that you are the solution to their problem.</li>
+                            <p>Using <a href="https://www.verywellmind.com/what-is-active-listening-3024343"
+                                    target="_blank" rel="noreferrer noopener">active listening techniques</a> builds
+                                trust and rapport with prospects and customers, which is an essential criterion of any
+                                sales deal. The key elements of active listening include:</p>
 
 
 
-<li><strong>Confidence</strong>: Clients are more likely to buy from confident salespeople. Preparing well beforehand will help your team feel more confident, including doing their homework regarding their customers, current market trends, and statistics.&nbsp;</li>
-</ul>
+                            <ul>
+                                <li><strong>Paying attention</strong>: Your focus must be entirely on the prospect.
+                                    Maintain good eye contact, nod occasionally, or use other affirmative cues through
+                                    your body language.</li>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                                <li><strong>Showing Empathy</strong>: A prospect needs to know that you understand their
+                                    needs and point of view. This establishes trust and rapport.</li>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-3">Ditch the Script, Keep the Structure</h3>
+                                <li><strong>Open-ended Questions</strong>: Avoid asking questions with dead-end answers,
+                                    like “yes” or “no.” Rather, use leading questions that start with “Why, how, when,
+                                    what, or where?” This will give your prospect a chance to provide everything you
+                                    need to know about their needs.</li>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                                <li><strong>Summarizing and Clarifying</strong>: When you’ve heard what the prospect has
+                                    to say, paraphrase it briefly to show that you understand what they’ve said, and ask
+                                    clarifying questions if necessary.</li>
+                            </ul>
 
 
 
-<p>Reading from a script is a guaranteed way to sound like a robot and make a potential client yawn. Instead, build a flexible structure:</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ul>
-<li><strong>Opening Hook</strong>: Start with a relatable question or a quick insight.</li>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/sales-team-graphic-illustration.webp"
+                                    alt="sales-team-graphic-illustration" loading="lazy"></figure>
 
 
 
-<li><strong>Problem and Solution</strong>: Clearly explain the challenge and how your product or service solves it.</li>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h3 class="wp-block-heading" id="heading-1-5">Speak Clearly, Confidently, and Professionally
+                            </h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>It’s not just what you say that matters, but how you say it. Fast talkers can seem
+                                nervous. Monotone voices lose attention. Over-explaining can confuse clients and make
+                                them lose track of the original point of the call or meeting.</p>
 
 
 
-<li><strong>Proof</strong>: Share a quick success story or statistic.</li>
+                            <p>Focus on speaking at a controlled, steady speed. Keep your tone warm and natural, like
+                                talking to a colleague. Pause now and then to give key points a second to land instead
+                                of rushing along to the next stage. Without being too formal, remember to use
+                                businesslike language to sound professional.</p>
 
 
 
-<li><strong>Call to Action</strong>: Guide your customer to the next steps – whether it’s a demo, a follow-up call, or a free trial.</li>
-</ul>
+                            <p>This sounds like a lot to remember, and it is. However, with practice or the <a
+                                    href="https://connectedspeechpathology.com/communication-coaching-for-companies"
+                                    target="_blank" rel="noreferrer noopener">help of communication coaching</a>, it
+                                becomes easier to speak with confidence and clarity, even when under pressure.</p>
 
 
 
-<p>Having a framework instead of a word-for-word script makes conversations feel more natural while keeping you on track. Of course, there must be enough opportunities between the framework stages for the customer to express their pain points, opinions, and objections.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h3 class="wp-block-heading" id="heading-1-6">Make it Relatable with Stories</h3>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>Use stories as well as stats. Of course, customers want to know that you are on top of
+                                market trends, etc. However, telling a relatable story of how a client who struggled
+                                with similar issues and switched to your product or service with excellent results
+                                inspires trust. Stories also make your pitch memorable. Keep them short, though. Nobody
+                                needs a ten-minute backstory – just enough to paint a clear picture!</p>
 
-<h3 class="wp-block-heading" id="heading-1-4">Master the Art of Active Listening</h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h3 class="wp-block-heading" id="heading-1-7">Handle Objections Professionally</h3>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Objections aren’t rejections – they’re opportunities to clarify. Salespeople should
+                                expect them and prepare for them. The golden rule in handling objections is never to
+                                interrupt or contradict a potential client. Instead, acknowledge their concern so they
+                                feel heard and offer a response that keeps the conversation open.&nbsp;</p>
 
-<p>Many salespeople talk too much. A strong pitch isn’t about dumping information – it’s about listening to your client’s needs and guiding the conversation to the desired endpoint.&nbsp;</p>
+                            <p>You can often anticipate typical objections before a call or meeting. This gives you the
+                                opportunity to prepare your responses and solutions beforehand.&nbsp;</p>
 
+                            <p>This could look something like this:</p>
 
 
-<p>Using <a href="https://www.verywellmind.com/what-is-active-listening-3024343" target="_blank" rel="noreferrer noopener">active listening techniques</a> builds trust and rapport with prospects and customers, which is an essential criterion of any sales deal. The key elements of active listening include:</p>
 
+                            <ul>
+                                <li>Customer: That sounds expensive.</li>
+                            </ul>
 
 
-<ul>
-<li><strong>Paying attention</strong>: Your focus must be entirely on the prospect. Maintain good eye contact, nod occasionally, or use other affirmative cues through your body language.</li>
 
+                            <ul>
+                                <li>Response: Yes, budget is always a factor. Many of our customers felt that way at
+                                    first, but once they saw [key benefit], they found it was worth the investment.</li>
+                            </ul>
 
 
-<li><strong>Showing Empathy</strong>: A prospect needs to know that you understand their needs and point of view. This establishes trust and rapport.</li>
 
+                            <ul>
+                                <li>Customer: We already have a solution.</li>
+                            </ul>
 
 
-<li><strong>Open-ended Questions</strong>: Avoid asking questions with dead-end answers, like “yes” or “no.” Rather, use leading questions that start with “Why, how, when, what, or where?” This will give your prospect a chance to provide everything you need to know about their needs.</li>
 
+                            <ul>
+                                <li>Response: OK, what do you like about it, and is there anything you wish it did
+                                    better?</li>
+                            </ul>
 
 
-<li><strong>Summarizing and Clarifying</strong>: When you’ve heard what the prospect has to say, paraphrase it briefly to show that you understand what they’ve said, and ask clarifying questions if necessary.</li>
-</ul>
 
+                            <p>A good response keeps the conversation moving forward rather than shutting it down.</p>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/sales-team-graphic-illustration.webp" alt="sales-team-graphic-illustration" loading="lazy"></figure>
 
+                            <h3 class="wp-block-heading" id="heading-1-8">Use AI Tools</h3>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<h3 class="wp-block-heading" id="heading-1-5">Speak Clearly, Confidently, and Professionally</h3>
 
+                            <p>Team training can cost your firm a small fortune and eat up a good slice of company time.
+                                <a href="https://dyl.com/blog/how-to-use-machine-learning-for-predictive-customer-behavior-analysis"
+                                    target="_blank" rel="noreferrer noopener">AI coaching tools</a> can be a godsend for
+                                training your sales team to improve their pitch. These tools have the necessary
+                                capabilities to:</p>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <ul>
+                                <li>Repeatedly listen to the team’s pitch&nbsp;</li>
 
 
-<p>It’s not just what you say that matters, but how you say it. Fast talkers can seem nervous. Monotone voices lose attention. Over-explaining can confuse clients and make them lose track of the original point of the call or meeting.</p>
 
+                                <li>Give measurable and trackable feedback</li>
 
 
-<p>Focus on speaking at a controlled, steady speed. Keep your tone warm and natural, like talking to a colleague. Pause now and then to give key points a second to land instead of rushing along to the next stage. Without being too formal, remember to use businesslike language to sound professional.</p>
 
+                                <li>Analyze each section of the pitch and indicate which parts need improving</li>
 
 
-<p>This sounds like a lot to remember, and it is. However, with practice or the <a href="https://connectedspeechpathology.com/communication-coaching-for-companies" target="_blank" rel="noreferrer noopener">help of communication coaching</a>, it becomes easier to speak with confidence and clarity, even when under pressure.</p>
-            
-                                        
 
-        
+                                <li>Give suggestions on how to improve the pitch</li>
+                            </ul>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-6">Make it Relatable with Stories</h3>
+                            <h3 class="wp-block-heading" id="heading-1-9">End with a Clear Call to Action</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Use stories as well as stats. Of course, customers want to know that you are on top of market trends, etc. However, telling a relatable story of how a client who struggled with similar issues and switched to your product or service with excellent results inspires trust. Stories also make your pitch memorable. Keep them short, though. Nobody needs a ten-minute backstory – just enough to paint a clear picture!</p>
+                            <p>A great pitch falls flat if there’s no clear call to action. Don’t leave things with a
+                                vague “Let me know what you think.” Instead, guide the prospect to the next step by
+                                setting follow-up arrangements with dates and times.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Creating a sense of urgency also helps drive the pitch to a positive end—so much so that
+                                it can increase conversions by a <a
+                                    href="https://startupnation.com/grow-your-business/tactics-increase-e-commerce-sales/"
+                                    target="_blank" rel="noreferrer noopener">whopping 332%</a>. For example, “We’re
+                                having our annual sale this week, and after that, prices will increase.” The goal is to
+                                keep the momentum going, not to let the conversation fade out, with the customer
+                                forgetting who you are when they put the phone down or leave the meeting.</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-7">Handle Objections Professionally</h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h3 class="wp-block-heading" id="heading-1-10">Final Reminders</h3>
 
 
 
-<p>Objections aren’t rejections – they’re opportunities to clarify. Salespeople should expect them and prepare for them. The golden rule in handling objections is never to interrupt or contradict a potential client. Instead, acknowledge their concern so they feel heard and offer a response that keeps the conversation open.&nbsp;</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>You can often anticipate typical objections before a call or meeting. This gives you the opportunity to prepare your responses and solutions beforehand.&nbsp;</p>
+                            <ul>
+                                <li>Watch your body language</li>
 
 
 
-<p>This could look something like this:</p>
+                                <li>Sales is all about relationships and trust</li>
 
 
 
-<ul>
-<li>Customer: That sounds expensive.</li>
-</ul>
+                                <li>Know and be passionate about your product</li>
+                            </ul>
 
 
 
-<ul>
-<li>Response: Yes, budget is always a factor. Many of our customers felt that way at first, but once they saw [key benefit], they found it was worth the investment.</li>
-</ul>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ul>
-<li>Customer: We already have a solution.</li>
-</ul>
+                            <h3 class="wp-block-heading" id="heading-1-11">From Good (or bad) Pitches to Great Ones</h3>
 
 
 
-<ul>
-<li>Response: OK, what do you like about it, and is there anything you wish it did better?</li>
-</ul>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>A good response keeps the conversation moving forward rather than shutting it down.</p>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h3 class="wp-block-heading" id="heading-1-8">Use AI Tools</h3>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p>Team training can cost your firm a small fortune and eat up a good slice of company time. <a href="https://dyl.com/blog/how-to-use-machine-learning-for-predictive-customer-behavior-analysis" target="_blank" rel="noreferrer noopener">AI coaching tools</a> can be a godsend for training your sales team to improve their pitch. These tools have the necessary capabilities to:</p>
-
-
-
-<ul>
-<li>Repeatedly listen to the team’s pitch&nbsp;</li>
-
-
-
-<li>Give measurable and trackable feedback</li>
-
-
-
-<li>Analyze each section of the pitch and indicate which parts need improving</li>
-
-
-
-<li>Give suggestions on how to improve the pitch</li>
-</ul>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h3 class="wp-block-heading" id="heading-1-9">End with a Clear Call to Action</h3>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p>A great pitch falls flat if there’s no clear call to action. Don’t leave things with a vague “Let me know what you think.” Instead, guide the prospect to the next step by setting follow-up arrangements with dates and times.&nbsp;</p>
-
-
-
-<p>Creating a sense of urgency also helps drive the pitch to a positive end—so much so that it can increase conversions by a <a href="https://startupnation.com/grow-your-business/tactics-increase-e-commerce-sales/" target="_blank" rel="noreferrer noopener">whopping 332%</a>. For example, “We’re having our annual sale this week, and after that, prices will increase.” The goal is to keep the momentum going, not to let the conversation fade out, with the customer forgetting who you are when they put the phone down or leave the meeting.</p>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h3 class="wp-block-heading" id="heading-1-10">Final Reminders</h3>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<ul>
-<li>Watch your body language</li>
-
-
-
-<li>Sales is all about relationships and trust</li>
-
-
-
-<li>Know and be passionate about your product</li>
-</ul>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h3 class="wp-block-heading" id="heading-1-11">From Good (or bad) Pitches to Great Ones</h3>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p>Great sales pitches aren’t about flashy presentations or aggressive tactics. They’re about honest conversations, genuine connections, and real value. With the right approach, you can go from feeling awkward to sounding articulate and knowledgeable, and then closing deals will become second nature.</p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+                            <p>Great sales pitches aren’t about flashy presentations or aggressive tactics. They’re
+                                about honest conversations, genuine connections, and real value. With the right
+                                approach, you can go from feeling awkward to sounding articulate and knowledgeable, and
+                                then closing deals will become second nature.</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2024/07/65090-200.png" alt="DYL Staff" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy"
+                                        data-src="https://wordpress.dyl.com/wp-content/uploads/2024/07/65090-200.png"
+                                        alt="DYL Staff" loading="lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/dylstaff">DYL Staff</a>
-                                  </p>
-                                <p class="article-author-position">DYL Staff write some of the articles you see on DYL. They represent marketing, service, sales, and more!
-                                </p>
-                              </div>
+                                        <a href="/blog/author/dylstaff">DYL Staff</a>
+                                    </p>
+                                    <p class="article-author-position">DYL Staff write some of the articles you see on
+                                        DYL. They represent marketing, service, sales, and more!
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/s/0.8.9/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">benefits-of-email-lead-generation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 7, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 6 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of Email Lead Generation For Elevating Marketing ROI</a>
-		  </p>
-	      
-Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt innovative techniques to maximize ...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How Sales Automation is Revolutionizing Real Estate Lead Generation</a>
-		  </p>
-	      
-There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a variety of factors, including digit...
-	    </div>
-	</div>
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/benefits-of-email-lead-generation"
+                            aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">benefits-of-email-lead-generation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 7, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 6 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/benefits-of-email-lead-generation"
+                                aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of
+                                Email Lead Generation For Elevating Marketing ROI</a>
+                        </p>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/improve-sales">
-	        <p class="element-post-category transition-3d-hover">
-	          Improve Sales
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          February 10, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build a High-Performance Sales Funnel Using Automation</a>
-		  </p>
-	      
-In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is great news overall. But how do you en...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/crm-roi-metrics-that-matter-most" aria-label="CRM ROI Metrics That Matter Most">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/crm-roi-illustration-corrected.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">crm-roi-metrics-that-matter-most</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          December 23, 2024 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 14 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/crm-roi-metrics-that-matter-most" aria-label="CRM ROI Metrics That Matter Most">CRM ROI Metrics That Matter Most</a>
-		  </p>
-	      
-Tracking CRM ROI metrics is essential for any business aiming to grow and thrive. These metrics reveal how effectively a company ...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/enhance-sales-with-crm-and-email-solutions" aria-label="Enhance Sales with CRM and Email Solutions">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/man-using-email-crm-software.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">enhance-sales-with-crm-and-email-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          December 23, 2024 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/enhance-sales-with-crm-and-email-solutions" aria-label="Enhance Sales with CRM and Email Solutions">Enhance Sales with CRM and Email Solutions</a>
-		  </p>
-	      
-In today’s competitive business landscape, leveraging the power of customer relationship management (CRM) and email solutions can...
-	    </div>
-	</div>
+                        Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt
+                        innovative techniques to maximize ...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/sales-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                            aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                                aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How
+                                Sales Automation is Revolutionizing Real Estate Lead Generation</a>
+                        </p>
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a
+                        variety of factors, including digit...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/improve-sales">
+                            <p class="element-post-category transition-3d-hover">
+                                Improve Sales
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation"
+                            aria-label="How to Build a High-Performance Sales Funnel Using Automation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                February 10, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation"
+                                aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build
+                                a High-Performance Sales Funnel Using Automation</a>
+                        </p>
+
+                        In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is
+                        great news overall. But how do you en...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/crm-roi-metrics-that-matter-most" aria-label="CRM ROI Metrics That Matter Most">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/crm-roi-illustration-corrected.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">crm-roi-metrics-that-matter-most</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                December 23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 14 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/crm-roi-metrics-that-matter-most"
+                                aria-label="CRM ROI Metrics That Matter Most">CRM ROI Metrics That Matter Most</a>
+                        </p>
+
+                        Tracking CRM ROI metrics is essential for any business aiming to grow and thrive. These metrics
+                        reveal how effectively a company ...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/enhance-sales-with-crm-and-email-solutions"
+                            aria-label="Enhance Sales with CRM and Email Solutions">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/man-using-email-crm-software.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">enhance-sales-with-crm-and-email-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                December 23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/enhance-sales-with-crm-and-email-solutions"
+                                aria-label="Enhance Sales with CRM and Email Solutions">Enhance Sales with CRM and Email
+                                Solutions</a>
+                        </p>
+
+                        In today’s competitive business landscape, leveraging the power of customer relationship
+                        management (CRM) and email solutions can...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1581,14 +1704,16 @@ In today’s competitive business landscape, leveraging the power of customer re
                 <div class="col-12 col-md-6 bg-white padded-30 text-center left-pop-form">
                     <h3 class="filter-heading"> Join 8,000+<br>
                         Business Owners </h3>
-                    <p>Stay ahead with top-notch marketing, sales, and customer service insights. Sign up for our business
+                    <p>Stay ahead with top-notch marketing, sales, and customer service insights. Sign up for our
+                        business
                         grown tips now!</p>
                     <div class="text-center">
                         <div class="row">
                             <div class="col">
-    
-                                <form accept-charset="UTF-8" method="POST" action="https://dyl361.activehosted.com/proc.php"
-                                    class=" js-validate" novalidate="novalidate">
+
+                                <form accept-charset="UTF-8" method="POST"
+                                    action="https://dyl361.activehosted.com/proc.php" class=" js-validate"
+                                    novalidate="novalidate">
                                     <input type="hidden" name="u" value="55">
                                     <input type="hidden" name="f" value="55">
                                     <input type="hidden" name="s">
@@ -1602,36 +1727,42 @@ In today’s competitive business landscape, leveraging the power of customer re
                                     <input class="email-class form-control" type="text" id="email" name="email"
                                         placeholder="Email" required="" data-name="email"
                                         aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-                                    <button class="subscribe-class-pop transition-3d-hover" type="submit">Subscribe</button>
+                                    <button class="subscribe-class-pop transition-3d-hover"
+                                        type="submit">Subscribe</button>
                                 </form>
                             </div>
                         </div>
-    
+
                     </div>
                     <br>
-                    <small class=" product-page-text-color">We prioritize your privacy. DYL uses your information to reach
-                        out about our relevant content, products, and services. You can unsubscribe anytime. For details,
+                    <small class=" product-page-text-color">We prioritize your privacy. DYL uses your information to
+                        reach
+                        out about our relevant content, products, and services. You can unsubscribe anytime. For
+                        details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?</p>
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                        using
+                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                    </p>
                 </div>
                 <div class="col-12 col-md-6">
                     <div onclick="closePanel()" class="close-popup-button"><img
-                            src="https://images.dyl.com/marketing-web/images/blog/clos.png" loading="lazy" alt="close icon">
+                            src="https://images.dyl.com/marketing-web/images/blog/clos.png" loading="lazy"
+                            alt="close icon">
                     </div>
                     <img src="https://images.dyl.com/marketing-blog/pop-up-image-woman-on-phone.webp"
                         class="img-fluid pop-up-image" alt="pop up image" loading="lazy">
-    
+
                 </div>
-    
+
             </div>
         </div>
     </div>
 
 
 
-   <footer class="bg-darkBlue">
+    <footer class="bg-darkBlue">
         <div class="container">
             <div class="row space-top-2 space-bottom-1 justify-content-lg-between">
                 <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
@@ -2085,13 +2216,6 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
 
         <script>
 
@@ -2157,17 +2281,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
+           
 
 
             window.onload = function () {
@@ -2830,39 +2944,44 @@ thank-you" />
         </div>
     </aside>
 
-   
-   
-   
-
-    
 
 
 
-    
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
-  
+
 
 
     <script>
@@ -2874,23 +2993,8 @@ thank-you" />
             headElement.appendChild(scriptElement);
         }
     </script>
-    
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2918,9 +3022,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -2983,21 +3087,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3012,40 +3102,25 @@ thank-you" />
         });
     </script>
 
+
     <script>
-	var popup2Shown = false;
-
-	$(document).scroll(function () {
-		var y = $(this).scrollTop();
-		if (y > 2000 && !popup2Shown) {
-			$('#popup2').fadeIn();
-			popup2Shown = true;
-		} else {
-			// $('#popup2').fadeOut();
-		}
-	});
-
-	function closePanel() {
-		$('#popup2').fadeOut();
-	}
-
-	function togglerightPanel() {
-    var popupDivright = $('#popUprightDiv');
-    var iconright = popupDivright.find('h6 i');
-    popupDivright.toggleClass('closed');
-    if (popupDivright.hasClass('closed')) {
-        popupDivright.css('height', '50px'); // Set height explicitly when closing
-        iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-    } else {
-        popupDivright.css('height', 'auto'); // Reset height to auto when opening
-        iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
-    }
-}
-$(document).ready(function () {
-    $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
-});
-</script>
-
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 
 </body>
 
