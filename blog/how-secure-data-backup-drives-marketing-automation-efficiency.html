@@ -60,17 +60,17 @@
         }
 
         #popup2 {
-    display: none;
-    background-color: rgba(0, 0, 0, .5);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    z-index: 99999;
-    padding-top: 100px;
-}
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
 
         @media (min-width: 320px) and (max-width: 768px) {
             h1 {
@@ -2857,7 +2857,8 @@ thank-you" />
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" loading="lazy"
+                            alt="dyl logo"> Not
                         using <a href="https://dyl.com">DYL</a> yet?</p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -2987,16 +2988,6 @@ thank-you" />
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            if (window.innerWidth <= 600) {
-                const images = document.querySelectorAll("img.mobile-display-none");
-                images.forEach(img => {
-                    img.setAttribute("loading", "lazy");
-                });
-            }
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
             const lazyBgElements = document.querySelectorAll('.lazy-bg');
 
             const observer = new IntersectionObserver((entries, observer) => {
@@ -3016,40 +3007,57 @@ thank-you" />
             lazyBgElements.forEach(el => observer.observe(el));
         });
     </script>
-   <script>
-	var popup2Shown = false;
+    <script>
+        var popup2Shown = false;
 
-	$(document).scroll(function () {
-		var y = $(this).scrollTop();
-		if (y > 2000 && !popup2Shown) {
-			$('#popup2').fadeIn();
-			popup2Shown = true;
-		} else {
-			// $('#popup2').fadeOut();
-		}
-	});
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 2000 && !popup2Shown) {
+                $('#popup2').fadeIn();
+                popup2Shown = true;
+            } else {
+                // $('#popup2').fadeOut();
+            }
+        });
 
-	function closePanel() {
-		$('#popup2').fadeOut();
-	}
+        function closePanel() {
+            $('#popup2').fadeOut();
+        }
 
-	function togglerightPanel() {
-    var popupDivright = $('#popUprightDiv');
-    var iconright = popupDivright.find('h6 i');
-    popupDivright.toggleClass('closed');
-    if (popupDivright.hasClass('closed')) {
-        popupDivright.css('height', '50px'); // Set height explicitly when closing
-        iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-    } else {
-        popupDivright.css('height', 'auto'); // Reset height to auto when opening
-        iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
-    }
-}
-$(document).ready(function () {
-    $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
-});
-</script>
-
+        function togglerightPanel() {
+            var popupDivright = $('#popUprightDiv');
+            var iconright = popupDivright.find('h6 i');
+            popupDivright.toggleClass('closed');
+            if (popupDivright.hasClass('closed')) {
+                popupDivright.css('height', '50px'); // Set height explicitly when closing
+                iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
+            } else {
+                popupDivright.css('height', 'auto'); // Reset height to auto when opening
+                iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
+            }
+        }
+        $(document).ready(function () {
+            $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
+        });
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 
 </body>
 
