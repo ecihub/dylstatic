@@ -2985,61 +2985,36 @@ thank-you" />
         });
 
     </script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"
+        defer></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js" defer></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const lazyBgElements = document.querySelectorAll('.lazy-bg');
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const el = entry.target;
-                        const bgUrl = el.getAttribute('data-bg');
-                        if (bgUrl) {
-                            el.style.backgroundImage = `url('${bgUrl}')`;
-                            el.classList.remove('lazy-bg');
-                            observer.unobserve(el);
-                        }
+        $('.lazy').Lazy({
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            visibleOnly: true,
+            onError: function (element) {
+                console.log('error loading ' + element.data('src'));
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            const articleContent = document.querySelector("#article-contents");
+            if (articleContent) {
+                const images = articleContent.querySelectorAll("img");
+                images.forEach(img => {
+                    if (!img.hasAttribute("loading")) {
+                        img.setAttribute("loading", "lazy");
                     }
                 });
-            });
-
-            lazyBgElements.forEach(el => observer.observe(el));
-        });
-    </script>
-    <script>
-        var popup2Shown = false;
-
-        $(document).scroll(function () {
-            var y = $(this).scrollTop();
-            if (y > 2000 && !popup2Shown) {
-                $('#popup2').fadeIn();
-                popup2Shown = true;
-            } else {
-                // $('#popup2').fadeOut();
             }
         });
-
-        function closePanel() {
-            $('#popup2').fadeOut();
-        }
-
-        function togglerightPanel() {
-            var popupDivright = $('#popUprightDiv');
-            var iconright = popupDivright.find('h6 i');
-            popupDivright.toggleClass('closed');
-            if (popupDivright.hasClass('closed')) {
-                popupDivright.css('height', '50px'); // Set height explicitly when closing
-                iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-            } else {
-                popupDivright.css('height', 'auto'); // Reset height to auto when opening
-                iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
-            }
-        }
-        $(document).ready(function () {
-            $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
-        });
     </script>
+
+
     <script>
         window.addEventListener('load', function () {
             const script = document.createElement('script');
