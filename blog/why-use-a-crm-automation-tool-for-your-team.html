@@ -11,14 +11,14 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
- Why Use a CRM Automation Tool for Your Team | DYL
+        Why Use a CRM Automation Tool for Your Team | DYL
     </title>
     <meta name="description"
         content="Boost team efficiency with CRM automation! Learn how automation tools streamline tasks, save time, and enhance productivity for your team.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
 
@@ -52,8 +52,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +97,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/ai-and-data-analytics-proving-success-on-crm.webp"
+        type="image/webp" fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +115,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +142,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +153,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +170,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +201,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +212,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +228,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +258,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +270,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +287,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +307,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +325,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +345,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +360,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +389,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +471,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +488,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +529,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +545,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +586,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +603,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +623,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +641,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +661,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +676,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +705,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,799 +729,1082 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">Why Use a CRM Automation Tool for Your Team</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        December
-                          23, 2024
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 11 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">Why Use a CRM Automation Tool for Your Team</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                December
+                                23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 11 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/ai-and-data-analytics-proving-success-on-crm.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/ai-and-data-analytics-proving-success-on-crm.webp"
+                            width="680" height="383" alt="blog featured image">
 
-                        <a href="/blog/category/crm-tools-and-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            CRM Tools + Tips
-                          </p>
+                        <br><br>
+
+
+
+
+
+
+
+                        <a href="category/crm-tools-and-tips.html">
+                            <p class="element-category-post transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
                         </a>
 
-                        
-                    
-                      
 
-                        <a href="/blog/category/workplace-efficiency">
-                          <p class="element-category-post transition-3d-hover">
-                            Workplace Efficiency
-                          </p>
+
+
+
+                        <a href="category/workplace-efficiency.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Workplace Efficiency
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 234px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Boosting Team Productivity with Automated Processes</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Eliminating Manual Errors Through Automation</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Centralized Data Management for Better Insights</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Improving Customer Relationships with Faster Responses</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Aligning Sales, Marketing, and Support Teams Seamlessly</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Tracking Performance Metrics in Real Time</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Customizing Workflows to Fit Your Team’s Needs</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-8">Reducing Employee Workload to Focus on High-Value Activities</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-9">Conclusion</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 234px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Boosting Team
+                                        Productivity with Automated Processes</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Eliminating Manual
+                                        Errors Through Automation</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Centralized Data
+                                        Management for Better Insights</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Improving Customer
+                                        Relationships with Faster Responses</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Aligning Sales,
+                                        Marketing, and Support Teams Seamlessly</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Tracking
+                                        Performance Metrics in Real Time</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Customizing
+                                        Workflows to Fit Your Team’s Needs</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-8">Reducing Employee
+                                        Workload to Focus on High-Value Activities</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-9">Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>A CRM automation tool changes the way teams manage their work. It simplifies processes, reduces repetitive tasks, and helps employees focus on high-value activities. With fewer time-consuming duties, team members can dedicate their energy to building stronger customer connections and driving results. <a href="https://dyl.com/blog/top-crm-benefits-for-growing-your-business" target="_blank" rel="noreferrer noopener">This technology streamlines workflows</a>, ensuring that every moment counts.&nbsp;</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>A CRM automation tool changes the way teams manage their work. It simplifies processes,
+                                reduces repetitive tasks, and helps employees focus on high-value activities. With fewer
+                                time-consuming duties, team members can dedicate their energy to building stronger
+                                customer connections and driving results. <a
+                                    href="https://dyl.com/blog/top-crm-benefits-for-growing-your-business.html"
+                                    target="_blank" rel="noreferrer noopener">This technology streamlines workflows</a>,
+                                ensuring that every moment counts.&nbsp;</p>
 
 
 
-<p>By reducing employee workload, a <a href="https://dyl.com/blog/crm-implementation" target="_blank" rel="noreferrer noopener">CRM automation tool increases efficiency across the board</a>. It eliminates unnecessary manual tasks, freeing up time for creativity and innovation. Teams no longer need to juggle endless tasks and can stay focused on growing the business. This approach empowers employees and enhances productivity, creating a smoother path to success.&nbsp;</p>
+                            <p>By reducing employee workload, a <a href="crm-implementation.html"
+                                    target="_blank" rel="noreferrer noopener">CRM automation tool increases efficiency
+                                    across the board</a>. It eliminates unnecessary manual tasks, freeing up time for
+                                creativity and innovation. Teams no longer need to juggle endless tasks and can stay
+                                focused on growing the business. This approach empowers employees and enhances
+                                productivity, creating a smoother path to success.&nbsp;</p>
 
 
 
-<h3 class="wp-block-heading">Streamlining Routine Tasks for Enhanced Efficiency&nbsp;</h3>
+                            <h3 class="wp-block-heading">Streamlining Routine Tasks for Enhanced Efficiency&nbsp;</h3>
 
 
 
-<p>CRM automation tools transform how teams handle routine tasks. <a href="https://dyl.com/blog/why-use-a-crm-key-benefits-unveiled" target="_blank" rel="noreferrer noopener">These tools take over repetitive processes</a>, such as data entry or follow-up reminders, allowing team members to focus on high-value activities. </p>
+                            <p>CRM automation tools transform how teams handle routine tasks. <a
+                                    href="why-use-a-crm-key-benefits-unveiled.html" target="_blank"
+                                    rel="noreferrer noopener">These tools take over repetitive processes</a>, such as
+                                data entry or follow-up reminders, allowing team members to focus on high-value
+                                activities. </p>
 
 
 
-<p>By reducing employee workload to focus on high-value activities, businesses create an environment where innovation thrives. Employees can dedicate their time to building deeper customer relationships and closing deals effectively, rather than being tied to mundane tasks.&nbsp;</p>
+                            <p>By reducing employee workload to focus on high-value activities, businesses create an
+                                environment where innovation thrives. Employees can dedicate their time to building
+                                deeper customer relationships and closing deals effectively, rather than being tied to
+                                mundane tasks.&nbsp;</p>
 
 
 
-<p>With <a href="https://dyl.com/blog/why-crm-software-proficiency-matters-for-success" target="_blank" rel="noreferrer noopener">CRM automation, workflows operate smoothly and without interruptions</a>. The system assigns lead scores automatically, prioritizing prospects based on their engagement and potential value. </p>
+                            <p>With <a href="why-crm-software-proficiency-matters-for-success.html"
+                                    target="_blank" rel="noreferrer noopener">CRM automation, workflows operate smoothly
+                                    and without interruptions</a>. The system assigns lead scores automatically,
+                                prioritizing prospects based on their engagement and potential value. </p>
 
 
 
-<p>This enables teams to concentrate their efforts on leads that matter most while letting the system handle the busywork. It also ensures no opportunities fall through the cracks while making customer interactions more strategic and meaningful.&nbsp;</p>
+                            <p>This enables teams to concentrate their efforts on leads that matter most while letting
+                                the system handle the busywork. It also ensures no opportunities fall through the cracks
+                                while making customer interactions more strategic and meaningful.&nbsp;</p>
 
 
 
-<p>Efficiency becomes a natural outcome when every task has its place within an automated system. Employees experience fewer distractions and more clarity in their roles. They no longer need to juggle scattered responsibilities, which boosts morale and productivity. </p>
+                            <p>Efficiency becomes a natural outcome when every task has its place within an automated
+                                system. Employees experience fewer distractions and more clarity in their roles. They no
+                                longer need to juggle scattered responsibilities, which boosts morale and productivity.
+                            </p>
 
 
 
-<p>By handling the routine, <a href="https://dyl.com/blog/customer-service-crm-systems-for-better-relations" target="_blank" rel="noreferrer noopener">a CRM automation tool creates room for teams to innovate</a>. It sets businesses on a path for growth, leaving behind inefficiencies that once slowed them down.</p>
+                            <p>By handling the routine, <a
+                                    href="customer-service-crm-systems-for-better-relations.html"
+                                    target="_blank" rel="noreferrer noopener">a CRM automation tool creates room for
+                                    teams to innovate</a>. It sets businesses on a path for growth, leaving behind
+                                inefficiencies that once slowed them down.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/ai-crm-automation-tool.webp" alt="ai-crm-automation-tool" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/ai-crm-automation-tool.webp"
+                                    alt="ai-crm-automation-tool" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1">Boosting Team Productivity with Automated Processes</h2>
+                            <h2 class="wp-block-heading" id="heading-1">Boosting Team Productivity with Automated
+                                Processes</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Boosting team productivity becomes seamless with automated processes in place. <a href="https://dyl.com/blog/enhance-sales-with-crm-and-email-solutions" target="_blank" rel="noreferrer noopener">CRM automation tools</a> streamline tasks like assigning lead scores and managing marketing tasks. By removing the need for manual updates, teams gain the ability to focus on the core elements of the sales process. </p>
+                            <p>Boosting team productivity becomes seamless with automated processes in place. <a
+                                    href="enhance-sales-with-crm-and-email-solutions.html"
+                                    target="_blank" rel="noreferrer noopener">CRM automation tools</a> streamline tasks
+                                like assigning lead scores and managing marketing tasks. By removing the need for manual
+                                updates, teams gain the ability to focus on the core elements of the sales process. </p>
 
 
 
-<p>This not only saves time but also enhances the overall quality of work delivered. Automation allows employees to dedicate their energy to meaningful strategies instead of repetitive activities, providing a clear path toward improved results.</p>
+                            <p>This not only saves time but also enhances the overall quality of work delivered.
+                                Automation allows employees to dedicate their energy to meaningful strategies instead of
+                                repetitive activities, providing a clear path toward improved results.</p>
 
 
 
-<p>The sales process also benefits from automation by ensuring every step moves efficiently. Teams no longer need to worry about missed follow-ups or overlooked opportunities. Automated systems track customer interactions, schedule reminders, and keep workflows flowing smoothly. </p>
+                            <p>The sales process also benefits from automation by ensuring every step moves efficiently.
+                                Teams no longer need to worry about missed follow-ups or overlooked opportunities.
+                                Automated systems track customer interactions, schedule reminders, and keep workflows
+                                flowing smoothly. </p>
 
 
 
-<p>This consistency makes team efforts more effective and goal-driven. With routine marketing tasks being handled automatically, employees can channel their talents into creating impactful campaigns or exploring innovative ideas.</p>
+                            <p>This consistency makes team efforts more effective and goal-driven. With routine
+                                marketing tasks being handled automatically, employees can channel their talents into
+                                creating impactful campaigns or exploring innovative ideas.</p>
 
 
 
-<p>When team members have access to tools that optimize their work, job satisfaction grows naturally. Clear workflows and reduced administrative burdens encourage a sharper focus on achieving objectives. </p>
+                            <p>When team members have access to tools that optimize their work, job satisfaction grows
+                                naturally. Clear workflows and reduced administrative burdens encourage a sharper focus
+                                on achieving objectives. </p>
 
 
 
-<p>Automation nurtures this environment by turning potential bottlenecks into streamlined processes. Whether it’s sorting lead scores or automating segments of the sales process, these tools create a workspace where productivity thrives. <a href="https://dyl.com/blog/crm-roi-metrics-that-matter-most" target="_blank" rel="noreferrer noopener">Teams unlock their full potential while businesses scale their operations more effectively</a>.</p>
+                            <p>Automation nurtures this environment by turning potential bottlenecks into streamlined
+                                processes. Whether it’s sorting lead scores or automating segments of the sales process,
+                                these tools create a workspace where productivity thrives. <a
+                                    href="crm-roi-metrics-that-matter-most.html" target="_blank"
+                                    rel="noreferrer noopener">Teams unlock their full potential while businesses scale
+                                    their operations more effectively</a>.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">Eliminating Manual Errors Through Automation</h2>
+                            <h2 class="wp-block-heading" id="heading-2">Eliminating Manual Errors Through Automation
+                            </h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Eliminating manual errors becomes easier with the help of automation tools designed to handle the heavy lifting. <a href="https://dyl.com/blog/how-collaborative-crms-improve-team-efficiency" target="_blank" rel="noreferrer noopener">These tools take repetitive tasks off your team’s plate</a>, such as data entry and scheduling, reducing the risk of human mistakes. </p>
+                            <p>Eliminating manual errors becomes easier with the help of automation tools designed to
+                                handle the heavy lifting. <a
+                                    href="how-collaborative-crms-improve-team-efficiency.html"
+                                    target="_blank" rel="noreferrer noopener">These tools take repetitive tasks off your
+                                    team’s plate</a>, such as data entry and scheduling, reducing the risk of human
+                                mistakes. </p>
 
 
 
-<p>With processes running on autopilot, your team can stay confident that customer information is accurate and updated. This ensures smooth operations and builds trust across all workflows. When tasks are handled effectively from start to finish, your team saves time and energy for more meaningful work.</p>
+                            <p>With processes running on autopilot, your team can stay confident that customer
+                                information is accurate and updated. This ensures smooth operations and builds trust
+                                across all workflows. When tasks are handled effectively from start to finish, your team
+                                saves time and energy for more meaningful work.</p>
 
 
 
-<p>Using artificial intelligence in automation takes error prevention to the next level. AI systems analyze data quickly and identify patterns that humans might overlook. This means lead management becomes smarter and more reliable. </p>
+                            <p>Using artificial intelligence in automation takes error prevention to the next level. AI
+                                systems analyze data quickly and identify patterns that humans might overlook. This
+                                means lead management becomes smarter and more reliable. </p>
 
 
 
-<p>For example, AI can prioritize leads and make sure the right team members engage with them at the right time. By removing guesswork and minimizing errors, artificial intelligence ensures your team always stays focused on results. Automation powered by AI keeps everything moving forward without slipping through the cracks.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <p>For example, AI can prioritize leads and make sure the right team members engage with
+                                them at the right time. By removing guesswork and minimizing errors, artificial
+                                intelligence ensures your team always stays focused on results. Automation powered by AI
+                                keeps everything moving forward without slipping through the cracks.</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>Streamlined processes not only eliminate errors but also make your team’s efforts more impactful. Automation tools handle the heavy lifting so your team can act strategically. </p>
 
 
+                            <p>Streamlined processes not only eliminate errors but also make your team’s efforts more
+                                impactful. Automation tools handle the heavy lifting so your team can act strategically.
+                            </p>
 
-<p>With distractions out of the way, they can connect better with clients and work towards clear goals. Whether it’s tracking leads or closing deals, the accuracy and efficiency provided by automation build a stronger, more competitive team.</p>
 
 
+                            <p>With distractions out of the way, they can connect better with clients and work towards
+                                clear goals. Whether it’s tracking leads or closing deals, the accuracy and efficiency
+                                provided by automation build a stronger, more competitive team.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/crm-taking-data-and-transforming-to-usable-analytics.webp" alt="crm-taking-data-and-transforming-to-usable-analytics" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none "><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/crm-taking-data-and-transforming-to-usable-analytics.webp"
+                                    alt="crm-taking-data-and-transforming-to-usable-analytics" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-3">Centralized Data Management for Better Insights</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-3">Centralized Data Management for Better Insights
+                            </h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>A CRM automation tool brings all of your team’s data into one place, making it easier to understand and use. <a href="https://dyl.com/blog/the-role-of-technology-in-better-customer-management" target="_blank" rel="noreferrer noopener">By storing information like customer interactions</a>, sales records, and communication history in a central hub, your team can access what they need without wasting time. </p>
 
 
+                            <p>A CRM automation tool brings all of your team’s data into one place, making it easier to
+                                understand and use. <a
+                                    href="the-role-of-technology-in-better-customer-management.html"
+                                    target="_blank" rel="noreferrer noopener">By storing information like customer
+                                    interactions</a>, sales records, and communication history in a central hub, your
+                                team can access what they need without wasting time. </p>
 
-<p>This structure keeps everything organized and ensures everyone stays up-to-date. No one has to sort through scattered spreadsheets or dig through emails to find important details. Instead, the tool provides clear and instant answers.</p>
 
 
+                            <p>This structure keeps everything organized and ensures everyone stays up-to-date. No one
+                                has to sort through scattered spreadsheets or dig through emails to find important
+                                details. Instead, the tool provides clear and instant answers.</p>
 
-<p>With centralized data, patterns and trends become much more visible. A CRM automation tool analyzes this information efficiently, creating valuable insights for your team. These insights can reveal customer preferences, which help guide smarter decisions. </p>
 
 
+                            <p>With centralized data, patterns and trends become much more visible. A CRM automation
+                                tool analyzes this information efficiently, creating valuable insights for your team.
+                                These insights can reveal customer preferences, which help guide smarter decisions. </p>
 
-<p>Your team can focus on what matters most, creating better strategies and refining their approach. This builds stronger connections with clients and leads because you act with the right knowledge at the right time. Having these details in one location also reduces the risk of mistakes caused by outdated or missing data.</p>
 
 
+                            <p>Your team can focus on what matters most, creating better strategies and refining their
+                                approach. This builds stronger connections with clients and leads because you act with
+                                the right knowledge at the right time. Having these details in one location also reduces
+                                the risk of mistakes caused by outdated or missing data.</p>
 
-<p>The simplicity of central data unlocks more teamwork and collaboration. A CRM automation tool ensures all team members are on the same page, working toward shared goals. Regardless of location, they can easily review data and contribute to ongoing projects. </p>
 
 
+                            <p>The simplicity of central data unlocks more teamwork and collaboration. A CRM automation
+                                tool ensures all team members are on the same page, working toward shared goals.
+                                Regardless of location, they can easily review data and contribute to ongoing projects.
+                            </p>
 
-<p>By removing guesswork, it empowers everyone to work confidently and efficiently. Centralized data management through CRM automation strengthens every part of your process, giving your team the edge they need to succeed. With this tool, you build a foundation of knowledge that supports performance and growth over the long term.</p>
 
 
+                            <p>By removing guesswork, it empowers everyone to work confidently and efficiently.
+                                Centralized data management through CRM automation strengthens every part of your
+                                process, giving your team the edge they need to succeed. With this tool, you build a
+                                foundation of knowledge that supports performance and growth over the long term.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4">Improving Customer Relationships with Faster Responses</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4">Improving Customer Relationships with Faster
+                                Responses</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p><a href="https://dyl.com/blog/real-results-from-businesses-using-crm" target="_blank" rel="noreferrer noopener">Improving customer relationships starts with faster, more thoughtful responses</a>. A CRM automation tool helps your team use automation features to respond quickly and effectively. These tools streamline communication by organizing customer data and tracking interactions, so no message goes unanswered. </p>
 
 
+                            <p><a href="real-results-from-businesses-using-crm.html" target="_blank"
+                                    rel="noreferrer noopener">Improving customer relationships starts with faster, more
+                                    thoughtful responses</a>. A CRM automation tool helps your team use automation
+                                features to respond quickly and effectively. These tools streamline communication by
+                                organizing customer data and tracking interactions, so no message goes unanswered. </p>
 
-<p>When team members have the right information at their fingertips, they can provide solutions faster and with more confidence. This builds trust and shows customers that their needs are your priority.</p>
 
 
+                            <p>When team members have the right information at their fingertips, they can provide
+                                solutions faster and with more confidence. This builds trust and shows customers that
+                                their needs are your priority.</p>
 
-<p>Automation features also allow your team to manage marketing campaigns more smoothly. By tracking customer preferences, behaviors, and past interactions, the CRM ensures every message feels relevant and timely. </p>
 
 
+                            <p>Automation features also allow your team to manage marketing campaigns more smoothly. By
+                                tracking customer preferences, behaviors, and past interactions, the CRM ensures every
+                                message feels relevant and timely. </p>
 
-<p>This personalization adds a human touch that strengthens customer loyalty. With fewer delays and better-planned outreach, your team can keep customers engaged and connected, leading to stronger long-term relationships.</p>
 
 
+                            <p>This personalization adds a human touch that strengthens customer loyalty. With fewer
+                                delays and better-planned outreach, your team can keep customers engaged and connected,
+                                leading to stronger long-term relationships.</p>
 
-<p>By enabling quick and organized responses, <a href="https://dyl.com/blog/key-duties-of-a-relationship-manager-uncovered" target="_blank" rel="noreferrer noopener">CRM tools also reduce stress for team members</a>. They no longer waste time searching for data or worrying about missed follow-ups. Instead, they stay focused on creating meaningful connections with every customer. </p>
 
 
+                            <p>By enabling quick and organized responses, <a
+                                    href="key-duties-of-a-relationship-manager-uncovered.html"
+                                    target="_blank" rel="noreferrer noopener">CRM tools also reduce stress for team
+                                    members</a>. They no longer waste time searching for data or worrying about missed
+                                follow-ups. Instead, they stay focused on creating meaningful connections with every
+                                customer. </p>
 
-<p>Faster responses paired with thoughtful automation features help your team work smarter, not harder. This energizes everyone involved, boosting both confidence and customer satisfaction. With these tools, your team strengthens every interaction and builds lasting loyalty.</p>
 
 
+                            <p>Faster responses paired with thoughtful automation features help your team work smarter,
+                                not harder. This energizes everyone involved, boosting both confidence and customer
+                                satisfaction. With these tools, your team strengthens every interaction and builds
+                                lasting loyalty.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5">Aligning Sales, Marketing, and Support Teams Seamlessly</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5">Aligning Sales, Marketing, and Support Teams
+                                Seamlessly</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Aligning sales, marketing, and support teams becomes effortless with a CRM automation tool. These tools centralize customer data, ensuring each department works with the same, accurate information. </p>
 
 
+                            <p>Aligning sales, marketing, and support teams becomes effortless with a CRM automation
+                                tool. These tools centralize customer data, ensuring each department works with the
+                                same, accurate information. </p>
 
-<p>Sales can track lead generation activities more effectively, marketing can launch personalized campaigns, and support teams can offer faster assistance. This shared visibility keeps everyone on the same page and minimizes confusion. Each team focuses on their priorities while still working in harmony with others, creating a more streamlined and efficient workflow.</p>
 
 
+                            <p>Sales can track lead generation activities more effectively, marketing can launch
+                                personalized campaigns, and support teams can offer faster assistance. This shared
+                                visibility keeps everyone on the same page and minimizes confusion. Each team focuses on
+                                their priorities while still working in harmony with others, creating a more streamlined
+                                and efficient workflow.</p>
 
-<p>By using a CRM automation tool, your team handles customer data with precision and clarity. Marketing can target the right audiences based on clear patterns, driving better lead generation. Meanwhile, sales teams receive these leads pre-qualified and ready for outreach, allowing them to focus more on closing deals. </p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+
+
+                            <p>By using a CRM automation tool, your team handles customer data with precision and
+                                clarity. Marketing can target the right audiences based on clear patterns, driving
+                                better lead generation. Meanwhile, sales teams receive these leads pre-qualified and
+                                ready for outreach, allowing them to focus more on closing deals. </p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>Support teams, backed by well-organized information, provide consistent and reliable assistance to customers. This seamless flow between departments enhances teamwork and ensures all processes are aligned to better serve customers.</p>
 
 
+                            <p>Support teams, backed by well-organized information, provide consistent and reliable
+                                assistance to customers. This seamless flow between departments enhances teamwork and
+                                ensures all processes are aligned to better serve customers.</p>
 
-<p>The stronger integration between teams also creates a smoother experience for customers. From the first touchpoint in marketing to closing deals with sales and ongoing support, CRM automation keeps everything connected. </p>
 
 
+                            <p>The stronger integration between teams also creates a smoother experience for customers.
+                                From the first touchpoint in marketing to closing deals with sales and ongoing support,
+                                CRM automation keeps everything connected. </p>
 
-<p>Customers feel valued when their information is understood and applied thoughtfully. Clear communication between departments prevents missteps that can lead to frustration. Instead, your team delivers efficient and personalized service every step of the way. This alignment boosts productivity in your business while fostering trust and satisfaction with your customers.</p>
 
 
+                            <p>Customers feel valued when their information is understood and applied thoughtfully.
+                                Clear communication between departments prevents missteps that can lead to frustration.
+                                Instead, your team delivers efficient and personalized service every step of the way.
+                                This alignment boosts productivity in your business while fostering trust and
+                                satisfaction with your customers.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-6">Tracking Performance Metrics in Real Time</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-6">Tracking Performance Metrics in Real Time</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Tracking performance metrics in real time becomes effortless with a user-friendly CRM automation tool. The software collects and organizes data as your team works through sales pipelines, giving you a clear view of your progress. </p>
 
 
+                            <p>Tracking performance metrics in real time becomes effortless with a user-friendly CRM
+                                automation tool. The software collects and organizes data as your team works through
+                                sales pipelines, giving you a clear view of your progress. </p>
 
-<p>With up-to-date insights available instantly, your team can make quick, informed decisions to stay on track. This ensures that every step, from identifying leads to closing deals, runs smoothly and efficiently. The simplicity and accessibility of the tool keep everyone focused on achieving goals without unnecessary confusion.</p>
 
 
+                            <p>With up-to-date insights available instantly, your team can make quick, informed
+                                decisions to stay on track. This ensures that every step, from identifying leads to
+                                closing deals, runs smoothly and efficiently. The simplicity and accessibility of the
+                                tool keep everyone focused on achieving goals without unnecessary confusion.</p>
 
-<p>A CRM automation tool enables managers and team members to monitor sales pipelines with confidence. They can evaluate which deals are advancing and which might need extra attention. </p>
 
 
+                            <p>A CRM automation tool enables managers and team members to monitor sales pipelines with
+                                confidence. They can evaluate which deals are advancing and which might need extra
+                                attention. </p>
 
-<p>This constant visibility helps catch potential slowdowns or bottlenecks before they turn into larger problems. Team members stay motivated when they see how their work directly impacts progress. The ability to track key metrics encourages accountability and drives steady improvement across the board.</p>
 
 
+                            <p>This constant visibility helps catch potential slowdowns or bottlenecks before they turn
+                                into larger problems. Team members stay motivated when they see how their work directly
+                                impacts progress. The ability to track key metrics encourages accountability and drives
+                                steady improvement across the board.</p>
 
-<p>Handling multiple tasks and goals becomes more manageable when your team has the right tools to track performance. Real-time data highlights successes and reveals areas for growth, allowing for quick adjustments. </p>
 
 
+                            <p>Handling multiple tasks and goals becomes more manageable when your team has the right
+                                tools to track performance. Real-time data highlights successes and reveals areas for
+                                growth, allowing for quick adjustments. </p>
 
-<p>Closing deals becomes less stressful when everyone is aligned and working from the same accurate information. A user-friendly CRM gives your team the edge it needs, empowering them to perform at their best every day.</p>
 
 
+                            <p>Closing deals becomes less stressful when everyone is aligned and working from the same
+                                accurate information. A user-friendly CRM gives your team the edge it needs, empowering
+                                them to perform at their best every day.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-7">Customizing Workflows to Fit Your Team’s Needs</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-7">Customizing Workflows to Fit Your Team’s Needs
+                            </h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Customizing workflows in a CRM automation tool boosts your team’s ability to manage tasks more effectively. A tailored system keeps your marketing, sales, and customer service efforts aligned, ensuring no resources are wasted. </p>
 
 
+                            <p>Customizing workflows in a CRM automation tool boosts your team’s ability to manage tasks
+                                more effectively. A tailored system keeps your marketing, sales, and customer service
+                                efforts aligned, ensuring no resources are wasted. </p>
 
-<p>By creating workflows that match your team’s daily operations, you allow them to focus on meaningful work instead of navigating a one-size-fits-all solution. Each department can fine-tune their processes to fit their specific goals, saving time and reducing unnecessary steps. This adjustment empowers your team to respond quickly and deliver better results.</p>
 
 
+                            <p>By creating workflows that match your team’s daily operations, you allow them to focus on
+                                meaningful work instead of navigating a one-size-fits-all solution. Each department can
+                                fine-tune their processes to fit their specific goals, saving time and reducing
+                                unnecessary steps. This adjustment empowers your team to respond quickly and deliver
+                                better results.</p>
 
-<p>Sales automations further simplify daily tasks, giving your team more space to build relationships and close deals. Automating repetitive activities, such as data entry and follow-ups, helps eliminate errors and improves consistency. </p>
 
 
+                            <p>Sales automations further simplify daily tasks, giving your team more space to build
+                                relationships and close deals. Automating repetitive activities, such as data entry and
+                                follow-ups, helps eliminate errors and improves consistency. </p>
 
-<p>These efficiencies allow greater focus on vital interactions, whether it’s with prospects or existing clients. Marketing campaigns also benefit from streamlined workflows, especially when organizing email campaigns or analyzing social media engagement. Every action becomes smoother, blending seamlessly to improve the overall performance of your team.</p>
 
 
+                            <p>These efficiencies allow greater focus on vital interactions, whether it’s with prospects
+                                or existing clients. Marketing campaigns also benefit from streamlined workflows,
+                                especially when organizing email campaigns or analyzing social media engagement. Every
+                                action becomes smoother, blending seamlessly to improve the overall performance of your
+                                team.</p>
 
-<p>When your workflows match your team’s strengths, collaboration flourishes across marketing, sales, and customer service. Social media tasks, deal tracking, and support tickets can flow together cohesively, ensuring all team members stay in sync. </p>
 
 
+                            <p>When your workflows match your team’s strengths, collaboration flourishes across
+                                marketing, sales, and customer service. Social media tasks, deal tracking, and support
+                                tickets can flow together cohesively, ensuring all team members stay in sync. </p>
 
-<p>A customized system breaks down silos while connecting efforts in real-time. By fostering adaptability, your team can handle challenges without falling behind. This flexibility provides the tools needed to succeed in a fast-paced environment. Each member gains confidence as they see how their unique role fits into the bigger picture.</p>
 
 
+                            <p>A customized system breaks down silos while connecting efforts in real-time. By fostering
+                                adaptability, your team can handle challenges without falling behind. This flexibility
+                                provides the tools needed to succeed in a fast-paced environment. Each member gains
+                                confidence as they see how their unique role fits into the bigger picture.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-8">Reducing Employee Workload to Focus on High-Value Activities</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-8">Reducing Employee Workload to Focus on
+                                High-Value Activities</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>A CRM automation tool reduces employee workload by handling repetitive tasks efficiently. It automates processes like data entry, scheduling, and reminders, which frees your team to focus on activities that drive growth. Tasks such as tracking leads or managing follow-ups no longer consume hours, allowing employees to spend their time building relationships or closing deals.</p>
 
 
+                            <p>A CRM automation tool reduces employee workload by handling repetitive tasks efficiently.
+                                It automates processes like data entry, scheduling, and reminders, which frees your team
+                                to focus on activities that drive growth. Tasks such as tracking leads or managing
+                                follow-ups no longer consume hours, allowing employees to spend their time building
+                                relationships or closing deals.</p>
 
-<p>For small businesses, this shift creates a significant impact. Teams can use the extra time to refine their strategies or enhance customer service. Social media management, for example, becomes more targeted when employees have the space to curate meaningful content and engage with their audience. With automation, every action ties back to activities that grow the business and improve customer satisfaction.</p>
 
 
+                            <p>For small businesses, this shift creates a significant impact. Teams can use the extra
+                                time to refine their strategies or enhance customer service. Social media management,
+                                for example, becomes more targeted when employees have the space to curate meaningful
+                                content and engage with their audience. With automation, every action ties back to
+                                activities that grow the business and improve customer satisfaction.</p>
 
-<p>By streamlining workflows, a CRM automation tool fosters a balanced environment where employees can stay productive without feeling overwhelmed. It reduces pressure across departments by simplifying tasks and organizing priorities. This clarity encourages focus on creative or high-value activities that deserve attention, helping every team member contribute their best to the small business’s success.</p>
 
 
+                            <p>By streamlining workflows, a CRM automation tool fosters a balanced environment where
+                                employees can stay productive without feeling overwhelmed. It reduces pressure across
+                                departments by simplifying tasks and organizing priorities. This clarity encourages
+                                focus on creative or high-value activities that deserve attention, helping every team
+                                member contribute their best to the small business’s success.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-9">Conclusion</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-9">Conclusion</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>A powerful CRM automation tool not only enhances efficiency but also contributes to a healthier work environment. With monotonous, repetitive tasks minimized, employees experience less burnout and greater job satisfaction. This creates a positive feedback loop where motivated employees perform at their best, driving success for the entire business.</p>
 
 
+                            <p>A powerful CRM automation tool not only enhances efficiency but also contributes to a
+                                healthier work environment. With monotonous, repetitive tasks minimized, employees
+                                experience less burnout and greater job satisfaction. This creates a positive feedback
+                                loop where motivated employees perform at their best, driving success for the entire
+                                business.</p>
 
-<p>Additionally, having a system that provides seamless integration across tools and platforms further reduces complications. When all your software solutions work together, tasks such as synchronizing calendars, generating reports, or aligning marketing campaigns with sales efforts become straightforward. This connectivity allows your team to focus on innovation rather than resolving logistical hurdles.</p>
 
 
+                            <p>Additionally, having a system that provides seamless integration across tools and
+                                platforms further reduces complications. When all your software solutions work together,
+                                tasks such as synchronizing calendars, generating reports, or aligning marketing
+                                campaigns with sales efforts become straightforward. This connectivity allows your team
+                                to focus on innovation rather than resolving logistical hurdles.</p>
 
-<p>Investing in the right CRM automation tool is an investment in your team and your business’s long-term growth. By reducing workload, promoting collaboration, and enabling informed decision-making with real-time insights, the right solution empowers your team to achieve their goals and maintain a competitive edge in an increasingly demanding market.</p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p>Investing in the right CRM automation tool is an investment in your team and your
+                                business’s long-term growth. By reducing workload, promoting collaboration, and enabling
+                                informed decision-making with real-time insights, the right solution empowers your team
+                                to achieve their goals and maintain a competitive edge in an increasingly demanding
+                                market.</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row text-center row-pf lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg" alt="Alex Vetter" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg"
+                                        alt="Alex Vetter" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/avetter">Alex Vetter</a>
-                                  </p>
-                                <p class="article-author-position">Alex Vetter is the product marketing manager at DYL. With a Masters from College de Paris, he runs the marketing department and helps with product management at DYL.
-                                </p>
-                              </div>
+                                        <a href="author/avetter.html">Alex Vetter</a>
+                                    </p>
+                                    <p class="article-author-position">Alex Vetter is the product marketing manager at
+                                        DYL. With a Masters from College de Paris, he runs the marketing department and
+                                        helps with product management at DYL.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/s/0.8.12/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/workplace-efficiency">
-	        <p class="element-post-category transition-3d-hover">
-	          Workplace Efficiency
-	        </p>
-	      </a>
-	      <a href="/blog/stress-proof-your-workday-simple-hacks-for-staying-calm-under-pressure" aria-label="Stress-Proof Your Workday: Simple Hacks for Staying Calm Under Pressure">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/african-american-relaxing-at-work.jpg" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">stress-proof-your-workday-simple-hacks-for-staying-calm-under-pressure</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 8 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/stress-proof-your-workday-simple-hacks-for-staying-calm-under-pressure" aria-label="Stress-Proof Your Workday: Simple Hacks for Staying Calm Under Pressure">Stress-Proof Your Workday: Simple Hacks for Staying Calm Under Pressure</a>
-		  </p>
-	      
-Some days, work feels like a sprint you never signed up for. Meetings stack up, tasks multiply, and the pressure never seems to l...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-companies</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies to Boost Your Business Growth in 2025</a>
-		  </p>
-	      
-Looking to improve your lead and contact management while making your business soar in 2025? You’re in the right place!&nbsp;
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/workplace-efficiency">
+                            <p class="element-post-category transition-3d-hover">
+                                Workplace Efficiency
+                            </p>
+                        </a>
+                        <a href="/blog/stress-proof-your-workday-simple-hacks-for-staying-calm-under-pressure"
+                            aria-label="Stress-Proof Your Workday: Simple Hacks for Staying Calm Under Pressure">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/african-american-relaxing-at-work.jpg" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span
+                                class="sr-only">stress-proof-your-workday-simple-hacks-for-staying-calm-under-pressure</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 8 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/stress-proof-your-workday-simple-hacks-for-staying-calm-under-pressure"
+                                aria-label="Stress-Proof Your Workday: Simple Hacks for Staying Calm Under Pressure">Stress-Proof
+                                Your Workday: Simple Hacks for Staying Calm Under Pressure</a>
+                        </p>
+
+                        Some days, work feels like a sprint you never signed up for. Meetings stack up, tasks multiply,
+                        and the pressure never seems to l...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-companies"
+                            aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-companies</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-companies"
+                                aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies
+                                to Boost Your Business Growth in 2025</a>
+                        </p>
 
-Choos...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-software-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software Solutions to Boost Your Business Growth</a>
-		  </p>
-	      
-Looking to connect with contacts in a way that truly grows your business? You’re in the right place! Whether you’re a sales rep a...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/smb-solutions">
-	        <p class="element-post-category transition-3d-hover">
-	          SMB Solutions
-	        </p>
-	      </a>
-	      <a href="/blog/why-hybrid-teams-need-integrated-communication-solutions" aria-label="Why Hybrid Teams Need Integrated Communication Solutions">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/hybrid-teams-meeting-with-others-in-office.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">why-hybrid-teams-need-integrated-communication-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 28, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 9 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/why-hybrid-teams-need-integrated-communication-solutions" aria-label="Why Hybrid Teams Need Integrated Communication Solutions">Why Hybrid Teams Need Integrated Communication Solutions</a>
-		  </p>
-	      
-Hybrid work models are more popular than ever, encompassing both on-site and remote work. These models have granted employees and...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/smb-solutions">
-	        <p class="element-post-category transition-3d-hover">
-	          SMB Solutions
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-use-machine-learning-for-predictive-customer-behavior-analysis" aria-label="How to Use Machine Learning for Predictive Customer Behavior Analysis">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/ai-machine-learning.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-use-machine-learning-for-predictive-customer-behavior-analysis</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-use-machine-learning-for-predictive-customer-behavior-analysis" aria-label="How to Use Machine Learning for Predictive Customer Behavior Analysis">How to Use Machine Learning for Predictive Customer Behavior Analysis</a>
-		  </p>
-	      
-Have you ever wondered how some businesses seem to know exactly what their customers want before they do? That’s not luck—it’s st...
-	    </div>
-	</div>
+                        Looking to improve your lead and contact management while making your business soar in 2025?
+                        You’re in the right place!&nbsp;
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        Choos...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-software-solutions"
+                            aria-label="Top CRM Software Solutions to Boost Your Business Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-software-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-software-solutions"
+                                aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software
+                                Solutions to Boost Your Business Growth</a>
+                        </p>
+
+                        Looking to connect with contacts in a way that truly grows your business? You’re in the right
+                        place! Whether you’re a sales rep a...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/smb-solutions">
+                            <p class="element-post-category transition-3d-hover">
+                                SMB Solutions
+                            </p>
+                        </a>
+                        <a href="/blog/why-hybrid-teams-need-integrated-communication-solutions"
+                            aria-label="Why Hybrid Teams Need Integrated Communication Solutions">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/hybrid-teams-meeting-with-others-in-office.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">why-hybrid-teams-need-integrated-communication-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 28, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 9 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/why-hybrid-teams-need-integrated-communication-solutions"
+                                aria-label="Why Hybrid Teams Need Integrated Communication Solutions">Why Hybrid Teams
+                                Need Integrated Communication Solutions</a>
+                        </p>
+
+                        Hybrid work models are more popular than ever, encompassing both on-site and remote work. These
+                        models have granted employees and...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/smb-solutions">
+                            <p class="element-post-category transition-3d-hover">
+                                SMB Solutions
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-use-machine-learning-for-predictive-customer-behavior-analysis"
+                            aria-label="How to Use Machine Learning for Predictive Customer Behavior Analysis">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/ai-machine-learning.webp" alt="" height="200"
+                                loading="lazy" style="object-fit: cover;">
+                            <span
+                                class="sr-only">how-to-use-machine-learning-for-predictive-customer-behavior-analysis</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-use-machine-learning-for-predictive-customer-behavior-analysis"
+                                aria-label="How to Use Machine Learning for Predictive Customer Behavior Analysis">How
+                                to Use Machine Learning for Predictive Customer Behavior Analysis</a>
+                        </p>
+
+                        Have you ever wondered how some businesses seem to know exactly what their customers want before
+                        they do? That’s not luck—it’s st...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1637,9 +1952,9 @@ Have you ever wondered how some businesses seem to know exactly what their custo
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1656,24 +1971,26 @@ Have you ever wondered how some businesses seem to know exactly what their custo
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
+    <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="text-center lazy" alt="Download marketing template" loading="lazy"
+                        src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
+                    <h6 class="text-center">
+                        Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true"
+                            onclick="togglerightPanel()"></i>
+                    </h6>
+                    <p class="text-center">
+                        This Ebook includes guides to generate more leads and improve your lead qualification process.
+                    </p>
+                    <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                        <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2129,14 +2446,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
-
+       
         <script>
 
             function setCookie(name, value, days) {
@@ -2874,36 +3184,38 @@ thank-you" />
         </div>
     </aside>
 
+<script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -2919,22 +3231,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2962,9 +3259,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3027,21 +3324,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3051,6 +3334,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });
