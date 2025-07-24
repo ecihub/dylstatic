@@ -11,16 +11,17 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-   Real Results from Businesses Using CRM | DYL
+        Real Results from Businesses Using CRM | DYL
     </title>
     <meta name="description"
         content="See real CRM success stories! Discover how businesses boost sales, improve efficiency, and build lasting customer relationships.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
+
 
     <style>
         body {
@@ -52,8 +53,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +98,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/management-reviewing-crm-capability.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +116,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +143,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +154,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +171,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +202,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +213,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +229,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +259,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +271,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +288,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +308,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +326,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +346,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +361,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +390,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +472,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +489,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +530,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +546,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +587,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +604,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +624,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +642,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +662,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +677,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +706,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,815 +730,1106 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">Real Results from Businesses Using CRM</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        December
-                          23, 2024
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 11 min read </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/management-reviewing-crm-capability.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">Real Results from Businesses Using CRM</h1>
+                        </div>
+                        <div class="post-article-metas">
 
-                  
-                    
-                      
+                            <p class="post-date">
+                                December
+                                23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 11 min read </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-left">
+
+                        <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/management-reviewing-crm-capability.webp"
+                            width="680" height="383" alt="blog featured image">
+
+                        <br><br>
+
+
+
+
+
+
 
                         <a href="/blog/category/crm-tools-and-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            CRM Tools + Tips
-                          </p>
+                            <p class="element-category-post transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
                         </a>
 
-                        
-                    
-                      
+
+
+
 
                         <a href="/blog/category/smb-solutions">
-                          <p class="element-category-post transition-3d-hover">
-                            SMB Solutions
-                          </p>
+                            <p class="element-category-post transition-3d-hover">
+                                SMB Solutions
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 260px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Boosting Sales Revenue with Targeted Customer Insights</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Increasing Lead Conversion Rates Using CRM Automation</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Enhancing Customer Retention with Personalized Experiences</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Streamlining Operations Through Workflow Automation</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Strengthening Collaboration Between Sales and Marketing Teams</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Elevating Customer Support with Integrated CRM Tools</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Driving Data-Informed Strategies for Business Growth</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-8">Case Studies of Small Businesses Achieving Success with CRM</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-9">How CRMs Help Enterprises Scale Effortlessly</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-10">Continuing Growth and Success for the Future</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 260px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Boosting Sales
+                                        Revenue with Targeted Customer Insights</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Increasing Lead
+                                        Conversion Rates Using CRM Automation</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Enhancing Customer
+                                        Retention with Personalized Experiences</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Streamlining
+                                        Operations Through Workflow Automation</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Strengthening
+                                        Collaboration Between Sales and Marketing Teams</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Elevating Customer
+                                        Support with Integrated CRM Tools</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Driving
+                                        Data-Informed Strategies for Business Growth</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-8">Case Studies of
+                                        Small Businesses Achieving Success with CRM</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-9">How CRMs Help
+                                        Enterprises Scale Effortlessly</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-10">Continuing Growth
+                                        and Success for the Future</a></li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>Customer Relationship Management (CRM) systems are transforming the way businesses operate, bringing clarity and structure to their processes. By organizing customer data and streamlining communication, <a href="https://dyl.com/blog/top-crm-benefits-for-growing-your-business" target="_blank" rel="noreferrer noopener">these tools allow companies to focus on what truly matters—building genuine relationships</a>. Businesses using CRM software quickly discover how easy it becomes to manage workflows, track performance, and improve customer satisfaction all at once.</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>Customer Relationship Management (CRM) systems are transforming the way businesses
+                                operate, bringing clarity and structure to their processes. By organizing customer data
+                                and streamlining communication, <a
+                                    href="https://dyl.com/blog/top-crm-benefits-for-growing-your-business"
+                                    target="_blank" rel="noreferrer noopener">these tools allow companies to focus on
+                                    what truly matters—building genuine relationships</a>. Businesses using CRM software
+                                quickly discover how easy it becomes to manage workflows, track performance, and improve
+                                customer satisfaction all at once.</p>
 
 
 
-<p>How <a href="https://dyl.com/blog/crm-implementation" target="_blank" rel="noreferrer noopener">CRMs help enterprises scale effortlessly</a> is evident in their ability to adapt to growing demands. From small startups to global corporations, these systems provide the tools needed to handle complexity without sacrificing efficiency. They empower teams with insightful data and allow them to make smarter decisions. Every success story shows just how powerful CRMs can be in driving growth and sustainable results.</p>
+                            <p>How <a href="https://dyl.com/blog/crm-implementation" target="_blank"
+                                    rel="noreferrer noopener">CRMs help enterprises scale effortlessly</a> is evident in
+                                their ability to adapt to growing demands. From small startups to global corporations,
+                                these systems provide the tools needed to handle complexity without sacrificing
+                                efficiency. They empower teams with insightful data and allow them to make smarter
+                                decisions. Every success story shows just how powerful CRMs can be in driving growth and
+                                sustainable results.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1">Boosting Sales Revenue with Targeted Customer Insights</h2>
+                            <h2 class="wp-block-heading" id="heading-1">Boosting Sales Revenue with Targeted Customer
+                                Insights</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>CRM systems play a crucial role in helping businesses identify the needs of their customers. By tracking patterns and analyzing interactions, <a href="https://dyl.com/blog/essential-crm-checklist" target="_blank" rel="noreferrer noopener">CRMs provide actionable insights</a> that enhance sales strategies.&nbsp;</p>
+                            <p>CRM systems play a crucial role in helping businesses identify the needs of their
+                                customers. By tracking patterns and analyzing interactions, <a
+                                    href="https://dyl.com/blog/essential-crm-checklist" target="_blank"
+                                    rel="noreferrer noopener">CRMs provide actionable insights</a> that enhance sales
+                                strategies.&nbsp;</p>
 
 
 
-<p>Companies can better understand customer preferences and focus on offering products and services that meet specific demands. This approach improves customer experience while directly driving revenue growth. It simplifies complex sales funnels, ensuring that no opportunity is overlooked.</p>
+                            <p>Companies can better understand customer preferences and focus on offering products and
+                                services that meet specific demands. This approach improves customer experience while
+                                directly driving revenue growth. It simplifies complex sales funnels, ensuring that no
+                                opportunity is overlooked.</p>
 
 
 
-<p>With detailed customer data at their fingertips, sales teams can create personalized strategies that increase conversion rates. <a href="https://dyl.com/blog/how-to-plan-a-successful-crm-migration" target="_blank" rel="noreferrer noopener">CRMs organize and highlight key information</a>, which allows businesses to act on opportunities quickly.&nbsp;</p>
+                            <p>With detailed customer data at their fingertips, sales teams can create personalized
+                                strategies that increase conversion rates. <a
+                                    href="https://dyl.com/blog/how-to-plan-a-successful-crm-migration" target="_blank"
+                                    rel="noreferrer noopener">CRMs organize and highlight key information</a>, which
+                                allows businesses to act on opportunities quickly.&nbsp;</p>
 
 
 
-<p>Enterprises experiencing rapid growth often rely on these tools because they bring structure to otherwise chaotic processes. How CRMs help enterprises scale effortlessly is evident when teams close deals faster and with greater precision.</p>
+                            <p>Enterprises experiencing rapid growth often rely on these tools because they bring
+                                structure to otherwise chaotic processes. How CRMs help enterprises scale effortlessly
+                                is evident when teams close deals faster and with greater precision.</p>
 
 
 
-<p>The <a href="https://dyl.com/blog/why-use-a-crm-key-benefits-unveiled" target="_blank" rel="noreferrer noopener">ability to segment customers</a> based on behavior and preferences is a clear advantage of using CRMs. This segmentation leads to stronger connections between businesses and their customers. When companies build trust and loyalty over time, recurring revenue naturally follows.&nbsp;</p>
+                            <p>The <a href="https://dyl.com/blog/why-use-a-crm-key-benefits-unveiled" target="_blank"
+                                    rel="noreferrer noopener">ability to segment customers</a> based on behavior and
+                                preferences is a clear advantage of using CRMs. This segmentation leads to stronger
+                                connections between businesses and their customers. When companies build trust and
+                                loyalty over time, recurring revenue naturally follows.&nbsp;</p>
 
 
 
-<p>By enabling sales teams to focus on high-value leads and reducing inefficiencies, <a href="https://dyl.com/blog/why-crm-software-proficiency-matters-for-success" target="_blank" rel="noreferrer noopener">CRMs continue to show their impact on boosting revenue and promoting sustainable growth</a>. The results speak for themselves, proving why CRMs are indispensable for modern businesses.</p>
+                            <p>By enabling sales teams to focus on high-value leads and reducing inefficiencies, <a
+                                    href="https://dyl.com/blog/why-crm-software-proficiency-matters-for-success"
+                                    target="_blank" rel="noreferrer noopener">CRMs continue to show their impact on
+                                    boosting revenue and promoting sustainable growth</a>. The results speak for
+                                themselves, proving why CRMs are indispensable for modern businesses.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/team-discussing-crm-usage-at-home.webp" alt="team-discussing-crm-usage-at-home" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/team-discussing-crm-usage-at-home.webp"
+                                    alt="team-discussing-crm-usage-at-home" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">Increasing Lead Conversion Rates Using CRM Automation</h2>
+                            <h2 class="wp-block-heading" id="heading-2">Increasing Lead Conversion Rates Using CRM
+                                Automation</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Increasing lead conversion rates becomes seamless with the <a href="https://dyl.com/blog/customer-service-crm-systems-for-better-relations" target="_blank" rel="noreferrer noopener">implementation of CRM systems</a>. These tools automate routine tasks, allowing teams to focus their efforts on moving prospects through the sales funnels efficiently.&nbsp;</p>
+                            <p>Increasing lead conversion rates becomes seamless with the <a
+                                    href="https://dyl.com/blog/customer-service-crm-systems-for-better-relations"
+                                    target="_blank" rel="noreferrer noopener">implementation of CRM systems</a>. These
+                                tools automate routine tasks, allowing teams to focus their efforts on moving prospects
+                                through the sales funnels efficiently.&nbsp;</p>
 
 
 
-<p>Automated features, such as follow-up reminders or email scheduling, reduce the risk of missed opportunities. By keeping each stage of the funnel organized, CRM systems ensure that leads are nurtured consistently. This kind of automation saves time for sales teams and gives businesses a competitive edge in managing potential customers.</p>
+                            <p>Automated features, such as follow-up reminders or email scheduling, reduce the risk of
+                                missed opportunities. By keeping each stage of the funnel organized, CRM systems ensure
+                                that leads are nurtured consistently. This kind of automation saves time for sales teams
+                                and gives businesses a competitive edge in managing potential customers.</p>
 
 
 
-<p><a href="https://dyl.com/blog/enhance-sales-with-crm-and-email-solutions" target="_blank" rel="noreferrer noopener">CRM systems also strengthen project management by streamlining workflows</a>. They integrate tools for tracking leads, assigning tasks, and monitoring progress, all in one place. Sales teams can view real-time updates and make informed decisions without delays.&nbsp;</p>
+                            <p><a href="https://dyl.com/blog/enhance-sales-with-crm-and-email-solutions" target="_blank"
+                                    rel="noreferrer noopener">CRM systems also strengthen project management by
+                                    streamlining workflows</a>. They integrate tools for tracking leads, assigning
+                                tasks, and monitoring progress, all in one place. Sales teams can view real-time updates
+                                and make informed decisions without delays.&nbsp;</p>
 
 
 
-<p>These systems eliminate the need for juggling multiple tools or software, which often creates confusion. With a well-organized process, deals close faster as repetition and oversight are greatly reduced. <a href="https://dyl.com/blog/why-use-a-crm-automation-tool-for-your-team" target="_blank" rel="noreferrer noopener">Automation within CRMs ensures that every step of the sales process progresses smoothly</a>.</p>
+                            <p>These systems eliminate the need for juggling multiple tools or software, which often
+                                creates confusion. With a well-organized process, deals close faster as repetition and
+                                oversight are greatly reduced. <a
+                                    href="https://dyl.com/blog/why-use-a-crm-automation-tool-for-your-team"
+                                    target="_blank" rel="noreferrer noopener">Automation within CRMs ensures that every
+                                    step of the sales process progresses smoothly</a>.</p>
 
 
 
-<p>By using automation to guide sales funnels, businesses see tangible improvements in lead conversion rates. Clear organization within a CRM allows teams to track behavior, tailor responses, and build trust with potential customers. This targeted approach leads to more meaningful interactions and higher chances of securing deals.&nbsp;</p>
+                            <p>By using automation to guide sales funnels, businesses see tangible improvements in lead
+                                conversion rates. Clear organization within a CRM allows teams to track behavior, tailor
+                                responses, and build trust with potential customers. This targeted approach leads to
+                                more meaningful interactions and higher chances of securing deals.&nbsp;</p>
 
 
 
-<p>Sales reps, when equipped with the right tools, spend less time juggling administrative duties and more time engaging with leads. The results are easy to measure – better conversion rates, stronger team efficiency, and healthier revenue streams. CRM automation continues to enhance business success by fostering structure and focus in every part of the sales process.</p>
+                            <p>Sales reps, when equipped with the right tools, spend less time juggling administrative
+                                duties and more time engaging with leads. The results are easy to measure – better
+                                conversion rates, stronger team efficiency, and healthier revenue streams. CRM
+                                automation continues to enhance business success by fostering structure and focus in
+                                every part of the sales process.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/business-using-crm-and-payment-gateway.webp" alt="business-using-crm-and-payment-gateway" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/business-using-crm-and-payment-gateway.webp"
+                                    alt="business-using-crm-and-payment-gateway" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-3">Enhancing Customer Retention with Personalized Experiences</h2>
+                            <h2 class="wp-block-heading" id="heading-3">Enhancing Customer Retention with Personalized
+                                Experiences</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p><a href="https://dyl.com/blog/crm-roi-metrics-that-matter-most" target="_blank" rel="noreferrer noopener">Enhancing customer retention begins with understanding the value of personalized experiences</a>. CRM software empowers businesses to build stronger connections by keeping track of customer preferences and past interactions.&nbsp;</p>
+                            <p><a href="https://dyl.com/blog/crm-roi-metrics-that-matter-most" target="_blank"
+                                    rel="noreferrer noopener">Enhancing customer retention begins with understanding the
+                                    value of personalized experiences</a>. CRM software empowers businesses to build
+                                stronger connections by keeping track of customer preferences and past
+                                interactions.&nbsp;</p>
 
 
 
-<p>With this data, teams can deliver targeted messages and offers that resonate with individual needs. These thoughtful actions deepen customer engagement and encourage long-term loyalty. When customers feel valued, they stay invested in the relationship, which strengthens the entire sales pipeline.</p>
+                            <p>With this data, teams can deliver targeted messages and offers that resonate with
+                                individual needs. These thoughtful actions deepen customer engagement and encourage
+                                long-term loyalty. When customers feel valued, they stay invested in the relationship,
+                                which strengthens the entire sales pipeline.</p>
 
 
 
-<p>By maintaining a detailed overview of each client, CRM tools help businesses respond with precision and care. Personalized emails, timely follow-ups, and relevant product recommendations become seamless parts of the process. </p>
+                            <p>By maintaining a detailed overview of each client, CRM tools help businesses respond with
+                                precision and care. Personalized emails, timely follow-ups, and relevant product
+                                recommendations become seamless parts of the process. </p>
 
 
 
-<p>This consistent attention ensures that customers see the business as reliable and attentive. <a href="https://dyl.com/blog/how-collaborative-crms-improve-team-efficiency" target="_blank" rel="noreferrer noopener">Strong customer engagement not only keeps clients happy but also boosts repeat sales</a>. CRM software enables teams to work efficiently, ensuring no opportunity to build trust is missed.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <p>This consistent attention ensures that customers see the business as reliable and
+                                attentive. <a href="https://dyl.com/blog/how-collaborative-crms-improve-team-efficiency"
+                                    target="_blank" rel="noreferrer noopener">Strong customer engagement not only keeps
+                                    clients happy but also boosts repeat sales</a>. CRM software enables teams to work
+                                efficiently, ensuring no opportunity to build trust is missed.</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>A well-managed sales pipeline supported by CRM software allows businesses to focus on customer satisfaction at every stage. From the first interaction to post-sale support, every action aligns with the goal of creating lasting relationships.&nbsp;</p>
 
 
+                            <p>A well-managed sales pipeline supported by CRM software allows businesses to focus on
+                                customer satisfaction at every stage. From the first interaction to post-sale support,
+                                every action aligns with the goal of creating lasting relationships.&nbsp;</p>
 
-<p>When customers see consistent value, they remain loyal and even recommend the business to others. <a href="https://dyl.com/blog/the-role-of-technology-in-better-customer-management" target="_blank" rel="noreferrer noopener">Personalized experiences</a>, powered by effective tools, pave the way for sustainable growth and ongoing customer satisfaction.</p>
 
 
+                            <p>When customers see consistent value, they remain loyal and even recommend the business to
+                                others. <a
+                                    href="https://dyl.com/blog/the-role-of-technology-in-better-customer-management"
+                                    target="_blank" rel="noreferrer noopener">Personalized experiences</a>, powered by
+                                effective tools, pave the way for sustainable growth and ongoing customer satisfaction.
+                            </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4">Streamlining Operations Through Workflow Automation</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4">Streamlining Operations Through Workflow
+                                Automation</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Streamlining operations through workflow automation empowers businesses using CRM to manage tasks and processes with ease. Automation removes the burden of repetitive tasks, allowing teams to focus on meaningful actions that drive results.&nbsp;</p>
 
 
+                            <p>Streamlining operations through workflow automation empowers businesses using CRM to
+                                manage tasks and processes with ease. Automation removes the burden of repetitive tasks,
+                                allowing teams to focus on meaningful actions that drive results.&nbsp;</p>
 
-<p>For example, CRM tools can automatically assign leads to the right sales representatives or send follow-up reminders without manual effort. This efficiency enhances overall productivity and ensures that nothing slips through the cracks.</p>
 
 
+                            <p>For example, CRM tools can automatically assign leads to the right sales representatives
+                                or send follow-up reminders without manual effort. This efficiency enhances overall
+                                productivity and ensures that nothing slips through the cracks.</p>
 
-<p>Businesses using CRM gain an edge by creating seamless experiences for both employees and customers. Workflow automation ensures that every step of a process is consistent and timely.&nbsp;</p>
 
 
+                            <p>Businesses using CRM gain an edge by creating seamless experiences for both employees and
+                                customers. Workflow automation ensures that every step of a process is consistent and
+                                timely.&nbsp;</p>
 
-<p>Whether it’s tracking customer inquiries or managing inventory updates, automation reduces the chance of human error. It also keeps operations running smoothly, even during busy periods. When teams have this level of support, they can deliver faster, more reliable service that customers appreciate.</p>
 
 
+                            <p>Whether it’s tracking customer inquiries or managing inventory updates, automation
+                                reduces the chance of human error. It also keeps operations running smoothly, even
+                                during busy periods. When teams have this level of support, they can deliver faster,
+                                more reliable service that customers appreciate.</p>
 
-<p>Beyond improving task efficiency, workflow automation fosters better communication and collaboration across teams. Businesses using CRM can easily share updates, track progress, and ensure accountability without delays. This streamlined approach keeps everyone aligned and on the same page.&nbsp;</p>
 
 
+                            <p>Beyond improving task efficiency, workflow automation fosters better communication and
+                                collaboration across teams. Businesses using CRM can easily share updates, track
+                                progress, and ensure accountability without delays. This streamlined approach keeps
+                                everyone aligned and on the same page.&nbsp;</p>
 
-<p>At the same time, these tools provide invaluable insights, helping teams make smarter decisions based on real-time data. By eliminating unnecessary delays and confusion, automation allows businesses to operate at their best while building stronger customer relationships.</p>
 
 
+                            <p>At the same time, these tools provide invaluable insights, helping teams make smarter
+                                decisions based on real-time data. By eliminating unnecessary delays and confusion,
+                                automation allows businesses to operate at their best while building stronger customer
+                                relationships.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5">Strengthening Collaboration Between Sales and Marketing Teams</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5">Strengthening Collaboration Between Sales and
+                                Marketing Teams</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Strengthening collaboration between sales and marketing teams creates stronger outcomes for any business. CRM solutions act as a bridge, connecting these teams with tools that enhance communication and teamwork.&nbsp;</p>
 
 
+                            <p>Strengthening collaboration between sales and marketing teams creates stronger outcomes
+                                for any business. CRM solutions act as a bridge, connecting these teams with tools that
+                                enhance communication and teamwork.&nbsp;</p>
 
-<p>Through <a rel="noreferrer noopener" href="https://dyl.com/blog/organize-your-crm-dataset" target="_blank">shared access to customer data</a>, sales and marketing teams gain a clear and unified view of their customers based on accurate, real-time information. This shared visibility helps them align their goals and strategies, ensuring consistency in messaging and approach. Closer teamwork empowers both sides to deliver seamless and valuable customer interactions.</p>
 
 
+                            <p>Through <a rel="noreferrer noopener"
+                                    href="https://dyl.com/blog/organize-your-crm-dataset" target="_blank">shared access
+                                    to customer data</a>, sales and marketing teams gain a clear and unified view of
+                                their customers based on accurate, real-time information. This shared visibility helps
+                                them align their goals and strategies, ensuring consistency in messaging and approach.
+                                Closer teamwork empowers both sides to deliver seamless and valuable customer
+                                interactions.</p>
 
-<p>By using <a href="https://dyl.com/blog/crm-software-development" target="_blank" rel="noreferrer noopener">CRM solutions</a>, marketing teams can provide sales with key insights about leads and prospects. When sales teams understand the full customer story, they can approach conversations with confidence and context.&nbsp;</p>
 
 
+                            <p>By using <a href="https://dyl.com/blog/crm-software-development" target="_blank"
+                                    rel="noreferrer noopener">CRM solutions</a>, marketing teams can provide sales with
+                                key insights about leads and prospects. When sales teams understand the full customer
+                                story, they can approach conversations with confidence and context.&nbsp;</p>
 
-<p>At the same time, sales teams can share useful feedback from customer interactions back to marketing, helping refine campaigns. This back-and-forth flow of information helps both teams operate more efficiently and reach their goals faster. Together, they create a stronger connection with the customers based on trust and understanding.</p>
 
 
+                            <p>At the same time, sales teams can share useful feedback from customer interactions back
+                                to marketing, helping refine campaigns. This back-and-forth flow of information helps
+                                both teams operate more efficiently and reach their goals faster. Together, they create
+                                a stronger connection with the customers based on trust and understanding.</p>
 
-<p>A <a href="https://dyl.com/blog/how-to-plan-a-successful-crm-migration" target="_blank" rel="noreferrer noopener">CRM-driven partnership</a> between sales and marketing boosts productivity while creating better results for the business. It eliminates silos and improves the flow of information, allowing teams to focus on building meaningful relationships.&nbsp;</p>
 
 
+                            <p>A <a href="https://dyl.com/blog/how-to-plan-a-successful-crm-migration" target="_blank"
+                                    rel="noreferrer noopener">CRM-driven partnership</a> between sales and marketing
+                                boosts productivity while creating better results for the business. It eliminates silos
+                                and improves the flow of information, allowing teams to focus on building meaningful
+                                relationships.&nbsp;</p>
 
-<p>This alignment ensures customers receive consistent experiences from their first interaction to every follow-up. When sales and marketing work together, businesses deliver better solutions while improving customer satisfaction over time.</p>
 
 
+                            <p>This alignment ensures customers receive consistent experiences from their first
+                                interaction to every follow-up. When sales and marketing work together, businesses
+                                deliver better solutions while improving customer satisfaction over time.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-6">Elevating Customer Support with Integrated CRM Tools</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-6">Elevating Customer Support with Integrated CRM
+                                Tools</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Elevating customer support becomes easier and more efficient with the help of a CRM tool. These tools bring all customer information into one place, making it simple for support teams to access. <a href="https://dyl.com/blog/essential-crm-checklist" target="_blank" rel="noreferrer noopener">By using a centralized CRM platform</a>, businesses can respond to customer needs faster and with greater precision.&nbsp;</p>
 
 
+                            <p>Elevating customer support becomes easier and more efficient with the help of a CRM tool.
+                                These tools bring all customer information into one place, making it simple for support
+                                teams to access. <a href="https://dyl.com/blog/essential-crm-checklist" target="_blank"
+                                    rel="noreferrer noopener">By using a centralized CRM platform</a>, businesses can
+                                respond to customer needs faster and with greater precision.&nbsp;</p>
 
-<p>Agents can view a customer’s history, track recent interactions, and find solutions without wasting time searching across multiple systems. This streamlined approach allows teams to focus on delivering personalized and effective support.</p>
 
 
+                            <p>Agents can view a customer’s history, track recent interactions, and find solutions
+                                without wasting time searching across multiple systems. This streamlined approach allows
+                                teams to focus on delivering personalized and effective support.</p>
 
-<p>A CRM platform also helps businesses <a href="https://dyl.com/blog/key-duties-of-a-relationship-manager-uncovered" target="_blank" rel="noreferrer noopener">build stronger relationships with their customers</a>. With detailed customer information at their fingertips, agents can understand individual preferences and past issues. This knowledge helps them address concerns more effectively and build trust over time.&nbsp;</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+
+
+                            <p>A CRM platform also helps businesses <a
+                                    href="https://dyl.com/blog/key-duties-of-a-relationship-manager-uncovered"
+                                    target="_blank" rel="noreferrer noopener">build stronger relationships with their
+                                    customers</a>. With detailed customer information at their fingertips, agents can
+                                understand individual preferences and past issues. This knowledge helps them address
+                                concerns more effectively and build trust over time.&nbsp;</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-blog/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>When customers feel understood and valued, their satisfaction increases, and they are more likely to return. The insights from a well-organized CRM tool ensure every interaction adds value to the customer experience.</p>
 
 
+                            <p>When customers feel understood and valued, their satisfaction increases, and they are
+                                more likely to return. The insights from a well-organized CRM tool ensure every
+                                interaction adds value to the customer experience.</p>
 
-<p>Integrated CRM tools go beyond managing customer information—they empower teams to solve problems with speed and accuracy. Employees no longer need to jump between systems or rely on outdated methods to track support requests.&nbsp;</p>
 
 
+                            <p>Integrated CRM tools go beyond managing customer information—they empower teams to solve
+                                problems with speed and accuracy. Employees no longer need to jump between systems or
+                                rely on outdated methods to track support requests.&nbsp;</p>
 
-<p>Instead, the CRM platform ensures all tasks are clearly visible and easy to manage. This level of organization improves team performance and results in happier, more loyal customers. With the right tools in place, businesses are equipped to elevate their support services consistently and effectively.</p>
 
 
+                            <p>Instead, the CRM platform ensures all tasks are clearly visible and easy to manage. This
+                                level of organization improves team performance and results in happier, more loyal
+                                customers. With the right tools in place, businesses are equipped to elevate their
+                                support services consistently and effectively.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-7">Driving Data-Informed Strategies for Business Growth</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-7">Driving Data-Informed Strategies for Business
+                                Growth</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Driving data-informed strategies with the help of customer relationship management (CRM) tools has become essential for business growth. Modern CRM systems allow companies to organize and analyze customer information efficiently.&nbsp;</p>
 
 
+                            <p>Driving data-informed strategies with the help of customer relationship management (CRM)
+                                tools has become essential for business growth. Modern CRM systems allow companies to
+                                organize and analyze customer information efficiently.&nbsp;</p>
 
-<p>By keeping their data in one place, businesses can track buyer behaviors, preferences, and trends. This makes it easier to find patterns and build stronger connections with their audience. With these insights, businesses can focus their efforts on what works rather than relying on guesswork.</p>
 
 
+                            <p>By keeping their data in one place, businesses can track buyer behaviors, preferences,
+                                and trends. This makes it easier to find patterns and build stronger connections with
+                                their audience. With these insights, businesses can focus their efforts on what works
+                                rather than relying on guesswork.</p>
 
-<p>CRM systems provide the tools needed to make smarter decisions. They help businesses understand their customers better and respond to their needs faster. For example, enhanced customer profiles built with detailed data lead to better-targeted marketing campaigns.&nbsp;</p>
 
 
+                            <p>CRM systems provide the tools needed to make smarter decisions. They help businesses
+                                understand their customers better and respond to their needs faster. For example,
+                                enhanced customer profiles built with detailed data lead to better-targeted marketing
+                                campaigns.&nbsp;</p>
 
-<p>This creates a more positive experience for customers while increasing the likelihood of success. Businesses can also use CRM insights to adjust sales strategies and plan future steps based on real data.</p>
 
 
+                            <p>This creates a more positive experience for customers while increasing the likelihood of
+                                success. Businesses can also use CRM insights to adjust sales strategies and plan future
+                                steps based on real data.</p>
 
-<p>Using customer information to guide a company’s decisions gives it a strong advantage. It creates more opportunities to build loyalty through personalized services or offers. With these advantages, businesses using CRM can stay ahead in competitive markets.&nbsp;</p>
 
 
+                            <p>Using customer information to guide a company’s decisions gives it a strong advantage. It
+                                creates more opportunities to build loyalty through personalized services or offers.
+                                With these advantages, businesses using CRM can stay ahead in competitive markets.&nbsp;
+                            </p>
 
-<p>Tracking and adapting to customer needs becomes a simple and effective process. This approach ensures long-term growth and strengthens the connection between companies and their customers.</p>
 
 
+                            <p>Tracking and adapting to customer needs becomes a simple and effective process. This
+                                approach ensures long-term growth and strengthens the connection between companies and
+                                their customers.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-8">Case Studies of Small Businesses Achieving Success with CRM</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-8">Case Studies of Small Businesses Achieving
+                                Success with CRM</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Small businesses across industries have transformed their operations with CRM, which stands for customer relationship management. For example, a local bakery improved its outreach by streamlining marketing campaigns through CRM tools.&nbsp;</p>
 
 
+                            <p>Small businesses across industries have transformed their operations with CRM, which
+                                stands for customer relationship management. For example, a local bakery improved its
+                                outreach by streamlining marketing campaigns through CRM tools.&nbsp;</p>
 
-<p>The bakery used targeted emails to share promotions and highlight new products. This approach brought in more foot traffic and strengthened customer loyalty. By making connections with their customers in a more personal way, the bakery created better customer experiences and saw higher sales over time.</p>
 
 
+                            <p>The bakery used targeted emails to share promotions and highlight new products. This
+                                approach brought in more foot traffic and strengthened customer loyalty. By making
+                                connections with their customers in a more personal way, the bakery created better
+                                customer experiences and saw higher sales over time.</p>
 
-<p>Another small business, a family-owned bookstore, grew its customer base after adopting CRM software. The bookstore used the system to track customer preferences and send updates about new arrivals that matched their interests.&nbsp;</p>
 
 
+                            <p>Another small business, a family-owned bookstore, grew its customer base after adopting
+                                CRM software. The bookstore used the system to track customer preferences and send
+                                updates about new arrivals that matched their interests.&nbsp;</p>
 
-<p>Customers appreciated receiving tailored recommendations, which enhanced their shopping experience. Over time, the bookstore increased its repeat business and built a stronger community of loyal customers. CRM’s ability to organize data for marketing campaigns and manage interactions gave the bookstore a competitive edge in its market.</p>
 
 
+                            <p>Customers appreciated receiving tailored recommendations, which enhanced their shopping
+                                experience. Over time, the bookstore increased its repeat business and built a stronger
+                                community of loyal customers. CRM’s ability to organize data for marketing campaigns and
+                                manage interactions gave the bookstore a competitive edge in its market.</p>
 
-<p>Similarly, a neighborhood fitness studio used CRM to take its services to the next level. CRM tools helped the studio stay on top of membership renewals and remember important milestones for clients, like birthdays and fitness goals.&nbsp;</p>
 
 
+                            <p>Similarly, a neighborhood fitness studio used CRM to take its services to the next level.
+                                CRM tools helped the studio stay on top of membership renewals and remember important
+                                milestones for clients, like birthdays and fitness goals.&nbsp;</p>
 
-<p>The studio used automated reminders and personalized messages, which made clients feel valued and motivated. These thoughtful interactions helped the fitness studio retain more members and create meaningful customer experiences. By simplifying marketing campaigns and improving communication, CRM allowed the studio to focus more on building relationships.</p>
 
 
+                            <p>The studio used automated reminders and personalized messages, which made clients feel
+                                valued and motivated. These thoughtful interactions helped the fitness studio retain
+                                more members and create meaningful customer experiences. By simplifying marketing
+                                campaigns and improving communication, CRM allowed the studio to focus more on building
+                                relationships.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-9">How CRMs Help Enterprises Scale Effortlessly</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-9">How CRMs Help Enterprises Scale Effortlessly
+                            </h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>A CRM system, which stands for customer relationship management, gives businesses the tools they need to simplify their operations. It centralizes contact information, tracks interactions, and streamlines communication. By doing this, businesses using CRM save time and reduce the manual tasks that slow them down, allowing teams to focus on growth instead of getting bogged down by disorganized workflows.</p>
 
 
+                            <p>A CRM system, which stands for customer relationship management, gives businesses the
+                                tools they need to simplify their operations. It centralizes contact information, tracks
+                                interactions, and streamlines communication. By doing this, businesses using CRM save
+                                time and reduce the manual tasks that slow them down, allowing teams to focus on growth
+                                instead of getting bogged down by disorganized workflows.</p>
 
-<p>For small businesses aiming to expand, a CRM provides a structured way to manage increasing customer demands. It helps keep track of leads and follow-ups, ensuring no opportunities are lost. With automated processes in place, small businesses can handle more customers without needing to hire additional staff right away. This scalability enables enterprises to grow steadily and efficiently.</p>
 
 
+                            <p>For small businesses aiming to expand, a CRM provides a structured way to manage
+                                increasing customer demands. It helps keep track of leads and follow-ups, ensuring no
+                                opportunities are lost. With automated processes in place, small businesses can handle
+                                more customers without needing to hire additional staff right away. This scalability
+                                enables enterprises to grow steadily and efficiently.</p>
 
-<p>Businesses using CRM can also build stronger relationships with their customers. The system enables them to personalize communication and create memorable experiences. </p>
 
 
+                            <p>Businesses using CRM can also build stronger relationships with their customers. The
+                                system enables them to personalize communication and create memorable experiences. </p>
 
-<p>This approach improves customer loyalty and boosts satisfaction. Whether for small businesses or large enterprises, CRMs make scaling a smooth process by removing barriers and breaking down complexities.</p>
 
 
+                            <p>This approach improves customer loyalty and boosts satisfaction. Whether for small
+                                businesses or large enterprises, CRMs make scaling a smooth process by removing barriers
+                                and breaking down complexities.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-10">Continuing Growth and Success for the Future</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-10">Continuing Growth and Success for the Future
+                            </h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>To ensure continuing growth and success for the future, businesses must remain adaptable and consistently leverage the tools at their disposal, such as CRMs, to stay ahead in competitive markets. By integrating technology with strong customer-centric strategies, companies can foster innovation and build enduring relationships with their clients.</p>
 
 
+                            <p>To ensure continuing growth and success for the future, businesses must remain adaptable
+                                and consistently leverage the tools at their disposal, such as CRMs, to stay ahead in
+                                competitive markets. By integrating technology with strong customer-centric strategies,
+                                companies can foster innovation and build enduring relationships with their clients.</p>
 
-<p>Additionally, focusing on scalability and efficiency empowers enterprises to meet evolving customer demands without compromising quality. With a commitment to continuous improvement and a forward-thinking approach, businesses can secure long-term growth, achieve their goals, and thrive in an ever-changing landscape.</p>
 
 
+                            <p>Additionally, focusing on scalability and efficiency empowers enterprises to meet
+                                evolving customer demands without compromising quality. With a commitment to continuous
+                                improvement and a forward-thinking approach, businesses can secure long-term growth,
+                                achieve their goals, and thrive in an ever-changing landscape.</p>
 
-<p></p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p></p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy" >
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg" alt="Alex Vetter" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg"
+                                        alt="Alex Vetter" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/avetter">Alex Vetter</a>
-                                  </p>
-                                <p class="article-author-position">Alex Vetter is the product marketing manager at DYL. With a Masters from College de Paris, he runs the marketing department and helps with product management at DYL.
-                                </p>
-                              </div>
+                                        <a href="author/avetter.html">Alex Vetter</a>
+                                    </p>
+                                    <p class="article-author-position">Alex Vetter is the product marketing manager at
+                                        DYL. With a Masters from College de Paris, he runs the marketing department and
+                                        helps with product management at DYL.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/s/0.8.12/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-companies</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies to Boost Your Business Growth in 2025</a>
-		  </p>
-	      
-Looking to improve your lead and contact management while making your business soar in 2025? You’re in the right place!&nbsp;
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-companies"
+                            aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-companies</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-companies"
+                                aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies
+                                to Boost Your Business Growth in 2025</a>
+                        </p>
+
+                        Looking to improve your lead and contact management while making your business soar in 2025?
+                        You’re in the right place!&nbsp;
 
 
 
-Choos...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-software-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software Solutions to Boost Your Business Growth</a>
-		  </p>
-	      
-Looking to connect with contacts in a way that truly grows your business? You’re in the right place! Whether you’re a sales rep a...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/boost-productivity">
-	        <p class="element-post-category transition-3d-hover">
-	          Boost Productivity
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-compose-a-professional-email" aria-label="How to Compose a Professional Email for Any Situation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/post-thumbnail-team-leaders-on-walk-in-business-park.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-compose-a-professional-email</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 10, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 21 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-compose-a-professional-email" aria-label="How to Compose a Professional Email for Any Situation">How to Compose a Professional Email for Any Situation</a>
-		  </p>
-	      
-Crafting the perfect sales emails can feel daunting, especially when the stakes are high. Whether you’re reaching out to a potent...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-write-a-good-email-sequence</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 9, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a Good Email Sequence for Better Engagement</a>
-		  </p>
-	      
-Are you ready to transform your email marketing game? With the right approach to email automation, you can engage your audience i...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-make-your-business-look-more-professional</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 1, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 9 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">How to Make Your Business Look More Professional</a>
-		  </p>
-	      
-Seven seconds. That’s how long your business has to make an impression.
+                        Choos...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-software-solutions"
+                            aria-label="Top CRM Software Solutions to Boost Your Business Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-software-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-software-solutions"
+                                aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software
+                                Solutions to Boost Your Business Growth</a>
+                        </p>
 
-During those seven seconds, research shows that custom...
-	    </div>
-	</div>
+                        Looking to connect with contacts in a way that truly grows your business? You’re in the right
+                        place! Whether you’re a sales rep a...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/boost-productivity">
+                            <p class="element-post-category transition-3d-hover">
+                                Boost Productivity
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-compose-a-professional-email"
+                            aria-label="How to Compose a Professional Email for Any Situation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/post-thumbnail-team-leaders-on-walk-in-business-park.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-compose-a-professional-email</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 10, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 21 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-compose-a-professional-email"
+                                aria-label="How to Compose a Professional Email for Any Situation">How to Compose a
+                                Professional Email for Any Situation</a>
+                        </p>
+
+                        Crafting the perfect sales emails can feel daunting, especially when the stakes are high.
+                        Whether you’re reaching out to a potent...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-write-a-good-email-sequence"
+                            aria-label="How to Write a Good Email Sequence for Better Engagement">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-write-a-good-email-sequence</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 9, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-write-a-good-email-sequence"
+                                aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a
+                                Good Email Sequence for Better Engagement</a>
+                        </p>
+
+                        Are you ready to transform your email marketing game? With the right approach to email
+                        automation, you can engage your audience i...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-make-your-business-look-more-professional"
+                            aria-label="How to Make Your Business Look More Professional">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200"
+                                loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-make-your-business-look-more-professional</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 1, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 9 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-make-your-business-look-more-professional"
+                                aria-label="How to Make Your Business Look More Professional">How to Make Your Business
+                                Look More Professional</a>
+                        </p>
+
+                        Seven seconds. That’s how long your business has to make an impression.
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        During those seven seconds, research shows that custom...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1673,23 +1997,25 @@ During those seven seconds, research shows that custom...
     </div>
 
     <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="text-center lazy" alt="Download marketing template" loading="lazy"
+                        src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
+                    <h6 class="text-center">
+                        Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true"
+                            onclick="togglerightPanel()"></i>
+                    </h6>
+                    <p class="text-center">
+                        This Ebook includes guides to generate more leads and improve your lead qualification process.
+                    </p>
+                    <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                        <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2217,17 +2543,6 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
 
 
             window.onload = function () {
@@ -2890,36 +3205,38 @@ thank-you" />
         </div>
     </aside>
 
+    <script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -2935,22 +3252,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2978,9 +3280,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3043,21 +3345,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3072,37 +3360,23 @@ thank-you" />
         });
     </script>
 
+
     <script>
-        var popup2Shown = false;
-
-        $(document).scroll(function () {
-            var y = $(this).scrollTop();
-            if (y > 2000 && !popup2Shown) {
-                $('#popup2').fadeIn();
-                popup2Shown = true;
-            } else {
-                // $('#popup2').fadeOut();
-            }
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
         });
-
-        function closePanel() {
-            $('#popup2').fadeOut();
-        }
-
-        function togglerightPanel() {
-            var popupDivright = $('#popUprightDiv');
-            var iconright = popupDivright.find('h6 i');
-            popupDivright.toggleClass('closed');
-            if (popupDivright.hasClass('closed')) {
-                popupDivright.css('height', '50px'); // Set height explicitly when closing
-                iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-            } else {
-                popupDivright.css('height', 'auto'); // Reset height to auto when opening
-                iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
             }
-        }
-        $(document).ready(function () {
-            $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
         });
     </script>
 
