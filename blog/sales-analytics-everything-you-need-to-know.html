@@ -11,14 +11,14 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-     Sales Analytics: Everything You Need to Know | DYL
+        Sales Analytics: Everything You Need to Know | DYL
     </title>
     <meta name="description"
         content="Sales analytics is your team's secret weapon for higher sales productivity. It's essential at any stage of the sales funnel, so learn how it works!">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
 
@@ -52,8 +52,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +97,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/man-at-work-using-computer-and-market-signals2.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +115,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +142,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +153,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +170,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +201,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +212,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +228,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +258,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +270,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +287,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +307,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +325,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +345,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +360,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +389,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +471,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +488,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +529,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +545,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +586,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +603,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +623,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +641,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +661,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +676,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +705,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,1067 +729,1308 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">Sales Analytics: Everything You Need to Know</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        July
-                          9, 2024
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 13 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">Sales Analytics: Everything You Need to Know</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                July
+                                9, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 13 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/man-at-work-using-computer-and-market-signals2.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
                       
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/man-at-work-using-computer-and-market-signals2.webp"
+                            width="680" height="383" alt="blog featured image">
 
-                        <a href="/blog/category/sales-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            Sales Tips
-                          </p>
+                        <br><br>
+
+                        <a href="category/sales-tips.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Sales Tips
+                            </p>
                         </a>
 
-                        
-                    
-                      
-
-                        <a href="/blog/category/smb-solutions">
-                          <p class="element-category-post transition-3d-hover">
-                            SMB Solutions
-                          </p>
+                        <a href="category/smb-solutions.html">
+                            <p class="element-category-post transition-3d-hover">
+                                SMB Solutions
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 494px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">What Is Analytics in Sales?</a><ul style="display: block;"><li><a href="#heading-1-1">Types of Sales Analytics</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">The Benefits of Sales Analytics</a><ul style="display: block;"><li><a href="#heading-2-1">Enhanced Decision-Making Capabilities</a></li><li><a href="#heading-2-2">Improved Sales Forecasting and Operational Efficiency</a></li><li><a href="#heading-2-3">Tailored Insights into Customer Behaviors and General Trends</a></li><li><a href="#heading-2-4">Spotlight on New Opportunities</a></li><li><a href="#heading-2-5">Enhancing Sales Team Performance</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Key Sales Analytics Metrics to Monitor</a><ul style="display: block;"><li><a href="#heading-3-1">Sales Growth and Sales Targets</a></li><li><a href="#heading-3-2">Average Deal Size, Conversion Rates, and Customer Acquisition Costs</a></li><li><a href="#heading-3-3">Sales by Region, Product, and Channel</a></li><li><a href="#heading-3-4">Retention Rates and Customer Lifetime Value (CLV)</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Step-by-Step Guide to Sales Data Analysis</a><ul style="display: block;"><li><a href="#heading-4-1">Collecting and Analyzing Sales Data</a></li><li><a href="#heading-4-2">Leveraging Technology</a></li><li><a href="#heading-4-3">Analyzing Data and Adjusting Your Sales Strategies</a></li><li><a href="#heading-4-4">Overcoming Challenges in Sales Analytics</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Sales Analysis: Where Do You Go From Here?</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 494px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">What Is Analytics
+                                        in Sales?</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-1-1">Types of Sales Analytics</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">The Benefits of
+                                        Sales Analytics</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-2-1">Enhanced Decision-Making Capabilities</a></li>
+                                        <li><a href="#heading-2-2">Improved Sales Forecasting and Operational
+                                                Efficiency</a></li>
+                                        <li><a href="#heading-2-3">Tailored Insights into Customer Behaviors and General
+                                                Trends</a></li>
+                                        <li><a href="#heading-2-4">Spotlight on New Opportunities</a></li>
+                                        <li><a href="#heading-2-5">Enhancing Sales Team Performance</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Key Sales
+                                        Analytics Metrics to Monitor</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-3-1">Sales Growth and Sales Targets</a></li>
+                                        <li><a href="#heading-3-2">Average Deal Size, Conversion Rates, and Customer
+                                                Acquisition Costs</a></li>
+                                        <li><a href="#heading-3-3">Sales by Region, Product, and Channel</a></li>
+                                        <li><a href="#heading-3-4">Retention Rates and Customer Lifetime Value (CLV)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Step-by-Step Guide
+                                        to Sales Data Analysis</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-4-1">Collecting and Analyzing Sales Data</a></li>
+                                        <li><a href="#heading-4-2">Leveraging Technology</a></li>
+                                        <li><a href="#heading-4-3">Analyzing Data and Adjusting Your Sales
+                                                Strategies</a></li>
+                                        <li><a href="#heading-4-4">Overcoming Challenges in Sales Analytics</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Sales Analysis:
+                                        Where Do You Go From Here?</a></li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>No matter how good or bad your total revenue is, the time will come to dive into sales analytics. Why? Well, there are two reasons:</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>No matter how good or bad your total revenue is, the time will come to dive into sales
+                                analytics. Why? Well, there are two reasons:</p>
 
 
 
-<ul>
-<li>If the sales metrics are great, you need to know that your customers like your products or services, and you should only strengthen their satisfaction.</li>
+                            <ul>
+                                <li>If the sales metrics are great, you need to know that your customers like your
+                                    products or services, and you should only strengthen their satisfaction.</li>
 
 
 
-<li>If the metrics are poor, it’s a signal for you to change your sales approaches.</li>
-</ul>
+                                <li>If the metrics are poor, it’s a signal for you to change your sales approaches.</li>
+                            </ul>
 
 
 
-<p>As you can see, in order to move forward with your business, you need material to refer to. That’s where sales data and its analysis are essential. There are various metrics to monitor, from conversion rates to <a href="https://dyl.com/blog/contact-management-software" target="_blank" rel="noopener" title="">customer lifetime value</a>. The information can also range from historical sales data to up-to-date insights gathered in real time.</p>
+                            <p>As you can see, in order to move forward with your business, you need material to refer
+                                to. That’s where sales data and its analysis are essential. There are various metrics to
+                                monitor, from conversion rates to <a
+                                    href="contact-management-software.html" target="_blank"
+                                    rel="noopener" title="">customer lifetime value</a>. The information can also range
+                                from historical sales data to up-to-date insights gathered in real time.</p>
 
 
 
-<p>How can you make sense of all the available information? You need a <a href="https://dyl.com/blog/optimize-your-sales-database" target="_blank" rel="noopener" title="">structured sales analytics</a> plan. In this article, we’ll define sales analytics, provide its advantages, and overview sales analytics software. We’ll also help you determine key sales metrics for your business and how to start your sales analytics journey.</p>
+                            <p>How can you make sense of all the available information? You need a <a
+                                    href="optimize-your-sales-database.html" target="_blank"
+                                    rel="noopener" title="">structured sales analytics</a> plan. In this article, we’ll
+                                define sales analytics, provide its advantages, and overview sales analytics software.
+                                We’ll also help you determine key sales metrics for your business and how to start your
+                                sales analytics journey.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1"><strong>What Is Analytics in Sales?</strong></h2>
+                            <h2 class="wp-block-heading" id="heading-1"><strong>What Is Analytics in Sales?</strong>
+                            </h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>So, let’s start with the definition of sales analytics. At its core, it involves collecting, deciphering, and transforming sales data into actionable insights. You examine every facet of your sales process, from the <a href="https://dyl.com/blog/contact-organizer" target="_blank" rel="noopener" title="">initial customer contact</a> right through to the final sale. The goal is to understand the <em>why</em>, <em>what</em>, and <em>how</em> of your sales results.</p>
+                            <p>So, let’s start with the definition of sales analytics. At its core, it involves
+                                collecting, deciphering, and transforming sales data into actionable insights. You
+                                examine every facet of your sales process, from the <a
+                                    href="contact-organizer.html" target="_blank" rel="noopener"
+                                    title="">initial customer contact</a> right through to the final sale. The goal is
+                                to understand the <em>why</em>, <em>what</em>, and <em>how</em> of your sales results.
+                            </p>
 
 
 
-<p>Suppose you’ve gathered the needed sales data. For example, you have a lot of website visitors who install your software, but you still have low revenue. The sales data analytics shows that those people don’t renew their subscriptions after the first month of using the tool. Knowing this information, you can invest more in user onboarding, email marketing, and<a href="https://dyl.com/blog/top-10-customer-retention-strategies-you-can-use-today" target="_blank" rel="noopener" title=""> retention strategies</a> to keep the clients engaged.</p>
+                            <p>Suppose you’ve gathered the needed sales data. For example, you have a lot of website
+                                visitors who install your software, but you still have low revenue. The sales data
+                                analytics shows that those people don’t renew their subscriptions after the first month
+                                of using the tool. Knowing this information, you can invest more in user onboarding,
+                                email marketing, and<a
+                                    href="top-10-customer-retention-strategies-you-can-use-today.html"
+                                    target="_blank" rel="noopener" title=""> retention strategies</a> to keep the
+                                clients engaged.</p>
 
 
 
-<p>Or let’s assume you’re a real estate agent or broker. As you’ve been diligently <a href="https://dyl.com/blog/b2b-contact-database" target="_blank" rel="noopener" title="">tracking your business activities</a>, you’ve noticed a pattern: You’re getting a decent number of inquiries, and quite a few potential buyers are taking tours of the properties you’ve listed. However, despite this seemingly promising trend, the actual number of closed deals and generated revenue is disappointingly small.</p>
+                            <p>Or let’s assume you’re a real estate agent or broker. As you’ve been diligently <a
+                                    href="b2b-contact-database.html" target="_blank" rel="noopener"
+                                    title="">tracking your business activities</a>, you’ve noticed a pattern: You’re
+                                getting a decent number of inquiries, and quite a few potential buyers are taking tours
+                                of the properties you’ve listed. However, despite this seemingly promising trend, the
+                                actual number of closed deals and generated revenue is disappointingly small.</p>
 
 
 
-<p>Sales data analysis uncovers a critical insight: Many potential buyers show initial interest but don’t proceed past the first showing. They visit, they look, but they don’t come back to make an offer.</p>
+                            <p>Sales data analysis uncovers a critical insight: Many potential buyers show initial
+                                interest but don’t proceed past the first showing. They visit, they look, but they don’t
+                                come back to make an offer.</p>
 
 
 
-<p>That’s where you can develop a solution. For instance, you might decide to enhance the initial property showing experience. Additionally, you might implement a follow-up strategy, communicating with prospects from the comfort of their own homes.</p>
+                            <p>That’s where you can develop a solution. For instance, you might decide to enhance the
+                                initial property showing experience. Additionally, you might implement a follow-up
+                                strategy, communicating with prospects from the comfort of their own homes.</p>
 
 
 
-<p>As such, <a href="https://dyl.com/blog/b2b-db" target="_blank" rel="noopener" title="">sales analytics data</a> doesn’t just highlight a problem—it also directs you toward strategic decision-making.</p>
+                            <p>As such, <a href="b2b-db.html" target="_blank" rel="noopener"
+                                    title="">sales analytics data</a> doesn’t just highlight a problem—it also directs
+                                you toward strategic decision-making.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/man-using-sales-analytics-in-office.webp" alt="man-using-sales-analytics-in-office" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/man-using-sales-analytics-in-office.webp"
+                                    alt="man-using-sales-analytics-in-office" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-1"><strong>Types of Sales Analytics</strong></h3>
+                            <h3 class="wp-block-heading" id="heading-1-1"><strong>Types of Sales Analytics</strong></h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ul>
-<li><strong>Descriptive analytics: What happened?</strong></li>
-</ul>
+                            <ul>
+                                <li><strong>Descriptive analytics: What happened?</strong></li>
+                            </ul>
 
 
 
-<p>Descriptive analytics pulls together data on past sales performance to identify trends and patterns. For instance, if your total sales revenue spiked in March, descriptive analytics will spotlight this event.</p>
+                            <p>Descriptive analytics pulls together data on past sales performance to identify trends
+                                and patterns. For instance, if your total sales revenue spiked in March, descriptive
+                                analytics will spotlight this event.</p>
 
 
 
-<ul>
-<li><strong>Diagnostic analytics: Why did it happen?</strong></li>
-</ul>
+                            <ul>
+                                <li><strong>Diagnostic analytics: Why did it happen?</strong></li>
+                            </ul>
 
 
 
-<p>Some marketing campaigns thrive, others flop. Ever wondered why? To answer this question, you need to consult diagnostic analytics tools. They not only collect data but also find reasons behind successes or failures. Some helpful data sources for this analytics include customer feedback, sales reps’ performance, and external factors like market trends.</p>
+                            <p>Some marketing campaigns thrive, others flop. Ever wondered why? To answer this question,
+                                you need to consult diagnostic analytics tools. They not only collect data but also find
+                                reasons behind successes or failures. Some helpful data sources for this analytics
+                                include customer feedback, sales reps’ performance, and external factors like market
+                                trends.</p>
 
 
 
-<ul>
-<li><strong>Predictive analytics: What will happen?</strong></li>
-</ul>
+                            <ul>
+                                <li><strong>Predictive analytics: What will happen?</strong></li>
+                            </ul>
 
 
 
-<p>“Predictive” in this collocation means sales forecasting. That’s where historical data and current trends work together to inform your sales strategy. For example, predictive models might suggest that if you increase your customer engagement efforts, your sales could grow by 20% in the next quarter.</p>
+                            <p>“Predictive” in this collocation means sales forecasting. That’s where historical data
+                                and current trends work together to inform your sales strategy. For example, predictive
+                                models might suggest that if you increase your customer engagement efforts, your sales
+                                could grow by 20% in the next quarter.</p>
 
 
 
-<ul>
-<li><strong>Prescriptive analytics: What should we do about it?</strong></li>
-</ul>
+                            <ul>
+                                <li><strong>Prescriptive analytics: What should we do about it?</strong></li>
+                            </ul>
 
 
 
-<p>This is where analytics recommends actions. If predictive sales analytics tells you that increasing customer interactions boosts sales, prescriptive analytics will suggest practical ways to enhance those interactions:</p>
+                            <p>This is where analytics recommends actions. If predictive sales analytics tells you that
+                                increasing customer interactions boosts sales, prescriptive analytics will suggest
+                                practical ways to enhance those interactions:</p>
 
 
 
-<ul>
-<li>increasing social media engagement;</li>
+                            <ul>
+                                <li>increasing social media engagement;</li>
 
 
 
-<li>personalizing email communications;</li>
+                                <li>personalizing email communications;</li>
 
 
 
-<li>launching referral and loyalty programs.</li>
-</ul>
+                                <li>launching referral and loyalty programs.</li>
+                            </ul>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2"><strong>The Benefits of Sales Analytics</strong></h2>
+                            <h2 class="wp-block-heading" id="heading-2"><strong>The Benefits of Sales Analytics</strong>
+                            </h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Sales analytics is your team’s secret weapon for higher sales productivity. It’s essential at any stage of the sales funnel, whether it’s finding new prospects or prioritizing existing leads. By utilizing sales analytics, you can <a href="https://dyl.com/blog/b2b-email-database" target="_blank" rel="noopener" title="">identify areas for improvement</a> and assess the sales team’s performance more accurately. Here are some other reasons to employ data analytics for sales.</p>
+                            <p>Sales analytics is your team’s secret weapon for higher sales productivity. It’s
+                                essential at any stage of the sales funnel, whether it’s finding new prospects or
+                                prioritizing existing leads. By utilizing sales analytics, you can <a
+                                    href="b2b-email-database.html" target="_blank" rel="noopener"
+                                    title="">identify areas for improvement</a> and assess the sales team’s performance
+                                more accurately. Here are some other reasons to employ data analytics for sales.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-1"><strong>Enhanced Decision-Making Capabilities</strong></h3>
+                            <h3 class="wp-block-heading" id="heading-2-1"><strong>Enhanced Decision-Making
+                                    Capabilities</strong></h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>One of the standout benefits of sales analytics is its role in making data-driven decisions. Apart from making informed reactive choices, you can also anticipate needs and act proactively. Sales analytics provides a detailed view of the following:</p>
+                            <p>One of the standout benefits of sales analytics is its role in making data-driven
+                                decisions. Apart from making informed reactive choices, you can also anticipate needs
+                                and act proactively. Sales analytics provides a detailed view of the following:</p>
 
 
 
-<ul>
-<li>customer behavior;</li>
+                            <ul>
+                                <li>customer behavior;</li>
 
 
 
-<li>sales performance;</li>
+                                <li>sales performance;</li>
 
 
 
-<li>sales trends, among other things.</li>
-</ul>
+                                <li>sales trends, among other things.</li>
+                            </ul>
 
 
 
-<p>It allows sales managers to make data-backed decisions. For instance, if analytics reveal that certain products perform better in specific regions during particular seasons, businesses can strategically plan their inventory and marketing efforts accordingly.</p>
-            
-                                        
+                            <p>It allows sales managers to make data-backed decisions. For instance, if analytics reveal
+                                that certain products perform better in specific regions during particular seasons,
+                                businesses can strategically plan their inventory and marketing efforts accordingly.</p>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-2"><strong>Improved Sales Forecasting and Operational Efficiency</strong></h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h3 class="wp-block-heading" id="heading-2-2"><strong>Improved Sales Forecasting and
+                                    Operational Efficiency</strong></h3>
 
 
 
-<p>Predictive analytics in sales performs two functions:</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ul>
-<li>creating accurate sales forecasts;</li>
+                            <p>Predictive analytics in sales performs two functions:</p>
 
 
 
-<li>analyzing patterns in historical data and external factors.</li>
-</ul>
+                            <ul>
+                                <li>creating accurate sales forecasts;</li>
 
 
 
-<p>Take the average deal size and sales cycle length as an example. By understanding this data, sales teams can forecast future sales more precisely, such as how much time is needed to seal the deal, how many resources the negotiation will require, and the average value of a potential transaction. This capability boosts the operational efficiency of the sales process, reduces wastage, and optimizes expenditure.</p>
+                                <li>analyzing patterns in historical data and external factors.</li>
+                            </ul>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Take the average deal size and sales cycle length as an example. By understanding this
+                                data, sales teams can forecast future sales more precisely, such as how much time is
+                                needed to seal the deal, how many resources the negotiation will require, and the
+                                average value of a potential transaction. This capability boosts the operational
+                                efficiency of the sales process, reduces wastage, and optimizes expenditure.</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-3"><strong>Tailored Insights into Customer Behaviors and General Trends</strong></h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h3 class="wp-block-heading" id="heading-2-3"><strong>Tailored Insights into Customer
+                                    Behaviors and General Trends</strong></h3>
 
 
 
-<p>Sales analytics breaks down sales data into smaller segments, showing nuances in customer behavior and shifts in market trends. These insights enable businesses to adapt their sales and marketing efforts to better meet their customers’ needs.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Suppose data shows a significant portion of customers prefer online interactions over in-store experiences. A business might shift its focus towards digital channels:</p>
+                            <p>Sales analytics breaks down sales data into smaller segments, showing nuances in customer
+                                behavior and shifts in market trends. These insights enable businesses to adapt their
+                                sales and marketing efforts to better meet their customers’ needs.</p>
 
 
 
-<ul>
-<li>optimize the website;</li>
+                            <p>Suppose data shows a significant portion of customers prefer online interactions over
+                                in-store experiences. A business might shift its focus towards digital channels:</p>
 
+                            <ul>
+                                <li>optimize the website;</li>
 
+                                <li>create more online customer service channels;</li>
 
-<li>create more online customer service channels;</li>
+                                <li>capitalize on social media presence.</li>
+                            </ul>
 
+                            <p>Moreover, these analytics can reveal opportunities for upselling and cross-selling. Here
+                                is how it works. You access purchase histories. They demonstrate customer preferences.
+                                Sales teams can better tailor their recommendations, significantly increasing the
+                                chances of making a sale and the average order value. Sales analytics also helps
+                                identify which clients are at risk of churn and why, enabling timely interventions to
+                                retain them.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<li>capitalize on social media presence.</li>
-</ul>
+                            <h3 class="wp-block-heading" id="heading-2-4"><strong>Spotlight on New
+                                    Opportunities</strong></h3>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>New sales opportunities arise as a business expands and its products change over time. By
+                                tracking sales data, sales agents can better assess product fit across industries and
+                                geographies. Plus, they can spot new tendencies, like a sudden spike in demand for a
+                                product category or an untapped customer segment, before their competitors can get
+                                ahead.</p>
 
-<p>Moreover, these analytics can reveal opportunities for upselling and cross-selling. Here is how it works. You access purchase histories. They demonstrate customer preferences. Sales teams can better tailor their recommendations, significantly increasing the chances of making a sale and the average order value. Sales analytics also helps identify which clients are at risk of churn and why, enabling timely interventions to retain them.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h3 class="wp-block-heading" id="heading-2-5"><strong>Enhancing Sales Team
+                                    Performance</strong></h3>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>Before you take steps to improve your sales team performance, you need to understand
+                                their strengths and weaknesses. That’s where sales analytics can also help. It pinpoints
+                                areas where sales team members excel and where they need improvement:</p>
 
-<h3 class="wp-block-heading" id="heading-2-4"><strong>Spotlight on New Opportunities</strong></h3>
+                            <ul>
+                                <li>whether they’re good at closing deals;</li>
 
+                                <li>whether they struggle with initial customer contacts;</li>
 
+                                <li>how they ensure customer retention.</li>
+                            </ul>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>If there are some issues, you can implement targeted training to enhance those specific
+                                skills, improving individual performance and overall team effectiveness.</p>
 
-<p>New sales opportunities arise as a business expands and its products change over time. By tracking sales data, sales agents can better assess product fit across industries and geographies. Plus, they can spot new tendencies, like a sudden spike in demand for a product category or an untapped customer segment, before their competitors can get ahead.</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/man-using-computer-at-home-and-diagrams.webp"
+                                    alt="man-using-computer-at-home-and-diagram" loading="lazy"></figure>
 
-<h3 class="wp-block-heading" id="heading-2-5"><strong>Enhancing Sales Team Performance</strong></h3>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <h2 class="wp-block-heading" id="heading-3"><strong>Key Sales Analytics Metrics to
+                                    Monitor</strong></h2>
 
-<p>Before you take steps to improve your sales team performance, you need to understand their strengths and weaknesses. That’s where sales analytics can also help. It pinpoints areas where sales team members excel and where they need improvement:</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ul>
-<li>whether they’re good at closing deals;</li>
 
 
+                            <p>What key performance indicators (KPIs) should serve as a basis for your sales analysis?
+                                Key metrics include:</p>
 
-<li>whether they struggle with initial customer contacts;</li>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<li>how they ensure customer retention.</li>
-</ul>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-1"><strong>Sales Growth and Sales
+                                    Targets</strong></h3>
 
-<p>If there are some issues, you can implement targeted training to enhance those specific skills, improving individual performance and overall team effectiveness.</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p><strong>Sales growth</strong> is the percentage showing whether your revenue generated in
+                                the current period is larger or smaller than the revenue for a similar period in the
+                                past. To calculate it, subtract the last period’s total sales from this period’s, divide
+                                the result by your past revenue, and multiply it by 100%. For instance:</p>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/man-using-computer-at-home-and-diagrams.webp" alt="man-using-computer-at-home-and-diagram" loading="lazy"></figure>
 
 
+                            <ul>
+                                <li>$100,000 of sales: last quarter;</li>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                                <li>$120,000 of sales: this quarter;</li>
 
-<h2 class="wp-block-heading" id="heading-3"><strong>Key Sales Analytics Metrics to Monitor</strong></h2>
 
 
+                                <li>(120,000 – 100,000) / 100,000 * 100% = 20% (revenue growth).</li>
+                            </ul>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p><strong>Sales targets</strong> are the objectives you want to accomplish. Setting and
+                                tracking them is equally crucial to comprehending your current standing and how close
+                                your sales team is to hitting them. Aims can be monetary or revolve around a desirable
+                                number of new accounts to win over. For example, if your annual sales target is $1
+                                million and you’ve hit $720,000 by the third quarter, you know a 28% gap remains.</p>
 
-<p>What key performance indicators (KPIs) should serve as a basis for your sales analysis? Key metrics include:</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-2"><strong>Average Deal Size, Conversion Rates,
+                                    and Customer Acquisition Costs</strong></h3>
 
-<h3 class="wp-block-heading" id="heading-3-1"><strong>Sales Growth and Sales Targets</strong></h3>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p><strong>Conversion rates</strong> reveal different things:</p>
 
-<p><strong>Sales growth</strong> is the percentage showing whether your revenue generated in the current period is larger or smaller than the revenue for a similar period in the past. To calculate it, subtract the last period’s total sales from this period’s, divide the result by your past revenue, and multiply it by 100%. For instance:</p>
 
 
+                            <ul>
+                                <li>whether people subscribe to an email newsletter;</li>
 
-<ul>
-<li>$100,000 of sales: last quarter;</li>
 
 
+                                <li>whether they schedule a meeting;</li>
 
-<li>$120,000 of sales: this quarter;</li>
 
 
+                                <li>whether they create an account, and so on.</li>
+                            </ul>
 
-<li>(120,000 – 100,000) / 100,000 * 100% = 20% (revenue growth).</li>
-</ul>
 
 
+                            <p>But in sales, the CR denotes how effectively your team turns sales-qualified leads into
+                                paying customers. A low conversion rate might signal a misalignment between your sales
+                                strategies and customer needs or perhaps a gap in your team’s skills—both of which are
+                                fixable with the proper focus.</p>
 
-<p><strong>Sales targets</strong> are the objectives you want to accomplish. Setting and tracking them is equally crucial to comprehending your current standing and how close your sales team is to hitting them. Aims can be monetary or revolve around a desirable number of new accounts to win over. For example, if your annual sales target is $1 million and you’ve hit $720,000 by the third quarter, you know a 28% gap remains.</p>
 
 
+                            <p><strong>Average deal size</strong> is another telling statistic. It represents the
+                                average sale value and is calculated as the total sales revenue divided by the total
+                                number of closed deals over a given time frame. When looking at different constituents
+                                of this metric, you can measure whether your sales team is capitalizing on big-ticket
+                                sales or smaller, quicker wins.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>Track this indicator over time to see how your sales performance changes. If it’s
+                                declining, it can be a sign that your salespeople are struggling to convert high-paying
+                                clients.</p>
 
-<h3 class="wp-block-heading" id="heading-3-2"><strong>Average Deal Size, Conversion Rates, and Customer Acquisition Costs</strong></h3>
+                            <p><strong>Customer acquisition cost</strong> (CAC) tells you how much you spend acquiring
+                                each new customer. The calculation formula is as follows:</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p><em>The total cost of sales and marketing over a specific period is divided by the number
+                                    of new customers acquired during that period.</em></p>
 
 
-<p><strong>Conversion rates</strong> reveal different things:</p>
 
+                            <p>You need to keep this metric to a minimum, as spending too much to acquire customers can
+                                quickly erode your margins.</p>
 
 
-<ul>
-<li>whether people subscribe to an email newsletter;</li>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<li>whether they schedule a meeting;</li>
 
+                            <h3 class="wp-block-heading" id="heading-3-3"><strong>Sales by Region, Product, and
+                                    Channel</strong></h3>
 
 
-<li>whether they create an account, and so on.</li>
-</ul>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<p>But in sales, the CR denotes how effectively your team turns sales-qualified leads into paying customers. A low conversion rate might signal a misalignment between your sales strategies and customer needs or perhaps a gap in your team’s skills—both of which are fixable with the proper focus.</p>
 
+                            <p><strong>Sales by region</strong> reflect how popular your products are across different
+                                geographical areas:</p>
 
 
-<p><strong>Average deal size</strong> is another telling statistic. It represents the average sale value and is calculated as the total sales revenue divided by the total number of closed deals over a given time frame. When looking at different constituents of this metric, you can measure whether your sales team is capitalizing on big-ticket sales or smaller, quicker wins.</p>
 
+                            <ul>
+                                <li>territories or states (for domestic companies);</li>
 
 
-<p>Track this indicator over time to see how your sales performance changes. If it’s declining, it can be a sign that your salespeople are struggling to convert high-paying clients.</p>
 
+                                <li>countries or continents (for global businesses).</li>
+                            </ul>
 
 
-<p><strong>Customer acquisition cost</strong> (CAC) tells you how much you spend acquiring each new customer. The calculation formula is as follows:</p>
-            
-                                        
 
-        
+                            <p>This breakdown helps determine where to focus your efforts. Maybe you’re a hit in urban
+                                areas but not making much headway in rural markets. Or perhaps certain products sell
+                                well on the East Coast but aren’t as popular in the West.</p>
 
 
 
-<p><em>The total cost of sales and marketing over a specific period is divided by the number of new customers acquired during that period.</em></p>
+                            <p><strong>Sales per product or channel </strong>also provide a layer of insight into what’s
+                                working and what’s not. For instance, you might discover that while overall sales are
+                                good, certain products aren’t pulling their weight. This can lead to strategic decisions
+                                on whether to keep developing certain products or discontinue them.</p>
 
 
 
-<p>You need to keep this metric to a minimum, as spending too much to acquire customers can quickly erode your margins.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h3 class="wp-block-heading" id="heading-3-4"><strong>Retention Rates and Customer Lifetime
+                                    Value (CLV)</strong></h3>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-3"><strong>Sales by Region, Product, and Channel</strong></h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Customer retention and CLV zero in on the potential for long-term success. Retention
+                                rates measure how well you keep your customers returning, encouraging them to renew
+                                their subscriptions or make repeat purchases. A falling retention rate is a red flag
+                                that something’s amiss in customer satisfaction or value. Here is how to estimate it:
+                            </p>
 
 
 
-<p><strong>Sales by region</strong> reflect how popular your products are across different geographical areas:</p>
+                            <p><em>How many subscribers stay at the end of a specific time frame divided by the total
+                                    number of clients you had when the same period started and multiplying the result by
+                                    100%.</em></p>
 
 
 
-<ul>
-<li>territories or states (for domestic companies);</li>
+                            <p>CLV gives you a snapshot of the total worth of a customer to your business over the whole
+                                period of your relationship (how much a company can expect to earn by working with this
+                                client). A customer’s value increases with their CLV. If you know the CLV, you can
+                                better determine how much you can spend on acquiring similar users or buyers.</p>
 
 
 
-<li>countries or continents (for global businesses).</li>
-</ul>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>This breakdown helps determine where to focus your efforts. Maybe you’re a hit in urban areas but not making much headway in rural markets. Or perhaps certain products sell well on the East Coast but aren’t as popular in the West.</p>
+                            <h2 class="wp-block-heading" id="heading-4"><strong>Step-by-Step Guide to Sales Data
+                                    Analysis</strong></h2>
 
 
 
-<p><strong>Sales per product or channel </strong>also provide a layer of insight into what’s working and what’s not. For instance, you might discover that while overall sales are good, certain products aren’t pulling their weight. This can lead to strategic decisions on whether to keep developing certain products or discontinue them.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>So, let’s get a bit practical and discuss how to start your sales analysis journey, what
+                                sales analytics tools to choose, and what to look for.</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-4"><strong>Retention Rates and Customer Lifetime Value (CLV)</strong></h3>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h3 class="wp-block-heading" id="heading-4-1"><strong>Collecting and Analyzing Sales
+                                    Data</strong></h3>
 
 
 
-<p>Customer retention and CLV zero in on the potential for long-term success. Retention rates measure how well you keep your customers returning, encouraging them to renew their subscriptions or make repeat purchases. A falling retention rate is a red flag that something’s amiss in customer satisfaction or value. Here is how to estimate it:</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p><em>How many subscribers stay at the end of a specific time frame divided by the total number of clients you had when the same period started and multiplying the result by 100%.</em></p>
+                            <p>An effective sales analytics process starts with the basics:</p>
 
 
 
-<p>CLV gives you a snapshot of the total worth of a customer to your business over the whole period of your relationship (how much a company can expect to earn by working with this client). A customer’s value increases with their CLV. If you know the CLV, you can better determine how much you can spend on acquiring similar users or buyers.</p>
+                            <ul>
+                                <li>selecting who or what you want to analyze;</li>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                                <li>choosing the frequency at which you want to review your sales effectiveness.</li>
 
 
 
-<h2 class="wp-block-heading" id="heading-4"><strong>Step-by-Step Guide to Sales Data Analysis</strong></h2>
+                                <li>identifying trends and patterns;</li>
 
+                                <li>setting sales goals and targets;</li>
 
+                                <li>specifying the types of data most relevant to your sales goals;</li>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                                <li>monitoring key metrics using various sources within your sales organization (CRM
+                                    systems, sales analytics platforms, customer feedback).</li>
+                            </ul>
 
+                            <p>There are two sales analysis methods for interpreting this data: quantitative and
+                                qualitative. Quantitative analysis includes calculating growth percentages, average deal
+                                sizes, or conversion rates—in short, numbers. Qualitative sales performance analysis
+                                taps into patterns or trends like sentiment in customer reviews, sales managers’
+                                feedback, and customer behavior. These sales reports indicate underlying strengths or
+                                weaknesses in your sales processes.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>So, let’s get a bit practical and discuss how to start your sales analysis journey, what sales analytics tools to choose, and what to look for.</p>
+                            <h3 class="wp-block-heading" id="heading-4-2"><strong>Leveraging Technology</strong></h3>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Choosing the right sales analytics tool is critical to effectively monitoring and making
+                                necessary adjustments to your sales strategy. Here are main features to look for in
+                                sales analytics software:</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <ul>
+                                <li><strong>Integration capabilities:</strong> The sales analytics tool should be
+                                    compatible with your existing systems, such as CRM, ERP, or email marketing
+                                    software, and unify the data from these tools. You don’t want a solution that
+                                    requires more time to configure and upload all the information manually than
+                                    analyzing the data itself.</li>
+                            </ul>
 
-<h3 class="wp-block-heading" id="heading-4-1"><strong>Collecting and Analyzing Sales Data</strong></h3>
 
 
+                            <p>Some CRM software already comes with native features for performing data analytics in
+                                sales. A prime example is <a
+                                    href="salesforce-predictive-analytics.html" target="_blank"
+                                    rel="noopener" title="">AI-powered Salesforce Einstein Analytics</a> integrated into
+                                the SF platform.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <ul>
+                                <li><strong>Ease of use and user-friendliness:</strong> The sales analytics tool
+                                    shouldn’t take long to get to grips with, either. A user-friendly interface is the
+                                    ideal choice for all team members, regardless of their skills. A sales manager
+                                    should focus on selling and building relationships rather than navigating complex
+                                    software.<br></li>
 
-<p>An effective sales analytics process starts with the basics:</p>
 
 
+                                <li><strong>Comprehensive data visualization features:</strong> That’s what
+                                    user-friendly interfaces typically provide. These features are graphs, heat maps,
+                                    and dashboards. They make it easy to interpret complex data sets and share insights
+                                    across the organization.<br></li>
 
-<ul>
-<li>selecting who or what you want to analyze;</li>
 
 
+                                <li><strong>Cost-effectiveness and scalability:</strong> The cost is among the decisive
+                                    factors when exploring sales analytics tools. The price can get too hefty depending
+                                    on the number of users each plan supports or other factors. You need to find what
+                                    fits your current budget and what can scale with your growing business without
+                                    significant additional costs.</li>
+                            </ul>
 
-<li>choosing the frequency at which you want to review your sales effectiveness.</li>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<li>identifying trends and patterns;</li>
 
 
+                            <h4 class="wp-block-heading"><strong>Top Sales Analytics Software for Small
+                                    Businesses</strong></h4>
 
-<li>setting sales goals and targets;</li>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<li>specifying the types of data most relevant to your sales goals;</li>
 
 
+                            <p>Here’s a quick overview of some leading tools tailored for small businesses:</p>
 
-<li>monitoring key metrics using various sources within your sales organization (CRM systems, sales analytics platforms, customer feedback).</li>
-</ul>
 
 
+                            <figure class="wp-block-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Tool</strong></td>
+                                            <td><strong>Benefits</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>HubSpot Sales Hub</strong></td>
+                                            <td>Integrates with existing CRM, offers comprehensive analytics and
+                                                user-friendly dashboards.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Zoho Analytics</strong></td>
+                                            <td>Known for its deep analytical capabilities and ease of use, it supports
+                                                multiple integrations.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mixpanel</strong></td>
+                                            <td>Excellent for behavior analytics, helping businesses understand user
+                                                interactions with their products.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </figure>
 
-<p>There are two sales analysis methods for interpreting this data: quantitative and qualitative. Quantitative analysis includes calculating growth percentages, average deal sizes, or conversion rates—in short, numbers. Qualitative sales performance analysis taps into patterns or trends like sentiment in customer reviews, sales managers’ feedback, and customer behavior. These sales reports indicate underlying strengths or weaknesses in your sales processes.</p>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-3"><strong>Analyzing Data and Adjusting Your
+                                    Sales Strategies</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-2"><strong>Leveraging Technology</strong></h3>
 
 
+                            <p>Once the sales analytics software is in place, you can proceed to gather information and
+                                generate sales reports. Look for the specific sales, compare those figures to their
+                                counterparts, and draw conclusions about which products are most attractive to your
+                                target audience.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>Did you spot issues with your overall sales performance? Examine data more closely to
+                                find the cause of the problem and ways to resolve it. Let’s assume sales cycle data
+                                indicates that lead transitioning from the opportunity to the closed-won stage takes a
+                                long time. Then, you may want to examine your sales manager to make sure the team
+                                successfully responds to client objections and concerns.</p>
 
-<p>Choosing the right sales analytics tool is critical to effectively monitoring and making necessary adjustments to your sales strategy. Here are main features to look for in sales analytics software:</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ul>
-<li><strong>Integration capabilities:</strong> The sales analytics tool should be compatible with your existing systems, such as CRM, ERP, or email marketing software, and unify the data from these tools. You don’t want a solution that requires more time to configure and upload all the information manually than analyzing the data itself.</li>
-</ul>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-4"><strong>Overcoming Challenges in Sales
+                                    Analytics</strong></h3>
 
-<p>Some CRM software already comes with native features for performing data analytics in sales. A prime example is <a href="https://onilab.com/blog/salesforce-predictive-analytics" target="_blank" rel="noopener" title="">AI-powered Salesforce Einstein Analytics</a> integrated into the SF platform.</p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ul>
-<li><strong>Ease of use and user-friendliness:</strong> The sales analytics tool shouldn’t take long to get to grips with, either. A user-friendly interface is the ideal choice for all team members, regardless of their skills. A sales manager should focus on selling and building relationships rather than navigating complex software.<br></li>
 
 
+                            <p>Companies usually face these three common challenges when implementing sales analytics
+                                (and how to overcome them):</p>
 
-<li><strong>Comprehensive data visualization features:</strong> That’s what user-friendly interfaces typically provide. These features are graphs, heat maps, and dashboards. They make it easy to interpret complex data sets and share insights across the organization.<br></li>
 
 
+                            <ul>
+                                <li><strong>Substandard data quality</strong>. To tackle this problem, add context to
+                                    your data, such as its purpose and audience. Explain anomalies and identify patterns
+                                    to provide clarity.</li>
 
-<li><strong>Cost-effectiveness and scalability:</strong> The cost is among the decisive factors when exploring sales analytics tools. The price can get too hefty depending on the number of users each plan supports or other factors. You need to find what fits your current budget and what can scale with your growing business without significant additional costs.</li>
-</ul>
 
 
+                                <li><strong>Inadequate equipment</strong>. You may either buy a tool that doesn’t cover
+                                    the needed use cases or, in contrast, is too complicated and expensive for your
+                                    day-to-day operations. Outline your specific needs and invest in tools that meet the
+                                    requirements.</li>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                                <li><strong>Poor data culture</strong>. To foster a strong culture, regularly train your
+                                    team to understand data and utilize tools. Learning should be ongoing with two-way
+                                    communication.</li>
+                            </ul>
 
-<h4 class="wp-block-heading"><strong>Top Sales Analytics Software for Small Businesses</strong></h4>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h2 class="wp-block-heading" id="heading-5"><strong>Sales Analysis: Where Do You Go From
+                                    Here?</strong></h2>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Sales analytics refers to the process of interpreting data from sales activities. Why is
+                                sales analytics important, you may ask? How do analytics and sales co-exist?</p>
 
-<p>Here’s a quick overview of some leading tools tailored for small businesses:</p>
 
 
+                            <p>Sales analytics is a powerful toolset that transforms how sales teams operate. It shows
+                                sales performance and areas for improvement. During this process, you need to monitor
+                                specific metrics like sales pipeline velocity, CLV, and overall sales growth.</p>
 
-<figure class="wp-block-table"><table><tbody><tr><td><strong>Tool</strong></td><td><strong>Benefits</strong></td></tr><tr><td><strong>HubSpot Sales Hub</strong></td><td>Integrates with existing CRM, offers comprehensive analytics and user-friendly dashboards.</td></tr><tr><td><strong>Zoho Analytics</strong></td><td>Known for its deep analytical capabilities and ease of use, it supports multiple integrations.</td></tr><tr><td><strong>Mixpanel</strong></td><td>Excellent for behavior analytics, helping businesses understand user interactions with their products.</td></tr></tbody></table></figure>
 
 
-
-<h3 class="wp-block-heading" id="heading-4-3"><strong>Analyzing Data and Adjusting Your Sales Strategies</strong></h3>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p>Once the sales analytics software is in place, you can proceed to gather information and generate sales reports. Look for the specific sales, compare those figures to their counterparts, and draw conclusions about which products are most attractive to your target audience.</p>
-
-
-
-<p>Did you spot issues with your overall sales performance? Examine data more closely to find the cause of the problem and ways to resolve it. Let’s assume sales cycle data indicates that lead transitioning from the opportunity to the closed-won stage takes a long time. Then, you may want to examine your sales manager to make sure the team successfully responds to client objections and concerns.</p>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h3 class="wp-block-heading" id="heading-4-4"><strong>Overcoming Challenges in Sales Analytics</strong></h3>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p>Companies usually face these three common challenges when implementing sales analytics (and how to overcome them):</p>
-
-
-
-<ul>
-<li><strong>Substandard data quality</strong>. To tackle this problem, add context to your data, such as its purpose and audience. Explain anomalies and identify patterns to provide clarity.</li>
-
-
-
-<li><strong>Inadequate equipment</strong>. You may either buy a tool that doesn’t cover the needed use cases or, in contrast, is too complicated and expensive for your day-to-day operations. Outline your specific needs and invest in tools that meet the requirements.</li>
-
-
-
-<li><strong>Poor data culture</strong>. To foster a strong culture, regularly train your team to understand data and utilize tools. Learning should be ongoing with two-way communication.</li>
-</ul>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h2 class="wp-block-heading" id="heading-5"><strong>Sales Analysis: Where Do You Go From Here?</strong></h2>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<p>Sales analytics refers to the process of interpreting data from sales activities. Why is sales analytics important, you may ask? How do analytics and sales co-exist?</p>
-
-
-
-<p>Sales analytics is a powerful toolset that transforms how sales teams operate. It shows sales performance and areas for improvement. During this process, you need to monitor specific metrics like sales pipeline velocity, CLV, and overall sales growth.</p>
-
-
-
-<p>However, you can’t do it manually. Explore existing solutions, choose ones that match your goals, and set up your first analysis. Integrate analytics into your sales strategy, optimize your<a href="https://dyl.com/blog/how-to-build-a-sales-pipeline-from-scratch" target="_blank" rel="noopener" title=""> sales pipeline</a>, and accelerate your sales cycle. We hope your sales performance will reach new heights.</p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+                            <p>However, you can’t do it manually. Explore existing solutions, choose ones that match
+                                your goals, and set up your first analysis. Integrate analytics into your sales
+                                strategy, optimize your<a
+                                    href="how-to-build-a-sales-pipeline-from-scratch.html"
+                                    target="_blank" rel="noopener" title=""> sales pipeline</a>, and accelerate your
+                                sales cycle. We hope your sales performance will reach new heights.</p>
+                        </div>
+                        <br>
+                        <br>
+                         <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2024/07/art.jpg" alt="Art Malkovich" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2024/07/art.jpg"
+                                        alt="Art Malkovich" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/artm">Art Malkovich</a>
-                                  </p>
-                                <p class="article-author-position">Art Malkovich is the CEO and co-founder of Onilab, an eCommerce development company. He has unique knowledge and comprehensive experience in online store development, business management, and client negotiation.
-                                </p>
-                              </div>
+                                        <a href="author/artm.html">Art Malkovich</a>
+                                    </p>
+                                    <p class="article-author-position">Art Malkovich is the CEO and co-founder of
+                                        Onilab, an eCommerce development company. He has unique knowledge and
+                                        comprehensive experience in online store development, business management, and
+                                        client negotiation.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/s/0.8.9/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/boost-productivity">
-	        <p class="element-post-category transition-3d-hover">
-	          Boost Productivity
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-compose-a-professional-email" aria-label="How to Compose a Professional Email for Any Situation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/post-thumbnail-team-leaders-on-walk-in-business-park.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-compose-a-professional-email</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 10, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 21 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-compose-a-professional-email" aria-label="How to Compose a Professional Email for Any Situation">How to Compose a Professional Email for Any Situation</a>
-		  </p>
-	      
-Crafting the perfect sales emails can feel daunting, especially when the stakes are high. Whether you’re reaching out to a potent...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-write-a-good-email-sequence</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 9, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a Good Email Sequence for Better Engagement</a>
-		  </p>
-	      
-Are you ready to transform your email marketing game? With the right approach to email automation, you can engage your audience i...
-	    </div>
-	</div>
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/boost-productivity">
+                            <p class="element-post-category transition-3d-hover">
+                                Boost Productivity
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-compose-a-professional-email"
+                            aria-label="How to Compose a Professional Email for Any Situation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/post-thumbnail-team-leaders-on-walk-in-business-park.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-compose-a-professional-email</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 10, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 21 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-compose-a-professional-email"
+                                aria-label="How to Compose a Professional Email for Any Situation">How to Compose a
+                                Professional Email for Any Situation</a>
+                        </p>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-make-your-business-look-more-professional</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 1, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 9 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">How to Make Your Business Look More Professional</a>
-		  </p>
-	      
-Seven seconds. That’s how long your business has to make an impression.
+                        Crafting the perfect sales emails can feel daunting, especially when the stakes are high.
+                        Whether you’re reaching out to a potent...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-write-a-good-email-sequence"
+                            aria-label="How to Write a Good Email Sequence for Better Engagement">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-write-a-good-email-sequence</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 9, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-write-a-good-email-sequence"
+                                aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a
+                                Good Email Sequence for Better Engagement</a>
+                        </p>
 
-During those seven seconds, research shows that custom...
-	    </div>
-	</div>
+                        Are you ready to transform your email marketing game? With the right approach to email
+                        automation, you can engage your audience i...
+                    </div>
+                </div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How Sales Automation is Revolutionizing Real Estate Lead Generation</a>
-		  </p>
-	      
-There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a variety of factors, including digit...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their Pitch</a>
-		  </p>
-	      
-Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A good sales pitch doesn’t sound l...
-	    </div>
-	</div>
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-make-your-business-look-more-professional"
+                            aria-label="How to Make Your Business Look More Professional">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200"
+                                loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-make-your-business-look-more-professional</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 1, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 9 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-make-your-business-look-more-professional"
+                                aria-label="How to Make Your Business Look More Professional">How to Make Your Business
+                                Look More Professional</a>
+                        </p>
+
+                        Seven seconds. That’s how long your business has to make an impression.
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        During those seven seconds, research shows that custom...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/sales-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                            aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                                aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How
+                                Sales Automation is Revolutionizing Real Estate Lead Generation</a>
+                        </p>
+
+                        There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a
+                        variety of factors, including digit...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/sales-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-sales-teams-can-improve-their-pitch"
+                            aria-label="How Sales Teams Can Improve Their Pitch">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-sales-teams-can-improve-their-pitch"
+                                aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their
+                                Pitch</a>
+                        </p>
+
+                        Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A
+                        good sales pitch doesn’t sound l...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1905,9 +2178,9 @@ Do all your salespeople have the gift of the gab? Can they sell ice to a polar b
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1924,24 +2197,26 @@ Do all your salespeople have the gift of the gab? Can they sell ice to a polar b
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
+    <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="text-center lazy" alt="Download marketing template" loading="lazy"
+                        src="https://images.dyl.com/marketing-blog/mobile2/lead-gen-and-capture-ebook.webp">
+                    <h6 class="text-center">
+                        Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true"
+                            onclick="togglerightPanel()"></i>
+                    </h6>
+                    <p class="text-center">
+                        This Ebook includes guides to generate more leads and improve your lead qualification process.
+                    </p>
+                    <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                        <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2397,13 +2672,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+       
 
         <script>
 
@@ -2469,18 +2738,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
-
+          
 
             window.onload = function () {
                 var storedEmail = getCookie("email");
@@ -3142,36 +3400,38 @@ thank-you" />
         </div>
     </aside>
 
+<script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -3187,22 +3447,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3230,9 +3475,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3295,21 +3540,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3319,6 +3550,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });

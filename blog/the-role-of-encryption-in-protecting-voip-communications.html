@@ -11,16 +11,17 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-      The Role of Encryption in Protecting VoIP Communications | DYL
+        The Role of Encryption in Protecting VoIP Communications | DYL
     </title>
     <meta name="description"
         content="Voip encryption is the most important factor when picking your voip solution. Find out why it matters and how it impacts your business!">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+   <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
+
 
     <style>
         body {
@@ -52,8 +53,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +98,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/voip-encryption.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +116,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +143,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +154,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +171,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +202,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +213,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +229,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +259,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +271,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +288,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +308,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +326,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +346,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +361,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +390,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +472,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +489,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +530,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +546,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +587,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +604,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +624,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +642,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +662,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +677,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +706,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,741 +730,915 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">The Role of Encryption in Protecting VoIP Communications</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        July
-                          9, 2024
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 8 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">The Role of Encryption in Protecting VoIP
+                                Communications</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                July
+                                9, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 8 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/voip-encryption.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <img class="post-featured-img mobile-display-none" src="https://images.dyl.com/marketing-blog/voip-encryption.webp"
+                            width="680" height="383" alt="blog featured image">
 
-                        <a href="/blog/category/crm-tools-and-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            CRM Tools + Tips
-                          </p>
+                        <br><br>
+                        <a href="category/crm-tools-and-tips.html">
+                            <p class="element-category-post transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
                         </a>
 
-                        
-                    
-                      
-
-                        <a href="/blog/category/smb-solutions">
-                          <p class="element-category-post transition-3d-hover">
-                            SMB Solutions
-                          </p>
+                        <a href="category/smb-solutions.html">
+                            <p class="element-category-post transition-3d-hover">
+                                SMB Solutions
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 182px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Types of VoIP Security Risks and Threats</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">What is VoIP Encryption?</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">What Role Does Encryption Play in Securing VoIP Communication Channels?</a><ul style="display: block;"><li><a href="#heading-3-1">Encryption Ensures Confidentiality, Data Integrity and Authentication&nbsp;</a></li><li><a href="#heading-3-2">It Also Allows Mitigation of Common Threats&nbsp;</a></li><li><a href="#heading-3-3">Compliance with Regulations</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">In Conclusion</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 182px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Types of VoIP
+                                        Security Risks and Threats</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">What is VoIP
+                                        Encryption?</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">What Role Does
+                                        Encryption Play in Securing VoIP Communication Channels?</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-3-1">Encryption Ensures Confidentiality, Data Integrity
+                                                and Authentication&nbsp;</a></li>
+                                        <li><a href="#heading-3-2">It Also Allows Mitigation of Common Threats&nbsp;</a>
+                                        </li>
+                                        <li><a href="#heading-3-3">Compliance with Regulations</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">In Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>If you’re a business using VoIP for your <a href="https://dyl.com/blog/contact-management-software" target="_blank" rel="noopener" title="">communications</a>, you should be sensitized to the recent rise in cyberattacks and the damage they can have on your business.&nbsp;</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>If you’re a business using VoIP for your <a
+                                    href="https://dyl.com/blog/contact-management-software" target="_blank"
+                                    rel="noopener" title="">communications</a>, you should be sensitized to the recent
+                                rise in cyberattacks and the damage they can have on your business.&nbsp;</p>
 
 
 
-<p><a href="https://voipproviderrates.com/" target="_blank" rel="noopener" title="">VoIP</a> (Voice Over Internet Protocol) offers many benefits, especially when compared to other communication channels. For example, it is cheaper than traditional phone networks. It also comes with features like call recording, support for remote work, voicemail to email, and custom caller ID.&nbsp;</p>
+                            <p><a href="https://voipproviderrates.com/" target="_blank" rel="noopener" title="">VoIP</a>
+                                (Voice Over Internet Protocol) offers many benefits, especially when compared to other
+                                communication channels. For example, it is cheaper than traditional phone networks. It
+                                also comes with features like call recording, support for remote work, voicemail to
+                                email, and custom caller ID.&nbsp;</p>
 
 
 
-<p>But because of this, VoIP has also become a target for cyberattacks and data breaches. Phone hacking, spyware, and malware have become common security threats plaguing VoIP users.&nbsp;</p>
+                            <p>But because of this, VoIP has also become a target for cyberattacks and data breaches.
+                                Phone hacking, spyware, and malware have become common security threats plaguing VoIP
+                                users.&nbsp;</p>
 
 
 
-<p>According to an <a href="https://hbr.org/2023/05/the-devastating-business-impacts-of-a-cyber-breach">IBM report</a>, an overwhelming 83% of businesses and organizations experienced more than one data breach during 2022. Ransomware attacks also increased by 13% in the same year, representing a tremendous increase that eclipsed the past five years combined.</p>
+                            <p>According to an <a
+                                    href="https://hbr.org/2023/05/the-devastating-business-impacts-of-a-cyber-breach">IBM
+                                    report</a>, an overwhelming 83% of businesses and organizations experienced more
+                                than one data breach during 2022. Ransomware attacks also increased by 13% in the same
+                                year, representing a tremendous increase that eclipsed the past five years combined.</p>
 
 
 
-<p>These attacks can have damaging consequences for businesses. For instance, Statista estimates that approximately 73% of businesses in the USA suffered a monetary loss between $10,000 and $999,999 due to cyber attacks.&nbsp;</p>
+                            <p>These attacks can have damaging consequences for businesses. For instance, Statista
+                                estimates that approximately 73% of businesses in the USA suffered a monetary loss
+                                between $10,000 and $999,999 due to cyber attacks.&nbsp;</p>
 
 
 
-<p>Such numbers outline the importance of being proactive in the fight against cyberattacks. Doing this prevents such attacks from threatening your business and causing financial or reputational damage.&nbsp;</p>
+                            <p>Such numbers outline the importance of being proactive in the fight against cyberattacks.
+                                Doing this prevents such attacks from threatening your business and causing financial or
+                                reputational damage.&nbsp;</p>
 
 
 
-<p>Encrypting devices and <a href="https://dyl.com/blog/optimize-your-sales-database" target="_blank" rel="noopener" title="">communication lines</a> is one way to be proactive in cybersecurity, especially when using VoIP systems. Encryption plays a massive role in preventing security breaches and other cybersecurity threats affecting VoIP systems.&nbsp;&nbsp;</p>
+                            <p>Encrypting devices and <a href="https://dyl.com/blog/optimize-your-sales-database"
+                                    target="_blank" rel="noopener" title="">communication lines</a> is one way to be
+                                proactive in cybersecurity, especially when using VoIP systems. Encryption plays a
+                                massive role in preventing security breaches and other cybersecurity threats affecting
+                                VoIP systems.&nbsp;&nbsp;</p>
 
 
 
-<p>In this article, we’ll examine the role of encrypting VoIP communication channels in protecting sensitive and highly confidential data passed and stored through these lines.&nbsp;</p>
+                            <p>In this article, we’ll examine the role of encrypting VoIP communication channels in
+                                protecting sensitive and highly confidential data passed and stored through these
+                                lines.&nbsp;</p>
 
 
 
-<p>But first, let’s learn more about the biggest risks and threats affecting VoIP communication channels.</p>
+                            <p>But first, let’s learn more about the biggest risks and threats affecting VoIP
+                                communication channels.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/wirless-network-in-community.webp" alt="wirless-network-in-community" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/wirless-network-in-community.webp"
+                                    alt="wirless-network-in-community" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1">Types of VoIP Security Risks and Threats</h2>
+                            <h2 class="wp-block-heading" id="heading-1">Types of VoIP Security Risks and Threats</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol>
-<li><strong>Denial-of-Service (DoS/ DDoS) Attacks&nbsp;</strong></li>
-</ol>
+                            <ol>
+                                <li><strong>Denial-of-Service (DoS/ DDoS) Attacks&nbsp;</strong></li>
+                            </ol>
 
 
 
-<p>A DoS attack involves flooding a network or service with overwhelming and malicious traffic, making it unusable, slow, and unavailable for legitimate users.&nbsp;</p>
+                            <p>A DoS attack involves flooding a network or service with overwhelming and malicious
+                                traffic, making it unusable, slow, and unavailable for legitimate users.&nbsp;</p>
 
 
 
-<p>A DDoS attack (distributed denial of service) is an amplified version of a DoS attack. Attackers propagate the attack using a network of compromised devices, often called botnets. In some cases, DDoS attacks lead to a total shutdown of services and servers due to the overload.&nbsp;</p>
+                            <p>A DDoS attack (distributed denial of service) is an amplified version of a DoS attack.
+                                Attackers propagate the attack using a network of compromised devices, often called
+                                botnets. In some cases, DDoS attacks lead to a total shutdown of services and servers
+                                due to the overload.&nbsp;</p>
 
 
 
-<p>These devices can be located anywhere in the world, making this service attack source harder to identify owing to the much larger traffic volume.</p>
+                            <p>These devices can be located anywhere in the world, making this service attack source
+                                harder to identify owing to the much larger traffic volume.</p>
 
 
 
-<p>A DoS attack on VoIP disrupts communication and possibly business operations. It also creates a domino effect, as the disruption trickles down to receiving calls, collaborating on projects, and stalling workflows.&nbsp;</p>
+                            <p>A DoS attack on VoIP disrupts communication and possibly business operations. It also
+                                creates a domino effect, as the disruption trickles down to receiving calls,
+                                collaborating on projects, and stalling workflows.&nbsp;</p>
 
 
 
-<ol start="2">
-<li><strong>Phishing and Vishing</strong></li>
-</ol>
+                            <ol start="2">
+                                <li><strong>Phishing and Vishing</strong></li>
+                            </ol>
 
 
 
-<p>A phishing attack is a cyber attack where criminals pose as legitimate companies such as banks, social media networks, and other service providers like Gmail to trick account holders into giving their personal information, passwords, and other related information.&nbsp;</p>
+                            <p>A phishing attack is a cyber attack where criminals pose as legitimate companies such as
+                                banks, social media networks, and other service providers like Gmail to trick account
+                                holders into giving their personal information, passwords, and other related
+                                information.&nbsp;</p>
 
 
 
-<p>Vishing is the equivalent of phishing, but in this case, the tricks and fraud are done over voice calls, such as those made over VoIP services.&nbsp;</p>
+                            <p>Vishing is the equivalent of phishing, but in this case, the tricks and fraud are done
+                                over voice calls, such as those made over VoIP services.&nbsp;</p>
 
 
 
-<ol start="3">
-<li><strong>Man-in-the-Middle Attacks</strong></li>
-</ol>
+                            <ol start="3">
+                                <li><strong>Man-in-the-Middle Attacks</strong></li>
+                            </ol>
 
 
 
-<p>As the name suggests, a man-in-the-middle attack (MITM) occurs when a cybercriminal illegally inserts themselves into a VoIP <a href="https://dyl.com/blog/contact-organizer" target="_blank" rel="noopener" title="">communication channel</a> between a sender and receiver, intercepting the communication data sent between the two parties.&nbsp;</p>
-            
-                                        
+                            <p>As the name suggests, a man-in-the-middle attack (MITM) occurs when a cybercriminal
+                                illegally inserts themselves into a VoIP <a
+                                    href="contact-organizer.html" target="_blank" rel="noopener"
+                                    title="">communication channel</a> between a sender and receiver, intercepting the
+                                communication data sent between the two parties.&nbsp;</p>
 
-        
 
 
 
-<p>These types of attacks are usually hard to detect. However, they are common among people who use public and unsecured Wi-Fi networks. That’s because such networks are easy to intercept and infect with spyware.&nbsp;</p>
 
 
 
-<p>However, one way to effectively shield your VoIP communication channels against such attacks is to use a VPN.&nbsp;</p>
+                            <p>These types of attacks are usually hard to detect. However, they are common among people
+                                who use public and unsecured Wi-Fi networks. That’s because such networks are easy to
+                                intercept and infect with spyware.&nbsp;</p>
 
 
 
-<p>VPNs encrypt your internet connection, securing the virtual tunnel between your device and servers. This shields your data from eavesdropping and interference as it travels through the internet. Although most are not free, <a href="https://cybernews.com/best-vpn/vpn-with-free-trial/">VPNs offer a free trial period</a> that allows you to first try them out before buying.&nbsp;</p>
+                            <p>However, one way to effectively shield your VoIP communication channels against such
+                                attacks is to use a VPN.&nbsp;</p>
 
 
 
-<ol start="4">
-<li><strong>Packet Sniffing&nbsp;</strong></li>
-</ol>
+                            <p>VPNs encrypt your internet connection, securing the virtual tunnel between your device
+                                and servers. This shields your data from eavesdropping and interference as it travels
+                                through the internet. Although most are not free, <a
+                                    href="https://cybernews.com/best-vpn/vpn-with-free-trial/">VPNs offer a free trial
+                                    period</a> that allows you to first try them out before buying.&nbsp;</p>
 
 
 
-<p>Businesses use VoIP to <a href="https://dyl.com/blog/b2b-contact-database" target="_blank" rel="noopener" title="">unify communications technology</a> into a single system that consolidates audio, video, and text. This means that teams don’t have to use multiple communication channels to communicate effectively.&nbsp;</p>
+                            <ol start="4">
+                                <li><strong>Packet Sniffing&nbsp;</strong></li>
+                            </ol>
 
 
 
-<p>However, this also presents a challenge as it gives malicious parties the chance to snoop in, listen, steal, or possibly tamper with your VoIP data. This is what packet sniffing represents.</p>
+                            <p>Businesses use VoIP to <a href="b2b-contact-database.html"
+                                    target="_blank" rel="noopener" title="">unify communications technology</a> into a
+                                single system that consolidates audio, video, and text. This means that teams don’t have
+                                to use multiple communication channels to communicate effectively.&nbsp;</p>
 
 
 
-<p>When you communicate online, you send that information through data packets. These packets are like tiny containers carrying coded pieces of your conversation.</p>
+                            <p>However, this also presents a challenge as it gives malicious parties the chance to snoop
+                                in, listen, steal, or possibly tamper with your VoIP data. This is what packet sniffing
+                                represents.</p>
 
 
 
-<p>Packet sniffing is a technique where hackers capture data packets sent through the network during VoIP calls. The person responsible for these attacks is a packet sniffer, who operates on the network layer, acting like a program that intercepts these data packets as they travel.&nbsp;</p>
+                            <p>When you communicate online, you send that information through data packets. These
+                                packets are like tiny containers carrying coded pieces of your conversation.</p>
 
 
 
-<p>That program can be installed on a compromised device on the same network as the VoIP system.</p>
+                            <p>Packet sniffing is a technique where hackers capture data packets sent through the
+                                network during VoIP calls. The person responsible for these attacks is a packet sniffer,
+                                who operates on the network layer, acting like a program that intercepts these data
+                                packets as they travel.&nbsp;</p>
 
 
 
-<p>If your VoIP calls lack encryption, the captured packets will contain the raw voice data of the conversation. This could potentially expose the entire conversation content to anyone with access to the packet sniffer.</p>
+                            <p>That program can be installed on a compromised device on the same network as the VoIP
+                                system.</p>
 
 
 
-<p>That brings us to the role of encryption in protecting VoIP communication.&nbsp;</p>
+                            <p>If your VoIP calls lack encryption, the captured packets will contain the raw voice data
+                                of the conversation. This could potentially expose the entire conversation content to
+                                anyone with access to the packet sniffer.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>That brings us to the role of encryption in protecting VoIP communication.&nbsp;</p>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/it-professional-using-tablet.webp" alt="it-professional-using-tablet" loading="lazy"></figure>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/it-professional-using-tablet.webp"
+                                    alt="it-professional-using-tablet" loading="lazy"></figure>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">What is VoIP Encryption?</h2>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h2 class="wp-block-heading" id="heading-2">What is VoIP Encryption?</h2>
 
 
 
-<p>In simple terms, VoIP encryption is the process of securing voice communications transmitted through the internet. This process involves converting voice data into a code that can only be decrypted by the intended recipient’s VoIP devices.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>VoIP uses the power of the internet to make calls instead of traditional phone lines. <a href="https://dyl.com/blog/b2b-db" target="_blank" rel="noopener" title="">Encryption creates a secure tunnel</a> through which your voice data can travel safely and securely without the increased risk of interception from malicious parties.&nbsp;</p>
+                            <p>In simple terms, VoIP encryption is the process of securing voice communications
+                                transmitted through the internet. This process involves converting voice data into a
+                                code that can only be decrypted by the intended recipient’s VoIP devices.</p>
 
 
 
-<p>The most secure option for VoIP encryption is the popular end-to-end encryption.&nbsp;</p>
+                            <p>VoIP uses the power of the internet to make calls instead of traditional phone lines. <a
+                                    href="b2b-db.html" target="_blank" rel="noopener"
+                                    title="">Encryption creates a secure tunnel</a> through which your voice data can
+                                travel safely and securely without the increased risk of interception from malicious
+                                parties.&nbsp;</p>
 
 
 
-<p>Here, the data (voice message) you pass is completely scrambled from the moment you speak it until it reaches the recipient’s device, where it becomes decrypted.&nbsp;&nbsp;</p>
+                            <p>The most secure option for VoIP encryption is the popular end-to-end encryption.&nbsp;
+                            </p>
 
 
 
-<p>You might have seen end-to-end encryption notifications when sending messages through popular apps like Telegram and WhatsApp. What that means is that your communication is protected and that no other parties, except the ones sharing and receiving the messages, can see or intercept your messages.&nbsp;</p>
+                            <p>Here, the data (voice message) you pass is completely scrambled from the moment you speak
+                                it until it reaches the recipient’s device, where it becomes decrypted.&nbsp;&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>You might have seen end-to-end encryption notifications when sending messages through
+                                popular apps like Telegram and WhatsApp. What that means is that your communication is
+                                protected and that no other parties, except the ones sharing and receiving the messages,
+                                can see or intercept your messages.&nbsp;</p>
 
 
 
-<h2 class="wp-block-heading" id="heading-3">What Role Does Encryption Play in Securing VoIP Communication Channels?</h2>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h2 class="wp-block-heading" id="heading-3">What Role Does Encryption Play in Securing VoIP
+                                Communication Channels?</h2>
 
 
 
-<p>We’ve seen that VoIP communication faces many threats ranging from eavesdropping to packet sniffing and vishing. Not only that, but a hacker can exploit a vulnerability in your network security and exploit it to disrupt business operations and ruin computer systems with critical infrastructure.</p>
-            
-                                        
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-        
 
 
+                            <p>We’ve seen that VoIP communication faces many threats ranging from eavesdropping to
+                                packet sniffing and vishing. Not only that, but a hacker can exploit a vulnerability in
+                                your network security and exploit it to disrupt business operations and ruin computer
+                                systems with critical infrastructure.</p>
 
-<p>Fortunately, encryption provides a secure way to mitigate the risks of these attacks.&nbsp;</p>
 
 
 
-<p>It plays a massive role in securing (VoIP) communication channels by ensuring the integrity, authentication, and confidentiality of the data transmitted between parties, as explained below.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Fortunately, encryption provides a secure way to mitigate the risks of these
+                                attacks.&nbsp;</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-1"><strong>Encryption Ensures Confidentiality, Data Integrity and Authentication&nbsp;</strong></h3>
+                            <p>It plays a massive role in securing (VoIP) communication channels by ensuring the
+                                integrity, authentication, and confidentiality of the data transmitted between parties,
+                                as explained below.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Confidentiality is vital for protecting communication that occurs through VoIP. Most of the time, businesses using VoIP need to maintain confidentiality because of the nature of the data.&nbsp;</p>
+                            <h3 class="wp-block-heading" id="heading-3-1"><strong>Encryption Ensures Confidentiality,
+                                    Data Integrity and Authentication&nbsp;</strong></h3>
 
 
 
-<p>Encryption is a primary and effective way to ensure that the data transferred through VoIP remains confidential. Protocols like Secure Real-time Transport Protocol (SRTP), which are encryption technologies, encrypt the voice data itself, making it unintelligible even if intercepted.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>The role of encryption in VoIP is to also ensure the integrity and authentication of data transferred through this communication channel.&nbsp;</p>
+                            <p>Confidentiality is vital for protecting communication that occurs through VoIP. Most of
+                                the time, businesses using VoIP need to maintain confidentiality because of the nature
+                                of the data.&nbsp;</p>
 
 
 
-<p>Remember, many attacks are targeted at VoIPs, such as man-in-the-middle attacks and eavesdropping. Cybercriminals are constantly crafting new ways to intercept and steal highly confidential information.&nbsp;</p>
+                            <p>Encryption is a primary and effective way to ensure that the data transferred through
+                                VoIP remains confidential. Protocols like Secure Real-time Transport Protocol (SRTP),
+                                which are encryption technologies, encrypt the voice data itself, making it
+                                unintelligible even if intercepted.</p>
 
 
 
-<p>This could involve injecting misleading information, disrupting ongoing negotiations, or even impersonating one of the parties involved.</p>
+                            <p>The role of encryption in VoIP is to also ensure the integrity and authentication of data
+                                transferred through this communication channel.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Remember, many attacks are targeted at VoIPs, such as man-in-the-middle attacks and
+                                eavesdropping. Cybercriminals are constantly crafting new ways to intercept and steal
+                                highly confidential information.&nbsp;</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-2"><strong>It Also Allows Mitigation of Common Threats&nbsp;</strong></h3>
+                            <p>This could involve injecting misleading information, disrupting ongoing negotiations, or
+                                even impersonating one of the parties involved.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>As mentioned before, VoIP systems are prone to a barrage of attacks including DoS attacks, data tampering, identity spoofing, phishing, malware and spyware.&nbsp;&nbsp;</p>
+                            <h3 class="wp-block-heading" id="heading-3-2"><strong>It Also Allows Mitigation of Common
+                                    Threats&nbsp;</strong></h3>
 
 
 
-<p>The use of strong encryption algorithms, such as AES (Advanced Encryption Standard), is crucial for mitigating these threats. It prevents eavesdropping, man-in-the-middle attacks, replay attacks, and data tampering, among other common threats.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Also, VoIP providers may store call recordings for varied reasons. Encryption is a protection measure that ensures the safety of this stored data. This further mitigates the risk of unauthorized access.</p>
+                            <p>As mentioned before, VoIP systems are prone to a barrage of attacks including DoS
+                                attacks, data tampering, identity spoofing, phishing, malware and spyware.&nbsp;&nbsp;
+                            </p>
 
 
 
-<p>The role of encryption is to prevent such attacks from coming to fruition and maintaining.</p>
+                            <p>The use of strong encryption algorithms, such as AES (Advanced Encryption Standard), is
+                                crucial for mitigating these threats. It prevents eavesdropping, man-in-the-middle
+                                attacks, replay attacks, and data tampering, among other common threats.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Also, VoIP providers may store call recordings for varied reasons. Encryption is a
+                                protection measure that ensures the safety of this stored data. This further mitigates
+                                the risk of unauthorized access.</p>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-3"><strong>Compliance with Regulations</strong></h3>
+                            <p>The role of encryption is to prevent such attacks from coming to fruition and
+                                maintaining.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Many industries have regulations and standards (such as HIPAA for healthcare and GDPR for data protection in the EU) that require the use of encryption to protect sensitive information.&nbsp;</p>
+                            <h3 class="wp-block-heading" id="heading-3-3"><strong>Compliance with Regulations</strong>
+                            </h3>
 
 
 
-<p>Encrypting VoIP communications helps organizations comply with these regulatory requirements.</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>But it’s important to note that <a href="https://dyl.com/blog/b2b-email-database" target="_blank" rel="noopener" title="">regulations can be complex </a>and might vary depending on the industry and location. It would be best to first consult with legal or compliance professionals to help you meet all relevant regulations.</p>
+                            <p>Many industries have regulations and standards (such as HIPAA for healthcare and GDPR for
+                                data protection in the EU) that require the use of encryption to protect sensitive
+                                information.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Encrypting VoIP communications helps organizations comply with these regulatory
+                                requirements.</p>
 
 
 
-<h2 class="wp-block-heading" id="heading-4">In Conclusion</h2>
+                            <p>But it’s important to note that <a href="https://dyl.com/blog/b2b-email-database"
+                                    target="_blank" rel="noopener" title="">regulations can be complex </a>and might
+                                vary depending on the industry and location. It would be best to first consult with
+                                legal or compliance professionals to help you meet all relevant regulations.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Voice over Internet Protocol, also called VoIP, is the technology that allows you to convert most devices to have phone call capabilities through an internet connection.&nbsp;</p>
+                            <h2 class="wp-block-heading" id="heading-4">In Conclusion</h2>
 
 
 
-<p>In VoIP systems, software applications are installed on computers. Such apps include Skype, Google Voice, Nextiva, and RingCentral. They allow you to make calls from a computer, smartphone, tablet, or related device. VoIP phones can also be USB phones, conference phones, video phones, or wireless IP Phones.&nbsp;</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>However, every bit of information transferred through the internet must be sent in codes, commonly called data packets. This applies to VoIP as well.</p>
+                            <p>Voice over Internet Protocol, also called VoIP, is the technology that allows you to
+                                convert most devices to have phone call capabilities through an internet
+                                connection.&nbsp;</p>
 
 
 
-<p>However, hackers and malicious parties constantly target these packets of data because they contain highly confidential information that could benefit them.</p>
+                            <p>In VoIP systems, software applications are installed on computers. Such apps include
+                                Skype, Google Voice, Nextiva, and RingCentral. They allow you to make calls from a
+                                computer, smartphone, tablet, or related device. VoIP phones can also be USB phones,
+                                conference phones, video phones, or wireless IP Phones.&nbsp;</p>
 
 
 
-<p>Security experts recommend using encryption.</p>
+                            <p>However, every bit of information transferred through the internet must be sent in codes,
+                                commonly called data packets. This applies to VoIP as well.</p>
 
 
 
-<p>Encryption offers a secure way to protect your VoIP communication lines. It plays a massive role in ensuring the confidentiality, integrity, and authentication of data conveyed through VoIP, while keeping dangerous threats at bay.&nbsp;&nbsp;&nbsp;</p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+                            <p>However, hackers and malicious parties constantly target these packets of data because
+                                they contain highly confidential information that could benefit them.</p>
+
+
+
+                            <p>Security experts recommend using encryption.</p>
+
+
+
+                            <p>Encryption offers a secure way to protect your VoIP communication lines. It plays a
+                                massive role in ensuring the confidentiality, integrity, and authentication of data
+                                conveyed through VoIP, while keeping dangerous threats at bay.&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                        <br>
+                        <br>
+                         <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2024/07/65090-200.png" alt="DYL Staff" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2024/07/65090-200.png"
+                                        alt="DYL Staff" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/dylstaff">DYL Staff</a>
-                                  </p>
-                                <p class="article-author-position">DYL Staff write some of the articles you see on DYL. They represent marketing, service, sales, and more!
-                                </p>
-                              </div>
+                                        <a href="author/dylstaff.html">DYL Staff</a>
+                                    </p>
+                                    <p class="article-author-position">DYL Staff write some of the articles you see on
+                                        DYL. They represent marketing, service, sales, and more!
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-companies</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies to Boost Your Business Growth in 2025</a>
-		  </p>
-	      
-Looking to improve your lead and contact management while making your business soar in 2025? You’re in the right place!&nbsp;
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-companies"
+                            aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-companies</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-companies"
+                                aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies
+                                to Boost Your Business Growth in 2025</a>
+                        </p>
+
+                        Looking to improve your lead and contact management while making your business soar in 2025?
+                        You’re in the right place!&nbsp;
 
 
 
-Choos...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-software-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software Solutions to Boost Your Business Growth</a>
-		  </p>
-	      
-Looking to connect with contacts in a way that truly grows your business? You’re in the right place! Whether you’re a sales rep a...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/boost-productivity">
-	        <p class="element-post-category transition-3d-hover">
-	          Boost Productivity
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-compose-a-professional-email" aria-label="How to Compose a Professional Email for Any Situation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/post-thumbnail-team-leaders-on-walk-in-business-park.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-compose-a-professional-email</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 10, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 21 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-compose-a-professional-email" aria-label="How to Compose a Professional Email for Any Situation">How to Compose a Professional Email for Any Situation</a>
-		  </p>
-	      
-Crafting the perfect sales emails can feel daunting, especially when the stakes are high. Whether you’re reaching out to a potent...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-write-a-good-email-sequence</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 9, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a Good Email Sequence for Better Engagement</a>
-		  </p>
-	      
-Are you ready to transform your email marketing game? With the right approach to email automation, you can engage your audience i...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-make-your-business-look-more-professional</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 1, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 9 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">How to Make Your Business Look More Professional</a>
-		  </p>
-	      
-Seven seconds. That’s how long your business has to make an impression.
+                        Choos...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-software-solutions"
+                            aria-label="Top CRM Software Solutions to Boost Your Business Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-software-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-software-solutions"
+                                aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software
+                                Solutions to Boost Your Business Growth</a>
+                        </p>
 
-During those seven seconds, research shows that custom...
-	    </div>
-	</div>
+                        Looking to connect with contacts in a way that truly grows your business? You’re in the right
+                        place! Whether you’re a sales rep a...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/boost-productivity">
+                            <p class="element-post-category transition-3d-hover">
+                                Boost Productivity
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-compose-a-professional-email"
+                            aria-label="How to Compose a Professional Email for Any Situation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/post-thumbnail-team-leaders-on-walk-in-business-park.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-compose-a-professional-email</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 10, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 21 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-compose-a-professional-email"
+                                aria-label="How to Compose a Professional Email for Any Situation">How to Compose a
+                                Professional Email for Any Situation</a>
+                        </p>
+
+                        Crafting the perfect sales emails can feel daunting, especially when the stakes are high.
+                        Whether you’re reaching out to a potent...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-write-a-good-email-sequence"
+                            aria-label="How to Write a Good Email Sequence for Better Engagement">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-write-a-good-email-sequence</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 9, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-write-a-good-email-sequence"
+                                aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a
+                                Good Email Sequence for Better Engagement</a>
+                        </p>
+
+                        Are you ready to transform your email marketing game? With the right approach to email
+                        automation, you can engage your audience i...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-make-your-business-look-more-professional"
+                            aria-label="How to Make Your Business Look More Professional">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200"
+                                loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-make-your-business-look-more-professional</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 1, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 9 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-make-your-business-look-more-professional"
+                                aria-label="How to Make Your Business Look More Professional">How to Make Your Business
+                                Look More Professional</a>
+                        </p>
+
+                        Seven seconds. That’s how long your business has to make an impression.
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        During those seven seconds, research shows that custom...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1579,9 +1786,9 @@ During those seven seconds, research shows that custom...
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1598,24 +1805,26 @@ During those seven seconds, research shows that custom...
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
+    <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="text-center lazy" alt="Download marketing template" loading="lazy"
+                        src="https://images.dyl.com/marketing-blog/mobile2/lead-gen-and-capture-ebook.webp">
+                    <h6 class="text-center">
+                        Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true"
+                            onclick="togglerightPanel()"></i>
+                    </h6>
+                    <p class="text-center">
+                        This Ebook includes guides to generate more leads and improve your lead qualification process.
+                    </p>
+                    <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                        <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2071,13 +2280,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+      
 
         <script>
 
@@ -2143,17 +2346,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
+          
 
 
             window.onload = function () {
@@ -2816,36 +3009,38 @@ thank-you" />
         </div>
     </aside>
 
+<script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -2861,22 +3056,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2904,9 +3084,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -2969,21 +3149,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -2993,6 +3159,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });
@@ -3031,7 +3217,6 @@ thank-you" />
             $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
         });
     </script>
-
 
 </body>
 
