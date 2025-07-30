@@ -11,16 +11,17 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-What is a Sales Pipeline and How can it Grow Your Business? | DYL
+        What is a Sales Pipeline and How can it Grow Your Business? | DYL
     </title>
     <meta name="description"
         content="Learn how a sales pipeline is vital to your business success and how you can start using it in today's business climate. Discover what a sales pipeline means.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
+
 
     <style>
         body {
@@ -52,8 +53,41 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +98,13 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/sales-executive-speaking-with-team-in-conference-room.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +116,12 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +143,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +154,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +171,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +202,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +213,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +229,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +259,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +271,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +288,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +308,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +326,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +346,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +361,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +390,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +472,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +489,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +530,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +546,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +587,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +604,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +624,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +642,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +662,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +677,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +706,7 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,956 +730,1169 @@ What is a Sales Pipeline and How can it Grow Your Business? | DYL
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">What is a Sales Pipeline and How can it Grow Your Business?</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        April
-                          19, 2023
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 9 min read </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/sales-executive-speaking-with-team-in-conference-room.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">What is a Sales Pipeline and How can it Grow Your
+                                Business?</h1>
+                        </div>
+                        <div class="post-article-metas">
 
-                  
-                    
-                      
+                            <p class="post-date">
+                                April
+                                19, 2023
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 9 min read </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-left">
+
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/sales-executive-speaking-with-team-in-conference-room.webp"
+                            width="680" height="383" alt="blog featured image">
+
+                        <br><br>
+
+
+
+
+
+
 
                         <a href="/blog/category/crm-tools-and-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            CRM Tools + Tips
-                          </p>
+                            <p class="element-category-post transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
                         </a>
 
-                        
-                    
-                      
+
+
+
 
                         <a href="/blog/category/improve-sales">
-                          <p class="element-category-post transition-3d-hover">
-                            Improve Sales
-                          </p>
+                            <p class="element-category-post transition-3d-hover">
+                                Improve Sales
+                            </p>
                         </a>
 
-                        
-                    
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 546px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">The importance of a sales pipeline</a><ul style="display: block;"><li><a href="#heading-1-1">Better Sales Forecasting</a></li><li><a href="#heading-1-2">Improved Collaboration&nbsp;</a></li><li><a href="#heading-1-3">Efficient Resource Allocation</a></li><li><a href="#heading-1-4">Improved Customer Experience&nbsp;</a></li><li><a href="#heading-1-5">Identify Weaknesses</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">The Stages of a Sales Pipeline</a><ul style="display: block;"><li><a href="#heading-2-1">Lead Generation</a></li><li><a href="#heading-2-2">Qualifying Leads</a></li><li><a href="#heading-2-3">Presenting Offers&nbsp;</a></li><li><a href="#heading-2-4">Closing Deals</a></li><li><a href="#heading-2-5">Follow-up and After-Sales Service</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Sales Pipeline Management</a><ul style="display: block;"><li><a href="#heading-3-1">Clear Sales Pipeline Stages</a></li><li><a href="#heading-3-2">Regular Pipeline Reviews</a></li><li><a href="#heading-3-3">Data-Driven Insights&nbsp;</a></li><li><a href="#heading-3-4">CRM Software</a></li><li><a href="#heading-3-5">Sales Team Training</a></li><li><a href="#heading-3-6">Sales Pipeline Automation</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Benefits of a Sales Pipeline</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Conclusion</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 546px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">The importance of
+                                        a sales pipeline</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-1-1">Better Sales Forecasting</a></li>
+                                        <li><a href="#heading-1-2">Improved Collaboration&nbsp;</a></li>
+                                        <li><a href="#heading-1-3">Efficient Resource Allocation</a></li>
+                                        <li><a href="#heading-1-4">Improved Customer Experience&nbsp;</a></li>
+                                        <li><a href="#heading-1-5">Identify Weaknesses</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">The Stages of a
+                                        Sales Pipeline</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-2-1">Lead Generation</a></li>
+                                        <li><a href="#heading-2-2">Qualifying Leads</a></li>
+                                        <li><a href="#heading-2-3">Presenting Offers&nbsp;</a></li>
+                                        <li><a href="#heading-2-4">Closing Deals</a></li>
+                                        <li><a href="#heading-2-5">Follow-up and After-Sales Service</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Sales Pipeline
+                                        Management</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-3-1">Clear Sales Pipeline Stages</a></li>
+                                        <li><a href="#heading-3-2">Regular Pipeline Reviews</a></li>
+                                        <li><a href="#heading-3-3">Data-Driven Insights&nbsp;</a></li>
+                                        <li><a href="#heading-3-4">CRM Software</a></li>
+                                        <li><a href="#heading-3-5">Sales Team Training</a></li>
+                                        <li><a href="#heading-3-6">Sales Pipeline Automation</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Benefits of a
+                                        Sales Pipeline</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>A<a href="https://dyl.com/crm/phone/sales-automation" target="_blank" rel="noopener" title=""> sales pipeline</a> is an illustration of the sales process that outlines the current number of deals worked on by the sales team, along with the stage of each deal and the time required to close them.&nbsp;</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>A<a href="https://dyl.com/crm/phone/sales-automation" target="_blank" rel="noopener"
+                                    title=""> sales pipeline</a> is an illustration of the sales process that outlines
+                                the current number of deals worked on by the sales team, along with the stage of each
+                                deal and the time required to close them.&nbsp;</p>
 
 
 
-<p>It is an indispensable aspect of the sales process. Without a pipeline, you lack information on where deals are, how sales reps should proceed, and how effective your sales process is.&nbsp;</p>
+                            <p>It is an indispensable aspect of the sales process. Without a pipeline, you lack
+                                information on where deals are, how sales reps should proceed, and how effective your
+                                sales process is.&nbsp;</p>
 
 
 
-<p>Proficient management of the sales pipeline can help businesses attain their sales targets and increase conversion rates, leading to growth. This article delves into the advantages of implementing a sales pipeline and the various stages that are involved.</p>
+                            <p>Proficient management of the sales pipeline can help businesses attain their sales
+                                targets and increase conversion rates, leading to growth. This article delves into the
+                                advantages of implementing a sales pipeline and the various stages that are involved.
+                            </p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/sales-executive-manager-pitching-to-staff-members.jpg" alt="Sales executive manager pitching to staff members" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/sales-executive-manager-pitching-to-staff-members.jpg"
+                                    alt="Sales executive manager pitching to staff members" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1">The importance of a sales pipeline</h2>
+                            <h2 class="wp-block-heading" id="heading-1">The importance of a sales pipeline</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Any sales plan must include a sales pipeline since it allows sales teams to keep track of the status of active deals and their various stages. Sales managers can then identify any areas for improvement, mentor and support their staff, and tweak the sales procedure to increase conversion rates.&nbsp;</p>
+                            <p>Any sales plan must include a sales pipeline since it allows sales teams to keep track of
+                                the status of active deals and their various stages. Sales managers can then identify
+                                any areas for improvement, mentor and support their staff, and tweak the sales procedure
+                                to increase conversion rates.&nbsp;</p>
 
 
 
-<p>A sales pipeline also makes it easier to expect sales, determine how long it takes to close deals, and give marketing teams useful feedback on how to produce leads that fit the pipeline’s various stages.</p>
+                            <p>A sales pipeline also makes it easier to expect sales, determine how long it takes to
+                                close deals, and give marketing teams useful feedback on how to produce leads that fit
+                                the pipeline’s various stages.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-1">Better Sales Forecasting</h3>
+                            <h3 class="wp-block-heading" id="heading-1-1">Better Sales Forecasting</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>A <a href="https://dyl.com/blog/crm-security" target="_blank" rel="noopener" title="">sales pipeline</a> gives a comprehensive insight of active deals and the stage of the sales. To accurately predict future sales, sales leaders need an active sales pipeline. Sales executives can expect the prospective revenue for a period by examining the data in the sales pipeline and changing their strategy accordingly.</p>
+                            <p>A <a href="https://dyl.com/blog/crm-security" target="_blank" rel="noopener"
+                                    title="">sales pipeline</a> gives a comprehensive insight of active deals and the
+                                stage of the sales. To accurately predict future sales, sales leaders need an active
+                                sales pipeline. Sales executives can expect the prospective revenue for a period by
+                                examining the data in the sales pipeline and changing their strategy accordingly.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-2">Improved Collaboration&nbsp;</h3>
+                            <h3 class="wp-block-heading" id="heading-1-2">Improved Collaboration&nbsp;</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>The sales team, marketing teams, and other departments involved in the sales process can collaborate more effectively when there is a sales pipeline in place. Team members can better collaborate and be more productive by exchanging information about the pipeline stage and offering each other insightful advice and support.</p>
+                            <p>The sales team, marketing teams, and other departments involved in the sales process can
+                                collaborate more effectively when there is a sales pipeline in place. Team members can
+                                better collaborate and be more productive by exchanging information about the pipeline
+                                stage and offering each other insightful advice and support.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-3">Efficient Resource Allocation</h3>
+                            <h3 class="wp-block-heading" id="heading-1-3">Efficient Resource Allocation</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Companies can distribute resources wisely when they have a strong sales funnel.&nbsp;</p>
+                            <p>Companies can distribute resources wisely when they have a strong sales funnel.&nbsp;</p>
 
 
 
-<p>Often, sales managers ensure teams have the tools they need to drive prospects along the sales funnel by monitoring the pipeline stage. This aids in streamlining the sales procedure, speeding up the closing of deals, and raising the sales team’s general effectiveness.</p>
+                            <p>Often, sales managers ensure teams have the tools they need to drive prospects along the
+                                sales funnel by monitoring the pipeline stage. This aids in streamlining the sales
+                                procedure, speeding up the closing of deals, and raising the sales team’s general
+                                effectiveness.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-4">Improved Customer Experience&nbsp;</h3>
+                            <h3 class="wp-block-heading" id="heading-1-4">Improved Customer Experience&nbsp;</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Businesses may improve the customer experience by maintaining a properly managed sales pipeline.&nbsp;</p>
+                            <p>Businesses may improve the customer experience by maintaining a properly managed sales
+                                pipeline.&nbsp;</p>
 
 
 
-<p>Sales teams may offer specialized solutions and ease customer pain points by keeping track of the pipeline stage and comprehending the needs of the customer. This creates long-lasting relationships with customers by helping them when they need a solution.</p>
+                            <p>Sales teams may offer specialized solutions and ease customer pain points by keeping
+                                track of the pipeline stage and comprehending the needs of the customer. This creates
+                                long-lasting relationships with customers by helping them when they need a solution.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-5">Identify Weaknesses</h3>
+                            <h3 class="wp-block-heading" id="heading-1-5">Identify Weaknesses</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>The sales pipeline provides valuable insights into the sales process, enabling sales leaders to identify areas of weakness.</p>
+                            <p>The sales pipeline provides valuable insights into the sales process, enabling sales
+                                leaders to identify areas of weakness.</p>
 
 
 
-<p>By analyzing pipeline data, sales leaders can determine where most prospects drop out, adjust their sales strategies, and provide the support to team members.</p>
+                            <p>By analyzing pipeline data, sales leaders can determine where most prospects drop out,
+                                adjust their sales strategies, and provide the support to team members.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/pipeline-management-graphic-with-green-background.jpg" alt="Pipeline management graphic with green background" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/pipeline-management-graphic-with-green-background.jpg"
+                                    alt="Pipeline management graphic with green background" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">The Stages of a Sales Pipeline</h2>
+                            <h2 class="wp-block-heading" id="heading-2">The Stages of a Sales Pipeline</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>A sales pipeline has several stages that reflect the customer’s journey starting from lead generation until closing the deal.&nbsp;</p>
+                            <p>A sales pipeline has several stages that reflect the customer’s journey starting from
+                                lead generation until closing the deal.&nbsp;</p>
 
 
 
-<p>The stages of the pipeline may differ depending on the product or service being offered. But the important steps are identifying potential customers, qualifying leads, presenting offers, and finally closing deals.&nbsp;</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <p>The stages of the pipeline may differ depending on the product or service being offered.
+                                But the important steps are identifying potential customers, qualifying leads,
+                                presenting offers, and finally closing deals.&nbsp;</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>The sales team must focus on moving prospects through each stage of the pipeline to maximize the chances of closing the deal.</p>
 
 
+                            <p>The sales team must focus on moving prospects through each stage of the pipeline to
+                                maximize the chances of closing the deal.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-1"><em>Lead Generation</em></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-1"><em>Lead Generation</em></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>The first stage of a sales pipeline is lead generation. This includes identifying potential customers who are interested in the offered product or service.&nbsp;</p>
 
 
+                            <p>The first stage of a sales pipeline is lead generation. This includes identifying
+                                potential customers who are interested in the offered product or service.&nbsp;</p>
 
-<p>You can achieve lead generation through various methods, like advertising, content marketing, email marketing, and social media marketing.</p>
 
 
+                            <p>You can achieve lead generation through various methods, like advertising, content
+                                marketing, email marketing, and social media marketing.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-2"><em>Qualifying Leads</em></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-2"><em>Qualifying Leads</em></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>After generating leads, the next step is to qualify them to determine if they are a good fit for the product or service being offered.&nbsp;</p>
 
 
+                            <p>After generating leads, the next step is to qualify them to determine if they are a good
+                                fit for the product or service being offered.&nbsp;</p>
 
-<p>This involves gathering more information about the prospect, such as their needs, budget, timeline, and decision-making process.&nbsp;</p>
 
 
+                            <p>This involves gathering more information about the prospect, such as their needs, budget,
+                                timeline, and decision-making process.&nbsp;</p>
 
-<p>Qualifying leads help to focus on the most promising opportunities, reducing the time and resources spent on prospects that are unlikely to convert.</p>
 
 
+                            <p>Qualifying leads help to focus on the most promising opportunities, reducing the time and
+                                resources spent on prospects that are unlikely to convert.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-3"><em>Presenting Offers&nbsp;</em></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-3"><em>Presenting Offers&nbsp;</em></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Your sales staff can give prospects offers after they have been qualified. This might entail a demonstration or sample of the product, responding to inquiries, or addressing worries.&nbsp;</p>
 
 
+                            <p>Your sales staff can give prospects offers after they have been qualified. This might
+                                entail a demonstration or sample of the product, responding to inquiries, or addressing
+                                worries.&nbsp;</p>
 
-<p>The aim is to persuade the potential customer to buy.</p>
 
 
+                            <p>The aim is to persuade the potential customer to buy.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-4"><em>Closing Deals</em></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-4"><em>Closing Deals</em></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>A sales pipeline ends with this phase. This stage involves the prospect making a choice to buy and completing the deal.&nbsp;</p>
 
 
+                            <p>A sales pipeline ends with this phase. This stage involves the prospect making a choice
+                                to buy and completing the deal.&nbsp;</p>
 
-<p>Deal closure causes resolving any issues the prospect may have.</p>
 
 
+                            <p>Deal closure causes resolving any issues the prospect may have.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-5"><em>Follow-up and After-Sales Service</em></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-5"><em>Follow-up and After-Sales Service</em>
+                            </h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>After closing a sale, the sales team must provide excellent follow-up and after-sales service to maintain customer satisfaction and loyalty.</p>
 
 
+                            <p>After closing a sale, the sales team must provide excellent follow-up and after-sales
+                                service to maintain customer satisfaction and loyalty.</p>
 
-<p>This may include providing onboarding, training, and ongoing support to ensure that the customer is getting the most out of the product or service.</p>
 
 
+                            <p>This may include providing onboarding, training, and ongoing support to ensure that the
+                                customer is getting the most out of the product or service.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/sales-team-meeting-to-discuss-pipeline-management.jpg" alt="Sales team meeting to discuss pipeline management" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/sales-team-meeting-to-discuss-pipeline-management.jpg"
+                                    alt="Sales team meeting to discuss pipeline management" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-3">Sales Pipeline Management</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-3">Sales Pipeline Management</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Monitoring progress at each pipeline stage and ensuring that team members have adequate resources are both essential components of effective sales pipeline management.&nbsp;</p>
 
 
+                            <p>Monitoring progress at each pipeline stage and ensuring that team members have adequate
+                                resources are both essential components of effective sales pipeline management.&nbsp;
+                            </p>
 
-<p>Sales leaders can find areas for improvement and learn how long it takes to move prospects from one stage to the next by conducting regular pipeline evaluations.&nbsp;</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+
+
+                            <p>Sales leaders can find areas for improvement and learn how long it takes to move
+                                prospects from one stage to the next by conducting regular pipeline evaluations.&nbsp;
+                            </p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>The sales team must cooperate in order to support one another and make sure that they efficiently control the pipeline at each step.</p>
 
 
+                            <p>The sales team must cooperate in order to support one another and make sure that they
+                                efficiently control the pipeline at each step.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-1">Clear Sales Pipeline Stages</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-1">Clear Sales Pipeline Stages</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Effective sales pipeline management requires clear and well-defined stages of the pipeline.&nbsp;</p>
 
 
+                            <p>Effective sales pipeline management requires clear and well-defined stages of the
+                                pipeline.&nbsp;</p>
 
-<p>This helps sales teams to understand the progression of deals and enables sales leaders to analyze the pipeline and forecast future sales.</p>
 
 
+                            <p>This helps sales teams to understand the progression of deals and enables sales leaders
+                                to analyze the pipeline and forecast future sales.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-2">Regular Pipeline Reviews</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-2">Regular Pipeline Reviews</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>For effective sales pipeline management, regular pipeline reviews are essential. This entails evaluating the progress of agreements that are in the pipeline, spotting any bottlenecks or weak spots, and making any necessary corrections.</p>
 
 
+                            <p>For effective sales pipeline management, regular pipeline reviews are essential. This
+                                entails evaluating the progress of agreements that are in the pipeline, spotting any
+                                bottlenecks or weak spots, and making any necessary corrections.</p>
 
-<p>Regular pipeline reviews should be carried out, perhaps once a week or once a month.</p>
 
 
+                            <p>Regular pipeline reviews should be carried out, perhaps once a week or once a month.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-3">Data-Driven Insights&nbsp;</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-3">Data-Driven Insights&nbsp;</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>To make wise decisions, sales pipeline management needs data-driven insights. Sales managers should evaluate the pipeline and pinpoint opportunities for improvement using data like conversion rates, lead velocity, and deal size.</p>
 
 
+                            <p>To make wise decisions, sales pipeline management needs data-driven insights. Sales
+                                managers should evaluate the pipeline and pinpoint opportunities for improvement using
+                                data like conversion rates, lead velocity, and deal size.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-4">CRM Software</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-4">CRM Software</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>A CRM (Customer Relationship Management) program is an effective tool for managing the sales pipeline. Sales teams may track prospects, manage contacts, and analyze sales data with the aid of CRM software.</p>
 
 
+                            <p>A CRM (Customer Relationship Management) program is an effective tool for managing the
+                                sales pipeline. Sales teams may track prospects, manage contacts, and analyze sales data
+                                with the aid of CRM software.</p>
 
-<p>This makes it possible for sales managers to allocate resources more wisely and manage the pipeline more successfully.</p>
 
 
+                            <p>This makes it possible for sales managers to allocate resources more wisely and manage
+                                the pipeline more successfully.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-5">Sales Team Training</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-5">Sales Team Training</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Sales team members must be knowledgeable about the sales process and capable of managing their deals in order to efficiently manage the sales pipeline.&nbsp;</p>
 
 
+                            <p>Sales team members must be knowledgeable about the sales process and capable of managing
+                                their deals in order to efficiently manage the sales pipeline.&nbsp;</p>
 
-<p>To guarantee that team members have the abilities to manage the pipeline efficiently, sales executives should train and support them.</p>
 
 
+                            <p>To guarantee that team members have the abilities to manage the pipeline efficiently,
+                                sales executives should train and support them.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-6">Sales Pipeline Automation</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-6">Sales Pipeline Automation</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Automation of the sales funnel can speed up the selling process and provide sales teams more time. This entails automating processes like appointment scheduling, follow-up emails, and lead creation.&nbsp;</p>
 
 
+                            <p>Automation of the sales funnel can speed up the selling process and provide sales teams
+                                more time. This entails automating processes like appointment scheduling, follow-up
+                                emails, and lead creation.&nbsp;</p>
 
-<p>Automation of the sales pipeline can increase productivity, decrease errors, and give sales team members more time to concentrate on closing deals.</p>
 
 
+                            <p>Automation of the sales pipeline can increase productivity, decrease errors, and give
+                                sales team members more time to concentrate on closing deals.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/red-head-sales-woman-pitching-to-executives.jpg" alt="Red head sales woman pitching to executives" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/red-head-sales-woman-pitching-to-executives.jpg"
+                                    alt="Red head sales woman pitching to executives" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4">Benefits of a Sales Pipeline</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4">Benefits of a Sales Pipeline</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Employing a sales pipeline can aid businesses in elevating their conversion rates, attaining sales targets, and augmenting their revenue.&nbsp;</p>
 
 
+                            <p>Employing a sales pipeline can aid businesses in elevating their conversion rates,
+                                attaining sales targets, and augmenting their revenue.&nbsp;</p>
 
-<p>By pinpointing the stage in the pipeline where a considerable number of prospects abandon the sales process, sales leaders can equip their team members with the required training and resources to surmount objections and clinch deals.&nbsp;</p>
 
 
+                            <p>By pinpointing the stage in the pipeline where a considerable number of prospects abandon
+                                the sales process, sales leaders can equip their team members with the required training
+                                and resources to surmount objections and clinch deals.&nbsp;</p>
 
-<p>This facilitates the optimization of the sales process, reduces the time to finalize deals, and offers valuable insights to marketing teams to enhance lead generation.</p>
 
 
+                            <p>This facilitates the optimization of the sales process, reduces the time to finalize
+                                deals, and offers valuable insights to marketing teams to enhance lead generation.</p>
 
-<ol>
-<li>Increased Visibility: Sales leaders may track development and project future sales with the use of a sales pipeline, which increases visibility into the sales process. Sales managers can find bottlenecks and inefficiencies thanks to this visibility and fix them as needed.</li>
-</ol>
 
 
+                            <ol>
+                                <li>Increased Visibility: Sales leaders may track development and project future sales
+                                    with the use of a sales pipeline, which increases visibility into the sales process.
+                                    Sales managers can find bottlenecks and inefficiencies thanks to this visibility and
+                                    fix them as needed.</li>
+                            </ol>
 
-<ol start="2">
-<li>Better Resource Allocation: Based on the sales process, a sales pipeline assists sales leaders in more efficiently allocating resources. This can entail investing marketing efforts to increase lead generation or allocating members of the sales team to particular deals.</li>
-</ol>
 
 
+                            <ol start="2">
+                                <li>Better Resource Allocation: Based on the sales process, a sales pipeline assists
+                                    sales leaders in more efficiently allocating resources. This can entail investing
+                                    marketing efforts to increase lead generation or allocating members of the sales
+                                    team to particular deals.</li>
+                            </ol>
 
-<ol start="3">
-<li>Improved Sales Forecasting: Sales leaders can more accurately predict future sales by examining the sales funnel. This makes it possible for firms to prepare for future development, allocate resources wisely, and change their sales strategy as necessary.</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>Improved Sales Forecasting: Sales leaders can more accurately predict future sales
+                                    by examining the sales funnel. This makes it possible for firms to prepare for
+                                    future development, allocate resources wisely, and change their sales strategy as
+                                    necessary.</li>
+                            </ol>
 
-<ol start="4">
-<li>Increased Efficiency: By using a sales pipeline, businesses can increase the efficiency of the sales process. This can include automating certain tasks, such as lead generation and follow-up emails, or streamlining the sales process to reduce the time and resources needed to close deals.</li>
-</ol>
 
 
+                            <ol start="4">
+                                <li>Increased Efficiency: By using a sales pipeline, businesses can increase the
+                                    efficiency of the sales process. This can include automating certain tasks, such as
+                                    lead generation and follow-up emails, or streamlining the sales process to reduce
+                                    the time and resources needed to close deals.</li>
+                            </ol>
 
-<ol start="5">
-<li>Better Collaboration: A sales pipeline encourages better collaboration between sales team members and other teams, such as marketing teams. By sharing information about the sales process, teams can work together to optimize the pipeline and improve the overall sales process.</li>
-</ol>
 
 
+                            <ol start="5">
+                                <li>Better Collaboration: A sales pipeline encourages better collaboration between sales
+                                    team members and other teams, such as marketing teams. By sharing information about
+                                    the sales process, teams can work together to optimize the pipeline and improve the
+                                    overall sales process.</li>
+                            </ol>
 
-<ol start="6">
-<li>Higher Conversion Rates: Since it enables sales teams to concentrate on the most promising possibilities and close agreements more quickly, a well-managed sales pipeline can cause greater conversion rates. Businesses can boost income and expand their operations by streamlining the sales pipeline.</li>
-</ol>
 
 
+                            <ol start="6">
+                                <li>Higher Conversion Rates: Since it enables sales teams to concentrate on the most
+                                    promising possibilities and close agreements more quickly, a well-managed sales
+                                    pipeline can cause greater conversion rates. Businesses can boost income and expand
+                                    their operations by streamlining the sales pipeline.</li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5">Conclusion</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5">Conclusion</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>In conclusion, the sales process must include a sales pipeline, and good sales pipeline management can spur growth by raising conversion rates, hitting sales goals, and streamlining the sales procedure.</p>
 
 
+                            <p>In conclusion, the sales process must include a sales pipeline, and good sales pipeline
+                                management can spur growth by raising conversion rates, hitting sales goals, and
+                                streamlining the sales procedure.</p>
 
-<p>Sales teams may streamline the sales process, give insightful data to marketing teams, and close more deals by keeping track of the number of deals, sales stage, and closing time.</p>
 
 
+                            <p>Sales teams may streamline the sales process, give insightful data to marketing teams,
+                                and close more deals by keeping track of the number of deals, sales stage, and closing
+                                time.</p>
 
-<p>Want something specific to be covered about ways to improve your business using VoIP? Reach out to us at <a href="mailto:marketing@dyl.com" target="_blank" rel="noopener" title="">marketing@dyl.com</a></p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p>Want something specific to be covered about ways to improve your business using VoIP?
+                                Reach out to us at <a href="mailto:marketing@dyl.com" target="_blank" rel="noopener"
+                                    title="">marketing@dyl.com</a></p>
+                        </div>
+                        <br>
+                        <br>
+                         <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg" alt="Alex Vetter" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg"
+                                        alt="Alex Vetter" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/avetter">Alex Vetter</a>
-                                  </p>
-                                <p class="article-author-position">Alex Vetter is the product marketing manager at DYL. With a Masters from College de Paris, he runs the marketing department and helps with product management at DYL.
-                                </p>
-                              </div>
+                                        <a href="author/avetter.html">Alex Vetter</a>
+                                    </p>
+                                    <p class="article-author-position">Alex Vetter is the product marketing manager at
+                                        DYL. With a Masters from College de Paris, he runs the marketing department and
+                                        helps with product management at DYL.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">benefits-of-email-lead-generation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 7, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 6 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of Email Lead Generation For Elevating Marketing ROI</a>
-		  </p>
-	      
-Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt innovative techniques to maximize ...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-companies</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies to Boost Your Business Growth in 2025</a>
-		  </p>
-	      
-Looking to improve your lead and contact management while making your business soar in 2025? You’re in the right place!&nbsp;
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/benefits-of-email-lead-generation"
+                            aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">benefits-of-email-lead-generation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 7, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 6 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/benefits-of-email-lead-generation"
+                                aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of
+                                Email Lead Generation For Elevating Marketing ROI</a>
+                        </p>
+
+                        Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt
+                        innovative techniques to maximize ...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-companies"
+                            aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-companies</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-companies"
+                                aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies
+                                to Boost Your Business Growth in 2025</a>
+                        </p>
 
-Choos...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-software-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software Solutions to Boost Your Business Growth</a>
-		  </p>
-	      
-Looking to connect with contacts in a way that truly grows your business? You’re in the right place! Whether you’re a sales rep a...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How Sales Automation is Revolutionizing Real Estate Lead Generation</a>
-		  </p>
-	      
-There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a variety of factors, including digit...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their Pitch</a>
-		  </p>
-	      
-Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A good sales pitch doesn’t sound l...
-	    </div>
-	</div>
+                        Looking to improve your lead and contact management while making your business soar in 2025?
+                        You’re in the right place!&nbsp;
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        Choos...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-software-solutions"
+                            aria-label="Top CRM Software Solutions to Boost Your Business Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-software-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-software-solutions"
+                                aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software
+                                Solutions to Boost Your Business Growth</a>
+                        </p>
+
+                        Looking to connect with contacts in a way that truly grows your business? You’re in the right
+                        place! Whether you’re a sales rep a...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/sales-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                            aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                                aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How
+                                Sales Automation is Revolutionizing Real Estate Lead Generation</a>
+                        </p>
+
+                        There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a
+                        variety of factors, including digit...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/sales-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-sales-teams-can-improve-their-pitch"
+                            aria-label="How Sales Teams Can Improve Their Pitch">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-sales-teams-can-improve-their-pitch"
+                                aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their
+                                Pitch</a>
+                        </p>
+
+                        Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A
+                        good sales pitch doesn’t sound l...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1794,9 +2040,9 @@ Do all your salespeople have the gift of the gab? Can they sell ice to a polar b
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1813,24 +2059,7 @@ Do all your salespeople have the gift of the gab? Can they sell ice to a polar b
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+   
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2286,14 +2515,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
-
+      
         <script>
 
             function setCookie(name, value, days) {
@@ -2358,17 +2580,6 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
 
 
             window.onload = function () {
@@ -3033,34 +3244,38 @@ thank-you" />
 
 
 
+<script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -3076,22 +3291,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3119,9 +3319,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3184,21 +3384,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3208,6 +3394,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });
@@ -3230,21 +3436,7 @@ thank-you" />
             $('#popup2').fadeOut();
         }
 
-        function togglerightPanel() {
-            var popupDivright = $('#popUprightDiv');
-            var iconright = popupDivright.find('h6 i');
-            popupDivright.toggleClass('closed');
-            if (popupDivright.hasClass('closed')) {
-                popupDivright.css('height', '50px'); // Set height explicitly when closing
-                iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-            } else {
-                popupDivright.css('height', 'auto'); // Reset height to auto when opening
-                iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
-            }
-        }
-        $(document).ready(function () {
-            $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
-        });
+       
     </script>
 
 
