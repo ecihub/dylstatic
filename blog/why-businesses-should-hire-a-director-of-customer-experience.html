@@ -11,16 +11,17 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-       Why Businesses Should Hire a Director of Customer Experience | DYL
+        Why Businesses Should Hire a Director of Customer Experience | DYL
     </title>
     <meta name="description"
         content="With customer experience gaining so much attention from businesses, having a director at the helm is an important part in creating a thriving strategy.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+     <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
+
 
     <style>
         body {
@@ -52,8 +53,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +98,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/customer-experience-director-sitting-in-chair-with-suit.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +116,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +143,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +154,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +171,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +202,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +213,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +229,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +259,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +271,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +288,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +308,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +326,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +346,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +361,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +390,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +472,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +489,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +530,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +546,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +587,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +604,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +624,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +642,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +662,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +677,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +706,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,965 +730,1211 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">Why Businesses Should Hire a Director of Customer Experience</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        February
-                          27, 2023
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 8 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">Why Businesses Should Hire a Director of Customer
+                                Experience</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                February
+                                27, 2023
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 8 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/customer-experience-director-sitting-in-chair-with-suit.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/customer-experience-director-sitting-in-chair-with-suit.webp"
+                            width="680" height="383" alt="blog featured image">
 
-                        <a href="/blog/category/customer-experience">
-                          <p class="element-category-post transition-3d-hover">
-                            Customer Experience
-                          </p>
+                        <br><br>
+
+
+
+
+
+
+
+                        <a href="category/customer-experience.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Customer Experience
+                            </p>
                         </a>
 
-                        
-                    
-                      
 
-                        <a href="/blog/category/improve-retention">
-                          <p class="element-category-post transition-3d-hover">
-                            Improve Retention
-                          </p>
+
+
+
+                        <a href="category/improve-retention.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Improve Retention
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 650px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">What is a Director of Customer Experience?</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Skills Required</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Duties and Responsibilities</a><ul style="display: block;"><li><a href="#heading-3-1">Create business goals and plans to improve CX</a></li><li><a href="#heading-3-2">Intercommunication between department heads</a></li><li><a href="#heading-3-3">Research what and how customers are thinking</a></li><li><a href="#heading-3-4">Streamline CX activity across the company</a></li><li><a href="#heading-3-5">Find out how best to build loyalty and satisfied customers</a></li><li><a href="#heading-3-6">Discover problems and find their solutions</a></li><li><a href="#heading-3-7">Network with other CX directors and leaders</a></li><li><a href="#heading-3-8">Read all the data and use it to make informed decisions</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Encourage your team to do their very best</a><ul style="display: block;"><li><a href="#heading-4-1">Know the best forms of CX technology</a></li><li><a href="#heading-4-2">Organize your brand’s image around customers</a></li><li><a href="#heading-4-3">Monitor ROI and whether CX initiatives actually work</a></li><li><a href="#heading-4-4">Advocate on behalf of CX to upper management</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Polish your customer service</a><ul style="display: block;"><li><a href="#heading-5-1">Train the employees in customer service</a></li><li><a href="#heading-5-2">Build accurate KPIs that will show the progress of goals</a></li><li><a href="#heading-5-3">Watch out for industry trends and CX best practices</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Deliver great customer service, sometimes directly</a><ul style="display: block;"><li><a href="#heading-6-1">Join forces with the marketing team</a></li><li><a href="#heading-6-2">Product development collaboration</a></li><li><a href="#heading-6-3">Build an amazing CX journey</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Conclusion</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 650px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">What is a Director
+                                        of Customer Experience?</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Skills
+                                        Required</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Duties and
+                                        Responsibilities</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-3-1">Create business goals and plans to improve CX</a>
+                                        </li>
+                                        <li><a href="#heading-3-2">Intercommunication between department heads</a></li>
+                                        <li><a href="#heading-3-3">Research what and how customers are thinking</a></li>
+                                        <li><a href="#heading-3-4">Streamline CX activity across the company</a></li>
+                                        <li><a href="#heading-3-5">Find out how best to build loyalty and satisfied
+                                                customers</a></li>
+                                        <li><a href="#heading-3-6">Discover problems and find their solutions</a></li>
+                                        <li><a href="#heading-3-7">Network with other CX directors and leaders</a></li>
+                                        <li><a href="#heading-3-8">Read all the data and use it to make informed
+                                                decisions</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Encourage your
+                                        team to do their very best</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-4-1">Know the best forms of CX technology</a></li>
+                                        <li><a href="#heading-4-2">Organize your brand’s image around customers</a></li>
+                                        <li><a href="#heading-4-3">Monitor ROI and whether CX initiatives actually
+                                                work</a></li>
+                                        <li><a href="#heading-4-4">Advocate on behalf of CX to upper management</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Polish your
+                                        customer service</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-5-1">Train the employees in customer service</a></li>
+                                        <li><a href="#heading-5-2">Build accurate KPIs that will show the progress of
+                                                goals</a></li>
+                                        <li><a href="#heading-5-3">Watch out for industry trends and CX best
+                                                practices</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Deliver great
+                                        customer service, sometimes directly</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-6-1">Join forces with the marketing team</a></li>
+                                        <li><a href="#heading-6-2">Product development collaboration</a></li>
+                                        <li><a href="#heading-6-3">Build an amazing CX journey</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>Today, Customer service (CX) is quickly becoming one of the most important aspects of business.</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>Today, Customer service (CX) is quickly becoming one of the most important aspects of
+                                business.</p>
 
 
 
-<p>The <a href="https://dyl.com/blog/43-key-customer-experience-statistics-for-2023" target="_blank" rel="noreferrer noopener">statistics for CX</a> show a direct correlation between the level of CX and the bottom line. For instance, 69% of customers will buy from brands that have better CX, regardless of other measures.</p>
+                            <p>The <a href="https://dyl.com/blog/43-key-customer-experience-statistics-for-2023"
+                                    target="_blank" rel="noreferrer noopener">statistics for CX</a> show a direct
+                                correlation between the level of CX and the bottom line. For instance, 69% of customers
+                                will buy from brands that have better CX, regardless of other measures.</p>
 
 
 
-<p>Therefore, companies are adopting formal CX roadmaps and other blueprints that focus on customer satisfaction as a key measure for success.</p>
+                            <p>Therefore, companies are adopting formal CX roadmaps and other blueprints that focus on
+                                customer satisfaction as a key measure for success.</p>
 
 
 
-<p>One way of ensuring this within a company is to hire and foster a customer experience management position.</p>
+                            <p>One way of ensuring this within a company is to hire and foster a customer experience
+                                management position.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1"><strong>What is a Director of Customer Experience?</strong></h2>
+                            <h2 class="wp-block-heading" id="heading-1"><strong>What is a Director of Customer
+                                    Experience?</strong></h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>The director of CX oversees the growth and application of a company’s customer service initiatives. They develop and set up goals to improve CX and make sure everyone in your company follows through.</p>
+                            <p>The director of CX oversees the growth and application of a company’s customer service
+                                initiatives. They develop and set up goals to improve CX and make sure everyone in your
+                                company follows through.</p>
 
 
 
-<p>Here is a list of required skills that will further set up what’s required of a CX director.</p>
+                            <p>Here is a list of required skills that will further set up what’s required of a CX
+                                director.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2"><strong>Skills Required</strong></h2>
+                            <h2 class="wp-block-heading" id="heading-2"><strong>Skills Required</strong></h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ul>
-<li>Because this is a leadership position, it’s important to have interpersonal communication skills. Because businesses are collective groups with contrasting departments set with different goals, it’s important that a CX director can work with other department heads and managers.</li>
+                            <ul>
+                                <li>Because this is a leadership position, it’s important to have interpersonal
+                                    communication skills. Because businesses are collective groups with contrasting
+                                    departments set with different goals, it’s important that a CX director can work
+                                    with other department heads and managers.</li>
 
 
 
-<li>The ability to grasp business objectives and make sure the company aligns the CX strategy.</li>
+                                <li>The ability to grasp business objectives and make sure the company aligns the CX
+                                    strategy.</li>
 
 
 
-<li>Calculated thinking and insight into the more creative aspects of interacting with customers.</li>
+                                <li>Calculated thinking and insight into the more creative aspects of interacting with
+                                    customers.</li>
 
 
 
-<li>A data-driven approach and solid understanding of how technology can influence the CX.</li>
+                                <li>A data-driven approach and solid understanding of how technology can influence the
+                                    CX.</li>
 
 
 
-<li>Networking and management.</li>
+                                <li>Networking and management.</li>
 
 
 
-<li>Analytical approach to solving problems.</li>
+                                <li>Analytical approach to solving problems.</li>
 
 
 
-<li>Empathy for what the customer requires as well as what your employees can offer.</li>
+                                <li>Empathy for what the customer requires as well as what your employees can offer.
+                                </li>
 
 
 
-<li>Conflict resolution.</li>
+                                <li>Conflict resolution.</li>
 
 
 
-<li>Budget and resource allocation.</li>
-</ul>
+                                <li>Budget and resource allocation.</li>
+                            </ul>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>What all these points have in common is the experience of managing people and workplace initiatives. The position develops and implements CX projects at high levels, which you can easily quantify for success.</p>
+                            <p>What all these points have in common is the experience of managing people and workplace
+                                initiatives. The position develops and implements CX projects at high levels, which you
+                                can easily quantify for success.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-experience-team-lead.jpg" alt="Asian customer experience lead looking out window" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-experience-team-lead.jpg"
+                                    alt="Asian customer experience lead looking out window" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-3"><strong>Duties and Responsibilities</strong></h2>
+                            <h2 class="wp-block-heading" id="heading-3"><strong>Duties and Responsibilities</strong>
+                            </h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>If the person you’re hiring has passed the skills test, here are the many duties and responsibilities of a CX director.</p>
+                            <p>If the person you’re hiring has passed the skills test, here are the many duties and
+                                responsibilities of a CX director.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-1"><strong>Create business goals and plans to improve CX</strong></h3>
+                            <h3 class="wp-block-heading" id="heading-3-1"><strong>Create business goals and plans to
+                                    improve CX</strong></h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>This is the most basic and obvious responsibility of all CX directors. Your CX director’s duties need to benefit the CX in some form or another.</p>
+                            <p>This is the most basic and obvious responsibility of all CX directors. Your CX director’s
+                                duties need to benefit the CX in some form or another.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-2"><strong>Intercommunication between department heads</strong></h3>
+                            <h3 class="wp-block-heading" id="heading-3-2"><strong>Intercommunication between department
+                                    heads</strong></h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Because other leaders have their own departments to focus on, CX often gets lost in the fray.&nbsp;</p>
+                            <p>Because other leaders have their own departments to focus on, CX often gets lost in the
+                                fray.&nbsp;</p>
 
 
 
-<p>CX directors need to make sure that each of them remain customer-centric to a certain degree. You, your company, and your customers have expectations on how you should handle the CX, so be on the lookout for anyone not pulling their weight.</p>
+                            <p>CX directors need to make sure that each of them remain customer-centric to a certain
+                                degree. You, your company, and your customers have expectations on how you should handle
+                                the CX, so be on the lookout for anyone not pulling their weight.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-3-3"><strong>Research what and how customers are thinking</strong></h3>
+                            <h3 class="wp-block-heading" id="heading-3-3"><strong>Research what and how customers are
+                                    thinking</strong></h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Next, your CX director will want to find the customer’s pain points. Where are your customers in the customer journey and what is hindering their smooth path? More or less, their feedback will be the blueprint in which you will build the CX strategy. You can find out specific journey problems through customer satisfaction scores (CSAT) that measures how satisfied your customers were at different points.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <p>Next, your CX director will want to find the customer’s pain points. Where are your
+                                customers in the customer journey and what is hindering their smooth path? More or less,
+                                their feedback will be the blueprint in which you will build the CX strategy. You can
+                                find out specific journey problems through customer satisfaction scores (CSAT) that
+                                measures how satisfied your customers were at different points.</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-4"><strong>Streamline CX activity across the company</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-4"><strong>Streamline CX activity across the
+                                    company</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>It’s your CX director’s job to dig around and find if everyone else is following the CX plans that they have developed. While upper management can help, it will still be your director’s responsibility to help the customer experience.</p>
 
 
+                            <p>It’s your CX director’s job to dig around and find if everyone else is following the CX
+                                plans that they have developed. While upper management can help, it will still be your
+                                director’s responsibility to help the customer experience.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-5"><strong>Find out how best to build loyalty and satisfied customers</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-5"><strong>Find out how best to build loyalty and
+                                    satisfied customers</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>The whole point of a strong CX strategy is to create satisfied customers, which reflects the <a href="https://dyl.com/blog/why-customer-retention-is-important-for-growing-a-business" target="_blank" rel="noreferrer noopener">growth in loyalty</a>, reduction in churn, and increase in revenue. Customer delight is exceeding customer expectations, which is a strategy that is becoming the standard form of CX to build loyalty. Even <a href="https://dyl.com/blog/how-successful-small-businesses-attract-and-retain-customers-today" target="_blank" rel="noreferrer noopener">small businesses benefit</a> in retaining customers via advanced CX strategies that were previously unavailable.</p>
 
 
+                            <p>The whole point of a strong CX strategy is to create satisfied customers, which reflects
+                                the <a
+                                    href="https://dyl.com/blog/why-customer-retention-is-important-for-growing-a-business"
+                                    target="_blank" rel="noreferrer noopener">growth in loyalty</a>, reduction in churn,
+                                and increase in revenue. Customer delight is exceeding customer expectations, which is a
+                                strategy that is becoming the standard form of CX to build loyalty. Even <a
+                                    href="https://dyl.com/blog/how-successful-small-businesses-attract-and-retain-customers-today"
+                                    target="_blank" rel="noreferrer noopener">small businesses benefit</a> in retaining
+                                customers via advanced CX strategies that were previously unavailable.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-6"><strong>Discover problems and find their solutions</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-6"><strong>Discover problems and find their
+                                    solutions</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Don’t expect or wait for the marketing campaign or product developers to find and fix your problems. Your CX director should be the one proactively finding and fixing all the problems.</p>
 
 
+                            <p>Don’t expect or wait for the marketing campaign or product developers to find and fix
+                                your problems. Your CX director should be the one proactively finding and fixing all the
+                                problems.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-7"><strong>Network with other CX directors and leaders</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-7"><strong>Network with other CX directors and
+                                    leaders</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>CX is too big for just one person to have a commanding grasp over the entire field. Often, directors will network to find solutions and in return offer value as potential solutions for the other director’s issues.&nbsp;</p>
 
 
+                            <p>CX is too big for just one person to have a commanding grasp over the entire field.
+                                Often, directors will network to find solutions and in return offer value as potential
+                                solutions for the other director’s issues.&nbsp;</p>
 
-<p>Every company is different in terms of size, types of products, team structure, etc. Therefore, it would be helpful to get a completely different perspective than would be possible.</p>
 
 
+                            <p>Every company is different in terms of size, types of products, team structure, etc.
+                                Therefore, it would be helpful to get a completely different perspective than would be
+                                possible.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-8"><strong>Read all the data and use it to make informed decisions</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-8"><strong>Read all the data and use it to make
+                                    informed decisions</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Data is everywhere and in abundance. One of the best areas to use data, for instance, is in generating qualified leads. What initially attracted a customer to your company? How can you improve that experience? These are very important measures to know.</p>
 
 
+                            <p>Data is everywhere and in abundance. One of the best areas to use data, for instance, is
+                                in generating qualified leads. What initially attracted a customer to your company? How
+                                can you improve that experience? These are very important measures to know.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/team-of-professionals-on-virtual-call.jpg" alt="Customer experience team meeting with each other" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/team-of-professionals-on-virtual-call.jpg"
+                                    alt="Customer experience team meeting with each other" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4"><strong>Encourage your team to do their very best</strong></h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4"><strong>Encourage your team to do their very
+                                    best</strong></h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>As department leader or owner of your company, your job is to find the best people for your positions. And your CX lead is no exception.</p>
 
 
+                            <p>As department leader or owner of your company, your job is to find the best people for
+                                your positions. And your CX lead is no exception.</p>
 
-<p>Your CX lead should inspire confidence in your team and ensure everyone performs at their best. Talented directors lead through example. The skills and abilities of their teams reflect their leadership. Whether your hire is amazing at the CX director position or not, their team will be the best measurement of their abilities.</p>
 
 
+                            <p>Your CX lead should inspire confidence in your team and ensure everyone performs at their
+                                best. Talented directors lead through example. The skills and abilities of their teams
+                                reflect their leadership. Whether your hire is amazing at the CX director position or
+                                not, their team will be the best measurement of their abilities.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-1"><strong>Know the best forms of CX technology</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-1"><strong>Know the best forms of CX
+                                    technology</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>One of the best tools for CX is <a href="https://dyl.com/blog/why-customer-relationship-management-is-important-for-your-business" target="_blank" rel="noreferrer noopener">customer relationship management (CRM)</a>, which are software options that ensure a fluid customer journey through the mixture of automated sales technology and sales reps.</p>
 
 
+                            <p>One of the best tools for CX is <a
+                                    href="https://dyl.com/blog/why-customer-relationship-management-is-important-for-your-business"
+                                    target="_blank" rel="noreferrer noopener">customer relationship management
+                                    (CRM)</a>, which are software options that ensure a fluid customer journey through
+                                the mixture of automated sales technology and sales reps.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-2"><strong>Organize your brand’s image around customers</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-2"><strong>Organize your brand’s image around
+                                    customers</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>The image your company is trying to reveal and how customers interact with it will go a long way via brand loyalty and word of mouth. If you diminish your image, it will create an avalanche of critical reviews that will work counterintuitively to your goals.</p>
 
 
+                            <p>The image your company is trying to reveal and how customers interact with it will go a
+                                long way via brand loyalty and word of mouth. If you diminish your image, it will create
+                                an avalanche of critical reviews that will work counterintuitively to your goals.</p>
 
-<p>That’s why your CX director should focus on your brand’s image and how customers feel about your company.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+
+
+                            <p>That’s why your CX director should focus on your brand’s image and how customers feel
+                                about your company.</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.webp"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-experience-monitor-and-analytics.jpg" alt="Customer service director monitoring campaign success" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-experience-monitor-and-analytics.jpg"
+                                    alt="Customer service director monitoring campaign success" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-3"><strong>Monitor ROI and whether CX initiatives actually work</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-3"><strong>Monitor ROI and whether CX initiatives
+                                    actually work</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>While your CX director will have their own KPIs to measure and use for improvements, don’t forget that an improved revenue stream is always a goal. The important thing to do is incorporate that metric around customer satisfaction, and when they work together, it becomes greater than the sum of their parts.&nbsp;</p>
 
 
+                            <p>While your CX director will have their own KPIs to measure and use for improvements,
+                                don’t forget that an improved revenue stream is always a goal. The important thing to do
+                                is incorporate that metric around customer satisfaction, and when they work together, it
+                                becomes greater than the sum of their parts.&nbsp;</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-4"><strong>Advocate on behalf of CX to upper management</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-4"><strong>Advocate on behalf of CX to upper
+                                    management</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>With all your director’s data, customer feedback, and team members, they’ll have enough to make powerful pushes in the company regarding the adoption of CX strategies.</p>
 
 
+                            <p>With all your director’s data, customer feedback, and team members, they’ll have enough
+                                to make powerful pushes in the company regarding the adoption of CX strategies.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5"><strong>Polish your customer service</strong></h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5"><strong>Polish your customer service</strong>
+                            </h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>If you want to show others you’ve got the nicest car on the lot, you want to make sure that every inch of the vehicle is polished. Customer service is the essential guidepost of your CX strategy, which needs to go above and beyond 100% of the time.</p>
 
 
+                            <p>If you want to show others you’ve got the nicest car on the lot, you want to make sure
+                                that every inch of the vehicle is polished. Customer service is the essential guidepost
+                                of your CX strategy, which needs to go above and beyond 100% of the time.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-1"><strong>Train the employees in customer service</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-1"><strong>Train the employees in customer
+                                    service</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Not only the CX employees. Everyone in the company should have an eye on the customer for whatever function they have. Some examples your CX director can try out are training sessions, onboarding measures, and one-on-one coaching. Employees can easily become complacent in their own department, so training will have to be a continual process.</p>
 
 
+                            <p>Not only the CX employees. Everyone in the company should have an eye on the customer for
+                                whatever function they have. Some examples your CX director can try out are training
+                                sessions, onboarding measures, and one-on-one coaching. Employees can easily become
+                                complacent in their own department, so training will have to be a continual process.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-2"><strong>Build accurate KPIs that will show the progress of goals</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-2"><strong>Build accurate KPIs that will show the
+                                    progress of goals</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>After your customer experience director has implemented new strategies, they should come up with a list of key performance indicators that will measure the success you’re trying to achieve. Also remember to make them customer-centric and reliant on their feedback.</p>
 
 
+                            <p>After your customer experience director has implemented new strategies, they should come
+                                up with a list of key performance indicators that will measure the success you’re trying
+                                to achieve. Also remember to make them customer-centric and reliant on their feedback.
+                            </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-3"><strong>Watch out for industry trends and CX best practices</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-3"><strong>Watch out for industry trends and CX
+                                    best practices</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Because of the more recent adoption of CX plans, and directors, it’s a newly developed field that will change from month to month. The strategy from 2019 will seem ancient today, so stay on top of changes within the CX business ecosystem.</p>
 
 
+                            <p>Because of the more recent adoption of CX plans, and directors, it’s a newly developed
+                                field that will change from month to month. The strategy from 2019 will seem ancient
+                                today, so stay on top of changes within the CX business ecosystem.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-experience-team-meeting-with-dashboards.jpg" alt="Customer service director leading meeting" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-experience-team-meeting-with-dashboards.jpg"
+                                    alt="Customer service director leading meeting" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-6"><strong>Deliver great customer service, sometimes directly</strong></h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-6"><strong>Deliver great customer service,
+                                    sometimes directly</strong></h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>While companies can insulate directors from interacting directly with the customer, you’ll still need to have excellent customer interactions directly. Not only will this set a great example for your team, but it’ll also show them you have a better grasp of CX from the personal level.</p>
 
 
+                            <p>While companies can insulate directors from interacting directly with the customer,
+                                you’ll still need to have excellent customer interactions directly. Not only will this
+                                set a great example for your team, but it’ll also show them you have a better grasp of
+                                CX from the personal level.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-6-1"><strong>Join forces with the marketing team</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-6-1"><strong>Join forces with the marketing
+                                    team</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Like the close collaboration between sales reps and marketers, CX team members will have an important part to play with marketing initiatives.&nbsp;</p>
 
 
+                            <p>Like the close collaboration between sales reps and marketers, CX team members will have
+                                an important part to play with marketing initiatives.&nbsp;</p>
 
-<p>After all, how will marketers develop their campaigns without customer feedback and an eye towards customer satisfaction? That will come from a deep connection between CX and marketing.</p>
 
 
+                            <p>After all, how will marketers develop their campaigns without customer feedback and an
+                                eye towards customer satisfaction? That will come from a deep connection between CX and
+                                marketing.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-6-2"><strong>Product development collaboration</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-6-2"><strong>Product development
+                                    collaboration</strong></h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Like joining forces with marketers, your CX Directors need to have close cooperation with how your products and services are being developed, regarding the customer’s wants and needs.</p>
 
 
+                            <p>Like joining forces with marketers, your CX Directors need to have close cooperation with
+                                how your products and services are being developed, regarding the customer’s wants and
+                                needs.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-6-3"><strong>Build an amazing CX journey</strong></h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-6-3"><strong>Build an amazing CX journey</strong>
+                            </h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Last, the biggest responsibility is to create an amazing experience for the customer.</p>
 
 
+                            <p>Last, the biggest responsibility is to create an amazing experience for the customer.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-7"><strong>Conclusion</strong></h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-7"><strong>Conclusion</strong></h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>It’s incredibly rewarding for a business to employ a CX director because of how important the experience of customers is becoming for businesses today.&nbsp;</p>
 
 
+                            <p>It’s incredibly rewarding for a business to employ a CX director because of how important
+                                the experience of customers is becoming for businesses today.&nbsp;</p>
 
-<p>You need someone who will ensure that other departments don’t lose sight of the CX, someone who will train others and build a lasting strategy for success.</p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p>You need someone who will ensure that other departments don’t lose sight of the CX,
+                                someone who will train others and build a lasting strategy for success.</p>
+                        </div>
+                        <br>
+                        <br>
+                         <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/chris-rhine.jpeg" alt="Chris Rhine" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy"
+                                        data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/chris-rhine.jpeg"
+                                        alt="Chris Rhine" loading="lazy"
+                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/crhine">Chris Rhine</a>
-                                  </p>
-                                <p class="article-author-position">Christopher Rhine is a freelance writer with a Bachelors from San Francisco State University and Masters from LMU Munich. He writes on a variety of topics including content marketing and customer service. He also writes about film and media on his substack.
-                                </p>
-                              </div>
+                                        <a href="/blog/author/crhine">Chris Rhine</a>
+                                    </p>
+                                    <p class="article-author-position">Christopher Rhine is a freelance writer with a
+                                        Bachelors from San Francisco State University and Masters from LMU Munich. He
+                                        writes on a variety of topics including content marketing and customer service.
+                                        He also writes about film and media on his substack.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/s/0.8.9/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/customer-experience">
-	        <p class="element-post-category transition-3d-hover">
-	          Customer Experience
-	        </p>
-	      </a>
-	      <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences" aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/customer-journey-in-person.jpg" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 12 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences" aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences</a>
-		  </p>
-	      
-Today’s digital marketplace needs more than just a generic marketing approach. As businesses grow in revenue, the ability to deli...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-companies</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies to Boost Your Business Growth in 2025</a>
-		  </p>
-	      
-Looking to improve your lead and contact management while making your business soar in 2025? You’re in the right place!&nbsp;
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/customer-experience">
+                            <p class="element-post-category transition-3d-hover">
+                                Customer Experience
+                            </p>
+                        </a>
+                        <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences"
+                            aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/customer-journey-in-person.jpg" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span
+                                class="sr-only">personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 12 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences"
+                                aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">Personalized
+                                Customer Journeys: Leveraging Automation for Targeted Online Experiences</a>
+                        </p>
+
+                        Today’s digital marketplace needs more than just a generic marketing approach. As businesses
+                        grow in revenue, the ability to deli...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-companies"
+                            aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-companies</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-companies"
+                                aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies
+                                to Boost Your Business Growth in 2025</a>
+                        </p>
 
-Choos...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-software-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software Solutions to Boost Your Business Growth</a>
-		  </p>
-	      
-Looking to connect with contacts in a way that truly grows your business? You’re in the right place! Whether you’re a sales rep a...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/customer-experience">
-	        <p class="element-post-category transition-3d-hover">
-	          Customer Experience
-	        </p>
-	      </a>
-	      <a href="/blog/different-types-of-customer-relationship-management" aria-label="Exploring Different Types of Customer Relationship Management">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/happy-gen-z-woman-on-phone.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">different-types-of-customer-relationship-management</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 14 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/different-types-of-customer-relationship-management" aria-label="Exploring Different Types of Customer Relationship Management">Exploring Different Types of Customer Relationship Management</a>
-		  </p>
-	      
-Imagine the excitement of maintaining your business relationships, tracking interactions, and effortlessly managing leads. Welcom...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/customer-relationship-management-cycle" aria-label="Mastering the Customer Relationship Management Cycle for Success">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/cowkers-working-at-desk-in-office.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">customer-relationship-management-cycle</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 11, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 13 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/customer-relationship-management-cycle" aria-label="Mastering the Customer Relationship Management Cycle for Success">Mastering the Customer Relationship Management Cycle for Success</a>
-		  </p>
-	      
-Keeping your customers invested in your products requires more than just impeccable quality. It needs a seamless customer relatio...
-	    </div>
-	</div>
+                        Looking to improve your lead and contact management while making your business soar in 2025?
+                        You’re in the right place!&nbsp;
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        Choos...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-software-solutions"
+                            aria-label="Top CRM Software Solutions to Boost Your Business Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-software-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-software-solutions"
+                                aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software
+                                Solutions to Boost Your Business Growth</a>
+                        </p>
+
+                        Looking to connect with contacts in a way that truly grows your business? You’re in the right
+                        place! Whether you’re a sales rep a...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/customer-experience">
+                            <p class="element-post-category transition-3d-hover">
+                                Customer Experience
+                            </p>
+                        </a>
+                        <a href="/blog/different-types-of-customer-relationship-management"
+                            aria-label="Exploring Different Types of Customer Relationship Management">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/happy-gen-z-woman-on-phone.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">different-types-of-customer-relationship-management</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 14 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/different-types-of-customer-relationship-management"
+                                aria-label="Exploring Different Types of Customer Relationship Management">Exploring
+                                Different Types of Customer Relationship Management</a>
+                        </p>
+
+                        Imagine the excitement of maintaining your business relationships, tracking interactions, and
+                        effortlessly managing leads. Welcom...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/customer-relationship-management-cycle"
+                            aria-label="Mastering the Customer Relationship Management Cycle for Success">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/cowkers-working-at-desk-in-office.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">customer-relationship-management-cycle</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 11, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 13 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/customer-relationship-management-cycle"
+                                aria-label="Mastering the Customer Relationship Management Cycle for Success">Mastering
+                                the Customer Relationship Management Cycle for Success</a>
+                        </p>
+
+                        Keeping your customers invested in your products requires more than just impeccable quality. It
+                        needs a seamless customer relatio...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1803,9 +2082,9 @@ Keeping your customers invested in your products requires more than just impecca
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1822,24 +2101,7 @@ Keeping your customers invested in your products requires more than just impecca
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2295,13 +2557,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+     
 
         <script>
 
@@ -2367,17 +2623,6 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
 
 
             window.onload = function () {
@@ -3042,34 +3287,38 @@ thank-you" />
 
 
 
+<script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -3085,22 +3334,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3128,9 +3362,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3193,21 +3427,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3217,6 +3437,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });
@@ -3239,21 +3479,7 @@ thank-you" />
             $('#popup2').fadeOut();
         }
 
-        function togglerightPanel() {
-            var popupDivright = $('#popUprightDiv');
-            var iconright = popupDivright.find('h6 i');
-            popupDivright.toggleClass('closed');
-            if (popupDivright.hasClass('closed')) {
-                popupDivright.css('height', '50px'); // Set height explicitly when closing
-                iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-            } else {
-                popupDivright.css('height', 'auto'); // Reset height to auto when opening
-                iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
-            }
-        }
-        $(document).ready(function () {
-            $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
-        });
+       
     </script>
 
 
