@@ -11,16 +11,17 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-    What is Customer Retention and Why is it Important? | DYL
+        What is Customer Retention and Why is it Important? | DYL
     </title>
     <meta name="description"
         content="Discover how customer retention plays a part in your business and why you should start investing in it today. ">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
+
 
     <style>
         body {
@@ -52,8 +53,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +98,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/active-audience-members-performing-customer-retention.webp"
+        type="image/webp" fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +116,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +143,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +154,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +171,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +202,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +213,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +229,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +259,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +271,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +288,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +308,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +326,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +346,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +361,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +390,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +472,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +489,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +530,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +546,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +587,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +604,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +624,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +642,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +662,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +677,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +706,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,1117 +730,1484 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">What is Customer Retention and Why is it Important?</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        July
-                          13, 2023
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 17 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">What is Customer Retention and Why is it Important?
+                            </h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                July
+                                13, 2023
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 17 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/active-audience-members-performing-customer-retention.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/active-audience-members-performing-customer-retention.webp"
+                            width="680" height="383" alt="blog featured image">
 
-                        <a href="/blog/category/customer-experience">
-                          <p class="element-category-post transition-3d-hover">
-                            Customer Experience
-                          </p>
+                        <br><br>
+
+
+
+                        <a href="category/customer-experience.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Customer Experience
+                            </p>
                         </a>
 
-                        
-                    
-                      
 
-                        <a href="/blog/category/improve-retention">
-                          <p class="element-category-post transition-3d-hover">
-                            Improve Retention
-                          </p>
+                        <a href="category/improve-retention.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Improve Retention
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 572px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">What is Customer Retention?</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">The Importance of Customer Retention for Your Business’ Success</a><ul style="display: block;"><li><a href="#heading-2-1">Cost Savings</a></li><li><a href="#heading-2-2">Increased Revenue</a></li><li><a href="#heading-2-3">Brand Advocacy</a></li><li><a href="#heading-2-4">Competitive Advantage</a></li><li><a href="#heading-2-5">Data Insights</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">The Key Strategies for Customer Retention</a><ul style="display: block;"><li><a href="#heading-3-1">Provide Excellent Customer Service</a></li><li><a href="#heading-3-2">Offer Incentives and Rewards</a></li><li><a href="#heading-3-3">Use Personalized Marketing</a></li><li><a href="#heading-3-4">Provide Ongoing Value</a></li><li><a href="#heading-3-5">Stay in Touch</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">How to Measure Your Business’ Customer Retention</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">How to Improve Your Business’ Customer Retention</a><ul style="display: block;"><li><a href="#heading-5-1">Give your customers excellent customer service:</a></li><li><a href="#heading-5-2">Personalize your customers’ experience:</a></li><li><a href="#heading-5-3">Implement a loyalty program:</a></li><li><a href="#heading-5-4">Keep in touch with your customers:</a></li><li><a href="#heading-5-5">Request feedback:</a></li><li><a href="#heading-5-6">Efficiently resolve the issues:</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Conclusion</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 572px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">What is Customer
+                                        Retention?</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">The Importance of
+                                        Customer Retention for Your Business’ Success</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-2-1">Cost Savings</a></li>
+                                        <li><a href="#heading-2-2">Increased Revenue</a></li>
+                                        <li><a href="#heading-2-3">Brand Advocacy</a></li>
+                                        <li><a href="#heading-2-4">Competitive Advantage</a></li>
+                                        <li><a href="#heading-2-5">Data Insights</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">The Key Strategies
+                                        for Customer Retention</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-3-1">Provide Excellent Customer Service</a></li>
+                                        <li><a href="#heading-3-2">Offer Incentives and Rewards</a></li>
+                                        <li><a href="#heading-3-3">Use Personalized Marketing</a></li>
+                                        <li><a href="#heading-3-4">Provide Ongoing Value</a></li>
+                                        <li><a href="#heading-3-5">Stay in Touch</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">How to Measure
+                                        Your Business’ Customer Retention</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">How to Improve
+                                        Your Business’ Customer Retention</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-5-1">Give your customers excellent customer service:</a>
+                                        </li>
+                                        <li><a href="#heading-5-2">Personalize your customers’ experience:</a></li>
+                                        <li><a href="#heading-5-3">Implement a loyalty program:</a></li>
+                                        <li><a href="#heading-5-4">Keep in touch with your customers:</a></li>
+                                        <li><a href="#heading-5-5">Request feedback:</a></li>
+                                        <li><a href="#heading-5-6">Efficiently resolve the issues:</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<h2 class="wp-block-heading" id="heading-1">What is Customer Retention?</h2>
+                        <div class="article-contents" id="article-contents">
+                            <h2 class="wp-block-heading" id="heading-1">What is Customer Retention?</h2>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p><a href="why-customer-retention-is-important-for-growing-a-business.html"
+                                    target="_blank" rel="noopener" title="">Customer retention</a> is the process of
+                                retaining existing customers and keeping them engaged with your products and services
+                                for the longest time possible. It’s crucial for any business aiming to build a
+                                sustainable business model. </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>Establishing a long-term relationship with your customers, building customer loyalty, and
+                                growing your customers’ lifetime value are customer retention goals. This article will
+                                discuss what customer retention is and why it is important.</p>
 
-<p><a href="https://dyl.com/blog/why-customer-retention-is-important-for-growing-a-business" target="_blank" rel="noopener" title="">Customer retention</a> is the process of retaining existing customers and keeping them engaged with your products and services for the longest time possible. It’s crucial for any business aiming to build a sustainable business model. </p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Establishing a long-term relationship with your customers, building customer loyalty, and growing your customers’ lifetime value are customer retention goals. This article will discuss what customer retention is and why it is important.</p>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-service-leader-trying-to-retain-customers.webp"
+                                    alt="Customer service leader trying to retain customers" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-service-leader-trying-to-retain-customers.webp" alt="Customer service leader trying to retain customers" loading="lazy"></figure>
 
 
+                            <h2 class="wp-block-heading" id="heading-2">The Importance of Customer Retention for Your
+                                Business’ Success</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-2">The Importance of Customer Retention for Your Business’ Success</h2>
 
 
+                            <p>In today’s competitive business environment, acquiring new customers is always a priority
+                                for businesses. However, keeping existing customers is just as crucial for long-term
+                                success. Customer retention refers to keeping customers engaged, satisfied, and loyal to
+                                a brand or business. Here are some reasons customer retention is essential for your
+                                business’ success:</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>In today’s competitive business environment, acquiring new customers is always a priority for businesses. However, keeping existing customers is just as crucial for long-term success. Customer retention refers to keeping customers engaged, satisfied, and loyal to a brand or business. Here are some reasons customer retention is essential for your business’ success:</p>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-1">Cost Savings</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-1">Cost Savings</h3>
 
 
+                            <p>In the competitive industries, obtaining new customers can require time and cost you a
+                                lot. Keeping your current consumers is more efficient and can save your business a lot.
+                                According to<a
+                                    href="https://www.huify.com/blog/acquisition-vs-retention-customer-lifetime-value">
+                                    In-vesp</a>, acquiring a new customer is five times as expensive as retaining an
+                                existing customer. With that, your business can save a lot on marketing costs, and
+                                improve your customers’ bottom line.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>In the competitive industries, obtaining new customers can require time and cost you a lot. Keeping your current consumers is more efficient and can save your business a lot. According to<a href="https://www.huify.com/blog/acquisition-vs-retention-customer-lifetime-value"> In-vesp</a>, acquiring a new customer is five times as expensive as retaining an existing customer. With that, your business can save a lot on marketing costs, and improve your customers’ bottom line.</p>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-2">Increased Revenue</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-2">Increased Revenue</h3>
 
 
+                            <p>Your company’s long-term growth can significantly improve by retaining your customers.
+                                Loyal customers are more likely to make repeat purchases, refer friends and family, and
+                                provide positive reviews and testimonials. </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>According to research, repeat customers spend 67% more than new customers on average. By
+                                providing excellent customer service and creating a positive customer experience, <a
+                                    href="../lead-nurturing-software.html" target="_blank"
+                                    rel="noreferrer noopener">businesses can encourage repeat business and increase
+                                    revenue</a>.</p>
 
-<p>Your company’s long-term growth can significantly improve by retaining your customers. Loyal customers are more likely to make repeat purchases, refer friends and family, and provide positive reviews and testimonials. </p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>According to research, repeat customers spend 67% more than new customers on average. By providing excellent customer service and creating a positive customer experience, <a href="https://dyl.com/lead-nurturing-software" target="_blank" rel="noreferrer noopener">businesses can encourage repeat business and increase revenue</a>.</p>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-3">Brand Advocacy</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-3">Brand Advocacy</h3>
 
 
+                            <p>Satisfied customers are more likely to become brand advocates, spreading positive
+                                word-of-mouth and recommending the business to others. According to<a
+                                    href="https://www.nielsen.com/insights/2012/consumer-trust-in-online-social-and-mobile-advertising-grows/#:~:text=According%20to%20Nielsen's%20latest%20Global,an%20increase%20of%2018%20percent"
+                                    target="_blank" rel="noopener" title=""> Nielsen</a>, 92% of consumers trust
+                                recommendations from friends and family over any other form of advertising. </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>By creating a positive <a
+                                    href="top-3-sales-prospecting-tools-to-convert-leads-into-customers-and-how-to-use-them.html"
+                                    target="_blank" rel="noopener" title="">customer experience</a> and keeping
+                                customers, your business will have a greater chance of getting a positive word-of-mouth
+                                and have an excellent reputation in the industry.</p>
 
-<p>Satisfied customers are more likely to become brand advocates, spreading positive word-of-mouth and recommending the business to others. According to<a href="https://www.nielsen.com/insights/2012/consumer-trust-in-online-social-and-mobile-advertising-grows/#:~:text=According%20to%20Nielsen's%20latest%20Global,an%20increase%20of%2018%20percent" target="_blank" rel="noopener" title=""> Nielsen</a>, 92% of consumers trust recommendations from friends and family over any other form of advertising. </p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>By creating a positive <a href="https://dyl.com/blog/top-3-sales-prospecting-tools-to-convert-leads-into-customers-and-how-to-use-them" target="_blank" rel="noopener" title="">customer experience</a> and keeping customers, your business will have a greater chance of getting a positive word-of-mouth and have an excellent reputation in the industry.</p>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-4">Competitive Advantage</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-4">Competitive Advantage</h3>
 
 
+                            <p>The business field today is very competitive; therefore, customer retention can also
+                                provide a major advantage. You can set your business apart from your competitors and
+                                build more consumer loyalty by retaining your current customers and building long-term
+                                relationships.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>The business field today is very competitive; therefore, customer retention can also provide a major advantage. You can set your business apart from your competitors and build more consumer loyalty by retaining your current customers and building long-term relationships.</p>
 
 
+                            <h3 class="wp-block-heading" id="heading-2-5">Data Insights</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-2-5">Data Insights</h3>
 
 
+                            <p>Customer retention may offer priceless data insights that can help your company enhance
+                                its products, services, and customer interactions. By gathering and evaluating the
+                                opinions of your current customers, you may decide what aspects of your business needs
+                                improvement, address your customers’ problems, and base your decisions on data.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>You can keep your customers by cutting costs, increasing income, building brand loyalty,
+                                gaining a competitive edge, and having access to relevant data insights. </p>
 
-<p>Customer retention may offer priceless data insights that can help your company enhance its products, services, and customer interactions. By gathering and evaluating the opinions of your current customers, you may decide what aspects of your business needs improvement, address your customers’ problems, and base your decisions on data.</p>
 
 
+                            <p>Businesses can keep their current customers and offer the <a
+                                    href="https://dyl.com/features/softphone-integration" target="_blank" rel="noopener"
+                                    title="">best customer experience</a> to their customers. If your <a
+                                    href="https://dyl.com/features/polycom-integration" target="_blank" rel="noopener"
+                                    title="">business prioritizes</a> client retention above customer acquisition, you
+                                can be able to develop a successful and long-lasting business strategy.</p>
 
-<p>You can keep your customers by cutting costs, increasing income, building brand loyalty, gaining a competitive edge, and having access to relevant data insights. </p>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Businesses can keep their current customers and offer the <a href="https://dyl.com/features/softphone-integration" target="_blank" rel="noopener" title="">best customer experience</a> to their customers. If your <a href="https://dyl.com/features/polycom-integration" target="_blank" rel="noopener" title="">business prioritizes</a> client retention above customer acquisition, you can be able to develop a successful and long-lasting business strategy.</p>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-retention-team-meeting.webp"
+                                    alt="Customer retention team meeting" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-retention-team-meeting.webp" alt="Customer retention team meeting" loading="lazy"></figure>
 
 
+                            <h2 class="wp-block-heading" id="heading-3">The Key Strategies for Customer Retention</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-3">The Key Strategies for Customer Retention</h2>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-1">Provide Excellent Customer Service</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-1">Provide Excellent Customer Service</h3>
 
 
+                            <p>To keep your customers and develop a devoted customer base, great <a
+                                    href="the-importance-of-unified-communications-for-business.html"
+                                    target="_blank" rel="noopener" title="">customer service</a> is crucial. Customers
+                                are more inclined to suggest a business to others and return when they had a positive
+                                experience with it. These are some methods companies may apply to give exceptional
+                                customer service:</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <ol>
+                                <li><a href="../features/phone-number-view-customer-tracking.html"
+                                        target="_blank" rel="noopener" title="">Be responsive</a>: Customers like to
+                                    believe that their problems and comments are being heard and seriously considered.
+                                    By being open to comments, questions, and feedback from your customers, your
+                                    business may increase its customer relation rate and <a
+                                        href="../features/schedule-a-text-message.html" target="_blank"
+                                        rel="noopener" title="">offer the best customer experience</a>. Your business
+                                    needs to have immediate email, phone, and social media responses, for our customers
+                                    to be happy.&nbsp;</li>
+                            </ol>
 
-<p>To keep your customers and develop a devoted customer base, great <a href="https://dyl.com/blog/the-importance-of-unified-communications-for-business" target="_blank" rel="noopener" title="">customer service</a> is crucial. Customers are more inclined to suggest a business to others and return when they had a positive experience with it. These are some methods companies may apply to give exceptional customer service:</p>
 
 
+                            <ol start="2">
+                                <li>Listen actively: In customer service, the ability to actively listen is key. It
+                                    requires paying close attention to the client, grasping their requirements and
+                                    issues, and responding to them. Customers may <a
+                                        href="https://dyl.com/features/multi-person-conference-call" target="_blank"
+                                        rel="noopener" title="">feel more heard</a> and appreciated as a result,
+                                    increasing loyalty.</li>
+                            </ol>
 
-<ol>
-<li><a href="https://dyl.com/features/phone-number-view-customer-tracking" target="_blank" rel="noopener" title="">Be responsive</a>: Customers like to believe that their problems and comments are being heard and seriously considered. By being open to comments, questions, and feedback from your customers, your business may increase its customer relation rate and <a href="https://dyl.com/features/schedule-a-text-message" target="_blank" rel="noopener" title="">offer the best customer experience</a>. Your business needs to have immediate email, phone, and social media responses, for our customers to be happy.&nbsp;</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>Empathize: Your customers constantly want to believe that your business is working
+                                    towards their problems and demands. You may improve building trust with your clients
+                                    through understanding. This requires addressing the client’s concerns and showing
+                                    your understanding of their perspective.</li>
+                            </ol>
 
-<ol start="2">
-<li>Listen actively: In customer service, the ability to actively listen is key. It requires paying close attention to the client, grasping their requirements and issues, and responding to them. Customers may <a href="https://dyl.com/features/multi-person-conference-call" target="_blank" rel="noopener" title="">feel more heard</a> and appreciated as a result, increasing loyalty.</li>
-</ol>
 
 
+                            <ol start="4">
+                                <li><a href="https://dyl.com/features/call-switch" target="_blank" rel="noopener"
+                                        title="">Resolve issues quickly</a>: When customers have issues or file a
+                                    complaint, they expect their issues to be resolved quickly and effectively. Your
+                                    business should have a plan in place for dealing with customer complaints and making
+                                    sure you resolve them to the client’s satisfaction.</li>
+                            </ol>
 
-<ol start="3">
-<li>Empathize: Your customers constantly want to believe that your business is working towards their problems and demands. You may improve building trust with your clients through understanding. This requires addressing the client’s concerns and showing your understanding of their perspective.</li>
-</ol>
 
 
+                            <ol start="5">
+                                <li>Go above and beyond: Give your customer the best customer service your business can
+                                    give. Going above and beyond can be done in different ways, like giving a customer a
+                                    product refund or replacement, adding more resources or help, or coming up with a
+                                    unique solution to a customer’s problem or concern. These actions can enhance your
+                                    customers’ experience and develop customer loyalty.&nbsp;&nbsp;</li>
+                            </ol>
 
-<ol start="4">
-<li><a href="https://dyl.com/features/call-switch" target="_blank" rel="noopener" title="">Resolve issues quickly</a>: When customers have issues or file a complaint, they expect their issues to be resolved quickly and effectively. Your business should have a plan in place for dealing with customer complaints and making sure you resolve them to the client’s satisfaction.</li>
-</ol>
 
 
+                            <p>Providing <a href="https://dyl.com/features/agent-performance" target="_blank"
+                                    rel="noopener" title="">excellent customer service</a> is a key strategy for
+                                retaining customers. By being responsive, listening actively, empathizing, and resolving
+                                issues quickly, businesses can create a positive experience for their customers and
+                                build a loyal customer base.</p>
 
-<ol start="5">
-<li>Go above and beyond: Give your customer the best customer service your business can give. Going above and beyond can be done in different ways, like giving a customer a product refund or replacement, adding more resources or help, or coming up with a unique solution to a customer’s problem or concern. These actions can enhance your customers’ experience and develop customer loyalty.&nbsp;&nbsp;</li>
-</ol>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Providing <a href="https://dyl.com/features/agent-performance" target="_blank" rel="noopener" title="">excellent customer service</a> is a key strategy for retaining customers. By being responsive, listening actively, empathizing, and resolving issues quickly, businesses can create a positive experience for their customers and build a loyal customer base.</p>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-2">Offer Incentives and Rewards</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-2">Offer Incentives and Rewards</h3>
 
 
+                            <p>Providing incentives and benefits to your customers is a successful customer retention
+                                approach that may assist your business in establishing a devoted clientele. </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <p>If customers <a href="https://dyl.com/features/instant-text-response" target="_blank"
+                                    rel="noopener" title="">feel valued</a> and rewarded for their loyalty, they are
+                                more inclined to stay with your business. The following are some methods that companies
+                                might employ to provide incentives and rewards:</p>
 
-<p>Providing incentives and benefits to your customers is a successful customer retention approach that may assist your business in establishing a devoted clientele. </p>
 
 
+                            <p>1. Loyalty Programs:</p>
 
-<p>If customers <a href="https://dyl.com/features/instant-text-response" target="_blank" rel="noopener" title="">feel valued</a> and rewarded for their loyalty, they are more inclined to stay with your business. The following are some methods that companies might employ to provide incentives and rewards:</p>
 
 
+                            <p>Your businesses can use loyalty programs to encourage and honor returning customers.
+                                These programs often reward clients with points or incentives for their purchases, which
+                                they may exchange for savings, free services, or other benefits. By offering tangible
+                                rewards, businesses can create a sense of exclusivity and community among their loyal
+                                customers.</p>
 
-<p>1. Loyalty Programs:</p>
-
-
-
-<p>Your businesses can use loyalty programs to encourage and honor returning customers. These programs often reward clients with points or incentives for their purchases, which they may exchange for savings, free services, or other benefits. By offering tangible rewards, businesses can create a sense of exclusivity and community among their loyal customers.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>2. Referral Programs:</p>
 
 
+                            <p>2. Referral Programs:</p>
 
-<p>Referral programs are another way that your business can reward and motivate your customers. Your business may use the excellent effect of word-of-mouth marketing by rewarding referrals and encouraging your consumers to tell others about their excellent experiences with your business. These benefits can start from discounts to free products, or services.</p>
 
 
+                            <p>Referral programs are another way that your business can reward and motivate your
+                                customers. Your business may use the excellent effect of word-of-mouth marketing by
+                                rewarding referrals and encouraging your consumers to tell others about their excellent
+                                experiences with your business. These benefits can start from discounts to free
+                                products, or services.</p>
 
-<p>3. Exclusive Promotions:</p>
+                            <p>3. Exclusive Promotions:</p>
 
+                            <p>Promotions that are only available to loyal consumers may foster a sense of exclusivity
+                                and connection. These promotions could provide customers early access to sales,
+                                exclusive discounts, or one time deals. Your business may foster a sense of worth and
+                                gratitude by providing these rewards to devoted customers.</p>
 
+                            <p>4. VIP Treatment:</p>
 
-<p>Promotions that are only available to loyal consumers may foster a sense of exclusivity and connection. These promotions could provide customers early access to sales, exclusive discounts, or one time deals. Your business may foster a sense of worth and gratitude by providing these rewards to devoted customers.</p>
+                            <p>VIP treatment can help make loyal customers feel special and appreciated. This can
+                                include personalized communication, free upgrades or samples, or exclusive access to
+                                products. By offering VIP treatment, businesses can create a sense of exclusivity and
+                                appreciation among their most loyal customers.</p>
 
+                            <p>Offering incentives and rewards is an effective customer retention strategy that can help
+                                businesses build a loyal customer base. By using loyalty programs, referral programs,
+                                exclusive promotions, personalized rewards, and VIP treatment, businesses can show their
+                                customers that they are valued and appreciated, which can lead to increased loyalty and
+                                repeat business.</p>
 
 
-<p>4. VIP Treatment:</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<p>VIP treatment can help make loyal customers feel special and appreciated. This can include personalized communication, free upgrades or samples, or exclusive access to products. By offering VIP treatment, businesses can create a sense of exclusivity and appreciation among their most loyal customers.</p>
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-service-team-meeting-with-cs-team.webp"
+                                    alt="Customer service team meeting with cs team" loading="lazy"></figure>
 
 
-<p>Offering incentives and rewards is an effective customer retention strategy that can help businesses build a loyal customer base. By using loyalty programs, referral programs, exclusive promotions, personalized rewards, and VIP treatment, businesses can show their customers that they are valued and appreciated, which can lead to increased loyalty and repeat business.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <h3 class="wp-block-heading" id="heading-3-3">Use Personalized Marketing</h3>
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-service-team-meeting-with-cs-team.webp" alt="Customer service team meeting with cs team" loading="lazy"></figure>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>A strong customer retention technique that may help your business establish strong
+                                relationships with its customers is personalized marketing. </p>
 
 
-<h3 class="wp-block-heading" id="heading-3-3">Use Personalized Marketing</h3>
 
+                            <p>Your business may send targeted and meaningful communications to your consumers through
+                                data and technology, which can contribute to a more customized and engaging experience.
+                                Here are some examples of how your business should use tailored marketing to retain its
+                                customers:</p>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <ol>
+                                <li>Targeted messaging: Your business may divide their clientele into several groups
+                                    based on factors like demographics, previous purchases, and preferences by using
+                                    data and analytics. Your business may then provide pertinent messaging to each group
+                                    focusing on what would be of their interest. &nbsp; For instance, a business selling
+                                    sporting goods may send customized messaging to customers who have previously bought
+                                    sports equipment, highlighting new sports products or providing discounts on sports
+                                    gear.</li>
+                            </ol>
 
 
-<p>A strong customer retention technique that may help your business establish strong relationships with its customers is personalized marketing. </p>
 
+                            <ol start="2">
+                                <li>Personalized content: The concept of personalized content is the information that is
+                                    catered to the interests and preferences of your customers. Product suggestions,
+                                    content recommendations, and even customized emails or newsletters might fall under
+                                    this category. Your businesses may provide each of its customers with a <a
+                                        href="https://dyl.com/features/grandstream-integration" target="_blank"
+                                        rel="noopener" title="">tailored experience</a> using data and analytics, which
+                                    will help strengthen the relationship between you and your customers.&nbsp;</li>
+                            </ol>
 
 
-<p>Your business may send targeted and meaningful communications to your consumers through data and technology, which can contribute to a more customized and engaging experience. Here are some examples of how your business should use tailored marketing to retain its customers:</p>
 
+                            <ol start="3">
+                                <li>Personalized offers: Offers that are personalized considering your customers’ prior
+                                    purchasing patterns, hobbies, and preferences. For instance, a business that sells
+                                    makeup products can provide a consumer with a special discount on their preferred
+                                    item or suggest a unique item based on their prior purchases.</li>
+                            </ol>
 
 
-<ol>
-<li>Targeted messaging: Your business may divide their clientele into several groups based on factors like demographics, previous purchases, and preferences by using data and analytics. Your business may then provide pertinent messaging to each group focusing on what would be of their interest. &nbsp; For instance, a business selling sporting goods may send customized messaging to customers who have previously bought sports equipment, highlighting new sports products or providing discounts on sports gear.</li>
-</ol>
 
+                            <ol start="4">
+                                <li><a href="https://dyl.com/features/five-way-calling" target="_blank" rel="noopener"
+                                        title="">Personalized experiences</a>: You can cater personalized experiences to
+                                    the interests and preferences of the consumer. Personalized advice, customer
+                                    service, and even packing and delivery fall under this category. Your business may
+                                    give its customers a feeling of exclusivity and value by personalizing the customer
+                                    experience.</li>
+                            </ol>
 
 
-<ol start="2">
-<li>Personalized content: The concept of personalized content is the information that is catered to the interests and preferences of your customers. Product suggestions, content recommendations, and even customized emails or newsletters might fall under this category. Your businesses may provide each of its customers with a <a href="https://dyl.com/features/grandstream-integration" target="_blank" rel="noopener" title="">tailored experience</a> using data and analytics, which will help strengthen the relationship between you and your customers.&nbsp;</li>
-</ol>
 
+                            <ol start="5">
+                                <li>Retargeting: Targeting clients who have already visited your business’ website or
+                                    made a purchase is called retargeting in marketing. Your business may entice its
+                                    customers to come back and make more purchases by retargeting them with pertinent
+                                    advertisements or offers. This may improve your business’ customer retention and
+                                    boost repeat business.</li>
+                            </ol>
 
 
-<ol start="3">
-<li>Personalized offers: Offers that are personalized considering your customers’ prior purchasing patterns, hobbies, and preferences. For instance, a business that sells makeup products can provide a consumer with a special discount on their preferred item or suggest a unique item based on their prior purchases.</li>
-</ol>
 
+                            <p>Personalized marketing is a great customer retention strategy that can really help your
+                                business build stronger relationships with its customers. Your business may give its
+                                consumers a tailored and engaging experience that can promote customer loyalty and
+                                repeat purchases by implementing these techniques of tailored marketing.&nbsp;</p>
 
 
-<ol start="4">
-<li><a href="https://dyl.com/features/five-way-calling" target="_blank" rel="noopener" title="">Personalized experiences</a>: You can cater personalized experiences to the interests and preferences of the consumer. Personalized advice, customer service, and even packing and delivery fall under this category. Your business may give its customers a feeling of exclusivity and value by personalizing the customer experience.</li>
-</ol>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<ol start="5">
-<li>Retargeting: Targeting clients who have already visited your business’ website or made a purchase is called retargeting in marketing. Your business may entice its customers to come back and make more purchases by retargeting them with pertinent advertisements or offers. This may improve your business’ customer retention and boost repeat business.</li>
-</ol>
 
+                            <h3 class="wp-block-heading" id="heading-3-4">Provide Ongoing Value</h3>
 
 
-<p>Personalized marketing is a great customer retention strategy that can really help your business build stronger relationships with its customers. Your business may give its consumers a tailored and engaging experience that can promote customer loyalty and repeat purchases by implementing these techniques of tailored marketing.&nbsp;</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Giving your customers ongoing value is a very important customer retention strategy that
+                                serves to keep your customers interested and devoted to your business. </p>
 
 
-<h3 class="wp-block-heading" id="heading-3-4">Provide Ongoing Value</h3>
 
+                            <p>Customers are more inclined to stick with your business if they think it consistently
+                                delivers value that satisfies their requirements and goes above and beyond their
+                                expectations. These are some strategies your business can use to continue giving its
+                                customers ongoing value:</p>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <ol>
+                                <li>Education and Information: Offering your customers educational materials and
+                                    knowledge on your website is a smart way to continue to add value. This can include
+                                    articles or blogs, webinars, tutorials, and other types of content that would inform
+                                    your clients about your business’ products or services, or other related subjects.
+                                    Your business may establish itself as a leader in their industry and win consumers’
+                                    trust by offering useful information.</li>
+                            </ol>
 
 
-<p>Giving your customers ongoing value is a very important customer retention strategy that serves to keep your customers interested and devoted to your business. </p>
 
+                            <ol start="2">
+                                <li>Customer Support: Another method to continue adding value to your customers is
+                                    through offering excellent <a href="https://dyl.com/features/efax" target="_blank"
+                                        rel="noopener" title="">customer support</a>. By being attentive and helpful,
+                                    your business will prove that it appreciates their consumers and is devoted to
+                                    giving them a pleasant experience. This can promote repeat business and increase
+                                    your customers’ loyalty.</li>
+                            </ol>
 
 
-<p>Customers are more inclined to stick with your business if they think it consistently delivers value that satisfies their requirements and goes above and beyond their expectations. These are some strategies your business can use to continue giving its customers ongoing value:</p>
 
+                            <ol start="3">
+                                <li>Product Improvements and Updates: Continuously improving products and services can
+                                    also provide ongoing value to customers. By listening to customer feedback and
+                                    making updates or improvements, businesses can ensure that their products or
+                                    services meet their customers’ strengthening needs and preferences. This can help
+                                    keep customers engaged and loyal.</li>
+                            </ol>
 
 
-<ol>
-<li>Education and Information: Offering your customers educational materials and knowledge on your website is a smart way to continue to add value. This can include articles or blogs, webinars, tutorials, and other types of content that would inform your clients about your business’ products or services, or other related subjects. Your business may establish itself as a leader in their industry and win consumers’ trust by offering useful information.</li>
-</ol>
 
+                            <ol start="4">
+                                <li>Rewards and Incentives: As mentioned earlier, rewards and incentives are an
+                                    effective way to keep customers. By providing ongoing rewards or incentives for
+                                    repeat business, businesses can show that they value their customers and are
+                                    committed to providing ongoing value.</li>
+                            </ol>
 
 
-<ol start="2">
-<li>Customer Support: Another method to continue adding value to your customers is through offering excellent <a href="https://dyl.com/features/efax" target="_blank" rel="noopener" title="">customer support</a>. By being attentive and helpful, your business will prove that it appreciates their consumers and is devoted to giving them a pleasant experience. This can promote repeat business and increase your customers’ loyalty.</li>
-</ol>
 
+                            <ol start="5">
+                                <li>Community Building: Building a community around a brand or product can also provide
+                                    ongoing value to customers. By creating a space for customers to connect, share
+                                    ideas, and provide feedback, businesses can create a sense of exclusivity and
+                                    belonging among their customers. This can help build brand loyalty and encourage
+                                    repeat business.</li>
+                            </ol>
 
 
-<ol start="3">
-<li>Product Improvements and Updates: Continuously improving products and services can also provide ongoing value to customers. By listening to customer feedback and making updates or improvements, businesses can ensure that their products or services meet their customers’ strengthening needs and preferences. This can help keep customers engaged and loyal.</li>
-</ol>
 
+                            <p>Providing ongoing value to customers is a critical customer retention strategy that can
+                                help businesses keep their customers engaged and loyal. </p>
 
 
-<ol start="4">
-<li>Rewards and Incentives: As mentioned earlier, rewards and incentives are an effective way to keep customers. By providing ongoing rewards or incentives for repeat business, businesses can show that they value their customers and are committed to providing ongoing value.</li>
-</ol>
 
+                            <p>By providing <a href="https://dyl.com/features/eagent-integration" target="_blank"
+                                    rel="noopener" title="">education and information</a>, excellent customer support,
+                                product improvements and updates, rewards and incentives, and community building,
+                                businesses can show their commitment to providing <a
+                                    href="https://dyl.com/features/ecms-integration" target="_blank" rel="noopener"
+                                    title="">ongoing value</a> and build long-term relationships with their customers.
+                            </p>
 
 
-<ol start="5">
-<li>Community Building: Building a community around a brand or product can also provide ongoing value to customers. By creating a space for customers to connect, share ideas, and provide feedback, businesses can create a sense of exclusivity and belonging among their customers. This can help build brand loyalty and encourage repeat business.</li>
-</ol>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<p>Providing ongoing value to customers is a critical customer retention strategy that can help businesses keep their customers engaged and loyal. </p>
 
+                            <h3 class="wp-block-heading" id="heading-3-5">Stay in Touch</h3>
 
 
-<p>By providing <a href="https://dyl.com/features/eagent-integration" target="_blank" rel="noopener" title="">education and information</a>, excellent customer support, product improvements and updates, rewards and incentives, and community building, businesses can show their commitment to providing <a href="https://dyl.com/features/ecms-integration" target="_blank" rel="noopener" title="">ongoing value</a> and build long-term relationships with their customers.</p>
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <p>Another very important customer retention approach that could also help your business to
+                                establish strong connections with its clients is keeping in touch with them. </p>
 
 
-<h3 class="wp-block-heading" id="heading-3-5">Stay in Touch</h3>
 
+                            <p>Your business can keep its customers interested, informed, and up to date on your new
+                                products or services, and promotions by simply staying in touch with them. The following
+                                are some strategies for your business to better <a
+                                    href="https://dyl.com/features/dial-extension" target="_blank" rel="noopener"
+                                    title="">communicate with its customers</a>:</p>
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
+                            <ol>
+                                <li>Email Marketing: A cheap and effective approach to communicate with customers is
+                                    through email marketing. Your business may keep their customers informed and
+                                    interested by regularly delivering newsletters, specials, and updates. Also, you can
+                                    tailor email marketing to targeted customer groups, which can improve engagement and
+                                    retention.</li>
+                            </ol>
 
 
-<p>Another very important customer retention approach that could also help your business to establish strong connections with its clients is keeping in touch with them. </p>
 
+                            <ol start="2">
+                                <li>Social Media: You can use platforms like Facebook, LinkedIn, or Instagram to get in
+                                    touch with your customers. Your business may keep their customers informed and
+                                    interested by often publishing updates, promotions, and interactions with customers
+                                    on social media. Social media may also give customer service and handle difficulties
+                                    in real-time.&nbsp;</li>
+                            </ol>
 
 
-<p>Your business can keep its customers interested, informed, and up to date on your new products or services, and promotions by simply staying in touch with them. The following are some strategies for your business to better <a href="https://dyl.com/features/dial-extension" target="_blank" rel="noopener" title="">communicate with its customers</a>:</p>
 
+                            <ol start="3">
+                                <li><a href="https://dyl.com/features/custom-call-tagging" target="_blank"
+                                        rel="noopener" title="">Customer Feedback</a> Surveys: One way to remain in
+                                    touch with your customers and get i<a
+                                        href="https://dyl.com/features/customer-history-auto-notes" target="_blank"
+                                        rel="noopener" title="">nsightful feedback</a> is through customer satisfaction
+                                    surveys. Your business may show your customers they respect their feedback and are
+                                    dedicated to improving their product or service by sending out surveys regularly.
+                                    Feedback questionnaires may also pinpoint problem areas and resolve your customers’
+                                    complaints.</li>
+                            </ol>
 
 
-<ol>
-<li>Email Marketing: A cheap and effective approach to communicate with customers is through email marketing. Your business may keep their customers informed and interested by regularly delivering newsletters, specials, and updates. Also, you can tailor email marketing to targeted customer groups, which can improve engagement and retention.</li>
-</ol>
 
+                            <ol start="4">
+                                <li>Loyalty Programs: Another way to remain in touch with your customers and encourage
+                                    recurring revenue is through loyalty programs. Your business may express their
+                                    gratitude and <a href="https://dyl.com/features/customer-history-auto-notes"
+                                        target="_blank" rel="noreferrer noopener">persuade your customers</a> to keep
+                                    doing business with you by providing unique discounts, prizes, and benefits to
+                                    regular customers.</li>
+                            </ol>
 
 
-<ol start="2">
-<li>Social Media: You can use platforms like Facebook, LinkedIn, or Instagram to get in touch with your customers. Your business may keep their customers informed and interested by often publishing updates, promotions, and interactions with customers on social media. Social media may also give customer service and handle difficulties in real-time.&nbsp;</li>
-</ol>
 
+                            <ol start="5">
+                                <li>Personal Outreach: <a href="https://dyl.com/features/custom-call-tagging"
+                                        target="_blank" rel="noreferrer noopener">Staying connected with your
+                                        customers</a> may be accomplished by personal outreach like phone calls,
+                                    handwritten messages, or tailored presents. Your business may show how much they
+                                    respect your customers and is dedicated to creating enduring connections by making
+                                    personal contact.</li>
+                            </ol>
 
 
-<ol start="3">
-<li><a href="https://dyl.com/features/custom-call-tagging" target="_blank" rel="noopener" title="">Customer Feedback</a> Surveys: One way to remain in touch with your customers and get i<a href="https://dyl.com/features/customer-history-auto-notes" target="_blank" rel="noopener" title="">nsightful feedback</a> is through customer satisfaction surveys. Your business may show your customers they respect their feedback and are dedicated to improving their product or service by sending out surveys regularly. Feedback questionnaires may also pinpoint problem areas and resolve your customers’ complaints.</li>
-</ol>
 
+                            <p>An important customer retention strategy that can help your business to <a
+                                    href="https://dyl.com/features/cisco-integration" target="_blank" rel="noopener"
+                                    title="">maintain positive connections</a> with your customers and increase the
+                                possibility of repeat business is keeping in touch with your customers. </p>
 
 
-<ol start="4">
-<li>Loyalty Programs: Another way to remain in touch with your customers and encourage recurring revenue is through loyalty programs. Your business may express their gratitude and <a href="https://dyl.com/features/customer-history-auto-notes" target="_blank" rel="noreferrer noopener">persuade your customers</a> to keep doing business with you by providing unique discounts, prizes, and benefits to regular customers.</li>
-</ol>
 
+                            <p>Your business will maintain their highest position and show their dedication to providing
+                                exceptional customer service by utilizing: email marketing, social media, customer
+                                feedback surveys, loyalty programs, and personal outreach.</p>
 
-
-<ol start="5">
-<li>Personal Outreach: <a href="https://dyl.com/features/custom-call-tagging" target="_blank" rel="noreferrer noopener">Staying connected with your customers</a> may be accomplished by personal outreach like phone calls, handwritten messages, or tailored presents. Your business may show how much they respect your customers and is dedicated to creating enduring connections by making personal contact.</li>
-</ol>
-
-
-
-<p>An important customer retention strategy that can help your business to <a href="https://dyl.com/features/cisco-integration" target="_blank" rel="noopener" title="">maintain positive connections</a> with your customers and increase the possibility of repeat business is keeping in touch with your customers. </p>
-
-
-
-<p>Your business will maintain their highest position and show their dedication to providing exceptional customer service by utilizing: email marketing, social media, customer feedback surveys, loyalty programs, and personal outreach.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-service-rep-performing-customer-rentetntion-analysis.webp" alt="Customer service rep performing customer retention analysis" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-service-rep-performing-customer-rentetntion-analysis.webp"
+                                    alt="Customer service rep performing customer retention analysis" loading="lazy">
+                            </figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4">How to Measure Your Business’ Customer Retention</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4">How to Measure Your Business’ Customer Retention
+                            </h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Your business’ long-term success depends on retaining your customers. It speaks to a business’s capacity to keep clients for a long time. Knowing how well a company is doing in this area depends on measuring the clients’ retention. We’ll talk about a few strategies to measure your clients’ retention.</p>
 
 
+                            <p>Your business’ long-term success depends on retaining your customers. It speaks to a
+                                business’s capacity to keep clients for a long time. Knowing how well a company is doing
+                                in this area depends on measuring the clients’ retention. We’ll talk about a few
+                                strategies to measure your clients’ retention.</p>
 
-<ul>
-<li>Repeat business rate is one of the simplest and most common ways to measure customer retention is by calculating the repeat business rate. This metric measures the percentage of customers who make a repeat purchase from your business. To calculate this rate, divide the number of customers who have made more than one purchase by the total number of customers.</li>
-</ul>
 
 
+                            <ul>
+                                <li>Repeat business rate is one of the simplest and most common ways to measure customer
+                                    retention is by calculating the repeat business rate. This metric measures the
+                                    percentage of customers who make a repeat purchase from your business. To calculate
+                                    this rate, divide the number of customers who have made more than one purchase by
+                                    the total number of customers.</li>
+                            </ul>
 
-<p>Repeat business rate = (number of customers with more than one purchase / total number of customers) x 100%</p>
 
 
+                            <p>Repeat business rate = (number of customers with more than one purchase / total number of
+                                customers) x 100%</p>
 
-<ul>
-<li>Customer churn rate measures the percentage of customers that left your business over a certain time period. Divide the total number of customers at the beginning of the term by the number of customers lost during the period to arrive at this rate.</li>
-</ul>
 
 
+                            <ul>
+                                <li>Customer churn rate measures the percentage of customers that left your business
+                                    over a certain time period. Divide the total number of customers at the beginning of
+                                    the term by the number of customers lost during the period to arrive at this rate.
+                                </li>
+                            </ul>
 
-<p>Customer churn rate = (number of customers lost / total number of customers at the beginning of the period) x 100%</p>
 
 
+                            <p>Customer churn rate = (number of customers lost / total number of customers at the
+                                beginning of the period) x 100%</p>
 
-<ul>
-<li>Customer lifetime value estimates the overall income that a client brings in for your company over the course of the relationship. Multiply the average purchase value by the quantity of purchases made each year and the average customer longevity in years to get the value.</li>
-</ul>
 
 
+                            <ul>
+                                <li>Customer lifetime value estimates the overall income that a client brings in for
+                                    your company over the course of the relationship. Multiply the average purchase
+                                    value by the quantity of purchases made each year and the average customer longevity
+                                    in years to get the value.</li>
+                            </ul>
 
-<p>CLTV = average purchase value x number of purchases per year x average customer lifespan</p>
 
 
+                            <p>CLTV = average purchase value x number of purchases per year x average customer lifespan
+                            </p>
 
-<ul>
-<li>Net Promoter Score measures the likelihood of a customer recommending your business. It is based on a simple survey that asks customers to rate the likelihood of recommending your business on a scale of 0 to 10. The NPS score is calculated by subtracting the percentage of detractors (customers who rate your business 0 to 6) from the percentage of promoters (customers who rate your business 9 or 10).</li>
-</ul>
 
 
+                            <ul>
+                                <li>Net Promoter Score measures the likelihood of a customer recommending your business.
+                                    It is based on a simple survey that asks customers to rate the likelihood of
+                                    recommending your business on a scale of 0 to 10. The NPS score is calculated by
+                                    subtracting the percentage of detractors (customers who rate your business 0 to 6)
+                                    from the percentage of promoters (customers who rate your business 9 or 10).</li>
+                            </ul>
 
-<p>NPS = percentage of promoters – percentage of detractors</p>
 
 
+                            <p>NPS = percentage of promoters – percentage of detractors</p>
 
-<ul>
-<li>Customer satisfaction (CSAT) evaluates how happy consumers are with their interactions with your business. Customers are frequently surveyed and asked to score their satisfaction on a scale of 1 to 5. By dividing the entire number of survey replies by the total number of pleased customers, the CSAT score is determined.</li>
-</ul>
 
 
+                            <ul>
+                                <li>Customer satisfaction (CSAT) evaluates how happy consumers are with their
+                                    interactions with your business. Customers are frequently surveyed and asked to
+                                    score their satisfaction on a scale of 1 to 5. By dividing the entire number of
+                                    survey replies by the total number of pleased customers, the CSAT score is
+                                    determined.</li>
+                            </ul>
 
-<p>CSAT = (number of satisfied customers / total number of survey responses) x 100%</p>
 
 
+                            <p>CSAT = (number of satisfied customers / total number of survey responses) x 100%</p>
 
-<p>In order to better understand the effectiveness of your business, measuring your customers’ retention rate is very important. You will get more insights into how effective your customer retention strategy is, and make better data-driven decisions to boost your business’ profitability. </p>
 
 
+                            <p>In order to better understand the effectiveness of your business, measuring your
+                                customers’ retention rate is very important. You will get more insights into how
+                                effective your customer retention strategy is, and make better data-driven decisions to
+                                boost your business’ profitability. </p>
 
-<p>You can do that by using repeat business rate, customer churn rate, customer lifetime value, Net Promoter Score, and satisfaction.</p>
 
 
+                            <p>You can do that by using repeat business rate, customer churn rate, customer lifetime
+                                value, Net Promoter Score, and satisfaction.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5">How to Improve Your Business’ Customer Retention</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5">How to Improve Your Business’ Customer Retention
+                            </h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Customer retention today is crucial for the success of any business. We will discuss some strategies to improve your business’ customer retention.</p>
 
 
+                            <p>Customer retention today is crucial for the success of any business. We will discuss some
+                                strategies to improve your business’ customer retention.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-1">Give your customers excellent customer service:</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-1">Give your customers excellent customer
+                                service:</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>To keep your customers, you need to have excellent customer service. Customers like to be treated well and acknowledged. They desire a fast and effective response to any issues or worries they may have. Develop the interpersonal, practical, and academic skills of your employees. A variety of communication options, such as live chat, phone, and email, should be available to your customers.</p>
 
 
+                            <p>To keep your customers, you need to have excellent customer service. Customers like to be
+                                treated well and acknowledged. They desire a fast and effective response to any issues
+                                or worries they may have. Develop the interpersonal, practical, and academic skills of
+                                your employees. A variety of communication options, such as live chat, phone, and email,
+                                should be available to your customers.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-2">Personalize your customers’ experience:</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-2">Personalize your customers’ experience:</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>The secret to keeping customers is personalization. Customers prefer to be valued as people, not simply as numbers. To build individualized experiences, use client data. </p>
 
 
+                            <p>The secret to keeping customers is personalization. Customers prefer to be valued as
+                                people, not simply as numbers. To build individualized experiences, use client data.
+                            </p>
 
-<p>For instance, you may use their name while speaking with them or provide tailored suggestions based on their past purchases. Customers who receive personalized service feel appreciated and are more likely to stay loyal to your business.</p>
 
 
+                            <p>For instance, you may use their name while speaking with them or provide tailored
+                                suggestions based on their past purchases. Customers who receive personalized service
+                                feel appreciated and are more likely to stay loyal to your business.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-3">Implement a loyalty program:</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-3">Implement a loyalty program:</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Keeping customers is made easier with the help of loyalty programs. Thank devoted customers with special deals, discounts, or gifts. Be certain that the awards are pertinent to and in line with the demands and preferences of your clients. </p>
 
 
+                            <p>Keeping customers is made easier with the help of loyalty programs. Thank devoted
+                                customers with special deals, discounts, or gifts. Be certain that the awards are
+                                pertinent to and in line with the demands and preferences of your clients. </p>
 
-<p>A well-thought-out loyalty program may improve customer retention and foster a feeling of community.</p>
 
 
+                            <p>A well-thought-out loyalty program may improve customer retention and foster a feeling of
+                                community.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-4">Keep in touch with your customers:</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-4">Keep in touch with your customers:</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Regular communication with your customers is important to maintain a relationship with them. Send out regular newsletters, updates on new products or services, or birthday and anniversary greetings. These gestures show your customers that you care about them and want to keep them informed.</p>
 
 
+                            <p>Regular communication with your customers is important to maintain a relationship with
+                                them. Send out regular newsletters, updates on new products or services, or birthday and
+                                anniversary greetings. These gestures show your customers that you care about them and
+                                want to keep them informed.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-5">Request feedback:</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-5">Request feedback:</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Asking for feedback from your customers often can show that you appreciate their opinions and are dedicated to enhancing their experience. Use the comments to enhance your business and show to your customers that you value their opinions.</p>
 
 
+                            <p>Asking for feedback from your customers often can show that you appreciate their opinions
+                                and are dedicated to enhancing their experience. Use the comments to enhance your
+                                business and show to your customers that you value their opinions.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-6">Efficiently resolve the issues:</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-6">Efficiently resolve the issues:</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>All businesses are subject to problems. Yet it’s crucial to deal with them as soon as possible. Your team should receive training on how to manage complaints and find solutions that satisfy your customers. </p>
 
 
+                            <p>All businesses are subject to problems. Yet it’s crucial to deal with them as soon as
+                                possible. Your team should receive training on how to manage complaints and find
+                                solutions that satisfy your customers. </p>
 
-<p>This shows your dedication to your customers’ satisfaction and might help in transforming a negative experience into a favorable one.&nbsp;The success of your business depends on your ability to keep customers. </p>
 
 
+                            <p>This shows your dedication to your customers’ satisfaction and might help in transforming
+                                a negative experience into a favorable one.&nbsp;The success of your business depends on
+                                your ability to keep customers. </p>
 
-<p>By providing exceptional customer service, personalizing the customer experience, having a loyalty program, staying in touch with your customers, conducting feedback, and fixing issues quickly and effectively, you can raise your customer retention rate and establish lasting connections with your customers.</p>
 
 
+                            <p>By providing exceptional customer service, personalizing the customer experience, having
+                                a loyalty program, staying in touch with your customers, conducting feedback, and fixing
+                                issues quickly and effectively, you can raise your customer retention rate and establish
+                                lasting connections with your customers.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-6">Conclusion</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-6">Conclusion</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Customer retention is a critical part for your business. As it’s less expensive to keep your existing customers than to get new ones. Also, it may boost sales for your business and your customers’ lifetime value. </p>
 
 
+                            <p>Customer retention is a critical part for your business. As it’s less expensive to keep
+                                your existing customers than to get new ones. Also, it may boost sales for your business
+                                and your customers’ lifetime value. </p>
 
-<p>Your business must first be able to provide your customers with the greatest customer service, earn their trust, and provide a positive customer experience in order to increase your customer retention rate. Using tools to track client retention may help your business pinpoint areas for improvement and make better data-driven decisions.&nbsp;</p>
 
 
+                            <p>Your business must first be able to provide your customers with the greatest customer
+                                service, earn their trust, and provide a positive customer experience in order to
+                                increase your customer retention rate. Using tools to track client retention may help
+                                your business pinpoint areas for improvement and make better data-driven
+                                decisions.&nbsp;</p>
 
-<p>Want something specific to be covered about ways to improve your business using VoIP? Reach out to us at <a href="mailto:marketing@dyl.com">marketing@dyl.com</a></p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p>Want something specific to be covered about ways to improve your business using VoIP?
+                                Reach out to us at <a href="mailto:marketing@dyl.com">marketing@dyl.com</a></p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy"
+                                    src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg" alt="Alex Vetter" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg"
+                                        alt="Alex Vetter" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/avetter">Alex Vetter</a>
-                                  </p>
-                                <p class="article-author-position">Alex Vetter is the product marketing manager at DYL. With a Masters from College de Paris, he runs the marketing department and helps with product management at DYL.
-                                </p>
-                              </div>
+                                        <a href="author/avetter.html">Alex Vetter</a>
+                                    </p>
+                                    <p class="article-author-position">Alex Vetter is the product marketing manager at
+                                        DYL. With a Masters from College de Paris, he runs the marketing department and
+                                        helps with product management at DYL.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/customer-experience">
-	        <p class="element-post-category transition-3d-hover">
-	          Customer Experience
-	        </p>
-	      </a>
-	      <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences" aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/customer-journey-in-person.jpg" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 12 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences" aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences</a>
-		  </p>
-	      
-Today’s digital marketplace needs more than just a generic marketing approach. As businesses grow in revenue, the ability to deli...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-companies</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies to Boost Your Business Growth in 2025</a>
-		  </p>
-	      
-Looking to improve your lead and contact management while making your business soar in 2025? You’re in the right place!&nbsp;
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/customer-experience">
+                            <p class="element-post-category transition-3d-hover">
+                                Customer Experience
+                            </p>
+                        </a>
+                        <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences"
+                            aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/customer-journey-in-person.jpg" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span
+                                class="sr-only">personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 12 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences"
+                                aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">Personalized
+                                Customer Journeys: Leveraging Automation for Targeted Online Experiences</a>
+                        </p>
+
+                        Today’s digital marketplace needs more than just a generic marketing approach. As businesses
+                        grow in revenue, the ability to deli...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-companies"
+                            aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-companies</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-companies"
+                                aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies
+                                to Boost Your Business Growth in 2025</a>
+                        </p>
 
-Choos...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-software-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software Solutions to Boost Your Business Growth</a>
-		  </p>
-	      
-Looking to connect with contacts in a way that truly grows your business? You’re in the right place! Whether you’re a sales rep a...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/customer-experience">
-	        <p class="element-post-category transition-3d-hover">
-	          Customer Experience
-	        </p>
-	      </a>
-	      <a href="/blog/different-types-of-customer-relationship-management" aria-label="Exploring Different Types of Customer Relationship Management">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/happy-gen-z-woman-on-phone.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">different-types-of-customer-relationship-management</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 14 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/different-types-of-customer-relationship-management" aria-label="Exploring Different Types of Customer Relationship Management">Exploring Different Types of Customer Relationship Management</a>
-		  </p>
-	      
-Imagine the excitement of maintaining your business relationships, tracking interactions, and effortlessly managing leads. Welcom...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/customer-relationship-management-cycle" aria-label="Mastering the Customer Relationship Management Cycle for Success">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/cowkers-working-at-desk-in-office.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">customer-relationship-management-cycle</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 11, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 13 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/customer-relationship-management-cycle" aria-label="Mastering the Customer Relationship Management Cycle for Success">Mastering the Customer Relationship Management Cycle for Success</a>
-		  </p>
-	      
-Keeping your customers invested in your products requires more than just impeccable quality. It needs a seamless customer relatio...
-	    </div>
-	</div>
+                        Looking to improve your lead and contact management while making your business soar in 2025?
+                        You’re in the right place!&nbsp;
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        Choos...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-software-solutions"
+                            aria-label="Top CRM Software Solutions to Boost Your Business Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-software-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-software-solutions"
+                                aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software
+                                Solutions to Boost Your Business Growth</a>
+                        </p>
+
+                        Looking to connect with contacts in a way that truly grows your business? You’re in the right
+                        place! Whether you’re a sales rep a...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/customer-experience">
+                            <p class="element-post-category transition-3d-hover">
+                                Customer Experience
+                            </p>
+                        </a>
+                        <a href="/blog/different-types-of-customer-relationship-management"
+                            aria-label="Exploring Different Types of Customer Relationship Management">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/happy-gen-z-woman-on-phone.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">different-types-of-customer-relationship-management</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 14 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/different-types-of-customer-relationship-management"
+                                aria-label="Exploring Different Types of Customer Relationship Management">Exploring
+                                Different Types of Customer Relationship Management</a>
+                        </p>
+
+                        Imagine the excitement of maintaining your business relationships, tracking interactions, and
+                        effortlessly managing leads. Welcom...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/customer-relationship-management-cycle"
+                            aria-label="Mastering the Customer Relationship Management Cycle for Success">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/cowkers-working-at-desk-in-office.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">customer-relationship-management-cycle</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 11, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 13 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/customer-relationship-management-cycle"
+                                aria-label="Mastering the Customer Relationship Management Cycle for Success">Mastering
+                                the Customer Relationship Management Cycle for Success</a>
+                        </p>
+
+                        Keeping your customers invested in your products requires more than just impeccable quality. It
+                        needs a seamless customer relatio...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1955,9 +2355,10 @@ Keeping your customers invested in your products requires more than just impecca
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" loading="lazy"
+                            alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1974,24 +2375,7 @@ Keeping your customers invested in your products requires more than just impecca
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2447,13 +2831,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
 
-            vgo('process');
-        </script>
 
         <script>
 
@@ -2519,17 +2897,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
 
 
             window.onload = function () {
@@ -3194,34 +3562,38 @@ thank-you" />
 
 
 
+    <script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -3237,22 +3609,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3280,9 +3637,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3345,21 +3702,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3369,6 +3712,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });
@@ -3391,23 +3754,8 @@ thank-you" />
             $('#popup2').fadeOut();
         }
 
-        function togglerightPanel() {
-            var popupDivright = $('#popUprightDiv');
-            var iconright = popupDivright.find('h6 i');
-            popupDivright.toggleClass('closed');
-            if (popupDivright.hasClass('closed')) {
-                popupDivright.css('height', '50px'); // Set height explicitly when closing
-                iconright.removeClass('fa-angle-down').addClass('fa-angle-up');
-            } else {
-                popupDivright.css('height', 'auto'); // Reset height to auto when opening
-                iconright.removeClass('fa-angle-up').addClass('fa-angle-down');
-            }
-        }
-        $(document).ready(function () {
-            $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
-        });
-    </script>
 
+    </script>
 
 </body>
 
