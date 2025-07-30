@@ -11,17 +11,16 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-   How to generate life insurance leads? | DYL
+        How to generate life insurance leads? | DYL
     </title>
     <meta name="description"
         content="Unlock a steady stream of life insurance leads! Explore proven strategies and techniques to generate quality leads and expand your business.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
-
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -52,8 +51,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +96,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/family-posing-with-life-insurance-roof-over-head.webp"
+        type="image/webp" fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +114,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +141,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +152,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +169,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +200,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +211,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +227,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +257,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +269,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +286,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +306,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +324,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +344,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +359,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +388,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +470,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +487,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +528,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +544,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +585,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +602,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +622,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +640,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +660,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +675,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +704,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,1015 +728,1217 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">How to generate life insurance leads?</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        July
-                          11, 2023
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 9 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">How to generate life insurance leads?</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                July
+                                11, 2023
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 9 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/family-posing-with-life-insurance-roof-over-head.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/family-posing-with-life-insurance-roof-over-head.webp"
+                            width="680" height="383" alt="blog featured image">
 
-                        <a href="/blog/category/improve-sales">
-                          <p class="element-category-post transition-3d-hover">
-                            Improve Sales
-                          </p>
+                        <br><br>
+
+
+                        <a href="category/improve-sales.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Improve Sales
+                            </p>
                         </a>
 
-                        
-                    
-                      
 
-                        <a href="/blog/category/marketing-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            Marketing Tips
-                          </p>
+
+
+
+                        <a href="category/marketing-tips.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Marketing Tips
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 156px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Identify your target audience</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Utilize content marketing</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Leverage social media</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Invest in lead generation companies</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Buy insurance leads</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Conclusion</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 156px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Identify your
+                                        target audience</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Utilize content
+                                        marketing</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Leverage social
+                                        media</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Invest in lead
+                                        generation companies</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Buy insurance
+                                        leads</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>Generating leads is a crucial part of growing an insurance business. In the highly competitive insurance industry, having a steady stream of qualified leads is essential to <a href="https://dyl.com/blog/optimize-your-sales-database" target="_blank" rel="noopener" title="">securing new business</a> and growing your customer base. In this article, we will explore various marketing strategies and<a href="https://dyl.com/blog/how-can-a-lead-generation-system-help-your-small-business" target="_blank" rel="noreferrer noopener"> lead generation</a> efforts that can help insurance agencies generate life insurance leads.</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>Generating leads is a crucial part of growing an insurance business. In the highly
+                                competitive insurance industry, having a steady stream of qualified leads is essential
+                                to <a href="https://dyl.com/blog/optimize-your-sales-database" target="_blank"
+                                    rel="noopener" title="">securing new business</a> and growing your customer base. In
+                                this article, we will explore various marketing strategies and<a
+                                    href="https://dyl.com/blog/how-can-a-lead-generation-system-help-your-small-business"
+                                    target="_blank" rel="noreferrer noopener"> lead generation</a> efforts that can help
+                                insurance agencies generate life insurance leads.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/couple-meeting-with-life-insurance-agent.webp" alt="Couple meeting with life insurance agent" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/couple-meeting-with-life-insurance-agent.webp"
+                                    alt="Couple meeting with life insurance agent" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1">Identify your target audience</h2>
+                            <h2 class="wp-block-heading" id="heading-1">Identify your target audience</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Identifying your target audience is a crucial step in generating life insurance leads. The insurance industry is vast, and there are many insurance products available. Hence, it is crucial to <a href="https://dyl.com/blog/contact-management-software" target="_blank" rel="noopener" title="">understand who your ideal customers</a> are, so that you can tailor your marketing and lead generation efforts effectively.</p>
+                            <p>Identifying your target audience is a crucial step in generating life insurance leads.
+                                The insurance industry is vast, and there are many insurance products available. Hence,
+                                it is crucial to <a href="https://dyl.com/blog/contact-management-software"
+                                    target="_blank" rel="noopener" title="">understand who your ideal customers</a> are,
+                                so that you can tailor your marketing and lead generation efforts effectively.</p>
 
 
 
-<p>Here are some tips to assist you in identifying your target audience:</p>
+                            <p>Here are some tips to assist you in identifying your target audience:</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol>
-<li><em>Demographic Data</em></li>
-</ol>
+                            <ol>
+                                <li><em>Demographic Data</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Gather data on the age, gender, income, education, and location of your potential customers. This information will help you understand your customers’ needs and preferences, which will enable you to create tailored messages and content.</p>
+                            <p>Gather data on the age, gender, income, education, and location of your potential
+                                customers. This information will help you understand your customers’ needs and
+                                preferences, which will enable you to create tailored messages and content.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="2">
-<li><em>Life Stage</em></li>
-</ol>
+                            <ol start="2">
+                                <li><em>Life Stage</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Determine the life stage of your <a href="https://dyl.com/blog/contact-organizer" target="_blank" rel="noopener" title="">target audience</a>. For example, are they newlyweds, families with young children, or seniors who are preparing for retirement? Understanding the life stage of your target audience will help you identify their insurance needs and offer relevant insurance products.</p>
+                            <p>Determine the life stage of your <a href="https://dyl.com/blog/contact-organizer"
+                                    target="_blank" rel="noopener" title="">target audience</a>. For example, are they
+                                newlyweds, families with young children, or seniors who are preparing for retirement?
+                                Understanding the life stage of your target audience will help you identify their
+                                insurance needs and offer relevant insurance products.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="3">
-<li><em>Occupation</em></li>
-</ol>
+                            <ol start="3">
+                                <li><em>Occupation</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Identify the occupation of your <a href="https://dyl.com/blog/b2b-contact-database" target="_blank" rel="noopener" title="">target audience</a>. For example, are they professionals, small business owners, or retirees? This information will help you understand their income and financial stability, which will enable you to offer insurance products that match their needs and budget.&nbsp;</p>
+                            <p>Identify the occupation of your <a href="https://dyl.com/blog/b2b-contact-database"
+                                    target="_blank" rel="noopener" title="">target audience</a>. For example, are they
+                                professionals, small business owners, or retirees? This information will help you
+                                understand their income and financial stability, which will enable you to offer
+                                insurance products that match their needs and budget.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="4">
-<li><em>Interests and Hobbies</em></li>
-</ol>
+                            <ol start="4">
+                                <li><em>Interests and Hobbies</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Understanding the interests and hobbies of your target audience will help you create content that resonates with them. For example, if your target audience is interested in outdoor activities, you can create content about the importance of life insurance for adventure lovers.</p>
+                            <p>Understanding the interests and hobbies of your target audience will help you create
+                                content that resonates with them. For example, if your target audience is interested in
+                                outdoor activities, you can create content about the importance of life insurance for
+                                adventure lovers.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="5">
-<li><em>Pain Points</em></li>
-</ol>
+                            <ol start="5">
+                                <li><em>Pain Points</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Identify the problems of your <a href="https://dyl.com/blog/b2b-db" target="_blank" rel="noopener" title="">target audience</a>. For example, are they concerned about protecting their families financially in case of an untimely death? Or, are they worried about ensuring their dependents’ financial stability after they retire? Understanding your customers’ problems will help you offer relevant insurance solutions that address their needs.</p>
+                            <p>Identify the problems of your <a href="https://dyl.com/blog/b2b-db" target="_blank"
+                                    rel="noopener" title="">target audience</a>. For example, are they concerned about
+                                protecting their families financially in case of an untimely death? Or, are they worried
+                                about ensuring their dependents’ financial stability after they retire? Understanding
+                                your customers’ problems will help you offer relevant insurance solutions that address
+                                their needs.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">Utilize content marketing</h2>
+                            <h2 class="wp-block-heading" id="heading-2">Utilize content marketing</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Content<a href="https://dyl.com/blog/digital-marketing-strategies-to-grow-your-small-business" target="_blank" rel="noreferrer noopener"> marketing</a> is an effective way to attract and engage with your target audience. Producing high-quality, informative content such as blog posts, infographics, or videos can draw in potential customers who have an interest in insurance products.</p>
+                            <p>Content<a
+                                    href="https://dyl.com/blog/digital-marketing-strategies-to-grow-your-small-business"
+                                    target="_blank" rel="noreferrer noopener"> marketing</a> is an effective way to
+                                attract and engage with your target audience. Producing high-quality, informative
+                                content such as blog posts, infographics, or videos can draw in potential customers who
+                                have an interest in insurance products.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol>
-<li><em>Create Valuable Content</em></li>
-</ol>
+                            <ol>
+                                <li><em>Create Valuable Content</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>When creating content, focus on providing value to your target audience. This can include information on <a href="https://dyl.com/ebooks/dyl-webinar-slides-upselling-and-cross-selling-for-insurance" target="_blank" rel="noreferrer noopener">life insurance products</a>, financial planning, and retirement planning. By providing valuable information, you can attract potential customers and establish yourself as a trustworthy resource in the insurance industry.</p>
+                            <p>When creating content, focus on providing value to your target audience. This can include
+                                information on <a
+                                    href="https://dyl.com/ebooks/dyl-webinar-slides-upselling-and-cross-selling-for-insurance"
+                                    target="_blank" rel="noreferrer noopener">life insurance products</a>, financial
+                                planning, and retirement planning. By providing valuable information, you can attract
+                                potential customers and establish yourself as a trustworthy resource in the insurance
+                                industry.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="2">
-<li><em>Search Engine Optimization</em></li>
-</ol>
+                            <ol start="2">
+                                <li><em>Search Engine Optimization</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Optimizing your content for search engines, such as Google, can help increase visibility and drive traffic to your website. This includes using keywords in your content, creating meta descriptions, and using header tags.</p>
+                            <p>Optimizing your content for search engines, such as Google, can help increase visibility
+                                and drive traffic to your website. This includes using keywords in your content,
+                                creating meta descriptions, and using header tags.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="3">
-<li><em>Promote</em></li>
-</ol>
+                            <ol start="3">
+                                <li><em>Promote</em></li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Once you have created valuable content, it’s important to promote it. You can promote your content on social media, through email marketing, and by reaching out to relevant websites and blogs to see if they would be interested in publishing your content.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <p>Once you have created valuable content, it’s important to promote it. You can promote
+                                your content on social media, through email marketing, and by reaching out to relevant
+                                websites and blogs to see if they would be interested in publishing your content.</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="4">
-<li><em>Repurpose Your Content</em></li>
-</ol>
 
 
+                            <ol start="4">
+                                <li><em>Repurpose Your Content</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Don’t let your valuable content to go to waste. You can repurpose your content into different formats, such as infographics or video content, to reach a wider audience.</p>
 
 
+                            <p>Don’t let your valuable content to go to waste. You can repurpose your content into
+                                different formats, such as infographics or video content, to reach a wider audience.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="5">
-<li><em>Measure Your Results</em></li>
-</ol>
 
 
+                            <ol start="5">
+                                <li><em>Measure Your Results</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Finally, it’s important to measure the results of your content marketing efforts. Tools such as Google Analytics allow you to monitor the number of people visiting your website, determining where the traffic is coming from, and gauge the <a href="https://dyl.com/blog/b2b-email-database" target="_blank" rel="noopener" title="">level of engagement from your audience</a>. This information can help you adjust your content marketing strategy and improve your lead generation efforts.</p>
 
 
+                            <p>Finally, it’s important to measure the results of your content marketing efforts. Tools
+                                such as Google Analytics allow you to monitor the number of people visiting your
+                                website, determining where the traffic is coming from, and gauge the <a
+                                    href="b2b-email-database.html" target="_blank" rel="noopener" title="">level of
+                                    engagement from your audience</a>. This information can help you
+                                adjust your content marketing strategy and improve your lead generation efforts.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-3">Leverage social media</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-3">Leverage social media</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Social media platforms like Facebook, LinkedIn, and Twitter provide a great opportunity to connect with potential customers. By regularly posting content and engaging with your followers, you can attract new leads and keep existing customers informed.</p>
 
 
+                            <p>Social media platforms like Facebook, LinkedIn, and Twitter provide a great opportunity
+                                to connect with potential customers. By regularly posting content and engaging with your
+                                followers, you can attract new leads and keep existing customers informed.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol>
-<li><em>Choose the Right Platforms</em></li>
-</ol>
 
 
+                            <ol>
+                                <li><em>Choose the Right Platforms</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>There are many social media platforms to choose from, but it’s important to focus on the platforms where your target audience is most active. For example, LinkedIn is a great platform for B2B lead generation, while Facebook is more suitable for B2C lead generation.</p>
 
 
+                            <p>There are many social media platforms to choose from, but it’s important to focus on the
+                                platforms where your target audience is most active. For example, LinkedIn is a great
+                                platform for B2B lead generation, while Facebook is more suitable for B2C lead
+                                generation.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="2">
-<li><em>Create a Strategy</em></li>
-</ol>
 
 
+                            <ol start="2">
+                                <li><em>Create a Strategy</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Before you use social media for lead generation, it’s important to have a strategy in place. This includes defining your target audience, determining the content you will share, and deciding on a posting schedule.</p>
 
 
+                            <p>Before you use social media for lead generation, it’s important to have a strategy in
+                                place. This includes defining your target audience, determining the content you will
+                                share, and deciding on a posting schedule.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="3">
-<li><em>Engage with Your Followers</em></li>
-</ol>
 
 
+                            <ol start="3">
+                                <li><em>Engage with Your Followers</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Social media is a two-way conversation, so it’s important to engage with your followers. This includes responding to comments, asking questions, and sharing relevant content.</p>
 
 
+                            <p>Social media is a two-way conversation, so it’s important to engage with your followers.
+                                This includes responding to comments, asking questions, and sharing relevant content.
+                            </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="4">
-<li><em>Use Lead Magnets</em></li>
-</ol>
 
 
+                            <ol start="4">
+                                <li><em>Use Lead Magnets</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Lead magnets are valuable resources that you can offer to your followers for their contact information. These can include eBooks, webinars, or whitepapers. By using lead magnets, you can turn your followers into leads and nurture them into customers.&nbsp;</p>
 
 
+                            <p>Lead magnets are valuable resources that you can offer to your followers for their
+                                contact information. These can include eBooks, webinars, or whitepapers. By using lead
+                                magnets, you can turn your followers into leads and nurture them into customers.&nbsp;
+                            </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="5">
-<li><em>Run Social Media Ads</em></li>
-</ol>
 
 
+                            <ol start="5">
+                                <li><em>Run Social Media Ads</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Social media platforms also offer paid advertising options, such as Facebook ads or LinkedIn Sponsored Content. You can highly target these and can help you reach your target audience more effectively.</p>
 
 
+                            <p>Social media platforms also offer paid advertising options, such as Facebook ads or
+                                LinkedIn Sponsored Content. You can highly target these and can help you reach your
+                                target audience more effectively.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="6">
-<li><em>Track and Measure Results</em></li>
-</ol>
 
 
+                            <ol start="6">
+                                <li><em>Track and Measure Results</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Finally, it’s important to track and measure the results of your social media efforts. This includes tracking the number of followers, engagement rates, and conversions. By tracking your results, you can adjust your strategy and improve your lead generation efforts over time.</p>
 
 
+                            <p>Finally, it’s important to track and measure the results of your social media efforts.
+                                This includes tracking the number of followers, engagement rates, and conversions. By
+                                tracking your results, you can adjust your strategy and improve your lead generation
+                                efforts over time.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/life-insurance-couple-looking-into-insurance-on-laptop.webp" alt="Life insurance couple looking into insurance on laptop" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/life-insurance-couple-looking-into-insurance-on-laptop.webp"
+                                    alt="Life insurance couple looking into insurance on laptop" loading="lazy">
+                            </figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4">Invest in lead generation companies</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4">Invest in lead generation companies</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>There are many lead generation companies that specialize in generating leads for the insurance industry. These can help boost your life insurance sales or work on search engine optimization (seo). They can help reach your desired audience and produce leads with greater efficiency compared to solo efforts.</p>
 
 
+                            <p>There are many lead generation companies that specialize in generating leads for the
+                                insurance industry. These can help boost your life insurance sales or work on search
+                                engine optimization (seo). They can help reach your desired audience and produce leads
+                                with greater efficiency compared to solo efforts.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol>
-<li><em>Qualified Leads</em></li>
-</ol>
 
 
+                            <ol>
+                                <li><em>Qualified Leads</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Lead generation companies specialize in generating qualified leads for specific industries, including the insurance industry. This means that the leads they provide are more likely to be interested in your insurance products and services. They typically serve these qualified leads up in real time, where these life insurance leads look for agents.&nbsp;</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+
+
+                            <p>Lead generation companies specialize in generating qualified leads for specific
+                                industries, including the insurance industry. This means that the leads they provide are
+                                more likely to be interested in your insurance products and services. They typically
+                                serve these qualified leads up in real time, where these life insurance leads look for
+                                agents.&nbsp;</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="2">
-<li><em>Cost-Effective</em></li>
-</ol>
 
 
+                            <ol start="2">
+                                <li><em>Cost-Effective</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Investing in a lead generation company can be more cost-effective than other lead generation methods, such as traditional advertising or in-house lead generation efforts. Lead generation companies have the resources and expertise to generate leads more efficiently. They also offer cold calling leads, where you can get on the phone right away.</p>
 
 
+                            <p>Investing in a lead generation company can be more cost-effective than other lead
+                                generation methods, such as traditional advertising or in-house lead generation efforts.
+                                Lead generation companies have the resources and expertise to generate leads more
+                                efficiently. They also offer cold calling leads, where you can get on the phone right
+                                away.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="3">
-<li><em>Increased Efficiency</em></li>
-</ol>
 
 
+                            <ol start="3">
+                                <li><em>Increased Efficiency</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>By outsourcing lead generation to a third-party company, life insurance businesses can focus on other aspects of their business, such as customer service and product development. This increased efficiency can help businesses grow and improve their overall operations.</p>
 
 
+                            <p>By outsourcing lead generation to a third-party company, life insurance businesses can
+                                focus on other aspects of their business, such as customer service and product
+                                development. This increased efficiency can help businesses grow and improve their
+                                overall operations.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="4">
-<li><em>Access to Advanced Technology</em></li>
-</ol>
 
 
+                            <ol start="4">
+                                <li><em>Access to Advanced Technology</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Lead generation companies often have access to advanced technology and tools that can help generate leads more effectively. For example, they may use marketing automation software, lead scoring algorithms, or data analytics tools to generate leads.</p>
 
 
+                            <p>Lead generation companies often have access to advanced technology and tools that can
+                                help generate leads more effectively. For example, they may use marketing automation
+                                software, lead scoring algorithms, or data analytics tools to generate leads.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="5">
-<li><em>Expertise and Experience</em></li>
-</ol>
 
 
+                            <ol start="5">
+                                <li><em>Expertise and Experience</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Lead generation companies have expertise and experience in the lead generation process. They have a deep understanding of the insurance industry and know what strategies work best for generating leads.</p>
 
 
+                            <p>Lead generation companies have expertise and experience in the lead generation process.
+                                They have a deep understanding of the insurance industry and know what strategies work
+                                best for generating leads.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<ol start="6">
-<li><em>Better ROI</em></li>
-</ol>
 
 
+                            <ol start="6">
+                                <li><em>Better ROI</em></li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>By outsourcing lead generation to a third-party company, life insurance businesses can see a better return on investment. Motivation of lead generation companies comes from their pool of generated leads that will convert into sales. They have a powerful incentive to perform well.</p>
 
 
+                            <p>By outsourcing lead generation to a third-party company, life insurance businesses can
+                                see a better return on investment. Motivation of lead generation companies comes from
+                                their pool of generated leads that will convert into sales. They have a powerful
+                                incentive to perform well.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5">Buy insurance leads</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5">Buy insurance leads</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Buying insurance leads is a popular strategy for generating new life insurance leads. By purchasing leads from lead generation companies, insurance agents and companies can access a large pool of potential customers who are already interested in purchasing life insurance. Buying insurance leads from lead generation companies can be a cost-effective solution.</p>
 
 
+                            <p>Buying insurance leads is a popular strategy for generating new life insurance leads. By
+                                purchasing leads from lead generation companies, insurance agents and companies can
+                                access a large pool of potential customers who are already interested in purchasing life
+                                insurance. Buying insurance leads from lead generation companies can be a cost-effective
+                                solution.</p>
 
-<p>Here are a few points to consider when buying insurance leads:</p>
 
 
+                            <p>Here are a few points to consider when buying insurance leads:</p>
 
-<ul>
-<li><em>Quality</em></li>
-</ul>
 
 
+                            <ul>
+                                <li><em>Quality</em></li>
+                            </ul>
 
-<p>When purchasing insurance leads, it’s important to ensure that the leads are of high quality. Look for lead generation companies that use valid and up-to-date information to generate their leads, as this will help ensure that the leads you receive are accurate and relevant to your business.</p>
 
 
+                            <p>When purchasing insurance leads, it’s important to ensure that the leads are of high
+                                quality. Look for lead generation companies that use valid and up-to-date information to
+                                generate their leads, as this will help ensure that the leads you receive are accurate
+                                and relevant to your business.</p>
 
-<ul>
-<li><em>Reputation</em></li>
-</ul>
 
 
+                            <ul>
+                                <li><em>Reputation</em></li>
+                            </ul>
 
-<p>Before buying insurance leads, research the lead generation company and make sure they have an excellent reputation in the industry. Look for reviews and testimonials from other insurance agents or companies to ensure that the lead generation company is trustworthy and reliable.</p>
 
 
+                            <p>Before buying insurance leads, research the lead generation company and make sure they
+                                have an excellent reputation in the industry. Look for reviews and testimonials from
+                                other insurance agents or companies to ensure that the lead generation company is
+                                trustworthy and reliable.</p>
 
-<ul>
-<li><em>Customization</em></li>
-</ul>
 
 
+                            <ul>
+                                <li><em>Customization</em></li>
+                            </ul>
 
-<p>Consider buying insurance leads from a company that allows you to customize the leads based on your specific needs and target audience. This will guarantee that the leads received align with your business and have a higher chance of becoming paying customers.</p>
 
 
+                            <p>Consider buying insurance leads from a company that allows you to customize the leads
+                                based on your specific needs and target audience. This will guarantee that the leads
+                                received align with your business and have a higher chance of becoming paying customers.
+                            </p>
 
-<ul>
-<li><em>Cost</em></li>
-</ul>
 
 
+                            <ul>
+                                <li><em>Cost</em></li>
+                            </ul>
 
-<p>The cost of purchasing insurance leads can vary depending on the lead generation company and the quality of the leads. It’s important to compare prices and services offered by different lead generation companies to find the best value for your money.</p>
 
 
+                            <p>The cost of purchasing insurance leads can vary depending on the lead generation company
+                                and the quality of the leads. It’s important to compare prices and services offered by
+                                different lead generation companies to find the best value for your money.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-6">Conclusion</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-6">Conclusion</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>In conclusion, generating life insurance leads requires a combination of marketing strategies and lead generation efforts. Life insurance agents should expect to buy insurance leads are part of their sales process. The life insurance market is here for the long term, so make sure you build insurance lead generation processes.&nbsp;</p>
 
 
+                            <p>In conclusion, generating life insurance leads requires a combination of marketing
+                                strategies and lead generation efforts. Life insurance agents should expect to buy
+                                insurance leads are part of their sales process. The life insurance market is here for
+                                the long term, so make sure you build insurance lead generation processes.&nbsp;</p>
 
-<p>By focusing on your target audience, using content marketing and social media, and providing excellent customer service, insurance agencies can generate leads and grow their customer base.</p>
 
 
+                            <p>By focusing on your target audience, using content marketing and social media, and
+                                providing excellent customer service, insurance agencies can generate leads and grow
+                                their customer base.</p>
 
-<p>Want something specific to be covered about ways to improve your business using VoIP? Reach out to us at <a href="mailto:marketing@dyl.com" target="_blank" rel="noreferrer noopener">marketing@dyl.com</a></p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p>Want something specific to be covered about ways to improve your business using VoIP?
+                                Reach out to us at <a href="mailto:marketing@dyl.com" target="_blank"
+                                    rel="noreferrer noopener">marketing@dyl.com</a></p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy"
+                                    src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg" alt="Alex Vetter" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy"
+                                        src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg"
+                                        alt="Alex Vetter" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/avetter">Alex Vetter</a>
-                                  </p>
-                                <p class="article-author-position">Alex Vetter is the product marketing manager at DYL. With a Masters from College de Paris, he runs the marketing department and helps with product management at DYL.
-                                </p>
-                              </div>
+                                        <a href="author/avetter.html">Alex Vetter</a>
+                                    </p>
+                                    <p class="article-author-position">Alex Vetter is the product marketing manager at
+                                        DYL. With a Masters from College de Paris, he runs the marketing department and
+                                        helps with product management at DYL.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/boost-productivity">
-	        <p class="element-post-category transition-3d-hover">
-	          Boost Productivity
-	        </p>
-	      </a>
-	      <a href="/blog/how-secure-data-backup-drives-marketing-automation-efficiency" aria-label="How Secure Data Backup Drives Marketing Automation Efficiency">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/backup-photo.png" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-secure-data-backup-drives-marketing-automation-efficiency</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 8 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-secure-data-backup-drives-marketing-automation-efficiency" aria-label="How Secure Data Backup Drives Marketing Automation Efficiency">How Secure Data Backup Drives Marketing Automation Efficiency</a>
-		  </p>
-	      
-Marketing automation relies on precision data that is updated in real time to achieve meaningful outcomes and provide personal ex...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">benefits-of-email-lead-generation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 7, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 6 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/benefits-of-email-lead-generation" aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of Email Lead Generation For Elevating Marketing ROI</a>
-		  </p>
-	      
-Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt innovative techniques to maximize ...
-	    </div>
-	</div>
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/boost-productivity">
+                            <p class="element-post-category transition-3d-hover">
+                                Boost Productivity
+                            </p>
+                        </a>
+                        <a href="/blog/how-secure-data-backup-drives-marketing-automation-efficiency"
+                            aria-label="How Secure Data Backup Drives Marketing Automation Efficiency">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/backup-photo.png" alt="" height="200"
+                                loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-secure-data-backup-drives-marketing-automation-efficiency</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 8 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-secure-data-backup-drives-marketing-automation-efficiency"
+                                aria-label="How Secure Data Backup Drives Marketing Automation Efficiency">How Secure
+                                Data Backup Drives Marketing Automation Efficiency</a>
+                        </p>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-write-a-good-email-sequence</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 9, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-write-a-good-email-sequence" aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a Good Email Sequence for Better Engagement</a>
-		  </p>
-	      
-Are you ready to transform your email marketing game? With the right approach to email automation, you can engage your audience i...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/marketing-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Marketing Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-make-your-business-look-more-professional</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 1, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 9 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-make-your-business-look-more-professional" aria-label="How to Make Your Business Look More Professional">How to Make Your Business Look More Professional</a>
-		  </p>
-	      
-Seven seconds. That’s how long your business has to make an impression.
+                        Marketing automation relies on precision data that is updated in real time to achieve meaningful
+                        outcomes and provide personal ex...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/benefits-of-email-lead-generation"
+                            aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-woman-using-email-marketing-on-computer.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">benefits-of-email-lead-generation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 7, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 6 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/benefits-of-email-lead-generation"
+                                aria-label="Benefits Of Email Lead Generation For Elevating Marketing ROI">Benefits Of
+                                Email Lead Generation For Elevating Marketing ROI</a>
+                        </p>
 
-During those seven seconds, research shows that custom...
-	    </div>
-	</div>
+                        Getting more from your marketing budget doesn’t mean spending blindly. Instead, you must adopt
+                        innovative techniques to maximize ...
+                    </div>
+                </div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/improve-sales">
-	        <p class="element-post-category transition-3d-hover">
-	          Improve Sales
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          February 10, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build a High-Performance Sales Funnel Using Automation</a>
-		  </p>
-	      
-In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is great news overall. But how do you en...
-	    </div>
-	</div>
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-write-a-good-email-sequence"
+                            aria-label="How to Write a Good Email Sequence for Better Engagement">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-writing-email-sequence-together.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-write-a-good-email-sequence</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 9, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-write-a-good-email-sequence"
+                                aria-label="How to Write a Good Email Sequence for Better Engagement">How to Write a
+                                Good Email Sequence for Better Engagement</a>
+                        </p>
+
+                        Are you ready to transform your email marketing game? With the right approach to email
+                        automation, you can engage your audience i...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/marketing-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Marketing Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-make-your-business-look-more-professional"
+                            aria-label="How to Make Your Business Look More Professional">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/front-image.webp" alt="" height="200"
+                                loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-make-your-business-look-more-professional</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 1, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 9 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-make-your-business-look-more-professional"
+                                aria-label="How to Make Your Business Look More Professional">How to Make Your Business
+                                Look More Professional</a>
+                        </p>
+
+                        Seven seconds. That’s how long your business has to make an impression.
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        During those seven seconds, research shows that custom...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/improve-sales">
+                            <p class="element-post-category transition-3d-hover">
+                                Improve Sales
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation"
+                            aria-label="How to Build a High-Performance Sales Funnel Using Automation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                February 10, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation"
+                                aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build
+                                a High-Performance Sales Funnel Using Automation</a>
+                        </p>
+
+                        In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is
+                        great news overall. But how do you en...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1853,9 +2086,10 @@ In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillio
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" loading="lazy"
+                            alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1872,24 +2106,26 @@ In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillio
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
+    <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="text-center lazy" alt="Download marketing template" loading="lazy"
+                        src="https://images.dyl.com/marketing-blog/mobile2/lead-gen-and-capture-ebook.webp" style="">
+                    <h6 class="text-center">
+                        Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true"
+                            onclick="togglerightPanel()"></i>
+                    </h6>
+                    <p class="text-center">
+                        This Ebook includes guides to generate more leads and improve your lead qualification process.
+                    </p>
+                    <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                        <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2345,13 +2581,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
 
-            vgo('process');
-        </script>
 
         <script>
 
@@ -2417,17 +2647,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
 
 
             window.onload = function () {
@@ -3091,35 +3311,38 @@ thank-you" />
     </aside>
 
 
+    <script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -3135,22 +3358,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3178,9 +3386,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3243,21 +3451,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3267,6 +3461,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });

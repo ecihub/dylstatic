@@ -11,16 +11,17 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-    How to Perform Customer Retention Analysis | DYL
+        How to Perform Customer Retention Analysis | DYL
     </title>
     <meta name="description"
         content="Learn how you can conduct customer customer retention analysis by tracking and analyzing customer behavior and interactions with your business.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
+
 
     <style>
         body {
@@ -52,8 +53,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +98,14 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link
+        rel="https://images.dyl.com/marketing-blog/customer-service-representative-presenting-to-other-colleagues.webp"
+        type="image/webp" fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +117,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +144,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +155,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +172,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +203,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +214,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +230,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +260,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +272,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +289,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +309,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +327,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +347,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +362,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +391,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +473,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +490,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +531,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +547,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +588,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +605,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +625,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +643,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +663,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +678,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +707,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,817 +731,1061 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">How to Perform Customer Retention Analysis</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        July
-                          12, 2023
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 10 min read </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">How to Perform Customer Retention Analysis</h1>
+                        </div>
+                        <div class="post-article-metas">
+
+                            <p class="post-date">
+                                July
+                                12, 2023
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/customer-service-representative-presenting-to-other-colleagues.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-8 col-left">
 
-                  
-                    
-                      
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/customer-service-representative-presenting-to-other-colleagues.webp"
+                            width="680" height="383" alt="blog featured image">
 
-                        <a href="/blog/category/customer-experience">
-                          <p class="element-category-post transition-3d-hover">
-                            Customer Experience
-                          </p>
+                        <br><br>
+
+
+
+
+                        <a href="category/customer-experience.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Customer Experience
+                            </p>
                         </a>
 
-                        
-                    
-                      
 
-                        <a href="/blog/category/improve-retention">
-                          <p class="element-category-post transition-3d-hover">
-                            Improve Retention
-                          </p>
+
+
+
+                        <a href="category/improve-retention.html">
+                            <p class="element-category-post transition-3d-hover">
+                                Improve Retention
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 208px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Define Your Customer Lifecycle</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Segment Your Customers</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Analyze Customer Behavior</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Monitor Customer Satisfaction</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Calculate Your Customer Retention Rate</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Focus on Customer Lifetime Value</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Implement a Customer Retention Strategy</a></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-8">Conclusion</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 208px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Define Your
+                                        Customer Lifecycle</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Segment Your
+                                        Customers</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Analyze Customer
+                                        Behavior</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Monitor Customer
+                                        Satisfaction</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Calculate Your
+                                        Customer Retention Rate</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Focus on Customer
+                                        Lifetime Value</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Implement a
+                                        Customer Retention Strategy</a></li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-8">Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>Analyzing customer retention is an essential part of any business seeking to optimize revenues and grow. It’s really important to keep customers coming back to your brand because it costs less than to find new ones.&nbsp;</p>
-
-
-
-<p>When we study customer retention, we learn about how customers act and how important they are to the business. </p>
-
-
-
-<p>This helps us figure out ways to make customers happy and prevent them from leaving. This article will discuss how to perform customer retention analysis and look at the major aspects that impact retention rates.</p>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/business-leader-meeting-with-client.webp" alt="Business leader meeting with clients" loading="lazy"></figure>
-
-
-
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h2 class="wp-block-heading" id="heading-1">Define Your Customer Lifecycle</h2>
+                        <div class="article-contents" id="article-contents">
+                            <p>Analyzing customer retention is an essential part of any business seeking to optimize
+                                revenues and grow. It’s really important to keep customers coming back to your brand
+                                because it costs less than to find new ones.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>When we study customer retention, we learn about how customers act and how important they
+                                are to the business. </p>
 
 
 
-<p>Defining your<a href="https://www.techtarget.com/searchcustomerexperience/definition/Customer-Life-Cycle" target="_blank" rel="noopener" title=""> customer lifecycle</a> is the first step in conducting a customer retention analysis. It involves identifying the different stages that a customer goes through from initial contact to becoming a loyal, repeat customer.&nbsp;</p>
+                            <p>This helps us figure out ways to make customers happy and prevent them from leaving. This
+                                article will discuss how to perform customer retention analysis and look at the major
+                                aspects that impact retention rates.</p>
 
 
 
-<p>Understanding the customer lifecycle helps businesses identify critical touchpoints where customers may require additional support or be more likely to churn. Here are some essential points to consider when defining your customer lifecycle:</p>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol>
-<li>Awareness: This is the stage where potential customers notice your brand and products/services. This can be through advertising, word-of-mouth, or other marketing efforts.</li>
-</ol>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/business-leader-meeting-with-client.webp"
+                                    alt="Business leader meeting with clients" loading="lazy"></figure>
 
 
 
-<ol start="2">
-<li>Consideration: Your potential customers are debating whether to buy from your business or your competitor at this stage. It is crucial to provide them the knowledge they want to make the best decision. This can be customer testimonials, product demonstrations, and reviews.&nbsp;</li>
-</ol>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="3">
-<li>Purchase: Your customer makes their purchase at this stage. It’s crucial to ensure your customer’s satisfaction by providing a quick and easy purchasing process. Marketing might involve sending welcome emails, delivering advice on how to use the product, and providing discounts for further purchases.&nbsp;</li>
-</ol>
+                            <h2 class="wp-block-heading" id="heading-1">Define Your Customer Lifecycle</h2>
 
 
 
-<ol start="4">
-<li>Retention: The goal once a customer makes a purchase is to keep them and promote repeat purchases. Continuous communication, such as newsletters, social media updates, and personalized offers, can help keep the customer.</li>
-</ol>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<ol start="5">
-<li>Loyalty: This is the final stage in the customer lifecycle, where customers become loyal advocates for your brand. Loyal customers are more likely to refer others to your brand, leave positive reviews, and provide valuable feedback.</li>
-</ol>
+                            <p>Defining your<a
+                                    href="https://www.techtarget.com/searchcustomerexperience/definition/Customer-Life-Cycle"
+                                    target="_blank" rel="noopener" title=""> customer lifecycle</a> is the first step in
+                                conducting a customer retention analysis. It involves identifying the different stages
+                                that a customer goes through from initial contact to becoming a loyal, repeat
+                                customer.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p>Understanding the customer lifecycle helps businesses identify critical touchpoints where
+                                customers may require additional support or be more likely to churn. Here are some
+                                essential points to consider when defining your customer lifecycle:</p>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-service-rep-meeting-with-client.webp" alt="Customer service rep meeting with clients" loading="lazy"></figure>
+                            <ol>
+                                <li>Awareness: This is the stage where potential customers notice your brand and
+                                    products/services. This can be through advertising, word-of-mouth, or other
+                                    marketing efforts.</li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <ol start="2">
+                                <li>Consideration: Your potential customers are debating whether to buy from your
+                                    business or your competitor at this stage. It is crucial to provide them the
+                                    knowledge they want to make the best decision. This can be customer testimonials,
+                                    product demonstrations, and reviews.&nbsp;</li>
+                            </ol>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">Segment Your Customers</h2>
+                            <ol start="3">
+                                <li>Purchase: Your customer makes their purchase at this stage. It’s crucial to ensure
+                                    your customer’s satisfaction by providing a quick and easy purchasing process.
+                                    Marketing might involve sending welcome emails, delivering advice on how to use the
+                                    product, and providing discounts for further purchases.&nbsp;</li>
+                            </ol>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <ol start="4">
+                                <li>Retention: The goal once a customer makes a purchase is to keep them and promote
+                                    repeat purchases. Continuous communication, such as newsletters, social media
+                                    updates, and personalized offers, can help keep the customer.</li>
+                            </ol>
 
 
 
-<p>Customer segmentation is an essential stage in a <a href="https://dyl.com/blog/why-customer-retention-is-important-for-growing-a-business" target="_blank" rel="noopener" title="">customer retention</a> analysis. It requires classifying customers according to certain traits including user behavior, purchasing history, and demographics. </p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <ol start="5">
+                                <li>Loyalty: This is the final stage in the customer lifecycle, where customers become
+                                    loyal advocates for your brand. Loyal customers are more likely to refer others to
+                                    your brand, leave positive reviews, and provide valuable feedback.</li>
+                            </ol>
+
+
+
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-service-rep-meeting-with-client.webp"
+                                    alt="Customer service rep meeting with clients" loading="lazy"></figure>
+
+
+
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+                            <h2 class="wp-block-heading" id="heading-2">Segment Your Customers</h2>
+
+
+
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+                            <p>Customer segmentation is an essential stage in a <a
+                                    href="https://dyl.com/blog/why-customer-retention-is-important-for-growing-a-business"
+                                    target="_blank" rel="noopener" title="">customer retention</a> analysis. It requires
+                                classifying customers according to certain traits including user behavior, purchasing
+                                history, and demographics. </p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<p>Businesses may adjust their retention efforts by segmenting their customer base. While segmenting your consumer base, keep the following in mind:</p>
 
 
+                            <p>Businesses may adjust their retention efforts by segmenting their customer base. While
+                                segmenting your consumer base, keep the following in mind:</p>
 
-<ol>
-<li>Demographics: With demographic segmentation, customers are divided into groups according to their age, gender, level of income, and other demographic criteria. Your business may develop specialized marketing campaigns that target various customer groups. This can be achieved by having an in-depth awareness of their unique needs and interests.</li>
-</ol>
 
 
+                            <ol>
+                                <li>Demographics: With demographic segmentation, customers are divided into groups
+                                    according to their age, gender, level of income, and other demographic criteria.
+                                    Your business may develop specialized marketing campaigns that target various
+                                    customer groups. This can be achieved by having an in-depth awareness of their
+                                    unique needs and interests.</li>
+                            </ol>
 
-<ol start="2">
-<li>Purchase history: Your customers are categorized based on their buying patterns. This comes in the form of frequency, average purchase value, and product type. This kind of segmentation can assist your business to identify their most valued customers and create retention strategies that give these customers the priority.</li>
-</ol>
 
 
+                            <ol start="2">
+                                <li>Purchase history: Your customers are categorized based on their buying patterns.
+                                    This comes in the form of frequency, average purchase value, and product type. This
+                                    kind of segmentation can assist your business to identify their most valued
+                                    customers and create retention strategies that give these customers the priority.
+                                </li>
+                            </ol>
 
-<ol start="3">
-<li>User behavior: You can create customer groups by product and service engagement. Afterwards, you can segment users based on behavior. Metrics like product usage, engagement, and churn might fall under this. By identifying churn risks, your business can create retention strategies that specifically target high-risk customers.</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>User behavior: You can create customer groups by product and service engagement.
+                                    Afterwards, you can segment users based on behavior. Metrics like product usage,
+                                    engagement, and churn might fall under this. By identifying churn risks, your
+                                    business can create retention strategies that specifically target high-risk
+                                    customers.</li>
+                            </ol>
 
-<ol start="4">
-<li>Geographic location: Grouping your customers according to their geographic locations is known as geographic segmentation. This can assist your business in creating focused marketing campaigns that are particular to the requirements and preferences of customers in various geographic areas.</li>
-</ol>
 
 
+                            <ol start="4">
+                                <li>Geographic location: Grouping your customers according to their geographic locations
+                                    is known as geographic segmentation. This can assist your business in creating
+                                    focused marketing campaigns that are particular to the requirements and preferences
+                                    of customers in various geographic areas.</li>
+                            </ol>
 
-<ol start="5">
-<li>Psychographic factors: Customer groups are created based on their beliefs, attitudes, and interests through psychographic segmentation. Your business can use this information to know the motives and preferences of various customer groups and create retention strategies that take these aspects into account.&nbsp;</li>
-</ol>
 
 
+                            <ol start="5">
+                                <li>Psychographic factors: Customer groups are created based on their beliefs,
+                                    attitudes, and interests through psychographic segmentation. Your business can use
+                                    this information to know the motives and preferences of various customer groups and
+                                    create retention strategies that take these aspects into account.&nbsp;</li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-3">Analyze Customer Behavior</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-3">Analyze Customer Behavior</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>An evaluation of your customers’ behavior is a necessary first step in any customer retention analysis. </p>
 
 
+                            <p>An evaluation of your customers’ behavior is a necessary first step in any customer
+                                retention analysis. </p>
 
-<p>It involves examining customer behavior to identify trends that might help in developing a successful retention strategy for your business. You should take the following into consideration while you analyze your consumers’ behavior:&nbsp;</p>
 
 
+                            <p>It involves examining customer behavior to identify trends that might help in developing
+                                a successful retention strategy for your business. You should take the following into
+                                consideration while you analyze your consumers’ behavior:&nbsp;</p>
 
-<ol>
-<li>Usage patterns: Analyzing user patterns requires looking at how customers utilize your products or services. This can contain statistics on usage patterns, amount of time spent using the product, and the feature or functionality most frequently used. Your business can discover areas where customers might need extra assistance or training by analyzing usage patterns, and these areas can then be the focus of retention strategies.</li>
-</ol>
 
 
+                            <ol>
+                                <li>Usage patterns: Analyzing user patterns requires looking at how customers utilize
+                                    your products or services. This can contain statistics on usage patterns, amount of
+                                    time spent using the product, and the feature or functionality most frequently used.
+                                    Your business can discover areas where customers might need extra assistance or
+                                    training by analyzing usage patterns, and these areas can then be the focus of
+                                    retention strategies.</li>
+                            </ol>
 
-<ol start="2">
-<li>Engagement: Engagement involves examining how customers interact with your brand outside of product usage, such as through social media or email. This can include metrics such as open and click-through rates, social media engagement, and response rates to customer surveys. Analyzing engagement can help businesses identify areas where they can improve communication and develop retention strategies that prioritize customer engagement.</li>
-</ol>
 
 
+                            <ol start="2">
+                                <li>Engagement: Engagement involves examining how customers interact with your brand
+                                    outside of product usage, such as through social media or email. This can include
+                                    metrics such as open and click-through rates, social media engagement, and response
+                                    rates to customer surveys. Analyzing engagement can help businesses identify areas
+                                    where they can improve communication and develop retention strategies that
+                                    prioritize customer engagement.</li>
+                            </ol>
 
-<ol start="3">
-<li>Churn: Churn involves examining how many customers leave your business over a specific period. Analyzing churn can help businesses identify potential churn risks and develop retention strategies that target at-risk customers. This can include offering incentives to keep customers, improving customer service, and providing additional support or training.</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>Churn: Churn involves examining how many customers leave your business over a
+                                    specific period. Analyzing churn can help businesses identify potential churn risks
+                                    and develop retention strategies that target at-risk customers. This can include
+                                    offering incentives to keep customers, improving customer service, and providing
+                                    additional support or training.</li>
+                            </ol>
 
-<ol start="4">
-<li>Feedback: Feedback requires assessing customer feedback through surveys, reviews, and other feedback channels. Your business may find opportunities for product or service improvement by analyzing customer feedback. They can also create retention strategies that put the needs of their customers first.</li>
-</ol>
 
 
+                            <ol start="4">
+                                <li>Feedback: Feedback requires assessing customer feedback through surveys, reviews,
+                                    and other feedback channels. Your business may find opportunities for product or
+                                    service improvement by analyzing customer feedback. They can also create retention
+                                    strategies that put the needs of their customers first.</li>
+                            </ol>
 
-<ol start="5">
-<li>Purchasing behavior: Examining your customers’ buying behavior requires looking at factors including the typical order amount, frequency of purchases, and timing of transactions. Your business may uncover potential upsell and cross-sell opportunities and create retention strategies that would encourage repeat purchases by analyzing their buying behavior.</li>
-</ol>
 
 
+                            <ol start="5">
+                                <li>Purchasing behavior: Examining your customers’ buying behavior requires looking at
+                                    factors including the typical order amount, frequency of purchases, and timing of
+                                    transactions. Your business may uncover potential upsell and cross-sell
+                                    opportunities and create retention strategies that would encourage repeat purchases
+                                    by analyzing their buying behavior.</li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/customer-celebrating-win.webp" alt="Customer celebrating satisfaction win" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/customer-celebrating-win.webp"
+                                    alt="Customer celebrating satisfaction win" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4">Monitor Customer Satisfaction</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4">Monitor Customer Satisfaction</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Tracking your customers’ satisfaction is a part of your analysis of customer retention. It includes regularly assessing how satisfied your consumers are with your products or services and identifying potential improvement areas. You should consider the following factors while you monitor your customers’ satisfaction rate:</p>
 
 
+                            <p>Tracking your customers’ satisfaction is a part of your analysis of customer retention.
+                                It includes regularly assessing how satisfied your consumers are with your products or
+                                services and identifying potential improvement areas. You should consider the following
+                                factors while you monitor your customers’ satisfaction rate:</p>
 
-<ol>
-<li>Surveys: You may fill Surveys through email, social media, or other channels. They would inquire about how your consumers use your products or services, how well your company treats them, and how happy they are with your business. By examining the survey results and developing retention tactics, your business can identify areas where its product or service can be improved.&nbsp;</li>
-</ol>
 
 
+                            <ol>
+                                <li>Surveys: You may fill Surveys through email, social media, or other channels. They
+                                    would inquire about how your consumers use your products or services, how well your
+                                    company treats them, and how happy they are with your business. By examining the
+                                    survey results and developing retention tactics, your business can identify areas
+                                    where its product or service can be improved.&nbsp;</li>
+                            </ol>
 
-<ol start="2">
-<li>Customer service: Customer service monitoring is an important part of keeping track of your customers’ satisfaction. This includes monitoring how well and quickly you respond to inquiries and problems from your customers.</li>
-</ol>
 
 
+                            <ol start="2">
+                                <li>Customer service: Customer service monitoring is an important part of keeping track
+                                    of your customers’ satisfaction. This includes monitoring how well and quickly you
+                                    respond to inquiries and problems from your customers.</li>
+                            </ol>
 
-<ol start="3">
-<li>Net Promoter Score (NPS): The Net Promoter Score evaluates how likely your customers are to suggest your business to others. It uses a scale of 0 to 10 and requires asking clients to assess how likely they are to refer to your business. Analyzing NPS data can help businesses identify potential brand advocates and develop retention strategies that encourage positive word-of-mouth.</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>Net Promoter Score (NPS): The Net Promoter Score evaluates how likely your customers
+                                    are to suggest your business to others. It uses a scale of 0 to 10 and requires
+                                    asking clients to assess how likely they are to refer to your business. Analyzing
+                                    NPS data can help businesses identify potential brand advocates and develop
+                                    retention strategies that encourage positive word-of-mouth.</li>
+                            </ol>
 
-<ol start="4">
-<li>Social media monitoring: Monitoring social media is another effective method for monitoring customer satisfaction. This involves tracking mentions of the brand on social media platforms and analyzing sentiment data to identify areas where customers may be dissatisfied or require additional support. Social media monitoring can help businesses identify potential issues before they escalate and develop retention strategies that prioritize customer engagement and satisfaction.</li>
-</ol>
 
 
+                            <ol start="4">
+                                <li>Social media monitoring: Monitoring social media is another effective method for
+                                    monitoring customer satisfaction. This involves tracking mentions of the brand on
+                                    social media platforms and analyzing sentiment data to identify areas where
+                                    customers may be dissatisfied or require additional support. Social media monitoring
+                                    can help businesses identify potential issues before they escalate and develop
+                                    retention strategies that prioritize customer engagement and satisfaction.</li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5">Calculate Your Customer Retention Rate</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5">Calculate Your Customer Retention Rate</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p><a href="https://www.customerthermometer.com/customer-retention/customer-retention-rate/" target="_blank" rel="noopener" title="">Customer retention</a> analysis must include the calculation of your customer retention rate. It requires calculating the percentage of customers who continue to be active users throughout a certain time frame. These are some crucial aspects to keep in mind when calculating your customer retention rate:</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+
+
+                            <p><a href="https://www.customerthermometer.com/customer-retention/customer-retention-rate/"
+                                    target="_blank" rel="noopener" title="">Customer retention</a> analysis must include
+                                the calculation of your customer retention rate. It requires calculating the percentage
+                                of customers who continue to be active users throughout a certain time frame. These are
+                                some crucial aspects to keep in mind when calculating your customer retention rate:</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<ol>
-<li>Determine the period: Determining the time for your measures is the first step in estimating your customer retention rate. Depending on the goals and objectives of your business, this may happen monthly, quarterly, or annually.</li>
-</ol>
 
 
+                            <ol>
+                                <li>Determine the period: Determining the time for your measures is the first step in
+                                    estimating your customer retention rate. Depending on the goals and objectives of
+                                    your business, this may happen monthly, quarterly, or annually.</li>
+                            </ol>
 
-<ol start="2">
-<li>Define active users: Now you need to define what creates an active user.&nbsp; Depending on your business and the product or service you provide, this might change. For instance, a social networking platform may define an active user as someone who checks in at least once every two weeks, while a subscription service would define an active user as someone who makes a purchase every quarter.</li>
-</ol>
 
 
+                            <ol start="2">
+                                <li>Define active users: Now you need to define what creates an active user.&nbsp;
+                                    Depending on your business and the product or service you provide, this might
+                                    change. For instance, a social networking platform may define an active user as
+                                    someone who checks in at least once every two weeks, while a subscription service
+                                    would define an active user as someone who makes a purchase every quarter.</li>
+                            </ol>
 
-<ol start="3">
-<li>Count the number of active users: Count the number of active users at the beginning of each period and the number of active users at the end of each period once you have identified what makes an active user.</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>Count the number of active users: Count the number of active users at the beginning
+                                    of each period and the number of active users at the end of each period once you
+                                    have identified what makes an active user.</li>
+                            </ol>
 
-<ol start="4">
-<li>Calculate retention rate: Divide the number of active users at the end of the period by the number of active users at the beginning of the period, then multiply the result by 100 to get the customer retention rate. Here is an equation to help you:</li>
-</ol>
 
 
+                            <ol start="4">
+                                <li>Calculate retention rate: Divide the number of active users at the end of the period
+                                    by the number of active users at the beginning of the period, then multiply the
+                                    result by 100 to get the customer retention rate. Here is an equation to help you:
+                                </li>
+                            </ol>
 
-<p>Customer Retention Rate = (Number of active users at the end of the period / Number of active users at the beginning of the period) x 100</p>
 
 
+                            <p>Customer Retention Rate = (Number of active users at the end of the period / Number of
+                                active users at the beginning of the period) x 100</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/female-customer-service-rep-speaking-with-client.webp" alt="Female customer service rep speaking with client" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/female-customer-service-rep-speaking-with-client.webp"
+                                    alt="Female customer service rep speaking with client" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-6">Focus on Customer Lifetime Value</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-6">Focus on Customer Lifetime Value</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Customer retention analysis must focus especially on the customer lifetime value. The entire amount of money that a customer is expected to bring in throughout the duration of their connection with your business is referred to as customer lifetime value. Consider the following important aspects while concentrating on your customer lifetime value:</p>
 
 
+                            <p>Customer retention analysis must focus especially on the customer lifetime value. The
+                                entire amount of money that a customer is expected to bring in throughout the duration
+                                of their connection with your business is referred to as customer lifetime value.
+                                Consider the following important aspects while concentrating on your customer lifetime
+                                value:</p>
 
-<ol>
-<li>Understand CLV: Understanding what customer lifetime value is and how it is determined would be your first step. The average revenue per customer is multiplied by the typical customer lifetime with your company to determine your customer lifetime value.&nbsp; This can enable your business to identify the most valuable customers and prioritize retention plans that maximize your customers’ lifetime value.</li>
-</ol>
 
 
+                            <ol>
+                                <li>Understand CLV: Understanding what customer lifetime value is and how it is
+                                    determined would be your first step. The average revenue per customer is multiplied
+                                    by the typical customer lifetime with your company to determine your customer
+                                    lifetime value.&nbsp; This can enable your business to identify the most valuable
+                                    customers and prioritize retention plans that maximize your customers’ lifetime
+                                    value.</li>
+                            </ol>
 
-<ol start="2">
-<li>Segment customers: Segment consumers depending on their worth to the company once you have an understanding on your customers’ lifetime value. Your business could use this information to determine which customers are the most valuable and rank your retention strategies effectively. Low-value customers will need less resource-intensive retention strategies, but high-value customers could need more individualized ones.</li>
-</ol>
 
 
+                            <ol start="2">
+                                <li>Segment customers: Segment consumers depending on their worth to the company once
+                                    you have an understanding on your customers’ lifetime value. Your business could use
+                                    this information to determine which customers are the most valuable and rank your
+                                    retention strategies effectively. Low-value customers will need less
+                                    resource-intensive retention strategies, but high-value customers could need more
+                                    individualized ones.</li>
+                            </ol>
 
-<ol start="3">
-<li>Develop retention strategies: Create retention strategies that prioritizes maximizing your customers’ lifetime value after segmenting your customer base. This involves providing tailored incentives, enhancing customer support, or creating new products or services that cater to your high-value customers.</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>Develop retention strategies: Create retention strategies that prioritizes
+                                    maximizing your customers’ lifetime value after segmenting your customer base. This
+                                    involves providing tailored incentives, enhancing customer support, or creating new
+                                    products or services that cater to your high-value customers.</li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-7">Implement a Customer Retention Strategy</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-7">Implement a Customer Retention Strategy</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>The use of customer retention strategies must be considered when doing customer retention analysis. These steps are meant to maintain your company’s current customers and increase their lifetime value. You should take the following into account while building your customer retention strategies:&nbsp;</p>
 
 
+                            <p>The use of customer retention strategies must be considered when doing customer retention
+                                analysis. These steps are meant to maintain your company’s current customers and
+                                increase their lifetime value. You should take the following into account while building
+                                your customer retention strategies:&nbsp;</p>
 
-<ol>
-<li>Develop a retention plan: Building a customer retention strategy. This should contain a thorough understanding of your customers’ needs, preferences, and actions, as well as a list of the previous retention strategies.</li>
-</ol>
 
 
+                            <ol>
+                                <li>Develop a retention plan: Building a customer retention strategy. This should
+                                    contain a thorough understanding of your customers’ needs, preferences, and actions,
+                                    as well as a list of the previous retention strategies.</li>
+                            </ol>
 
-<ol start="2">
-<li>Provide excellent customer service: Providing outstanding customer service is one of the best ways to keep your customers. This might involve providing individualized support, immediately responding to your customers’ questions, and effectively and rapidly handling your customers’ complaints.</li>
-</ol>
 
 
+                            <ol start="2">
+                                <li>Provide excellent customer service: Providing outstanding customer service is one of
+                                    the best ways to keep your customers. This might involve providing individualized
+                                    support, immediately responding to your customers’ questions, and effectively and
+                                    rapidly handling your customers’ complaints.</li>
+                            </ol>
 
-<ol start="3">
-<li>Offer incentives: Another successful retention strategy is providing incentives to your customers. Discounts, loyalty programs, and referral bonuses are a few options. The goals of incentives should be to promote repeat business and should be adapted to the requirements and wants of your various customer segments.</li>
-</ol>
 
 
+                            <ol start="3">
+                                <li>Offer incentives: Another successful retention strategy is providing incentives to
+                                    your customers. Discounts, loyalty programs, and referral bonuses are a few options.
+                                    The goals of incentives should be to promote repeat business and should be adapted
+                                    to the requirements and wants of your various customer segments.</li>
+                            </ol>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-8">Conclusion</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-8">Conclusion</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Your business needs to do customer retention research if it wants to keep its current customers. Your business may find techniques to keep its customers interested and devoted for a long time by analyzing its customer behavior, experience, and lifetime value. </p>
 
 
+                            <p>Your business needs to do customer retention research if it wants to keep its current
+                                customers. Your business may find techniques to keep its customers interested and
+                                devoted for a long time by analyzing its customer behavior, experience, and lifetime
+                                value. </p>
 
-<p>You should know your customers’ requirements and preferences besides being willing to invest in customer-focused marketing and customer service initiatives to implement effective customer retention strategies. This will help your business grow, boost sales, and develop strong bonds with its customers.</p>
 
 
+                            <p>You should know your customers’ requirements and preferences besides being willing to
+                                invest in customer-focused marketing and customer service initiatives to implement
+                                effective customer retention strategies. This will help your business grow, boost sales,
+                                and develop strong bonds with its customers.</p>
 
-<p>Want something specific to be covered about ways to improve your business using VoIP? Reach out to us at <a href="mailto:marketing@dyl.com" target="_blank" rel="noopener" title="">marketing@dyl.com</a></p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p>Want something specific to be covered about ways to improve your business using VoIP?
+                                Reach out to us at <a href="mailto:marketing@dyl.com" target="_blank" rel="noopener"
+                                    title="">marketing@dyl.com</a></p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy"
+                                    src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg" alt="Alex Vetter" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy"
+                                        src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg"
+                                        alt="Alex Vetter" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/avetter">Alex Vetter</a>
-                                  </p>
-                                <p class="article-author-position">Alex Vetter is the product marketing manager at DYL. With a Masters from College de Paris, he runs the marketing department and helps with product management at DYL.
-                                </p>
-                              </div>
+                                        <a href="author/avetter.html">Alex Vetter</a>
+                                    </p>
+                                    <p class="article-author-position">Alex Vetter is the product marketing manager at
+                                        DYL. With a Masters from College de Paris, he runs the marketing department and
+                                        helps with product management at DYL.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/customer-experience">
-	        <p class="element-post-category transition-3d-hover">
-	          Customer Experience
-	        </p>
-	      </a>
-	      <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences" aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/customer-journey-in-person.jpg" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          May 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 12 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences" aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences</a>
-		  </p>
-	      
-Today’s digital marketplace needs more than just a generic marketing approach. As businesses grow in revenue, the ability to deli...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-companies</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-companies" aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies to Boost Your Business Growth in 2025</a>
-		  </p>
-	      
-Looking to improve your lead and contact management while making your business soar in 2025? You’re in the right place!&nbsp;
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/customer-experience">
+                            <p class="element-post-category transition-3d-hover">
+                                Customer Experience
+                            </p>
+                        </a>
+                        <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences"
+                            aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/customer-journey-in-person.jpg" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span
+                                class="sr-only">personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                May 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 12 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/personalized-customer-journeys-leveraging-automation-for-targeted-online-experiences"
+                                aria-label="Personalized Customer Journeys: Leveraging Automation for Targeted Online Experiences">Personalized
+                                Customer Journeys: Leveraging Automation for Targeted Online Experiences</a>
+                        </p>
+
+                        Today’s digital marketplace needs more than just a generic marketing approach. As businesses
+                        grow in revenue, the ability to deli...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-companies"
+                            aria-label="Top CRM Companies to Boost Your Business Growth in 2025">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-couple-buying-service-from-in-person-agent.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-companies</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-companies"
+                                aria-label="Top CRM Companies to Boost Your Business Growth in 2025">Top CRM Companies
+                                to Boost Your Business Growth in 2025</a>
+                        </p>
 
-Choos...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-software-solutions</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          April 14, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 16 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-software-solutions" aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software Solutions to Boost Your Business Growth</a>
-		  </p>
-	      
-Looking to connect with contacts in a way that truly grows your business? You’re in the right place! Whether you’re a sales rep a...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/customer-experience">
-	        <p class="element-post-category transition-3d-hover">
-	          Customer Experience
-	        </p>
-	      </a>
-	      <a href="/blog/different-types-of-customer-relationship-management" aria-label="Exploring Different Types of Customer Relationship Management">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/happy-gen-z-woman-on-phone.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">different-types-of-customer-relationship-management</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 13, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 14 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/different-types-of-customer-relationship-management" aria-label="Exploring Different Types of Customer Relationship Management">Exploring Different Types of Customer Relationship Management</a>
-		  </p>
-	      
-Imagine the excitement of maintaining your business relationships, tracking interactions, and effortlessly managing leads. Welcom...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/customer-relationship-management-cycle" aria-label="Mastering the Customer Relationship Management Cycle for Success">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/cowkers-working-at-desk-in-office.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">customer-relationship-management-cycle</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          January 11, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 13 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/customer-relationship-management-cycle" aria-label="Mastering the Customer Relationship Management Cycle for Success">Mastering the Customer Relationship Management Cycle for Success</a>
-		  </p>
-	      
-Keeping your customers invested in your products requires more than just impeccable quality. It needs a seamless customer relatio...
-	    </div>
-	</div>
+                        Looking to improve your lead and contact management while making your business soar in 2025?
+                        You’re in the right place!&nbsp;
 
 
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        Choos...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-software-solutions"
+                            aria-label="Top CRM Software Solutions to Boost Your Business Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-two-business-men-shaking-hands.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-software-solutions</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                April 14, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 16 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-software-solutions"
+                                aria-label="Top CRM Software Solutions to Boost Your Business Growth">Top CRM Software
+                                Solutions to Boost Your Business Growth</a>
+                        </p>
+
+                        Looking to connect with contacts in a way that truly grows your business? You’re in the right
+                        place! Whether you’re a sales rep a...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/customer-experience">
+                            <p class="element-post-category transition-3d-hover">
+                                Customer Experience
+                            </p>
+                        </a>
+                        <a href="/blog/different-types-of-customer-relationship-management"
+                            aria-label="Exploring Different Types of Customer Relationship Management">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/happy-gen-z-woman-on-phone.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">different-types-of-customer-relationship-management</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 13, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 14 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/different-types-of-customer-relationship-management"
+                                aria-label="Exploring Different Types of Customer Relationship Management">Exploring
+                                Different Types of Customer Relationship Management</a>
+                        </p>
+
+                        Imagine the excitement of maintaining your business relationships, tracking interactions, and
+                        effortlessly managing leads. Welcom...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/customer-relationship-management-cycle"
+                            aria-label="Mastering the Customer Relationship Management Cycle for Success">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/cowkers-working-at-desk-in-office.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">customer-relationship-management-cycle</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                January 11, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 13 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/customer-relationship-management-cycle"
+                                aria-label="Mastering the Customer Relationship Management Cycle for Success">Mastering
+                                the Customer Relationship Management Cycle for Success</a>
+                        </p>
+
+                        Keeping your customers invested in your products requires more than just impeccable quality. It
+                        needs a seamless customer relatio...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1655,9 +1933,10 @@ Keeping your customers invested in your products requires more than just impecca
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" loading="lazy"
+                            alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1674,24 +1953,26 @@ Keeping your customers invested in your products requires more than just impecca
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
+    <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="text-center lazy" alt="Download marketing template" loading="lazy"
+                        src="https://images.dyl.com/marketing-blog/mobile2/lead-gen-and-capture-ebook.webp" style="">
+                    <h6 class="text-center">
+                        Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true"
+                            onclick="togglerightPanel()"></i>
+                    </h6>
+                    <p class="text-center">
+                        This Ebook includes guides to generate more leads and improve your lead qualification process.
+                    </p>
+                    <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                        <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2147,13 +2428,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
 
-            vgo('process');
-        </script>
 
         <script>
 
@@ -2219,17 +2494,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
 
 
             window.onload = function () {
@@ -2893,35 +3158,38 @@ thank-you" />
     </aside>
 
 
+    <script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -2937,22 +3205,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2980,9 +3233,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3045,21 +3298,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3069,6 +3308,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });
@@ -3107,7 +3366,6 @@ thank-you" />
             $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
         });
     </script>
-
 
 </body>
 

@@ -11,17 +11,16 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-  How to start selling life insurance | DYL
+        How to start selling life insurance | DYL
     </title>
     <meta name="description"
         content="Learn how you can start selling life insurance today! With a few simple tips, you can get started with a successful life insurance agency.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
+    <link rel="preload" href="../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../scss/index-blog.css">
     <link rel="preload" href="../scss/blog.css" as="style">
     <link rel="stylesheet" href="../scss/blog.css">
-
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -52,8 +51,41 @@
             width: 100%;
         }
 
-        @media (max-width: 480px) {
+        .download-text {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: .8px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
 
+        #popup2 {
+            display: none;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            z-index: 99999;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
 
             .post-featured-img {
                 max-height: 383px;
@@ -64,10 +96,13 @@
             }
         }
     </style>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
+    <link rel="https://images.dyl.com/marketing-blog/insurance-agent-meeting-with-colleagues-in-office.webp" type="image/webp"
+        fetchpriority="high" as="image">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
-
+        type="image/webp" fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +114,12 @@
         <div id="logoAndNav" class="container">
             <nav id="mega-menu"
                 class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding hs-menu-initialized hs-menu-horizontal">
-                <a class="navbar-brand" href="/blog" aria-label="DYL">
+                <a class="navbar-brand" href="../blog.html" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="/support">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -106,7 +141,7 @@
                                         }">
                                 <a id="business-phone-service"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/business-phone-service" aria-haspopup="true"
+                                    href="category/business-phone-service.html" aria-haspopup="true"
                                     aria-expanded="false">Business Phone Service</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="business-phone-service" style="max-width: 800px; display: none;">
@@ -117,7 +152,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -134,7 +169,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -165,7 +200,7 @@
                                         }">
                                 <a id="customer-experience"
                                     class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/customer-experience" aria-haspopup="true"
+                                    href="category/customer-experience.html" aria-haspopup="true"
                                     aria-expanded="false">Customer Experience</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="customer-experience" style="max-width: 800px; display: none;">
@@ -176,8 +211,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -193,8 +227,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -224,7 +257,7 @@
                                         }
                                         }">
                                 <a id="improve-sales" class="hs-mega-menu-invoker nav-link nav-link-toggle nav-bold"
-                                    href="/blog/category/improve-sales" aria-haspopup="true"
+                                    href="category/improve-sales.html" aria-haspopup="true"
                                     aria-expanded="false">Improve Sales</a>
                                 <div class="hs-mega-menu dropdown-menu w-100 hs-mega-menu-desktop-lg hs-position-left"
                                     aria-labelledby="improve-sales" style="max-width: 800px; display: none;">
@@ -236,7 +269,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -253,7 +286,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -273,7 +306,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -291,7 +324,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -311,7 +344,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -326,7 +359,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -355,7 +388,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -437,7 +470,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/smb-solutions">
+                                                    <a class="navbar-promo-link" href="category/smb-solutions.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -454,7 +487,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/workplace-efficiency">
+                                                        href="category/workplace-efficiency.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-users-cog nav-icon text-center"></i>
@@ -495,8 +528,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/create-engagement">
+                                                    <a class="navbar-promo-link" href="category/create-engagement.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-handshake nav-icon text-center"></i>
@@ -512,8 +544,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-retention">
+                                                    <a class="navbar-promo-link" href="category/improve-retention.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-infinity nav-icon text-center"></i>
@@ -554,7 +585,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/boost-productivity">
+                                                        href="category/boost-productivity.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-rocket nav-icon text-center"></i>
@@ -571,7 +602,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/crm-tools-and-tips">
+                                                        href="category/crm-tools-and-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-address-book nav-icon text-center"></i>
@@ -591,7 +622,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/establish-accountability">
+                                                        href="category/establish-accountability.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -609,7 +640,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="/blog/category/improve-acquisition">
+                                                        href="category/improve-acquisition.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-books nav-icon text-center"></i>
@@ -629,7 +660,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tips">
+                                                    <a class="navbar-promo-link" href="category/sales-tips.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-analytics nav-icon text-center"></i>
@@ -644,7 +675,7 @@
 
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="/blog/category/sales-tools">
+                                                    <a class="navbar-promo-link" href="category/sales-tools.html">
                                                         <div class="media align-items-center">
 
                                                             <i class="fal fa-tools nav-icon text-center"></i>
@@ -673,7 +704,7 @@
                                         }
                                         }">
                                 <a id="marketing-tips" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="/blog/category/marketing-tips" aria-haspopup="true"
+                                    href="category/marketing-tips.html" aria-haspopup="true"
                                     aria-expanded="false">Marketing Tips</a>
 
                                 <div class="hs-mega-menu w-100 hs-mega-menu-desktop-lg hs-position-center"
@@ -697,875 +728,1108 @@
 
 <body>
 
-<section class="article-element-section-top">
+    <section class="article-element-section-top">
 
-          <div class="container-sep-col">
+        <div class="container-sep-col">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-article-title-container">
-                    <h1 class="d3 element-category-title">How to start selling life insurance</h1>
-                  </div>
-                  <div class="post-article-metas">
-                    
-                      <p class="post-date">
-                        July
-                          6, 2023
-                      </p>
-                      <p class="post-sep">•</p>
-                      <p class="post-min"> 8 min read </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-left">
-                  
-                    <!-- Optional: Display a default image or message if postfeatured_type is not "image" or "video" -->
-                    <img class="post-featured-img" src="https://images.dyl.com/marketing-blog/insurance-agent-meeting-with-colleagues-in-office.webp" width="680" height="383" alt="blog featured image">
-                  
-                  <br><br>
-                 
-                  
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post-article-title-container">
+                            <h1 class="d3 element-category-title">How to start selling life insurance</h1>
+                        </div>
+                        <div class="post-article-metas">
 
-                  
-                    
-                      
+                            <p class="post-date">
+                                July
+                                6, 2023
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 8 min read </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-left">
+
+                        <img class="post-featured-img mobile-display-none"
+                            src="https://images.dyl.com/marketing-blog/insurance-agent-meeting-with-colleagues-in-office.webp"
+                            width="680" height="383" alt="blog featured image">
+
+                        <br><br>
+
+
+
+
+
+
 
                         <a href="/blog/category/improve-sales">
-                          <p class="element-category-post transition-3d-hover">
-                            Improve Sales
-                          </p>
+                            <p class="element-category-post transition-3d-hover">
+                                Improve Sales
+                            </p>
                         </a>
 
-                        
-                    
-                      
+
+
+
 
                         <a href="/blog/category/sales-tips">
-                          <p class="element-category-post transition-3d-hover">
-                            Sales Tips
-                          </p>
+                            <p class="element-category-post transition-3d-hover">
+                                Sales Tips
+                            </p>
                         </a>
 
-                        
 
-                          <br><br>
 
-                          <div class="content-panel-list">
+                        <br><br>
+
+                        <div class="content-panel-list">
                             <div class="content-list-header">
-                              <p class="text-white h6-sub-content">Content</p>
-                              <i class="fas accordion-icon fa-chevron-up"></i>
+                                <p class="text-white h6-sub-content">Content</p>
+                                <i class="fas accordion-icon fa-chevron-up"></i>
                             </div>
-                            <ul id="h2-list" class="expanded" style="max-height: 598px;"><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Get Your Education</a><ul style="display: block;"><li><a href="#heading-1-1">Insurance Exams</a></li><li><a href="#heading-1-2">Continuing Education</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Choose Your Path</a><ul style="display: block;"><li><a href="#heading-2-1">Employed by a Life Insurance Company&nbsp;</a></li><li><a href="#heading-2-2">Independent Agent</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Build Your Book of Business</a><ul style="display: block;"><li><a href="#heading-3-1">Cold Calling</a></li><li><a href="#heading-3-2">Networking</a></li><li><a href="#heading-3-3">Offer a Range of Products</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Learn About the Different Types of Life Insurance</a><ul style="display: block;"><li><a href="#heading-4-1">Term Life Insurance</a></li><li><a href="#heading-4-2">Permanent Life Insurance</a></li><li><a href="#heading-4-3">Universal Life Insurance</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Start Selling Life Insurance</a><ul style="display: block;"><li><a href="#heading-5-1">Selling Strategies&nbsp;</a></li><li><a href="#heading-5-2">Work with a Life Insurance Company&nbsp;</a></li><li><a href="#heading-5-3">Stay Up to Date with Industry Changes&nbsp;</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Continue Your Education</a><ul style="display: block;"><li><a href="#heading-6-1">Continuing Education</a></li><li><a href="#heading-6-2">Stay Informed&nbsp;</a></li><li><a href="#heading-6-3">Networking</a></li></ul></li><li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-7">Conclusion&nbsp;</a></li></ul>
-                          </div>
+                            <ul id="h2-list" class="expanded" style="max-height: 598px;">
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-1">Get Your
+                                        Education</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-1-1">Insurance Exams</a></li>
+                                        <li><a href="#heading-1-2">Continuing Education</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-2">Choose Your
+                                        Path</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-2-1">Employed by a Life Insurance Company&nbsp;</a></li>
+                                        <li><a href="#heading-2-2">Independent Agent</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-3">Build Your Book of
+                                        Business</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-3-1">Cold Calling</a></li>
+                                        <li><a href="#heading-3-2">Networking</a></li>
+                                        <li><a href="#heading-3-3">Offer a Range of Products</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-4">Learn About the
+                                        Different Types of Life Insurance</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-4-1">Term Life Insurance</a></li>
+                                        <li><a href="#heading-4-2">Permanent Life Insurance</a></li>
+                                        <li><a href="#heading-4-3">Universal Life Insurance</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-5">Start Selling Life
+                                        Insurance</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-5-1">Selling Strategies&nbsp;</a></li>
+                                        <li><a href="#heading-5-2">Work with a Life Insurance Company&nbsp;</a></li>
+                                        <li><a href="#heading-5-3">Stay Up to Date with Industry Changes&nbsp;</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a href="#heading-6">Continue Your
+                                        Education</a>
+                                    <ul style="display: block;">
+                                        <li><a href="#heading-6-1">Continuing Education</a></li>
+                                        <li><a href="#heading-6-2">Stay Informed&nbsp;</a></li>
+                                        <li><a href="#heading-6-3">Networking</a></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fas fa-caret-down toggle-icon"></i><a
+                                        href="#heading-7">Conclusion&nbsp;</a></li>
+                            </ul>
+                        </div>
 
-                          <div class="article-contents" id="article-contents">
-<p>According to the Bureau of Labor Statistics, life insurance <a href="https://dyl.com/blog/optimize-your-sales-database" target="_blank" rel="noopener" title="">sales agents</a> make an average compensation of more than $50,000 per year. There are several ways to make sure your life insurance career stays for the long term and there are key objectives to stay ahead of the rest of the pack. We recommend taking the following actions in order to succeed as a life insurance agent.&nbsp;</p>
+                        <div class="article-contents" id="article-contents">
+                            <p>According to the Bureau of Labor Statistics, life insurance <a
+                                    href="https://dyl.com/blog/optimize-your-sales-database" target="_blank"
+                                    rel="noopener" title="">sales agents</a> make an average compensation of more than
+                                $50,000 per year. There are several ways to make sure your life insurance career stays
+                                for the long term and there are key objectives to stay ahead of the rest of the pack. We
+                                recommend taking the following actions in order to succeed as a life insurance
+                                agent.&nbsp;</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/insurance-agent-working-with-client-at-desk.webp" alt="Insurance agent working with client at desk" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/insurance-agent-working-with-client-at-desk.webp"
+                                    alt="Insurance agent working with client at desk" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-1">Get Your Education</h2>
+                            <h2 class="wp-block-heading" id="heading-1">Get Your Education</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Getting an education is crucial for a career in life insurance sales. A college degree is not always mandatory, but a high school diploma or equivalent is a must for obtaining a license in most states. To become licensed and begin selling life insurance, you’ll need to pass relevant insurance exams.</p>
+                            <p>Getting an education is crucial for a career in life insurance sales. A college degree is
+                                not always mandatory, but a high school diploma or equivalent is a must for obtaining a
+                                license in most states. To become licensed and begin selling life insurance, you’ll need
+                                to pass relevant insurance exams.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-1">Insurance Exams</h3>
+                            <h3 class="wp-block-heading" id="heading-1-1">Insurance Exams</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Obtaining a life insurance license requires passing state insurance exams. These exams assess your understanding of state regulations and life insurance policy options and usually comprise multiple-choice questions. You can take them either online or in-person, and some states may have mandatory pre-licensing education.</p>
+                            <p>Obtaining a life insurance license requires passing state insurance exams. These exams
+                                assess your understanding of state regulations and life insurance policy options and
+                                usually comprise multiple-choice questions. You can take them either online or
+                                in-person, and some states may have mandatory pre-licensing education.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-1-2">Continuing Education</h3>
+                            <h3 class="wp-block-heading" id="heading-1-2">Continuing Education</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Maintaining a life insurance license often requires ongoing education. Keeping up to date with industry developments, regulations, and products is crucial. Many <a href="https://dyl.com/ebooks/dyl-webinar-slides-upselling-and-cross-selling-for-insurance" target="_blank" rel="noreferrer noopener">life insurance</a> firms provide training and continuing education opportunities for their agents.</p>
+                            <p>Maintaining a life insurance license often requires ongoing education. Keeping up to date
+                                with industry developments, regulations, and products is crucial. Many <a
+                                    href="https://dyl.com/ebooks/dyl-webinar-slides-upselling-and-cross-selling-for-insurance"
+                                    target="_blank" rel="noreferrer noopener">life insurance</a> firms provide training
+                                and continuing education opportunities for their agents.</p>
 
 
 
-<p>By having a high school diploma or equivalent, passing insurance exams, and continuing your education, you will be well-equipped to sell life insurance and build a successful career in the industry.</p>
+                            <p>By having a high school diploma or equivalent, passing insurance exams, and continuing
+                                your education, you will be well-equipped to sell life insurance and build a successful
+                                career in the industry.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/insurance-agents-meeting-at-conference-table.webp" alt="Insurance agents meeting at conference table" loading="lazy"></figure>
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/insurance-agents-meeting-at-conference-table.webp"
+                                    alt="Insurance agents meeting at conference table" loading="lazy"></figure>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h2 class="wp-block-heading" id="heading-2">Choose Your Path</h2>
+                            <h2 class="wp-block-heading" id="heading-2">Choose Your Path</h2>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Choosing between working for a life insurance firm or becoming an independent agent is a key decision when starting a career in life insurance sales. Both options have advantages and disadvantages, and the best choice will depend on individual preferences and career aspirations.</p>
+                            <p>Choosing between working for a life insurance firm or becoming an independent agent is a
+                                key decision when starting a career in life insurance sales. Both options have
+                                advantages and disadvantages, and the best choice will depend on individual preferences
+                                and career aspirations.</p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-1">Employed by a Life Insurance Company&nbsp;</h3>
+                            <h3 class="wp-block-heading" id="heading-2-1">Employed by a Life Insurance Company&nbsp;
+                            </h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>Working for a life insurance company has several advantages. The company will provide you with leads, training, and support. The company will also handle the administrative tasks, such as paperwork and compliance, which can allow you to focus on selling policies. Working for a company may provide you with a steady salary and benefits.&nbsp;</p>
+                            <p>Working for a life insurance company has several advantages. The company will provide you
+                                with leads, training, and support. The company will also handle the administrative
+                                tasks, such as paperwork and compliance, which can allow you to focus on selling
+                                policies. Working for a company may provide you with a steady salary and benefits.&nbsp;
+                            </p>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<h3 class="wp-block-heading" id="heading-2-2">Independent Agent</h3>
+                            <h3 class="wp-block-heading" id="heading-2-2">Independent Agent</h3>
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p>As a “captive” or independent agent, you work for yourself and represent multiple insurance companies, providing clients with a wider range of policy choices. The benefits include greater flexibility in scheduling and office location, as well as the chance to develop your own client base and earn commissions from policy sales.</p>
+                            <p>As a “captive” or independent agent, you work for yourself and represent multiple
+                                insurance companies, providing clients with a wider range of policy choices. The
+                                benefits include greater flexibility in scheduling and office location, as well as the
+                                chance to develop your own client base and earn commissions from policy sales.</p>
 
 
 
-<p>Both career paths have benefits and drawbacks, so it’s crucial to consider them carefully before choosing. There are variations, such as independent agents working under a broker-dealer, who offer support and handle administrative duties while still allowing independent work.</p>
+                            <p>Both career paths have benefits and drawbacks, so it’s crucial to consider them carefully
+                                before choosing. There are variations, such as independent agents working under a
+                                broker-dealer, who offer support and handle administrative duties while still allowing
+                                independent work.</p>
 
 
 
-<p>Ultimately, whether to work for a life insurance company or to become an independent agent will depend on your personal preferences and career goals. It is important to research and understand the differences between the two options before deciding.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+                            <p>Ultimately, whether to work for a life insurance company or to become an independent
+                                agent will depend on your personal preferences and career goals. It is important to
+                                research and understand the differences between the two options before deciding.</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/insurance-agent-working-with-colleagues-in-office.webp" alt="Insurance agent building her book of business" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/insurance-agent-working-with-colleagues-in-office.webp"
+                                    alt="Insurance agent building her book of business" loading="lazy"></figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-3">Build Your Book of Business</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-3">Build Your Book of Business</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Once you’ve chosen your path and have got your life insurance license, it’s time to build your book of business. A “book of business” is a term used to describe the collection of clients and policies that an insurance agent has. Building a powerful book of business is essential for success in the life insurance industry, as it is the source of an agent’s income.</p>
 
 
+                            <p>Once you’ve chosen your path and have got your life insurance license, it’s time to build
+                                your book of business. A “book of business” is a term used to describe the collection of
+                                clients and policies that an insurance agent has. Building a powerful book of business
+                                is essential for success in the life insurance industry, as it is the source of an
+                                agent’s income.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-1">Cold Calling</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-1">Cold Calling</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Cold calling is a tried-and-true method for expanding your client base. It involves <a href="https://dyl.com/blog/contact-organizer" target="_blank" rel="noopener" title="">contacting potential clients</a> who haven’t shown interest in life insurance. Although it can be difficult and require effort, cold calling offers the opportunity to form <a href="https://dyl.com/blog/contact-management-software" target="_blank" rel="noopener" title="">new client relationships</a> and gain new business.</p>
 
 
+                            <p>Cold calling is a tried-and-true method for expanding your client base. It involves <a
+                                    href="https://dyl.com/blog/contact-organizer" target="_blank" rel="noopener"
+                                    title="">contacting potential clients</a> who haven’t shown interest in life
+                                insurance. Although it can be difficult and require effort, cold calling offers the
+                                opportunity to form <a href="https://dyl.com/blog/contact-management-software"
+                                    target="_blank" rel="noopener" title="">new client relationships</a> and gain new
+                                business.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-2">Networking</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-2">Networking</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>An additional effective strategy for expanding your clientele is networking. This might involve going to professional events, becoming a member of local business associations, and networking with other area businesses. You may become known as a skilled and reputable life insurance agent in your community through networking.</p>
 
 
+                            <p>An additional effective strategy for expanding your clientele is networking. This might
+                                involve going to professional events, becoming a member of local business associations,
+                                and networking with other area businesses. You may become known as a skilled and
+                                reputable life insurance agent in your community through networking.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-3-3">Offer a Range of Products</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-3-3">Offer a Range of Products</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>You may expand your clientele by providing a variety of life insurance policies. This covers term life insurance and universal and permanent life insurance. You can <a href="https://dyl.com/blog/b2b-contact-database" target="_blank" rel="noopener" title="">offer your customers</a> the best policies by having a lot of knowledge on the various forms of life insurance and their needs.</p>
 
 
+                            <p>You may expand your clientele by providing a variety of life insurance policies. This
+                                covers term life insurance and universal and permanent life insurance. You can <a
+                                    href="https://dyl.com/blog/b2b-contact-database" target="_blank" rel="noopener"
+                                    title="">offer your customers</a> the best policies by having a lot of knowledge on
+                                the various forms of life insurance and their needs.</p>
 
-<p>It takes time, effort, and commitment to build a strong customer base. It could take several months or even years to build up a large clientele. You may succeed as a life insurance agent and build a strong clientele with hard work and by taking the right actions.&nbsp;</p>
 
 
+                            <p>It takes time, effort, and commitment to build a strong customer base. It could take
+                                several months or even years to build up a large clientele. You may succeed as a life
+                                insurance agent and build a strong clientele with hard work and by taking the right
+                                actions.&nbsp;</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-4">Learn About the Different Types of Life Insurance</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-4">Learn About the Different Types of Life
+                                Insurance</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Having extensive knowledge of life insurance policies is vital for life insurance agents to provide clients with the best options to suit their needs and grow their client base.</p>
 
 
+                            <p>Having extensive knowledge of life insurance policies is vital for life insurance agents
+                                to provide clients with the best options to suit their needs and grow their client base.
+                            </p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-1">Term Life Insurance</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-1">Term Life Insurance</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Term life insurance is a straightforward and economical form of coverage. It offers protection for a set duration, usually 10, 20, or 30 years. If the insured passes away during the policy’s term, the insurance company pays the death benefit. Clients typically choose this type of insurance for a defined need, like covering a mortgage or a dependent’s childhood.</p>
 
 
+                            <p>Term life insurance is a straightforward and economical form of coverage. It offers
+                                protection for a set duration, usually 10, 20, or 30 years. If the insured passes away
+                                during the policy’s term, the insurance company pays the death benefit. Clients
+                                typically choose this type of insurance for a defined need, like covering a mortgage or
+                                a dependent’s childhood.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-2">Permanent Life Insurance</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-2">Permanent Life Insurance</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Permanent life insurance, including whole life and universal life, offers lifelong coverage. These policies usually have higher premiums than term life insurance but offer a savings component that grows cash value. Clients often select permanent life insurance to provide lifelong coverage and accumulate cash value.</p>
 
 
+                            <p>Permanent life insurance, including whole life and universal life, offers lifelong
+                                coverage. These policies usually have higher premiums than term life insurance but offer
+                                a savings component that grows cash value. Clients often select permanent life insurance
+                                to provide lifelong coverage and accumulate cash value.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-4-3">Universal Life Insurance</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-4-3">Universal Life Insurance</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Universal life insurance is a permanent coverage option with flexible premium and death benefit options within limits, favored by clients who value adaptability and will assume the risk of cash value instability.</p>
 
 
+                            <p>Universal life insurance is a permanent coverage option with flexible premium and death
+                                benefit options within limits, favored by clients who value adaptability and will assume
+                                the risk of cash value instability.</p>
 
-<p>It’s important to note that not all clients will require the same type of coverage and it will depend on their needs and budget. Therefore, it is important to understand the differences between the policies and to provide your clients with the best options to meet their needs.</p>
-            
-                                      <div class="container bg-white ebook-popup-blog">
-                                        <div class="row">
-                                          <div class="col-md-6 padding-30 ebook-panel-dl">
-                                            <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead Generation!</p>
-                                            <p>Unlock the secrets to generate more leads! </p>
-                                            <ul>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Learn how to boost conversion rates</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Engage your target audience</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Generate quality leads</li>
-                                              <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png" width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
-                                            </ul>
-                                            <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                                              <div class="subscribe-button-ebook transition-3d-hover">Download the free
+
+
+                            <p>It’s important to note that not all clients will require the same type of coverage and it
+                                will depend on their needs and budget. Therefore, it is important to understand the
+                                differences between the policies and to provide your clients with the best options to
+                                meet their needs.</p>
+
+                            <div class="container bg-white ebook-popup-blog">
+                                <div class="row">
+                                    <div class="col-md-6 padding-30 ebook-panel-dl">
+                                        <p class="h4-sidenav-sub ebook-subheading-blog">Download Our Ebook on Lead
+                                            Generation!</p>
+                                        <p>Unlock the secrets to generate more leads! </p>
+                                        <ul>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Learn how to boost
+                                                conversion rates</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Engage your target
+                                                audience</li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Generate quality leads
+                                            </li>
+                                            <li><img src="https://images.dyl.com/marketing-web/images/blog/tick.png"
+                                                    width="20" alt="list icon" loading="lazy"> Enhance brand trust</li>
+                                        </ul>
+                                        <a
+                                            href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                                            <div class="subscribe-button-ebook transition-3d-hover">Download the free
                                                 Template</div>
-                                            </a>
-                                          </div>
-                                          <div class="col-md-6  d-flex align-items-stretch">
-                                            <img class="img-fluid" alt="ebook image" src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png" width="100%" height="100%" style="object-fit: cover;" loading="lazy">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-stretch">
+                                        <img class="img-fluid" alt="ebook image"
+                                            src="https://images.dyl.com/marketing-web/images/ebooks/beard-man-working-on-laptop.png"
+                                            width="100%" height="100%" style="object-fit: cover;" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
 
-        
 
 
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<figure class="wp-block-image size-large"><img decoding="async" src="https://images.dyl.com/marketing-blog/insurance-agents-meeting-with-computer.webp" alt="Insurance agent using computer at work to sell insurance" loading="lazy"></figure>
 
 
+                            <figure class="wp-block-image size-large mobile-display-none"><img decoding="async"
+                                    src="https://images.dyl.com/marketing-blog/insurance-agents-meeting-with-computer.webp"
+                                    alt="Insurance agent using computer at work to sell insurance" loading="lazy">
+                            </figure>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-5">Start Selling Life Insurance</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-5">Start Selling Life Insurance</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Now that you’ve got your education, chosen your path, and built your book of business, it’s time to sell life insurance. As a life insurance agent, you will <a href="https://dyl.com/blog/b2b-db" target="_blank" rel="noopener" title="">identify potential clients</a>, explaining the different life insurance policies available, and helping clients to choose the policy that best suits their needs.</p>
 
 
+                            <p>Now that you’ve got your education, chosen your path, and built your book of business,
+                                it’s time to sell life insurance. As a life insurance agent, you will <a
+                                    href="https://dyl.com/blog/b2b-db" target="_blank" rel="noopener" title="">identify
+                                    potential clients</a>, explaining the different life insurance policies available,
+                                and helping clients to choose the policy that best suits their needs.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-1">Selling Strategies&nbsp;</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-1">Selling Strategies&nbsp;</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>To succeed in the life insurance sector, you will need to develop powerful marketing techniques. This involves determining the needs of your potential customers, knowing their financial status, and clearly communicating the advantages of the different life insurance policies to them.</p>
 
 
+                            <p>To succeed in the life insurance sector, you will need to develop powerful marketing
+                                techniques. This involves determining the needs of your potential customers, knowing
+                                their financial status, and clearly communicating the advantages of the different life
+                                insurance policies to them.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-2">Work with a Life Insurance Company&nbsp;</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-2">Work with a Life Insurance Company&nbsp;</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Many life insurance agents choose to work with a life insurance company, as they provide support and resources to help agents build their book of business. This can include training programs, sales support, and marketing materials.</p>
 
 
+                            <p>Many life insurance agents choose to work with a life insurance company, as they provide
+                                support and resources to help agents build their book of business. This can include
+                                training programs, sales support, and marketing materials.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-5-3">Stay Up to Date with Industry Changes&nbsp;</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-5-3">Stay Up to Date with Industry Changes&nbsp;
+                            </h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Staying informed in the insurance industry is crucial, including taking CE courses, going to industry events, and being aware of changes in laws and regulations that may affect your business.</p>
 
 
+                            <p>Staying informed in the insurance industry is crucial, including taking CE courses, going
+                                to industry events, and being aware of changes in laws and regulations that may affect
+                                your business.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-6">Continue Your Education</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-6">Continue Your Education</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>As a life insurance agent, it’s essential to continue your education throughout your career. This will help you stay up to date with the latest trends and regulations in the insurance industry, and to provide your clients with the best service.</p>
 
 
+                            <p>As a life insurance agent, it’s essential to continue your education throughout your
+                                career. This will help you stay up to date with the latest trends and regulations in the
+                                insurance industry, and to provide your clients with the best service.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-6-1">Continuing Education</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-6-1">Continuing Education</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Many states require life insurance agents to complete continuing education (CE) courses to maintain their license. The number of CE hours required, and the types of courses that qualify, vary by state. It is important to check with your state’s insurance department for specific requirements.</p>
 
 
+                            <p>Many states require life insurance agents to complete continuing education (CE) courses
+                                to maintain their license. The number of CE hours required, and the types of courses
+                                that qualify, vary by state. It is important to check with your state’s insurance
+                                department for specific requirements.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-6-2">Stay Informed&nbsp;</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-6-2">Stay Informed&nbsp;</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Staying informed of law and regulation changes affecting business is vital. This can encompass updates to tax laws, insurance offerings, and consumer protection rules.</p>
 
 
+                            <p>Staying informed of law and regulation changes affecting business is vital. This can
+                                encompass updates to tax laws, insurance offerings, and consumer protection rules.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h3 class="wp-block-heading" id="heading-6-3">Networking</h3>
 
 
+                            <h3 class="wp-block-heading" id="heading-6-3">Networking</h3>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>Keeping informed in the insurance industry can be achieved by taking courses, attending events, and being aware of changes in regulations. <a href="https://dyl.com/blog/b2b-email-database" target="_blank" rel="noopener" title="">Networking with peers</a> through attending events, joining associations, and taking part in online forums also helps to stay updated with industry trends.</p>
 
 
+                            <p>Keeping informed in the insurance industry can be achieved by taking courses, attending
+                                events, and being aware of changes in regulations. <a
+                                    href="https://dyl.com/blog/b2b-email-database" target="_blank" rel="noopener"
+                                    title="">Networking with peers</a> through attending events, joining associations,
+                                and taking part in online forums also helps to stay updated with industry trends.</p>
 
-<p>By continuing your education and staying informed, you can ensure that you are providing your clients with the best service and that you are staying compliant with all laws and regulations. This will help to build trust with your clients, and ultimately help you grow your business and become a successful life insurance agent.</p>
 
 
+                            <p>By continuing your education and staying informed, you can ensure that you are providing
+                                your clients with the best service and that you are staying compliant with all laws and
+                                regulations. This will help to build trust with your clients, and ultimately help you
+                                grow your business and become a successful life insurance agent.</p>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<h2 class="wp-block-heading" id="heading-7">Conclusion&nbsp;</h2>
 
 
+                            <h2 class="wp-block-heading" id="heading-7">Conclusion&nbsp;</h2>
 
-<div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
+                            <div style="height:19px" aria-hidden="true" class="wp-block-spacer"></div>
 
-<p>To sell life insurance, you need to first get the licenses and certifications required to sell life insurance. Building a network of potential clients and educating them on the benefits and importance of life insurance.&nbsp;</p>
 
 
+                            <p>To sell life insurance, you need to first get the licenses and certifications required to
+                                sell life insurance. Building a network of potential clients and educating them on the
+                                benefits and importance of life insurance.&nbsp;</p>
 
-<p>Want something specific to be covered about ways to improve your business using VoIP? Reach out to us at <a href="mailto:marketing@dyl.com">marketing@dyl.com</a></p>
-</div>
-                          <br>
-                          <br>
-                          <div class="row text-center row-pf" style="background-image: url('https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp')">
+
+
+                            <p>Want something specific to be covered about ways to improve your business using VoIP?
+                                Reach out to us at <a href="mailto:marketing@dyl.com">marketing@dyl.com</a></p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row text-center row-pf lazy-bg lazy-background"
+                            data-bg="https://images.dyl.com/marketing-blog/business-man-meeting-with-prospects.webp">
                             <div class="col">
                             </div>
                             <div class="col col-pf">
-                              <p class="download-text"> Download our new Texting Templates </p>
-                              <img class="img-post-bottom lazy" data-src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp" width="100%" height="200" style="object-fit: cover;" alt="Download our new Texting Templates" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download" data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
+                                <p class="download-text"> Download our new Texting Templates </p>
+                                <img class="img-post-bottom lazy" src="https://images.dyl.com/marketing-web/images/blog/3D-Ebook-Mockup-Blog.webp"
+                                    width="100%" height="200" style="object-fit: cover;"
+                                    alt="Download our new Texting Templates" loading="lazy">
+                                <a href="#textingTemplates" aria-labelledby="Text Messaging Templates Download"
+                                    data-toggle="modal"><button class="btn-pf transition-3d-hover">Download</button></a>
                             </div>
-                          </div>
+                        </div>
 
-                          <br><br><br>
-                          <div class="row row-auth">
+                        <br><br><br>
+                        <div class="row row-auth">
                             <div class="col-sm-12 col-lg-12">
-                              <div class="post-img-auth-column-left">
+                                <div class="post-img-auth-column-left">
 
-                                <img class="auth-img lazy" data-src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg" alt="Alex Vetter" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                              </div>
-                              <div class="post-img-auth-column-right">
-                                <p class="auth-title h5-author-sub">
+                                    <img class="auth-img lazy" src="https://wordpress.dyl.com/wp-content/uploads/2023/05/T02AJBC1M-U01ELBCE14N-193fffa52513-1000-e1727901468819.jpeg"
+                                        alt="Alex Vetter" loading="lazy">
+                                </div>
+                                <div class="post-img-auth-column-right">
+                                    <p class="auth-title h5-author-sub">
 
-                                  <a href="/blog/author/avetter">Alex Vetter</a>
-                                  </p>
-                                <p class="article-author-position">Alex Vetter is the product marketing manager at DYL. With a Masters from College de Paris, he runs the marketing department and helps with product management at DYL.
-                                </p>
-                              </div>
+                                        <a href="author/avetter.html">Alex Vetter</a>
+                                    </p>
+                                    <p class="article-author-position">Alex Vetter is the product marketing manager at
+                                        DYL. With a Masters from College de Paris, he runs the marketing department and
+                                        helps with product management at DYL.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-widget">
+                        <div class="sticky-top subscribe-sidebar">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Subscribe </p>
+                                    <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
+
+                                        <input type="hidden" name="u" value="55">
+                                        <input type="hidden" name="f" value="55">
+                                        <input type="hidden" name="s">
+                                        <input type="hidden" name="c" value="0">
+                                        <input type="hidden" name="m" value="0">
+                                        <input type="hidden" name="act" value="sub">
+                                        <input type="hidden" name="v" value="2">
+
+                                        <!-- Name Field -->
+                                        <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                            data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                            aria-invalid="true" placeholder="Name" required=""><br><br>
+
+                                        <!-- Email Field -->
+                                        <input class="email-class form-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="" data-name="email"
+                                            aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+
+                                        <!-- Submit Button -->
+                                        <button type="button" class="subscribe-class transition-3d-hover"
+                                            onclick="submitForm()">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Connect with us </p>
+                                    <div class="social-container">
+                                        <a href="https://www.facebook.com/dylinfo" target="_blank"
+                                            aria-label="Check out Dyl facebook">
+                                            <i class="fab fa-facebook-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://twitter.com/dyl" target="_blank"
+                                            aria-label="Check out Dyl latest tweet">
+                                            <i class="fab fa-twitter-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/dyl" target="_blank"
+                                            aria-label="Check out Dyl linkedin">
+                                            <i class="fab fa-linkedin"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://vimeo.com/dyldotcom" target="_blank"
+                                            aria-label="Check out Dyl vimeo">
+                                            <i class="fab fa-vimeo-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA"
+                                            target="_blank" aria-label="Check out Dyl newest video">
+                                            <i class="fab fa-youtube-square"
+                                                style="font-size: 41px; padding-right: 10px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
+                                    <div class="learn-more-about-container">
+                                        <p><a href="https://dyl.com/business-phone-service"
+                                                class="learn-more-about-dyl-link">DYL Product</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <script>
+                            function validateForm() {
+                                var firstname = document.getElementById("firstname").value;
+                                var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+
+                                console.log("Validating form...");
+                                if (!regex.test(firstname)) {
+                                    console.log("Validation failed: special characters found.");
+                                    alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                                    return false;
+                                }
+
+                                console.log("Validation passed: no special characters found.");
+                                return true;
+                            }
+
+                            function submitForm() {
+                                if (!validateForm()) {
+                                    console.log("Form submission blocked due to validation failure.");
+                                    return; // Do not proceed if validation fails
+                                }
+
+                                // Gather form data
+                                var form = document.getElementById("subscribeForm");
+                                var formData = new FormData(form);
+
+                                // Send form data via fetch
+                                fetch("https://dyl361.activehosted.com/proc.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error("Network response was not ok.");
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(result => {
+                                        alert("Subscription successful");
+                                    })
+                                    .catch(error => {
+                                        console.error("Submission error:", error);
+                                        window.location.reload();
+                                    });
+                            }
+                        </script>
+                        <script>
+
+                            function setCookie(name, value, days) {
+                                var date = new Date();
+                                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                                var expires = "expires=" + date.toUTCString();
+                                document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                            }
+
+                            function getCookie(name) {
+                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                                return match ? match[2] : null;
+                            }
+
+                            document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+                                event.preventDefault();  // Prevent page refresh
+
+                                var email = document.getElementById("email").value;
+
+                                setCookie("email", email, 30);
+
+                                console.log("Email stored in cookie:", email);
+                            });
+
+                            window.onload = function () {
+                                var storedEmail = getCookie("email");
+                                if (storedEmail) {
+                                    console.log("Stored demo form email from cookie:", storedEmail);
+                                } else {
+                                    console.log("No email found in cookies.");
+                                }
+                            };
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-widget">
-                  <div class="sticky-top subscribe-sidebar">
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Subscribe </p>
-      <form id="subscribeForm" class="subscribe-form js-validate" novalidate="novalidate">
-        
-        <input type="hidden" name="u" value="55">
-        <input type="hidden" name="f" value="55">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
-        <!-- Name Field -->
-        <input id="firstname" type="text" name="name" class="fname-class form-control" data-name="firstname" aria-describedby="emailHelp firstname-error" aria-invalid="true" placeholder="Name" required=""><br><br>
-
-        <!-- Email Field -->
-        <input class="email-class form-control" type="text" id="email" name="email" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
-
-        <!-- Submit Button -->
-        <button type="button" class="subscribe-class transition-3d-hover" onclick="submitForm()">Subscribe</button>
-      </form>
-    </div>  
-  </div>
-  <br><br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Connect with us </p>
-      <div class="social-container">
-        <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-          <i class="fab fa-facebook-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-          <i class="fab fa-twitter-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-          <i class="fab fa-linkedin" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-          <i class="fab fa-vimeo-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-          <i class="fab fa-youtube-square" style="font-size: 41px; padding-right: 10px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col">
-      <p class="form-heading h4-sidenav-sub"> Learn more About DYL </p>
-      <div class="learn-more-about-container">
-        <p><a href="https://dyl.com/business-phone-service" class="learn-more-about-dyl-link">DYL Product</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<script async="" src="https://www.clarity.ms/s/0.8.9/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/8lb3vpm72e"></script><script src="https://diffuser-cdn.app-us1.com/diffuser/diffuser.js" async=""></script><script>
-  function validateForm() {
-    var firstname = document.getElementById("firstname").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
-
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
-
-  function submitForm() {
-    if (!validateForm()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
-
-    // Gather form data
-    var form = document.getElementById("subscribeForm");
-    var formData = new FormData(form);
-
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-            var expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-        }
-
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-            return match ? match[2] : null;
-        }
-
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent page refresh
-
-            var email = document.getElementById("email").value;
-      
-            setCookie("email", email, 30);
-
-            console.log("Email stored in cookie:", email);
-        });
-
-        window.onload = function() {
-            var storedEmail = getCookie("email");
-            if (storedEmail) {
-                console.log("Stored demo form email from cookie:", storedEmail);
-            } else {
-                console.log("No email found in cookies.");
-            }
-        };
-  </script>                </div>
-              </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-<section class="element-related-mid">
-          <div class="container">
+    <section class="element-related-mid">
+        <div class="container">
             <div class="row row-related-mid text-center">
-              <div class="col">
-                <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
-              </div>
+                <div class="col">
+                    <p class="related-post-heading h4-sidenav-sub">Related Posts</p>
+                </div>
             </div>
 
             <div class="row related-posts-list">
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/sales-automation-is-revolutionizing-real-estate" aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How Sales Automation is Revolutionizing Real Estate Lead Generation</a>
-		  </p>
-	      
-There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a variety of factors, including digit...
-	    </div>
-	</div>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/sales-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          Sales Tips
-	        </p>
-	      </a>
-	      <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          March 18, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-sales-teams-can-improve-their-pitch" aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their Pitch</a>
-		  </p>
-	      
-Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A good sales pitch doesn’t sound l...
-	    </div>
-	</div>
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/sales-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                            aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-crm.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">sales-automation-is-revolutionizing-real-estate</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/sales-automation-is-revolutionizing-real-estate"
+                                aria-label="How Sales Automation is Revolutionizing Real Estate Lead Generation">How
+                                Sales Automation is Revolutionizing Real Estate Lead Generation</a>
+                        </p>
 
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/improve-sales">
-	        <p class="element-post-category transition-3d-hover">
-	          Improve Sales
-	        </p>
-	      </a>
-	      <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          February 10, 2025 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 10 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation" aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build a High-Performance Sales Funnel Using Automation</a>
-		  </p>
-	      
-In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is great news overall. But how do you en...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/top-crm-benefits-for-growing-your-business" aria-label="Top CRM Benefits for Growing Your Business">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/crm-team-meeting-with-staff.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">top-crm-benefits-for-growing-your-business</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          December 23, 2024 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 17 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/top-crm-benefits-for-growing-your-business" aria-label="Top CRM Benefits for Growing Your Business">Top CRM Benefits for Growing Your Business</a>
-		  </p>
-	      
-CRM benefits are crucial for the growth and success of businesses in today’s world. As companies strive to expand their customer ...
-	    </div>
-	</div>
-
-	
-	<div class="col-lg-4 col-rlt">
-	    <div class="bottom-post-col">
-	      <a href="/blog/category/crm-tools-and-tips">
-	        <p class="element-post-category transition-3d-hover">
-	          CRM Tools + Tips
-	        </p>
-	      </a>
-	      <a href="/blog/why-integration-for-crm-is-key-for-growth" aria-label="Why Integration for CRM is Key for Growth">
-	        <img class="img-post-bottom  blog-image-intrinsic" src="https://images.dyl.com/marketing-blog/integrating-crm-illustration-augmented-reality.webp" alt="" height="200" loading="lazy" style="object-fit: cover;">
-			<span class="sr-only">why-integration-for-crm-is-key-for-growth</span>
-	      </a>
-	      <div class="blog-meta">
-	        <p class="post-date">
-	          December 23, 2024 
-	        </p>
-	        <p class="post-sep">•</p>
-	        <p class="post-min"> 17 min read </p>
-	      </div>
-	      <p class="heading-post-bottom h6-sub">
-	        <a href="/blog/why-integration-for-crm-is-key-for-growth" aria-label="Why Integration for CRM is Key for Growth">Why Integration for CRM is Key for Growth</a>
-		  </p>
-	      
-In today’s competitive business landscape, effective customer relationship management (CRM) is paramount for sustainable growth. ...
-	    </div>
-	</div>
+                        There is no doubt that real estate is an extremely competitive industry. Moreover, owing to a
+                        variety of factors, including digit...
+                    </div>
+                </div>
 
 
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/sales-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                Sales Tips
+                            </p>
+                        </a>
+                        <a href="/blog/how-sales-teams-can-improve-their-pitch"
+                            aria-label="How Sales Teams Can Improve Their Pitch">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/thumbnail-sales-woman-and-team-working-together-mini.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-sales-teams-can-improve-their-pitch</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                March 18, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-sales-teams-can-improve-their-pitch"
+                                aria-label="How Sales Teams Can Improve Their Pitch">How Sales Teams Can Improve Their
+                                Pitch</a>
+                        </p>
 
-</div>
-            <div class="pagination-col">
-              <div id="pagination-container"></div>
+                        Do all your salespeople have the gift of the gab? Can they sell ice to a polar bear in winter? A
+                        good sales pitch doesn’t sound l...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/improve-sales">
+                            <p class="element-post-category transition-3d-hover">
+                                Improve Sales
+                            </p>
+                        </a>
+                        <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation"
+                            aria-label="How to Build a High-Performance Sales Funnel Using Automation">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/sales-automation-professional-working-on-computer.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">how-to-build-a-high-performance-sales-funnel-using-automation</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                February 10, 2025
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 10 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/how-to-build-a-high-performance-sales-funnel-using-automation"
+                                aria-label="How to Build a High-Performance Sales Funnel Using Automation">How to Build
+                                a High-Performance Sales Funnel Using Automation</a>
+                        </p>
+
+                        In 2024, Statista reported that e-commerce sales worldwide exceeded $4.1 trillion, which is
+                        great news overall. But how do you en...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/top-crm-benefits-for-growing-your-business"
+                            aria-label="Top CRM Benefits for Growing Your Business">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/crm-team-meeting-with-staff.webp" alt=""
+                                height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">top-crm-benefits-for-growing-your-business</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                December 23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 17 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/top-crm-benefits-for-growing-your-business"
+                                aria-label="Top CRM Benefits for Growing Your Business">Top CRM Benefits for Growing
+                                Your Business</a>
+                        </p>
+
+                        CRM benefits are crucial for the growth and success of businesses in today’s world. As companies
+                        strive to expand their customer ...
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-rlt">
+                    <div class="bottom-post-col">
+                        <a href="/blog/category/crm-tools-and-tips">
+                            <p class="element-post-category transition-3d-hover">
+                                CRM Tools + Tips
+                            </p>
+                        </a>
+                        <a href="/blog/why-integration-for-crm-is-key-for-growth"
+                            aria-label="Why Integration for CRM is Key for Growth">
+                            <img class="img-post-bottom  blog-image-intrinsic"
+                                src="https://images.dyl.com/marketing-blog/integrating-crm-illustration-augmented-reality.webp"
+                                alt="" height="200" loading="lazy" style="object-fit: cover;">
+                            <span class="sr-only">why-integration-for-crm-is-key-for-growth</span>
+                        </a>
+                        <div class="blog-meta">
+                            <p class="post-date">
+                                December 23, 2024
+                            </p>
+                            <p class="post-sep">•</p>
+                            <p class="post-min"> 17 min read </p>
+                        </div>
+                        <p class="heading-post-bottom h6-sub">
+                            <a href="/blog/why-integration-for-crm-is-key-for-growth"
+                                aria-label="Why Integration for CRM is Key for Growth">Why Integration for CRM is Key
+                                for Growth</a>
+                        </p>
+
+                        In today’s competitive business landscape, effective customer relationship management (CRM) is
+                        paramount for sustainable growth. ...
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </section>
+            <div class="pagination-col">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1713,9 +1977,9 @@ In today’s competitive business landscape, effective customer relationship man
                         details,
                         see our Privacy Policy.</small>
                     <hr>
-                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" alt="dyl logo"> Not
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png"  loading="lazy" alt="dyl logo"> Not
                         using
-                        <a href="https://dyl.com" loading="lazy">DYL</a> yet?
+                        <a href="https://dyl.com">DYL</a> yet?
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1732,24 +1996,26 @@ In today’s competitive business landscape, effective customer relationship man
         </div>
     </div>
 
-   <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="text-center lazy" alt="Download marketing template" loading="lazy" src="https://images.dyl.com/marketing-blog/lead-gen-and-capture-ebook.webp" style="">
-                        <h6 class="text-center">
-                            Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true" onclick="togglerightPanel()"></i>
-                        </h6>
-                        <p class="text-center">
-                            This Ebook includes guides to generate more leads and improve your lead qualification process.
-                        </p>
-                        <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
-                            <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
-                        </a>
-                    </div>
+    <div class="blog-bottom-right-div" id="popUprightDiv" style="height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="text-center lazy" alt="Download marketing template" loading="lazy"
+                        src="https://images.dyl.com/marketing-blog/mobile2/lead-gen-and-capture-ebook.webp">
+                    <h6 class="text-center">
+                        Download Our Free Ebook <i class="fa fa-angle-down" aria-hidden="true"
+                            onclick="togglerightPanel()"></i>
+                    </h6>
+                    <p class="text-center">
+                        This Ebook includes guides to generate more leads and improve your lead qualification process.
+                    </p>
+                    <a href="https://dyl.com/ebooks/the-ultimate-guide-on-lead-generation-and-lead-capture">
+                        <div class="subscribe-class-pop transition-3d-hover">Download the free Template</div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -2205,13 +2471,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+      
 
         <script>
 
@@ -2277,17 +2537,7 @@ thank-you" />
             });
 
 
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                    trackEvent("request_quote", "Clicked Request Quote Button");
-                });
-            });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                    trackEvent("chat_now", "Clicked Chat Now Button");
-                });
-            });
+        
 
 
             window.onload = function () {
@@ -2951,35 +3201,38 @@ thank-you" />
     </aside>
 
 
+<script src="../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const bg = el.getAttribute('data-bg');
+                            if (bg) {
+                                el.style.backgroundImage = `url('${bg}')`;
+                                el.classList.remove('lazy-background'); // optional cleanup
+                                observer.unobserve(el);
+                            }
+                        }
+                    });
+                });
 
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
+                lazyBackgrounds.forEach(bg => observer.observe(bg));
+            } else {
+                // Fallback for old browsers
+                lazyBackgrounds.forEach(el => {
+                    const bg = el.getAttribute('data-bg');
+                    if (bg) el.style.backgroundImage = `url('${bg}')`;
+                });
+            }
         });
     </script>
 
@@ -2995,22 +3248,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3038,9 +3276,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -3103,21 +3341,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
@@ -3127,6 +3351,26 @@ thank-you" />
                     if (!img.hasAttribute("loading")) {
                         img.setAttribute("loading", "lazy");
                     }
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const script = document.createElement('script');
+            script.src = '../js/jquery.min.js';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
                 });
             }
         });
@@ -3165,7 +3409,6 @@ thank-you" />
             $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
         });
     </script>
-
 
 </body>
 
