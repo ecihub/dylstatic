@@ -4533,7 +4533,7 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
     <script defer src="js/front.min.js"></script>
     <script type="text/javascript">
@@ -4590,6 +4590,15 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+
+    <script>
+    window.addEventListener('load', function () {
+        const script = document.createElement('script');
+        script.src = 'js/jquery.min.js';
+        script.defer = true;
+        document.body.appendChild(script);
+    });
+</script>
 </body>
 
 </html>
