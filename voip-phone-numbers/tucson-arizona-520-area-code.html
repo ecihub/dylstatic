@@ -4086,14 +4086,24 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-    <script>
-        window.addEventListener('load', function () {
-            const script = document.createElement('script');
-            script.src = '../js/jquery.min.js';
-            script.defer = true; // optional
-            document.body.appendChild(script);
+          <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
+   <script>
+    window.addEventListener('load', function () {
+        const script = document.createElement('script');
+        script.src = '../js/jquery.min.js';
+        script.defer = true;
+        document.body.appendChild(script);
+    });
+</script>
 </body>
 
 </html>
