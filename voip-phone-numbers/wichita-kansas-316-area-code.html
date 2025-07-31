@@ -3919,7 +3919,7 @@ thank-you" />
     </div>
 
 
-    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.min.js" defer></script>
 
     <script src="../js/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
@@ -3971,6 +3971,7 @@ thank-you" />
         }
     </script>
     <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
         var popup2Quote = false;
 
         $(document).scroll(function () {
@@ -3978,15 +3979,13 @@ thank-you" />
             if (y > 2000 && !popup2Quote) {
                 $('#requestQuoteContent').fadeIn();
                 popup2Quote = true;
-            } else {
-
             }
         });
-
-    </script>
+    });
+</script>
 
     <script defer>
-
+    document.addEventListener('DOMContentLoaded', function () {
         jQuery.event.special.touchstart = {
             setup: function (_, ns, handle) {
                 this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
@@ -4007,7 +4006,9 @@ thank-you" />
                 this.addEventListener("mousewheel", handle, { passive: true });
             }
         };
-    </script>
+    });
+</script>
+
 
 
 
