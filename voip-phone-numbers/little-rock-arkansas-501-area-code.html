@@ -3943,22 +3943,6 @@ thank-you" />
 
 
 
-    <script>
-        const lazyBackgrounds = document.querySelectorAll('.lazy-background');
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.backgroundImage = `url(${entry.target.getAttribute('data-bg')})`;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        lazyBackgrounds.forEach(div => {
-            observer.observe(div);
-        });
-    </script>
     <script src="../js/jquery.min.js"></script>
 
     <script src="../js/popper.min.js" defer></script>
