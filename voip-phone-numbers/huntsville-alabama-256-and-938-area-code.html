@@ -1218,15 +1218,11 @@
 
 <body>
     <div class="dynamic-areacode-banner">
-        <picture>
-            <source media="(max-width: 480px)"
-                srcset="https://images.dyl.com/marketing-web/images/area-codes/Huntsville256and938/256-and-938-Area-Code-Huntsville-Alabama-city.webp">
-            <source media="(min-width: 481px)"
-                srcset="https://images.dyl.com/marketing-web/images/area-codes/Huntsville256and938/256-and-938-Area-Code-Huntsville-Alabama-city.webp">
+      
             <img src="https://images.dyl.com/marketing-web/images/area-codes/Huntsville256and938/256-and-938-Area-Code-Huntsville-Alabama-city.webp"
-                alt="DYL Serves the 256 and 938&nbsp;Area Codes phone numbers" fetchpriority="high" loading="eager"
+                alt="DYL Serves the 256 and 938&nbsp;Area Codes phone numbers"
                 height="832px" width="1420px" class="img-fluid areacode-head-image mobile-display-none">
-        </picture>
+      
 
         <div class="hero-overlay">
             <div class="container ind-container area-code-container pb-2">
@@ -4071,12 +4067,14 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-    <script>
-        window.addEventListener('load', function () {
-            const script = document.createElement('script');
-            script.src = '../js/jquery.min.js';
-            script.defer = true; // optional
-            document.body.appendChild(script);
+   <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
 </body>

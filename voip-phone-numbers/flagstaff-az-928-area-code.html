@@ -1218,12 +1218,12 @@
 
 <body>
     <div class="dynamic-areacode-banner">
-        <picture>
+      
            
             <img src="https://images.dyl.com/marketing-web/images/area-codes/flagstaff928/arizona-city-928.webp"
                 alt="DYL Serves the 928 Area Code phone numbers" fetchpriority="high" loading="eager" height="832px"
                 width="1420px" class="img-fluid areacode-head-image mobile-display-none">
-        </picture>
+     
 
         <div class="hero-overlay">
             <div class="container ind-container area-code-container pb-2">
@@ -4049,13 +4049,15 @@ thank-you" />
         });
     </script>
    <script>
-  window.addEventListener('load', function () {
-    const script = document.createElement('script');
-    script.src = '../js/jquery.min.js';
-    script.defer = true; // optional
-    document.body.appendChild(script);
-  });
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

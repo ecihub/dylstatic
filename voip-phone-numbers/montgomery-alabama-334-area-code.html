@@ -1220,12 +1220,12 @@
 
 <body>
     <div class="dynamic-areacode-banner">
-        <picture>
+       
 
             <img src="https://images.dyl.com/marketing-web/images/area-codes/Montgomery334/334-Montgomery-Alabama-area-code-city-view.webp"
-                alt="DYL Serves the 334 Area Code phone numbers" fetchpriority="high" loading="eager" height="832px"
+                alt="DYL Serves the 334 Area Code phone numbers"  height="832px"
                 width="1420px" class="img-fluid areacode-head-image mobile-display-none">
-        </picture>
+      
 
         <div class="hero-overlay">
             <div class="container ind-container area-code-container pb-2">
@@ -1254,7 +1254,7 @@
                     class="col-md-4 col-12 mr-md-auto ml-lg-0 ml-md-auto mr-sm-auto mr-xs-auto ml-sm-auto ml-xs-auto d-none d-md-block">
 
 
-                    <img class="img-fluid mobile-display-none"
+                    <img class="img-fluid "
                         src="https://images.dyl.com/marketing-web/images/area-codes/Montgomery334/334.webp"
                         alt="334 area code map - Montgomery, Alabama" height="268px" width="266px" loading="lazy">
 
@@ -4093,11 +4093,13 @@ thank-you" />
         });
     </script>
     <script>
-        window.addEventListener('load', function () {
-            const script = document.createElement('script');
-            script.src = '../js/jquery.min.js';
-            script.defer = true; // optional
-            document.body.appendChild(script);
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
 </body>
