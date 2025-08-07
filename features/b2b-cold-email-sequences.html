@@ -1230,7 +1230,7 @@
                 customers.
             </p>
 
-            <img class="img-fluid pb-3" src="https://images.dyl.com/marketing-web/images/features/b2c-targets.webp"
+            <img class="img-fluid pb-3 mobile-display-none" src="https://images.dyl.com/marketing-web/images/features/b2c-targets.webp"
                 width="1500" height="545" alt="B2C marketing targets represented in colorful graphics." loading="lazy">
 
 
@@ -3949,5 +3949,16 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>

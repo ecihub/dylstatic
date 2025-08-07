@@ -1253,7 +1253,7 @@
                 well-organized system of customer service email workflows ultimately drives success for any business.
             </p>
 
-            <img class="img-fluid pb-3"
+            <img class="img-fluid pb-3 mobile-display-none"
                 src="https://images.dyl.com/marketing-web/images/features/tech-customer-service-workflows.webp"
                 width="1500" height="545" alt="customer service emails sent via computer" loading="lazy">
 
@@ -3981,5 +3981,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>

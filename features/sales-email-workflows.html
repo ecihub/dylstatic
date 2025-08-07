@@ -1269,7 +1269,7 @@
                 customers and
                 driving success in any marketing strategy.
             </p>
-            <img class="img-fluid pb-3"
+            <img class="img-fluid pb-3 mobile-display-none"
                 src="https://images.dyl.com/marketing-web/images/features/tech-sales-email-workflow.webp" width="1500"
                 height="545" alt="sales emails at work on computer" loading="lazy">
 
@@ -4029,5 +4029,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
