@@ -15,16 +15,10 @@
         content="Discover powerful sales funnel email features on Dyl.com to boost conversions and engage your audience effectively. Maximize your email marketing success!">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
-        sizes="16x16">
-
     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
 
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
 
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
 
     <style>
         body {
@@ -64,17 +58,15 @@
                 color: #0269ff !important;
             }
 
-            .sales-funnel-head-image {
-                width: 345px;
-                height: 280px;
-
+            .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
     <link rel="preload" as="image" href="https://images.dyl.com/marketing-web/images/features/Sales-funnel-emails.webp"
-        imagesrcset="https://images.dyl.com/marketing-web/images/features/Sales-funnel-emails.webp">
+        imagesrcset="https://images.dyl.com/marketing-web/images/features/Sales-funnel-emails.webp"  fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 
 </head>
@@ -1160,7 +1152,7 @@
                         <img src="https://images.dyl.com/marketing-web/images/features/Sales-funnel-emails.webp"
                             srcset="https://images.dyl.com/marketing-web/images/features/Sales-funnel-emails.webp 500w"
                             sizes="(max-width: 600px) 100vw, 500px" width="500" height="406"
-                            class="img-fluid z-depth-1 py-0 center-block sales-funnel-head-image " alt="man with laptop"
+                            class="img-fluid z-depth-1 py-0 center-block sales-funnel-head-image mobile-display-none" alt="man with laptop"
                             style="box-shadow: none;" fetchpriority="high" loading="eager">
                     </picture>
                 </div>
@@ -3808,11 +3800,10 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -3837,22 +3828,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+   
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3882,13 +3858,13 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const buttons = [
-                { id: "trackingButton", event: "feature_sales_funnel_emails", label: "Clicked Get started 1st section" }
+                { id: "trackingButton", event: "feature_automated_email_sequences", label: "Clicked Get started 1st section" }
             ];
 
             buttons.forEach(function (button) {
@@ -3903,7 +3879,6 @@ thank-you" />
             });
         });
     </script>
-
       <script type="text/javascript">
 
         function loadSales() {
