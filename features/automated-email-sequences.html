@@ -21,10 +21,7 @@
     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
 
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+   
 
     <style>
         body {
@@ -64,18 +61,16 @@
                 color: #0269ff !important;
             }
 
-            .business-phone-head-image {
-                width: 345px;
-                height: 317px;
-
+              .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/templateimage/template-1-header.webp"
-        imagesrcset="https://images.dyl.com/marketing-web/images/templateimage/template-1-header.webp">
+        imagesrcset="https://images.dyl.com/marketing-web/images/templateimage/template-1-header.webp" fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 
 </head>
@@ -1159,8 +1154,8 @@
                         <img src="https://images.dyl.com/marketing-web/images/templateimage/template-1-header.webp"
                             srcset="https://images.dyl.com/marketing-web/images/templateimage/template-1-header.webp 500w"
                             sizes="(max-width: 600px) 100vw, 500px" width="500" height="459"
-                            class="img-fluid z-depth-1 py-0 center-block business-phone-head-image"
-                            alt="man with laptop" style="box-shadow: none;" fetchpriority="high" loading="eager">
+                            class="img-fluid z-depth-1 py-0 center-block business-phone-head-image mobile-display-none"
+                            alt="man with laptop">
                     </picture>
                 </div>
                 <div class="col-md-6 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-5 px-0">
@@ -3801,11 +3796,10 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -3830,22 +3824,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+   
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3875,9 +3854,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const buttons = [
