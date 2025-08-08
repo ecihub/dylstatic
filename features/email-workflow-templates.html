@@ -14,15 +14,12 @@
         content="Discover powerful email workflow templates at Dyl.com! Streamline your communication and boost productivity with customizable solutions. Explore now!">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
+  
 
+    <link rel="preload" href="../scss/index-feature.min.css" as="style">
+    <link rel="stylesheet" href="../scss/index-feature.min.css">
 
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
-
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+   
 
     <style>
         body {
@@ -62,18 +59,16 @@
                 color: #0269ff !important;
             }
 
-            .sales-email-sequence-image {
-                width: 327px;
-                height: 302px;
-
+              .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/features/email-workflow-templates.webp"
-        imagesrcset="https://images.dyl.com/marketing-web/images/features/email-workflow-templates.webp">
+        imagesrcset="https://images.dyl.com/marketing-web/images/features/email-workflow-templates.webp"  fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 
 </head>
@@ -1161,9 +1156,9 @@
                             class="btn btn-md btn-primary transition-3d-hover">Get Started</a>
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0">
-                        <img fetchpriority="high"
+                        <img 
                             src="https://images.dyl.com/marketing-web/images/features/email-workflow-templates.webp"
-                            class="img-fluid z-depth-1 py-0 center-block "
+                            class="img-fluid z-depth-1 py-0 center-block mobile-display-none"
                             alt="Email workflow templates for streamlined and efficient marketing communication"
                             width="500" height="459" style="box-shadow: none;">
                     </div>
@@ -1243,7 +1238,7 @@
                 automate tasks, and connect better with their audience.
             </p>
             <div class="col-md-12 col-12 mr-md-auto ml-lg-0 ml-md-auto mr-sm-auto mr-xs-auto ml-sm-auto ml-xs-auto">
-                <img class="img-fluid pb-3"
+                <img class="img-fluid pb-3 mobile-display-none"
                     src="https://images.dyl.com/marketing-web/images/features/team-meeting-in-concrete-office-space.webp"
                     width="1500" height="545" alt="business-man-in-office-speaks-with-staff" loading="lazy">
             </div>
@@ -2666,13 +2661,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+      
 
         <script>
 
@@ -3851,11 +3840,10 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -3880,22 +3868,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+   
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3925,13 +3898,13 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const buttons = [
-                { id: "trackingButton", event: "feature_email_workflow_templates", label: "Clicked Get started 1st section" }
+                { id: "trackingButton", event: "feature_automated_email_sequences", label: "Clicked Get started 1st section" }
             ];
 
             buttons.forEach(function (button) {
@@ -3945,27 +3918,8 @@ thank-you" />
                 }
             });
         });
-
-        document.querySelectorAll(".demo-button-nav").forEach(function (button) {
-            button.addEventListener("click", function () {
-                trackEvent("demo_nav_bar", "Clicked Demo Button");
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("requestQuoteButton").addEventListener("click", function () {
-                trackEvent("request_quote", "Clicked Request Quote Button");
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("chatUsNowButton").addEventListener("click", function () {
-                trackEvent("chat_now", "Clicked Chat Now Button");
-            });
-        });
     </script>
-
-    <script type="text/javascript">
+      <script type="text/javascript">
 
         function loadSales() {
 
@@ -4017,5 +3971,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
