@@ -12,13 +12,12 @@
     <title>Call Scheduling | DYL</title>
     <meta name="description"
         content="DYL's Call Scheduling software reminds you of upcoming important calls and appointments, so you can follow-up with prospects and customers as promised.">
-    <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
+     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/stream-styles.css">
-
+    <link rel="preload" href="../scss/index-feature.min.css" as="style">
+    <link rel="stylesheet" href="../scss/index-feature.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -57,18 +56,16 @@
                 color: #0269ff !important;
             }
 
-            .sales-email-sequence-image {
-                width: 327px;
-                height: 302px;
-
+            .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/product/woman-computer-man-texting.webp"
-        imagesrcset="https://images.dyl.com/marketing-web/images/product/woman-computer-man-texting.webp">
+        imagesrcset="https://images.dyl.com/marketing-web/images/product/woman-computer-man-texting.webp" fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp" fetchpriority="high"> 
 
 
 </head>
@@ -1156,8 +1153,8 @@
                             Sales</a>
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 pt-5 ">
-                        <img src="https://images.dyl.com/marketing-web/images/product/call-schedule-calendar.png"
-                            class="img-fluid z-depth-1 py-0 center-block " alt="Lead Routing" style="box-shadow: none;">
+                        <img src="https://images.dyl.com/marketing-web/images/product/call-schedule-calendar.png"  width="519" height="427" 
+                            class="img-fluid z-depth-1 py-0 center-block mobile-display-none" alt="Lead Routing" style="box-shadow: none;">
                     </div>
                 </div>
             </div>
@@ -1167,7 +1164,6 @@
 
     <div class="subpage-highlight-section-wrapper mt-5" style="background-color: #fff;">
         <section class="container subpage-highlight-section section u-content-space-half">
-            <!-- <p class="col-12 mx-auto text-center pb-4" style="line-height: 1.5rem; visibility: visible; font-weight: 500;">Build a plan to serve your most motivated prospects with our sales workflow software. Across markets, it takes four calls on average to reach a lead. Opportunities get missed, so start capturing the audience your competitors didn’t follow-up with. DYL powers you to customize every point of contact with a simple click. Automating your texts, calls and emails, while simplifying every step of the sale.</p> -->
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div
@@ -1202,9 +1198,10 @@
 
                         <br>
                     </div>
-                    <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 mt-5 d-none d-sm-block">
-                        <img src="https://images.dyl.com/marketing-web/images/product/phone-calendar-app.png" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                    <div
+                        class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 mt-5 d-none d-sm-block">
+                        <img src="https://images.dyl.com/marketing-web/images/product/phone-calendar-app.png"
+                            class="img-fluid z-depth-1 py-0 mobile-display-none"  loading="lazy" alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                 </div>
             </div>
@@ -1293,10 +1290,11 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-6 col-12 text-lef mx-auto pr-md-5 px-0">
-                        <img class="d-none d-md-block" src="https://images.dyl.com/marketing-web/images/product/woman-schedule-phone-call.png"
-                            class="img-fluid z-depth-1 pb-5" alt="DYL Workflows Dashboard" style="box-shadow: none;">
-                        <img src="https://images.dyl.com/marketing-web/images/product/call-from-ms-avery.png" class="img-fluid z-depth-1  pt-5"
-                            alt="DYL Workflows Dashboard" style="box-shadow: none;">
+                        <img class="d-none d-md-block"
+                            src="https://images.dyl.com/marketing-web/images/product/woman-schedule-phone-call.png"
+                            class="img-fluid z-depth-1 pb-5 mobile-display-none"  loading="lazy" alt="DYL Workflows Dashboard" style="box-shadow: none;">
+                        <img src="https://images.dyl.com/marketing-web/images/product/call-from-ms-avery.png"
+                            class="img-fluid z-depth-1  pt-5 mobile-display-none"  loading="lazy" alt="DYL Workflows Dashboard" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 text-left mx-auto pl-md-5 px-0">
                         <h3 class="pb-5 feature-page-heading-2 text-sky-blue" style="font-weight: 600;">Schedule
@@ -1368,8 +1366,8 @@
                         <%- include('callSchedulingQuiz'); -%>
                     </div>
                     <div class="col-md-12 col-12 order-md-1 order-1 mx-auto pr-md-0 pl-md-3 px-0">
-                        <img src="https://images.dyl.com/marketing-web/images/product/report-save-time-graphic.png" class="img-fluid z-depth-1 pb-5"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                        <img src="https://images.dyl.com/marketing-web/images/product/report-save-time-graphic.png"
+                            class="img-fluid z-depth-1 pb-5 mobile-display-none"  loading="lazy" alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0">
                         <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">Easily Set
@@ -1420,9 +1418,10 @@
 
 
                     </div>
-                    <div class="col-md-6 col-12 order-md-2 order-2 mx-auto pr-md-0 pl-md-3 px-0 text-center d-none d-sm-block">
-                        <img src="https://images.dyl.com/marketing-web/images/product/lady-excitd-call-schedule.png" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                    <div
+                        class="col-md-6 col-12 order-md-2 order-2 mx-auto pr-md-0 pl-md-3 px-0 text-center d-none d-sm-block">
+                        <img src="https://images.dyl.com/marketing-web/images/product/lady-excitd-call-schedule.png"
+                            class="img-fluid z-depth-1 py-0 mobile-display-none" alt="DYL Advanced Workflows"  loading="lazy" style="box-shadow: none;">
                     </div>
                 </div>
             </div>
@@ -1438,8 +1437,8 @@
 
                     <div
                         class="col-md-6 col-12 order-md-1 order-1 text-left mx-auto pr-md-0 pl-md-5 px-0 d-none d-md-block">
-                        <img src="https://images.dyl.com/marketing-web/images/product/team-building-trust.png" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                        <img src="https://images.dyl.com/marketing-web/images/product/team-building-trust.png"
+                            class="img-fluid z-depth-1 py-0 mobile-display-none"  loading="lazy" alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 text-left mt-lg-0 mt-3 pl-md-5 pr-md-5 px-0">
                         <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">Translating to
@@ -1504,22 +1503,17 @@
             <h2 class="text-center text-white pb-2">DYL’s All-in-One Platform includes over 80 Customizable Features
             </h2>
 
-            <!-- <hr style="color: #0269ff; background-color: #ffefa3; height: 7px; border: none;" width="7%"> -->
-
-            <!-- First row -->
+        
             <div class="row">
 
-                <!-- <h6 class="col-12 mx-auto text-center pb-4 text-white">Other tools related to Agent Monitoring inside DYL:
-              </h6> -->
-                <!-- First column -->
+             
                 <div class="col-md-12 col-lg-4">
-                    <!--Panel-->
-                    <!--changes-->
+                   
                     <a href="/features/appointment-reminders" class="btn-block feature-page-button mb-5 ">
                         <div class="py-3  pr-5 pl-5"
                             style="display: flex; justify-content:left; align-items: center; height: 106px;">
-                            <img src="https://images.dyl.com/marketing-web/images/product/appointment-reminders-icon.png" alt="" width="66px" ;
-                                height="65px">
+                            <img src="https://images.dyl.com/marketing-web/images/product/appointment-reminders-icon.png"
+                                alt="" width="66px" ; height="65px">
                             <h5 class="feature-title pl-5 align-self-center">Appointment Reminders</h5>
 
                         </div>
@@ -1527,14 +1521,14 @@
                     </a>
                     <!--/.Panel-->
                 </div>
-                <!-- /First column -->
-                <!-- Second column -->
+             
                 <div class="col-md-12 col-lg-4">
                     <!--Panel-->
                     <a href="/features/follow-up-calls" class="btn-block feature-page-button mb-5 ">
                         <div class="py-3  pr-5 pl-5"
                             style="display: flex; justify-content:left; align-items: center; height: 106px;">
-                            <img src="https://images.dyl.com/marketing-web/images/product/follow-up-calls-icon.png" alt="" width="66px" ; height="65px">
+                            <img src="https://images.dyl.com/marketing-web/images/product/follow-up-calls-icon.png"
+                                alt="" width="66px" ; height="65px">
                             <h5 class="feature-title pl-5 align-self-center">Follow-Up Calls</h5>
 
                         </div>
@@ -1542,15 +1536,15 @@
                     </a>
                     <!--/.Panel-->
                 </div>
-                <!-- /.Second column -->
-                <!-- Third column -->
+              
                 <div class="col-md-12 col-lg-4">
                     <!--Panel-->
                     <a href="/features/agent-monitoring" class="btn-block feature-page-button ">
                         <div class="py-3 pr-5 pl-5 "
                             style="display: flex; justify-content:left; align-items: center; height: 106px;">
 
-                            <img src="https://images.dyl.com/marketing-web/images/product/agent-monitoring-icon.png" height="65px" width="55px">
+                            <img src="https://images.dyl.com/marketing-web/images/product/agent-monitoring-icon.png"
+                                height="65px" width="55px">
                             <h5 class="feature-title pl-5 align-self-center">Agent Monitoring</h5>
                         </div>
                     </a>
@@ -2824,13 +2818,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+      
 
         <script>
 
@@ -4009,11 +3997,10 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -4038,22 +4025,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -4083,10 +4055,10 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
-     <script type="text/javascript">
+    <script defer src="../js/front.min.js"></script>
+    <script type="text/javascript">
 
         function loadSales() {
 
@@ -4138,5 +4110,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
