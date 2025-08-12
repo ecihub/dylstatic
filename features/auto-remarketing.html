@@ -14,11 +14,10 @@
         content="DYL's Auto-Remarketing tools enable sales teams to reach out to past prospects who weren’t ready to buy before, but may be ready to buy now.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/stream-styles.css">
-
+    <link rel="preload" href="../scss/index-feature.min.css" as="style">
+    <link rel="stylesheet" href="../scss/index-feature.min.css">
+      <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -57,18 +56,16 @@
                 color: #0269ff !important;
             }
 
-            .sales-email-sequence-image {
-                width: 327px;
-                height: 302px;
-
+            .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/product/female-manager-on-dyl-platform.webp"
-        imagesrcset="https://images.dyl.com/marketing-web/images/product/female-manager-on-dyl-platform.webp">
+        imagesrcset="https://images.dyl.com/marketing-web/images/product/female-manager-on-dyl-platform.webp" fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -1143,6 +1140,11 @@
         <section class="container subpage-highlight-section section u-content-space-half">
             <div class="container-fluid">
                 <div class="row align-items-center">
+                    <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 pt-5">
+                        <img src="https://images.dyl.com/marketing-web/images/product/female-manager-on-dyl-platform.webp"
+                            width="477" height="460" class="img-fluid z-depth-1 py-0 center-block mobile-display-none" alt="Lead Routing"
+                            style="box-shadow: none;">
+                    </div>
                     <div
                         class="col-md-6 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0 pt-5 pb-5">
                         <h1 class="d3 feature-highlight-h2 pb-5 text-sky-blue">Automatically Remarket to leads who were
@@ -1154,11 +1156,7 @@
                         <a href="#longFormFields" data-toggle="modal"
                             class="btn btn-primary d-block d-md-inline">Schedule Demo</a>
                     </div>
-                    <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 pt-5">
-                        <img src="https://images.dyl.com/marketing-web/images/product/female-manager-on-dyl-platform.webp"
-                            width="477" height="460" class="img-fluid z-depth-1 py-0 center-block " alt="Lead Routing"
-                            style="box-shadow: none;">
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -1196,7 +1194,7 @@
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 mt-5">
                         <img src="https://images.dyl.com/marketing-web/images/product/hook-dropped-in-water-with-fish-next-to-net.webp"
-                            loading="lazy" width="615" height="478" class="img-fluid z-depth-1 py-0"
+                            loading="lazy" width="615" height="478" class="img-fluid z-depth-1 py-0 " loading="lazy"
                             alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                 </div>
@@ -1222,12 +1220,14 @@
 
                             <li>
                                 <p class="h5-sub-product-page text-dark-mid-blue mar-t30" style="padding-left: 1em;">
-                                    <span style="color: #4975aa;">3.</span> Why Building A Good Foundation Pays Off</p>
+                                    <span style="color: #4975aa;">3.</span> Why Building A Good Foundation Pays Off
+                                </p>
                             </li>
 
                             <li>
                                 <p class="h5-sub-product-page text-dark-mid-blue mar-t30" style=" padding-left: 1em;">
-                                    <span style="color: #4975aa;">4.</span> Additional Features</p>
+                                    <span style="color: #4975aa;">4.</span> Additional Features
+                                </p>
                             </li>
 
 
@@ -1274,10 +1274,10 @@
                     <div class="col-md-6 col-12 text-left">
                         <img class="d-none d-md-block"
                             src="https://images.dyl.com/marketing-web/images/product/Salesperson-following-up-with-lead-through-remarketing.webp"
-                            loading="lazy" width="358" height="447" class="img-fluid z-depth-1 pb-5"
+                            loading="lazy" width="358" height="447" class="img-fluid z-depth-1 pb-5 mobile-display-none" loading="lazy"
                             alt="DYL Workflows Dashboard" style="box-shadow: none;">
                         <img src="https://images.dyl.com/marketing-web/images/product/auto-remarketing-email-text-phone-through-different-weeks.webp"
-                            loading="lazy" width="253" height="521" class="img-fluid z-depth-1  pt-5"
+                            loading="lazy" width="253" height="521" class="img-fluid z-depth-1  pt-5 mobile-display-none" lloading="lazy"
                             alt="DYL Workflows Dashboard" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 text-left ">
@@ -1344,7 +1344,7 @@
 
                     <div class="col-md-12 col-12 order-md-1 order-1 mx-auto pr-md-0 pl-md-3 px-0">
                         <img src="https://images.dyl.com/marketing-web/images/product/Follow-Ups-Make-Money.webp"
-                            loading="lazy" width="1094" height="615" class="img-fluid z-depth-1 pb-5"
+                            loading="lazy" width="1094" height="615" class="img-fluid z-depth-1 pb-5" loading="lazy"
                             alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0">
@@ -1404,8 +1404,8 @@
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 mx-auto pr-md-0 pl-md-3 px-0">
                         <img src="https://images.dyl.com/marketing-web/images/product/sales-agent-speaking-with-manager-not-looking-for-product.webp"
-                            loading="lazy" width="412" height="535" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                            loading="lazy" width="412" height="535" class="img-fluid z-depth-1 py-0" loading="lazy"
+                            alt="DYL Advanced Workflows">
                     </div>
                 </div>
             </div>
@@ -1423,7 +1423,7 @@
                         class="col-md-6 col-12 order-md-1 order-1 text-left mx-auto pr-md-0 pl-md-3 px-0 d-none d-md-block">
                         <img src="https://images.dyl.com/marketing-web/images/product/team-of-construction-workers-on-site.webp"
                             loading="lazy" width="358" height="707" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                            alt="DYL Advanced Workflows" style="box-shadow: none;" loading="lazy">
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0">
                         <p class="h3-sub-product-page feature-page-heading-2 pb-5 text-sky-blue"
@@ -2755,14 +2755,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
-
+     
         <script>
 
             function setCookie(name, value, days) {
@@ -4017,7 +4010,7 @@ thank-you" />
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script defer src="../js/front-init-product.js"></script>
-      <script type="text/javascript">
+    <script type="text/javascript">
 
         function loadSales() {
 
