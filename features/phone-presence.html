@@ -12,13 +12,12 @@
     <title>Phone Presence | DYL</title>
     <meta name="description"
         content="Improve your team's communication with Phone Presence features from DYL. Set your status and see which of your teammates are available. Learn more.">
-    <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
+     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/stream-styles.css">
-
+    <link rel="preload" href="../scss/index-feature.min.css" as="style">
+    <link rel="stylesheet" href="../scss/index-feature.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -57,15 +56,13 @@
                 color: #0269ff !important;
             }
 
-            .sales-email-sequence-image {
-                width: 327px;
-                height: 302px;
-
+            .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -1417,9 +1414,9 @@
                                                             and data rates
                                                             may apply. Reply STOP to unsubscribe or HELP for assistance.
                                                             For more details, see our <a
-                                                                href="http://dyl.com/terms-of-service">Terms and
+                                                                href="http://dyl.com/terms-of-service"  style="font-weight:bold;text-decoration: underline;">Terms and
                                                                 Conditions</a> and <a
-                                                                href="https://dyl.com/privacy-policy">Privacy
+                                                                href="https://dyl.com/privacy-policy"  style="font-weight:bold;text-decoration: underline;">Privacy
                                                                 Policy</a>.
                                                         </p>
                                                         <div class="_row _checkbox-radio">
@@ -2493,13 +2490,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+      
 
         <script>
 
@@ -3678,11 +3669,10 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -3707,22 +3697,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3752,10 +3727,10 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
-      <script type="text/javascript">
+    <script defer src="../js/front.min.js"></script>
+    <script type="text/javascript">
 
         function loadSales() {
 
@@ -3770,7 +3745,6 @@ thank-you" />
 
                         SnapEngage.startLink();
 
-                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
                         SnapEngage.setCallback("Close", function (d) {
                             $("#designstudio").hide();
                         })
@@ -3794,7 +3768,6 @@ thank-you" />
                         SnapEngage.startLink();
 
                         $("#designstudio-iframe").contents().find("#main-desktop").css("width", '95%');
-                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
                         SnapEngage.setCallback("Close", function (d) {
                             $("#designstudio").hide();
                         })
@@ -3807,5 +3780,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
