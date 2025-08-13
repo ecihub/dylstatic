@@ -12,13 +12,12 @@
     <title>Customer Tracking | DYL</title>
     <meta name="description"
         content="DYL's Customer Tracking feature collects and organizes a customer’s information, so sales and support reps can easily follow up.">
-    <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
+     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/stream-styles.css">
-
+    <link rel="preload" href="../scss/index-feature.min.css" as="style">
+    <link rel="stylesheet" href="../scss/index-feature.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -57,18 +56,16 @@
                 color: #0269ff !important;
             }
 
-            .sales-email-sequence-image {
-                width: 327px;
-                height: 302px;
-
+            .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/product/tracking-customers-hero.webp"
-        imagesrcset="https://images.dyl.com/marketing-web/images/product/tracking-customers-hero.webp">
+        imagesrcset="https://images.dyl.com/marketing-web/images/product/tracking-customers-hero.webp"  fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 
 </head>
@@ -1140,23 +1137,25 @@
 
 <body>
 
-     <div class="subpage-highlight-section-wrapper bg-white">
+    <div class="subpage-highlight-section-wrapper bg-white">
         <section class="container subpage-highlight-section section u-content-space-half">
             <div class="container-fluid">
                 <div class="row align-items-center">
+                     <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 pt-5">
+                        <img src="https://images.dyl.com/marketing-web/images/product/tracking-customers-hero.webp"
+                            class="img-fluid z-depth-1 py-0 center-block mobile-display-none" alt="Lead Routing" style="box-shadow: none;">
+                    </div>
                     <div
                         class="col-md-6 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0 pb-5 pt-5">
                         <h1 class="d3 feature-highlight-h2 pb-5 text-sky-blue">Collect and
                             Organize Customer Information</h1>
-                        <h5 class="feature-highlight-h4 pb-5">Find out the best ways to communicate with customers to increase satisfaction. More information means less team errors.</h5>
+                        <h5 class="feature-highlight-h4 pb-5">Find out the best ways to communicate with customers to
+                            increase satisfaction. More information means less team errors.</h5>
                         <a href="#longFormFields" data-toggle="modal"
                             class="btn btn-primary d-block d-md-inline sixtyForty">Contact
                             Sales</a>
                     </div>
-                    <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 pt-5">
-                        <img src="https://images.dyl.com/marketing-web/images/product/tracking-customers-hero.webp"
-                            class="img-fluid z-depth-1 py-0 center-block " alt="Lead Routing" style="box-shadow: none;">
-                    </div>
+                   
                 </div>
             </div>
         </section>
@@ -1169,7 +1168,8 @@
                 <div class="row align-items-center">
                     <div
                         class="col-md-6 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0 mb-5 pt-5">
-                        <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">How Customer Tracking Works</h3>
+                        <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">How Customer
+                            Tracking Works</h3>
                         <div class="col-2 px-0 pt-md-0 pt-5 pb-5">
                             <div class="col-8 p-0" style="background-color: #0269ff; height: 7px; display: block;">
                             </div>
@@ -1192,17 +1192,20 @@
 
 
                         </h6>
-                     
+
                         <br>
                         <h6>
-                            Information like a person’s name, email, and phone number is just the start. To really stand out from your competition, you should <strong
-                            style="color: #4975aa; font-weight: 800;">know things like why a prospect is interested in your product, how soon they intend to buy, and what they’ve already looked into</strong>.                        				</h6>
-			
+                            Information like a person’s name, email, and phone number is just the start. To really stand
+                            out from your competition, you should <strong style="color: #4975aa; font-weight: 800;">know
+                                things like why a prospect is interested in your product, how soon they intend to buy,
+                                and what they’ve already looked into</strong>. </h6>
 
-             </div>
-                    <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 mt-5 d-none d-sm-block">
-                        <img src="https://images.dyl.com/marketing-web/images/product/contact-checkmark.webp" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+
+                    </div>
+                    <div
+                        class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 mt-5 d-none d-sm-block">
+                        <img src="https://images.dyl.com/marketing-web/images/product/contact-checkmark.webp"
+                            class="img-fluid z-depth-1 py-0" loading="lazy" alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                 </div>
             </div>
@@ -1213,26 +1216,29 @@
                         <ul
                             style="list-style-position: inside;list-style-type: none;background-color: #fff8d6; font-size: 21px;  padding-top:40px; padding-bottom:40px; padding-right:40px;">
                             <li>
-                                <h5 style="padding-left: 1em; "> <span style="color: #4975aa;">1.</span> Build Lasting Customer 
-                                    Relationships with 
+                                <h5 style="padding-left: 1em; "> <span style="color: #4975aa;">1.</span> Build Lasting
+                                    Customer
+                                    Relationships with
                                     Customer Tracking
-                               
-							   </h5>
+
+                                </h5>
                             </li>
                             <br>
 
                             <li>
-                                <h5 style="padding-left: 1em;"> <span style="color: #4975aa;">2.</span> Market Products and 
-                                    Services More 
+                                <h5 style="padding-left: 1em;"> <span style="color: #4975aa;">2.</span> Market Products
+                                    and
+                                    Services More
                                     Effectively
-                               
+
                                     </h6>
                             </li>
                             <br>
 
                             <li>
-                                <h5 style="padding-left: 1em;"> <span style="color: #4975aa;">3.</span> The Seeds of Prosperity
-                               </h5>
+                                <h5 style="padding-left: 1em;"> <span style="color: #4975aa;">3.</span> The Seeds of
+                                    Prosperity
+                                </h5>
                             </li>
                             <br>
 
@@ -1246,36 +1252,41 @@
                         </ul>
                     </div>
                     <div class="col-md-6 col-12 text-left mt-5 pr-md-0 pl-md-3 px-0 feature-page-heading-2">
-          
+
 
                         <h6>
                             And it should all be accessible in just a few clicks.
                         </h6>
                         <br>
                         <h6>
-                            With DYL’s Customer Tracking software, you can see all that and more, including how and when a customer prefers to be contacted. And whether you should follow up via call, email, or text.
-					
-						</h6>
-						<br>
-						<h6>
-                            You’ll have better ideas for how to package your marketing efforts. Customers may respond better to product updates, while prospects may react more positively to limited time offers.
+                            With DYL’s Customer Tracking software, you can see all that and more, including how and when
+                            a customer prefers to be contacted. And whether you should follow up via call, email, or
+                            text.
 
-							
                         </h6>
                         <br>
                         <h6>
-                            Additionally, <strong
-                            style="color: #4975aa; font-weight: 800;">managers can see when prospects were last contacted and who spoke to them</strong>. This ensures no potential sale falls through the cracks.
+                            You’ll have better ideas for how to package your marketing efforts. Customers may respond
+                            better to product updates, while prospects may react more positively to limited time offers.
+
+
                         </h6>
                         <br>
-                        <h6>Customer Tracking is all about offering premium service. When people feel special, they remain loyal to your brand.
+                        <h6>
+                            Additionally, <strong style="color: #4975aa; font-weight: 800;">managers can see when
+                                prospects were last contacted and who spoke to them</strong>. This ensures no potential
+                            sale falls through the cracks.
+                        </h6>
+                        <br>
+                        <h6>Customer Tracking is all about offering premium service. When people feel special, they
+                            remain loyal to your brand.
                         </h6>
                         <br>
                         <h6>And that’s the secret to growing your business.</h6>
-                    
-                   
-              
-                     
+
+
+
+
 
 
                     </div>
@@ -1297,19 +1308,21 @@
                     <div class="col-md-6 col-12 text-left mx-auto pr-md-5 px-0">
                         <img class="d-none d-md-block"
                             src="https://images.dyl.com/marketing-web/images/product/staring-at-monitor.webp"
-                            class="img-fluid z-depth-1 pb-5" alt="DYL Workflows Dashboard" style="box-shadow: none;">
-                        <img src="https://images.dyl.com/marketing-web/images/product/giveaway-entry.webp" class="img-fluid z-depth-1  pt-5"
-                            alt="DYL Workflows Dashboard" style="box-shadow: none;">
+                            class="img-fluid z-depth-1 pb-5 mobile-display-none" alt="DYL Workflows Dashboard" style="box-shadow: none;">
+                        <img src="https://images.dyl.com/marketing-web/images/product/giveaway-entry.webp"
+                            class="img-fluid z-depth-1  pt-5 mobile-display-none" alt="DYL Workflows Dashboard" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 text-left mx-auto pl-md-5 px-0">
-                        <h3 class="pb-5 feature-page-heading-2 text-sky-blue" style="font-weight: 600;">Build Lasting Customer Relationships with Customer Tracking
+                        <h3 class="pb-5 feature-page-heading-2 text-sky-blue" style="font-weight: 600;">Build Lasting
+                            Customer Relationships with Customer Tracking
                         </h3>
                         <div class="col-2 px-0 pt-md-0 pt-5 pb-5">
                             <div class="col-8 p-0" style="background-color: #0269ff; height: 7px; display: block;">
                             </div>
                         </div>
                         <h6>
-                            Growing a company requires ongoing communication - between you and your team, and your team and the outside world.
+                            Growing a company requires ongoing communication - between you and your team, and your team
+                            and the outside world.
 
 
 
@@ -1327,7 +1340,8 @@
 
                         <h6>
                             Why? Because communication doesn’t stop when a prospect buys. On the contrary, <strong
-                            style="color: #4975aa; font-weight: 800;">staying in touch is how successful businesses build loyal customers</strong>.
+                                style="color: #4975aa; font-weight: 800;">staying in touch is how successful businesses
+                                build loyal customers</strong>.
 
 
 
@@ -1335,28 +1349,33 @@
                         <br>
 
                         <h6>
-                            To do that, your team needs access to customer information, notes on past conversations, a log showing call history, and anything else that enables them to continually provide superior service.
+                            To do that, your team needs access to customer information, notes on past conversations, a
+                            log showing call history, and anything else that enables them to continually provide
+                            superior service.
 
 
 
                         </h6>
                         <br>
                         <h6>
-                            Many customers go months without ever hearing from a business. Imagine all the missed opportunities to <strong
-                            style="color: #4975aa; font-weight: 800;">share best practice tips</strong> or <strong
-                            style="color: #4975aa; font-weight: 800;">engage them</strong> with fun contests or giveaways.
-						</h6>
-						<br>
-						<h6>
-                            With Customer Tracking, you have all the information you need to send a text, schedule an appointment, or follow up with a call or email.
+                            Many customers go months without ever hearing from a business. Imagine all the missed
+                            opportunities to <strong style="color: #4975aa; font-weight: 800;">share best practice
+                                tips</strong> or <strong style="color: #4975aa; font-weight: 800;">engage them</strong>
+                            with fun contests or giveaways.
                         </h6>
                         <br>
-                        <h6>Who needs DYL’s Customer Tracking? Business owners who want their sales and service teams to build stronger client relationships.</h6>
-				
-						
-                      
-                       
-                        
+                        <h6>
+                            With Customer Tracking, you have all the information you need to send a text, schedule an
+                            appointment, or follow up with a call or email.
+                        </h6>
+                        <br>
+                        <h6>Who needs DYL’s Customer Tracking? Business owners who want their sales and service teams to
+                            build stronger client relationships.</h6>
+
+
+
+
+
                     </div>
 
                 </div>
@@ -1370,13 +1389,14 @@
                 <div class="row align-items-center">
 
 
-              
+
                     <div class="col-md-12 col-12 order-md-1 order-1 mx-auto pr-md-0 pl-md-3 px-0">
                         <img src="https://images.dyl.com/marketing-web/images/product/customer-rep-graphic.webp"
-                            class="img-fluid z-depth-1 pb-5" alt="DYL Advanced Workflows" style="box-shadow: none;">
+                            class="img-fluid z-depth-1 pb-5 mobile-display-none" alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0">
-                        <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">Market Products and Services More Effectively
+                        <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">Market Products
+                            and Services More Effectively
                         </h3>
                         <div class="col-2 px-0 pt-md-0 pt-5 pb-5">
                             <div class="col-8 p-0" style="background-color: #0269ff; height: 7px; display: block;">
@@ -1393,7 +1413,8 @@
                         <br>
 
                         <h6>
-                            It’s beyond just knowing their contact info. It’s about knowing their reasons for buying or not buying. Knowing their immediate needs and future plans.
+                            It’s beyond just knowing their contact info. It’s about knowing their reasons for buying or
+                            not buying. Knowing their immediate needs and future plans.
 
 
 
@@ -1402,7 +1423,8 @@
 
                         <h6>
                             When you have customer tracking in place, you <strong
-                            style="color: #4975aa; font-weight: 800;">minimize miscommunication and keep your staff accountable</strong>.
+                                style="color: #4975aa; font-weight: 800;">minimize miscommunication and keep your staff
+                                accountable</strong>.
 
 
 
@@ -1413,29 +1435,34 @@
                         <br>
 
                         <h6>
-                            People’s needs change over time, so knowing a customer’s history helps you adjust the frequency and nature of your outreach efforts.
-							
-                            </h6>
-                            <br>
-                            <h6>
-                                Do they prefer text or email? Are they a large account? Do they qualify for a loyalty program?
-                            </h6>
-                            <br>
-                            <h6>
-                                If you sell multiple products or provide a service with multiple options, tracking a <strong
-                                style="color: #4975aa; font-weight: 800;">customer’s history enables your team to make informed decisions</strong>.
-                            </h6>
-                            <br>
-                            <h6>In the end, your customers will show their appreciation by staying with you for the long haul.</h6>
-                     
-						
-                    
-    
-        
+                            People’s needs change over time, so knowing a customer’s history helps you adjust the
+                            frequency and nature of your outreach efforts.
+
+                        </h6>
+                        <br>
+                        <h6>
+                            Do they prefer text or email? Are they a large account? Do they qualify for a loyalty
+                            program?
+                        </h6>
+                        <br>
+                        <h6>
+                            If you sell multiple products or provide a service with multiple options, tracking a <strong
+                                style="color: #4975aa; font-weight: 800;">customer’s history enables your team to make
+                                informed decisions</strong>.
+                        </h6>
+                        <br>
+                        <h6>In the end, your customers will show their appreciation by staying with you for the long
+                            haul.</h6>
+
+
+
+
+
                     </div>
-                    <div class="col-md-6 col-12 order-md-2 order-2 mx-auto pr-md-0 pl-md-3 px-0 text-center d-none d-sm-block">
-                        <img src="https://images.dyl.com/marketing-web/images/product/cafe-to-restaurant.webp" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                    <div
+                        class="col-md-6 col-12 order-md-2 order-2 mx-auto pr-md-0 pl-md-3 px-0 text-center d-none d-sm-block">
+                        <img src="https://images.dyl.com/marketing-web/images/product/cafe-to-restaurant.webp"
+                            class="img-fluid z-depth-1 py-0 mobile-display-none" alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                 </div>
             </div>
@@ -1451,18 +1478,20 @@
 
                     <div
                         class="col-md-6 col-12 order-md-1 order-1 text-left mx-auto pr-md-0 pl-md-5 px-0 d-none d-md-block">
-                        <img src="https://images.dyl.com/marketing-web/images/product/team-building-trust.webp" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                        <img src="https://images.dyl.com/marketing-web/images/product/team-building-trust.webp"
+                            class="img-fluid z-depth-1 py-0 mobile-display-none" alt="DYL Advanced Workflows" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 text-left mt-lg-0 mt-3 pl-md-5 pr-md-5 px-0">
-                        <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">The Seeds of Prosperity
+                        <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">The Seeds of
+                            Prosperity
                         </h3>
                         <div class="col-2 px-0 pt-md-0 pt-5 pb-5">
                             <div class="col-8 p-0" style="background-color: #0269ff; height: 7px; display: block;">
                             </div>
                         </div>
                         <h6>
-                            Denise Redford, owner of Leafy Greens Co-op, wanted to make a larger impact on her community by expanding her footprint.
+                            Denise Redford, owner of Leafy Greens Co-op, wanted to make a larger impact on her community
+                            by expanding her footprint.
 
 
 
@@ -1471,7 +1500,9 @@
                         <br>
 
                         <h6>
-                            But in order to determine the location of her next store, she needed to collect more information on the needs of populations in outlying regions. This meant making hundreds of calls to local farmers and small businesses specializing in healthy, sustainable products.
+                            But in order to determine the location of her next store, she needed to collect more
+                            information on the needs of populations in outlying regions. This meant making hundreds of
+                            calls to local farmers and small businesses specializing in healthy, sustainable products.
 
 
                         </h6>
@@ -1479,20 +1510,28 @@
 
 
                         <h6>
-                            The problem was her team wasn’t equipped with the tools to collect all the necessary information in an easy-to-reference manner. Many of her staff members still relied on traditional pen to paper and file cabinets. And even the more tech savvy team members lacked the skills needed to keep their notes organized in Google Docs and Excel sheets.
+                            The problem was her team wasn’t equipped with the tools to collect all the necessary
+                            information in an easy-to-reference manner. Many of her staff members still relied on
+                            traditional pen to paper and file cabinets. And even the more tech savvy team members lacked
+                            the skills needed to keep their notes organized in Google Docs and Excel sheets.
 
-                            
 
-						</h6>
-						<br>
-						<h6>
-                            Fortunately, she found DYL’s all-in-one sales and crm platform. With DYL, Denise could take advantage of the platform’s Customer Tracking software to track all customer interactions, including recorded calls, call logs, notes, and workflows to follow up, and make appointments, all from within the same platform.
+
                         </h6>
                         <br>
                         <h6>
-                            The results were pleasantly surprising. With all the time her teams saved, Leafy Greens was able to expand sooner than expected. And new business relationships are now easier to forge than ever before.                        </h6>
-                        
-                        
+                            Fortunately, she found DYL’s all-in-one sales and crm platform. With DYL, Denise could take
+                            advantage of the platform’s Customer Tracking software to track all customer interactions,
+                            including recorded calls, call logs, notes, and workflows to follow up, and make
+                            appointments, all from within the same platform.
+                        </h6>
+                        <br>
+                        <h6>
+                            The results were pleasantly surprising. With all the time her teams saved, Leafy Greens was
+                            able to expand sooner than expected. And new business relationships are now easier to forge
+                            than ever before. </h6>
+
+
                     </div>
 
                 </div>
@@ -1510,44 +1549,48 @@
 
             <div class="row">
 
-            
+
                 <div class="col-md-12 col-lg-4">
-                   
+
                     <a href="/features/create-a-note" class=" btn-block feature-page-button mb-5">
                         <div class="py-3 pr-5 pl-5 "
                             style="display: flex; justify-content:left; align-items: center; height: 106px;">
-                            <img src="https://images.dyl.com/marketing-web/images/product/create-a-note-icon.png" alt="create a note" height="66px" width="66px">
+                            <img src="https://images.dyl.com/marketing-web/images/product/create-a-note-icon.png"
+                                alt="create a note" height="66px" width="66px"  loading="lazy">
                             <h5 class="feature-title pl-5 align-self-center">Create A Note</h5>
                         </div>
                     </a>
-                    
+
                 </div>
-                
+
                 <div class="col-md-12 col-lg-4">
-                  
+
                     <a href="/features/call-tags" class="btn-block feature-page-button mb-5 ">
                         <div class="py-3  pr-5 pl-5"
                             style="display: flex; justify-content:left; align-items: center; height: 106px;">
-                            <img src="https://images.dyl.com/marketing-web/images/product/call-tags-icon.png" alt="call tags" width="49px" ; height="82px">
+                            <img src="https://images.dyl.com/marketing-web/images/product/call-tags-icon.png"
+                                alt="call tags" width="49px" height="82px"  loading="lazy">
                             <h5 class="feature-title pl-5 align-self-center">Call Tags </h5>
 
                         </div>
 
                     </a>
-                    
+
                 </div>
-              
+
                 <div class="col-md-12 col-lg-4">
-                   
+
                     <a href="/features/document-management-software" class="btn-block feature-page-button ">
                         <div class="py-3 pr-5 pl-5 "
                             style="display: flex; justify-content:left; align-items: center; height: 106px;">
 
-                            <img src="https://images.dyl.com/marketing-web/images/product/document-management-software-icon.png" alt="document software" height="65px" width="55px">
-                            <h5 class="feature-title  align-self-center pl-5" style="line-height: 25px;">Document Management Software</h5>
+                            <img src="https://images.dyl.com/marketing-web/images/product/document-management-software-icon.png"
+                                alt="document software" height="65px" width="55px" loading="lazy">
+                            <h5 class="feature-title  align-self-center pl-5" style="line-height: 25px;">Document
+                                Management Software</h5>
                         </div>
                     </a>
-                   
+
                 </div>
             </div>
 
@@ -2819,13 +2862,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+       
 
         <script>
 
@@ -4004,11 +4041,10 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -4033,22 +4069,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -4078,9 +4099,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
 
     <script type="text/javascript">
 
@@ -4134,5 +4155,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
