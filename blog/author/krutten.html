@@ -17,8 +17,8 @@
         content="Katie Rutten is the co-founder of Bullfinch, a digital marketing agency based out of Colorado that specializes in website design, SEO and copywriting.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-    <link rel="preload" href="../../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../../scss/index.min.css">
+    <link rel="preload" href="../../scss/index-blog.css" as="style">
+    <link rel="stylesheet" href="../../scss/index-blog.css">
     <link rel="preload" href="../../scss/blog.css" as="style">
     <link rel="stylesheet" href="../../scss/blog.css">
 
@@ -66,7 +66,7 @@
     </style>
 
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 </head>
 <header id="header"
@@ -1222,13 +1222,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+      
 
         <script>
 
@@ -1969,19 +1963,10 @@ thank-you" />
 
 
 
+    <script src="../../js/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         const lazyBackgrounds = document.querySelectorAll('.lazy-background');
@@ -2012,22 +1997,7 @@ thank-you" />
         }
     </script>
 
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+  
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -2055,86 +2025,11 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../../js/front-init-product.js"></script>
+    <script defer src="../../js/front.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            if ($('#blog-page').length > 0) {
-                var items = $(".bottom-row .row .col-lg-4");
-                var numItems = items.length;
-
-                var perPage = ($('#blog-author-page').length > 0) ? 6 : 3;
-
-                items.slice(perPage).hide();
-
-                $('#pagination-container').pagination({
-                    items: numItems,
-                    itemsOnPage: perPage,
-                    prevText: "Prev",
-                    nextText: "Next",
-                    onPageClick: function (pageNumber) {
-                        var showFrom = perPage * (pageNumber - 1);
-                        var showTo = showFrom + perPage;
-                        items.hide().slice(showFrom, showTo).show();
-                    }
-                });
-
-                $(".filter-tab #tags").on("change", function () {
-                    $.get('/blog/posts/' + $(this).val())
-                        .done(function (data) {
-                            if (data.length > 0) {
-                                $('.bottom-row .row').empty();
-                                $('.bottom-row .row').removeClass('ml-3');
-                                $('#pagination-container').pagination('destroy');
-
-                                $('.bottom-row .row').append(data);
-
-                                var items = $(".bottom-row .row .col-lg-4");
-                                var numItems = items.length;
-                                var perPage = 3;
-
-                                items.slice(perPage).hide();
-
-                                $('#pagination-container').pagination({
-                                    items: numItems,
-                                    itemsOnPage: perPage,
-                                    prevText: "Prev",
-                                    nextText: "Next",
-                                    onPageClick: function (pageNumber) {
-                                        var showFrom = perPage * (pageNumber - 1);
-                                        var showTo = showFrom + perPage;
-                                        items.hide().slice(showFrom, showTo).show();
-                                    }
-                                });
-                            } else {
-                                $('.bottom-row .row').empty();
-                                $('.bottom-row .row').addClass('ml-3');
-                                $('#pagination-container').pagination('destroy');
-                                $('.bottom-row .row').append("No results found.");
-                            }
-                        });
-                });
-            }
-        });
-
-    </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <script>
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-    </script>
+    
     <script>
         window.addEventListener("load", function () {
             const articleContent = document.querySelector("#article-contents");
