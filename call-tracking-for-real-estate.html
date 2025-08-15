@@ -22,7 +22,6 @@
 
     <link rel="preload" href="scss/index.min.css" as="style">
     <link rel="stylesheet" href="scss/index.min.css">
-    <link rel="stylesheet" href="css/stream-styles.css">
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/features/app-for-task-management.webp"
         imagesrcset="https://images.dyl.com/marketing-web/images/features/app-for-task-management.webp">
@@ -64,6 +63,9 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
+              .mobile-display-none {
+                display: none !important;
+            }
         }
 
         .p-5 {
@@ -72,7 +74,9 @@
     </style>
 
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp" fetchpriority="high">
+     <link rel="https://images.dyl.com/marketing-web/images/features/call-tracker-graphics.webp" as="image"
+        type="image/webp" fetchpriority="high">
 
 </head>
 <header id="header"
@@ -1152,7 +1156,7 @@
                     srcset="https://images.dyl.com/marketing-web/images/features/call-tracker-graphics.webp 250w, 
                             https://images.dyl.com/marketing-web/images/features/call-tracker-graphics.webp 500w"
                         sizes="(max-width: 600px) 100vw, 539px" width="539" height="396"
-                        class="img-fluid py-0 center-block" loading="eager" alt="Communication" fetchpriority="high">
+                        class="img-fluid py-0 center-block mobile-display-none"  alt="Communication" >
                 </div>
                 <div class="col-md-6 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-5 px-0">
                     <h1 class="feature-highlight-h2 pb-5 d3 text-sky-blue">
@@ -1191,25 +1195,25 @@
                         no guesswork.
                     </p>
                     <p class="h5-sub-product-page product-page-text-color"><img
-                            src="https://images.dyl.com/marketing-web/images/features/re-phone-icon.webp" alt="dyl icon"> Assign
+                            src="https://images.dyl.com/marketing-web/images/features/re-phone-icon.webp" width="30px" height="30px" alt="dyl icon"> Assign
                         different
                         phone numbers to each campaign</p>
                     <p class="h5-sub-product-page product-page-text-color"><img
-                            src="https://images.dyl.com/marketing-web/images/features/re-call-icon.webp"  alt="dyl icon"> Real-time call
+                            src="https://images.dyl.com/marketing-web/images/features/re-call-icon.webp" width="30px" height="30px"  alt="dyl icon"> Real-time call
                         and
                         text tracking</p>
                     <p class="h5-sub-product-page product-page-text-color"><img
-                            src="https://images.dyl.com/marketing-web/images/features/re-pin-icon.webp"  alt="dyl icon"> Track buyer and
+                            src="https://images.dyl.com/marketing-web/images/features/re-pin-icon.webp" width="30px" height="30px"  alt="dyl icon"> Track buyer and
                         seller leads by source</p>
                     <p class="h5-sub-product-page product-page-text-color"><img
-                            src="https://images.dyl.com/marketing-web/images/features/re-map-icon.webp"  alt="dyl icon"> Local area
+                            src="https://images.dyl.com/marketing-web/images/features/re-map-icon.webp" width="30px" height="30px"  alt="dyl icon"> Local area
                         codes
                         build trust and increase answer rates</p>
                 </div>
                 <div class="col-md-5 col-12 order-md-2 text-right order-1 mx-auto pr-md-0 pl-md-3 px-0">
                     <img src="https://images.dyl.com/marketing-web/images/features/campaign-performance.webp"
-                        width="539" height="396" class="img-fluid py-0 center-block" loading="eager" alt="Communication"
-                        fetchpriority="high"  alt="dyl icon">
+                        width="539" height="396" class="img-fluid py-0 center-block" loading="lazy" alt="Communication"
+                        alt="dyl icon">
                 </div>
             </div>
         </section>
@@ -1229,14 +1233,14 @@
                 which ads are generating interest and which aren't. That means smarter marketing, better ROI, and more
                 closed deals.
             </p>
-            <p class="h5-sub-product-page text-center"><a href="/features/bulk-text-messaging"
+            <p class="h5-sub-product-page text-center"><a href="features/bulk-text-messaging.html"
                     class="product-cadet-blue-link hover-underline-animation">
                     Track ROI from every campaign <span class="fa fa-arrow-right" aria-hidden="true"></span></a> </p>
-            <p class="h5-sub-product-page text-center"><a href="/features/bulk-text-messaging"
+            <p class="h5-sub-product-page text-center"><a href="features/bulk-text-messaging.html"
                     class="product-cadet-blue-link hover-underline-animation">
                     Follow up instantly via text or voicemail drop <span class="fa fa-arrow-right"
                         aria-hidden="true"></span></a> </p>
-            <p class="h5-sub-product-page text-center"><a href="/features/bulk-text-messaging"
+            <p class="h5-sub-product-page text-center"><a href="features/bulk-text-messaging.html"
                     class="product-cadet-blue-link hover-underline-animation">
                     See call duration, caller ID, and more<span class="fa fa-arrow-right" aria-hidden="true"></span></a>
             </p>
@@ -2328,13 +2332,7 @@
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+       
 
         <script>
 
