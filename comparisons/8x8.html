@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="../scss/index.min.css">
 
     <link rel="stylesheet" href="../css/stream-styles.css">
+    <link rel="stylesheet" href="../css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/stream-styles.css">
+    </noscript>
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -56,12 +60,18 @@
             .text-sky-blue {
                 color: #0269ff !important;
             }
-             .blog-header-section-wrapper {
+
+            .blog-header-section-wrapper {
                 background: #3d69e6;
+            }
+
+            .mobile-display-none {
+                display: none !important;
             }
         }
     </style>
-
+     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -227,7 +237,7 @@
                                         <div class="col-lg-4">
                                             <div class="navbar-promo-card d-block navbar-promo-inner">
                                                 <div class="position-relative ">
-                                                    <img class="img-fluid rounded mb-3"
+                                                    <img class="img-fluid rounded mb-3"  loading="lazy"
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-products.webp"
                                                         alt="DYL 2.0 Platform" width="376" height="269">
                                                 </div>
@@ -498,7 +508,7 @@
                                         <div class="col-lg-4 navbar-promo d-none d-lg-block">
                                             <div class="d-block navbar-promo-inner">
                                                 <div class="position-relative">
-                                                    <img class="img-fluid rounded mb-3 "
+                                                    <img class="img-fluid rounded mb-3 "  loading="lazy"
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-learn.webp"
                                                         alt="DYL 2.0 Platform" width="236" height="149">
                                                 </div>
@@ -1134,222 +1144,265 @@
 
 <body>
 
-<div class="blog-header-section-wrapper">
+    <div class="blog-header-section-wrapper">
         <section class="prodsubpage-header-section text-center u-content-space">
             <h1 class="text-white">Compare Services</h1>
-			<p class="h4-sub-product-page text-white">DYL Versus 8x8</p>
+            <p class="h4-sub-product-page text-white">DYL Versus 8x8</p>
         </section>
     </div>
 
 
- <div class="subpage-highlight-section-wrapper u-content-space-half aq">	
-		<section class="container subpage-highlight-section section section-b">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0 order-md-1 order-2">
-						<p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">What you see is what you get</p>
-						<p class="difference-p">Getting caught up in the flash of a good deal on business phone service is easy to do. Once committed, you come to the realization that all the features that sold you on this service aren’t included in the economic "plan" you selected. At DYL, every feature is included. There will never be a question about what "plan" you purchases and those things included in that "plan". What you see is what you get. Plain and simple.</p>
-						<button class="btn btn-lg btn-blue-ribbon mx-auto d-md-inline-block d-block" type="button" data-toggle="modal" data-target="#longFormFields">See For Yourself</button>
-					</div>
-					<div class="col-md-5 col-12 text-md-right text-center mt-md-0 mt-3 mx-auto px-2 order-md-2 order-1">
-						<img class="rounded u-box-shadow-lg img-fluid" src="https://images.dyl.com/marketing-web/images/advantages/dyl-diff-1.webp" alt="The DYL Difference" width="400" height="280">
-					</div>
-				</div>
-		</div></section>
-	</div>
-
-<div class="subpage-highlight-section-wrapper u-content-space-half aqw">	
-		<section class="container subpage-highlight-section section section-b">
-			<div class="container-fluid">
-				<div class="row align-items-center">	
-					<div class="col-md-5 col-12 text-md-left text-center mt-md-0 mt-3 mx-auto pl-md-0 pr-md-3 px-0">
-						<img class="rounded u-box-shadow-lg img-fluid" src="https://images.dyl.com/marketing-web/images/advantages/dyl-diff-3.webp" 
-                        width="400" height="280" alt="The DYL Difference" loading="lazy">
-					</div>
-					<div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0">
-						<p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">Our Committment to You</p>
-				
-						<p class="difference-p">DYL is committed to providing you with the most comprehensive business phone system available, designed to propel your business to the next level. At DYL, we believe that every customer is a valuable part of our company and our goal is to help you feel that way. We understand that running a successful business takes hoards of time you sometimes don't have, which is why you shouldn’t have to worry about your phone service. We are committed to providing you with a powerful, successful and, most importantly, reliable phone system.</p>
-						<button class="btn btn-lg btn-blue-ribbon text-white mx-auto d-md-inline-block d-block" type="button" data-toggle="modal" data-target="#longFormFields" aria-labelledby="Get a demo">Get Demo</button>
-					</div>
-
-				</div>
-			</div>
-		</section>
-	</div>
-
-
-<div class="container">
-      <section id="about" class="section u-content-space-half">
-        <div class="row features-big align-items-center">
-			<div class="difference-content-center">
-				<p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2 h2-center mb-0">Feature to Feature Comparison</p>
-				<p class="h5-sub-product-page text-dark-mid-blue difference-h3">Don't Get Nickel and Dimed</p>
-				<p class="difference-p mb-0">You may be asking yourself how we compare to other VOIP services out there? Here is a breakdown of all of our included features and what those will cost you compared to 8x8.</p>
-			</div>
-			
-        </div>
-      </section>
-<div class="compare-wrapper"> 
-	<section class="leads-list"> 
-        <table class="table table-responsive-sm table-bordered table-striped table-hover">
-            <thead style="border-bottom: none;">
-                <tr style="border-top-left-radius: 10px !important;">
-                    <th valign="middle" class="bg-govenor-bay"><p class="h6-sub-product-page text-white bg-govenor-bay">Feature</p></th>
-                    <th class="red-border rounded text-center rc"><p class="h2-sub-product-page text-white">DYL</p></th>
-                    <th valign="middle" class="bg-bermuda-gray" style="border: 0px;"><p class="h6-sub-product-page text-white ">8x8</p></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Virtual Office</td>
-                    <td class="red-border rb1"><i class="fa fa-check text-persian-green"></i> Included</td>
-                    <td><span class="text-bermuda-gray">$39.99/mo</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Call Recording</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Unlimited</td>
-                    <td><span class="text-bermuda-gray">$12.99/GB over 1GB</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Toll-free Calling Minutes</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Unlimited</td>
-                    <td><span class="text-bermuda-gray">3¢/min</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Paperless Fax</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
-                    <td><span class="text-bermuda-gray">$39.99/mo</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Conference Bridge</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
-                    <td><i class="fa fa-check text-bermuda-gray"></i> <span class="text-bermuda-gray">(with pro)</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Virtual Extension</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
-                    <td><span class="text-bermuda-gray">$9.99/mo</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Auto Attendant</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
-                    <td><span class="text-bermuda-gray">$24.99/mo</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Call Queue</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
-                    <td><i class="fa fa-check text-bermuda-gray"></i> <span class="text-bermuda-gray">(with pro)</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-blue-ribbon text-white">Call Monitoring</td>
-                    <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
-                    <td><i class="fa fa-check text-bermuda-gray"></i> <span class="text-bermuda-gray">(with pro)</span></td>
-                </tr>
-                <tr>
-                    <td class="bg-govenor-bay"></td>
-                    <td class="red-border ssz"></td>
-                    <td class="bg-bermuda-gray" style="border: 0px;"></td>
-            </tr></tbody>
-        </table>
-	</section>
-</div>
-    <div class="difference-btm-wrapper">
-        <div class="text-center u-content-space-half">
-			<p class="h5-sub-product-page text-dark-mid-blue difference-p">That’s how we roll. Your bill is simple, with no surprises. We just give you the best phone system, at a fair price, with no contract.
-        </p></div>
-    </div>
-</div>
-
-<div class="subpage-highlight-section-wrapper kk">
-    <section class="container subpage-highlight-section section u-content-space-half">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-5 col-12 text-md-left text-center mt-md-0 mt-3 mx-auto pl-md-0 pr-md-3 px-0">
-                    <img class="rounded u-box-shadow-lg img-fluid"
-                        src="https://images.dyl.com/marketing-web/images/advantages/pricing-8x8.webp" width="350"
-                        height="280" alt="8x8 Pricing">
-                    <figcaption>Source: 8x8</figcaption>
-                </div>
-                <div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0">
-                    <p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">Virtual Office With Every
-                        Account</p>
-                    <p class="difference-p">DYL’s Office View comes standard with every phone system.</p>
-                    <p class="difference-p">With DYL’s Listen and Whisper tools, you can monitor live calls and even
-                        talk to your employees, without the customer hearing. Or use the Barge feature to instantly hop
-                        on to a call. Easily run reports on calling activity and have them emailed to you...
-                        automatically.</p>
-                    <p class="h5-sub-product-page text-dark-mid-blue difference-h3">8x8 charges for what DYL includes at
-                        no extra cost.</p>
-                    <p class="difference-p">We believe you shouldn’t have to pay extra to have an effective phone
-                        system.</p>
-                    <button class="btn btn-lg btn-blue-ribbon mx-auto d-md-inline-block d-block" type="button"
-                        data-toggle="modal" data-target="#longFormFields">Get A Free Demo</button>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<div class="subpage-highlight-section-wrapper aq">
-    <section class="container subpage-highlight-section u-content-space-half">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-7 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0">
-                    <p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">8x8 is just a phone
-                        system.<br> You can make calls but that’s it.</p>
-                    <p class="difference-p">With DYL, you get an entire sales and service platform to grow your
-                        business.<br> Your DYL account includes:</p>
-                    <ul class="difference-ul fa-ul">
-                        <li class="mb-2"><span class="fa-li"><i class="fa fa-chevron-circle-right"></i></span>&nbsp; A
-                            telemarketing dialer for ultra-fast calling</li>
-                        <li class="mb-2"><span class="fa-li"><i class="fa fa-chevron-circle-right"></i></span>&nbsp;
-                            Lead management software</li>
-                        <li class="mb-2"><span class="fa-li"><i class="fa fa-chevron-circle-right"></i></span>&nbsp;
-                            Automated calling, email and text for new prospects</li>
-                    </ul>
-                    <div class="col-12 mt-3">
-                        <button class="btn btn-lg btn-blue-ribbon text-white mx-auto d-md-inline-block d-block"
-                            type="button" data-toggle="modal" data-target="#longFormFields">Request A Tour</button>
+    <div class="subpage-highlight-section-wrapper u-content-space-half aq">
+        <section class="container subpage-highlight-section section section-b">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0 order-md-1 order-2">
+                        <p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">What you see is what you
+                            get</p>
+                        <p class="difference-p">Getting caught up in the flash of a good deal on business phone service
+                            is easy to do. Once committed, you come to the realization that all the features that sold
+                            you on this service aren’t included in the economic "plan" you selected. At DYL, every
+                            feature is included. There will never be a question about what "plan" you purchases and
+                            those things included in that "plan". What you see is what you get. Plain and simple.</p>
+                        <button class="btn btn-lg btn-blue-ribbon mx-auto d-md-inline-block d-block" type="button"
+                            data-toggle="modal" data-target="#longFormFields">See For Yourself</button>
+                    </div>
+                    <div class="col-md-5 col-12 text-md-right text-center mt-md-0 mt-3 mx-auto px-2 order-md-2 order-1">
+                        <img class="rounded u-box-shadow-lg img-fluid mobile-display-none"
+                            src="https://images.dyl.com/marketing-web/images/advantages/dyl-diff-1.webp"
+                            alt="The DYL Difference" width="400" height="280">
                     </div>
                 </div>
-                <div class="col-md-5 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0">
-                    <img class="img-fluid"
-                        src="https://images.dyl.com/marketing-web/images/advantages/diff-presystem-lm.webp" width="340"
-                        height="297" alt="DYL Lead Manager">
+            </div>
+        </section>
+    </div>
+
+    <div class="subpage-highlight-section-wrapper u-content-space-half aqw">
+        <section class="container subpage-highlight-section section section-b">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-12 text-md-left text-center mt-md-0 mt-3 mx-auto pl-md-0 pr-md-3 px-0">
+                        <img class="rounded u-box-shadow-lg img-fluid mobile-display-none"
+                            src="https://images.dyl.com/marketing-web/images/advantages/dyl-diff-3.webp" width="400"
+                            height="280" alt="The DYL Difference" loading="lazy">
+                    </div>
+                    <div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0">
+                        <p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">Our Committment to You
+                        </p>
+
+                        <p class="difference-p">DYL is committed to providing you with the most comprehensive business
+                            phone system available, designed to propel your business to the next level. At DYL, we
+                            believe that every customer is a valuable part of our company and our goal is to help you
+                            feel that way. We understand that running a successful business takes hoards of time you
+                            sometimes don't have, which is why you shouldn’t have to worry about your phone service. We
+                            are committed to providing you with a powerful, successful and, most importantly, reliable
+                            phone system.</p>
+                        <button class="btn btn-lg btn-blue-ribbon text-white mx-auto d-md-inline-block d-block"
+                            type="button" data-toggle="modal" data-target="#longFormFields"
+                            aria-labelledby="Get a demo">Get Demo</button>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
-<div class="subpage-highlight-section-wrapper kk">
-    <section class="container subpage-highlight-section u-content-space-half">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-5 col-12 text-left mt-md-0 mt-3 mx-auto pl-md-0 pr-md-3 px-0">
-                    <img class="img-fluid rounded u-box-shadow-lg img-fluid"
-                        src="https://images.dyl.com/marketing-web/images/advantages/diff-presystem-sms.webp" width="350"
-                        height="272" alt="Text and Picture Messaging">
-                </div>
-                <div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0">
-                    <p class="h3-sub-product-page difference-sub-h2">The Power of Texting</p>
 
-                    <p class="difference-p">Did you know that text messages have a 99% open rate? Now you can harness
-                        that power to connect with customers and prospects, without having to use your cell phone.</p>
-                    <p class="difference-p">DYL lets you send and receive text messages, photos, and documents right
-                        from your desktop. Plus, our group text feature lets you contact up to 50 people at a time.</p>
-                    <p class="difference-p">8x8 only allows SMS texting with their premium Virtual Office upgrade. And
-                        they do not have picture messaging or group texting.</p>
-                    <button class="btn btn-lg btn-blue-ribbon text-white mx-auto d-md-inline-block d-block text-r"
-                        type="button" data-toggle="modal" data-target="#longFormFields" aria-labelledby="Get a demo">Get
-                        Demo</button>
+    <div class="container">
+        <section id="about" class="section u-content-space-half">
+            <div class="row features-big align-items-center">
+                <div class="difference-content-center">
+                    <p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2 h2-center mb-0">Feature to
+                        Feature Comparison</p>
+                    <p class="h5-sub-product-page text-dark-mid-blue difference-h3">Don't Get Nickel and Dimed</p>
+                    <p class="difference-p mb-0">You may be asking yourself how we compare to other VOIP services out
+                        there? Here is a breakdown of all of our included features and what those will cost you compared
+                        to 8x8.</p>
                 </div>
 
             </div>
+        </section>
+        <div class="compare-wrapper">
+            <section class="leads-list">
+                <table class="table table-responsive-sm table-bordered table-striped table-hover">
+                    <thead style="border-bottom: none;">
+                        <tr style="border-top-left-radius: 10px !important;">
+                            <th valign="middle" class="bg-govenor-bay">
+                                <p class="h6-sub-product-page text-white bg-govenor-bay">Feature</p>
+                            </th>
+                            <th class="red-border rounded text-center rc">
+                                <p class="h2-sub-product-page text-white">DYL</p>
+                            </th>
+                            <th valign="middle" class="bg-bermuda-gray" style="border: 0px;">
+                                <p class="h6-sub-product-page text-white ">8x8</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Virtual Office</td>
+                            <td class="red-border rb1"><i class="fa fa-check text-persian-green"></i> Included</td>
+                            <td><span class="text-bermuda-gray">$39.99/mo</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Call Recording</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Unlimited</td>
+                            <td><span class="text-bermuda-gray">$12.99/GB over 1GB</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Toll-free Calling Minutes</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Unlimited</td>
+                            <td><span class="text-bermuda-gray">3¢/min</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Paperless Fax</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
+                            <td><span class="text-bermuda-gray">$39.99/mo</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Conference Bridge</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
+                            <td><i class="fa fa-check text-bermuda-gray"></i> <span class="text-bermuda-gray">(with
+                                    pro)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Virtual Extension</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
+                            <td><span class="text-bermuda-gray">$9.99/mo</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Auto Attendant</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
+                            <td><span class="text-bermuda-gray">$24.99/mo</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Call Queue</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
+                            <td><i class="fa fa-check text-bermuda-gray"></i> <span class="text-bermuda-gray">(with
+                                    pro)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-blue-ribbon text-white">Call Monitoring</td>
+                            <td class="red-border"><i class="fa fa-check text-persian-green"></i> Included</td>
+                            <td><i class="fa fa-check text-bermuda-gray"></i> <span class="text-bermuda-gray">(with
+                                    pro)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-govenor-bay"></td>
+                            <td class="red-border ssz"></td>
+                            <td class="bg-bermuda-gray" style="border: 0px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
-    </section>
-</div>
+        <div class="difference-btm-wrapper">
+            <div class="text-center u-content-space-half">
+                <p class="h5-sub-product-page text-dark-mid-blue difference-p">That’s how we roll. Your bill is simple,
+                    with no surprises. We just give you the best phone system, at a fair price, with no contract.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-highlight-section-wrapper kk">
+        <section class="container subpage-highlight-section section u-content-space-half">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-12 text-md-left text-center mt-md-0 mt-3 mx-auto pl-md-0 pr-md-3 px-0">
+                        <img class="rounded u-box-shadow-lg img-fluid mobile-display-none"
+                            src="https://images.dyl.com/marketing-web/images/advantages/pricing-8x8.webp" width="350"
+                            height="280" alt="8x8 Pricing">
+                        <figcaption>Source: 8x8</figcaption>
+                    </div>
+                    <div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0">
+                        <p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">Virtual Office With
+                            Every
+                            Account</p>
+                        <p class="difference-p">DYL’s Office View comes standard with every phone system.</p>
+                        <p class="difference-p">With DYL’s Listen and Whisper tools, you can monitor live calls and even
+                            talk to your employees, without the customer hearing. Or use the Barge feature to instantly
+                            hop
+                            on to a call. Easily run reports on calling activity and have them emailed to you...
+                            automatically.</p>
+                        <p class="h5-sub-product-page text-dark-mid-blue difference-h3">8x8 charges for what DYL
+                            includes at
+                            no extra cost.</p>
+                        <p class="difference-p">We believe you shouldn’t have to pay extra to have an effective phone
+                            system.</p>
+                        <button class="btn btn-lg btn-blue-ribbon mx-auto d-md-inline-block d-block" type="button"
+                            data-toggle="modal" data-target="#longFormFields">Get A Free Demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="subpage-highlight-section-wrapper aq">
+        <section class="container subpage-highlight-section u-content-space-half">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-12 order-md-1 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0">
+                        <p class="h3-sub-product-page-tab text-dark-mid-blue difference-sub-h2">8x8 is just a phone
+                            system.<br> You can make calls but that’s it.</p>
+                        <p class="difference-p">With DYL, you get an entire sales and service platform to grow your
+                            business.<br> Your DYL account includes:</p>
+                        <ul class="difference-ul fa-ul">
+                            <li class="mb-2"><span class="fa-li"><i class="fa fa-chevron-circle-right"></i></span>&nbsp;
+                                A
+                                telemarketing dialer for ultra-fast calling</li>
+                            <li class="mb-2"><span class="fa-li"><i class="fa fa-chevron-circle-right"></i></span>&nbsp;
+                                Lead management software</li>
+                            <li class="mb-2"><span class="fa-li"><i class="fa fa-chevron-circle-right"></i></span>&nbsp;
+                                Automated calling, email and text for new prospects</li>
+                        </ul>
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-lg btn-blue-ribbon text-white mx-auto d-md-inline-block d-block"
+                                type="button" data-toggle="modal" data-target="#longFormFields">Request A Tour</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0">
+                        <img class="img-fluid mobile-display-none"
+                            src="https://images.dyl.com/marketing-web/images/advantages/diff-presystem-lm.webp"
+                            width="340" height="297" alt="DYL Lead Manager">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="subpage-highlight-section-wrapper kk">
+        <section class="container subpage-highlight-section u-content-space-half">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-12 text-left mt-md-0 mt-3 mx-auto pl-md-0 pr-md-3 px-0">
+                        <img class="img-fluid rounded u-box-shadow-lg img-fluid mobile-display-none"
+                            src="https://images.dyl.com/marketing-web/images/advantages/diff-presystem-sms.webp"
+                            width="350" height="272" alt="Text and Picture Messaging">
+                    </div>
+                    <div class="col-md-7 col-12 text-left mt-3 pr-md-0 pl-md-3 px-0">
+                        <p class="h3-sub-product-page difference-sub-h2">The Power of Texting</p>
+
+                        <p class="difference-p">Did you know that text messages have a 99% open rate? Now you can
+                            harness
+                            that power to connect with customers and prospects, without having to use your cell phone.
+                        </p>
+                        <p class="difference-p">DYL lets you send and receive text messages, photos, and documents right
+                            from your desktop. Plus, our group text feature lets you contact up to 50 people at a time.
+                        </p>
+                        <p class="difference-p">8x8 only allows SMS texting with their premium Virtual Office upgrade.
+                            And
+                            they do not have picture messaging or group texting.</p>
+                        <button class="btn btn-lg btn-blue-ribbon text-white mx-auto d-md-inline-block d-block text-r"
+                            type="button" data-toggle="modal" data-target="#longFormFields"
+                            aria-labelledby="Get a demo">Get
+                            Demo</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <footer class="bg-darkBlue">
@@ -1806,13 +1859,7 @@ thank-you" />
             </div>
         </div>
         </div>
-        <script>
-            (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-            vgo('setAccount', '799988831');
-            vgo('setTrackByDefault', true);
-
-            vgo('process');
-        </script>
+      
 
         <script>
 
@@ -2957,8 +3004,7 @@ thank-you" />
         </div>
     </div>
 
-    <script src="../js/jquery.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
     <script src="../js/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
@@ -3020,7 +3066,7 @@ thank-you" />
         });
 
     </script>
-   
+
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3103,6 +3149,16 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
 
