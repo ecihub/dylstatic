@@ -133,20 +133,12 @@
 
         }
 
-        .sms-optin {
-            font-size: 80%;
-            line-height: 1.4;
-        }
-
-        fieldset label {
-            font-size: 85%;
-        }
     </style>
     <link rel="preload" fetchpriority="high" as="image"
         href="https://images.dyl.com/marketing-web/images/area-codes/SanMateo650/650-San-Mateo-california-area-code-city-view.webp"
         type="image/webp">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -1222,7 +1214,7 @@
     <div class="dynamic-areacode-banner">
 
         <img src="https://images.dyl.com/marketing-web/images/area-codes/SanMateo650/650-San-Mateo-california-area-code-city-view.webp"
-            alt="DYL Serves the 650&nbsp;Area Code phone numbers" fetchpriority="high"
+            alt="DYL Serves the 650&nbsp;Area Code phone numbers" 
             width="1420px" class="img-fluid areacode-head-image mobile-display-none">
 
 
@@ -4100,8 +4092,6 @@ thank-you" />
                         done = true;
 
                         SnapEngage.startLink();
-
-                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
                         SnapEngage.setCallback("Close", function (d) {
                             $("#designstudio").hide();
                         })
@@ -4125,7 +4115,6 @@ thank-you" />
                         SnapEngage.startLink();
 
                         $("#designstudio-iframe").contents().find("#main-desktop").css("width", '95%');
-                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
                         SnapEngage.setCallback("Close", function (d) {
                             $("#designstudio").hide();
                         })
