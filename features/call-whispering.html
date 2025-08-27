@@ -16,8 +16,8 @@
         sizes="16x16">
     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/stream-styles.css">
+      <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
     <style>
         body {
@@ -62,13 +62,16 @@
                 height: 302px;
 
             }
+              .mobile-display-none {
+                display: none !important;
+            }
         }
     </style>
-    <link rel="preload" as="image"
+    <link rel="preload" as="image" fetchpriority="high"
         href="https://images.dyl.com/marketing-web/images/product/three-people-call-whispering.png"
         imagesrcset="https://images.dyl.com/marketing-web/images/product/three-people-call-whispering.png">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 
 </head>
@@ -1155,7 +1158,7 @@
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0 pt-5">
                         <img src="https://images.dyl.com/marketing-web/images/product/three-people-call-whispering.png"
-                            class="img-fluid z-depth-1 py-0 center-block " alt="Lead Routing" style="box-shadow: none;">
+                            class="img-fluid z-depth-1 py-0 center-block mobile-display-none" alt="Lead Routing" style="box-shadow: none;">
                     </div>
                 </div>
             </div>
@@ -1299,9 +1302,9 @@
                     <div class="col-md-6 col-12 text-left x-auto pr-md-5 px-0">
                         <img class="d-none d-md-block"
                             src="https://images.dyl.com/marketing-web/images/product/action-items-lesson.png"
-                            class="img-fluid z-depth-1 pb-5" alt="DYL Workflows Dashboard" style="box-shadow: none;">
+                            class="img-fluid z-depth-1 pb-5" alt="DYL Workflows Dashboard" style="box-shadow: none;" loading="lazy">
                         <img src="https://images.dyl.com/marketing-web/images/product/call-whisper-client.png" class="img-fluid z-depth-1  pt-5"
-                            alt="DYL Workflows Dashboard" style="box-shadow: none;">
+                            alt="DYL Workflows Dashboard" style="box-shadow: none;" loading="lazy">
                     </div>
                     <div class="col-md-6 col-12 text-left x-auto pl-md-5 px-0">
                         <h3 class="pb-5 feature-page-heading-2 text-sky-blue" style="font-weight: 600;">Maximize Your Agents' Potential with Call Whispering
@@ -1365,7 +1368,7 @@
                     </div>
                     <div class="col-md-12 col-12 order-md-1 order-1 mx-auto pr-md-0 pl-md-3 px-0">
                         <img src="https://images.dyl.com/marketing-web/images/product/continuous-train-graphic.png"
-                            class="img-fluid z-depth-1 pb-5" alt="DYL Advanced Workflows" style="box-shadow: none;">
+                            class="img-fluid z-depth-1 pb-5 mobile-display-none" alt="DYL Advanced Workflows" loading="lazy" style="box-shadow: none;">
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 text-left mt-lg-0 mt-3 pl-md-0 pr-md-3 px-0">
                         <h3 class="feature-page-heading-2 pb-5 text-sky-blue" style="font-weight: 600;">Call Whispering is for Sales and Support Professionals
@@ -1407,8 +1410,8 @@
 						
                     </div>
                     <div class="col-md-6 col-12 order-md-2 order-2 mx-auto pr-md-0 pl-md-3 px-0 text-center d-none d-sm-block">
-                        <img src="https://images.dyl.com/marketing-web/images/product/call-whisper-monitor.png" class="img-fluid z-depth-1 py-0"
-                            alt="DYL Advanced Workflows" style="box-shadow: none;">
+                        <img src="https://images.dyl.com/marketing-web/images/product/call-whisper-monitor.png" class="img-fluid z-depth-1 py-0 mobile-display-none" 
+                            alt="DYL Advanced Workflows" style="box-shadow: none;" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -4144,5 +4147,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
