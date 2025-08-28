@@ -23,10 +23,8 @@
     <link rel="preload" href="../scss/index.min.css" as="style">
     <link rel="stylesheet" href="../scss/index.min.css">
 
-    <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css">
-
-
-    <link rel="stylesheet" href="../css/stream-styles.css">
+        <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
 
     <style>
         body {
@@ -75,9 +73,9 @@
     </style>
     <link rel="preload" as="image"
         href="https://images.dyl.com/marketing-web/images/features/b2c-tasks.webp"
-        imagesrcset="https://images.dyl.com/marketing-web/images/features/b2c-tasks.webp">
+        imagesrcset="https://images.dyl.com/marketing-web/images/features/b2c-tasks.webp"  fetchpriority="high">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 
 </head>
@@ -1167,7 +1165,7 @@
                 </div>
                 <div class="col-md-6 col-12 order-md-2 order-1 text-right mx-auto pr-md-0 pl-md-3 px-0">
                     <img fetchpriority="high" src="https://images.dyl.com/marketing-web/images/features/b2c-tasks.webp"
-                        class="img-fluid z-depth-1 py-0 center-block "
+                        class="img-fluid z-depth-1 py-0 center-block mobile-display-none"
                         alt="B2C marketing task management interface screenshot" width="500" height="459"
                         style="box-shadow: none;">
                 </div>
@@ -1253,7 +1251,7 @@
             success in the market.
         </p>
         <div class="col-md-12 col-12 mr-md-auto ml-lg-0 ml-md-auto mr-sm-auto mr-xs-auto ml-sm-auto ml-xs-auto">
-            <img class="img-fluid pb-3"
+            <img class="img-fluid pb-3 mobile-display-none"
                 src="https://images.dyl.com/marketing-web/images/features/large-background-16.webp" width="1500"
                 height="545" alt="Vibrant abstract background with colorful shapes and dynamic patterns."
                 loading="lazy">
@@ -1720,7 +1718,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6 col-12 text-left">
                     <img src="https://images.dyl.com/marketing-web/images/features/streamlined-customer-interactions-for-increased-sales.webp"
-                        width="500" height="691" class="img-fluid z-depth-1 pb-5" loading="lazy"
+                        width="500" height="691" class="img-fluid z-depth-1 pb-5 mobile-display-none" loading="lazy"
                         alt="Happy diverse team celebrating success" style="box-shadow: none;">
                 </div>
                 <div class="col-md-6 col-12 text-left ">
@@ -3904,11 +3902,10 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -3933,22 +3930,7 @@ thank-you" />
         });
 
     </script>
-    <script type="text/javascript" async>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "8lb3vpm72e");
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NJMS9GV9K');
-    </script>
+   
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3978,9 +3960,9 @@ thank-you" />
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front-init-product.js"></script>
+    <script defer src="../js/front.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const buttons = [
@@ -4051,5 +4033,15 @@ thank-you" />
 
         $(".ChatUsModalLiveButtons").on("click", () => {
             $("#chatUsModal").modal("hide");
+        });
+    </script>
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
         });
     </script>
