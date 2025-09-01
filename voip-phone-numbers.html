@@ -63,13 +63,17 @@
             .blue-background {
                 background: #3d69e6 !important;
             }
+
+            .voip-phone-numbers-map-section-wrapper {
+                   background: #3d69e6 !important;
+            }
         }
     </style>
     <link rel="preload" fetchpriority="high" as="image"
         href="https://images.dyl.com/marketing-web/images/area-codes/voipPhoneNumbers/voip-phone-numbers-map.webp"
         type="image/webp">
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp"  fetchpriority="high">
 
 
 
@@ -4638,7 +4642,6 @@ thank-you" />
 
                         SnapEngage.startLink();
 
-                        // $('.activeShowChatUsModal').find("#chatUsModal").modal('hide');
                         SnapEngage.setCallback("Close", function (d) {
                             $("#designstudio").hide();
                         })
@@ -4677,7 +4680,16 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 
 </body>
 
