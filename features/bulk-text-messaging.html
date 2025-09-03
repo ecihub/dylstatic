@@ -56,14 +56,12 @@
                 color: #0269ff !important;
             }
 
-            .mobile-display-none {
-                display: none !important;
-            }
+           
         }
     </style>
 
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp">
+        type="image/webp" fetchpriority="high">
 
 
 </head>
@@ -3896,13 +3894,4 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.innerWidth <= 600) {
-                const images = document.querySelectorAll("img.mobile-display-none");
-                images.forEach(img => {
-                    img.setAttribute("loading", "lazy");
-                });
-            }
-        });
-    </script>
+   
