@@ -3548,7 +3548,6 @@ thank-you" />
                 $('#popup2').fadeIn();
                 popup2Shown = true;
             } else {
-                // $('#popup2').fadeOut();
             }
         });
 
@@ -3572,7 +3571,16 @@ thank-you" />
             $("#popUprightDiv").css("height", "auto"); // Ensure it's open by default
         });
     </script>
-
+  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 600) {
+                const images = document.querySelectorAll("img.mobile-display-none");
+                images.forEach(img => {
+                    img.setAttribute("loading", "lazy");
+                });
+            }
+        });
+    </script>
 
 </body>
 
