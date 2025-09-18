@@ -22,7 +22,7 @@
     <link rel="preload" href="../../scss/blog.css" as="style">
     <link rel="stylesheet" href="../../scss/blog.css">
 
-    <style>
+     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
         }
@@ -62,6 +62,31 @@
                 width: 100%;
                 object-fit: cover;
             }
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 30px;
+            }
+
+            .text-sky-blue {
+                color: #0269ff !important;
+            }
+
+            .mobile-display-none {
+                display: none !important;
+            }
+
+            .featured-posts {
+                max-height: none !important;
+                height: auto !important
+            }
+
+            .p-5 {
+                padding: 1rem !important;
+            }
+
         }
     </style>
 
@@ -698,7 +723,7 @@
 
 <div class="container-fluid p-5" id="category-page">
     <div class="row no-gutters">
-        <div class="col-md-8 p-5">
+        <div class="col-md-8 pt-3">
             <div class="card border-0 pb-5">
                 <div class="container-fluid ">
                     <h1> Establish Accountability</h1>
@@ -709,11 +734,7 @@
                         <div class="card border-0  blog-card p-3">
                             <div class=" featured-posts mr-3 " alt="Card image cap">
                                 <a href="../a-guide-to-effective-team-management-and-communication.html">
-
-
-
-                                    <!-- No lazy load for the first two images -->
-                                    <img class="card-img-top post-img blog-image-intrinsic"
+                                    <img class="card-img-top post-img blog-image-intrinsic mobile-display-none"
                                         src="https://images.dyl.com/marketing-blog/thumb/managing-team-members-in-office.webp"
                                         alt="engineering" height="200">
 
