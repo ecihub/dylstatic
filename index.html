@@ -5289,7 +5289,7 @@ thank-you" />
 
 
     <script src="js/front-init.f00d63a840ac7b985704c3c61f00b2f80df10e1814963c88c1b94f9b3fa1ae27.min.js" defer></script>
-    <!--<script src="js/slick.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
     <script defer>
         $(window).on('load', function () {
             const $carousel = $('.js-slick-carousel');
@@ -5315,7 +5315,7 @@ thank-you" />
                 });
             }
         });
-    </script>-->
+    </script>
 
     <script type="text/javascript">
 
@@ -5414,8 +5414,62 @@ thank-you" />
 </script>
 
 
+<script>
+    // SafeLayoutManager.js
 
+const SafeLayoutManager = (function () {
+    const reads = [];
+    const writes = [];
 
+    function scheduleRead(fn) {
+        reads.push(fn);
+        requestFrame();
+    }
+
+    function scheduleWrite(fn) {
+        writes.push(fn);
+        requestFrame();
+    }
+
+    let frameRequested = false;
+
+    function requestFrame() {
+        if (frameRequested) return;
+
+        frameRequested = true;
+
+        requestAnimationFrame(() => {
+            // Perform all reads first
+            let read;
+            while ((read = reads.shift())) {
+                try {
+                    read();
+                } catch (err) {
+                    console.error('Layout read error:', err);
+                }
+            }
+
+            // Then perform all writes
+            let write;
+            while ((write = writes.shift())) {
+                try {
+                    write();
+                } catch (err) {
+                    console.error('Layout write error:', err);
+                }
+            }
+
+            frameRequested = false;
+        });
+    }
+
+    return {
+        read: scheduleRead,
+        write: scheduleWrite
+    };
+})();
+
+</script>
 </body>
 
 </html>
