@@ -5165,7 +5165,7 @@ thank-you" />
 
     <script src="js/jquery.min.js"></script>
 
-    <!-- Defer other scripts -->
+
     <script src="js/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
@@ -5214,31 +5214,30 @@ thank-you" />
         }
     </script>
 
-    <script>
-        let popup2Quote = false;
+    <!--<script>
+    let popup2Quote = false;
 
-        // Throttle scroll checks to avoid excessive calls
-        let scrollScheduled = false;
+    let scrollScheduled = false;
 
-        $(window).on('scroll', () => {
-            if (!scrollScheduled) {
-                scrollScheduled = true;
+    $(window).on('scroll', () => {
+        if (!scrollScheduled) {
+            scrollScheduled = true;
 
-                SafeLayoutManager.read(() => {
-                    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            SafeLayoutManager.read(() => {
+                const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-                    if (scrollTop > 2000 && !popup2Quote) {
-                        SafeLayoutManager.write(() => {
-                            $('#requestQuoteContent').fadeIn();
-                            popup2Quote = true;
-                        });
-                    }
+                if (scrollTop > 2000 && !popup2Quote) {
+                    SafeLayoutManager.write(() => {
+                        $('#requestQuoteContent').fadeIn();
+                        popup2Quote = true;
+                    });
+                }
 
-                    scrollScheduled = false; // allow next scroll check
-                });
-            }
-        });
-    </script>
+                scrollScheduled = false; // allow next scroll check
+            });
+        }
+    });
+</script>-->
 
 
     <script defer>
@@ -5383,7 +5382,7 @@ thank-you" />
         });
     </script>
 
-    <!--<script>
+    <script>
         window.onload = function () {
             if (window.innerWidth <= 768) {
                 const body = document.body;
@@ -5406,7 +5405,7 @@ thank-you" />
                 AOS.init();
             }
         };
-    </script>-->
+    </script>
     <script>
         if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
             jQuery.expr.filters.visible = function (elem) {
@@ -5452,7 +5451,6 @@ thank-you" />
                 frameRequested = true;
 
                 requestAnimationFrame(() => {
-                    // Perform all reads first
                     let read;
                     while ((read = reads.shift())) {
                         try {
@@ -5462,7 +5460,6 @@ thank-you" />
                         }
                     }
 
-                    // Then perform all writes
                     let write;
                     while ((write = writes.shift())) {
                         try {
