@@ -95,7 +95,7 @@
             .cta-form-bot {
                 padding-top: 0 !important
             }
-            
+
         }
     </style>
     <link rel="preload" fetchpriority="high" as="image"
@@ -5213,21 +5213,34 @@ thank-you" />
             headElement.appendChild(scriptElement);
         }
     </script>
+
     <script>
-        var popup2Quote = false;
+        let popup2Quote = false;
 
-        $(document).scroll(function () {
-            var y = $(this).scrollTop();
-            if (y > 2000 && !popup2Quote) {
-                $('#requestQuoteContent').fadeIn();
-                popup2Quote = true;
-            } else {
+        // Throttle scroll checks to avoid excessive calls
+        let scrollScheduled = false;
 
+        $(window).on('scroll', () => {
+            if (!scrollScheduled) {
+                scrollScheduled = true;
+
+                SafeLayoutManager.read(() => {
+                    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+                    if (scrollTop > 2000 && !popup2Quote) {
+                        SafeLayoutManager.write(() => {
+                            $('#requestQuoteContent').fadeIn();
+                            popup2Quote = true;
+                        });
+                    }
+
+                    scrollScheduled = false; // allow next scroll check
+                });
             }
         });
-
     </script>
-   
+
+
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -5297,7 +5310,7 @@ thank-you" />
             if ($carousel.length && !$carousel.hasClass('slick-initialized')) {
                 $carousel.slick({
                     slidesToShow: 1, // one "slide" that contains 2 reviews
-                    adaptiveHeight: true,
+                    adaptiveHeight: false,
                     prevArrow:
                         '<span class="fas fa-arrow-left slick-arrow slick-arrow-primary slick-arrow-left slick-arrow-centered-y rounded-circle ml-sm-2 ml-xl-4"></span>',
                     nextArrow:
@@ -5394,82 +5407,82 @@ thank-you" />
             }
         };
     </script>-->
-   <script>
-    if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
-        jQuery.expr.filters.visible = function (elem) {
-            return !!(
-                elem.offsetWidth ||
-                elem.offsetHeight ||
-                elem.getClientRects().length
-            );
-        };
-    }
-
-    (function () {
-        if (typeof c !== 'undefined' && typeof n === 'function') {
-            const cachedWidth = c.offsetWidth || c.clientWidth || 0;
-            a = 12 === n(cachedWidth / 3);
+    <script>
+        if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
+            jQuery.expr.filters.visible = function (elem) {
+                return !!(
+                    elem.offsetWidth ||
+                    elem.offsetHeight ||
+                    elem.getClientRects().length
+                );
+            };
         }
-    })();
-</script>
+
+        (function () {
+            if (typeof c !== 'undefined' && typeof n === 'function') {
+                const cachedWidth = c.offsetWidth || c.clientWidth || 0;
+                a = 12 === n(cachedWidth / 3);
+            }
+        })();
+    </script>
 
 
-<script>
-    // SafeLayoutManager.js
+    <script>
+        // SafeLayoutManager.js
 
-const SafeLayoutManager = (function () {
-    const reads = [];
-    const writes = [];
+        const SafeLayoutManager = (function () {
+            const reads = [];
+            const writes = [];
 
-    function scheduleRead(fn) {
-        reads.push(fn);
-        requestFrame();
-    }
-
-    function scheduleWrite(fn) {
-        writes.push(fn);
-        requestFrame();
-    }
-
-    let frameRequested = false;
-
-    function requestFrame() {
-        if (frameRequested) return;
-
-        frameRequested = true;
-
-        requestAnimationFrame(() => {
-            // Perform all reads first
-            let read;
-            while ((read = reads.shift())) {
-                try {
-                    read();
-                } catch (err) {
-                    console.error('Layout read error:', err);
-                }
+            function scheduleRead(fn) {
+                reads.push(fn);
+                requestFrame();
             }
 
-            // Then perform all writes
-            let write;
-            while ((write = writes.shift())) {
-                try {
-                    write();
-                } catch (err) {
-                    console.error('Layout write error:', err);
-                }
+            function scheduleWrite(fn) {
+                writes.push(fn);
+                requestFrame();
             }
 
-            frameRequested = false;
-        });
-    }
+            let frameRequested = false;
 
-    return {
-        read: scheduleRead,
-        write: scheduleWrite
-    };
-})();
+            function requestFrame() {
+                if (frameRequested) return;
 
-</script>
+                frameRequested = true;
+
+                requestAnimationFrame(() => {
+                    // Perform all reads first
+                    let read;
+                    while ((read = reads.shift())) {
+                        try {
+                            read();
+                        } catch (err) {
+                            console.error('Layout read error:', err);
+                        }
+                    }
+
+                    // Then perform all writes
+                    let write;
+                    while ((write = writes.shift())) {
+                        try {
+                            write();
+                        } catch (err) {
+                            console.error('Layout write error:', err);
+                        }
+                    }
+
+                    frameRequested = false;
+                });
+            }
+
+            return {
+                read: scheduleRead,
+                write: scheduleWrite
+            };
+        })();
+
+    </script>
 </body>
 
 </html>
