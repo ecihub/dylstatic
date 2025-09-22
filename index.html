@@ -5297,7 +5297,7 @@ thank-you" />
             if ($carousel.length && !$carousel.hasClass('slick-initialized')) {
                 $carousel.slick({
                     slidesToShow: 1, // one "slide" that contains 2 reviews
-                    adaptiveHeight: false,
+                    adaptiveHeight: true,
                     prevArrow:
                         '<span class="fas fa-arrow-left slick-arrow slick-arrow-primary slick-arrow-left slick-arrow-centered-y rounded-circle ml-sm-2 ml-xl-4"></span>',
                     nextArrow:
@@ -5371,59 +5371,52 @@ thank-you" />
     </script>
 
     <script>
-       window.onload = function () {
-    if (window.innerWidth <= 768) {
-        // Disable AOS on mobile
-        document.body.removeAttribute("data-aos-easing");
-        document.body.removeAttribute("data-aos-duration");
-        document.body.removeAttribute("data-aos-delay");
-
-        document.querySelectorAll('.aos-init').forEach(el => el.classList.remove('aos-init'));
-        document.querySelectorAll('.aos-animate').forEach(el => el.classList.remove('aos-animate'));
-        document.querySelectorAll('[data-aos]').forEach(el => el.removeAttribute('data-aos'));
-    } else {
-        // Use rAF + setTimeout to avoid reflow on load
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-                AOS.init({
-                    once: true, // Only animate once
-                    duration: 600, // Customize to fit your needs
-                    easing: 'ease-out',
+        window.onload = function () {
+            if (window.innerWidth <= 768) {
+                const body = document.body;
+                body.removeAttribute("data-aos-easing");
+                body.removeAttribute("data-aos-duration");
+                body.removeAttribute("data-aos-delay");
+                header.removeAttribute("data-hs-header-options");
+                document.querySelectorAll('.aos-init').forEach(el => {
+                    el.classList.remove('aos-init');
                 });
-            }, 100); // delay helps reduce reflow
-        });
-    }
-};
 
-    </script>
-    <script>
-    if (window.innerWidth > 768) {
-        const aosScript = document.createElement('script');
-        aosScript.src = 'js/aos.js';
-        aosScript.defer = true;
-        document.head.appendChild(aosScript);
+                document.querySelectorAll('.aos-animate').forEach(el => {
+                    el.classList.remove('aos-animate');
+                });
 
-        const slickScript = document.createElement('script');
-        slickScript.src = 'js/slick.min.js';
-        slickScript.defer = true;
-        document.head.appendChild(slickScript);
-    }
-</script>
-    <script>
-        if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
-            jQuery.expr.filters.visible = function (elem) {
-                const rect = elem.getBoundingClientRect();
-                return rect.width > 0 || rect.height > 0;
-            };
-        }
-
-        (function () {
-            if (typeof c !== 'undefined' && typeof n === 'function') {
-                const cachedWidth = c.clientWidth || c.getBoundingClientRect().width || 0;
-                a = 12 === n(cachedWidth / 3);
+                document.querySelectorAll('[data-aos]').forEach(el => {
+                    el.removeAttribute('data-aos');
+                });
+            } else {
+                AOS.init();
             }
-        })();
+        };
     </script>
+   <script>
+    // Safer and faster version of jQuery ":visible" filter
+    if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
+        jQuery.expr.filters.visible = function (elem) {
+            // Avoid getBoundingClientRect to prevent forced reflow
+            return !!(
+                elem.offsetWidth ||
+                elem.offsetHeight ||
+                elem.getClientRects().length
+            );
+        };
+    }
+
+    // Cached layout check (avoid getBoundingClientRect where possible)
+    (function () {
+        if (typeof c !== 'undefined' && typeof n === 'function') {
+            // Prefer offsetWidth if available to avoid forced reflow
+            const cachedWidth = c.offsetWidth || c.clientWidth || 0;
+            a = 12 === n(cachedWidth / 3);
+        }
+    })();
+</script>
+
 
 
 
