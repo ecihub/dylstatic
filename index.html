@@ -95,7 +95,7 @@
             .cta-form-bot {
                 padding-top: 0 !important
             }
-
+            
         }
     </style>
     <link rel="preload" fetchpriority="high" as="image"
@@ -5165,7 +5165,7 @@ thank-you" />
 
     <script src="js/jquery.min.js"></script>
 
-
+    <!-- Defer other scripts -->
     <script src="js/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
@@ -5213,33 +5213,21 @@ thank-you" />
             headElement.appendChild(scriptElement);
         }
     </script>
+    <script>
+        var popup2Quote = false;
 
-    <!--<script>
-    let popup2Quote = false;
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 2000 && !popup2Quote) {
+                $('#requestQuoteContent').fadeIn();
+                popup2Quote = true;
+            } else {
 
-    let scrollScheduled = false;
+            }
+        });
 
-    $(window).on('scroll', () => {
-        if (!scrollScheduled) {
-            scrollScheduled = true;
-
-            SafeLayoutManager.read(() => {
-                const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-                if (scrollTop > 2000 && !popup2Quote) {
-                    SafeLayoutManager.write(() => {
-                        $('#requestQuoteContent').fadeIn();
-                        popup2Quote = true;
-                    });
-                }
-
-                scrollScheduled = false; // allow next scroll check
-            });
-        }
-    });
-</script>-->
-
-
+    </script>
+   
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -5309,7 +5297,7 @@ thank-you" />
             if ($carousel.length && !$carousel.hasClass('slick-initialized')) {
                 $carousel.slick({
                     slidesToShow: 1, // one "slide" that contains 2 reviews
-                    adaptiveHeight: false,
+                    adaptiveHeight: true,
                     prevArrow:
                         '<span class="fas fa-arrow-left slick-arrow slick-arrow-primary slick-arrow-left slick-arrow-centered-y rounded-circle ml-sm-2 ml-xl-4"></span>',
                     nextArrow:
@@ -5382,7 +5370,7 @@ thank-you" />
         });
     </script>
 
-    <script>
+    <!--<script>
         window.onload = function () {
             if (window.innerWidth <= 768) {
                 const body = document.body;
@@ -5405,81 +5393,83 @@ thank-you" />
                 AOS.init();
             }
         };
-    </script>
-    <script>
-        if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
-            jQuery.expr.filters.visible = function (elem) {
-                return !!(
-                    elem.offsetWidth ||
-                    elem.offsetHeight ||
-                    elem.getClientRects().length
-                );
-            };
+    </script>-->
+   <script>
+    if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
+        jQuery.expr.filters.visible = function (elem) {
+            return !!(
+                elem.offsetWidth ||
+                elem.offsetHeight ||
+                elem.getClientRects().length
+            );
+        };
+    }
+
+    (function () {
+        if (typeof c !== 'undefined' && typeof n === 'function') {
+            const cachedWidth = c.offsetWidth || c.clientWidth || 0;
+            a = 12 === n(cachedWidth / 3);
         }
-
-        (function () {
-            if (typeof c !== 'undefined' && typeof n === 'function') {
-                const cachedWidth = c.offsetWidth || c.clientWidth || 0;
-                a = 12 === n(cachedWidth / 3);
-            }
-        })();
-    </script>
+    })();
+</script>
 
 
-    <script>
-        // SafeLayoutManager.js
+<script>
+    // SafeLayoutManager.js
 
-        const SafeLayoutManager = (function () {
-            const reads = [];
-            const writes = [];
+const SafeLayoutManager = (function () {
+    const reads = [];
+    const writes = [];
 
-            function scheduleRead(fn) {
-                reads.push(fn);
-                requestFrame();
-            }
+    function scheduleRead(fn) {
+        reads.push(fn);
+        requestFrame();
+    }
 
-            function scheduleWrite(fn) {
-                writes.push(fn);
-                requestFrame();
-            }
+    function scheduleWrite(fn) {
+        writes.push(fn);
+        requestFrame();
+    }
 
-            let frameRequested = false;
+    let frameRequested = false;
 
-            function requestFrame() {
-                if (frameRequested) return;
+    function requestFrame() {
+        if (frameRequested) return;
 
-                frameRequested = true;
+        frameRequested = true;
 
-                requestAnimationFrame(() => {
-                    let read;
-                    while ((read = reads.shift())) {
-                        try {
-                            read();
-                        } catch (err) {
-                            console.error('Layout read error:', err);
-                        }
-                    }
-
-                    let write;
-                    while ((write = writes.shift())) {
-                        try {
-                            write();
-                        } catch (err) {
-                            console.error('Layout write error:', err);
-                        }
-                    }
-
-                    frameRequested = false;
-                });
+        requestAnimationFrame(() => {
+            // Perform all reads first
+            let read;
+            while ((read = reads.shift())) {
+                try {
+                    read();
+                } catch (err) {
+                    console.error('Layout read error:', err);
+                }
             }
 
-            return {
-                read: scheduleRead,
-                write: scheduleWrite
-            };
-        })();
+            // Then perform all writes
+            let write;
+            while ((write = writes.shift())) {
+                try {
+                    write();
+                } catch (err) {
+                    console.error('Layout write error:', err);
+                }
+            }
 
-    </script>
+            frameRequested = false;
+        });
+    }
+
+    return {
+        read: scheduleRead,
+        write: scheduleWrite
+    };
+})();
+
+</script>
 </body>
 
 </html>
