@@ -5395,10 +5395,8 @@ thank-you" />
         };
     </script>
    <script>
-    // Safer and faster version of jQuery ":visible" filter
     if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
         jQuery.expr.filters.visible = function (elem) {
-            // Avoid getBoundingClientRect to prevent forced reflow
             return !!(
                 elem.offsetWidth ||
                 elem.offsetHeight ||
@@ -5407,10 +5405,8 @@ thank-you" />
         };
     }
 
-    // Cached layout check (avoid getBoundingClientRect where possible)
     (function () {
         if (typeof c !== 'undefined' && typeof n === 'function') {
-            // Prefer offsetWidth if available to avoid forced reflow
             const cachedWidth = c.offsetWidth || c.clientWidth || 0;
             a = 12 === n(cachedWidth / 3);
         }
