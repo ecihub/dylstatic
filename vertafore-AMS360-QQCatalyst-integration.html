@@ -7,18 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="cache-control" content="max-age=31536000, public, must-revalidate">
     <meta http-equiv="Pragma" content="cache">
+
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
-    <title>Task Software | DYL</title>
+    <title>DYL | Business VoIP With VoiceConnect</title>
     <meta name="description"
-        content="Explore Dyl's task software features to streamline productivity, enhance team collaboration, and simplify project management. Elevate your workflow today!">
+        content="Upgrade your communication! Explore our top-notch business phone service solutions for seamless connections and enhanced productivity.">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
-
-    <link rel="preload" href="../scss/index.min.css" as="style">
-    <link rel="stylesheet" href="../scss/index.min.css">
-
-
+    <link rel="preload" href="scss/index.min.css" as="style">
+    <link rel="stylesheet" href="scss/index.min.css">
+    <link rel="stylesheet" href="css/stream-styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/stream-styles.css">
+    </noscript>
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
+    <link rel="preconnect" href="https://prism.app-us1.com" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
     <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
@@ -31,7 +37,13 @@
             src: local("Open Sans"), local("Open Sans"),
                 url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
         }
+    </style>
+    <link rel="preload" fetchpriority="high" as="image"
+        href="https://images.dyl.com/marketing-web/images/home/hero.webp" type="image/webp">
+    <link rel="preload" fetchpriority=high href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png"
+        as="image" type="image/webp">
 
+    <style>
         .DYL-blue-logo-nav {
             background: url(https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png);
             text-indent: -99999em;
@@ -47,7 +59,6 @@
             height: auto;
         }
 
-
         @media (min-width: 320px) and (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -57,18 +68,24 @@
                 color: #0269ff !important;
             }
 
-            .sales-email-sequence-image {
-                width: 327px;
-                height: 302px;
+            .mobile-disabled {
+                display: none;
+            }
 
+            .h5-sub-product-page {
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 28px;
+            }
+
+            .h2-sub-product-page,
+            .h2-sub-product-page-d3 {
+                font-weight: 600;
+                font-size: 34px;
+                line-height: 46px;
             }
         }
     </style>
-
-    <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
-        type="image/webp" fetchpriority="high">
-
-
 </head>
 <header id="header"
     class="header left-aligned-navbar header-box-shadow header-abs-top header-bg-transparent header-show-hide bg-white js-header-fix-moment"
@@ -79,12 +96,12 @@
     <div class="header-section">
         <div id="logoAndNav" class="container">
             <nav id="mega-menu" class="js-mega-menu navbar navbar-expand-lg navbar-mobile-padding">
-                <a class="navbar-brand" href="../" aria-label="DYL">
+                <a class="navbar-brand" href="./" aria-label="DYL">
                     <div class="DYL-logo DYL-blue-logo-nav"></div>
                 </a>
                 <ul class="navbar-nav mobile-login d-flex d-sm-flex d-lg-none">
                     <li class="navbar-nav-item nav-bold-black" style="padding-right: 1.5em;">
-                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
+                        <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="./support.html">
                             <i class="fal fa-headset nav-icon-mobile">&nbsp;</i>Support</a>
                     </li>
                     <li class="navbar-nav-item nav-bold-black">
@@ -110,7 +127,7 @@
                                         <div class="col-lg-8">
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../business-phone-service.html">
+                                                    <a class="navbar-promo-link" href="./business-phone-service.html">
                                                         <div class="media align-items-center">
                                                             <i
                                                                 class="fal fa-phone-laptop nav-icon text-center text-center"></i>
@@ -123,7 +140,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../lead-and-contact-management.html">
+                                                        href="./lead-and-contact-management.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-id-card nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -136,7 +153,7 @@
                                             </div>
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../business-text-messaging.html">
+                                                    <a class="navbar-promo-link" href="./business-text-messaging.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-comments nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -146,7 +163,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../lead-engine.html">
+                                                    <a class="navbar-promo-link" href="./lead-engine.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-tasks-alt nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -159,7 +176,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../virtual-office.html">
+                                                    <a class="navbar-promo-link" href="./virtual-office.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-tablet-alt nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -169,7 +186,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../advanced-workflows.html">
+                                                    <a class="navbar-promo-link" href="./advanced-workflows.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-project-diagram nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -182,7 +199,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../virtual-call-center.html">
+                                                    <a class="navbar-promo-link" href="./virtual-call-center.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-user-headset nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -193,7 +210,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../partners/integrations.html">
+                                                    <a class="navbar-promo-link" href="./partners/integrations.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-network-wired nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -207,7 +224,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../voip.html">
+                                                    <a class="navbar-promo-link" href="./voip.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-phone-volume nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -217,7 +234,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../email-automation.html">
+                                                    <a class="navbar-promo-link" href="./email-automation.html">
                                                         <div class="media align-items-center">
                                                             <i
                                                                 class="fal fa-envelope nav-icon text-center text-center"></i>
@@ -234,14 +251,14 @@
                                                 <div class="position-relative ">
                                                     <img class="img-fluid rounded mb-3"
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-products.webp"
-                                                        alt="DYL 2.0 Platform" loading="lazy" width="376" height="269">
+                                                        alt="DYL 2.0 Platform" width="376" height="269" loading="lazy">
                                                 </div>
                                                 <span class="text-blue-ribbon">DYL Software 2.0</span><span
                                                     class="badge badge-success badge-pill ml-3">Coming
                                                     Soon</span></span>
                                             </div>
                                             <div class="navbar-promo-card navbar-promo-item off-top-12">
-                                                <a class="navbar-promo-link" href="../features.html">
+                                                <a class="navbar-promo-link" href="./features.html">
                                                     <div class="media align-items-center">
 
                                                         <i
@@ -273,7 +290,7 @@
                                         <div class="col-lg-12">
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../industries.html">
+                                                    <a class="navbar-promo-link" href="./industries.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-city nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -285,7 +302,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../advertising-marketing-business-solutions.html">
+                                                        href="./advertising-marketing-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-chart-line nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -297,7 +314,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../car-dealerships-business-solutions.html">
+                                                        href="./car-dealerships-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-cars nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -310,7 +327,7 @@
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../education-business-solutions.html">
+                                                        href="./education-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-school nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -321,7 +338,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../finance-business-solutions.html">
+                                                        href="./finance-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-money-check-alt nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -332,7 +349,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../medical-dental-practice-business-solutions.html">
+                                                        href="./medical-dental-practice-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-laptop-medical nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -345,7 +362,7 @@
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../construction-business-solutions.html">
+                                                        href="./construction-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-user-hard-hat nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -356,7 +373,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../insurance-business-solutions.html">
+                                                        href="./insurance-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i
                                                                 class="fal fa-clipboard-list-check nav-icon text-center"></i>
@@ -367,8 +384,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link"
-                                                        href="../legal-business-solutions.html">
+                                                    <a class="navbar-promo-link" href="./legal-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-gavel nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -382,7 +398,7 @@
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../nonprofit-business-solutions.html">
+                                                        href="./nonprofit-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-person-sign nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -393,7 +409,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../political-campaign-business-solutions.html">
+                                                        href="./political-campaign-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-poll-people nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -404,7 +420,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../real-estate-agency-business-solutions.html">
+                                                        href="./real-estate-agency-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-sign nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -431,7 +447,7 @@
                                         <div class="col-lg-8">
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../support.html">
+                                                    <a class="navbar-promo-link" href="./support.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-info-circle nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -441,7 +457,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../reviews.html">
+                                                    <a class="navbar-promo-link" href="./reviews.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-users-crown nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -454,7 +470,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../case-studies.html">
+                                                    <a class="navbar-promo-link" href="./case-studies.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-shield-check nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -464,7 +480,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../support/system-training.html">
+                                                    <a class="navbar-promo-link" href="./support/system-training.html">
                                                         <div class="media align-items-center">
                                                             <i
                                                                 class="fal fa-chalkboard-teacher nav-icon text-center"></i>
@@ -478,7 +494,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../glossary.html">
+                                                    <a class="navbar-promo-link" href="./glossary.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-book-open nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -488,7 +504,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../ebooks.html">
+                                                    <a class="navbar-promo-link" href="./ebooks.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-book nav-icon text-center"></i>
                                                             <div class="media-body">
@@ -505,7 +521,7 @@
                                                 <div class="position-relative">
                                                     <img class="img-fluid rounded mb-3 "
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-learn.webp"
-                                                        alt="DYL 2.0 Platform" loading="lazy" width="236" height="149">
+                                                        alt="DYL 2.0 Platform" width="236" height="149" loading="lazy">
                                                 </div>
                                                 <span class="text-blue-ribbon">DYL Software 2.0</span><span
                                                     class="badge badge-success badge-pill ml-3">Coming
@@ -523,7 +539,7 @@
                                 }
                                 }'>
                                 <a id="blogMegaMenupc" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="../pricing.html">Pricing</a>
+                                    href="./pricing.html">Pricing</a>
                                 <div class="hs-mega-menu w-100" aria-labelledby="blogMegaMenupc">
                                     <div class="row no-gutters">
                                         <div class="col-lg-12">
@@ -540,7 +556,7 @@
                                 }
                                 }'>
                                 <a id="blogMegaMenupc" class="hs-mega-menu-invoker nav-link nav-bold"
-                                    href="../blog.html">Blog</a>
+                                    href="./blog.html">Blog</a>
                                 <div class="hs-mega-menu w-100" aria-labelledby="blogMegaMenupc">
                                     <div class="row no-gutters">
                                         <div class="col-lg-12">
@@ -551,7 +567,7 @@
                                 </div>
                             </li>
                             <li class="navbar-nav-item nav-bold-black nav-margin d-none d-sm-none d-md-none d-lg-block">
-                                <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="../support.html">
+                                <a class="nav-link nav-link-toggle nav-link-toggle-disable" href="./support.html">
                                     <i class="fal fa-headset nav-bar-icon">&nbsp;</i>Support</a>
                             </li>
                             <li class="navbar-nav-item nav-bold-black d-none d-sm-none d-lg-block">
@@ -616,7 +632,7 @@
                                         <div class="col-lg-8">
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../business-phone-service.html">
+                                                    <a class="navbar-promo-link" href="./business-phone-service.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-phone-laptop nav-icon"></i>
                                                             <div class="media-body">
@@ -627,7 +643,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../business-text-messaging.html">
+                                                    <a class="navbar-promo-link" href="./business-text-messaging.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-comments nav-icon"></i>
                                                             <div class="media-body">
@@ -641,7 +657,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../virtual-office.html">
+                                                    <a class="navbar-promo-link" href="./virtual-office.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-tablet-alt nav-icon"></i>
                                                             <div class="media-body">
@@ -652,7 +668,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../lead-and-contact-management.html">
+                                                        href="./lead-and-contact-management.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-id-card nav-icon"></i>
                                                             <div class="media-body">
@@ -666,7 +682,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../lead-engine.html">
+                                                    <a class="navbar-promo-link" href="./lead-engine.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-tasks-alt nav-icon"></i>
                                                             <div class="media-body">
@@ -676,7 +692,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../advanced-workflows.html">
+                                                    <a class="navbar-promo-link" href="./advanced-workflows.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-project-diagram nav-icon"></i>
                                                             <div class="media-body">
@@ -689,7 +705,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../virtual-call-center.html">
+                                                    <a class="navbar-promo-link" href="./virtual-call-center.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-user-headset nav-icon"></i>
                                                             <div class="media-body">
@@ -700,7 +716,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../partners/integrations.html">
+                                                    <a class="navbar-promo-link" href="./partners/integrations.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-network-wired nav-icon"></i>
                                                             <div class="media-body">
@@ -714,7 +730,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../voip.html">
+                                                    <a class="navbar-promo-link" href="./voip.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-phone-volume nav-icon"></i>
                                                             <div class="media-body">
@@ -724,7 +740,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../email-automation.html">
+                                                    <a class="navbar-promo-link" href="./email-automation.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-envelope nav-icon"></i>
                                                             <div class="media-body">
@@ -734,7 +750,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../features.html">
+                                                    <a class="navbar-promo-link" href="./features.html">
                                                         <div class="media align-items-center">
 
                                                             <i
@@ -765,7 +781,7 @@
                                         <div class="col-lg-12">
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../industries.html">
+                                                    <a class="navbar-promo-link" href="./industries.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-city nav-icon"></i>
                                                             <div class="media-body">
@@ -777,7 +793,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../advertising-marketing-business-solutions.html">
+                                                        href="./advertising-marketing-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-chart-line nav-icon"></i>
                                                             <div class="media-body">
@@ -789,7 +805,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../car-dealerships-business-solutions.html">
+                                                        href="./car-dealerships-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-cars nav-icon"></i>
                                                             <div class="media-body">
@@ -804,7 +820,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../education-business-solutions.html">
+                                                        href="./education-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-school nav-icon"></i>
                                                             <div class="media-body">
@@ -815,7 +831,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../finance-business-solutions.html">
+                                                        href="./finance-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-money-check-alt nav-icon"></i>
                                                             <div class="media-body">
@@ -826,7 +842,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../medical-dental-practice-business-solutions.html">
+                                                        href="./medical-dental-practice-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-laptop-medical nav-icon"></i>
                                                             <div class="media-body">
@@ -840,7 +856,7 @@
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../construction-business-solutions.html">
+                                                        href="./construction-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-user-hard-hat nav-icon"></i>
                                                             <div class="media-body">
@@ -851,7 +867,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../insurance-business-solutions.html">
+                                                        href="./insurance-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-clipboard-list-check nav-icon"></i>
                                                             <div class="media-body">
@@ -861,7 +877,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../legal-business-solutions.html">
+                                                    <a class="navbar-promo-link" href="./legal-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-gavel nav-icon"></i>
                                                             <div class="media-body">
@@ -877,7 +893,7 @@
 
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../nonprofit-business-solutions.html">
+                                                        href="./nonprofit-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-person-sign nav-icon"></i>
                                                             <div class="media-body">
@@ -888,7 +904,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../political-campaign-business-solutions.html">
+                                                        href="./political-campaign-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-poll-people nav-icon"></i>
                                                             <div class="media-body">
@@ -899,7 +915,7 @@
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
                                                     <a class="navbar-promo-link"
-                                                        href="../real-estate-agency-business-solutions.html">
+                                                        href="./real-estate-agency-business-solutions.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-sign nav-icon"></i>
                                                             <div class="media-body">
@@ -928,7 +944,7 @@
                                             <div class="navbar-promo-card-deck">
 
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../support.html">
+                                                    <a class="navbar-promo-link" href="./support.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-info-circle nav-icon"></i>
                                                             <div class="media-body">
@@ -942,7 +958,7 @@
                                                 <div class="navbar-promo-card-deck">
 
                                                     <div class="navbar-promo-card navbar-promo-item">
-                                                        <a class="navbar-promo-link" href="../reviews.html">
+                                                        <a class="navbar-promo-link" href="./reviews.html">
                                                             <div class="media align-items-center">
                                                                 <i class="fal fa-users-crown nav-icon"></i>
                                                                 <div class="media-body">
@@ -957,7 +973,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../case-studies.html">
+                                                    <a class="navbar-promo-link" href="./case-studies.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-shield-check nav-icon"></i>
                                                             <div class="media-body">
@@ -967,7 +983,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href="../support/system-training.html">
+                                                    <a class="navbar-promo-link" href="./support/system-training.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-chalkboard-teacher nav-icon"></i>
                                                             <div class="media-body">
@@ -981,7 +997,7 @@
 
                                             <div class="navbar-promo-card-deck">
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href=".html/glossary.html">
+                                                    <a class="navbar-promo-link" href="./glossary.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-book-open nav-icon"></i>
                                                             <div class="media-body">
@@ -991,7 +1007,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="navbar-promo-card navbar-promo-item">
-                                                    <a class="navbar-promo-link" href=".html/ebooks.html">
+                                                    <a class="navbar-promo-link" href="./ebooks.html">
                                                         <div class="media align-items-center">
                                                             <i class="fal fa-book nav-icon"></i>
                                                             <div class="media-body">
@@ -1031,7 +1047,7 @@
                                 "maxWidth": "700px"
                                 }
                                 }'>
-                                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link  nav-bold" href="../blog.html"
+                                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link  nav-bold" href="./blog.html"
                                     aria-haspopup="true" aria-expanded="false">Blog</a>
 
 
@@ -1136,189 +1152,935 @@
 </header>
 <div class="container-fluid" style="height:76px;"></div>
 
+
+
 <body>
-    <div class="content-page-section-wrapper p-5">
-        <section class="content-page-section container">
-            <h1 class="content-page-h1 pt-5">Integrations</h1>
-            <section class="primary-content-section-2">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-12 mb-3 px-4">
-                        <img class="partners-img"
-                            src="https://images.dyl.com/marketing-web/images/old/int-vertafore.webp" width="264"
-                            height="85" alt="Vertafore">
-                        <p class="partners-p">Connect your DYL phone activity to your AMS360 account. Automatically
-                            import
-                            your DYL customer records, call recordings, and time-stamped notes into AMS360 with one
-                            click.
-                        </p>
-                        <p class="partners-p text-right"><a href="../vertafore-AMS360-QQCatalyst-integration.html">Request Info
-                                <i class="fa fa-angle-right"></i></a></p>
-                    </div>
 
-                    <div class="col-md-4 col-sm-6 col-12 mb-3 px-4">
-                        <img class="partners-img"
-                            src="https://images.dyl.com/marketing-web/images/old/int-qqCatalyst.webp" width="264"
-                            height="85" alt="QQ Catalyst">
+    <div class="content-page-section-wrapper pb-5">
+        <section class="content-page-section container mt-10">
+            <h1 class="d3 primary-content-h1 feature-h1">Vertafore AMS360 &amp; QQCatalyst Integration</h1>
+            <div class="row align-items-center">
+                <div class="col-12 mb-md-0">
+                    <h5 class="mb-4">Imagine your phone system seamlessly integrated with your AMS360 or QQCatalyst
+                        accounts, bringing a higher level of efficiency to both your sales &amp; service teams.</h5>
 
-                        <p class="partners-p">DYL's integration to QQCatalyst provides automatic synchronization for
-                            your
-                            most important data. Instantly update call recordings, customer records, and notes into
-                            QQCatalyst from DYL.</p>
+                    <h6>What you get:</h6>
 
-                        <p class="partners-p text-right"><a href="../vertafore-AMS360-QQCatalyst-integration.html">Request Info
-                                <i class="fa fa-angle-right"></i></a></p>
-                    </div>
+                    <ul class="prod-feature-ul fa-ul">
+                        <li><span class="fa-li"><i class="fa fa-chevron-circle-right voice"></i></span>"Screen pop"
+                            feature automatically populates your caller's customer records</li>
+                        <li><span class="fa-li"><i class="fa fa-chevron-circle-right voice"></i></span>Sync call
+                            recordings and voicemails with customer records</li>
+                        <li><span class="fa-li"><i class="fa fa-chevron-circle-right voice"></i></span>Automatically
+                            update your notes and call history</li>
+                    </ul>
 
-                    <div class="col-md-4 col-sm-6 col-12 mb-3 px-4">
-                        <img class="partners-img"
-                            src="https://images.dyl.com/marketing-web/images/old/int-ezlynx-b.webp" width="264"
-                            height="85" alt="ezLynx">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <img class="img-fluid card" src="https://images.dyl.com/marketing-web/images/advantages/qq_dyl.jpeg"
+                        alt="QQCatalyst integrates with DYL">
+                </div>
+            </div>
 
-                        <p class="partners-p">DYL automatically populates the EZLynx customer information as soon as you
-                            receive an incoming call, providing the highest level customer service experience,
-                            seamlessly.
-                        </p>
+            <div class="row">
+                <div class="col-12 col-lg-11">
+                    <h6 class="mt-3">DYL handles the busy work so your agents can focus on what they do best, converting
+                        leads into sales.<p></p>
+                        <p>How does DYL’s phone integration with Vertafore work? DYL automatically updates your phone
+                            data with your Vertafore records, saving you hours of busywork and helping you write more
+                            policies. Here’s how:</p>
+                    </h6>
+                </div>
+            </div>
 
-                        <p class="partners-p text-right"><a href="#longFormFields" data-toggle="modal">Request Info <i
-                                    class="fa fa-angle-right"></i></a></p>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12 mb-3 px-4">
-                        <img class="partners-img" src="https://images.dyl.com/marketing-web/images/old/int-wufoo.webp"
-                            width="159" height="85" alt="WuFoO">
-
-                        <p class="partners-p">Turn your Wufoo forms into live phone calls using DYL’s integration. Your
-                            Wufoo forms will automatically import into DYL, as well as triggering an instant phone call
-                            the
-                            moment the form comes in.</p>
-
-                        <p class="partners-p text-right"><a href="#longFormFields" data-toggle="modal">Request Info <i
-                                    class="fa fa-angle-right"></i></a></p>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12 mb-3 px-4">
-                        <img class="partners-img"
-                            src="https://images.dyl.com/marketing-web/images/old/int-farmers-b.webp" width="264"
-                            height="85" alt="Farmers Insurance">
-
-                        <p class="partners-p">DYL automatically loads eCMS records on incoming calls. DYL also includes
-                            compliant text messaging, power dialing, and call recording to enhance the sales and
-                            customer
-                            service process. </p>
-
-                        <p class="partners-p text-right"><a href="#longFormFields" data-toggle="modal">Request Info <i
-                                    class="fa fa-angle-right"></i></a></p>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12 mb-3 px-4">
-                        <img class="partners-img" src="https://images.dyl.com/marketing-web/images/old/int-eagent-b.png"
-                            width="264" height="85" alt="eAgent">
-
-                        <p class="partners-p">We work seamlessly alongside Allstate's eAgent software. When your
-                            customers
-                            call in, DYL will sync with eAgent to pull up that contact record, DYL also records and
-                            tracks
-                            every call.</p>
-
-                        <p class="partners-p text-right"><a href="#longFormFields" data-toggle="modal">Request Info <i
-                                    class="fa fa-angle-right"></i></a></p>
+            <div class="row p-3">
+                <div class="col-12 col-lg-6">
+                    <img class="img-fluid" src="https://images.dyl.com/marketing-web/images/advantages/qq_ipad.png"
+                        alt="QQ and DYL Ipad">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h4>Automatically Load Customer Records</h4>
+                    <p>With DYL, you don't need to keep customers on hold when looking up their Vertafore record. Our
+                        system automatically populates customer information the moment they call in.</p>
+                    <h4>Sync Call Recordings and Voicemails</h4>
+                    <p>DYL updates and records every call and voicemail directly into Vertafore. Great for training
+                        staff, handling E&amp;O claims, and staying organized.</p>
+                    <h4>Sync Notes</h4>
+                    <p>Notes written in DYL will sync with your Vertafore contact's record.</p>
+                </div>
+            </div>
+            <div class="row mt-1 mt-lg-3">
+                <div class="col-12">
+                    <h3>Combine Vertafore AMS360 or QQCatalyst with the Ultimate Phone Platform For Insurance Agents
+                    </h3>
+                    <p>In addition to integrating with Vertafore, DYL provides complete telemarketing solutions for
+                        insurance agents. Unlimited local/long distance and call recording is included with every
+                        account.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                    <h4>AMS 360</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe title="DYL Video" class="embed-responsive-item"
+                            src="https://player.vimeo.com/video/444732806?title=0&amp;byline=0&amp;portrait=0"
+                            allowfullscreen=""></iframe>
                     </div>
                 </div>
-            </section>
-        </section>
-    </div>
+                <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+                    <h4>QQCatalyst</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe title="DYL Video" class="embed-responsive-item"
+                            src="https://player.vimeo.com/video/445398433?title=0&amp;byline=0&amp;portrait=0"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mt-lg-8">
+                <div class="col-12 col-lg-5">
+                    <h4>Have a View From The Top with Office View</h4>
+                    <p>See all of your office activity in real-time. Listen to calls, drag-and-drop to transfer calls,
+                        and easily connect multiple locations.</p>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <img class="img-fluid"
+                        src="https://images.dyl.com/marketing-web/images/product/virtualoffice_ov.png"
+                        alt="DYL Office View">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <h4>Text &amp; Picture Messaging have a 99% open rate</h4>
+                    <p>Send and receive texts, photos, and PDFs from your desktop. Automate your texting with templates
+                        and scheduled messages.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img class="img-fluid" src="https://images.dyl.com/marketing-web/images/product/feat-text2.png"
+                        alt="DYL Texting">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <h4>Never Miss Another Sale with Tracking &amp; Analytics</h4>
+                    <p>Track every single inbound and outbound call. Monitor your staff’s activity and view customizable
+                        reports.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img class="img-fluid card"
+                        src="https://images.dyl.com/marketing-web/images/product/userReports.gif"
+                        alt="DYL User Reports">
+                </div>
+            </div>
+            <div class="row mt-8 bg-dyl-grey p- p-lg-5" style="border-radius: 5px;">
+                <div class="col-12 col-lg-6">
+                    <h5>Integrate Your Vertafore Software With DYL’s Business Phone Platform Today </h5>
+                    <ul class="prod-feature-ul fa-ul">
+                        <li><span class="fa-li"><i class="fa fa-chevron-circle-right voice"></i></span>If you're looking
+                            for phone integration with Vertafore, look no further than DYL.</li>
+                        <li><span class="fa-li"><i class="fa fa-chevron-circle-right voice"></i></span>Call <a
+                                href="tel:8553579249">855.357.9249</a> today for more information or schedule a free
+                            live demo.</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <style>
+                        .sms-optin {
+                            font-size: 80%;
+                            line-height: 1.4;
+                        }
 
-    <div class="container">
-        <hr>
-        <div class="col-12 col-md-8 mb-lg-2 mb-md-5 mx-auto p-5">
-            <article class="u-box-shadow-sm text-center rounded">
-                <header class="u-pricing__header bg-govenor-bay text-white rounded-top">
-                    <strong class="u-pricing__header-price display-4 font-weight-bold mb-2">
-                        <h3 class="mb-5 text-white"><i class="fal fa-info-circle"></i> Request an Integration</h3>
-                    </strong>
-                    <p class="text-white">DYL is always looking to integrate with other platforms.</p>
-                    <svg class="u-pricing__header-decoration" version="1.1" preserveAspectRatio="none"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
-                        height="70px" viewBox="0 0 300 70">
-                        <path
-                            d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
-                            opacity="0.6" fill="#fff"></path>
-                        <path
-                            d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
-                            opacity="0.6" fill="#fff"></path>
-                        <path
-                            d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
-                            opacity="0.7" fill="#fff"></path>
-                        <path
-                            d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
-                            fill="#fff"></path>
-                    </svg>
-                </header>
-                <div class="u-pricing__content">
-                    <form id="_form_37_" class="_form_37 js-validate" accept-charset="UTF-8" autocomplete="off"
-                        method="post" novalidate="novalidate" action="https://dyl361.activehosted.com/proc.php">
-                        <input type="hidden" name="u" value="37" data-name="u">
-                        <input type="hidden" name="f" value="37" data-name="f">
+                        fieldset label {
+                            font-size: 85%;
+                        }
+                    </style>
+                    <form method="POST" action="https://dyl361.activehosted.com/proc.php" id="_form_114_"
+                        class="_form _form_114 _inline-form _inline-style _dark js-validate" novalidate="novalidate"
+                        data-styles-version="3">
+                        <input type="hidden" name="u" value="114" data-name="u">
+                        <input type="hidden" name="f" value="114" data-name="f">
                         <input type="hidden" name="s" data-name="s">
                         <input type="hidden" name="c" value="0" data-name="c">
                         <input type="hidden" name="m" value="0" data-name="m">
                         <input type="hidden" name="act" value="sub" data-name="act">
                         <input type="hidden" name="v" value="2" data-name="v">
-                        <input type="hidden" name="or" value="40a1059a8ea752fad98173eeefce39b0" data-name="or">
-                        <div class="form-group mb-4">
-                            <span class="form-icon-wrapper">
-                                <span class="form-icon form-icon--left">
-                                    <i class="fa fa-user form-icon__item"></i>
+                        <input type="hidden" name="or" value="c0e6a08e10dec15ff02fb11960a613f2" data-name="or">
+                        <div class="row _form-content">
+
+                            <div class="col-12 col-md-6 form-group mb-3 ">
+
+
+                                <span class="form-icon-wrapper">
+                                    <label for="firstNameMd" class="visuallyHidden">First Name</label>
+                                    <input id="firstNameMd" type="text" class="form-control  form-shadow"
+                                        name="firstname" aria-describedby="emailHelp" placeholder="First Name"
+                                        required="" data-name="firstname">
                                 </span>
-                                <input type="text" class="form-control form-icon-input-left" name="firstname"
-                                    placeholder="Type your first name" required="" data-name="firstname">
-                            </span>
-                        </div>
-                        <div class="form-group mb-4">
-                            <span class="form-icon-wrapper">
-                                <span class="form-icon form-icon--left">
-                                    <i class="fa fa-user form-icon__item"></i>
+                            </div>
+
+                            <div class="col-12 col-md-6 form-group mb-3 ">
+
+                                <span class="form-icon-wrapper">
+                                    <label for="lastNameMd" class="visuallyHidden">Last Name</label>
+                                    <input id="lastNameMd" type="text" class="form-control  form-shadow" name="lastname"
+                                        aria-describedby="emailHelp" placeholder="Last Name" required=""
+                                        data-name="lastname">
                                 </span>
-                                <input type="text" class="form-control form-icon-input-left" name="lastname"
-                                    placeholder="Last Name" required="" data-name="lastname">
-                            </span>
+                            </div>
                         </div>
-                        <div class="form-group mb-4">
-                            <span class="form-icon-wrapper">
-                                <span class="form-icon form-icon--left">
-                                    <i class="fa fa-envelope form-icon__item"></i>
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 form-group mb-3 ">
+
+                                <span class="form-icon-wrapper">
+                                    <label for="emailMd" class="visuallyHidden">Email</label>
+                                    <input id="emailMd" type="text" class="form-control  form-shadow" name="email"
+                                        aria-describedby="emailHelp" placeholder="Email" required="" data-name="email">
                                 </span>
-                                <input type="text" class="form-control form-icon-input-left" name="email"
-                                    placeholder="Email" required="" data-name="email">
-                            </span>
-                        </div>
-                        <div class="form-group mb-4">
-                            <span class="form-icon-wrapper">
-                                <span class="form-icon form-icon--left">
-                                    <i class="fas fa-poll-h form-icon__item"></i>
+                            </div>
+
+                            <div class="col-12 col-md-6 form-group mb-3 ">
+
+                                <span class="form-icon-wrapper">
+                                    <label for="phoneCheckMd" class="visuallyHidden">Phone Number</label>
+                                    <input id="phoneCheckMd" type="text" class="form-control  form-shadow" name="phone"
+                                        aria-describedby="emailHelp" placeholder="Phone #" required=""
+                                        data-name="phone">
                                 </span>
-                                <input type="text" class="form-control form-icon-input-left" id="Field30"
-                                    name="field[30]" aria-describedby="emailHelp" placeholder="Platform" required=""
-                                    data-name="platform">
-                            </span>
+                                <input id="field[38]" type="text" class="form-control"
+                                    style="position: absolute;opacity: 0;top: 0;width:0;height: 0;left:0"
+                                    name="field[38]" aria-describedby="emailHelp" placeholder="Phone #"
+                                    data-name="phone_2">
+
+                                <input id="field[41]" type="text" class="form-control"
+                                    style="position: absolute;opacity: 0;top: 0;width:0;height: 0;left:0"
+                                    name="field[41]" aria-describedby="emailHelp" placeholder="Phone #"
+                                    data-name="undefined">
+                            </div>
                         </div>
-                        <div class="form-group mb-4">
-                            <span class="form-icon-wrapper">
-                                <textarea type="text" class="form-control col-12" id="Field31" name="field[31]"
-                                    placeholder="Description" rows="3" value="" required=""
-                                    data-name="description"></textarea>
-                            </span>
+                        <div class="row ">
+
+                            <div class="col-12 col-md-6 form-group mb-3 _field17">
+
+                                <span class="form-icon-wrapper">
+                                    <label for="companyMd" class="visuallyHidden"></label>
+                                    <input id="companyMd" type="text" class="form-control form-shadow" name="field[17]"
+                                        aria-describedby="emailHelp" placeholder="Company" required=""
+                                        data-name="company_name">
+                                </span>
+                            </div>
+
+                            <div class="col-12 col-md-6 form-group mb-3 ">
+
+                                <span class="form-icon-wrapper">
+                                    <label for="jobRoleMd" class="visuallyHidden">Job Role</label>
+                                    <select id="jobRoleMd" class="form-control  form-shadow" name="field[18]"
+                                        style="color:#8f95a0;" required="" data-name="job_role">
+                                        <option selected="" disabled="" value="">Job Role</option>
+                                        <option value="C-Level/President/Owner">C-Level/President/Owner</option>
+                                        <option value="EVP/SVP/VP">EVP/SVP/VP</option>
+                                        <option value="Director">Director</option>
+                                        <option value="Manager">Manager</option>
+                                        <option value="Consultant">Consultant</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </span>
+                            </div>
                         </div>
-                        <div class="text-center" name="field[29]">
-                            <button id="_form_37_submit" class="btn btn-block btn-blue-ribbon py-3 px-4" type="submit"
-                                value="Submit">Submit Request</button>
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 form-group mb-3  _field20">
+
+                                <label for="industryMd" class="visuallyHidden">Industry</label>
+                                <select id="industryMd" class="form-control  form-shadow" name="field[20]"
+                                    style="color:#8f95a0;" required="" data-name="industry">
+                                    <option selected="" disabled="" value="">Industry</option>
+                                    <option value="Advertising/Marketing">
+                                        Advertising/Marketing
+                                    </option>
+                                    <option value="Automotive">
+                                        Automotive
+                                    </option>
+                                    <option value="Collections">
+                                        Collections
+                                    </option>
+                                    <option value="Construction">
+                                        Construction
+                                    </option>
+                                    <option value="Credit Repair">
+                                        Credit Repair
+                                    </option>
+                                    <option value="Education">
+                                        Education
+                                    </option>
+                                    <option value="Entertainment">
+                                        Entertainment
+                                    </option>
+                                    <option value="Finance">
+                                        Finance
+                                    </option>
+                                    <option value="Fitness and Health">
+                                        Fitness and Health
+                                    </option>
+                                    <option value="Healthcare">
+                                        Healthcare
+                                    </option>
+                                    <option value="Insurance">
+                                        Insurance
+                                    </option>
+                                    <option value="Legal">
+                                        Legal
+                                    </option>
+                                    <option value="Manufacturing">
+                                        Manufacturing
+                                    </option>
+                                    <option value="Non-profit">
+                                        Non-profit
+                                    </option>
+                                    <option value="Political">
+                                        Political
+                                    </option>
+                                    <option value="Real Estate">
+                                        Real Estate
+                                    </option>
+                                    <option value="Recruiting">
+                                        Recruiting
+                                    </option>
+                                    <option value="Retail">
+                                        Retail
+                                    </option>
+                                    <option value="Technology">
+                                        Technology
+                                    </option>
+                                    <option value="Transportation / Logistics">
+                                        Transportation / Logistics
+                                    </option>
+                                    <option value="Other">
+                                        Other
+                                    </option>
+                                    <option value="Wellness">
+                                        Wellness
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-12 col-md-6 form-group mb-3 _field21">
+
+                                <label for="numberOfEmployeesMd" class="visuallyHidden">Number of
+                                    Employees</label>
+                                <select id="numberOfEmployeesMd" class="form-control  form-shadow" name="field[21]"
+                                    style="color:#8f95a0;" required="" data-name="_of_employees">
+                                    <option selected="" disabled="" value=""># of Employees</option>
+                                    <option value="2-5">
+                                        2-5
+                                    </option>
+                                    <option value="6-10">
+                                        6-10
+                                    </option>
+                                    <option value="11-20">
+                                        11-20
+                                    </option>
+                                    <option value="21-30">
+                                        21-30
+                                    </option>
+                                    <option value="31-50">
+                                        31-50
+                                    </option>
+                                    <option value="51+">
+                                        51+
+                                    </option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="_form_element _x82123275 _inline-style ">
+                            <fieldset class="_form-fieldset">
+                                <p class="sms-optin" style="color:#7f848e;">
+                                    Disclaimer: By clicking "I Opt In" and submitting this form, you
+                                    consent to receive SMS messages from DYL at (888) 310-4474. These messages may
+                                    include account notifications, customer support, delivery updates, fraud alerts, or
+                                    marketing content. Message frequency may vary, and standard messaging and data rates
+                                    may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see
+                                    our <a href="http://dyl.com/terms-of-service">Terms and Conditions</a> and <a
+                                        href="https://dyl.com/privacy-policy">Privacy Policy</a>.
+                                </p>
+                                <div class="_row _checkbox-radio">
+                                    <input id="field_66I opt-in to receive SMS messages." type="radio" name="field[66]"
+                                        value="I opt-in to receive SMS messages." data-name="undefined">
+                                    <span>
+                                        <label for="field_66I opt-in to receive SMS messages." style="color:#7f848e;">
+                                            I opt-in to receive SMS messages.
+                                        </label></span>
+                                </div>
+                                <div class="_row _checkbox-radio">
+                                    <input id="field_66I opt-out to receive SMS messages." type="radio" name="field[66]"
+                                        value="I opt-out to receive SMS messages." data-name="undefined">
+                                    <span>
+                                        <label for="field_66I opt-out to receive SMS messages." style="color:#7f848e;">
+                                            I opt-out to receive SMS messages.
+                                        </label></span>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="text-center">
+                            <input type="hidden" id="authtokenmed" data-name="">
+
+                            <button class="btn btn-lg btn-block btn-primary transition-3d-hover py-3 px-4 _submit"
+                                id="_form_114_submit" type="submit">
+                                Show Me
+                            </button>
+
                             <input name="field[36]" type="hidden" value="Direct" data-name="utm_medium">
                             <input name="field[34]" type="hidden" value="Company Website" data-name="utm_source">
-                            <input name="field[35]" type="hidden" value="partners/integrations"
+                            <input name="field[35]" type="hidden" value="vertafore-AMS360-QQCatalyst-integration"
                                 data-name="utm_campaign">
+                            <input name="field[51]" type="hidden" value="" data-name="location">
+
                         </div>
                     </form>
+
+
                 </div>
-            </article>
-        </div>
+
+
+
+                <script type="text/javascript">
+
+
+                    window.cfields = { "17": "company_name", "20": "industry", "18": "job_role", "21": "_of_employees", "36": "utm_medium", "34": "utm_source", "35": "utm_campaign", "51": "location", "38": "phone_2" };
+                    window._show_thank_you = function (id, message, trackcmp_url, email) {
+                        var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+                        form.querySelector('._form-content').style.display = 'none';
+                        thank_you.innerHTML = message;
+                        thank_you.style.display = 'block';
+                        const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+                        var visitorObject = window[vgoAlias];
+                        if (email && typeof visitorObject !== 'undefined') {
+                            visitorObject('setEmail', email);
+                            visitorObject('update');
+                        } else if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
+                            _load_script(trackcmp_url);
+                        }
+                        if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+                    };
+                    window._show_error = function (id, message, html) {
+                        var form = document.getElementById('_form_' + id + '_'),
+                            err = document.createElement('div'),
+                            button = form.querySelector('button'),
+                            old_error = form.querySelector('._form_error');
+                        if (old_error) old_error.parentNode.removeChild(old_error);
+                        err.innerHTML = message;
+                        err.className = '_error-inner _form_error _no_arrow';
+                        var wrapper = document.createElement('div');
+                        wrapper.className = '_form-inner';
+                        wrapper.appendChild(err);
+                        button.parentNode.insertBefore(wrapper, button);
+                        var submitButton = form.querySelector('[id^="_form"][id$="_submit"]');
+                        submitButton.disabled = false;
+                        submitButton.classList.remove('processing');
+                        if (html) {
+                            var div = document.createElement('div');
+                            div.className = '_error-html';
+                            div.innerHTML = html;
+                            err.appendChild(div);
+                        }
+                    };
+                    window._load_script = function (url, callback, isSubmit) {
+                        var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+                        var submitButton = document.querySelector('#_form_114_submit');
+                        script.type = 'text/javascript';
+                        script.charset = 'utf-8';
+                        script.src = url;
+                        if (callback) {
+                            script.onload = script.onreadystatechange = function () {
+                                if (!r && (!this.readyState || this.readyState == 'complete')) {
+                                    r = true;
+                                    callback();
+                                }
+                            };
+                        }
+                        script.onerror = function () {
+                            if (isSubmit) {
+                                if (script.src.length > 10000) {
+                                    _show_error("114", "Sorry, your submission failed. Please shorten your responses and try again.");
+                                } else {
+                                    _show_error("114", "Sorry, your submission failed. Please try again.");
+                                }
+                                submitButton.disabled = false;
+                                submitButton.classList.remove('processing');
+                            }
+                        }
+
+                        head.appendChild(script);
+                    };
+                    (function () {
+                        if (window.location.search.search("excludeform") !== -1) return false;
+                        var getCookie = function (name) {
+                            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                            return match ? match[2] : null;
+                        }
+                        var setCookie = function (name, value) {
+                            var now = new Date();
+                            var time = now.getTime();
+                            var expireTime = time + 1000 * 60 * 60 * 24 * 365;
+                            now.setTime(expireTime);
+                            document.cookie = name + '=' + value + '; expires=' + now + ';path=/; Secure; SameSite=Lax;';
+                        }
+                        var addEvent = function (element, event, func) {
+                            if (element.addEventListener) {
+                                element.addEventListener(event, func);
+                            } else {
+                                var oldFunc = element['on' + event];
+                                element['on' + event] = function () {
+                                    oldFunc.apply(this, arguments);
+                                    func.apply(this, arguments);
+                                };
+                            }
+                        }
+                        var _removed = false;
+                        var form_to_submit = document.getElementById('_form_114_');
+                        var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
+
+                        var getUrlParam = function (name) {
+                            var params = new URLSearchParams(window.location.search);
+                            return params.get(name) || false;
+                        };
+
+                        var acctDateFormat = "%m/%d/%Y";
+                        var getNormalizedDate = function (date, acctFormat) {
+                            var decodedDate = decodeURIComponent(date);
+                            if (acctFormat && acctFormat.match(/(%d|%e).*%m/gi) !== null) {
+                                return decodedDate.replace(/(\d{2}).*(\d{2}).*(\d{4})/g, '$3-$2-$1');
+                            } else if (Date.parse(decodedDate)) {
+                                var dateObj = new Date(decodedDate);
+                                var year = dateObj.getFullYear();
+                                var month = dateObj.getMonth() + 1;
+                                var day = dateObj.getDate();
+                                return `${year}-${month < 10 ? `0${month}` : month}-${day < 10 ? `0${day}` : day}`;
+                            }
+                            return false;
+                        };
+
+                        var getNormalizedTime = function (time) {
+                            var hour, minutes;
+                            var decodedTime = decodeURIComponent(time);
+                            var timeParts = Array.from(decodedTime.matchAll(/(\d{1,2}):(\d{1,2})\W*([AaPp][Mm])?/gm))[0];
+                            if (timeParts[3]) { // 12 hour format
+                                var isPM = timeParts[3].toLowerCase() === 'pm';
+                                if (isPM) {
+                                    hour = parseInt(timeParts[1]) === 12 ? '12' : `${parseInt(timeParts[1]) + 12}`;
+                                } else {
+                                    hour = parseInt(timeParts[1]) === 12 ? '0' : timeParts[1];
+                                }
+                            } else { // 24 hour format
+                                hour = timeParts[1];
+                            }
+                            var normalizedHour = parseInt(hour) < 10 ? `0${parseInt(hour)}` : hour;
+                            var minutes = timeParts[2];
+                            return `${normalizedHour}:${minutes}`;
+                        };
+
+                        for (var i = 0; i < allInputs.length; i++) {
+                            var regexStr = "field\\[(\\d+)\\]";
+                            var results = new RegExp(regexStr).exec(allInputs[i].name);
+                            if (results != undefined) {
+                                allInputs[i].dataset.name = allInputs[i].name.match(/\[time\]$/)
+                                    ? `${window.cfields[results[1]]}_time`
+                                    : window.cfields[results[1]];
+                            } else {
+                                allInputs[i].dataset.name = allInputs[i].name;
+                            }
+                            var fieldVal = getUrlParam(allInputs[i].dataset.name);
+
+                            if (fieldVal) {
+                                if (allInputs[i].dataset.autofill === "false") {
+                                    continue;
+                                }
+                                if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
+                                    if (allInputs[i].value == fieldVal) {
+                                        allInputs[i].checked = true;
+                                    }
+                                } else if (allInputs[i].type == "date") {
+                                    allInputs[i].value = getNormalizedDate(fieldVal, acctDateFormat);
+                                } else if (allInputs[i].type == "time") {
+                                    allInputs[i].value = getNormalizedTime(fieldVal);
+                                } else {
+                                    allInputs[i].value = fieldVal;
+                                }
+                            }
+                        }
+
+                        var remove_tooltips = function () {
+                            for (var i = 0; i < tooltips.length; i++) {
+                                tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+                            }
+                            tooltips = [];
+                        };
+                        var remove_tooltip = function (elem) {
+                            for (var i = 0; i < tooltips.length; i++) {
+                                if (tooltips[i].elem === elem) {
+                                    tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+                                    tooltips.splice(i, 1);
+                                    return;
+                                }
+                            }
+                        };
+                        var create_tooltip = function (elem, text) {
+                            var tooltip = document.createElement('div'),
+                                arrow = document.createElement('div'),
+                                inner = document.createElement('div'), new_tooltip = {};
+                            if (elem.type != 'radio' && elem.type != 'checkbox') {
+                                tooltip.className = '_error';
+                                arrow.className = '_error-arrow';
+                                inner.className = '_error-inner';
+                                inner.innerHTML = text;
+                                tooltip.appendChild(arrow);
+                                tooltip.appendChild(inner);
+                                elem.parentNode.appendChild(tooltip);
+                            } else {
+                                tooltip.className = '_error-inner _no_arrow';
+                                tooltip.innerHTML = text;
+                                elem.parentNode.insertBefore(tooltip, elem);
+                                new_tooltip.no_arrow = true;
+                            }
+                            new_tooltip.tip = tooltip;
+                            new_tooltip.elem = elem;
+                            tooltips.push(new_tooltip);
+                            return new_tooltip;
+                        };
+                        var resize_tooltip = function (tooltip) {
+                            var rect = tooltip.elem.getBoundingClientRect();
+                            var doc = document.documentElement,
+                                scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0));
+                            if (scrollPosition < 40) {
+                                tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _below';
+                            } else {
+                                tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _above';
+                            }
+                        };
+                        var resize_tooltips = function () {
+                            if (_removed) return;
+                            for (var i = 0; i < tooltips.length; i++) {
+                                if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]);
+                            }
+                        };
+                        var validate_field = function (elem, remove) {
+                            var tooltip = null, value = elem.value, no_error = true;
+                            remove ? remove_tooltip(elem) : false;
+                            if (elem.type != 'checkbox') elem.className = elem.className.replace(/ ?_has_error ?/g, '');
+                            if (elem.getAttribute('required') !== null) {
+                                if (elem.type == 'radio' || (elem.type == 'checkbox' && /any/.test(elem.className))) {
+                                    var elems = form_to_submit.elements[elem.name];
+                                    if (!(elems instanceof NodeList || elems instanceof HTMLCollection) || elems.length <= 1) {
+                                        no_error = elem.checked;
+                                    }
+                                    else {
+                                        no_error = false;
+                                        for (var i = 0; i < elems.length; i++) {
+                                            if (elems[i].checked) no_error = true;
+                                        }
+                                    }
+                                    if (!no_error) {
+                                        tooltip = create_tooltip(elem, "Please select an option.");
+                                    }
+                                } else if (elem.type == 'checkbox') {
+                                    var elems = form_to_submit.elements[elem.name], found = false, err = [];
+                                    no_error = true;
+                                    for (var i = 0; i < elems.length; i++) {
+                                        if (elems[i].getAttribute('required') === null) continue;
+                                        if (!found && elems[i] !== elem) return true;
+                                        found = true;
+                                        elems[i].className = elems[i].className.replace(/ ?_has_error ?/g, '');
+                                        if (!elems[i].checked) {
+                                            no_error = false;
+                                            elems[i].className = elems[i].className + ' _has_error';
+                                            err.push("Checking %s is required".replace("%s", elems[i].value));
+                                        }
+                                    }
+                                    if (!no_error) {
+                                        tooltip = create_tooltip(elem, err.join('<br/>'));
+                                    }
+                                } else if (elem.tagName == 'SELECT') {
+                                    var selected = true;
+                                    if (elem.multiple) {
+                                        selected = false;
+                                        for (var i = 0; i < elem.options.length; i++) {
+                                            if (elem.options[i].selected) {
+                                                selected = true;
+                                                break;
+                                            }
+                                        }
+                                    } else {
+                                        for (var i = 0; i < elem.options.length; i++) {
+                                            if (elem.options[i].selected
+                                                && (!elem.options[i].value
+                                                    || (elem.options[i].value.match(/\n/g)))
+                                            ) {
+                                                selected = false;
+                                            }
+                                        }
+                                    }
+                                    if (!selected) {
+                                        elem.className = elem.className + ' _has_error';
+                                        no_error = false;
+                                        //    tooltip = create_tooltip(elem, "Please select an option.");
+                                    }
+                                } else if (value === undefined || value === null || value === '') {
+                                    elem.className = elem.className + ' _has_error';
+                                    no_error = false;
+                                    //  tooltip = create_tooltip(elem, "This field is required.");
+                                }
+                            }
+                            if (no_error && (elem.id == 'field[]' || elem.id == 'ca[11][v]')) {
+                                if (elem.className.includes('phone-input-error')) {
+                                    elem.className = elem.className + ' _has_error';
+                                    no_error = false;
+                                }
+                            }
+                            if (no_error && elem.name == 'email') {
+                                if (!value.match(/^[\+_a-z0-9-'&=]+(\.[\+_a-z0-9-']+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)) {
+                                    elem.className = elem.className + ' _has_error';
+                                    no_error = false;
+                                    tooltip = create_tooltip(elem, "Enter a valid email address.");
+                                }
+                            }
+                            if (no_error && /date_field/.test(elem.className)) {
+                                if (!value.match(/^\d\d\d\d-\d\d-\d\d$/)) {
+                                    elem.className = elem.className + ' _has_error';
+                                    no_error = false;
+                                    tooltip = create_tooltip(elem, "Enter a valid date.");
+                                }
+                            }
+                            tooltip ? resize_tooltip(tooltip) : false;
+                            return no_error;
+                        };
+                        var needs_validate = function (el) {
+                            if (el.getAttribute('required') !== null) {
+                                return true
+                            }
+                            if (el.name === 'email' && el.value !== "") {
+                                return true
+                            }
+
+                            if ((el.id == 'field[]' || el.id == 'ca[11][v]') && el.className.includes('phone-input-error')) {
+                                return true
+                            }
+
+                            return false
+                        };
+                        var validate_form = function (e) {
+                            var err = form_to_submit.querySelector('._form_error'), no_error = true;
+                            if (!submitted) {
+                                submitted = true;
+                                for (var i = 0, len = allInputs.length; i < len; i++) {
+                                    var input = allInputs[i];
+                                    if (needs_validate(input)) {
+                                        if (input.type == 'tel') {
+                                            addEvent(input, 'blur', function () {
+                                                this.value = this.value.trim();
+                                                validate_field(this, true);
+                                            });
+                                        }
+                                        if (input.type == 'text' || input.type == 'number' || input.type == 'time') {
+                                            addEvent(input, 'blur', function () {
+                                                this.value = this.value.trim();
+                                                validate_field(this, true);
+                                            });
+                                            addEvent(input, 'input', function () {
+                                                validate_field(this, true);
+                                            });
+                                        } else if (input.type == 'radio' || input.type == 'checkbox') {
+                                            (function (el) {
+                                                var radios = form_to_submit.elements[el.name];
+                                                for (var i = 0; i < radios.length; i++) {
+                                                    addEvent(radios[i], 'click', function () {
+                                                        validate_field(el, true);
+                                                    });
+                                                }
+                                            })(input);
+                                        } else if (input.tagName == 'SELECT') {
+                                            addEvent(input, 'change', function () {
+                                                validate_field(this, true);
+                                            });
+                                        } else if (input.type == 'textarea') {
+                                            addEvent(input, 'input', function () {
+                                                validate_field(this, true);
+                                            });
+                                        }
+                                    }
+                                }
+                            }
+                            remove_tooltips();
+                            for (var i = 0, len = allInputs.length; i < len; i++) {
+                                var elem = allInputs[i];
+                                if (needs_validate(elem)) {
+                                    if (elem.tagName.toLowerCase() !== "select") {
+                                        elem.value = elem.value.trim();
+                                    }
+                                    validate_field(elem) ? true : no_error = false;
+                                }
+                            }
+                            if (!no_error && e) {
+                                e.preventDefault();
+                            }
+                            resize_tooltips();
+                            return no_error;
+                        };
+                        addEvent(window, 'resize', resize_tooltips);
+                        addEvent(window, 'scroll', resize_tooltips);
+
+                        var hidePhoneInputError = function (inputId) {
+                            var errorMessage = document.getElementById("error-msg-" + inputId);
+                            var input = document.getElementById(inputId);
+                            errorMessage.classList.remove("phone-error");
+                            errorMessage.classList.add("phone-error-hidden");
+                            input.classList.remove("phone-input-error");
+                        };
+
+                        var initializePhoneInput = function (input, defaultCountry) {
+                            return window.intlTelInput(input, {
+                                utilsScript: "https://unpkg.com/intl-tel-input@17.0.18/build/js/utils.js",
+                                autoHideDialCode: false,
+                                separateDialCode: true,
+                                initialCountry: defaultCountry,
+                                preferredCountries: []
+                            });
+                        }
+
+                        var setPhoneInputEventListeners = function (inputId, input, iti) {
+                            input.addEventListener('blur', function () {
+                                var errorMessage = document.getElementById("error-msg-" + inputId);
+                                if (input.value.trim()) {
+                                    if (iti.isValidNumber()) {
+                                        iti.setNumber(iti.getNumber());
+                                        if (errorMessage.classList.contains("phone-error")) {
+                                            hidePhoneInputError(inputId);
+                                        }
+                                    } else {
+                                        showPhoneInputError(inputId)
+                                    }
+                                } else {
+                                    if (errorMessage.classList.contains("phone-error")) {
+                                        hidePhoneInputError(inputId);
+                                    }
+                                }
+                            });
+
+                            input.addEventListener("countrychange", function () {
+                                iti.setNumber('');
+                            });
+
+                            input.addEventListener("keydown", function (e) {
+                                var charCode = (e.which) ? e.which : e.keyCode;
+                                if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode !== 8) {
+                                    e.preventDefault();
+                                }
+                            });
+                        };
+
+                        var showPhoneInputError = function (inputId) {
+                            var errorMessage = document.getElementById("error-msg-" + inputId);
+                            var input = document.getElementById(inputId);
+                            errorMessage.classList.add("phone-error");
+                            errorMessage.classList.remove("phone-error-hidden");
+                            input.classList.add("phone-input-error");
+                        };
+
+
+                        var _form_serialize = function (form) { if (!form || form.nodeName !== "FORM") { return } var i, j, q = []; for (i = 0; i < form.elements.length; i++) { if (form.elements[i].name === "") { continue } switch (form.elements[i].nodeName) { case "INPUT": switch (form.elements[i].type) { case "tel": q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].previousSibling.querySelector('div.iti__selected-dial-code').innerText) + encodeURIComponent(" ") + encodeURIComponent(form.elements[i].value)); break; case "text": case "number": case "date": case "time": case "hidden": case "password": case "button": case "reset": case "submit": q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value)); break; case "checkbox": case "radio": if (form.elements[i].checked) { q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value)) } break; case "file": break }break; case "TEXTAREA": q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value)); break; case "SELECT": switch (form.elements[i].type) { case "select-one": q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value)); break; case "select-multiple": for (j = 0; j < form.elements[i].options.length; j++) { if (form.elements[i].options[j].selected) { q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].options[j].value)) } } break }break; case "BUTTON": switch (form.elements[i].type) { case "reset": case "submit": case "button": q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value)); break }break } } return q.join("&") };
+
+                        const formSupportsPost = false;
+                        var form_submit = function (e) {
+                            e.preventDefault();
+                            if (validate_form()) {
+                                // Check if field[38] has a value
+                                var phone2Value = document.getElementById('field[38]').value.trim();
+                                var stateValue = document.getElementById('field[41]').value.trim();
+                                if (phone2Value !== "" || stateValue !== "") {
+                                    // Display an error message or handle as needed
+                                    alert('Form submission blocked.');
+                                    return false;
+                                }
+                                var submitButton = e.target.querySelector('#_form_114_submit');
+                                submitButton.disabled = true;
+                                submitButton.classList.add('processing');
+                                var serialized = _form_serialize(
+                                    document.getElementById('_form_114_')
+                                ).replace(/%0A/g, '\\n');
+                                var err = form_to_submit.querySelector('._form_error');
+                                err ? err.parentNode.removeChild(err) : false;
+                                async function submitForm() {
+                                    var formData = new FormData();
+                                    const searchParams = new URLSearchParams(serialized);
+                                    searchParams.forEach((value, key) => {
+                                        formData.append(key, value);
+                                    });
+
+                                    const response = await fetch('https://dyl361.activehosted.com/proc.php?jsonp=true', {
+                                        headers: {
+                                            "Accept": "application/json"
+                                        },
+                                        body: formData,
+                                        method: "POST"
+                                    });
+                                    return response.json();
+                                }
+
+                                if (formSupportsPost) {
+                                    submitForm().then((data) => {
+                                        eval(data.js);
+                                    });
+                                } else {
+                                    _load_script('https://dyl361.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
+                                }
+                            }
+                            return false;
+                        };
+                        addEvent(form_to_submit, 'submit', form_submit);
+                    })();
+
+
+                </script>
+                <script>
+
+                    function setCookie(name, value, days) {
+                        var date = new Date();
+                        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                        var expires = "expires=" + date.toUTCString();
+                        document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                    }
+
+                    function getCookie(name) {
+                        var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                        return match ? match[2] : null;
+                    }
+
+                    document.getElementById("_form_114_").addEventListener("submit", function (event) {
+                        event.preventDefault();  // Prevent page refresh
+
+                        var email = document.getElementById("emailMd").value;
+
+                        setCookie("email", email, 30);
+
+                        console.log("Email stored in cookie:", email);
+                    });
+
+                    window.onload = function () {
+                        var storedEmail = getCookie("email");
+                        if (storedEmail) {
+                            console.log("Stored medium form email from cookie:", storedEmail);
+                        } else {
+                            console.log("No email found in cookies.");
+                        }
+                    };
+                </script>
+            </div>
+        </section>
     </div>
+
+
 
 
     <footer class="bg-darkBlue">
@@ -1403,37 +2165,37 @@
 
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../business-phone-service.html"><b>Business
+                                href="./business-phone-service.html"><b>Business
                                     Phone Service</b></a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../virtual-office.html">Virtual
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./virtual-office.html">Virtual
                                 Office</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../business-text-messaging.html">Business
+                                href="./business-text-messaging.html">Business
                                 Texting</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="/lead-and-contact-management"><b>Lead
+                                href="./lead-and-contact-management.html"><b>Lead
                                     & Contact Management</a></b></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../lead-engine.html">Lead
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./lead-engine.html">Lead
                                 Engine</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../advanced-workflows.html">Advanced
+                                href="./advanced-workflows.html">Advanced
                                 Workflows</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../virtual-call-center.html"><b>Virtual
+                                href="./virtual-call-center.html"><b>Virtual
                                     Call Center</a></b></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../pricing.html"><b>Pricing</b></a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons.html">Comparison
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./pricing.html"><b>Pricing</b></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons.html">Comparison
                                 Overview</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons/vonage.html">DYL VS
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/vonage.html">DYL VS
                                 Vonage</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons/fonality.html">DYL
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/fonality.html">DYL
                                 VS
                                 Fonality</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons/8x8.html">DYL VS
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/8x8.html">DYL VS
                                 8x8</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../voip-phone-numbers.html">VoIP
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./voip-phone-numbers.html">VoIP
                                 Numbers</a></li>
 
                     </ul>
@@ -1441,59 +2203,59 @@
                 <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
                     <p class="text-white h6-sub-footer">Solutions</p>
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../industries.html">Industry
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./industries.html">Industry
                                 Overview</a>
                         </li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../advertising-marketing-business-solutions.html">Advertising & Marketing</a></li>
+                                href="./advertising-marketing-business-solutions.html">Advertising & Marketing</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../car-dealerships-business-solutions.html">Car Dealerships</a></li>
+                                href="./car-dealerships-business-solutions.html">Car Dealerships</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../construction-business-solutions.html">Construction</a></li>
+                                href="./construction-business-solutions.html">Construction</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../education-business-solutions.html">Education</a></li>
+                                href="./education-business-solutions.html">Education</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../finance-business-solutions.html">Finance</a></li>
+                                href="./finance-business-solutions.html">Finance</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../medical-dental-practice-business-solutions.html">Healthcare</a></li>
+                                href="./medical-dental-practice-business-solutions.html">Healthcare</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../insurance-business-solutions.html">Insurance</a></li>
+                                href="./insurance-business-solutions.html">Insurance</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../legal-business-solutions.html">Legal</a>
+                                href="./legal-business-solutions.html">Legal</a>
                         </li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../nonprofit-business-solutions.html">Non-profit</a></li>
+                                href="./nonprofit-business-solutions.html">Non-profit</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../political-campaign-business-solutions.html">Political</a></li>
+                                href="./political-campaign-business-solutions.html">Political</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../real-estate-agency-business-solutions.html">Real Estate</a></li>
+                                href="./real-estate-agency-business-solutions.html">Real Estate</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 col-lg">
                     <p class="text-white h6-sub-footer">Features</p>
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../crm/phone/business-solutions.html">Business Solutions</a></li>
+                                href="./crm/phone/business-solutions.html">Business Solutions</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../crm/phone/lead-management.html">Relationship Management</a></li>
+                                href="./crm/phone/lead-management.html">Relationship Management</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../crm/phone/lead-management-software">Lead Management</a></li>
+                                href="./crm/phone/lead-management-software.html">Lead Management</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="/crm/phone/sales-automation.html">Sales
+                                href="./crm/phone/sales-automation.html">Sales
                                 Automation</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../voip.html">VoIP</a></li>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./voip.html">VoIP</a></li>
                     </ul>
                     <BR>
                     <p class="text-white h6-sub-footer">Learn</p>
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../support.html">FAQ/Support</a>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./support.html">FAQ/Support</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../reviews.html">Reviews</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../case-studies.html">Case
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./reviews.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./case-studies.html">Case
                                 Studies</a>
                         </li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
-                                href="../support/system-training.html">System
+                                href="./support/system-training.html">System
                                 Training</a></li>
                     </ul>
 
@@ -1503,15 +2265,15 @@
                     <p class="text-white h6-sub-footer">Company</p>
 
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./contact.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing" href="https://dyl.breezy.hr/"
                                 target="_blank">Careers <span class="badge badge-primary ml-1">We're hiring</span></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../customer-credit.html">Customer
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./customer-credit.html">Customer
                                 Credit</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../free-consultation.html">Free
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./free-consultation.html">Free
                                 Consultation</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="../blog.html"
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./blog.html"
                                 target="_blank">Blog</a>
                         </li>
                     </ul>
@@ -1525,20 +2287,20 @@
                     <div class="col-md-6 mb-4 mb-md-0">
                         <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="../privacy-policy.html">Privacy & Policy</a>
+                                <a class="nav-link" href="./privacy-policy.html">Privacy & Policy</a>
                             </li>
                             <li class="nav-item opacity mx-3 text-white">/</li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../terms-of-service.html">Terms</a>
+                                <a class="nav-link" href="./terms-of-service.html">Terms</a>
                             </li>
                             <li class="nav-item opacity mx-3 text-white">/</li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../compliance.html">Compliance</a>
+                                <a class="nav-link" href="./compliance.html">Compliance</a>
                             </li>
                             <li class="nav-item opacity mx-3 text-white">/</li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="../sitemap.html">Sitemap</a>
+                                <a class="nav-link" href="./sitemap.html">Sitemap</a>
                             </li>
                         </ul>
                     </div>
@@ -1756,9 +2518,9 @@
                                                     marketing content. Message frequency may
                                                     vary, and standard messaging and data rates
                                                     may apply. Reply STOP to unsubscribe or HELP for assistance. For
-                                                    more details, see our <a href="../terms-of-service.html"
+                                                    more details, see our <a href="http://dyl.com/terms-of-service"
                                                         style="text-decoration:underline;font-weight: bold">Terms and
-                                                        Conditions</a> and <a href="../privacy-policy.html"
+                                                        Conditions</a> and <a href="https://dyl.com/privacy-policy"
                                                         style="text-decoration:underline;font-weight: bold">Privacy
                                                         Policy</a>.
                                                 </p>
@@ -1804,7 +2566,7 @@ thank-you" />
                                 </div>
                                 </form>
                                 <span style="position:absolute; bottom:5px; right:5px; font-size: 10px;">By providing
-                                    information in this form, you agree to <a href="../privacy-policy.html">DYL’s Privacy
+                                    information in this form, you agree to <a href="/privacy-policy">DYL’s Privacy
                                         Policy</a>.</span>
                             </div>
                         </div>
@@ -1813,7 +2575,7 @@ thank-you" />
             </div>
         </div>
         </div>
-       
+
 
         <script>
 
@@ -2807,8 +3569,8 @@ thank-you" />
                                             alerts, or marketing content. Message frequency may vary, and standard
                                             messaging and data rates
                                             may apply. Reply STOP to unsubscribe or HELP for assistance. For more
-                                            details, see our <a href="../terms-of-service.html">Terms and
-                                                Conditions</a> and <a href="../privacy-policy.html">Privacy
+                                            details, see our <a href="http://dyl.com/terms-of-service">Terms and
+                                                Conditions</a> and <a href="https://dyl.com/privacy-policy">Privacy
                                                 Policy</a>.
                                         </p>
                                         <div class="_row _checkbox-radio">
@@ -2977,15 +3739,10 @@ thank-you" />
                     </div>
                     <div class="call-buttons text-center">
                         <div class="ChatUsModalLiveButtons">
-
                             <button class="btn btn-primary" onclick="loadSales();">Chat with sales</button>
-
                         </div>
-
                         <div class="ChatUsModalLiveButtons">
-
                             <button class="btn btn-dark-gray" onclick="loadSupport();">Chat with support</button>
-
                         </div>
                     </div>
                 </div>
@@ -3027,11 +3784,12 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
-    <script src="../js/jquery.min.js"></script>
 
-    <script src="../js/popper.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <!-- Defer other scripts -->
+    <script src="js/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
-
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
             var scriptElement = document.createElement('script');
@@ -3055,7 +3813,22 @@ thank-you" />
         });
 
     </script>
+    <!-- <script type="text/javascript" async>
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "8lb3vpm72e");
+    </script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NJMS9GV9K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6NJMS9GV9K');
+    </script>-->
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3084,11 +3857,10 @@ thank-you" />
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script defer src="../js/front.min.js"></script>
-   
+    <script src="js/jquery.validate.min.js" defer></script>
+
+    <script defer src="js/front.min.js"></script>
 
     <script type="text/javascript">
 
@@ -3144,3 +3916,7 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
+
+</body>
+
+</html>
