@@ -22,7 +22,7 @@
     <link rel="preload" href="../../scss/blog.css" as="style">
     <link rel="stylesheet" href="../../scss/blog.css">
 
-     <style>
+    <style>
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
         }
@@ -989,93 +989,99 @@
 
 
 <div class="container text-center mb-4">
-          <div class="row">
-            <div class="col col-bottom-subs">
-              <p class="bottom-heading h3-browse-blog-sub">Subscribe</p>
-<p class="bot-sub">Subcribe now and receive updates whenever we <br> post something new on our blog.</p>
-<br>
-<!--<form accept-charset="UTF-8" method="POST" action="https://dyl361.activehosted.com/proc.php" class="js-validate" novalidate="novalidate">-->
-  <form id="subscribeFormbottom" class="js-validate" novalidate="novalidate">
-      
-  <input type="hidden" name="u" value="55">
-  <input type="hidden" name="f" value="55">
-  <input type="hidden" name="s">
-  <input type="hidden" name="c" value="0">
-  <input type="hidden" name="m" value="0">
-  <input type="hidden" name="act" value="sub">
-  <input type="hidden" name="v" value="2">
-  <input class="bot-fname-class form-control" type="text" name="name" id="fnamebottom" placeholder="Name" required="" data-name="fname" aria-describedby="emailHelp fname-error" aria-invalid="true">
-  <input class="bot-email-class form-control" type="text" name="email" id="emailbottom" placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error" aria-invalid="true">
-  <button class="bot-subscribe-class transition-3d-hover" type="button" onclick="submitFormbottom()">Subscribe</button>
-</form>
-<br><br><br>
-<p class="icon-heading h3-browse-blog-sub2"> Connect with us </p>
-<div class="social-footer-links">
-  
-  <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
-    <i class="fab fa-vimeo-square"></i>
-  </a>
-  <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
-    <i class="fab fa-twitter-square"></i>
-  </a>
-  <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
-    <i class="fab fa-facebook-square"></i>
-  </a>
-  <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank" aria-label="Check out Dyl newest video">
-    <i class="fab fa-youtube-square"></i>
-  </a>
-</div>
-<script>
-  function validateFormbottom() {
-    var firstname = document.getElementById("fnamebottom").value;
-    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+    <div class="row">
+        <div class="col col-bottom-subs">
+            <p class="bottom-heading h3-browse-blog-sub">Subscribe</p>
+            <p class="bot-sub">Subcribe now and receive updates whenever we <br> post something new on our blog.</p>
+            <br>
+            <!--<form accept-charset="UTF-8" method="POST" action="https://dyl361.activehosted.com/proc.php" class="js-validate" novalidate="novalidate">-->
+            <form id="subscribeFormbottom" class="js-validate" novalidate="novalidate">
 
-    console.log("Validating form...");
-    if (!regex.test(firstname)) {
-      console.log("Validation failed: special characters found.");
-      alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
-      return false;
-    }
-    
-    console.log("Validation passed: no special characters found.");
-    return true;
-  }
+                <input type="hidden" name="u" value="55">
+                <input type="hidden" name="f" value="55">
+                <input type="hidden" name="s">
+                <input type="hidden" name="c" value="0">
+                <input type="hidden" name="m" value="0">
+                <input type="hidden" name="act" value="sub">
+                <input type="hidden" name="v" value="2">
+                <input class="bot-fname-class form-control" type="text" name="name" id="fnamebottom" placeholder="Name"
+                    required="" data-name="fname" aria-describedby="emailHelp fname-error" aria-invalid="true">
+                <input class="bot-email-class form-control" type="text" name="email" id="emailbottom"
+                    placeholder="Email" required="" data-name="email" aria-describedby="emailHelp email-error"
+                    aria-invalid="true">
+                <button class="bot-subscribe-class transition-3d-hover" type="button"
+                    onclick="submitFormbottom()">Subscribe</button>
+            </form>
+            <br><br><br>
+            <p class="icon-heading h3-browse-blog-sub2"> Connect with us </p>
+            <div class="social-footer-links">
 
-  function submitFormbottom() {
-    if (!validateFormbottom()) {
-      console.log("Form submission blocked due to validation failure.");
-      return; // Do not proceed if validation fails
-    }
+                <a href="https://vimeo.com/dyldotcom" target="_blank" aria-label="Check out Dyl vimeo">
+                    <i class="fab fa-vimeo-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/dyl" target="_blank" aria-label="Check out Dyl linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/dyl" target="_blank" aria-label="Check out Dyl latest tweet">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.facebook.com/dylinfo" target="_blank" aria-label="Check out Dyl facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCmN_u1q2ZKBF7M05feHLNSA" target="_blank"
+                    aria-label="Check out Dyl newest video">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
+            </div>
+            <script>
+                function validateFormbottom() {
+                    var firstname = document.getElementById("fnamebottom").value;
+                    var regex = /^[A-Za-z\s]+$/; // Allows only letters and spaces
 
-    // Gather form data
-    var formbottom = document.getElementById("subscribeFormbottom");
-    var formData = new FormData(formbottom);
+                    console.log("Validating form...");
+                    if (!regex.test(firstname)) {
+                        console.log("Validation failed: special characters found.");
+                        alert("The First Name field can only contain letters and spaces. Please remove any special characters.");
+                        return false;
+                    }
 
-    // Send form data via fetch
-    fetch("https://dyl361.activehosted.com/proc.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      return response.text();
-    })
-    .then(result => {
-      alert("Subscription successful");
-    })
-    .catch(error => {
-    console.error("Submission error:", error);
-    window.location.reload();
-});
-  }
-</script>            </div>
-          </div>
+                    console.log("Validation passed: no special characters found.");
+                    return true;
+                }
+
+                function submitFormbottom() {
+                    if (!validateFormbottom()) {
+                        console.log("Form submission blocked due to validation failure.");
+                        return; // Do not proceed if validation fails
+                    }
+
+                    // Gather form data
+                    var formbottom = document.getElementById("subscribeFormbottom");
+                    var formData = new FormData(formbottom);
+
+                    // Send form data via fetch
+                    fetch("https://dyl361.activehosted.com/proc.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error("Network response was not ok.");
+                            }
+                            return response.text();
+                        })
+                        .then(result => {
+                            alert("Subscription successful");
+                        })
+                        .catch(error => {
+                            console.error("Submission error:", error);
+                            window.location.reload();
+                        });
+                }
+            </script>
         </div>
+    </div>
+</div>
 
 <footer class="bg-darkBlue">
     <div class="container">
@@ -1159,35 +1165,37 @@
 
                 <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../business-phone-service.html"><b>Business
+                            href="../../business-phone-service.html"><b>Business
                                 Phone Service</b></a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../virtual-office.html">Virtual
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../virtual-office.html">Virtual
                             Office</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../business-text-messaging.html">Business
+                            href="../../business-text-messaging.html">Business
                             Texting</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="/lead-and-contact-management"><b>Lead
+                    <li class="nav-item"><a class="nav-link footer-spacing"
+                            href="../../lead-and-contact-management.html"><b>Lead
                                 & Contact Management</a></b></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../lead-engine.html">Lead
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../lead-engine.html">Lead
                             Engine</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../advanced-workflows.html">Advanced
+                    <li class="nav-item"><a class="nav-link footer-spacing"
+                            href="../../advanced-workflows.html">Advanced
                             Workflows</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../virtual-call-center.html"><b>Virtual
+                            href="../../virtual-call-center.html"><b>Virtual
                                 Call Center</a></b></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../pricing.html"><b>Pricing</b></a>
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../pricing.html"><b>Pricing</b></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons.html">Comparison
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../comparisons.html">Comparison
                             Overview</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons/vonage.html">DYL VS
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../comparisons/vonage.html">DYL VS
                             Vonage</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons/fonality.html">DYL
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../comparisons/fonality.html">DYL
                             VS
                             Fonality</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../comparisons/8x8.html">DYL VS
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../comparisons/8x8.html">DYL VS
                             8x8</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../voip-phone-numbers.html">VoIP
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../voip-phone-numbers.html">VoIP
                             Numbers</a></li>
 
                 </ul>
@@ -1195,59 +1203,59 @@
             <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
                 <p class="text-white h6-sub-footer">Solutions</p>
                 <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../industries.html">Industry
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../industries.html">Industry
                             Overview</a>
                     </li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../advertising-marketing-business-solutions.html">Advertising & Marketing</a></li>
+                            href="../../advertising-marketing-business-solutions.html">Advertising & Marketing</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../car-dealerships-business-solutions.html">Car Dealerships</a></li>
+                            href="../../car-dealerships-business-solutions.html">Car Dealerships</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../construction-business-solutions.html">Construction</a></li>
+                            href="../../construction-business-solutions.html">Construction</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../education-business-solutions.html">Education</a></li>
+                            href="../../education-business-solutions.html">Education</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../finance-business-solutions.html">Finance</a></li>
+                            href="../../finance-business-solutions.html">Finance</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../medical-dental-practice-business-solutions.html">Healthcare</a></li>
+                            href="../../medical-dental-practice-business-solutions.html">Healthcare</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../insurance-business-solutions.html">Insurance</a></li>
+                            href="../../insurance-business-solutions.html">Insurance</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../legal-business-solutions.html">Legal</a>
+                            href="../../legal-business-solutions.html">Legal</a>
                     </li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../nonprofit-business-solutions.html">Non-profit</a></li>
+                            href="../../nonprofit-business-solutions.html">Non-profit</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../political-campaign-business-solutions.html">Political</a></li>
+                            href="../../political-campaign-business-solutions.html">Political</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../real-estate-agency-business-solutions.html">Real Estate</a></li>
+                            href="../../real-estate-agency-business-solutions.html">Real Estate</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md-3 col-lg">
                 <p class="text-white h6-sub-footer">Features</p>
                 <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../crm/phone/business-solutions.html">Business Solutions</a></li>
+                            href="../../crm/phone/business-solutions.html">Business Solutions</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../crm/phone/lead-management.html">Relationship Management</a></li>
+                            href="../../crm/phone/lead-management.html">Relationship Management</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../crm/phone/lead-management-software">Lead Management</a></li>
+                            href="../../crm/phone/lead-management-software.html">Lead Management</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="/crm/phone/sales-automation.html">Sales
+                            href="../../crm/phone/sales-automation.html">Sales
                             Automation</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../voip.html">VoIP</a></li>
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../voip.html">VoIP</a></li>
                 </ul>
                 <BR>
                 <p class="text-white h6-sub-footer">Learn</p>
                 <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../support.html">FAQ/Support</a>
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../support.html">FAQ/Support</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../reviews.html">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../case-studies.html">Case
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../case-studies.html">Case
                             Studies</a>
                     </li>
                     <li class="nav-item"><a class="nav-link footer-spacing"
-                            href="../support/system-training.html">System
+                            href="../../support/system-training.html">System
                             Training</a></li>
                 </ul>
 
@@ -1257,15 +1265,16 @@
                 <p class="text-white h6-sub-footer">Company</p>
 
                 <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link footer-spacing" href="https://dyl.breezy.hr/"
                             target="_blank">Careers <span class="badge badge-primary ml-1">We're hiring</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../customer-credit.html">Customer
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../customer-credit.html">Customer
                             Credit</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../free-consultation.html">Free
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../free-consultation.html">Free
                             Consultation</a></li>
-                    <li class="nav-item"><a class="nav-link footer-spacing" href="../blog.html" target="_blank">Blog</a>
+                    <li class="nav-item"><a class="nav-link footer-spacing" href="../../blog.html"
+                            target="_blank">Blog</a>
                     </li>
                 </ul>
 
@@ -1278,20 +1287,20 @@
                 <div class="col-md-6 mb-4 mb-md-0">
                     <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="../privacy-policy.html">Privacy & Policy</a>
+                            <a class="nav-link" href="../../privacy-policy.html">Privacy & Policy</a>
                         </li>
                         <li class="nav-item opacity mx-3 text-white">/</li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../terms-of-service.html">Terms</a>
+                            <a class="nav-link" href="../../terms-of-service.html">Terms</a>
                         </li>
                         <li class="nav-item opacity mx-3 text-white">/</li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../compliance.html">Compliance</a>
+                            <a class="nav-link" href="../../compliance.html">Compliance</a>
                         </li>
                         <li class="nav-item opacity mx-3 text-white">/</li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="../sitemap.html">Sitemap</a>
+                            <a class="nav-link" href="../../sitemap.html">Sitemap</a>
                         </li>
                     </ul>
                 </div>
@@ -1512,7 +1521,7 @@ thank-you" />
                             </div>
                             </form>
                             <span style="position:absolute; bottom:5px; right:5px; font-size: 10px;">By providing
-                                information in this form, you agree to <a href="/privacy-policy">DYL’s Privacy
+                                information in this form, you agree to <a href="../../privacy-policy.html">DYL’s Privacy
                                     Policy</a>.</span>
                         </div>
                     </div>
@@ -1521,13 +1530,7 @@ thank-you" />
         </div>
     </div>
     </div>
-    <script>
-        (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
-        vgo('setAccount', '799988831');
-        vgo('setTrackByDefault', true);
 
-        vgo('process');
-    </script>
 
     <script>
 
