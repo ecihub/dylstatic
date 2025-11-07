@@ -2398,11 +2398,193 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="_form_element _x82123275 _inline-style ">
+                            <div id="sms-error-long" style="color: red; display: none; margin-top: 10px;">
+                                Please select an option to continue.
+                            </div>
+                            <fieldset class="_form-fieldset">
+                                <p class="sms-optin" style="color:#7f848e;">
+                                    Disclaimer: By clicking "I Opt In" and submitting this form, you
+                                    consent to receive SMS messages from DYL at (888) 310-4474. These messages may
+                                    include account notifications,
+                                    customer support, delivery updates, fraud alerts, or marketing content. Message
+                                    frequency may vary, and standard
+                                    messaging and data rates
+                                    may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see
+                                    our <a href="https://dyl.com/terms-of-service.html">Terms and Conditions</a> and <a
+                                        href="https://dyl.com/privacy-policy.html">Privacy Policy</a>.
+                                </p>
+                                <div class="_row _checkbox-radio">
+                                    <input id="opt-in" type="radio" name="field[66]"
+                                        value="I opt-in to receive SMS messages." required="" data-name="undefined">
+                                    <span>
+                                        <label for="opt-in" style="color:#7f848e;">
+                                            I opt-in to receive SMS messages.
+                                        </label></span>
+                                </div>
+                                <div class="_row _checkbox-radio">
+                                    <input id="opt-out" type="radio" name="field[66]"
+                                        value="I opt-out to receive SMS messages." data-name="undefined">
+                                    <span>
+                                        <label for="opt-out" style="color:#7f848e;">
+                                            I opt-out to receive SMS messages.
+                                        </label></span>
+                                </div>
+                            </fieldset>
+                        </div>
                         <div class="col-12 col-lg-12 mx-auto px-0">
                             <button id="_form_3_submit" class="btn btn-large btn-block btn-primary transition-3d-hover"
                                 type="submit" value="Submit">Get Started</button>
                         </div>
                     </form>
+                    <script>
+                        (function () {
+
+                            // Tooltip storage
+                            var tooltips = [];
+
+                            // ✅ Create tooltip
+                            var create_tooltip = function (elem, text) {
+                                var tooltip = document.createElement("div");
+                                tooltip.className = "_error-inner _no_arrow";
+                                tooltip.innerHTML = text;
+                                elem.parentNode.insertBefore(tooltip, elem);
+
+                                tooltips.push({ elem: elem, tip: tooltip });
+                                return tooltip;
+                            };
+
+                            // ✅ Remove tooltip for element
+                            var remove_tooltip = function (elem) {
+                                for (var i = 0; i < tooltips.length; i++) {
+                                    if (tooltips[i].elem === elem) {
+                                        tooltips[i].tip.remove();
+                                        tooltips.splice(i, 1);
+                                        return;
+                                    }
+                                }
+                            };
+
+                            // ✅ Remove ALL tooltips
+                            var remove_tooltips = function () {
+                                tooltips.forEach(t => t.tip.remove());
+                                tooltips = [];
+                            };
+
+                            // ✅ Check if field needs validation
+                            var needs_validate = function (el) {
+                                if (el.getAttribute("required") !== null) return true;
+                                if (el.name === "email" && el.value.trim() !== "") return true;
+                                return false;
+                            };
+
+                            // ✅ THE MISSING FUNCTION — FIXED
+                            // Validate a single field
+                            var validate_field = function (elem, remove) {
+                                var value = elem.value.trim();
+                                var no_error = true;
+
+                                // Required fields
+                                if (elem.getAttribute("required") !== null && value === "") {
+                                    create_tooltip(elem, "This field is required");
+                                    no_error = false;
+                                }
+
+                                // Email validation
+                                if (no_error && elem.name === "email") {
+                                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                    if (!emailPattern.test(value)) {
+                                        create_tooltip(elem, "Enter a valid email address");
+                                        no_error = false;
+                                    }
+                                }
+
+                                // Select validation
+                                if (no_error && elem.tagName === "SELECT") {
+                                    if (elem.value === "") {
+                                        create_tooltip(elem, "Please select an option");
+                                        no_error = false;
+                                    }
+                                }
+
+                                // Radio validation (SMS opt-in)
+                                if (no_error && elem.type === "radio") {
+                                    var radioGroup = document.getElementsByName(elem.name);
+                                    var checked = false;
+                                    for (var i = 0; i < radioGroup.length; i++) {
+                                        if (radioGroup[i].checked) checked = true;
+                                    }
+                                    if (!checked) {
+                                        create_tooltip(elem, "Please select an option");
+                                        no_error = false;
+                                    }
+                                }
+
+                                // ✅ Remove or keep tooltip
+                                if (no_error) {
+                                    if (remove) remove_tooltip(elem);
+                                    elem.classList.remove("_has_error");
+                                } else {
+                                    elem.classList.add("_has_error");
+                                }
+
+                                return no_error;
+                            };
+
+                            // ✅ Validate entire form
+                            var validate_form = function (e) {
+                                var form = document.getElementById("_form_68_");
+                                var inputs = form.querySelectorAll("input, select, textarea");
+                                var no_error = true;
+
+                                remove_tooltips();
+
+                                inputs.forEach(function (input) {
+                                    if (needs_validate(input)) {
+                                        if (!validate_field(input)) no_error = false;
+                                    }
+                                });
+
+                                if (!no_error) {
+                                    if (e) e.preventDefault();
+                                }
+
+                                return no_error;
+                            };
+
+                            // ✅ Form submit handler
+                            document.getElementById("_form_68_").addEventListener("submit", function (e) {
+                                e.preventDefault();
+
+                                // Validate form
+                                if (!validate_form(e)) return false;
+
+                                // ✅ Honeypot bot check
+                                var honeypot = document.querySelector('[id="field[39]"]');
+                                if (honeypot && honeypot.value.trim() !== "") {
+                                    alert("Form submission blocked.");
+                                    return false;
+                                }
+
+                                // ✅ Change submit button state
+                                var button = this.querySelector("button[type=submit]");
+                                button.disabled = true;
+                                button.classList.add("processing");
+
+                                // ✅ Serialize form data
+                                var formData = new FormData(this);
+
+                                // ✅ Submit using ActiveCampaign JSONP
+                                var queryString = new URLSearchParams(formData).toString();
+                                var script = document.createElement("script");
+                                script.src = "https://dyl361.activehosted.com/proc.php?" + queryString + "&jsonp=true";
+                                document.head.appendChild(script);
+
+                                return false;
+                            });
+
+                        })();
+                    </script>
                 </div>
 
             </div>

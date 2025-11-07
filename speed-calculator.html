@@ -11,15 +11,15 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-       
-            Speed Calculator | DYL
-        
+
+        Speed Calculator | DYL
+
     </title>
     <meta name="description"
         content="Boost your insurance agency's efficiency with our Speed Calculator. Automate sales, streamline lead nurturing, and generate high-quality insurance leads faster than ever. Start optimizing your agency today!">
     <link rel="icon" href="https://images.dyl.com/marketing-web/images/logo/dyl-fav3.ico" type="image/x-icon"
         sizes="16x16">
- 
+
 
     <link rel="preload" href="scss/index.min.css" as="style">
     <link rel="stylesheet" href="scss/index.min.css">
@@ -29,7 +29,7 @@
         body {
             font-family: "Open Sans", sans-serif, "Helvetica";
         }
-    
+
         @font-face {
             font-family: "Open Sans";
             font-weight: 400, 600, 700, 800;
@@ -37,7 +37,7 @@
             src: local("Open Sans"), local("Open Sans"),
                 url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format("woff2");
         }
-    
+
         .DYL-blue-logo-nav {
             background: url(https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png);
             text-indent: -99999em;
@@ -47,27 +47,27 @@
             height: 50px;
             width: 110px;
         }
-    
+
         .img-fluid {
             max-width: 100%;
             height: auto;
         }
-    
+
         @media (min-width: 320px) and (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
             }
-    
+
             .text-sky-blue {
                 color: #0269ff !important;
             }
         }
-    
+
         .p-5 {
             padding: 2rem !important;
         }
 
-          .step {
+        .step {
             display: none;
         }
 
@@ -84,7 +84,7 @@
             font-weight: bold;
         }
     </style>
-   
+
     <link rel="preload" href="https://images.dyl.com/marketing-web/images/logo/DYL_logo_blue.png" as="image"
         type="image/webp">
 
@@ -523,7 +523,7 @@
                                                 <div class="position-relative">
                                                     <img class="img-fluid rounded mb-3 "
                                                         src="https://images.dyl.com/marketing-web/images/home/dyl2-learn.webp"
-                                                        alt="DYL 2.0 Platform" width="236" height="149"  loading="lazy">
+                                                        alt="DYL 2.0 Platform" width="236" height="149" loading="lazy">
                                                 </div>
                                                 <span class="text-blue-ribbon">DYL Software 2.0</span><span
                                                     class="badge badge-success badge-pill ml-3">Coming
@@ -1160,535 +1160,721 @@
 
 
 
-   <div class="container-fluid section-panel-bg-offwhite pad-b60 pad-t60">
-                <section class="container subpage-highlight-section section u-content-space-half bg-white pad-0">
-                    <div class="width-100 bg-sky-blue p-5 pad-t60 text-center">
-                    <img class="text-center mar-b20" src="https://images.dyl.com/marketing-web/images/features/calculator/phone-call-white.webp" alt="phone call" width="80" height="80">
-                    <h1 class="feature-highlight-h2 text-center d3 text-white">
-                        DYL Speed Calculator
-                    </h1>
-                    <p class="h5-sub-product-page text-center feature-highlight-h4 pb-5 text-white">
-                        See how DYL's instant call-back can supercharge your lead conversion
-                    </p>
-                    </div>
-
-                    <div class="step active" id="step1">
-                       
-                        <div class="calculator-step-panel p-5 bg-white">
-
-                            <div class="row">
-                               
-                                <div class="col-12 col-md-12 col-xs-12">
-                                    <p class="product-page-text-color six-h">
-                                        How many leads do you get per month?</p>
-                                    <input type="number" id="leadsPerMonth" placeholder="How many leads do you get per month">
-                                </div>
-                            </div>
-                            <div class="row mar-t30">
-                                <div class="col-12 col-md-12 col-xs-12">
-                                    <p class="product-page-text-color six-h">
-                                        What's your average time to respond?</p>
-                                        <select id="responseTime">
-                                            <option value="">Select response time</option>
-                                            <option value="5">Within 5 minutes</option>
-                                            <option value="30">6–30 minutes</option>
-                                            <option value="60">31 minutes – 1 hour</option>
-                                            <option value="240">1–4 hours</option>
-                                            <option value="1440">4–24 hours</option>
-                                            <option value="1441">More than 24 hours</option>
-                                        </select>
-                                </div>
-                            </div>
-
-                            <button class="btn btn-md btn-primary pricing-page-blue-button transition-3d-hover mar-t30 width-100" onclick="calculateSpeed()">Calculate Speed Impact</button>
-                        </div>
-                    </div>
-                    <div class="step" id="step2">
-                        <div class="calculator-step-panel p-5 bg-white">
-                            <p class="h5-sub-product-page text-center feature-highlight-h4 pb-5 product-page-text-color">
-                                See how DYL can boost your close rates and increase monthly revenue
-                            </p>
-                            <div class="section-panel-bg-offwhite p-3 width-100">
-                                <div class="result-row" id="rateResult"></div>
-                            </div>
-                          
-                            <div class="result-row mar-t30 width-100 align-items-center" id="dealResult"></div>
-                           
-                            <div class="row mar-t30 ">
-                                <div class="col-md-6 col-12">
-                                    <button class="btn btn-md btn-primary bg-white product-page-text-color try-calculation-button transition-3d-hover width-100" onclick="goBack()">Recalculate</button>
-                                  
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <a href="#longFormFields" data-toggle="modal" class="btn btn-md btn-primary pricing-page-blue-button transition-3d-hover width-100">
-                                      See DYL in action
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    <div class="container-fluid section-panel-bg-offwhite pad-b60 pad-t60">
+        <section class="container subpage-highlight-section section u-content-space-half bg-white pad-0">
+            <div class="width-100 bg-sky-blue p-5 pad-t60 text-center">
+                <img class="text-center mar-b20"
+                    src="https://images.dyl.com/marketing-web/images/features/calculator/phone-call-white.webp"
+                    alt="phone call" width="80" height="80">
+                <h1 class="feature-highlight-h2 text-center d3 text-white">
+                    DYL Speed Calculator
+                </h1>
+                <p class="h5-sub-product-page text-center feature-highlight-h4 pb-5 text-white">
+                    See how DYL's instant call-back can supercharge your lead conversion
+                </p>
             </div>
+
+            <div class="step active" id="step1">
+
+                <div class="calculator-step-panel p-5 bg-white">
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-12 col-xs-12">
+                            <p class="product-page-text-color six-h">
+                                How many leads do you get per month?</p>
+                            <input type="number" id="leadsPerMonth" placeholder="How many leads do you get per month">
+                        </div>
+                    </div>
+                    <div class="row mar-t30">
+                        <div class="col-12 col-md-12 col-xs-12">
+                            <p class="product-page-text-color six-h">
+                                What's your average time to respond?</p>
+                            <select id="responseTime">
+                                <option value="">Select response time</option>
+                                <option value="5">Within 5 minutes</option>
+                                <option value="30">6–30 minutes</option>
+                                <option value="60">31 minutes – 1 hour</option>
+                                <option value="240">1–4 hours</option>
+                                <option value="1440">4–24 hours</option>
+                                <option value="1441">More than 24 hours</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button
+                        class="btn btn-md btn-primary pricing-page-blue-button transition-3d-hover mar-t30 width-100"
+                        onclick="calculateSpeed()">Calculate Speed Impact</button>
+                </div>
+            </div>
+            <div class="step" id="step2">
+                <div class="calculator-step-panel p-5 bg-white">
+                    <p class="h5-sub-product-page text-center feature-highlight-h4 pb-5 product-page-text-color">
+                        See how DYL can boost your close rates and increase monthly revenue
+                    </p>
+                    <div class="section-panel-bg-offwhite p-3 width-100">
+                        <div class="result-row" id="rateResult"></div>
+                    </div>
+
+                    <div class="result-row mar-t30 width-100 align-items-center" id="dealResult"></div>
+
+                    <div class="row mar-t30 ">
+                        <div class="col-md-6 col-12">
+                            <button
+                                class="btn btn-md btn-primary bg-white product-page-text-color try-calculation-button transition-3d-hover width-100"
+                                onclick="goBack()">Recalculate</button>
+
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <a href="#longFormFields" data-toggle="modal"
+                                class="btn btn-md btn-primary pricing-page-blue-button transition-3d-hover width-100">
+                                See DYL in action
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <div class="container-fluid bg-white pad-b60 pad-t60">
-                <section class="container subpage-highlight-section section u-content-space-half">
+        <section class="container subpage-highlight-section section u-content-space-half">
 
-                    <div class="row mb-3 mb-lg-0">
-                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center" style="flex-direction: column;">
-                            <img class="img-fluid mt-3 mb-4  d-sm-block" src="https://images.dyl.com/marketing-web/images/features/cost-calculator/pauline.png" 
-                            alt="Arnold" loading="lazy" width="448" height="348">
-                            <p class="h5-sub-product-page pr-5 pl-5 pt-5 d-sm-block product-page-text-color product-pg-testi">
-                                “I had a massive problem with holding my insurance agents accountable. Everyday, I felt
-                                like pulling my hair. But with DYL, I have an overview of all their interactions with
-                                customer so I can see real money coming in. Since using DYL, I’ve increased lead
-                                acquisition by
-                                87% and overall sales by 44%.”
-                            </p>
-                            <p class="h5-sub-product-page off-top-6 d-sm-block text-sky-blue">Pauline Cisco</p>
-                            <p class="h6-sub-product-page off-top-6 product-page-text-color">Insurance Agency Owner</p>
+            <div class="row mb-3 mb-lg-0">
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
+                    style="flex-direction: column;">
+                    <img class="img-fluid mt-3 mb-4  d-sm-block"
+                        src="https://images.dyl.com/marketing-web/images/features/cost-calculator/pauline.png"
+                        alt="Arnold" loading="lazy" width="448" height="348">
+                    <p class="h5-sub-product-page pr-5 pl-5 pt-5 d-sm-block product-page-text-color product-pg-testi">
+                        “I had a massive problem with holding my insurance agents accountable. Everyday, I felt
+                        like pulling my hair. But with DYL, I have an overview of all their interactions with
+                        customer so I can see real money coming in. Since using DYL, I’ve increased lead
+                        acquisition by
+                        87% and overall sales by 44%.”
+                    </p>
+                    <p class="h5-sub-product-page off-top-6 d-sm-block text-sky-blue">Pauline Cisco</p>
+                    <p class="h6-sub-product-page off-top-6 product-page-text-color">Insurance Agency Owner</p>
+                </div>
+                <div class="col-12 col-lg-6 d-flex" style="flex-direction: column;">
+                    <p class="h2-sub-product-page  text-sky-blue mar-b40">
+                        Join 6000+ businesses across the United States
+                    </p>
+
+                    <form accept-charset="UTF-8" action="https://dyl361.activehosted.com/proc.php" id="_form_68_"
+                        class="form _form_68 _inline-form _inline-style _dark js-validate" novalidate="novalidate"
+                        data-styles-version="3" method="POST">
+                        <input type="hidden" name="u" value="68" data-name="u">
+                        <input type="hidden" name="f" value="68" data-name="f">
+                        <input type="hidden" name="s" data-name="s">
+                        <input type="hidden" name="c" value="0" data-name="c">
+                        <input type="hidden" name="m" value="0" data-name="m">
+                        <input type="hidden" name="act" value="sub" data-name="act">
+                        <input type="hidden" name="v" value="2" data-name="v">
+                        <input type="hidden" name="or" value="ee8c37f839f1fd508261ab0b48d1b1c8" data-name="or">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12 form-group mb-3">
+                                <span class="form-icon-wrapper text-black">
+                                    <label for="fullname" class="visuallyHidden">Full Name</label>
+                                    <input id="fullname" type="text" class="form-control" name="fullname"
+                                        aria-describedby="emailHelp" placeholder="Full Name" required=""
+                                        data-name="fullname">
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12 form-group mb-3">
+                                <span class="form-icon-wrapper">
+                                    <label for="email" class="visuallyHidden">Email</label>
+                                    <input id="email" type="email" class="form-control" name="email"
+                                        aria-describedby="emailHelp" placeholder="Email" required="" data-name="email">
+                                </span>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 form-group mb-3">
+                                <span class="form-icon-wrapper">
+                                    <label for="phoneCheck" class="visuallyHidden">Phone Number</label>
+                                    <input id="phoneCheck" type="text" class="form-control" name="phone"
+                                        aria-describedby="emailHelp" placeholder="Phone #" required=""
+                                        data-name="phone">
+                                    <input id="field[39]" type="text" class="form-control"
+                                        style="position: absolute;opacity: 0;top: 0;width:0;height: 0;left:0"
+                                        name="field[39]" aria-describedby="PhoneNumber" placeholder="Phone #"
+                                        data-name="undefined">
+                                </span>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 form-group mb-3">
+                                <span class="form-icon-wrapper">
+                                    <label for="company" class="visuallyHidden">Company Name</label>
+                                    <input id="company" type="text" class="form-control" name="field[17]"
+                                        aria-describedby="emailHelp" placeholder="Company" required=""
+                                        data-name="company_name">
+                                </span>
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex" style="flex-direction: column;">
-                            <p class="h2-sub-product-page  text-sky-blue mar-b40">
-                                Join 6000+ businesses across the United States
-                            </p>
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-lg-6 form-group _field20">
+                                <label for="industry" class="visuallyHidden _form-label">Industry</label>
+                                <div class="_field-wrapper">
+                                    <select id="industry" class="form-control" name="field[20]" style="color:#8f95a0;"
+                                        required="" data-name="industry">
+                                        <option selected="" disabled="" value="">Industry</option>
+                                        <option value="Advertising/Marketing">Advertising/Marketing</option>
+                                        <option value="Automotive">Automotive</option>
+                                        <option value="Collections">Collections</option>
+                                        <option value="Construction">Construction</option>
+                                        <option value="Credit Repair">Credit Repair</option>
+                                        <option value="Education">Education</option>
+                                        <option value="Entertainment">Entertainment</option>
+                                        <option value="Finance">Finance</option>
+                                        <option value="Fitness and Health">Fitness and Health</option>
+                                        <option value="Healthcare">Healthcare</option>
+                                        <option value="Insurance">Insurance</option>
+                                        <option value="Legal">Legal</option>
+                                        <option value="Manufacturing">Manufacturing</option>
+                                        <option value="Non-profit">Non-profit</option>
+                                        <option value="Political">Political</option>
+                                        <option value="Real Estate">Real Estate</option>
+                                        <option value="Recruiting">Recruiting</option>
+                                        <option value="Retail">Retail</option>
+                                        <option value="Technology">Technology</option>
+                                        <option value="Transportation">Transportation</option>
+                                        <option value="Wellness">Wellness</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 form-group _field21 _form_element">
+                                <label for="numberOfEmployees" class="visuallyHidden">Number of Employees</label>
+                                <div class="_field-wrapper">
+                                    <select id="numberOfEmployees" class="form-control" name="field[21]"
+                                        style="color:#8f95a0;" required="" data-name="_of_employees">
+                                        <option selected="" disabled="" value=""># of Employees</option>
+                                        <option value="2-5">2 - 5</option>
+                                        <option value="6-10">6 - 10</option>
+                                        <option value="11-20">11 - 20</option>
+                                        <option value="21-30">21 - 30</option>
+                                        <option value="31-50">31 - 50</option>
+                                        <option value="50+">50+</option>
+                                    </select>
+                                    <input id="field[30]" type="text" class="form-control"
+                                        style="position: absolute;opacity: 0;top: 0;width:0;height: 0;left:0"
+                                        name="field[30]" aria-describedby="platform" placeholder="Platform"
+                                        data-name="undefined">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_form_element _x82123275 _inline-style ">
+                            <div id="sms-error-long" style="color: red; display: none; margin-top: 10px;">
+                                Please select an option to continue.
+                            </div>
+                            <fieldset class="_form-fieldset">
+                                <p class="sms-optin" style="color:#7f848e;">
+                                    Disclaimer: By clicking "I Opt In" and submitting this form, you
+                                    consent to receive SMS messages from DYL at (888) 310-4474. These messages may
+                                    include account notifications,
+                                    customer support, delivery updates, fraud alerts, or marketing content. Message
+                                    frequency may vary, and standard
+                                    messaging and data rates
+                                    may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see
+                                    our <a href="https://dyl.com/terms-of-service.html">Terms and Conditions</a> and <a
+                                        href="https://dyl.com/privacy-policy.html">Privacy Policy</a>.
+                                </p>
+                                <div class="_row _checkbox-radio">
+                                    <input id="opt-in" type="radio" name="field[66]"
+                                        value="I opt-in to receive SMS messages." required="" data-name="undefined">
+                                    <span>
+                                        <label for="opt-in" style="color:#7f848e;">
+                                            I opt-in to receive SMS messages.
+                                        </label></span>
+                                </div>
+                                <div class="_row _checkbox-radio">
+                                    <input id="opt-out" type="radio" name="field[66]"
+                                        value="I opt-out to receive SMS messages." data-name="undefined">
+                                    <span>
+                                        <label for="opt-out" style="color:#7f848e;">
+                                            I opt-out to receive SMS messages.
+                                        </label></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-12 col-lg-12 mx-auto px-0">
+                            <button id="_form_3_submit" class="btn btn-large btn-block btn-primary transition-3d-hover"
+                                type="submit" value="Submit">Get Started</button>
+                        </div>
+                    </form>
+                    <script>
+                        (function () {
 
-                            <form accept-charset="UTF-8" action="https://dyl361.activehosted.com/proc.php" id="_form_68_" class="form _form_68 _inline-form _inline-style _dark js-validate" novalidate="novalidate" data-styles-version="3" method="POST">
+                            // Tooltip storage
+                            var tooltips = [];
 
-  <input type="hidden" name="u" value="68" data-name="u">
-  <input type="hidden" name="f" value="68" data-name="f">
-  <input type="hidden" name="s" data-name="s">
-  <input type="hidden" name="c" value="0" data-name="c">
-  <input type="hidden" name="m" value="0" data-name="m">
-  <input type="hidden" name="act" value="sub" data-name="act">
-  <input type="hidden" name="v" value="2" data-name="v">
-  <input type="hidden" name="or" value="ee8c37f839f1fd508261ab0b48d1b1c8" data-name="or">
+                            // ✅ Create tooltip
+                            var create_tooltip = function (elem, text) {
+                                var tooltip = document.createElement("div");
+                                tooltip.className = "_error-inner _no_arrow";
+                                tooltip.innerHTML = text;
+                                elem.parentNode.insertBefore(tooltip, elem);
 
-  <div class="row">
-    <div class="col-12 col-md-12 col-lg-12 form-group mb-3">
-      <span class="form-icon-wrapper text-black">
-        <label for="fullname" class="visuallyHidden">Full Name</label>
-        <input id="fullname" type="text" class="form-control" name="fullname" aria-describedby="emailHelp" placeholder="Full Name" required="" data-name="fullname">
-      </span>
+                                tooltips.push({ elem: elem, tip: tooltip });
+                                return tooltip;
+                            };
+
+                            // ✅ Remove tooltip for element
+                            var remove_tooltip = function (elem) {
+                                for (var i = 0; i < tooltips.length; i++) {
+                                    if (tooltips[i].elem === elem) {
+                                        tooltips[i].tip.remove();
+                                        tooltips.splice(i, 1);
+                                        return;
+                                    }
+                                }
+                            };
+
+                            // ✅ Remove ALL tooltips
+                            var remove_tooltips = function () {
+                                tooltips.forEach(t => t.tip.remove());
+                                tooltips = [];
+                            };
+
+                            // ✅ Check if field needs validation
+                            var needs_validate = function (el) {
+                                if (el.getAttribute("required") !== null) return true;
+                                if (el.name === "email" && el.value.trim() !== "") return true;
+                                return false;
+                            };
+
+                            // ✅ THE MISSING FUNCTION — FIXED
+                            // Validate a single field
+                            var validate_field = function (elem, remove) {
+                                var value = elem.value.trim();
+                                var no_error = true;
+
+                                // Required fields
+                                if (elem.getAttribute("required") !== null && value === "") {
+                                    create_tooltip(elem, "This field is required");
+                                    no_error = false;
+                                }
+
+                                // Email validation
+                                if (no_error && elem.name === "email") {
+                                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                    if (!emailPattern.test(value)) {
+                                        create_tooltip(elem, "Enter a valid email address");
+                                        no_error = false;
+                                    }
+                                }
+
+                                // Select validation
+                                if (no_error && elem.tagName === "SELECT") {
+                                    if (elem.value === "") {
+                                        create_tooltip(elem, "Please select an option");
+                                        no_error = false;
+                                    }
+                                }
+
+                                // Radio validation (SMS opt-in)
+                                if (no_error && elem.type === "radio") {
+                                    var radioGroup = document.getElementsByName(elem.name);
+                                    var checked = false;
+                                    for (var i = 0; i < radioGroup.length; i++) {
+                                        if (radioGroup[i].checked) checked = true;
+                                    }
+                                    if (!checked) {
+                                        create_tooltip(elem, "Please select an option");
+                                        no_error = false;
+                                    }
+                                }
+
+                                // ✅ Remove or keep tooltip
+                                if (no_error) {
+                                    if (remove) remove_tooltip(elem);
+                                    elem.classList.remove("_has_error");
+                                } else {
+                                    elem.classList.add("_has_error");
+                                }
+
+                                return no_error;
+                            };
+
+                            // ✅ Validate entire form
+                            var validate_form = function (e) {
+                                var form = document.getElementById("_form_68_");
+                                var inputs = form.querySelectorAll("input, select, textarea");
+                                var no_error = true;
+
+                                remove_tooltips();
+
+                                inputs.forEach(function (input) {
+                                    if (needs_validate(input)) {
+                                        if (!validate_field(input)) no_error = false;
+                                    }
+                                });
+
+                                if (!no_error) {
+                                    if (e) e.preventDefault();
+                                }
+
+                                return no_error;
+                            };
+
+                            // ✅ Form submit handler
+                            document.getElementById("_form_68_").addEventListener("submit", function (e) {
+                                e.preventDefault();
+
+                                // Validate form
+                                if (!validate_form(e)) return false;
+
+                                // ✅ Honeypot bot check
+                                var honeypot = document.querySelector('[id="field[39]"]');
+                                if (honeypot && honeypot.value.trim() !== "") {
+                                    alert("Form submission blocked.");
+                                    return false;
+                                }
+
+                                // ✅ Change submit button state
+                                var button = this.querySelector("button[type=submit]");
+                                button.disabled = true;
+                                button.classList.add("processing");
+
+                                // ✅ Serialize form data
+                                var formData = new FormData(this);
+
+                                // ✅ Submit using ActiveCampaign JSONP
+                                var queryString = new URLSearchParams(formData).toString();
+                                var script = document.createElement("script");
+                                script.src = "https://dyl361.activehosted.com/proc.php?" + queryString + "&jsonp=true";
+                                document.head.appendChild(script);
+
+                                return false;
+                            });
+
+                        })();
+                    </script>
+                </div>
+
+                <div class="text-center">
+                    <input name="field[36]" type="hidden" value="Direct">
+                    <input name="field[34]" type="hidden" value="Company Website">
+                    <input name="field[35]" type="hidden" value="boost-calculator">
+                    <input name="field[51]" type="hidden" value="">
+                    <input type="hidden" id="authtokenlong">
+
+                </div>
+
+
+                <script type="text/javascript">
+
+
+
+
+
+                    window.cfields = { "17": "company_name", "20": "industry", "21": "_of_employees", "36": "utm_medium", "34": "utm_source", "35": "utm_campaign" };
+                    window._show_thank_you = function (id, message, trackcmp_url, email) {
+                        var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+                        form.querySelector('._form-content').style.display = 'none';
+                        thank_you.innerHTML = message;
+                        thank_you.style.display = 'block';
+                        const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+                        var visitorObject = window[vgoAlias];
+                        if (email && typeof visitorObject !== 'undefined') {
+                            visitorObject('setEmail', email);
+                            visitorObject('update');
+                        } else if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
+
+                            _load_script(trackcmp_url);
+                        }
+                        if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+                    };
+                    window._show_error = function (id, message, html) {
+                        var form = document.getElementById('_form_' + id + '_'), err = document.createElement('div'), button = form.querySelector('button'), old_error = form.querySelector('._form_error');
+                        if (old_error) old_error.parentNode.removeChild(old_error);
+                        err.innerHTML = message;
+                        err.className = '_error-inner _form_error _no_arrow';
+                        var wrapper = document.createElement('div');
+                        wrapper.className = '_form-inner';
+                        wrapper.appendChild(err);
+                        button.parentNode.insertBefore(wrapper, button);
+                        document.querySelector('[id^="_form"][id$="_submit"]').disabled = false;
+                        if (html) {
+                            var div = document.createElement('div');
+                            div.className = '_error-html';
+                            div.innerHTML = html;
+                            err.appendChild(div);
+                        }
+                    };
+                    window._load_script = function (url, callback) {
+                        var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+                        script.type = 'text/javascript';
+                        script.charset = 'utf-8';
+                        script.src = url;
+                        if (callback) {
+                            script.onload = script.onreadystatechange = function () {
+                                if (!r && (!this.readyState || this.readyState == 'complete')) {
+                                    r = true;
+                                    callback();
+                                }
+                            };
+                        }
+                        head.appendChild(script);
+                    };
+                    (function () {
+                        if (window.location.search.search("excludeform") !== -1) return false;
+                        var getCookie = function (name) {
+                            var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                            return match ? match[2] : null;
+                        }
+                        var setCookie = function (name, value) {
+                            var now = new Date();
+                            var time = now.getTime();
+                            var expireTime = time + 1000 * 60 * 60 * 24 * 365;
+                            now.setTime(expireTime);
+                            document.cookie = name + '=' + value + '; expires=' + now + ';path=/';
+                        }
+                        var addEvent = function (element, event, func) {
+                            if (element.addEventListener) {
+                                element.addEventListener(event, func);
+                            } else {
+                                var oldFunc = element['on' + event];
+                                element['on' + event] = function () {
+                                    oldFunc.apply(this, arguments);
+                                    func.apply(this, arguments);
+                                };
+                            }
+                        }
+                        var _removed = false;
+                        var form_to_submit = document.getElementById('_form_68_');
+                        var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
+
+                        var getUrlParam = function (name) {
+                            var params = new URLSearchParams(window.location.search);
+                            return params.get(name) || false;
+                        };
+
+                        for (var i = 0; i < allInputs.length; i++) {
+                            var regexStr = "field\\[(\\d+)\\]";
+                            var results = new RegExp(regexStr).exec(allInputs[i].name);
+                            if (results != undefined) {
+                                allInputs[i].dataset.name = window.cfields[results[1]];
+                            } else {
+                                allInputs[i].dataset.name = allInputs[i].name;
+                            }
+                            var fieldVal = getUrlParam(allInputs[i].dataset.name);
+
+                            if (fieldVal) {
+                                if (allInputs[i].dataset.autofill === "false") {
+                                    continue;
+                                }
+                                if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
+                                    if (allInputs[i].value == fieldVal) {
+                                        allInputs[i].checked = true;
+                                    }
+                                } else {
+                                    allInputs[i].value = fieldVal;
+                                }
+                            }
+                        }
+
+                        var remove_tooltips = function () {
+                            for (var i = 0; i < tooltips.length; i++) {
+                                tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+                            }
+                            tooltips = [];
+                        };
+                        var remove_tooltip = function (elem) {
+                            for (var i = 0; i < tooltips.length; i++) {
+                                if (tooltips[i].elem === elem) {
+                                    tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+                                    tooltips.splice(i, 1);
+                                    return;
+                                }
+                            }
+                        };
+                        var create_tooltip = function (elem, text) {
+                            var tooltip = document.createElement('div'), arrow = document.createElement('div'), inner = document.createElement('div'), new_tooltip = {};
+                            if (elem.type != 'radio' && elem.type != 'checkbox') {
+                                tooltip.className = '_error';
+                                arrow.className = '_error-arrow';
+                                inner.className = '_error-inner';
+                                inner.innerHTML = text;
+                                tooltip.appendChild(arrow);
+                                tooltip.appendChild(inner);
+                                elem.parentNode.appendChild(tooltip);
+                            } else {
+                                tooltip.className = '_error-inner _no_arrow';
+                                tooltip.innerHTML = text;
+                                elem.parentNode.insertBefore(tooltip, elem);
+                                new_tooltip.no_arrow = true;
+                            }
+                            new_tooltip.tip = tooltip;
+                            new_tooltip.elem = elem;
+                            tooltips.push(new_tooltip);
+                            return new_tooltip;
+                        };
+                        var resize_tooltip = function (tooltip) {
+                            var rect = tooltip.elem.getBoundingClientRect();
+                            var doc = document.documentElement, scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0));
+                            if (scrollPosition < 40) {
+                                tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _below';
+                            } else {
+                                tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _above';
+                            }
+                        };
+                        var resize_tooltips = function () {
+                            if (_removed) return;
+                            for (var i = 0; i < tooltips.length; i++) {
+                                if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]);
+                            }
+                        };
+                        var needs_validate = function (el) {
+                            if (el.getAttribute('required') !== null) {
+                                return true
+                            }
+                            if (el.name === 'email' && el.value !== "") {
+                                return true
+                            }
+                            return false
+                        };
+                        var validate_form = function (e) {
+                            var err = form_to_submit.querySelector('._form_error'), no_error = true;
+                            if (!submitted) {
+                                submitted = true;
+                                for (var i = 0, len = allInputs.length; i < len; i++) {
+                                    var input = allInputs[i];
+                                    if (needs_validate(input)) {
+                                        if (input.type == 'text' || input.type == 'number' || input.type == 'time') {
+                                            addEvent(input, 'blur', function () {
+                                                this.value = this.value.trim();
+                                                validate_field(this, true);
+                                            });
+                                            addEvent(input, 'input', function () {
+                                                validate_field(this, true);
+                                            });
+                                        } else if (input.type == 'radio' || input.type == 'checkbox') {
+                                            (function (el) {
+                                                var radios = form_to_submit.elements[el.name];
+                                                for (var i = 0; i < radios.length; i++) {
+                                                    addEvent(radios[i], 'click', function () {
+                                                        validate_field(el, true);
+                                                    });
+                                                }
+                                            })(input);
+                                        } else if (input.tagName == 'SELECT') {
+                                            addEvent(input, 'change', function () {
+                                                validate_field(this, true);
+                                            });
+                                        } else if (input.type == 'textarea') {
+                                            addEvent(input, 'input', function () {
+                                                validate_field(this, true);
+                                            });
+                                        }
+                                    }
+                                }
+                            }
+                            remove_tooltips();
+                            for (var i = 0, len = allInputs.length; i < len; i++) {
+                                var elem = allInputs[i];
+                                if (needs_validate(elem)) {
+                                    if (elem.tagName.toLowerCase() !== "select") {
+                                        elem.value = elem.value.trim();
+                                    }
+                                    validate_field(elem) ? true : no_error = false;
+                                }
+                            }
+                            if (!no_error && e) {
+                                e.preventDefault();
+                            }
+                            resize_tooltips();
+                            return no_error;
+                        };
+                        addEvent(window, 'resize', resize_tooltips);
+                        addEvent(window, 'scroll', resize_tooltips);
+
+                        const formSupportsPost = false;
+                        var form_submit = function (e) {
+                            e.preventDefault();
+                            if (validate_form()) {
+                                // Check if field[38] has a value
+                                var phone2Value = document.getElementById('field[39]').value.trim();
+                                if (phone2Value !== "") {
+                                    // Display an error message or handle as needed
+                                    alert('Form submission blocked.');
+                                    return false;
+                                }
+
+                                var submitButton = e.target.querySelector('#_form_68_submit');
+                                submitButton.disabled = true;
+                                submitButton.classList.add('processing');
+                                var serialized = _form_serialize(document.getElementById('_form_68_')).replace(/%0A/g, '\\n');
+                                var err = form_to_submit.querySelector('._form_error');
+                                err ? err.parentNode.removeChild(err) : false;
+                                async function submitForm() {
+                                    var formData = new FormData();
+                                    const searchParams = new URLSearchParams(serialized);
+                                    searchParams.forEach((value, key) => {
+                                        formData.append(key, value);
+                                    });
+
+                                    const response = await fetch('https://dyl361.activehosted.com/proc.php?jsonp=true', {
+                                        headers: {
+                                            "Accept": "application/json"
+                                        },
+                                        body: formData,
+                                        method: "POST"
+                                    });
+                                    return response.json();
+                                }
+
+                                if (formSupportsPost) {
+                                    submitForm().then((data) => {
+                                        eval(data.js);
+                                    });
+                                } else {
+                                    _load_script('https://dyl361.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
+                                }
+                            }
+                            return false;
+                        };
+                        addEvent(form_to_submit, 'submit', form_submit);
+                    })();
+
+
+                </script>
+                <script>
+
+                    function setCookie(name, value, days) {
+                        var date = new Date();
+                        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
+                        var expires = "expires=" + date.toUTCString();
+                        document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
+                    }
+
+                    function getCookie(name) {
+                        var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                        return match ? match[2] : null;
+                    }
+
+                    document.getElementById("_form_68_").addEventListener("submit", function (event) {
+                        event.preventDefault();  // Prevent page refresh
+
+                        var email = document.getElementById("email").value;
+
+                        setCookie("email", email, 30);
+
+                        console.log("Email stored in cookie:", email);
+                    });
+
+                    window.onload = function () {
+                        var storedEmail = getCookie("email");
+                        if (storedEmail) {
+                            console.log("Stored demo form email from cookie:", storedEmail);
+                        } else {
+                            console.log("No email found in cookies.");
+                        }
+                    };
+                </script>
+            </div>
+
+        </section>
     </div>
-    <div class="col-12 col-md-12 col-lg-12 form-group mb-3">
-      <span class="form-icon-wrapper">
-        <label for="email" class="visuallyHidden">Email</label>
-        <input id="email" type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required="" data-name="email">
-      </span>
-    </div>
-    <div class="col-6 col-md-6 col-lg-6 form-group mb-3">
-      <span class="form-icon-wrapper">
-        <label for="phoneCheck" class="visuallyHidden">Phone Number</label>
-        <input id="phoneCheck" type="text" class="form-control" name="phone" aria-describedby="emailHelp" placeholder="Phone #" required="" data-name="phone">
-        <input id="field[39]" type="text" class="form-control" style="position: absolute;opacity: 0;top: 0;width:0;height: 0;left:0" name="field[39]" aria-describedby="PhoneNumber" placeholder="Phone #" data-name="undefined">
-      </span>
-    </div>
-    <div class="col-6 col-md-6 col-lg-6 form-group mb-3">
-      <span class="form-icon-wrapper">
-        <label for="company" class="visuallyHidden">Company Name</label>
-        <input id="company" type="text" class="form-control" name="field[17]" aria-describedby="emailHelp" placeholder="Company" required="" data-name="company_name">
-      </span>
-    </div>
-
-  </div>
-  <div class="row">
-    <div class="col-6 col-md-6 col-lg-6 form-group _field20">
-      <label for="industry" class="visuallyHidden _form-label">Industry</label>
-      <div class="_field-wrapper">
-        <select id="industry" class="form-control" name="field[20]" style="color:#8f95a0;" required="" data-name="industry">
-          <option selected="" disabled="" value="">Industry</option>
-          <option value="Advertising/Marketing">Advertising/Marketing</option>
-          <option value="Automotive">Automotive</option>
-          <option value="Collections">Collections</option>
-          <option value="Construction">Construction</option>
-          <option value="Credit Repair">Credit Repair</option>
-          <option value="Education">Education</option>
-          <option value="Entertainment">Entertainment</option>
-          <option value="Finance">Finance</option>
-          <option value="Fitness and Health">Fitness and Health</option>
-          <option value="Healthcare">Healthcare</option>
-          <option value="Insurance">Insurance</option>
-          <option value="Legal">Legal</option>
-          <option value="Manufacturing">Manufacturing</option>
-          <option value="Non-profit">Non-profit</option>
-          <option value="Political">Political</option>
-          <option value="Real Estate">Real Estate</option>
-          <option value="Recruiting">Recruiting</option>
-          <option value="Retail">Retail</option>
-          <option value="Technology">Technology</option>
-          <option value="Transportation">Transportation</option>
-          <option value="Wellness">Wellness</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
-    </div>
-    <div class="col-6 col-md-6 col-lg-6 form-group _field21 _form_element">
-      <label for="numberOfEmployees" class="visuallyHidden">Number of Employees</label>
-      <div class="_field-wrapper">
-        <select id="numberOfEmployees" class="form-control" name="field[21]" style="color:#8f95a0;" required="" data-name="_of_employees">
-          <option selected="" disabled="" value=""># of Employees</option>
-          <option value="2-5">2 - 5</option>
-          <option value="6-10">6 - 10</option>
-          <option value="11-20">11 - 20</option>
-          <option value="21-30">21 - 30</option>
-          <option value="31-50">31 - 50</option>
-          <option value="50+">50+</option>
-        </select>
-        <input id="field[30]" type="text" class="form-control" style="position: absolute;opacity: 0;top: 0;width:0;height: 0;left:0" name="field[30]" aria-describedby="platform" placeholder="Platform" data-name="undefined">
-      </div>
-    </div>
-  </div>
-     <div class="_form_element _x82123275 _inline-style ">
-                                            <fieldset class="_form-fieldset">
-                                              <p class="sms-optin" style="color:#7f848e;">
-                                                Disclaimer: By clicking "I Opt In" and submitting this form, you
-            consent to receive SMS messages from DYL at (888) 310-4474. These messages may include account notifications, customer support, delivery updates, fraud alerts, or marketing content. Message frequency may vary, and standard messaging and data rates
-            may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see our <a href="http://dyl.com/terms-of-service">Terms and Conditions</a> and <a href="https://dyl.com/privacy-policy">Privacy Policy</a>.
-                                              </p>
-                                              <div class="_row _checkbox-radio">
-                                                <input id="field_66I opt-in to receive SMS messages." type="radio" name="field[66]" value="I opt-in to receive SMS messages." data-name="undefined">
-                                                <span>
-                                                  <label for="field_66I opt-in to receive SMS messages." style="color:#7f848e;">
-                                                    I opt-in to receive SMS messages.
-                                                </label></span>
-                                              </div>
-                                              <div class="_row _checkbox-radio">
-                                                <input id="field_66I opt-out to receive SMS messages." type="radio" name="field[66]" value="I opt-out to receive SMS messages." data-name="undefined">
-                                                <span>
-                                                  <label for="field_66I opt-out to receive SMS messages." style="color:#7f848e;">
-                                                    I opt-out to receive SMS messages.
-                                                </label></span>
-                                              </div>
-                                            </fieldset>
-                                          </div>
-  <div class="col-12 col-lg-12 mx-auto px-0">
-    <button id="_form_3_submit" class="btn btn-large btn-block btn-primary transition-3d-hover" type="submit" value="Submit">Get Started</button>
-  </div>
-  </form></div>
-
-  <div class="text-center">
-    <input name="field[36]" type="hidden" value="Direct">
-    <input name="field[34]" type="hidden" value="Company Website">
-    <input name="field[35]" type="hidden" value="boost-calculator">
-    <input name="field[51]" type="hidden" value="">
-    <input type="hidden" id="authtokenlong">
-
-  </div>
-
-
-<script type="text/javascript">
-
-
-
-
-
-  window.cfields = { "17": "company_name", "20": "industry", "21": "_of_employees", "36": "utm_medium", "34": "utm_source", "35": "utm_campaign" };
-  window._show_thank_you = function (id, message, trackcmp_url, email) {
-    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
-    form.querySelector('._form-content').style.display = 'none';
-    thank_you.innerHTML = message;
-    thank_you.style.display = 'block';
-    const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
-    var visitorObject = window[vgoAlias];
-    if (email && typeof visitorObject !== 'undefined') {
-      visitorObject('setEmail', email);
-      visitorObject('update');
-    } else if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
-
-      _load_script(trackcmp_url);
-    }
-    if (typeof window._form_callback !== 'undefined') window._form_callback(id);
-  };
-  window._show_error = function (id, message, html) {
-    var form = document.getElementById('_form_' + id + '_'), err = document.createElement('div'), button = form.querySelector('button'), old_error = form.querySelector('._form_error');
-    if (old_error) old_error.parentNode.removeChild(old_error);
-    err.innerHTML = message;
-    err.className = '_error-inner _form_error _no_arrow';
-    var wrapper = document.createElement('div');
-    wrapper.className = '_form-inner';
-    wrapper.appendChild(err);
-    button.parentNode.insertBefore(wrapper, button);
-    document.querySelector('[id^="_form"][id$="_submit"]').disabled = false;
-    if (html) {
-      var div = document.createElement('div');
-      div.className = '_error-html';
-      div.innerHTML = html;
-      err.appendChild(div);
-    }
-  };
-  window._load_script = function (url, callback) {
-    var head = document.querySelector('head'), script = document.createElement('script'), r = false;
-    script.type = 'text/javascript';
-    script.charset = 'utf-8';
-    script.src = url;
-    if (callback) {
-      script.onload = script.onreadystatechange = function () {
-        if (!r && (!this.readyState || this.readyState == 'complete')) {
-          r = true;
-          callback();
-        }
-      };
-    }
-    head.appendChild(script);
-  };
-  (function () {
-    if (window.location.search.search("excludeform") !== -1) return false;
-    var getCookie = function (name) {
-      var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-      return match ? match[2] : null;
-    }
-    var setCookie = function (name, value) {
-      var now = new Date();
-      var time = now.getTime();
-      var expireTime = time + 1000 * 60 * 60 * 24 * 365;
-      now.setTime(expireTime);
-      document.cookie = name + '=' + value + '; expires=' + now + ';path=/';
-    }
-    var addEvent = function (element, event, func) {
-      if (element.addEventListener) {
-        element.addEventListener(event, func);
-      } else {
-        var oldFunc = element['on' + event];
-        element['on' + event] = function () {
-          oldFunc.apply(this, arguments);
-          func.apply(this, arguments);
-        };
-      }
-    }
-    var _removed = false;
-    var form_to_submit = document.getElementById('_form_68_');
-    var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
-
-    var getUrlParam = function (name) {
-      var params = new URLSearchParams(window.location.search);
-      return params.get(name) || false;
-    };
-
-    for (var i = 0; i < allInputs.length; i++) {
-      var regexStr = "field\\[(\\d+)\\]";
-      var results = new RegExp(regexStr).exec(allInputs[i].name);
-      if (results != undefined) {
-        allInputs[i].dataset.name = window.cfields[results[1]];
-      } else {
-        allInputs[i].dataset.name = allInputs[i].name;
-      }
-      var fieldVal = getUrlParam(allInputs[i].dataset.name);
-
-      if (fieldVal) {
-        if (allInputs[i].dataset.autofill === "false") {
-          continue;
-        }
-        if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
-          if (allInputs[i].value == fieldVal) {
-            allInputs[i].checked = true;
-          }
-        } else {
-          allInputs[i].value = fieldVal;
-        }
-      }
-    }
-
-    var remove_tooltips = function () {
-      for (var i = 0; i < tooltips.length; i++) {
-        tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
-      }
-      tooltips = [];
-    };
-    var remove_tooltip = function (elem) {
-      for (var i = 0; i < tooltips.length; i++) {
-        if (tooltips[i].elem === elem) {
-          tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
-          tooltips.splice(i, 1);
-          return;
-        }
-      }
-    };
-    var create_tooltip = function (elem, text) {
-      var tooltip = document.createElement('div'), arrow = document.createElement('div'), inner = document.createElement('div'), new_tooltip = {};
-      if (elem.type != 'radio' && elem.type != 'checkbox') {
-        tooltip.className = '_error';
-        arrow.className = '_error-arrow';
-        inner.className = '_error-inner';
-        inner.innerHTML = text;
-        tooltip.appendChild(arrow);
-        tooltip.appendChild(inner);
-        elem.parentNode.appendChild(tooltip);
-      } else {
-        tooltip.className = '_error-inner _no_arrow';
-        tooltip.innerHTML = text;
-        elem.parentNode.insertBefore(tooltip, elem);
-        new_tooltip.no_arrow = true;
-      }
-      new_tooltip.tip = tooltip;
-      new_tooltip.elem = elem;
-      tooltips.push(new_tooltip);
-      return new_tooltip;
-    };
-    var resize_tooltip = function (tooltip) {
-      var rect = tooltip.elem.getBoundingClientRect();
-      var doc = document.documentElement, scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0));
-      if (scrollPosition < 40) {
-        tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _below';
-      } else {
-        tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _above';
-      }
-    };
-    var resize_tooltips = function () {
-      if (_removed) return;
-      for (var i = 0; i < tooltips.length; i++) {
-        if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]);
-      }
-    };
-    var needs_validate = function (el) {
-      if (el.getAttribute('required') !== null) {
-        return true
-      }
-      if (el.name === 'email' && el.value !== "") {
-        return true
-      }
-      return false
-    };
-    var validate_form = function (e) {
-      var err = form_to_submit.querySelector('._form_error'), no_error = true;
-      if (!submitted) {
-        submitted = true;
-        for (var i = 0, len = allInputs.length; i < len; i++) {
-          var input = allInputs[i];
-          if (needs_validate(input)) {
-            if (input.type == 'text' || input.type == 'number' || input.type == 'time') {
-              addEvent(input, 'blur', function () {
-                this.value = this.value.trim();
-                validate_field(this, true);
-              });
-              addEvent(input, 'input', function () {
-                validate_field(this, true);
-              });
-            } else if (input.type == 'radio' || input.type == 'checkbox') {
-              (function (el) {
-                var radios = form_to_submit.elements[el.name];
-                for (var i = 0; i < radios.length; i++) {
-                  addEvent(radios[i], 'click', function () {
-                    validate_field(el, true);
-                  });
-                }
-              })(input);
-            } else if (input.tagName == 'SELECT') {
-              addEvent(input, 'change', function () {
-                validate_field(this, true);
-              });
-            } else if (input.type == 'textarea') {
-              addEvent(input, 'input', function () {
-                validate_field(this, true);
-              });
-            }
-          }
-        }
-      }
-      remove_tooltips();
-      for (var i = 0, len = allInputs.length; i < len; i++) {
-        var elem = allInputs[i];
-        if (needs_validate(elem)) {
-          if (elem.tagName.toLowerCase() !== "select") {
-            elem.value = elem.value.trim();
-          }
-          validate_field(elem) ? true : no_error = false;
-        }
-      }
-      if (!no_error && e) {
-        e.preventDefault();
-      }
-      resize_tooltips();
-      return no_error;
-    };
-    addEvent(window, 'resize', resize_tooltips);
-    addEvent(window, 'scroll', resize_tooltips);
-
-    const formSupportsPost = false;
-    var form_submit = function (e) {
-      e.preventDefault();
-      if (validate_form()) {
-        // Check if field[38] has a value
-        var phone2Value = document.getElementById('field[39]').value.trim();
-        if (phone2Value !== "") {
-          // Display an error message or handle as needed
-          alert('Form submission blocked.');
-          return false;
-        }
-
-        var submitButton = e.target.querySelector('#_form_68_submit');
-        submitButton.disabled = true;
-        submitButton.classList.add('processing');
-        var serialized = _form_serialize(document.getElementById('_form_68_')).replace(/%0A/g, '\\n');
-        var err = form_to_submit.querySelector('._form_error');
-        err ? err.parentNode.removeChild(err) : false;
-        async function submitForm() {
-          var formData = new FormData();
-          const searchParams = new URLSearchParams(serialized);
-          searchParams.forEach((value, key) => {
-            formData.append(key, value);
-          });
-
-          const response = await fetch('https://dyl361.activehosted.com/proc.php?jsonp=true', {
-            headers: {
-              "Accept": "application/json"
-            },
-            body: formData,
-            method: "POST"
-          });
-          return response.json();
-        }
-
-        if (formSupportsPost) {
-          submitForm().then((data) => {
-            eval(data.js);
-          });
-        } else {
-          _load_script('https://dyl361.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
-        }
-      }
-      return false;
-    };
-    addEvent(form_to_submit, 'submit', form_submit);
-  })();
-
-
-</script>
-<script>
-
-  function setCookie(name, value, days) {
-    var date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  // Set expiration time
-    var expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/"; // Store cookie
-  }
-
-  function getCookie(name) {
-    var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-    return match ? match[2] : null;
-  }
-
-  document.getElementById("_form_68_").addEventListener("submit", function (event) {
-    event.preventDefault();  // Prevent page refresh
-
-    var email = document.getElementById("email").value;
-
-    setCookie("email", email, 30);
-
-    console.log("Email stored in cookie:", email);
-  });
-
-  window.onload = function () {
-    var storedEmail = getCookie("email");
-    if (storedEmail) {
-      console.log("Stored demo form email from cookie:", storedEmail);
-    } else {
-      console.log("No email found in cookies.");
-    }
-  };
-</script>                        </div>
-
-                    </section></div>
 
     <footer class="bg-darkBlue">
         <div class="container">
@@ -1697,7 +1883,8 @@
                     <div class="mb-4">
                         <a href="/" aria-label="Front">
                             <div class="DYL-logo DYL-white-logo-footer"
-                                data-bg="https://images.dyl.com/marketing-web/images/logo/DYL_logo_white_mobile.webp"></div>
+                                data-bg="https://images.dyl.com/marketing-web/images/logo/DYL_logo_white_mobile.webp">
+                            </div>
                         </a>
                     </div>
                     <div class="row">
@@ -1765,10 +1952,10 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
                     <p class="text-white h6-sub-footer">Products</p>
-    
+
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                         <li class="nav-item"><a class="nav-link footer-spacing"
                                 href="./business-phone-service.html"><b>Business
@@ -1781,11 +1968,14 @@
                         <li class="nav-item"><a class="nav-link footer-spacing"
                                 href="./lead-and-contact-management.html"><b>Lead
                                     & Contact Management</a></b></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./lead-engine.html">Lead Engine</a>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./lead-engine.html">Lead
+                                Engine</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./advanced-workflows.html">Advanced
+                        <li class="nav-item"><a class="nav-link footer-spacing"
+                                href="./advanced-workflows.html">Advanced
                                 Workflows</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./virtual-call-center.html"><b>Virtual
+                        <li class="nav-item"><a class="nav-link footer-spacing"
+                                href="./virtual-call-center.html"><b>Virtual
                                     Call Center</a></b></li>
                         <li class="nav-item"><a class="nav-link footer-spacing" href="./pricing.html"><b>Pricing</b></a>
                         </li>
@@ -1793,13 +1983,15 @@
                                 Overview</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/vonage.html">DYL VS
                                 Vonage</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/fonality.html">DYL VS
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/fonality.html">DYL
+                                VS
                                 Fonality</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/8x8.html">DYL VS 8x8</a>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./comparisons/8x8.html">DYL VS
+                                8x8</a>
                         </li>
                         <li class="nav-item"><a class="nav-link footer-spacing" href="./voip-phone-numbers.html">VoIP
                                 Numbers</a></li>
-    
+
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
@@ -1822,7 +2014,8 @@
                                 href="./medical-dental-practice-business-solutions.html">Healthcare</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
                                 href="./insurance-business-solutions.html">Insurance</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./legal-business-solutions.html">Legal</a>
+                        <li class="nav-item"><a class="nav-link footer-spacing"
+                                href="./legal-business-solutions.html">Legal</a>
                         </li>
                         <li class="nav-item"><a class="nav-link footer-spacing"
                                 href="./nonprofit-business-solutions.html">Non-profit</a></li>
@@ -1849,19 +2042,22 @@
                     <BR>
                     <p class="text-white h6-sub-footer">Learn</p>
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./support.html">FAQ/Support</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./reviews.html">Reviews</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./case-studies.html">Case Studies</a>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./support.html">FAQ/Support</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./support/system-training.html">System
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./reviews.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./case-studies.html">Case
+                                Studies</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link footer-spacing"
+                                href="./support/system-training.html">System
                                 Training</a></li>
                     </ul>
-    
+
                 </div>
-    
+
                 <div class="col-6 col-md-3 col-lg">
                     <p class="text-white h6-sub-footer">Company</p>
-    
+
                     <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                         <li class="nav-item"><a class="nav-link footer-spacing" href="./contact.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing" href="https://dyl.breezy.hr/"
@@ -1871,13 +2067,14 @@
                                 Credit</a></li>
                         <li class="nav-item"><a class="nav-link footer-spacing" href="./free-consultation.html">Free
                                 Consultation</a></li>
-                        <li class="nav-item"><a class="nav-link footer-spacing" href="./blog.html" target="_blank">Blog</a>
+                        <li class="nav-item"><a class="nav-link footer-spacing" href="./blog.html"
+                                target="_blank">Blog</a>
                         </li>
                     </ul>
-    
+
                 </div>
             </div>
-    
+
             <hr class="opacity-xs my-0">
             <div class="space-1">
                 <div class="row align-items-md-center mb-7">
@@ -1895,24 +2092,26 @@
                                 <a class="nav-link" href="./compliance.html">Compliance</a>
                             </li>
                             <li class="nav-item opacity mx-3 text-white">/</li>
-    
+
                             <li class="nav-item">
                                 <a class="nav-link" href="./sitemap.html">Sitemap</a>
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="col-md-6 ">
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item">
-                                <a class="text-blue-ribbon pr-2 social-media-icons" href="https://www.facebook.com/dylinfo"
-                                    target="_blank" rel="noreferer noopener" aria-label="DYL Facebook" data-toggle="tooltip"
-                                    data-placement="bottom" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                                <a class="text-blue-ribbon pr-2 social-media-icons"
+                                    href="https://www.facebook.com/dylinfo" target="_blank" rel="noreferer noopener"
+                                    aria-label="DYL Facebook" data-toggle="tooltip" data-placement="bottom"
+                                    title="Facebook"><i class="fab fa-facebook-square"></i></a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="text-blue-ribbon pl-2 pr-2 social-media-icons" href="https://twitter.com/dyl"
-                                    target="_blank" rel="noreferer noopener" aria-label="DYL Twitter" data-toggle="tooltip"
-                                    data-placement="bottom" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+                                    target="_blank" rel="noreferer noopener" aria-label="DYL Twitter"
+                                    data-toggle="tooltip" data-placement="bottom" title="Twitter"><i
+                                        class="fab fa-twitter-square"></i></a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="text-blue-ribbon pl-2 pr-2 social-media-icons"
@@ -1921,9 +2120,10 @@
                                     title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="text-blue-ribbon pl-2 pr-2 social-media-icons" href="https://vimeo.com/dyldotcom"
-                                    target="_blank" rel="noreferer noopener" aria-label="DYL Vimeo" data-toggle="tooltip"
-                                    data-placement="bottom" title="Vimeo"><i class="fab fa-vimeo"></i></a>
+                                <a class="text-blue-ribbon pl-2 pr-2 social-media-icons"
+                                    href="https://vimeo.com/dyldotcom" target="_blank" rel="noreferer noopener"
+                                    aria-label="DYL Vimeo" data-toggle="tooltip" data-placement="bottom"
+                                    title="Vimeo"><i class="fab fa-vimeo"></i></a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="text-blue-ribbon pl-2 pr-2 social-media-icons"
@@ -1933,8 +2133,8 @@
                             </li>
                             <li class="list-inline-item">
                                 <a class="text-blue-ribbon pl-2 pr-2 social-media-icons"
-                                    href="https://www.instagram.com/dyl_platform/" rel="noreferer noopener" target="_blank"
-                                    aria-label="Instagram" data-toggle="tooltip" data-placement="bottom"
+                                    href="https://www.instagram.com/dyl_platform/" rel="noreferer noopener"
+                                    target="_blank" aria-label="Instagram" data-toggle="tooltip" data-placement="bottom"
                                     title="Instagram"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
@@ -1943,12 +2143,13 @@
                 <div class="w-md-75 text-lg-center mx-lg-auto">
                     <p class="text-white opacity-sm small">© Copyright 2020 DYL, LLC. All Rights Reserved<br><br>
                         When you visit or interact with our sites, services or tools, we
-                        or our authorized service providers may use cookies for storing information to help provide you with
+                        or our authorized service providers may use cookies for storing information to help provide you
+                        with
                         a better, faster and safer experience and for marketing purposes.</p>
                 </div>
             </div>
         </div>
-       <div class="modal fade modal-new-form" id="longFormFields" tabindex="-1" role="dialog"
+        <div class="modal fade modal-new-form" id="longFormFields" tabindex="-1" role="dialog"
             aria-labelledby="DYL Grows Buisness" aria-hidden="true" style="padding-right: 0px !important;">
             <div class="modal-dialog " role="document"
                 style=" min-width: 100%; height: 100%; margin: 0; padding: 0; padding-right: 0;">
@@ -2168,8 +2369,8 @@ thank-you" />
             </div>
         </div>
         </div>
-        
-    
+
+
         <script>
 
             function setCookie(name, value, days) {
@@ -2924,7 +3125,7 @@ thank-you" />
             </a>
         </div>
     </div>
-     <aside id="requestQuoteContent" class="lazy-background hs-unfold-content sidebar"
+    <aside id="requestQuoteContent" class="lazy-background hs-unfold-content sidebar"
         data-bg="https://images.dyl.com/marketing-web/images/home/dyl-pattern-sidebar-15.webp">
         <div class="sidebar-scroller">
             <div class="sidebar-container">
@@ -3309,7 +3510,7 @@ thank-you" />
                     <h2>How can we assist you?</h2>
                     <p class="ChatUsModalSubTitle">DYL's service and sales team are ready for any questions you have</p>
                     <hr>
-    
+
                     <div class="ChatNowModalPersonBubble">
                         <img src="https://storage.googleapis.com/marketing-public-images/marketing-blog/2-layers.webp"
                             alt="Agent image John" loading="lazy">
@@ -3325,7 +3526,7 @@ thank-you" />
                             alt="Agent image Jamie" loading="lazy">
                         <span>Jamie O.</span>
                     </div>
-    
+
                     <div class="ChatUsModalContact">
                         <h4>Sales: (855) 357-9249</h4>
                         <h4>Support: (888) 310-4474</h4>
@@ -3405,7 +3606,7 @@ thank-you" />
         });
 
     </script>
-   
+
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -3495,48 +3696,48 @@ thank-you" />
             $("#chatUsModal").modal("hide");
         });
     </script>
-   
-      <script>
-                    function calculateSpeed() {
-                        const leads = parseInt(document.getElementById("leadsPerMonth").value);
-                        const responseTime = parseInt(document.getElementById("responseTime").value);
-                    
-                        if (isNaN(leads) || isNaN(responseTime)) {
-                            alert("Please enter the number of leads and select a response time.");
-                            return;
-                        }
-                    
-                        // Conversion Boost Logic based on response time
-                        let conversionBoost = 0;
-                        let userTimeLabel = "";
-                    
-                        if (responseTime <= 5) {
-                            conversionBoost = 50;
-                            userTimeLabel = "Within 5 minutes";
-                        } else if (responseTime <= 30) {
-                            conversionBoost = 35;
-                            userTimeLabel = "6–30 minutes";
-                        } else if (responseTime <= 60) {
-                            conversionBoost = 28;
-                            userTimeLabel = "31 minutes – 1 hour";
-                        } else if (responseTime <= 240) {
-                            conversionBoost = 18;
-                            userTimeLabel = "1–4 hours";
-                        } else if (responseTime <= 1440) {
-                            conversionBoost = 10;
-                            userTimeLabel = "4–24 hours";
-                        } else {
-                            conversionBoost = 4;
-                            userTimeLabel = "More than 24 hours";
-                        }
-                    
-                        // Speed multiplier calculation
-                        const DYL_TIME_SECONDS = 10; // benchmark
-                        const userTimeSeconds = responseTime * 60;
-                        const speedMultiplier = Math.round(userTimeSeconds / DYL_TIME_SECONDS);
-                    
-                        // Show results
-                        document.getElementById("rateResult").innerHTML = `
+
+    <script>
+        function calculateSpeed() {
+            const leads = parseInt(document.getElementById("leadsPerMonth").value);
+            const responseTime = parseInt(document.getElementById("responseTime").value);
+
+            if (isNaN(leads) || isNaN(responseTime)) {
+                alert("Please enter the number of leads and select a response time.");
+                return;
+            }
+
+            // Conversion Boost Logic based on response time
+            let conversionBoost = 0;
+            let userTimeLabel = "";
+
+            if (responseTime <= 5) {
+                conversionBoost = 50;
+                userTimeLabel = "Within 5 minutes";
+            } else if (responseTime <= 30) {
+                conversionBoost = 35;
+                userTimeLabel = "6–30 minutes";
+            } else if (responseTime <= 60) {
+                conversionBoost = 28;
+                userTimeLabel = "31 minutes – 1 hour";
+            } else if (responseTime <= 240) {
+                conversionBoost = 18;
+                userTimeLabel = "1–4 hours";
+            } else if (responseTime <= 1440) {
+                conversionBoost = 10;
+                userTimeLabel = "4–24 hours";
+            } else {
+                conversionBoost = 4;
+                userTimeLabel = "More than 24 hours";
+            }
+
+            // Speed multiplier calculation
+            const DYL_TIME_SECONDS = 10; // benchmark
+            const userTimeSeconds = responseTime * 60;
+            const speedMultiplier = Math.round(userTimeSeconds / DYL_TIME_SECONDS);
+
+            // Show results
+            document.getElementById("rateResult").innerHTML = `
                             <div class="row">
                                 <div class="col-md-6  pad-t20 product-page-text-color">
                                     <strong>Your current response time:</strong> ${userTimeLabel}
@@ -3546,8 +3747,8 @@ thank-you" />
                                 </div>
                             </div>
                         `;
-                    
-                        document.getElementById("dealResult").innerHTML = `
+
+            document.getElementById("dealResult").innerHTML = `
                             <div class="row width-100 pl-2">
                                 <div class="col-md-6 width-100 p-2">
                                     <div class="p-3 bg-sky-blue width-100">
@@ -3565,21 +3766,21 @@ thank-you" />
                                 </div>
                             </div>
                         `;
-                    
-                        // Show Step 2, hide Step 1
-                        document.getElementById("step1").classList.remove("active");
-                        document.getElementById("step1").style.display = "none";
-                        document.getElementById("step2").classList.add("active");
-                        document.getElementById("step2").style.display = "block";
-                    }
-                    
-                    function goBack() {
-                        document.getElementById("step2").classList.remove("active");
-                        document.getElementById("step2").style.display = "none";
-                        document.getElementById("step1").classList.add("active");
-                        document.getElementById("step1").style.display = "block";
-                    }
-                    </script>
+
+            // Show Step 2, hide Step 1
+            document.getElementById("step1").classList.remove("active");
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").classList.add("active");
+            document.getElementById("step2").style.display = "block";
+        }
+
+        function goBack() {
+            document.getElementById("step2").classList.remove("active");
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step1").classList.add("active");
+            document.getElementById("step1").style.display = "block";
+        }
+    </script>
 
 
 </body>
