@@ -95,7 +95,7 @@
             .cta-form-bot {
                 padding-top: 0 !important
             }
-            
+
         }
     </style>
     <link rel="preload" fetchpriority="high" as="image"
@@ -1443,7 +1443,8 @@
                                         or marketing content. Message frequency may vary, and standard messaging and
                                         data rates
                                         may apply. Reply STOP to unsubscribe or HELP for assistance. For more details,
-                                        see our <a href="http://dyl.com/terms-of-service.html">Terms and Conditions</a> and
+                                        see our <a href="http://dyl.com/terms-of-service.html">Terms and Conditions</a>
+                                        and
                                         <a href="https://dyl.com/privacy-policy.html">Privacy Policy</a>.
                                     </p>
                                 </div>
@@ -2905,7 +2906,8 @@
                                         or marketing content. Message frequency may vary, and standard messaging and
                                         data rates
                                         may apply. Reply STOP to unsubscribe or HELP for assistance. For more details,
-                                        see our <a href="http://dyl.com/terms-of-service.html">Terms and Conditions</a> and
+                                        see our <a href="http://dyl.com/terms-of-service.html">Terms and Conditions</a>
+                                        and
                                         <a href="https://dyl.com/privacy-policy.html">Privacy Policy</a>.
                                     </p>
                                 </div>
@@ -5202,7 +5204,35 @@ thank-you" />
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const goToBtn = document.querySelector(".js-go-to");
+            const offsetTop = 700; // when to show button
 
+            
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > offsetTop) {
+                    goToBtn.style.visibility = "visible";
+                    goToBtn.style.opacity = "1";
+                    goToBtn.style.bottom = "88px";
+                } else {
+                    goToBtn.style.opacity = "0";
+                    goToBtn.style.bottom = "-15px";
+                    setTimeout(() => {
+                        if (window.scrollY <= offsetTop) goToBtn.style.visibility = "hidden";
+                    }, 300);
+                }
+            });
+
+            // Scroll to top on click
+            goToBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
@@ -5227,7 +5257,7 @@ thank-you" />
         });
 
     </script>
-   
+
     <script defer>
 
         jQuery.event.special.touchstart = {
@@ -5394,82 +5424,82 @@ thank-you" />
             }
         };
     </script>-->
-   <script>
-    if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
-        jQuery.expr.filters.visible = function (elem) {
-            return !!(
-                elem.offsetWidth ||
-                elem.offsetHeight ||
-                elem.getClientRects().length
-            );
-        };
-    }
-
-    (function () {
-        if (typeof c !== 'undefined' && typeof n === 'function') {
-            const cachedWidth = c.offsetWidth || c.clientWidth || 0;
-            a = 12 === n(cachedWidth / 3);
+    <script>
+        if (window.jQuery && jQuery.expr && jQuery.expr.filters) {
+            jQuery.expr.filters.visible = function (elem) {
+                return !!(
+                    elem.offsetWidth ||
+                    elem.offsetHeight ||
+                    elem.getClientRects().length
+                );
+            };
         }
-    })();
-</script>
+
+        (function () {
+            if (typeof c !== 'undefined' && typeof n === 'function') {
+                const cachedWidth = c.offsetWidth || c.clientWidth || 0;
+                a = 12 === n(cachedWidth / 3);
+            }
+        })();
+    </script>
 
 
-<script>
-    // SafeLayoutManager.js
+    <script>
 
-const SafeLayoutManager = (function () {
-    const reads = [];
-    const writes = [];
 
-    function scheduleRead(fn) {
-        reads.push(fn);
-        requestFrame();
-    }
+        const SafeLayoutManager = (function () {
+            const reads = [];
+            const writes = [];
 
-    function scheduleWrite(fn) {
-        writes.push(fn);
-        requestFrame();
-    }
-
-    let frameRequested = false;
-
-    function requestFrame() {
-        if (frameRequested) return;
-
-        frameRequested = true;
-
-        requestAnimationFrame(() => {
-            // Perform all reads first
-            let read;
-            while ((read = reads.shift())) {
-                try {
-                    read();
-                } catch (err) {
-                    console.error('Layout read error:', err);
-                }
+            function scheduleRead(fn) {
+                reads.push(fn);
+                requestFrame();
             }
 
-            // Then perform all writes
-            let write;
-            while ((write = writes.shift())) {
-                try {
-                    write();
-                } catch (err) {
-                    console.error('Layout write error:', err);
-                }
+            function scheduleWrite(fn) {
+                writes.push(fn);
+                requestFrame();
             }
 
-            frameRequested = false;
-        });
-    }
+            let frameRequested = false;
 
-    return {
-        read: scheduleRead,
-        write: scheduleWrite
-    };
-})();
+            function requestFrame() {
+                if (frameRequested) return;
 
-</script>
+                frameRequested = true;
+
+                requestAnimationFrame(() => {
+                    // Perform all reads first
+                    let read;
+                    while ((read = reads.shift())) {
+                        try {
+                            read();
+                        } catch (err) {
+                            console.error('Layout read error:', err);
+                        }
+                    }
+
+                    // Then perform all writes
+                    let write;
+                    while ((write = writes.shift())) {
+                        try {
+                            write();
+                        } catch (err) {
+                            console.error('Layout write error:', err);
+                        }
+                    }
+
+                    frameRequested = false;
+                });
+            }
+
+            return {
+                read: scheduleRead,
+                write: scheduleWrite
+            };
+        })();
+
+    </script>
 </body>
 
 </html>
