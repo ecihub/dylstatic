@@ -4069,6 +4069,35 @@
     }'>
         <i class="fas fa-angle-up"></i>
     </a>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const goToBtn = document.querySelector(".js-go-to");
+            const offsetTop = 700; 
+
+            
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > offsetTop) {
+                    goToBtn.style.visibility = "visible";
+                    goToBtn.style.opacity = "1";
+                    goToBtn.style.bottom = "88px";
+                } else {
+                    goToBtn.style.opacity = "0";
+                    goToBtn.style.bottom = "-15px";
+                    setTimeout(() => {
+                        if (window.scrollY <= offsetTop) goToBtn.style.visibility = "hidden";
+                    }, 300);
+                }
+            });
+
+            
+            goToBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
      <script src="../js/jquery.min.js"></script>
 
     <script src="../js/popper.min.js" defer></script>
