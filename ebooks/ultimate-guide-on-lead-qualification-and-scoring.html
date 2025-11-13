@@ -3255,6 +3255,35 @@ thank-you" />
         <i class="fas fa-angle-up"></i>
     </a>
 
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const goToBtn = document.querySelector(".js-go-to");
+            const offsetTop = 700; // when to show button
+
+            
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > offsetTop) {
+                    goToBtn.style.visibility = "visible";
+                    goToBtn.style.opacity = "1";
+                    goToBtn.style.bottom = "88px";
+                } else {
+                    goToBtn.style.opacity = "0";
+                    goToBtn.style.bottom = "-15px";
+                    setTimeout(() => {
+                        if (window.scrollY <= offsetTop) goToBtn.style.visibility = "hidden";
+                    }, 300);
+                }
+            });
+
+            // Scroll to top on click
+            goToBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {

@@ -11,7 +11,7 @@
     <meta name="keywords"
         content="[lead generation, sales crm, crm for small buisness, crm marketing, crm system, buisness voip phone service, phone systems, voip, voip phone system, voip provicers]">
     <title>
-       DYL | Marketing Tips E-Book
+       DYL | Dyl &amp; Vertafore’s AMS360 and QQCatalyst Integration
     </title>
     <meta name="description"
         content="Learn How Today’s Business Leaders Use Today’s Tech to Increase Profitability ">
@@ -3571,6 +3571,35 @@ thank-you" />
         <i class="fas fa-angle-up"></i>
     </a>
 
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const goToBtn = document.querySelector(".js-go-to");
+            const offsetTop = 700; // when to show button
+
+            
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > offsetTop) {
+                    goToBtn.style.visibility = "visible";
+                    goToBtn.style.opacity = "1";
+                    goToBtn.style.bottom = "88px";
+                } else {
+                    goToBtn.style.opacity = "0";
+                    goToBtn.style.bottom = "-15px";
+                    setTimeout(() => {
+                        if (window.scrollY <= offsetTop) goToBtn.style.visibility = "hidden";
+                    }, 300);
+                }
+            });
+
+            // Scroll to top on click
+            goToBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 
     <script>
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
