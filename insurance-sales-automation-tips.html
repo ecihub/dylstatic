@@ -4087,6 +4087,64 @@ thank-you" />
             document.body.appendChild(script);
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form114 = document.getElementById("_form_114_");
+            if (!form114) return;
+
+            const allInputs = form114.querySelectorAll("input, select, textarea");
+
+            const validateField = (field) => {
+                let valid = true;
+                const value = field.value.trim();
+
+                // Required field check
+                if (field.hasAttribute("required") && value === "") valid = false;
+
+                // Email validation
+                if (valid && field.name === "email") {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(value)) valid = false;
+                }
+
+                // Phone validation (basic)
+                if (valid && field.name === "phone") {
+                    const digits = value.replace(/\D/g, "");
+                    if (digits.length < 7) valid = false;
+                }
+
+                // Select validation
+                if (valid && field.tagName.toLowerCase() === "select" && value === "") valid = false;
+
+                // Apply/remove error classes (no icons)
+                if (!valid) {
+                    field.classList.add("_has_error", "is-invalid");
+                } else {
+                    field.classList.remove("_has_error", "is-invalid");
+                }
+
+                return valid;
+            };
+
+            form114.addEventListener("submit", function (e) {
+                let formValid = true;
+                allInputs.forEach(input => {
+                    if (!validateField(input)) formValid = false;
+                });
+
+                if (!formValid) e.preventDefault(); // Stop form submission if invalid
+            });
+
+            // Real-time validation
+            allInputs.forEach(input => {
+                input.addEventListener("input", () => validateField(input));
+                input.addEventListener("blur", () => validateField(input));
+                if (input.tagName.toLowerCase() === "select") {
+                    input.addEventListener("change", () => validateField(input));
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
