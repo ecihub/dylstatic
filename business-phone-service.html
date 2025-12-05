@@ -2064,7 +2064,7 @@
 
                                 // Required fields
                                 if (elem.getAttribute("required") !== null && value === "") {
-                                    create_tooltip(elem, "This field is required");
+                                    create_tooltip(elem, "");
                                     no_error = false;
                                 }
 
@@ -2080,7 +2080,7 @@
                                 // Select validation
                                 if (no_error && elem.tagName === "SELECT") {
                                     if (elem.value === "") {
-                                        create_tooltip(elem, "Please select an option");
+                                        create_tooltip(elem, "");
                                         no_error = false;
                                     }
                                 }
@@ -2093,7 +2093,7 @@
                                         if (radioGroup[i].checked) checked = true;
                                     }
                                     if (!checked) {
-                                        create_tooltip(elem, "Please select an option");
+                                        create_tooltip(elem, "");
                                         no_error = false;
                                     }
                                 }
