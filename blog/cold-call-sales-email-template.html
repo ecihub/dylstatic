@@ -2374,157 +2374,157 @@ thank-you" />
                     </form>
 
                    <script type="text/javascript">
-                       
-                        window.cfields = { "20": "industry", "36": "utm_medium", "34": "utm_source", "35": "utm_campaign" };
 
-                        window._show_thank_you = function (id, message, trackcmp_url, email) {
-                            var form = document.getElementById('_form_' + id + '_'),
-                                thank_you = form.querySelector('._form-thank-you');
+            window.cfields = { "20": "industry", "36": "utm_medium", "34": "utm_source", "35": "utm_campaign" };
 
-                            form.querySelector('._form-content').style.display = 'none';
-                            thank_you.innerHTML = message;
-                            thank_you.style.display = 'block';
+            window._show_thank_you = function (id, message, trackcmp_url, email) {
+                var form = document.getElementById('_form_' + id + '_'),
+                    thank_you = form.querySelector('._form-thank-you');
 
-                            const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
-                            var visitorObject = window[vgoAlias];
-                            if (email && typeof visitorObject !== 'undefined') {
-                                visitorObject('setEmail', email);
-                                visitorObject('update');
-                            } else if (typeof (trackcmp_url) !== 'undefined' && trackcmp_url) {
-                                _load_script(trackcmp_url);
-                            }
+                form.querySelector('._form-content').style.display = 'none';
+                thank_you.innerHTML = message;
+                thank_you.style.display = 'block';
 
-                            if (typeof window._form_callback !== 'undefined') window._form_callback(id);
-                        };
+                const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+                var visitorObject = window[vgoAlias];
+                if (email && typeof visitorObject !== 'undefined') {
+                    visitorObject('setEmail', email);
+                    visitorObject('update');
+                } else if (typeof (trackcmp_url) !== 'undefined' && trackcmp_url) {
+                    _load_script(trackcmp_url);
+                }
 
-                        window._show_error = function (id, message, html) {
-                            var form = document.getElementById('_form_' + id + '_'),
-                                err = document.createElement('div'),
-                                button = form.querySelector('button'),
-                                old_error = form.querySelector('._form_error');
+                if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+            };
 
-                            if (old_error) old_error.parentNode.removeChild(old_error);
+            window._show_error = function (id, message, html) {
+                var form = document.getElementById('_form_' + id + '_'),
+                    err = document.createElement('div'),
+                    button = form.querySelector('button'),
+                    old_error = form.querySelector('._form_error');
 
-                            err.innerHTML = message;
-                            err.className = '_error-inner _form_error _no_arrow';
+                if (old_error) old_error.parentNode.removeChild(old_error);
 
-                            var wrapper = document.createElement('div');
-                            wrapper.className = '_form-inner';
-                            wrapper.appendChild(err);
+                err.innerHTML = message;
+                err.className = '_error-inner _form_error _no_arrow';
 
-                            button.parentNode.insertBefore(wrapper, button);
+                var wrapper = document.createElement('div');
+                wrapper.className = '_form-inner';
+                wrapper.appendChild(err);
 
-                            // FIXED: no crash when element does not exist
-                            var submitBtn = form.querySelector('[id^="_form"][id$="_submit"]');
-                            if (submitBtn) submitBtn.disabled = false;
+                button.parentNode.insertBefore(wrapper, button);
 
-                            if (html) {
-                                var div = document.createElement('div');
-                                div.className = '_error-html';
-                                div.innerHTML = html;
-                                err.appendChild(div);
-                            }
-                        };
+                // FIXED: no crash when element does not exist
+                var submitBtn = form.querySelector('[id^="_form"][id$="_submit"]');
+                if (submitBtn) submitBtn.disabled = false;
 
-                        window._load_script = function (url, callback) {
-                            var head = document.querySelector('head'),
-                                script = document.createElement('script'),
-                                r = false;
+                if (html) {
+                    var div = document.createElement('div');
+                    div.className = '_error-html';
+                    div.innerHTML = html;
+                    err.appendChild(div);
+                }
+            };
 
-                            script.type = 'text/javascript';
-                            script.charset = 'utf-8';
-                            script.src = url;
+            window._load_script = function (url, callback) {
+                var head = document.querySelector('head'),
+                    script = document.createElement('script'),
+                    r = false;
 
-                            if (callback) {
-                                script.onload = script.onreadystatechange = function () {
-                                    if (!r && (!this.readyState || this.readyState === 'complete')) {
-                                        r = true;
-                                        callback();
-                                    }
-                                };
-                            }
-                            head.appendChild(script);
-                        };
+                script.type = 'text/javascript';
+                script.charset = 'utf-8';
+                script.src = url;
 
-                        /* -------------------------------
-                           VALIDATION FIX (was missing!)
-                        --------------------------------*/
-                        function validate_form() {
-                            let valid = true;
-
-                            const form = document.getElementById('_form_19_');
-                            const inputs = form.querySelectorAll('[required]');
-
-                            inputs.forEach(input => {
-                                if (!input.value.trim()) {
-                                    valid = false;
-                                    input.classList.add('is-invalid', '_has_error');
-                                } else {
-                                    input.classList.remove('is-invalid', '_has_error');
-                                }
-                            });
-
-                            return valid;
+                if (callback) {
+                    script.onload = script.onreadystatechange = function () {
+                        if (!r && (!this.readyState || this.readyState === 'complete')) {
+                            r = true;
+                            callback();
                         }
+                    };
+                }
+                head.appendChild(script);
+            };
 
-                        /* -------------------------------
-                           MAIN FORM HANDLER
-                        --------------------------------*/
-                        (function () {
-                            if (window.location.search.search("excludeform") !== -1) return false;
+            /* -------------------------------
+               VALIDATION FIX (was missing!)
+            --------------------------------*/
+            function validate_form() {
+                let valid = true;
 
-                            var form_to_submit = document.getElementById('_form_19_');
-                            if (!form_to_submit) return;
+                const form = document.getElementById('_form_19_');
+                const inputs = form.querySelectorAll('[required]');
 
-                            var allInputs = form_to_submit.querySelectorAll('input, select, textarea');
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        valid = false;
+                        input.classList.add('is-invalid', '_has_error');
+                    } else {
+                        input.classList.remove('is-invalid', '_has_error');
+                    }
+                });
 
-                            var getUrlParam = function (name) {
-                                var regexStr = '[?&]' + name + '=([^&#]*)';
-                                var results = new RegExp(regexStr, 'i').exec(window.location.href);
-                                return results !== undefined ? decodeURIComponent(results[1]) : false;
-                            };
+                return valid;
+            }
 
-                            allInputs.forEach(input => {
-                                var regexStr = "field\\[(\\d+)\\]";
-                                var results = new RegExp(regexStr).exec(input.name);
+            /* -------------------------------
+               MAIN FORM HANDLER
+            --------------------------------*/
+            (function () {
+                if (window.location.search.search("excludeform") !== -1) return false;
 
-                                if (results !== undefined) {
-                                    input.dataset.name = window.cfields[results[1]];
-                                } else {
-                                    input.dataset.name = input.name;
-                                }
+                var form_to_submit = document.getElementById('_form_19_');
+                if (!form_to_submit) return;
 
-                                var fieldVal = getUrlParam(input.dataset.name);
-                                if (fieldVal && input.dataset.autofill !== "false") {
-                                    if (input.type === "radio" || input.type === "checkbox") {
-                                        if (input.value == fieldVal) input.checked = true;
-                                    } else {
-                                        input.value = fieldVal;
-                                    }
-                                }
-                            });
+                var allInputs = form_to_submit.querySelectorAll('input, select, textarea');
 
-                            var form_submit = function (e) {
-                                e.preventDefault();
+                var getUrlParam = function (name) {
+                    var regexStr = '[?&]' + name + '=([^&#]*)';
+                    var results = new RegExp(regexStr, 'i').exec(window.location.href);
+                    return results !== undefined ? decodeURIComponent(results[1]) : false;
+                };
 
-                                if (validate_form()) {
-                                    // FIXED: no more null error
-                                    var submitBtn = form_to_submit.querySelector('button[type="submit"], [id$="_submit"]');
-                                    if (submitBtn) submitBtn.disabled = true;
+                allInputs.forEach(input => {
+                    var regexStr = "field\\[(\\d+)\\]";
+                    var results = new RegExp(regexStr).exec(input.name);
 
-                                    var serialized = _form_serialize(form_to_submit);
+                    if (results !== undefined) {
+                        input.dataset.name = window.cfields[results[1]];
+                    } else {
+                        input.dataset.name = input.name;
+                    }
 
-                                    var err = form_to_submit.querySelector('._form_error');
-                                    if (err) err.parentNode.removeChild(err);
+                    var fieldVal = getUrlParam(input.dataset.name);
+                    if (fieldVal && input.dataset.autofill !== "false") {
+                        if (input.type === "radio" || input.type === "checkbox") {
+                            if (input.value == fieldVal) input.checked = true;
+                        } else {
+                            input.value = fieldVal;
+                        }
+                    }
+                });
 
-                                    _load_script('https://dyl361.activehosted.com/proc.php?' + serialized + '&jsonp=true');
-                                }
-                                return false;
-                            };
+                var form_submit = function (e) {
+                    e.preventDefault();
 
-                            form_to_submit.addEventListener('submit', form_submit);
-                        })();
-                    </script>
+                    if (validate_form()) {
+                        // FIXED: no more null error
+                        var submitBtn = form_to_submit.querySelector('button[type="submit"], [id$="_submit"]');
+                        if (submitBtn) submitBtn.disabled = true;
+
+                        var serialized = _form_serialize(form_to_submit);
+
+                        var err = form_to_submit.querySelector('._form_error');
+                        if (err) err.parentNode.removeChild(err);
+
+                        _load_script('https://dyl361.activehosted.com/proc.php?' + serialized + '&jsonp=true');
+                    }
+                    return false;
+                };
+
+                form_to_submit.addEventListener('submit', form_submit);
+            })();
+        </script>
 
 
 
