@@ -2531,33 +2531,50 @@
                         </div>
                     </form>
                     <script type="text/javascript">
+
                         window.cfields = { "20": "industry", "36": "utm_medium", "34": "utm_source", "35": "utm_campaign" };
+
                         window._show_thank_you = function (id, message, trackcmp_url, email) {
-                            var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+                            var form = document.getElementById('_form_' + id + '_'),
+                                thank_you = form.querySelector('._form-thank-you');
+
                             form.querySelector('._form-content').style.display = 'none';
                             thank_you.innerHTML = message;
                             thank_you.style.display = 'block';
+
                             const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
                             var visitorObject = window[vgoAlias];
                             if (email && typeof visitorObject !== 'undefined') {
                                 visitorObject('setEmail', email);
                                 visitorObject('update');
-                            } else if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
-                                // Site tracking URL to use after inline form submission.
+                            } else if (typeof (trackcmp_url) !== 'undefined' && trackcmp_url) {
                                 _load_script(trackcmp_url);
                             }
+
                             if (typeof window._form_callback !== 'undefined') window._form_callback(id);
                         };
+
                         window._show_error = function (id, message, html) {
-                            var form = document.getElementById('_form_' + id + '_'), err = document.createElement('div'), button = form.querySelector('button'), old_error = form.querySelector('._form_error');
+                            var form = document.getElementById('_form_' + id + '_'),
+                                err = document.createElement('div'),
+                                button = form.querySelector('button'),
+                                old_error = form.querySelector('._form_error');
+
                             if (old_error) old_error.parentNode.removeChild(old_error);
+
                             err.innerHTML = message;
                             err.className = '_error-inner _form_error _no_arrow';
+
                             var wrapper = document.createElement('div');
                             wrapper.className = '_form-inner';
                             wrapper.appendChild(err);
+
                             button.parentNode.insertBefore(wrapper, button);
-                            document.querySelector('[id^="_form"][id$="_submit"]').disabled = false;
+
+                            // FIXED: no crash when element does not exist
+                            var submitBtn = form.querySelector('[id^="_form"][id$="_submit"]');
+                            if (submitBtn) submitBtn.disabled = false;
+
                             if (html) {
                                 var div = document.createElement('div');
                                 div.className = '_error-html';
@@ -2565,14 +2582,19 @@
                                 err.appendChild(div);
                             }
                         };
+
                         window._load_script = function (url, callback) {
-                            var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+                            var head = document.querySelector('head'),
+                                script = document.createElement('script'),
+                                r = false;
+
                             script.type = 'text/javascript';
                             script.charset = 'utf-8';
                             script.src = url;
+
                             if (callback) {
                                 script.onload = script.onreadystatechange = function () {
-                                    if (!r && (!this.readyState || this.readyState == 'complete')) {
+                                    if (!r && (!this.readyState || this.readyState === 'complete')) {
                                         r = true;
                                         callback();
                                     }
@@ -2580,94 +2602,85 @@
                             }
                             head.appendChild(script);
                         };
+
+                        /* -------------------------------
+                           VALIDATION FIX (was missing!)
+                        --------------------------------*/
+                        function validate_form() {
+                            let valid = true;
+
+                            const form = document.getElementById('_form_19_');
+                            const inputs = form.querySelectorAll('[required]');
+
+                            inputs.forEach(input => {
+                                if (!input.value.trim()) {
+                                    valid = false;
+                                    input.classList.add('is-invalid', '_has_error');
+                                } else {
+                                    input.classList.remove('is-invalid', '_has_error');
+                                }
+                            });
+
+                            return valid;
+                        }
+
+                        /* -------------------------------
+                           MAIN FORM HANDLER
+                        --------------------------------*/
                         (function () {
                             if (window.location.search.search("excludeform") !== -1) return false;
-                            var getCookie = function (name) {
-                                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
-                                return match ? match[2] : null;
-                            }
-                            var setCookie = function (name, value) {
-                                var now = new Date();
-                                var time = now.getTime();
-                                var expireTime = time + 1000 * 60 * 60 * 24 * 365;
-                                now.setTime(expireTime);
-                                document.cookie = name + '=' + value + '; expires=' + now + ';path=/';
-                            }
-                            var addEvent = function (element, event, func) {
-                                if (element.addEventListener) {
-                                    element.addEventListener(event, func);
-                                } else {
-                                    var oldFunc = element['on' + event];
-                                    element['on' + event] = function () {
-                                        oldFunc.apply(this, arguments);
-                                        func.apply(this, arguments);
-                                    };
-                                }
-                            }
-                            var _removed = false;
+
                             var form_to_submit = document.getElementById('_form_19_');
-                            var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
+                            if (!form_to_submit) return;
+
+                            var allInputs = form_to_submit.querySelectorAll('input, select, textarea');
 
                             var getUrlParam = function (name) {
-                                var regexStr = '[\?&]' + name + '=([^&#]*)';
+                                var regexStr = '[?&]' + name + '=([^&#]*)';
                                 var results = new RegExp(regexStr, 'i').exec(window.location.href);
-                                return results != undefined ? decodeURIComponent(results[1]) : false;
+                                return results !== undefined ? decodeURIComponent(results[1]) : false;
                             };
 
-                            for (var i = 0; i < allInputs.length; i++) {
+                            allInputs.forEach(input => {
                                 var regexStr = "field\\[(\\d+)\\]";
-                                var results = new RegExp(regexStr).exec(allInputs[i].name);
-                                if (results != undefined) {
-                                    allInputs[i].dataset.name = window.cfields[results[1]];
+                                var results = new RegExp(regexStr).exec(input.name);
+
+                                if (results !== undefined) {
+                                    input.dataset.name = window.cfields[results[1]];
                                 } else {
-                                    allInputs[i].dataset.name = allInputs[i].name;
+                                    input.dataset.name = input.name;
                                 }
-                                var fieldVal = getUrlParam(allInputs[i].dataset.name);
 
-                                if (fieldVal) {
-                                    if (allInputs[i].dataset.autofill === "false") {
-                                        continue;
-                                    }
-                                    if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
-                                        if (allInputs[i].value == fieldVal) {
-                                            allInputs[i].checked = true;
-                                        }
+                                var fieldVal = getUrlParam(input.dataset.name);
+                                if (fieldVal && input.dataset.autofill !== "false") {
+                                    if (input.type === "radio" || input.type === "checkbox") {
+                                        if (input.value == fieldVal) input.checked = true;
                                     } else {
-                                        allInputs[i].value = fieldVal;
+                                        input.value = fieldVal;
                                     }
                                 }
-                            }
-
-                            var remove_tooltips = function () {
-                                for (var i = 0; i < tooltips.length; i++) {
-                                    tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
-                                }
-                                tooltips = [];
-                            };
-                            var remove_tooltip = function (elem) {
-                                for (var i = 0; i < tooltips.length; i++) {
-                                    if (tooltips[i].elem === elem) {
-                                        tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
-                                        tooltips.splice(i, 1);
-                                        return;
-                                    }
-                                }
-                            };
+                            });
 
                             var form_submit = function (e) {
                                 e.preventDefault();
+
                                 if (validate_form()) {
-                                    document.querySelector('#_form_19_submit').disabled = true;
-                                    var serialized = _form_serialize(document.getElementById('_form_19_'));
+                                    // FIXED: no more null error
+                                    var submitBtn = form_to_submit.querySelector('button[type="submit"], [id$="_submit"]');
+                                    if (submitBtn) submitBtn.disabled = true;
+
+                                    var serialized = _form_serialize(form_to_submit);
+
                                     var err = form_to_submit.querySelector('._form_error');
-                                    err ? err.parentNode.removeChild(err) : false;
+                                    if (err) err.parentNode.removeChild(err);
+
                                     _load_script('https://dyl361.activehosted.com/proc.php?' + serialized + '&jsonp=true');
                                 }
                                 return false;
                             };
-                            addEvent(form_to_submit, 'submit', form_submit);
-                        })();
 
+                            form_to_submit.addEventListener('submit', form_submit);
+                        })();
                     </script>
     
     
