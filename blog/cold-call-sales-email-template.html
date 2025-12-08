@@ -2371,6 +2371,24 @@ thank-you" />
                             <input name="field[35]" type="hidden" value="" data-name="utm_campaign">
                         </div>
                     </form>
+                    <script>
+function validate_form() {
+    let valid = true;
+    const requiredFields = document.querySelectorAll('#_form_19_ [required]');
+
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            valid = false;
+            field.classList.add('is-invalid'); // your styling class
+        } else {
+            field.classList.remove('is-invalid');
+        }
+    });
+
+    return valid;
+}
+</script>
+
                     <script type="text/javascript">
                         window.cfields = { "20": "industry", "36": "utm_medium", "34": "utm_source", "35": "utm_campaign" };
                         window._show_thank_you = function (id, message, trackcmp_url, email) {
