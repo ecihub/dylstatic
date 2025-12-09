@@ -3449,7 +3449,25 @@
         });
     </script>
 
+    <script>
+        var popup2Shown = false;
 
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 2000 && !popup2Shown) {
+                $('#popup2').fadeIn();
+                popup2Shown = true;
+            } else {
+                // $('#popup2').fadeOut();
+            }
+        });
+
+        function closePanel() {
+            $('#popup2').fadeOut();
+        }
+
+
+    </script>
 </body>
 
 </html>

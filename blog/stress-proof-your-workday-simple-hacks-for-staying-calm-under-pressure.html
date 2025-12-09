@@ -3279,7 +3279,87 @@ thank-you" />
             });
         });
     </script>
+     <div id="popup2" style="display: none;">
+        <div class="container blog-popup">
+            <div class="row">
+                <div class="col-12 col-md-6 bg-white padded-30 text-center left-pop-form">
+                    <h3 class="filter-heading"> Join 8,000+<br>
+                        Business Owners </h3>
+                    <p>Stay ahead with top-notch marketing, sales, and customer service insights. Sign up for our
+                        business
+                        grown tips now!</p>
+                    <div class="text-center">
+                        <div class="row">
+                            <div class="col">
 
+                                <form accept-charset="UTF-8" method="POST"
+                                    action="https://dyl361.activehosted.com/proc.php" class=" js-validate"
+                                    novalidate="novalidate">
+                                    <input type="hidden" name="u" value="55">
+                                    <input type="hidden" name="f" value="55">
+                                    <input type="hidden" name="s">
+                                    <input type="hidden" name="c" value="0">
+                                    <input type="hidden" name="m" value="0">
+                                    <input type="hidden" name="act" value="sub">
+                                    <input type="hidden" name="v" value="2">
+                                    <input id="firstname" type="text" name="name" class="fname-class form-control"
+                                        data-name="firstname" aria-describedby="emailHelp firstname-error"
+                                        aria-invalid="true" placeholder="Name" required=""><br><br>
+                                    <input class="email-class form-control" type="text" id="email" name="email"
+                                        placeholder="Email" required="" data-name="email"
+                                        aria-describedby="emailHelp email-error" aria-invalid="true"><br><br>
+                                    <button class="subscribe-class-pop transition-3d-hover"
+                                        type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <small class=" product-page-text-color">We prioritize your privacy. DYL uses your information to
+                        reach
+                        out about our relevant content, products, and services. You can unsubscribe anytime. For
+                        details,
+                        see our Privacy Policy.</small>
+                    <hr>
+                    <p> <img src="https://images.dyl.com/marketing-web/images/blog/dyl-logo.png" loading="lazy"
+                            alt="dyl logo"> Not
+                        using
+                        <a href="https://dyl.com">DYL</a> yet?
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div onclick="closePanel()" class="close-popup-button"><img
+                            src="https://images.dyl.com/marketing-web/images/blog/clos.png" loading="lazy"
+                            alt="close icon">
+                    </div>
+                    <img src="https://images.dyl.com/marketing-blog/pop-up-image-woman-on-phone.webp"
+                        class="img-fluid pop-up-image" alt="pop up image" loading="lazy">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var popup2Shown = false;
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 2000 && !popup2Shown) {
+                $('#popup2').fadeIn();
+                popup2Shown = true;
+            } else {
+                // $('#popup2').fadeOut();
+            }
+        });
+
+        function closePanel() {
+            $('#popup2').fadeOut();
+        }
+
+
+    </script>
 
 </body>
 
