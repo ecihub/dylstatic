@@ -3568,6 +3568,42 @@
                   </div>
 
 
+                  <div class="_form_element _x82123275 _inline-style ">
+                    <div id="sms-error-long" style="color: red; display: none; margin-top: 10px;">
+                      Please select an option to continue.
+                    </div>
+                    <fieldset class="_form-fieldset">
+                      <p class="sms-optin" style="color:#7f848e;">
+                        Disclaimer: By clicking "I Opt In" and submitting this form, you
+                        consent to receive SMS messages from DYL at (888) 310-4474. These messages may
+                        include account notifications,
+                        customer support, delivery updates, fraud alerts, or marketing content. Message
+                        frequency may vary, and standard
+                        messaging and data rates
+                        may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see
+                        our <a href="../../terms-of-service.html">Terms and Conditions</a> and <a href="../../privacy-policy.html">Privacy
+                          Policy</a>.
+                      </p>
+                      <div class="_row _checkbox-radio">
+                        <input id="opt-in" type="radio" name="field[66]" value="I opt-in to receive SMS messages." required=""
+                          data-name="undefined">
+                        <span>
+                          <label for="opt-in" style="color:#7f848e;">
+                            I opt-in to receive SMS messages.
+                          </label></span>
+                      </div>
+                      <div class="_row _checkbox-radio">
+                        <input id="opt-out" type="radio" name="field[66]" value="I opt-out to receive SMS messages."
+                          data-name="undefined">
+                        <span>
+                          <label for="opt-out" style="color:#7f848e;">
+                            I opt-out to receive SMS messages.
+                          </label></span>
+                      </div>
+                    </fieldset>
+                  </div>
+
+
                   <div class="col-12 col-lg-12 mx-auto px-0">
                     <button id="_form_68_submit" class="submit btn btn-large btn-block btn-primary transition-3d-hover"
                       type="submit" value="Submit">Get Started</button>
@@ -4939,6 +4975,125 @@ thank-you" />
       });
     }
   });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const forms114 = document.querySelectorAll("form._form_114");
+
+        forms114.forEach(form => {
+            const allInputs = form.querySelectorAll("input, select, textarea");
+
+            const validateField = (field) => {
+                let valid = true;
+                const value = field.value.trim();
+
+                // Required field check
+                if (field.hasAttribute("required") && value === "") valid = false;
+
+                // Email validation
+                if (valid && field.name === "email") {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(value)) valid = false;
+                }
+
+                // Phone validation (basic)
+                if (valid && field.name === "phone") {
+                    const digits = value.replace(/\D/g, "");
+                    if (digits.length < 7) valid = false;
+                }
+
+                // Select validation
+                if (valid && field.tagName.toLowerCase() === "select" && value === "") valid = false;
+
+                // Apply/remove error classes (no icons)
+                if (!valid) {
+                    field.classList.add("_has_error", "is-invalid");
+                } else {
+                    field.classList.remove("_has_error", "is-invalid");
+                }
+
+                return valid;
+            };
+
+            form.addEventListener("submit", function (e) {
+                let formValid = true;
+                allInputs.forEach(input => {
+                    if (!validateField(input)) formValid = false;
+                });
+
+                if (!formValid) e.preventDefault(); // Stop form submission if invalid
+            });
+
+            // Real-time validation
+            allInputs.forEach(input => {
+                input.addEventListener("input", () => validateField(input));
+                input.addEventListener("blur", () => validateField(input));
+                if (input.tagName.toLowerCase() === "select") {
+                    input.addEventListener("change", () => validateField(input));
+                }
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const forms114 = document.querySelectorAll("form._form_68");
+
+        forms114.forEach(form => {
+            const allInputs = form.querySelectorAll("input, select, textarea");
+
+            const validateField = (field) => {
+                let valid = true;
+                const value = field.value.trim();
+
+                // Required field check
+                if (field.hasAttribute("required") && value === "") valid = false;
+
+                // Email validation
+                if (valid && field.name === "email") {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(value)) valid = false;
+                }
+
+                // Phone validation (basic)
+                if (valid && field.name === "phone") {
+                    const digits = value.replace(/\D/g, "");
+                    if (digits.length < 7) valid = false;
+                }
+
+                // Select validation
+                if (valid && field.tagName.toLowerCase() === "select" && value === "") valid = false;
+
+                // Apply/remove error classes (no icons)
+                if (!valid) {
+                    field.classList.add("_has_error", "is-invalid");
+                } else {
+                    field.classList.remove("_has_error", "is-invalid");
+                }
+
+                return valid;
+            };
+
+            form.addEventListener("submit", function (e) {
+                let formValid = true;
+                allInputs.forEach(input => {
+                    if (!validateField(input)) formValid = false;
+                });
+
+                if (!formValid) e.preventDefault(); // Stop form submission if invalid
+            });
+
+            // Real-time validation
+            allInputs.forEach(input => {
+                input.addEventListener("input", () => validateField(input));
+                input.addEventListener("blur", () => validateField(input));
+                if (input.tagName.toLowerCase() === "select") {
+                    input.addEventListener("change", () => validateField(input));
+                }
+            });
+        });
+    });
 </script>
 
 </body>
